@@ -65,6 +65,37 @@ class Targeting(unittest.TestCase):
 
 
 class FullSnapshot(unittest.TestCase):
+    def test_empty_candidates_link_to_counted_owner_evidence(self):
+        owner='wh2_dlc11_cst_noctilus'
+        for kind,count in [('technology',45),('skill',301),(None,346)]:
+            with self.subTest(kind=kind):
+                # Technology is naturally empty; other kinds exercise a filtered zero.
+                result=self.unit_query('wh2_dlc11_cst_inf_count_noctilus_0',owner=owner,
+                    source_kind=kind,bonus=None if kind=='technology' else 'nonexistent_bonus')
+                self.assertEqual(result['candidates']['total'],0)
+                notice=result['empty_result']
+                self.assertEqual(notice['status'],'no_indexed_candidates_under_selected_filters')
+                self.assertIn('does not establish',notice['message'])
+                evidence=notice['owner_source_evidence']
+                self.assertEqual(evidence['effect_occurrences'],count)
+                self.assertIn('applicability to this unit is not established',evidence['meaning'])
+                self.assertEqual(evidence['query'],result['source_owner_retrieval'])
+                command=shlex.split(evidence['query'])
+                self.assertEqual('--source-kind' in command,kind is not None)
+                actual=subprocess.run([sys.executable,str(ROOT/'scripts/query-modifier-reference.py'),
+                    *command,'--data',str(DATA),'--limit','1'],check=True,capture_output=True,text=True)
+                self.assertEqual(json.loads(actual.stdout)['effect_occurrences']['total'],count)
+
+    def test_empty_notice_requires_zero_total_and_does_not_invent_owner(self):
+        for offset in (0,1000000):
+            result=self.unit_query(offset=offset)
+            self.assertGreater(result['candidates']['total'],0)
+            self.assertNotIn('empty_result',result)
+        for owner in (None,'nonexistent_owner'):
+            result=self.unit_query(owner=owner,bonus='nonexistent_bonus')
+            self.assertEqual(result['candidates']['total'],0)
+            self.assertNotIn('owner_source_evidence',result['empty_result'])
+
     def test_unit_detail_link_preserves_source_filters(self):
         for owner,kind in [('wh_main_emp_karl_franz','skill'),
                            ('wh_main_emp_karl_franz',None),(None,'skill'),(None,None)]:

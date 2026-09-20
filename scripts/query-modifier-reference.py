@@ -123,11 +123,24 @@ def query(args):
                         filter_meaning='owner selects source ownership, not proof that this owner can recruit or buff this unit',
                         bonus_groups=page(db,'SELECT b.bonus_key,COUNT(DISTINCT b.id) candidate_bindings'+common+' GROUP BY b.bonus_key ORDER BY candidate_bindings DESC,b.bonus_key',params,min(args.limit,10),args.offset),
                         candidates=result,
-                        source_owner_retrieval='owner '+args.owner if args.owner else 'owner <owner_key> includes unbound and unresolved source effects',
+                        source_owner_retrieval=('owner '+args.owner+(' --source-kind '+args.source_kind if args.source_kind else '')) if args.owner else 'owner <owner_key> includes unbound and unresolved source effects',
                         target_predicate_evidence=[dict(path=e['path'],row=e['row'],fields={k:v for k,v in e['fields'].items() if k in ('unit','land_unit','key','class','category','caste','attribute_group')}) for row in db.execute('SELECT evidence_json FROM supplemental_forms WHERE unit_key=?',(args.key,)) for e in json.loads(row[0])],
                         supplemental_base_relation_coverage='exact retained land-unit abilities and attribute-group relations; no normalized stat card' if unit['normalized_base_stat_coverage']=='unavailable' else 'normalized roster lookups',
                         shared_bindings_not_indexed_per_unit=db.execute("SELECT COUNT(*) FROM bindings WHERE status!='unit_target_indexed'").fetchone()[0],
                         gaps_query='gaps --kind bindings')
+        if result['total']==0:
+            envelope['empty_result']={
+                'status':'no_indexed_candidates_under_selected_filters',
+                'message':'No indexed modifier candidates under the selected filters. This does not establish the absence of army-wide or other campaign effects.',
+            }
+            if args.owner and db.execute('SELECT 1 FROM owners WHERE owner_key=?',(args.owner,)).fetchone():
+                owner_where='owner_key=?'+(' AND owner_kind=?' if args.source_kind else '')
+                owner_params=[args.owner]+([args.source_kind] if args.source_kind else [])
+                envelope['empty_result']['owner_source_evidence']={
+                    'query':envelope['source_owner_retrieval'],
+                    'effect_occurrences':db.execute('SELECT COUNT(*) FROM owner_effect_access WHERE '+owner_where,owner_params).fetchone()[0],
+                    'meaning':'All effect-bearing rows for the selected owner and source kind, including unbound and unresolved effects. Unit, bonus and rank filters do not apply to this count; applicability to this unit is not established.',
+                }
     elif args.command == 'character':
         owners=dicts(db.execute("SELECT * FROM owners WHERE kind='skill' AND owner_key=? ORDER BY id",(args.key,)))
         if not owners:
