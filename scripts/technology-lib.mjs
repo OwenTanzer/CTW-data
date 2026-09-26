@@ -1,14 +1,11 @@
+import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { SCRIPT_COLUMNS } from "./technology-rules.mjs";
 import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
-import { SKILL_RACES } from "./dataset-scope.mjs";
+import { buildSnapshot } from "./snapshot-build.mjs";
 
-export const CONTEXT = {
-  game: "warhammer_3",
-  patch: "8.1.1",
-  steam_build_id: "24237342",
-};
+
 export const cmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 export const hash = (x) => createHash("sha256").update(x).digest("hex");
 export const stable = (x) =>
@@ -21,6 +18,10 @@ export const stable = (x) =>
           .join(",")}}`
       : JSON.stringify(x);
 export function parse(text, delimiter = ",") {
+  if (delimiter === "\t") {
+    const [columns = [], ...data] = parseRpfmTsv(text);
+    return { columns, rows: data.filter(r => !r[0].startsWith("#")).map(r => Object.fromEntries(columns.map((c, i) => [c, r[i]]))) };
+  }
   const data = [];
   let row = [],
     field = "",
@@ -314,11 +315,9 @@ export const BASE = [
 ];
 
 export async function loadSource(source) {
-  const manifest = JSON.parse(
-    await readFile(path.join(source, "source_manifest.json"), "utf8"),
-  );
-  for (const [k, v] of Object.entries(CONTEXT))
-    if (String(manifest[k]) !== v) throw new Error(`Source ${k} mismatch`);
+  const snapshot = await buildSnapshot(source);
+  const { manifest, context, scope } = snapshot;
+  const { SKILL_RACES } = scope;
   const schema = JSON.parse(
     await readFile(path.join(source, "decoded_schema.json"), "utf8"),
   );
@@ -371,8 +370,8 @@ export async function loadSource(source) {
         culture: cultures.get(f.subculture)?.culture,
       };
     });
-  if (playable.length !== 104)
-    throw new Error(`Expected 104 playable factions, got ${playable.length}`);
+  if (playable.length !== snapshot.factionCount)
+    throw new Error(`Expected ${snapshot.factionCount} playable factions, got ${playable.length}`);
   const columns = [...new Set([...BASE, ...SCRIPT_COLUMNS])];
   for (const [t] of Object.entries(CONFIG))
     for (const c of headers[t] ?? [])
@@ -390,6 +389,8 @@ export async function loadSource(source) {
   ).rows;
   return {
     source,
+    context,
+    snapshot,
     manifest,
     tables,
     headers,

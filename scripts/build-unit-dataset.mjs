@@ -1,21 +1,21 @@
+import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { UNIT_ROSTERS as ROSTERS } from "./dataset-scope.mjs";
+import { buildSnapshot } from "./snapshot-build.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = path.resolve(ROOT, process.argv[2] ?? "work/source_exports__wh3__8.1.1");
+const SNAPSHOT = await buildSnapshot(SOURCE);
+const { UNIT_ROSTERS: ROSTERS } = SNAPSHOT.scope;
+const PATCH = SNAPSHOT.context.patch;
 const OUTPUT = path.resolve(ROOT, process.argv[3] ?? "work/generated_unit_stats__wh3__8.1.1");
 const DB = path.join(SOURCE, "db");
 
-const CONTEXT = {
-  game: "warhammer_3",
-  patch: "8.1.1",
-  steam_build_id: "24237342",
-  unit_scale: "ultra",
-};
+const CONTEXT = { ...SNAPSHOT.context, unit_scale: "ultra" };
 
 function parseDelimited(text, delimiter) {
+  if (delimiter === "\t") return parseRpfmTsv(text);
   const rows = [];
   let row = [];
   let field = "";
@@ -281,7 +281,7 @@ const COMPONENT_COLUMNS = ["game", "patch", "unit_scale", "unit_key", "component
 const WEAPON_LINK_COLUMNS = ["game", "patch", "unit_scale", "unit_key", "attack_type", "component_role", "slot", "melee_weapon_key", "missile_weapon_key", "projectile_key", "is_default_projectile", "ammunition_pool", "ammunition", "link_source"];
 const PROJECTILE_COLUMNS = ["game", "patch", "projectile_key", "category", "shot_type", "projectile_number", "effective_range", "minimum_range", "muzzle_velocity", "marksmanship_bonus", "spread", "base_damage", "ap_damage", "base_reload_time", "calibration_distance", "calibration_area", "bonus_vs_infantry", "bonus_vs_large", "burst_size", "burst_shot_delay", "shots_per_volley", "collision_radius", "mass", "gravity", "ignition_amount", "is_magical", "can_target_airborne", "can_damage_allies", "can_damage_buildings", "building_damage_multiplier", "projectile_penetration", "penetration_entity_size_cap", "max_penetration", "expiry_range", "expire_on_impact", "can_bounce", "can_roll", "homing_params", "scaling_damage", "contact_stat_effect", "explosion_key", "shrapnel_key", "is_spell"];
 const EXPLOSION_COLUMNS = ["game", "patch", "explosion_key", "detonator_type", "detonation_type", "radius", "duration", "speed", "base_damage", "ap_damage", "force", "ignition_amount", "is_magical", "affects_allies", "contact_phase_effect", "shrapnel_key", "is_spell"];
-const ABILITY_COLUMNS = ["game", "patch", "unit_scale", "unit_key", "ability_key"];
+const ABILITY_COLUMNS = ["game", "patch", "unit_scale", "unit_key", "ability_key", ...(PATCH === "9.0" ? ["culture_key"] : [])];
 const ATTRIBUTE_COLUMNS = ["game", "patch", "unit_scale", "unit_key", "attribute_key"];
 const CONTACT_COLUMNS = ["game", "patch", "unit_scale", "unit_key", "attack_type", "source_key", "effect_key"];
 const ROSTER_COLUMNS = ["record_type", "game", "patch", "unit_scale", "race_slug", "unit_key", "military_group", "faction_permission_key", "general_unit", "siege_unit_attacker", "siege_unit_defender", "campaign_exclusive", "supports_upgrades"];
@@ -515,7 +515,7 @@ for (const roster of ROSTERS) {
         if (projectileExplosion?.contact_phase_effect) contacts.push({ ...CONTEXT, unit_key: unitKey, attack_type: "explosion", source_key: projectileExplosion.key, effect_key: projectileExplosion.contact_phase_effect });
       }
     }
-    for (const ability of abilitiesByUnit.get(main.land_unit) ?? []) abilities.push({ ...CONTEXT, unit_key: unitKey, ability_key: ability.ability });
+    for (const ability of abilitiesByUnit.get(main.land_unit) ?? []) abilities.push({ ...CONTEXT, unit_key: unitKey, ability_key: ability.ability, culture_key: ability.culture });
     for (const attribute of attributesByGroup.get(land.attribute_group) ?? []) attributes.push({ ...CONTEXT, unit_key: unitKey, attribute_key: attribute.attribute });
     for (const militaryGroup of militaryGroups) {
       rosterRows.push({ record_type: "military_group", ...CONTEXT, race_slug: roster.slug, unit_key: unitKey, military_group: militaryGroup, faction_permission_key: "", general_unit: "", siege_unit_attacker: "", siege_unit_defender: "", campaign_exclusive: "", supports_upgrades: "" });
@@ -614,7 +614,7 @@ const uniqueRows = (rows, columns) => {
 
 const componentRows = uniqueRows(components, ["unit_key", "component_role", "relationship_key", "battle_entity_key", "component_count", "is_primary_health_pool"]);
 const weaponLinkRows = uniqueRows(weaponLinks, ["unit_key", "attack_type", "component_role", "slot", "melee_weapon_key", "missile_weapon_key", "projectile_key"]);
-const abilityRows = uniqueRows(abilities, ["unit_key", "ability_key"]);
+const abilityRows = uniqueRows(abilities, ["unit_key", "ability_key", ...(PATCH === "9.0" ? ["culture_key"] : [])]);
 const attributeRows = uniqueRows(attributes, ["unit_key", "attribute_key"]);
 const contactRows = uniqueRows(contacts, ["unit_key", "attack_type", "source_key", "effect_key"]);
 const unitRosterRows = uniqueRows(rosterRows, ["record_type", "race_slug", "unit_key", "military_group", "faction_permission_key"]);
@@ -622,37 +622,37 @@ const unitMountVariantRows = uniqueRows(mountVariantRows, ["base_unit_key", "mou
 const qualityRows = uniqueRows(quality, ["unit_key", "flag", "detail"]);
 
 for (const [roster, rows] of normalizedByRoster) {
-  await writeCsv(path.join(OUTPUT, "normalized", `${roster.slug}__wh3__8.1.1__ultra.csv`), NORMALIZED_COLUMNS, rows);
+  await writeCsv(path.join(OUTPUT, "normalized", `${roster.slug}__wh3__${PATCH}__ultra.csv`), NORMALIZED_COLUMNS, rows);
 }
-await writeCsv(path.join(OUTPUT, "lookups", "unit_components__wh3__8.1.1__ultra.csv"), COMPONENT_COLUMNS, componentRows);
-await writeCsv(path.join(OUTPUT, "lookups", "unit_weapon_links__wh3__8.1.1__ultra.csv"), WEAPON_LINK_COLUMNS, weaponLinkRows);
-await writeCsv(path.join(OUTPUT, "lookups", "projectiles__wh3__8.1.1.csv"), PROJECTILE_COLUMNS, projectileRows);
-await writeCsv(path.join(OUTPUT, "lookups", "explosions__wh3__8.1.1.csv"), EXPLOSION_COLUMNS, explosionRows);
-await writeCsv(path.join(OUTPUT, "lookups", "unit_abilities__wh3__8.1.1__ultra.csv"), ABILITY_COLUMNS, abilityRows);
-await writeCsv(path.join(OUTPUT, "lookups", "unit_attributes__wh3__8.1.1__ultra.csv"), ATTRIBUTE_COLUMNS, attributeRows);
-await writeCsv(path.join(OUTPUT, "lookups", "unit_contact_effects__wh3__8.1.1__ultra.csv"), CONTACT_COLUMNS, contactRows);
-await writeCsv(path.join(OUTPUT, "lookups", "unit_rosters__wh3__8.1.1__ultra.csv"), ROSTER_COLUMNS, unitRosterRows);
-await writeCsv(path.join(OUTPUT, "lookups", "unit_mount_variants__wh3__8.1.1__ultra.csv"), MOUNT_VARIANT_COLUMNS, unitMountVariantRows);
-await writeCsv(path.join(OUTPUT, "lookups", "data_quality_flags__wh3__8.1.1__ultra.csv"), QUALITY_COLUMNS, qualityRows);
+await writeCsv(path.join(OUTPUT, "lookups", `unit_components__wh3__${PATCH}__ultra.csv`), COMPONENT_COLUMNS, componentRows);
+await writeCsv(path.join(OUTPUT, "lookups", `unit_weapon_links__wh3__${PATCH}__ultra.csv`), WEAPON_LINK_COLUMNS, weaponLinkRows);
+await writeCsv(path.join(OUTPUT, "lookups", `projectiles__wh3__${PATCH}.csv`), PROJECTILE_COLUMNS, projectileRows);
+await writeCsv(path.join(OUTPUT, "lookups", `explosions__wh3__${PATCH}.csv`), EXPLOSION_COLUMNS, explosionRows);
+await writeCsv(path.join(OUTPUT, "lookups", `unit_abilities__wh3__${PATCH}__ultra.csv`), ABILITY_COLUMNS, abilityRows);
+await writeCsv(path.join(OUTPUT, "lookups", `unit_attributes__wh3__${PATCH}__ultra.csv`), ATTRIBUTE_COLUMNS, attributeRows);
+await writeCsv(path.join(OUTPUT, "lookups", `unit_contact_effects__wh3__${PATCH}__ultra.csv`), CONTACT_COLUMNS, contactRows);
+await writeCsv(path.join(OUTPUT, "lookups", `unit_rosters__wh3__${PATCH}__ultra.csv`), ROSTER_COLUMNS, unitRosterRows);
+await writeCsv(path.join(OUTPUT, "lookups", `unit_mount_variants__wh3__${PATCH}__ultra.csv`), MOUNT_VARIANT_COLUMNS, unitMountVariantRows);
+await writeCsv(path.join(OUTPUT, "lookups", `data_quality_flags__wh3__${PATCH}__ultra.csv`), QUALITY_COLUMNS, qualityRows);
 const schemaInventory = [
-  ["normalized/<faction>__wh3__8.1.1__ultra.csv", NORMALIZED_COLUMNS],
-  ["lookups/unit_components__wh3__8.1.1__ultra.csv", COMPONENT_COLUMNS],
-  ["lookups/unit_weapon_links__wh3__8.1.1__ultra.csv", WEAPON_LINK_COLUMNS],
-  ["lookups/projectiles__wh3__8.1.1.csv", PROJECTILE_COLUMNS],
-  ["lookups/explosions__wh3__8.1.1.csv", EXPLOSION_COLUMNS],
-  ["lookups/unit_abilities__wh3__8.1.1__ultra.csv", ABILITY_COLUMNS],
-  ["lookups/unit_attributes__wh3__8.1.1__ultra.csv", ATTRIBUTE_COLUMNS],
-  ["lookups/unit_contact_effects__wh3__8.1.1__ultra.csv", CONTACT_COLUMNS],
-  ["lookups/unit_rosters__wh3__8.1.1__ultra.csv", ROSTER_COLUMNS],
-  ["lookups/unit_mount_variants__wh3__8.1.1__ultra.csv", MOUNT_VARIANT_COLUMNS],
-  ["lookups/data_quality_flags__wh3__8.1.1__ultra.csv", QUALITY_COLUMNS],
-].flatMap(([dataset, columns]) => columns.map((column_name, index) => ({ schema_version: 3, dataset, column_position: index + 1, column_name })));
-await writeCsv(path.join(OUTPUT, "schema_inventory__v3.csv"), SCHEMA_INVENTORY_COLUMNS, schemaInventory);
+  [`normalized/<faction>__wh3__${PATCH}__ultra.csv`, NORMALIZED_COLUMNS],
+  [`lookups/unit_components__wh3__${PATCH}__ultra.csv`, COMPONENT_COLUMNS],
+  [`lookups/unit_weapon_links__wh3__${PATCH}__ultra.csv`, WEAPON_LINK_COLUMNS],
+  [`lookups/projectiles__wh3__${PATCH}.csv`, PROJECTILE_COLUMNS],
+  [`lookups/explosions__wh3__${PATCH}.csv`, EXPLOSION_COLUMNS],
+  [`lookups/unit_abilities__wh3__${PATCH}__ultra.csv`, ABILITY_COLUMNS],
+  [`lookups/unit_attributes__wh3__${PATCH}__ultra.csv`, ATTRIBUTE_COLUMNS],
+  [`lookups/unit_contact_effects__wh3__${PATCH}__ultra.csv`, CONTACT_COLUMNS],
+  [`lookups/unit_rosters__wh3__${PATCH}__ultra.csv`, ROSTER_COLUMNS],
+  [`lookups/unit_mount_variants__wh3__${PATCH}__ultra.csv`, MOUNT_VARIANT_COLUMNS],
+  [`lookups/data_quality_flags__wh3__${PATCH}__ultra.csv`, QUALITY_COLUMNS],
+].flatMap(([dataset, columns]) => columns.map((column_name, index) => ({ schema_version: SNAPSHOT.unitSchema, dataset, column_position: index + 1, column_name })));
+await writeCsv(path.join(OUTPUT, `schema_inventory__v${SNAPSHOT.unitSchema}.csv`), SCHEMA_INVENTORY_COLUMNS, schemaInventory);
 
 const counts = Object.fromEntries([...normalizedByRoster].map(([roster, rows]) => [roster.slug, rows.length]));
 const manifest = {
   ...CONTEXT,
-  schema_version: 3,
+  schema_version: SNAPSHOT.unitSchema,
   built_at_utc: extractedAt,
   source_manifest: path.relative(ROOT, path.join(SOURCE, "source_manifest.json")).replaceAll(path.sep, "/"),
   roster_counts: counts,

@@ -1,3 +1,5 @@
+import { validateVictoryConfig } from "./validate-victory-config.mjs";
+import { snapshotProfile } from "./snapshot-source.mjs";
 import { DatabaseSync } from "node:sqlite";
 import { mkdir, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -31,15 +33,18 @@ check("SQLite integrity", integrity, "ok");
 check("Foreign-key violations", foreignKeyErrors, 0);
 
 const metadata = Object.fromEntries(db.prepare("SELECT key, value FROM metadata").all().map((row) => [row.key, row.value]));
+const profile = snapshotProfile(metadata.patch);
+const current = profile.patch === "9.0";
+const factionCount = current ? 109 : 104;
 check("Campaign key", metadata.campaign_key, "wh3_main_combi");
-check("Campaign map revision", metadata.campaign_map_key, "wh3_main_combi_map_5");
-check("Patch", metadata.patch, "8.1.1");
-check("Steam build", metadata.steam_build_id, "24237342");
-if (metadata.schema_version === "1.1.0") {
-  check("Primary army start coverage", scalar("SELECT COUNT(*) count FROM faction_army_start_reference").count, 104);
-  check("Primary army start uniqueness", scalar("SELECT COUNT(DISTINCT faction_key) count FROM faction_army_start_reference").count, 104);
+check("Campaign map revision", metadata.campaign_map_key, current ? "wh3_main_combi_map_7" : "wh3_main_combi_map_5");
+check("Patch", metadata.patch, profile.patch);
+check("Steam build", metadata.steam_build_id, profile.steam_build_id);
+if (scalar("SELECT COUNT(*) count FROM sqlite_master WHERE name='campaign_army_starts'").count) {
+  check("Primary army start coverage", scalar("SELECT COUNT(*) count FROM faction_army_start_reference").count, factionCount);
+  check("Primary army start uniqueness", scalar("SELECT COUNT(DISTINCT faction_key) count FROM faction_army_start_reference").count, factionCount);
   check("Primary army points complete", scalar("SELECT COUNT(*) count FROM faction_army_start_reference WHERE world_x IS NULL OR world_y IS NULL").count, 0);
-  check("All starting generals retained", scalar("SELECT COUNT(*) count FROM campaign_army_starts").count, 109);
+  check("All starting generals retained", scalar("SELECT COUNT(*) count FROM campaign_army_starts").count, current ? 118 : 109);
   check("Explicit maritime primary points", scalar("SELECT COUNT(*) count FROM faction_army_start_reference WHERE start_region_key IS NULL").count, 4);
   check("Human partner position exceptions", scalar("SELECT COUNT(*) count FROM campaign_start_partner_overrides").count, 5);
   check("Army start regions resolve", scalar("SELECT COUNT(*) count FROM campaign_army_starts a WHERE start_region_key IS NOT NULL AND NOT EXISTS (SELECT 1 FROM regions r WHERE r.region_key=a.start_region_key)").count, 0);
@@ -52,16 +57,20 @@ for (const table of [
   "battle_selection_rules", "map_assets", "source_files", "evidence", "coverage",
 ]) counts[table] = scalar(`SELECT COUNT(*) count FROM ${table}`).count;
 
-check("Current IE regions", counts.regions, 641);
-check("IE provinces", counts.provinces, 214);
-check("Playable IE factions", scalar("SELECT COUNT(*) count FROM factions WHERE playable = 1").count, 104);
-check("Region centroid features", counts.region_points, 571, "warning", "70 black sea/special regions share one lookup colour and are intentionally non-spatial individually");
+check("Current IE regions", counts.regions, current ? 644 : 641);
+check("IE provinces", counts.provinces, current ? 215 : 214);
+check("Playable IE factions", scalar("SELECT COUNT(*) count FROM factions WHERE playable = 1").count, factionCount);
+check("Region centroid features", counts.region_points, current ? 574 : 571, "warning", "70 black sea/special regions share one lookup colour and are intentionally non-spatial individually");
 check("Region ownership rows", scalar("SELECT COUNT(*) count FROM regions WHERE start_owner_faction_key IS NOT NULL").count, (value) => value >= 540);
 check("Region/province orphan count", scalar("SELECT COUNT(*) count FROM regions WHERE province_key IS NULL").count, 72, "warning", "maritime/special regions intentionally have no province");
-check("Raster adjacency relations", counts.region_adjacency, 1317);
+check("Raster adjacency relations", counts.region_adjacency, current ? 1316 : 1317);
 
 for (const tier of ["short", "long", "domination"]) {
-  check(`${tier} objectives cover every playable faction`, scalar("SELECT COUNT(DISTINCT faction_key) count FROM objectives WHERE victory_tier = ?", [tier]).count, 104);
+  check(`${tier} objectives cover every playable faction`, scalar("SELECT COUNT(DISTINCT faction_key) count FROM objectives WHERE victory_tier = ?", [tier]).count, factionCount);
+}
+if(current) {
+  try { check("Active source objectives, conditions, variants and boundaries reconcile",await validateVictoryConfig(db,path.resolve(ROOT,process.argv[4]??"data/campaign_map/objective_source_exports")),1175); }
+  catch(error) { check("Active source objectives, conditions, variants and boundaries reconcile",String(error),"1175 configured objectives match"); }
 }
 check("Objectives have types", scalar("SELECT COUNT(*) count FROM objectives WHERE objective_type IS NULL OR objective_type = 'UNKNOWN'").count, 0);
 check("Region objective targets resolve", scalar("SELECT COUNT(*) count FROM objective_conditions c WHERE c.condition_type = 'region' AND NOT EXISTS (SELECT 1 FROM regions r WHERE r.region_key = c.target_key)").count, 0);

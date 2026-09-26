@@ -9,15 +9,15 @@ This is an unofficial research project and is not affiliated with Creative Assem
 ## Current scope
 
 - Game: Total War: Warhammer III
-- Patch: 8.1.1
-- Steam build: 24237342
-- Races: all 24 playable race rosters in the patch 8.1.1 source snapshot
-- Unit data: 24 race CSVs containing 2,000 race-roster rows
-- Skill trees: 500 unique character files containing 521 conditional node sets
-- Technology trees: 104 faction files with 104 active node-set/campaign variants, 6,016 nodes, 1,620 technologies and 306 typed scripted-mechanic occurrences
-- Economy: 104 playable-faction CSVs containing the standardized building catalog
-- Campaign atlas: one Immortal Empires GeoPackage containing 641 regions, 214 provinces, 104 playable starts, effective victory objectives, topology, and battle-map relations
-- Faction mechanics: 24 source-grounded race guides covering all 104 playable factions and bespoke campaign systems omitted from the standardized catalogs
+- Patch: 9.0
+- Steam build: 25507028
+- Races: all 25 playable race rosters in the patch 9.0 source snapshot
+- Unit data: 25 race CSVs containing 2,290 race-roster rows
+- Skill trees: 550 character files containing 575 conditional node sets
+- Technology trees: 109 faction files; counts and interpreted selector boundaries are recorded in the technology manifest
+- Economy: 109 playable-faction CSVs containing the standardized building catalog
+- Campaign atlas: one Immortal Empires GeoPackage containing 644 regions, 215 provinces, 109 playable starts, initial configured victory objectives with explicit lord variants and runtime boundaries, topology, and battle-map relations
+- Faction mechanics: 24 historical 8.1.1 race guides, with explicit 9.0 compatibility notes; bespoke mechanics are not all reaudited
 
 Faction-specific military groups remain inside their parent race dataset. Normalized unit rows carry structured scope, exclusivity, and availability counts; the typed roster lookup preserves exact military-group memberships and faction permissions without storing lists in cells or creating separate faction CSVs.
 
@@ -66,7 +66,7 @@ node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports data/unit_
 node scripts/validate-skill-trees.mjs data/skill_trees/source_exports data/skill_trees
 node scripts/validate-technology-trees.mjs data/technology_trees/source_exports data/technology_trees
 node scripts/validate-economy-dataset.mjs data/economy/source_exports data/economy
-node scripts/validate-campaign-atlas.mjs data/campaign_map/campaign_atlas__wh3__8.1.1.gpkg data/campaign_map
+node scripts/validate-campaign-atlas.mjs data/campaign_map/campaign_atlas__wh3__9.0.gpkg data/campaign_map
 ```
 
 Each validator writes machine-readable and Markdown audit reports into its production dataset directory. A production dataset is ready only when its audit status is `passed` and its error list is empty.
@@ -94,3 +94,5 @@ Do not edit generated CSVs by hand. Stable database keys are the canonical ident
 ## License
 
 Project source code and project-authored documentation are available under the [MIT License](LICENSE). Third-party game content and derived datasets are not relicensed; see [NOTICE.md](NOTICE.md).
+
+The 9.0 migration evidence and changes are in `docs/development/update-9.0/`. The limited refresh covers existing database schemas. New magic-effect integration and expanded campaign systems remain separate work. Read guide compatibility notes before using historical prose.

@@ -1,5 +1,7 @@
 # Ogre Kingdoms campaign systems
 
+> **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
+
 | Field | Value |
 |---|---|
 | Game | Total War: Warhammer III |

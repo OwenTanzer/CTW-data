@@ -58,17 +58,23 @@ def lua_table(text):
 
 
 def extract(args):
+    patch = args.patch
+    build, expected_factions = {"8.1.1": (24237342, 104), "9.0": (25507028, 109)}[patch]
+    map_key = 'wh3_main_combi_map_7' if patch == '9.0' else 'wh3_main_combi_map_5'
     output=Path(args.output);output.mkdir(parents=True,exist_ok=True)
+    if any(output.iterdir()): raise ValueError("Use a fresh evidence directory")
     raw=Path(args.startpos).read_bytes(); e=Esf(raw).decompress()
     model=e.root.child('CAMPAIGN_ENV').child('CAMPAIGN_MODEL')
     map_keys=[n.value() for n in model.child('CAMPAIGN_MAP_DATA').children() if n.tag==15]
-    if 'wh3_main_combi_map_5' not in map_keys:raise ValueError('Wrong map')
+    if map_key not in map_keys:raise ValueError('Wrong map')
     if args.steam_manifest:
         acf=Path(args.steam_manifest).read_text()
-        if not re.search(r'"buildid"\s+"24237342"',acf):raise ValueError('Wrong installed Steam build')
+        if not re.search(r'"buildid"\s+"'+str(build)+r'"',acf):raise ValueError('Wrong installed Steam build')
     else:raise ValueError('Steam manifest is required to verify patch provenance')
     w=model.child('WORLD')
     db=sqlite3.connect(Path(args.atlas).resolve().as_uri()+'?mode=ro',uri=True)
+    metadata=dict(db.execute('select key,value from metadata'))
+    if metadata['patch'] != patch or metadata['steam_build_id'] != str(build): raise ValueError('Atlas snapshot differs from start source')
     playable={r[0] for r in db.execute('select faction_key from factions where playable=1')}
     frontend=Path(args.frontend).read_text(encoding='utf-8-sig')
     leaders={(r['faction'],r['agent_subtype_record']) for r in csv.DictReader((s for s in frontend.splitlines() if not s.startswith('#')),delimiter='\t')}
@@ -126,7 +132,7 @@ def extract(args):
     write_json(output/'movement_script_index.json',movement)
     write_csv(output/'characters.csv',sorted(rows,key=lambda r:(r['faction_key'],r['character_id'])))
     write_csv(output/'settlement_controls.csv',sorted(controls,key=lambda r:r['region_key']))
-    manifest=dict(schema_version=1,patch='8.1.1',steam_build_id=24237342,campaign='wh3_main_combi',map='wh3_main_combi_map_5',
+    manifest=dict(schema_version=1,patch=patch,steam_build_id=build,campaign='wh3_main_combi',map=map_key,
         stage='binary startpos before scripts; human startup relocations separately preserved',
         startpos_sha256=digest(raw),startpos_bytes=len(raw),decompressed_sha256=digest(e.data),
         frontend_sha256=digest(Path(args.frontend).read_bytes()),atlas_sha256=digest(Path(args.atlas).read_bytes()),
@@ -135,7 +141,7 @@ def extract(args):
         coordinate_transform=dict(logical_x_scale=sx,logical_y_scale=sy,odd_x_half_y_offset=True,control_count=len(allcoords),max_residual=error,
                                   evidence_status='analytical fit to all stored logical/world pairs; not movement costs'),
         files={p.name:digest(p.read_bytes()) for p in sorted(output.iterdir()) if p.is_file() and p.name!='source_manifest.json'})
-    if len(playable)!=104 or manifest['primary_generals']!=104:raise ValueError('Playable/primary source discrepancy')
+    if len(playable)!=expected_factions or manifest['primary_generals']!=expected_factions:raise ValueError('Playable/primary source discrepancy')
     write_json(output/'source_manifest.json',manifest)
     print(json.dumps({k:manifest[k] for k in ('factions','primary_generals','characters','force_reverse_checks','script_count')}))
 
@@ -143,4 +149,5 @@ def extract(args):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for name in ('startpos','steam-manifest','atlas','frontend','scripts','output'):p.add_argument('--'+name,required=True)
+    p.add_argument("--patch", choices=["8.1.1", "9.0"], default="8.1.1")
     extract(p.parse_args())

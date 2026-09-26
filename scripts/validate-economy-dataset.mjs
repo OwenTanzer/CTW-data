@@ -1,11 +1,15 @@
+import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { matchesTextFingerprint } from "./validation-text.mjs";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { SKILL_RACES as RACES } from "./dataset-scope.mjs";
+import { buildSnapshot } from "./snapshot-build.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = path.resolve(ROOT, process.argv[2] ?? "data/economy/source_exports");
+const SNAPSHOT = await buildSnapshot(SOURCE);
+const { SKILL_RACES: RACES } = SNAPSHOT.scope;
+const PATCH = SNAPSHOT.context.patch;
 const DATASET = path.resolve(ROOT, process.argv[3] ?? "data/economy");
 const DB = path.join(SOURCE, "db");
 const LOC = path.join(SOURCE, "text", "db");
@@ -50,6 +54,7 @@ const RESOURCE_SUFFIX_TO_KEY = new Map(Object.entries({
 }));
 
 function parseDelimited(text, delimiter) {
+  if (delimiter === "\t") return parseRpfmTsv(text);
   const rows = [];
   let row = [];
   let field = "";
@@ -216,8 +221,8 @@ const playableFactionKeys = [...new Set(frontendLeaders
   .map((row) => row.faction)
   .filter((key) => key && key !== "wh3_prologue_kislev_expedition"))].sort();
 
-if (playableFactionKeys.length !== 104) errors.push(`Expected 104 playable faction keys, found ${playableFactionKeys.length}.`);
-else passes.push("The source frontend roster resolves to exactly 104 non-prologue playable faction keys.");
+if (playableFactionKeys.length !== SNAPSHOT.factionCount) errors.push(`Expected ${SNAPSHOT.factionCount} playable faction keys, found ${playableFactionKeys.length}.`);
+else passes.push(`The source frontend roster resolves to exactly ${SNAPSHOT.factionCount} non-prologue playable faction keys.`);
 
 function matchingVariant(buildingKey, factionKey, subcultureKey, cultureKey) {
   const candidates = (variantsByBuilding.get(buildingKey) ?? [])
@@ -262,7 +267,7 @@ function expectedRowsForFaction(factionKey) {
   return result;
 }
 
-const indexPath = path.join(DATASET, "faction_index__wh3__8.1.1.csv");
+const indexPath = path.join(DATASET, `faction_index__wh3__${PATCH}.csv`);
 const indexText = await readFile(indexPath, "utf8");
 const index = recordsFromText(indexText, ",").records;
 if (index.length !== playableFactionKeys.length) errors.push(`Faction index has ${index.length} rows, expected ${playableFactionKeys.length}.`);
@@ -273,7 +278,7 @@ if (!errors.some((error) => error.includes("Faction index"))) passes.push("The f
 
 const factionCsvPaths = (await walkCsv(path.join(DATASET, "factions"))).sort();
 if (factionCsvPaths.length !== playableFactionKeys.length) errors.push(`Found ${factionCsvPaths.length} faction CSVs, expected ${playableFactionKeys.length}.`);
-else passes.push("All 104 faction economy CSV files are present.");
+else passes.push(`All ${SNAPSHOT.factionCount} faction economy CSV files are present.`);
 
 let totalRows = 0;
 let localizedNameGaps = 0;
@@ -293,7 +298,7 @@ for (const indexRow of index) {
   const expected = expectedRowsForFaction(indexRow.faction_key);
   const observed = new Set();
   for (const row of records) {
-    if (row.game !== "warhammer_3" || row.patch !== "8.1.1" || row.steam_build_id !== "24237342") errors.push(`Context mismatch in ${indexRow.relative_path}: ${row.building_key}`);
+    if (row.game !== "warhammer_3" || row.patch !== PATCH || row.steam_build_id !== SNAPSHOT.context.steam_build_id) errors.push(`Context mismatch in ${indexRow.relative_path}: ${row.building_key}`);
     if (row.faction_key !== indexRow.faction_key || row.race_slug !== indexRow.race_slug) errors.push(`Ownership mismatch in ${indexRow.relative_path}: ${row.building_key}`);
     const key = `${row.campaign_key}\u0000${row.building_key}`;
     if (observed.has(key)) errors.push(`Duplicate faction/building/campaign row in ${indexRow.relative_path}: ${row.building_key}`);
@@ -374,7 +379,7 @@ for (const race of RACES) {
   const sourceCount = playableFactionKeys.filter((key) => factionByKey.get(key)?.subculture === race.subculture_key).length;
   if ((observedRaceCounts.get(race.slug) ?? 0) !== sourceCount) errors.push(`Race faction-count mismatch for ${race.name}.`);
 }
-if (!errors.some((error) => error.includes("Race faction-count"))) passes.push("Faction totals reconcile across all 24 playable races.");
+if (!errors.some((error) => error.includes("Race faction-count"))) passes.push(`Faction totals reconcile across all ${RACES.length} playable races.`);
 
 for (const representative of [
   ["wh_main_emp_empire", "wh_main_emp_industry_basic_1"],

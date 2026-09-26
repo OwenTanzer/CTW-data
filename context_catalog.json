@@ -4,8 +4,8 @@
   "purpose": "Machine-readable context for AI agents answering questions and performing analysis about Total War: WARHAMMER III.",
   "snapshot": {
     "game": "warhammer_3",
-    "patch": "8.1.1",
-    "steam_build_id": 24237342,
+    "patch": "9.0",
+    "steam_build_id": 25507028,
     "unit_scale": "ultra"
   },
   "authority_order": [
@@ -33,10 +33,10 @@
   ],
   "datasets": {
     "units": {
-      "description": "Analysis-ready unit statistics and relational combat lookups for 24 race rosters.",
+      "description": "Unit statistics and relational combat lookups for 25 race rosters (2,290 roster rows). Culture-qualified ability links are conditional.",
       "readme": "data/unit_stats/README.md",
       "manifest": "data/unit_stats/dataset_manifest.json",
-      "schema": "data/unit_stats/schema_inventory__v3.csv",
+      "schema": "data/unit_stats/schema_inventory__v4.csv",
       "validation": "data/unit_stats/audit_report.json",
       "primary_records": "data/unit_stats/normalized/*.csv",
       "lookups": "data/unit_stats/lookups/*.csv",
@@ -44,23 +44,23 @@
       "preferred_access": "Select the race CSV, then join typed lookup rows by stable keys."
     },
     "skill_trees": {
-      "description": "Long-form skill trees for 500 character subtypes, including conditional node sets, prerequisites, locks, and effects.",
+      "description": "Skill trees for 550 distinct character subtypes, including conditional node sets, prerequisites, locks and effects; two reviewed pairs share source tree structures.",
       "readme": "data/skill_trees/README.md",
       "manifest": "data/skill_trees/dataset_manifest.json",
       "schema": "data/skill_trees/schema_inventory__v1.csv",
       "validation": "data/skill_trees/audit_report.json",
-      "index": "data/skill_trees/character_index__wh3__8.1.1.csv",
+      "index": "data/skill_trees/character_index__wh3__9.0.csv",
       "primary_records": "data/skill_trees/characters/<race_slug>/<character>.csv",
       "source_manifest": "data/skill_trees/source_exports/source_manifest.json",
       "preferred_access": "Use the character index to locate one character file, then filter by record_type and node_set_key."
     },
     "economy": {
-      "description": "Standardized building and ordinary economy facts for 104 playable factions.",
+      "description": "Standardized building and ordinary economy facts for 109 playable faction keys.",
       "readme": "data/economy/README.md",
       "manifest": "data/economy/dataset_manifest.json",
       "schema": "data/economy/schema_inventory__v1.csv",
       "validation": "data/economy/audit_report.json",
-      "index": "data/economy/faction_index__wh3__8.1.1.csv",
+      "index": "data/economy/faction_index__wh3__9.0.csv",
       "primary_records": "data/economy/factions/<race_slug>/<faction_key>.csv",
       "source_manifest": "data/economy/source_exports/source_manifest.json",
       "preferred_access": "Use the faction index to locate one faction file; consult faction guides for deliberately omitted bespoke mechanics."
@@ -69,7 +69,7 @@
       "description": "Queryable Immortal Empires geography, starts, objectives, topology, and battle-map relationships.",
       "readme": "data/campaign_map/README.md",
       "validation": "data/campaign_map/validation_report.json",
-      "primary_records": "data/campaign_map/campaign_atlas__wh3__8.1.1.gpkg",
+      "primary_records": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
       "format": "GeoPackage 1.3 / SQLite",
       "preferred_access": "For starting-army questions, query faction_army_start_reference by faction_key and apply campaign_start_partner_overrides for the selected human partner. faction_start_reference describes capitals, not armies. For other atlas questions use the narrow views in the main README; do not scan raw startpos evidence.",
       "starting_positions": {
@@ -80,6 +80,13 @@
         "primary_view": "faction_army_start_reference",
         "partner_overrides": "campaign_start_partner_overrides",
         "scope": "Starting positions only; not the full atlas schema. Raw evidence is for provenance checks, not default lookup."
+      },
+      "objectives": {
+        "manifest": "data/campaign_map/objective_manifest.json",
+        "schema": "data/campaign_map/objective_schema.json",
+        "source_manifest": "data/campaign_map/objective_source_exports/source_manifest.json",
+        "primary_view": "objective_reference",
+        "scope": "Initial single-player configured objectives. Filter variant_key (Vlad/Isabella differ), then read objective_boundaries for runtime dependencies; not complete effective runtime objectives."
       }
     },
     "faction_guides": {
@@ -88,21 +95,26 @@
       "research_spec": "data/faction_guides/RESEARCH_SPEC.md",
       "index": "data/faction_guides/queue.json",
       "primary_records": "data/faction_guides/races/<race_slug>.md",
-      "preferred_access": "Select one race guide. Treat explicit caveats and snapshot boundaries as part of the answer.",
+      "preferred_access": "Read COMPATIBILITY_9.0.md before any historical race guide. Never use unreviewed 8.1.1 mechanics as verified 9.0 facts; current numeric/relational facts belong to the 9.0 databases.",
       "coverage": {
         "race_guides": 24,
         "playable_factions": 104,
-        "status": "complete"
+        "status": "historical_complete_9.0_mechanics_not_fully_reaudited"
       },
-      "validator": "node scripts/faction-guide-queue.mjs validate-all"
+      "validator": "node scripts/faction-guide-queue.mjs validate-all",
+      "snapshot": {
+        "patch": "8.1.1",
+        "steam_build_id": 24237342
+      },
+      "compatibility_notes": "data/faction_guides/COMPATIBILITY_9.0.md"
     },
     "technology_trees": {
-      "description": "Self-contained active research trees for 104 playable factions, with explicit faction overrides, playable campaign variants, costs, effects, unlocks and typed scripted mechanics.",
+      "description": "109 faction technology files with current selectors, nodes, effects and bounded scripted evidence. Nagash has an explicitly empty ordinary technology selector; Black Pyramid progression is outside normalization.",
       "readme": "data/technology_trees/README.md",
       "manifest": "data/technology_trees/dataset_manifest.json",
       "schema": "data/technology_trees/schema_inventory__v2.csv",
       "validation": "data/technology_trees/audit_report.json",
-      "index": "data/technology_trees/faction_index__wh3__8.1.1.csv",
+      "index": "data/technology_trees/faction_index__wh3__9.0.csv",
       "primary_records": "data/technology_trees/factions/<race_slug>/<faction_key>.csv",
       "source_manifest": "data/technology_trees/source_exports/source_manifest.json",
       "script_audit": "data/technology_trees/script_audit.json",
@@ -114,7 +126,7 @@
   },
   "out_of_scope": [
     "Live game state and save files",
-    "Changes after patch 8.1.1 / Steam build 24237342",
+    "Changes after patch 9.0 / Steam build 25507028",
     "Mods unless explicitly represented in a future dataset",
     "Runtime effects that are not exposed by decoded source relations or documented guides"
   ]

@@ -1,3 +1,5 @@
+import { beginSource, finishSource, verifyDecoder } from "./snapshot-source.mjs";
+import { fileURLToPath } from "node:url";
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import path from "node:path";
@@ -6,6 +8,8 @@ import { createHash } from "node:crypto";
 const output = path.resolve(
   process.argv[2] ?? "work/source_technology__wh3__8.1.1",
 );
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const sourceContext = await beginSource(output, root, process.argv[3] ?? "8.1.1");
 // Reusing an existing snapshot could retain files deleted from the game.
 try {
   if ((await readdir(output)).length)
@@ -28,9 +32,9 @@ const version = execFileSync(
   ],
   { encoding: "utf8" },
 ).trim();
-if (build !== "24237342" || version !== "8.1.1.0")
+if (build !== sourceContext.profile.steam_build_id || version !== sourceContext.profile.executable_version)
   throw new Error(
-    `Snapshot mismatch: build ${build}, executable ${version}; require 24237342 / 8.1.1.0.`,
+    `Snapshot mismatch: build ${build}, executable ${version}; require ${sourceContext.profile.steam_build_id} / ${sourceContext.profile.executable_version}.`,
   );
 // Import only after the snapshot gate has passed.
 const { call } = await import("./technology-rpfm.mjs");
@@ -50,6 +54,7 @@ if (
   throw new Error(
     `RPFM path does not match verified install: ${JSON.stringify(configured)}`,
   );
+const decoderEvidence = await verifyDecoder(call, sourceContext);
 const loaded = await call("load_all_ca_pack_files");
 const pack = loaded.StringContainerInfo[0];
 const schema = (await call("get_schema")).Schema;
@@ -139,6 +144,7 @@ async function extract(files, dest = output) {
 }
 await extract(dbPaths.filter((p) => tables.includes(p.split("/")[1])));
 await extract(loc);
+for (const p of dbPaths.filter(p => tables.includes(p.split("/")[1]))) await readFile(path.join(output, p + ".tsv"));
 console.log(
   `Exported ${tables.length} tables and ${loc.length} localization files.`,
 );
@@ -161,7 +167,7 @@ for (const p of scriptPaths) {
   });
 }
 const { compactScripts } = await import("./technology-script-source.mjs");
-const compact = await compactScripts(output, scriptScratch, scan);
+const compact = await compactScripts(output, scriptScratch, scan, sourceContext.profile.patch);
 const selectedSchema = Object.fromEntries(
   tables.map((t) => [t, schema.definitions[t]]),
 );
@@ -203,6 +209,7 @@ async function walk(dir) {
   }
 }
 await walk(output);
+const installationEvidence = await finishSource(sourceContext);
 // Verify again in case Steam updated while extracting.
 if ((await readFile(appManifest, "utf8")) !== manifestText)
   throw new Error(
@@ -213,8 +220,9 @@ await writeFile(
   JSON.stringify(
     {
       game: "warhammer_3",
-      patch: "8.1.1",
-      steam_build_id: "24237342",
+      ...sourceContext.profile,
+      installation_evidence: installationEvidence,
+      decoder_schema_sha256: decoderEvidence.schema_sha256,
       executable_version: version,
       appmanifest_sha256: createHash("sha256")
         .update(manifestText)

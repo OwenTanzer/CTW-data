@@ -16,7 +16,13 @@ export const GAMEPLAY_TREES = {
 export const CHANGELING = "wh3_dlc24_tze_the_deceivers";
 export const CHANGELING_CAMPAIGNS = { wh3_main_chaos: 51, wh3_main_combi: 57 };
 
-export function gameplayTrees(faction, rows, check) {
+export function selectorTrees(patch) {
+  return patch === "9.0" ? { ...GAMEPLAY_TREES,
+    wh3_dlc20_chs_sigvald: ["chs_mil_sigvald", 33],
+    wh3_dlc29_chs_host_of_the_triplets: ["chs_mil_glottkin", 33] } : GAMEPLAY_TREES;
+}
+
+export function gameplayTrees(faction, rows, check, patch = "8.1.1") {
   const sets = rows.filter((r) => r.record_type === "node_set");
   check(
     !(
@@ -25,7 +31,7 @@ export function gameplayTrees(faction, rows, check) {
     ),
     `Override combination: ${faction}`,
   );
-  const expected = GAMEPLAY_TREES[faction];
+  const expected = selectorTrees(patch)[faction];
   if (expected)
     check(
       sets.length === 1 &&
@@ -93,8 +99,8 @@ export function scriptRows(s, p, vr, check) {
 
 export async function validateScriptSource(s, source, output, check) {
   check(
-    s.precedence.schema_version === 2 && s.precedence.overrides.length === 7,
-    "Seven explicit precedence rules",
+    s.precedence.schema_version === 2 && s.precedence.overrides.length === (s.context.patch === "9.0" ? 9 : 7),
+    "Snapshot-specific explicit precedence rules",
   );
   check(
     s.precedence.campaign_variants.length === 2,

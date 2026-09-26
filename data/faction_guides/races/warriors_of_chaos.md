@@ -1,5 +1,7 @@
 # Warriors of Chaos campaign systems
 
+> **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
+
 > **Scope:** *Total War: WARHAMMER III* | patch **8.1.1** | Steam build **24237342**
 >
 > **Race:** Warriors of Chaos | `race_slug=warriors_of_chaos` | **Playable factions:** 8

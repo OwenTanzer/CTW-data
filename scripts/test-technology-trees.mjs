@@ -10,7 +10,8 @@ const dataset = path.resolve(process.argv[3] ?? "data/technology_trees");
 await mkdir("work", { recursive: true });
 const fixture = await mkdtemp(path.resolve("work/technology_mutations_"));
 await cp(dataset, fixture, { recursive: true });
-const indexPath = path.join(fixture, "faction_index__wh3__8.1.1.csv");
+const sourcePatch = JSON.parse(await readFile(path.join(source, "source_manifest.json"), "utf8")).patch;
+const indexPath = path.join(fixture, `faction_index__wh3__${sourcePatch}.csv`);
 const originalIndex = await readFile(indexPath, "utf8");
 const ix = parse(originalIndex);
 const nakai = "wh2_dlc13_lzd_spirits_of_the_jungle",

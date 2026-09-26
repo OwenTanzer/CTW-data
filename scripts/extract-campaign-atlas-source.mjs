@@ -1,3 +1,4 @@
+import { beginSource, verifyDecoder, finishSource } from "./snapshot-source.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -10,6 +11,11 @@ const OUTPUT = path.resolve(ROOT, process.argv[2] ?? "work/source_campaign_atlas
 // This is deliberately broader than the first normalized atlas. The snapshot
 // preserves nearby source relations so later atlas revisions do not require a
 // fresh game extraction merely to add another audited join.
+if (process.argv[3] && process.argv[3] !== "8.1.1" && !process.argv[2]) throw Error("Explicit candidate destination required");
+const sourceContext = await beginSource(OUTPUT, ROOT, process.argv[3] ?? "8.1.1");
+
+const MAP_KEY = sourceContext.profile.patch === "9.0" ? "wh3_main_combi_map_7" : "wh3_main_combi_map_5";
+
 const TABLES = [
   "campaign_map_playable_areas_tables",
   "campaign_map_regions_tables",
@@ -86,11 +92,16 @@ const LOC_FILES = [
 ];
 
 const PACK_FILES = [
-  "campaign_maps/wh3_main_combi_map_5/wh3_main_combi_lookup.tga",
-  "campaign_maps/wh3_main_combi_map_5/prebattle_map.png",
-  "campaign_maps/wh3_main_combi_map_5/camera_heightmap.png",
-  "campaign_maps/wh3_main_combi_map_5/display/borders/borders.pbd",
+  `campaign_maps/${MAP_KEY}/wh3_main_combi_lookup.tga`,
+  `campaign_maps/${MAP_KEY}/prebattle_map.png`,
+  `campaign_maps/${MAP_KEY}/camera_heightmap.png`,
+  `campaign_maps/${MAP_KEY}/display/borders/borders.pbd`,
   "script/campaign/main_warhammer/victory_objectives.lua",
+  ...(sourceContext.profile.patch === "9.0" ? [
+    "script/campaign/main_warhammer/victory_objectives_config.lua",
+    "script/campaign/main_warhammer/victory_objectives_config_utils.lua",
+    "script/campaign/wh3_dlc29_archaon_narrative.lua",
+  ] : []),
 ];
 
 function parseSse(text) {
@@ -140,6 +151,7 @@ async function walkFiles(directory) {
 
 await mkdir(OUTPUT, { recursive: true });
 await call("set_game_selected", { game_name: "warhammer_3", rebuild_dependencies: false });
+const decoderEvidence = await verifyDecoder(call, sourceContext);
 const loaded = await call("load_all_ca_pack_files");
 const packKey = loaded?.StringContainerInfo?.[0];
 if (!packKey) throw new Error("RPFM did not return a key for the merged CA packs.");
@@ -184,6 +196,10 @@ for (const file of PACK_FILES) {
 }
 if (missing.length) throw new Error(`RPFM did not export required files:\n${missing.join("\n")}`);
 
+// RPFM can return raw binary without failing when a table is undecodable.
+const undecoded = (await walkFiles(path.join(OUTPUT, "db"))).filter(file => !file.endsWith(".tsv"));
+if (undecoded.length) throw Error(`Undecoded source tables: ${undecoded.join(", ")}`);
+const installationEvidence = await finishSource(sourceContext);
 const files = (await walkFiles(OUTPUT)).filter((file) => !file.endsWith("source_manifest.json"));
 const manifestFiles = [];
 for (const file of files.sort()) {
@@ -197,9 +213,10 @@ for (const file of files.sort()) {
 await writeFile(path.join(OUTPUT, "source_manifest.json"), `${JSON.stringify({
   game: "warhammer_3",
   campaign: "main_warhammer",
-  patch: "8.1.1",
-  steam_build_id: "24237342",
-  decoder: "RPFM 5.0.6",
+  ...sourceContext.profile,
+  installation_evidence: installationEvidence,
+  decoder_schema_sha256: decoderEvidence.schema_sha256,
+  decoder: "RPFM MCP schema-decoded export; schema identity recorded separately",
   extracted_at_utc: new Date().toISOString(),
   table_folders_requested: [...new Set(TABLES)],
   localisation_files_requested: LOC_FILES,

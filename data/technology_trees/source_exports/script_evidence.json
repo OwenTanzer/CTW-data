@@ -3,14 +3,54 @@
   "whole_lua_files_retained": 0,
   "excerpts": [
     {
-      "evidence_id": "b7b40de5db0e08a55866f364",
+      "evidence_id": "f346ee4c95eff3632c4a8d84",
       "source_file": "script/campaign/_narrative/wh3_narrative_shared_faction_data.lua",
-      "source_sha256": "27d9aa387af7c522efbeb3ced9414de889e7285d08c88a6ffcde576294f169f9",
-      "source_start_line": 534,
-      "source_end_line": 535,
+      "source_sha256": "020a844c8962060f9059ff0158e20eab1d76c539c38813b9a21cbbea5391f0ee",
+      "source_start_line": 535,
+      "source_end_line": 536,
       "role": "no_research_tree",
       "excerpt_sha256": "0c25025caab20f8dd6558622d787c0d2d5b082a1dc5ff38801367184f399daec",
       "text": "\tif faction_key == \"wh3_main_dae_daemon_prince\" then\n\t\tnarrative.add_data_for_faction(faction_key, \"shared_technology_chain_block\", true); -- daemon prince has no technology"
+    },
+    {
+      "evidence_id": "73f5be56a126f9f27d2e5dc0",
+      "source_file": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
+      "source_sha256": "4be50c7b83909508f86e3e658de8e9e6b0038322887a34a28e0bba4701d8e8e0",
+      "source_start_line": 576,
+      "source_end_line": 582,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "595118e2f5062fc376146b9b8f6bdaba5d9317c3ed12fe5e1ace719110f13924",
+      "text": "\n\t\t\t\tcm:spawn_unique_agent(faction:command_queue_index(), \"wh3_dlc29_vmp_handmaiden_imentet\", true);\n\t\t\t\tlocal character = cm:get_most_recently_created_character_of_type(episode_neferata.faction_key, \"engineer\", \"wh3_dlc29_vmp_handmaiden_imentet\");\n\t\t\t\tcm:unlock_technology(episode_neferata.faction_key, \"wh3_dlc29_tech_nef_imentet_1\");\n\t\t\t\tcm:unlock_technology(episode_neferata.faction_key, \"wh3_dlc29_tech_nef_covens_1\");\n\t\t\t\tcm:instantly_research_technology(episode_neferata.faction_key, \"wh3_dlc29_tech_nef_imentet_1\", false);\t\n\t\t\tend"
+    },
+    {
+      "evidence_id": "1a7675bbe958d90d7a53a5f3",
+      "source_file": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
+      "source_sha256": "4be50c7b83909508f86e3e658de8e9e6b0038322887a34a28e0bba4701d8e8e0",
+      "source_start_line": 577,
+      "source_end_line": 583,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "3adab8def397c97097ad07284f8ed3f944a7be7267927c23f39672f0f10cb5d1",
+      "text": "\t\t\t\tcm:spawn_unique_agent(faction:command_queue_index(), \"wh3_dlc29_vmp_handmaiden_imentet\", true);\n\t\t\t\tlocal character = cm:get_most_recently_created_character_of_type(episode_neferata.faction_key, \"engineer\", \"wh3_dlc29_vmp_handmaiden_imentet\");\n\t\t\t\tcm:unlock_technology(episode_neferata.faction_key, \"wh3_dlc29_tech_nef_imentet_1\");\n\t\t\t\tcm:unlock_technology(episode_neferata.faction_key, \"wh3_dlc29_tech_nef_covens_1\");\n\t\t\t\tcm:instantly_research_technology(episode_neferata.faction_key, \"wh3_dlc29_tech_nef_imentet_1\", false);\t\n\t\t\tend\n\t\tend,"
+    },
+    {
+      "evidence_id": "c7cf3317be8dbae163948d40",
+      "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+      "source_sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+      "source_start_line": 1198,
+      "source_end_line": 1204,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "acc443b75e2733fa72a5152ef6a20a5b90f050582c815d942a517be89b2225c5",
+      "text": "\tlocal human_vmp_factions = cm:get_human_factions_of_subculture(\"wh_main_sc_vmp_vampire_counts\")\n\tfor i = 1, #human_vmp_factions do\n\t\tif is_locked then\n\t\t\tcm:lock_technology(human_vmp_factions[i], technology_key)\n\t\telse\n\t\t\tcm:unlock_technology(human_vmp_factions[i], technology_key)\n\t\tend"
+    },
+    {
+      "evidence_id": "80f7e950d4cfb64aa938560e",
+      "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+      "source_sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+      "source_start_line": 1200,
+      "source_end_line": 1206,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "09e7b3289fce78b3dc78f3a221cd243055bd0ca6b9c09530c39c4c27b0894fea",
+      "text": "\t\tif is_locked then\n\t\t\tcm:lock_technology(human_vmp_factions[i], technology_key)\n\t\telse\n\t\t\tcm:unlock_technology(human_vmp_factions[i], technology_key)\n\t\tend\n\tend\nend"
     },
     {
       "evidence_id": "1c0e3494587238f23858aed5",
@@ -361,6 +401,16 @@
       "role": "unmodeled_lock_site",
       "excerpt_sha256": "927a30c24c1a4c0506bad8b4abab0dd8faaf96facfd1df258cb94055cf27166a",
       "text": "\t\t\tfor i = 1, #listener_cache[\"heroes_army\"][2] do\n\t\t\t\tlocal key = cm:get_military_force_by_cqi(listener_cache[\"heroes_army\"][2][i]):faction():name();\n\t\t\t\tif cm:pending_battle_cache_attacker_victory() == true then\n\t\t\t\t\tcm:unlock_technology(key, \"tech_dlc17_bst_the_single_entity_tech\");\n\t\t\t\t\tTech_unlock_notify(key, \"tech_dlc17_bst_the_single_entity_tech\");\n\t\t\t\tend\n\t\t\tend"
+    },
+    {
+      "evidence_id": "caf8c19aa1b5de0fdb350225",
+      "source_file": "script/campaign/wh3_campaign_mutually_exclusive_techs.lua",
+      "source_sha256": "2ab1c73a7e7c48a2b6ebd11172ec0998a9c1a28193f0c92a633f0d50a2ec78c8",
+      "source_start_line": 50,
+      "source_end_line": 56,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "2b02a9fafda54b43f2f245970d44a3038cdf8f98126fa8afadb75f2a326bfffe",
+      "text": "\t\t\t\t\tlocal faction_key = faction:name();\n\n\t\t\t\t\tfor _, tech_to_lock in ipairs(self.hash_tables[tech_key]) do\n\t\t\t\t\t\tcm:lock_technology(faction_key, tech_to_lock);\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\tend"
     },
     {
       "evidence_id": "b4125a6979bcfcbb30abff87",
@@ -1335,7 +1385,7 @@
     {
       "evidence_id": "cdd0b573ac8bb3fa69d5c8b2",
       "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
       "source_start_line": 235,
       "source_end_line": 267,
       "role": "unmodeled_lock_site",
@@ -1345,7 +1395,7 @@
     {
       "evidence_id": "1529480131babd55d66a7064",
       "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
       "source_start_line": 290,
       "source_end_line": 322,
       "role": "unmodeled_lock_site",
@@ -1353,67 +1403,129 @@
       "text": "\t)\n\t\n\tif ostankya_faction_obj:is_human() then\n\t\t-- unlock hex when mission completes\n\t\tcore:add_listener(\n\t\t\t\"hex_unlock_mission\",\n\t\t\t\"MissionSucceeded\",\n\t\t\tfunction(context)\n\t\t\t\treturn context:faction():name() == self.ostankya_faction\n\t\t\tend,\n\t\t\tfunction(context)\n\t\t\t\tlocal mission_key = context:mission():mission_record_key()\n\t\t\t\tlocal unlocked_hex_data = false\n\t\t\t\t\n\t\t\t\t-- lookup the respective hex data\n\t\t\t\tfor hex, data in pairs(self.hex_data) do\n\t\t\t\t\tif data.mission[cm:get_campaign_name()] == mission_key then\n\t\t\t\t\t\tunlocked_hex_data = data\n\t\t\t\t\t\tbreak\n\t\t\t\t\tend\n\t\t\t\tend\n\t\t\t\t\n\t\t\t\tif unlocked_hex_data then\n\t\t\t\t\tlocal faction = context:faction()\n\t\t\t\t\tlocal faction_name = faction:name()\n\t\t\t\t\tlocal count = cm:get_saved_value(\"hexes_unlocked_count\") or 0\n\t\t\t\t\t\n\t\t\t\t\tself:unlock_hex(unlocked_hex_data.hex)\n\t\t\t\t\t\n\t\t\t\t\tcm:unlock_technology(faction_name, unlocked_hex_data.tech)\n\t\t\t\t\t\n\t\t\t\t\tcm:trigger_incident(faction_name, unlocked_hex_data.story_panel, true, true)\n\t\t\t\t\tcount = count + 1"
     },
     {
-      "evidence_id": "fbc90b2d75aeaffd27d79e95",
+      "evidence_id": "db1da20d5acdbe6d2ca3bc92",
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_start_line": 55,
-      "source_end_line": 62,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_start_line": 56,
+      "source_end_line": 63,
       "role": "campaign_rift_map",
       "excerpt_sha256": "ee0079d2c165a5533929f442c627a9f101eaeba117fa1fed1a10cf447c703d81",
       "text": "\t\twh3_main_chaos = {\n\t\t\twh3_dlc24_tech_the_changeling_rift_1_roc = \"wh3_dlc24_the_changeling_rifts_chaos_the_empire_fort_solace\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_2_roc = \"wh3_dlc24_the_changeling_rifts_chaos_kislev\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_4_roc = \"wh3_dlc24_the_changeling_rifts_chaos_darklands\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_10a_roc = \"wh3_dlc24_the_changeling_rifts_chaos_chaos_wastes_cliff_of_beasts\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_8_roc = \"wh3_dlc24_the_changeling_rifts_chaos_grand_cathay\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_10b_roc = \"wh3_dlc24_the_changeling_rifts_chaos_chaos_wastes_the_volary\"\n\t\t},"
     },
     {
-      "evidence_id": "2f34ca3d821da9c04360cefe",
+      "evidence_id": "e540d4ab314f231642044f59",
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_start_line": 63,
-      "source_end_line": 73,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_start_line": 64,
+      "source_end_line": 74,
       "role": "campaign_rift_map",
       "excerpt_sha256": "4a9e33fb46f52a81faeefeff701ec4633e4dd7bbfcb01e6efc885b6e56fbbc7b",
       "text": "\t\tmain_warhammer = {\n\t\t\twh3_dlc24_tech_the_changeling_rift_1 = \"wh3_dlc24_the_changeling_rifts_combi_the_empire_wreckers_point\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_2 = \"wh3_dlc24_the_changeling_rifts_combi_kislev\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_3 = \"wh3_dlc24_the_changeling_rifts_combi_bretonnia\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_4 = \"wh3_dlc24_the_changeling_rifts_combi_darklands\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_5 = \"wh3_dlc24_the_changeling_rifts_combi_southlands\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_6 = \"wh3_dlc24_the_changeling_rifts_combi_naggaroth\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_7 = \"wh3_dlc24_the_changeling_rifts_combi_ulthuan\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_8 = \"wh3_dlc24_the_changeling_rifts_combi_grand_cathay\",\n\t\t\twh3_dlc24_tech_the_changeling_rift_9 = \"wh3_dlc24_the_changeling_rifts_combi_lustria\"\n\t\t}"
     },
     {
-      "evidence_id": "f92f4df973cba02c3a79af68",
+      "evidence_id": "f0a696868e0927b6d01c183f",
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_start_line": 1683,
-      "source_end_line": 1715,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_start_line": 1690,
+      "source_end_line": 1722,
       "role": "unmodeled_lock_site",
-      "excerpt_sha256": "6311c76e3f17e35ef83c7ee0717142ae50a8a1cb621b431af6dfe1d136351377",
-      "text": "\tcult_region_composite_scene = \"wh3_dlc24_campaign_changeling_settlement\",\n\tcult_region_vfx_prefix = \"changeling_cult_\",\n}\n\nfunction the_changeling_features:initialise()\n\n\tself.campaign_name = cm:get_campaign_name()\n\tlocal faction = cm:get_faction(self.faction_key)\n\t\n\tif not faction then return end\n\t\n\tlocal faction_cqi = faction:command_queue_index()\n\n\tif cm:is_new_game() then\n\t\tself:update_victory_conditions_text()\n\n\t\t-- Embed the starting hero into the changeling's army\n\t\tlocal force = faction:faction_leader():military_force()\n\t\tlocal character_list = faction:character_list()\n\t\tfor i = 1,  character_list:num_items() - 1 do\n\t\t\tlocal character = character_list:item_at(i)\n\t\t\tlocal subtype_key = character:character_subtype_key()\n\t\t\tif subtype_key ~= \"wh3_dlc24_tze_the_changeling\" and subtype_key ~= self.cultist_subtype then\n\t\t\t\tcm:embed_agent_in_force(character, force)\n\t\t\tend\n\t\tend\n\n\t\t-- Lock all the script locked techs involving rifts\n\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\tcm:lock_technology(self.faction_key, tech_key)\n\t\tend\n\t\t\n\t\t-- Set the startpos characters to be immune to trespassing"
+      "excerpt_sha256": "12bbd80c01bf9b276aef395884ad21ebf11faa9105225115cd2faf9f42fe5185",
+      "text": "\t},\n\tcult_region_composite_scene = \"wh3_dlc24_campaign_changeling_settlement\",\n\tcult_region_vfx_prefix = \"changeling_cult_\",\n}\n\nfunction the_changeling_features:initialise()\n\n\tself.campaign_name = cm:get_campaign_name()\n\tlocal faction = cm:get_faction(self.faction_key)\n\t\n\tif not faction then return end\n\n\tif cm:is_new_game() then\n\t\tself:set_current_changeling_faction_key(self.faction_key)\n\t\tself:update_victory_conditions_text()\n\n\t\t-- Embed the starting hero into the changeling's army\n\t\tlocal force = faction:faction_leader():military_force()\n\t\tlocal character_list = faction:character_list()\n\t\tfor i = 1,  character_list:num_items() - 1 do\n\t\t\tlocal character = character_list:item_at(i)\n\t\t\tlocal subtype_key = character:character_subtype_key()\n\t\t\tif subtype_key ~= self.changeling_subtype and subtype_key ~= self.cultist_subtype then\n\t\t\t\tcm:embed_agent_in_force(character, force)\n\t\t\tend\n\t\tend\n\n\t\t-- Lock all the script locked techs involving rifts\n\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\tcm:lock_technology(self.faction_key, tech_key)\n\t\tend\n\t\t\n\t\t-- Set the startpos characters to be immune to trespassing"
     },
     {
-      "evidence_id": "b0fa1476b0199fdc98b19ca5",
+      "evidence_id": "75e94fbc9698d6e33e384177",
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_start_line": 1689,
-      "source_end_line": 1712,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_start_line": 1697,
+      "source_end_line": 1719,
       "role": "campaign_runtime_map_selection",
-      "excerpt_sha256": "e38f5a1f99a9c7a313733bb1c7a1b4bff26fb214e967455245517333db5c2f10",
-      "text": "\tself.campaign_name = cm:get_campaign_name()\n\tlocal faction = cm:get_faction(self.faction_key)\n\t\n\tif not faction then return end\n\t\n\tlocal faction_cqi = faction:command_queue_index()\n\n\tif cm:is_new_game() then\n\t\tself:update_victory_conditions_text()\n\n\t\t-- Embed the starting hero into the changeling's army\n\t\tlocal force = faction:faction_leader():military_force()\n\t\tlocal character_list = faction:character_list()\n\t\tfor i = 1,  character_list:num_items() - 1 do\n\t\t\tlocal character = character_list:item_at(i)\n\t\t\tlocal subtype_key = character:character_subtype_key()\n\t\t\tif subtype_key ~= \"wh3_dlc24_tze_the_changeling\" and subtype_key ~= self.cultist_subtype then\n\t\t\t\tcm:embed_agent_in_force(character, force)\n\t\t\tend\n\t\tend\n\n\t\t-- Lock all the script locked techs involving rifts\n\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\tcm:lock_technology(self.faction_key, tech_key)"
+      "excerpt_sha256": "9d8ee45515a3e84940e48b6f204cee5d0738f153ed7f1ca16913f2ff393bb221",
+      "text": "\tself.campaign_name = cm:get_campaign_name()\n\tlocal faction = cm:get_faction(self.faction_key)\n\t\n\tif not faction then return end\n\n\tif cm:is_new_game() then\n\t\tself:set_current_changeling_faction_key(self.faction_key)\n\t\tself:update_victory_conditions_text()\n\n\t\t-- Embed the starting hero into the changeling's army\n\t\tlocal force = faction:faction_leader():military_force()\n\t\tlocal character_list = faction:character_list()\n\t\tfor i = 1,  character_list:num_items() - 1 do\n\t\t\tlocal character = character_list:item_at(i)\n\t\t\tlocal subtype_key = character:character_subtype_key()\n\t\t\tif subtype_key ~= self.changeling_subtype and subtype_key ~= self.cultist_subtype then\n\t\t\t\tcm:embed_agent_in_force(character, force)\n\t\t\tend\n\t\tend\n\n\t\t-- Lock all the script locked techs involving rifts\n\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\tcm:lock_technology(self.faction_key, tech_key)"
     },
     {
-      "evidence_id": "96291475b8e352ccbac6c3dd",
+      "evidence_id": "90f0c1a9cc05c8b5e6129a4e",
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_start_line": 2366,
-      "source_end_line": 2398,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_start_line": 2384,
+      "source_end_line": 2416,
       "role": "unmodeled_lock_site",
       "excerpt_sha256": "57f608dee415ff9ea2530fe238f7b9953f11d8eda17aaa92b7223155a4d9e98b",
       "text": "\t\t\t\t\tlocal player_free_forms = self.formless_horror.player_free_forms\n\t\t\t\t\tlocal turn_1_free_form = player_free_forms[cm:random_number(#player_free_forms)]\n\t\t\t\t\tself:grant_formless_horror_form(turn_1_free_form)\n\t\t\t\tend\n\t\t\t\t\n\t\t\t\tif string.match(mission_key, \"mission_schemes\") then\n\n\t\t\t\t\t-- Grant rift gems as a scheme reward\n\t\t\t\t\tif self.schemes.rift_gem_missions[mission_key] then\n\t\t\t\t\t\tcm:faction_add_pooled_resource(self.faction_key, \"wh3_dlc24_tze_rift_gems\", \"schemes\", 1)\n\t\t\t\t\tend\n\n\t\t\t\t\t-- Grant hidden cultists as a scheme reward\n\t\t\t\t\tif self.schemes.hidden_cultist_missions[mission_key] then\n\t\t\t\t\t\tcm:faction_add_pooled_resource(self.faction_key, \"wh3_dlc24_tze_hidden_cultists\", \"schemes\", 1)\n\t\t\t\t\tend\n\t\t\t\t\t\n\t\t\t\t\t-- Initial rift scheme in sylvania which grants a rift gem and opens the first rift\n\t\t\t\t\tif mission_key == \"wh3_dlc24_mission_schemes_the_empire_minor_2\" then\n\t\t\t\t\t\tif self.campaign_name == \"main_warhammer\" then\n\t\t\t\t\t\t\tself:open_rift(\"wh3_dlc24_the_changeling_rifts_combi_the_empire_castle_drakenhof\")\n\t\t\t\t\t\telseif self.campaign_name == \"wh3_main_chaos\" then\n\t\t\t\t\t\t\tself:open_rift(\"wh3_dlc24_the_changeling_rifts_chaos_the_empire_castle_drakenhof\")\n\t\t\t\t\t\tend\n\t\t\t\t\t\tlocal tech_unlocked = cm:get_saved_value(\"the_changeling_rift_tech_unlock\") or false\n\t\t\t\t\t\tif not tech_unlocked then\n\t\t\t\t\t\t\tcm:set_saved_value(\"the_changeling_rift_tech_unlock\", true)\n\t\t\t\t\t\t\tcore:remove_listener(\"the_changeling_rift_tech_unlock\")\n\t\t\t\t\t\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\t\t\t\t\t\tcm:unlock_technology(self.faction_key, tech_key)\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend\n\t\t\t\t\tend"
     },
     {
-      "evidence_id": "9c212a77a5faeea66f7178fe",
+      "evidence_id": "bd10a694e8aecb3a65dbc3f4",
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_start_line": 2553,
-      "source_end_line": 2585,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_start_line": 2571,
+      "source_end_line": 2603,
       "role": "unmodeled_lock_site",
       "excerpt_sha256": "8f910ab7c1f81d138b942209a85b3b3f68e9adf62d0168f9f8e4021713a563d3",
       "text": "\t\t\t\t\t\t\t\t\tcm:trigger_mission(self.faction_key, quest_battle, true)\n\t\t\t\t\t\t\t\tend\n\t\t\t\t\t\t\t\tbreak\n\t\t\t\t\t\t\tend\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\n\t\t\t\t\tself.schemes.schemes_complete[mission_key] = true\n\t\t\t\t\tcm:set_saved_value(\"the_changeling_schemes_complete\", self.schemes.schemes_complete)\n\t\t\t\tend\n\n\t\t\tend,\n\t\t\ttrue\n\t\t)\n\n\t\t-- Listener for the rift tech unlocks when the player has 2 rift gems\n\t\tlocal tech_unlocked = cm:get_saved_value(\"the_changeling_rift_tech_unlock\") or false\n\t\tif not tech_unlocked then\n\t\t\tcore:add_listener(\n\t\t\t\t\"the_changeling_rift_tech_unlock\",\n\t\t\t\t\"PooledResourceChanged\",\n\t\t\t\tfunction(context)\n\t\t\t\t\treturn context:resource():key() == \"wh3_dlc24_tze_rift_gems\" and context:resource():value() >= 2 and context:faction():name() == self.faction_key\n\t\t\t\tend,\n\t\t\t\tfunction()\n\t\t\t\t\tlocal tech_unlock = cm:get_saved_value(\"the_changeling_rift_tech_unlock\") or false\n\t\t\t\t\tif not tech_unlock then\n\t\t\t\t\t\tcm:set_saved_value(\"the_changeling_rift_tech_unlock\", true)\n\t\t\t\t\t\tfor tech_key, _ in pairs(self.rift_regions[self.campaign_name]) do\n\t\t\t\t\t\t\tcm:unlock_technology(self.faction_key, tech_key)\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\tend,"
+    },
+    {
+      "evidence_id": "ea243eafb14d27191ee17efa",
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_start_line": 238,
+      "source_end_line": 244,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "3d0f2d8dd4f18150a19e312a4e6279df097ea4adeae82584edcf69de58228350",
+      "text": "\t\t\t\t\t\tcm:update_technology_unlock_progress_values(faction_key, tech_to_unlock.key, {self.faction_lairs_awakened[faction_key]});\n\n\t\t\t\t\t\tif self.faction_lairs_awakened[faction_key] >= tech_to_unlock.lairs then\n\t\t\t\t\t\t\tcm:unlock_technology(faction_key, tech_to_unlock.key);\n\t\t\t\t\t\tend\n\t\t\t\t\tend\n\t\t\t\t\tbreak;"
+    },
+    {
+      "evidence_id": "c7ab7be979bfb2c0f3ce8627",
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_start_line": 346,
+      "source_end_line": 352,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "a00ce071a770ee0c130b859584971992b45e7a352b6ee8d9ff4f862104482de2",
+      "text": "\t\t\t\t\t\tself.final_tech_unlock_count[faction_key] = self.final_tech_unlock_count[faction_key] + 1;\n\n\t\t\t\t\t\tfor _, tech_to_lock in ipairs(self.locked_final_techs) do\n\t\t\t\t\t\t\tcm:unlock_technology(faction_key, tech_to_lock);\n\t\t\t\t\t\tend\n\t\t\t\t\t\t\n\t\t\t\t\t\t-- This tech also gives free Bloodline unlock"
+    },
+    {
+      "evidence_id": "f5a5d59398974b5e742136c6",
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_start_line": 873,
+      "source_end_line": 879,
+      "role": "unmodeled_lock_site",
+      "excerpt_sha256": "0aa9d67fe0c0caf0117b4604490e7902f46e5d0daad2b2b34ab689e0b4f64d32",
+      "text": "\t\t\t\tcm:update_technology_unlock_progress_values(faction_key, tech_to_unlock.key, {tech_to_unlock.corpses, total_corpses});\n\t\t\t\t\n\t\t\t\tif total_corpses >= tech_to_unlock.corpses then\n\t\t\t\t\tcm:unlock_technology(faction_key, tech_to_unlock.key);\n\t\t\t\tend\n\t\t\tend\n\t\t\tbreak;"
     }
   ],
   "unmodeled_lock_sites": [
+    {
+      "source_file": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
+      "source_sha256": "4be50c7b83909508f86e3e658de8e9e6b0038322887a34a28e0bba4701d8e8e0",
+      "source_line": 579,
+      "operation": "unlock_technology",
+      "evidence_id": "73f5be56a126f9f27d2e5dc0",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
+      "source_sha256": "4be50c7b83909508f86e3e658de8e9e6b0038322887a34a28e0bba4701d8e8e0",
+      "source_line": 580,
+      "operation": "unlock_technology",
+      "evidence_id": "1a7675bbe958d90d7a53a5f3",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+      "source_sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+      "source_line": 1201,
+      "operation": "lock_technology",
+      "evidence_id": "c7cf3317be8dbae163948d40",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+      "source_sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+      "source_line": 1203,
+      "operation": "unlock_technology",
+      "evidence_id": "80f7e950d4cfb64aa938560e",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
     {
       "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
       "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
@@ -1655,8 +1767,16 @@
       "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
+      "source_file": "script/campaign/wh3_campaign_mutually_exclusive_techs.lua",
+      "source_sha256": "2ab1c73a7e7c48a2b6ebd11172ec0998a9c1a28193f0c92a633f0d50a2ec78c8",
+      "source_line": 53,
+      "operation": "lock_technology",
+      "evidence_id": "caf8c19aa1b5de0fdb350225",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
       "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
       "source_line": 264,
       "operation": "lock_technology",
       "evidence_id": "cdd0b573ac8bb3fa69d5c8b2",
@@ -1664,7 +1784,7 @@
     },
     {
       "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
       "source_line": 319,
       "operation": "unlock_technology",
       "evidence_id": "1529480131babd55d66a7064",
@@ -1672,28 +1792,52 @@
     },
     {
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_line": 1712,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_line": 1719,
       "operation": "lock_technology",
-      "evidence_id": "f92f4df973cba02c3a79af68",
+      "evidence_id": "f0a696868e0927b6d01c183f",
       "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
     },
     {
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_line": 2395,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_line": 2413,
       "operation": "unlock_technology",
-      "evidence_id": "96291475b8e352ccbac6c3dd",
+      "evidence_id": "90f0c1a9cc05c8b5e6129a4e",
       "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
     },
     {
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_line": 2582,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_line": 2600,
       "operation": "unlock_technology",
-      "evidence_id": "9c212a77a5faeea66f7178fe",
+      "evidence_id": "bd10a694e8aecb3a65dbc3f4",
       "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_line": 241,
+      "operation": "unlock_technology",
+      "evidence_id": "ea243eafb14d27191ee17efa",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_line": 349,
+      "operation": "unlock_technology",
+      "evidence_id": "c7ab7be979bfb2c0f3ce8627",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_line": 876,
+      "operation": "unlock_technology",
+      "evidence_id": "f5a5d59398974b5e742136c6",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
     }
   ],
-  "no_research_tree_evidence_id": "b7b40de5db0e08a55866f364"
+  "no_research_tree_evidence_id": "f346ee4c95eff3632c4a8d84"
 }

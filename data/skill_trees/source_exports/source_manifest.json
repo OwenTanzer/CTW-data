@@ -1,9 +1,1378 @@
 {
   "game": "warhammer_3",
-  "patch": "8.1.1",
-  "steam_build_id": "24237342",
-  "decoder": "RPFM 5.0.6",
-  "extracted_at_utc": "2026-08-25T01:20:14.549Z",
+  "patch": "9.0",
+  "steam_build_id": "25507028",
+  "executable_version": "9.0.0.0",
+  "installation_evidence": {
+    "game": "warhammer_3",
+    "patch": "9.0",
+    "steam_build_id": "25507028",
+    "executable_version": "9.0.0.0",
+    "installation": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Total War WARHAMMER III",
+    "appmanifest_sha256": "89cdf67fd3c704e0363375583bf90152d6870f3535e7f2ac9a855f938cc9325b",
+    "executable_sha256": "fa06fa719e68eabd0522091cace8f750d4e5ef46346ccdc86b0a7a3bdb682d97",
+    "pack_inventory": [
+      {
+        "name": "anim.pack",
+        "bytes": 1169337412,
+        "modified_ms": 1790258330406.7722
+      },
+      {
+        "name": "anim2.pack",
+        "bytes": 752099577,
+        "modified_ms": 1790258330409.1829
+      },
+      {
+        "name": "anim_3.pack",
+        "bytes": 78528327,
+        "modified_ms": 1790258330410.195
+      },
+      {
+        "name": "audio_base.pack",
+        "bytes": 5721032969,
+        "modified_ms": 1790258330418.192
+      },
+      {
+        "name": "audio_base_bnk.pack",
+        "bytes": 50613813,
+        "modified_ms": 1790258330420.2112
+      },
+      {
+        "name": "audio_base_m.pack",
+        "bytes": 3299404114,
+        "modified_ms": 1790258330422.2012
+      },
+      {
+        "name": "audio_cn.pack",
+        "bytes": 203226096,
+        "modified_ms": 1784912663777.8394
+      },
+      {
+        "name": "audio_cn_bnk.pack",
+        "bytes": 31110753,
+        "modified_ms": 1790258330423.2039
+      },
+      {
+        "name": "audio_en.pack",
+        "bytes": 4913267327,
+        "modified_ms": 1790258330424.5813
+      },
+      {
+        "name": "audio_en_bnk.pack",
+        "bytes": 31113321,
+        "modified_ms": 1790258330425.603
+      },
+      {
+        "name": "audio_fr.pack",
+        "bytes": 236441146,
+        "modified_ms": 1784912663783.8306
+      },
+      {
+        "name": "audio_fr_bnk.pack",
+        "bytes": 31115265,
+        "modified_ms": 1790258330426.6113
+      },
+      {
+        "name": "audio_ge.pack",
+        "bytes": 249493143,
+        "modified_ms": 1784912663786.2424
+      },
+      {
+        "name": "audio_ge_bnk.pack",
+        "bytes": 31110081,
+        "modified_ms": 1790258330429.6003
+      },
+      {
+        "name": "audio_it.pack",
+        "bytes": 269926213,
+        "modified_ms": 1784912663789.3914
+      },
+      {
+        "name": "audio_it_bnk.pack",
+        "bytes": 31110729,
+        "modified_ms": 1790258330430.5984
+      },
+      {
+        "name": "audio_pl.pack",
+        "bytes": 248363017,
+        "modified_ms": 1784912663792.385
+      },
+      {
+        "name": "audio_pl_bnk.pack",
+        "bytes": 31110081,
+        "modified_ms": 1790258330432.7268
+      },
+      {
+        "name": "audio_ru.pack",
+        "bytes": 260482050,
+        "modified_ms": 1784912663797.384
+      },
+      {
+        "name": "audio_ru_bnk.pack",
+        "bytes": 31110729,
+        "modified_ms": 1790258330434.7654
+      },
+      {
+        "name": "audio_sp.pack",
+        "bytes": 274520201,
+        "modified_ms": 1784912663800.898
+      },
+      {
+        "name": "audio_sp_bnk.pack",
+        "bytes": 31115315,
+        "modified_ms": 1790258330435.7695
+      },
+      {
+        "name": "boot.pack",
+        "bytes": 42859,
+        "modified_ms": 1790258681233.17
+      },
+      {
+        "name": "commontextures.pack",
+        "bytes": 112712764,
+        "modified_ms": 1790258330444.146
+      },
+      {
+        "name": "data.pack",
+        "bytes": 429548936,
+        "modified_ms": 1790258330445.12
+      },
+      {
+        "name": "data_3.pack",
+        "bytes": 3751,
+        "modified_ms": 1790258429146.0225
+      },
+      {
+        "name": "data_bl.pack",
+        "bytes": 939113,
+        "modified_ms": 1790258330584.0288
+      },
+      {
+        "name": "data_maps.pack",
+        "bytes": 458048611,
+        "modified_ms": 1790258330446.118
+      },
+      {
+        "name": "data_script.pack",
+        "bytes": 13892838,
+        "modified_ms": 1790258330447.1348
+      },
+      {
+        "name": "db.pack",
+        "bytes": 8658678,
+        "modified_ms": 1790258330449.1343
+      },
+      {
+        "name": "local_br.pack",
+        "bytes": 34558271,
+        "modified_ms": 1790258330451.1318
+      },
+      {
+        "name": "local_cn.pack",
+        "bytes": 30941531,
+        "modified_ms": 1790258330451.1318
+      },
+      {
+        "name": "local_cz.pack",
+        "bytes": 32264336,
+        "modified_ms": 1790258330452.1196
+      },
+      {
+        "name": "local_en.pack",
+        "bytes": 33433925,
+        "modified_ms": 1790258330454.1333
+      },
+      {
+        "name": "local_fr.pack",
+        "bytes": 34520859,
+        "modified_ms": 1790258330456.133
+      },
+      {
+        "name": "local_ge.pack",
+        "bytes": 33832818,
+        "modified_ms": 1790258330458.132
+      },
+      {
+        "name": "local_it.pack",
+        "bytes": 34412413,
+        "modified_ms": 1790258330459.1206
+      },
+      {
+        "name": "local_kr.pack",
+        "bytes": 27576560,
+        "modified_ms": 1790258330460.1172
+      },
+      {
+        "name": "local_pl.pack",
+        "bytes": 34070714,
+        "modified_ms": 1790258330462.1338
+      },
+      {
+        "name": "local_ru.pack",
+        "bytes": 36329407,
+        "modified_ms": 1790258330464.1333
+      },
+      {
+        "name": "local_sp.pack",
+        "bytes": 35399355,
+        "modified_ms": 1790258330466.1472
+      },
+      {
+        "name": "local_tr.pack",
+        "bytes": 27521612,
+        "modified_ms": 1790258330467.1458
+      },
+      {
+        "name": "local_zh.pack",
+        "bytes": 31418083,
+        "modified_ms": 1790258330469.1624
+      },
+      {
+        "name": "models.pack",
+        "bytes": 2009031,
+        "modified_ms": 1790258330471.1611
+      },
+      {
+        "name": "models2.pack",
+        "bytes": 1077545203,
+        "modified_ms": 1790258330472.149
+      },
+      {
+        "name": "models2_dds.pack",
+        "bytes": 722198108,
+        "modified_ms": 1790258330479.671
+      },
+      {
+        "name": "models2a_dds.pack",
+        "bytes": 903381548,
+        "modified_ms": 1790258330473.149
+      },
+      {
+        "name": "models2b_dds.pack",
+        "bytes": 896098564,
+        "modified_ms": 1790258330475.1448
+      },
+      {
+        "name": "models2c_dds.pack",
+        "bytes": 800170326,
+        "modified_ms": 1790258330477.1445
+      },
+      {
+        "name": "models2d_dds.pack",
+        "bytes": 839684551,
+        "modified_ms": 1790258330478.16
+      },
+      {
+        "name": "models2e_dds.pack",
+        "bytes": 580892593,
+        "modified_ms": 1790258330478.16
+      },
+      {
+        "name": "models3.pack",
+        "bytes": 1390654572,
+        "modified_ms": 1790258330481.309
+      },
+      {
+        "name": "models3_dds.pack",
+        "bytes": 756868281,
+        "modified_ms": 1790258330489.2058
+      },
+      {
+        "name": "models3a_dds.pack",
+        "bytes": 819696029,
+        "modified_ms": 1784912663888.5166
+      },
+      {
+        "name": "models3b_dds.pack",
+        "bytes": 802501332,
+        "modified_ms": 1790258330483.6887
+      },
+      {
+        "name": "models3c_dds.pack",
+        "bytes": 554814123,
+        "modified_ms": 1784912663893.5247
+      },
+      {
+        "name": "models3d_dds.pack",
+        "bytes": 727208451,
+        "modified_ms": 1790258330485.181
+      },
+      {
+        "name": "models3e_dds.pack",
+        "bytes": 665113429,
+        "modified_ms": 1784912663897.9595
+      },
+      {
+        "name": "models3f_dds.pack",
+        "bytes": 652112509,
+        "modified_ms": 1790258330487.2107
+      },
+      {
+        "name": "models4.pack",
+        "bytes": 212951157,
+        "modified_ms": 1790258330490.2107
+      },
+      {
+        "name": "models4_dds.pack",
+        "bytes": 760772785,
+        "modified_ms": 1790258330492.2087
+      },
+      {
+        "name": "models5.pack",
+        "bytes": 54099,
+        "modified_ms": 1790258439015.591
+      },
+      {
+        "name": "models5_dds.pack",
+        "bytes": 372999021,
+        "modified_ms": 1790258330493.1987
+      },
+      {
+        "name": "models_dds.pack",
+        "bytes": 70377951,
+        "modified_ms": 1790258330495.2095
+      },
+      {
+        "name": "models_other.pack",
+        "bytes": 459804038,
+        "modified_ms": 1790258330497.2043
+      },
+      {
+        "name": "movies.pack",
+        "bytes": 955795086,
+        "modified_ms": 1784912663910.2878
+      },
+      {
+        "name": "movies_champions.pack",
+        "bytes": 374821068,
+        "modified_ms": 1784912663912.3665
+      },
+      {
+        "name": "movies_chd.pack",
+        "bytes": 650854512,
+        "modified_ms": 1784912663913.3833
+      },
+      {
+        "name": "movies_cth.pack",
+        "bytes": 345207447,
+        "modified_ms": 1784912663914.368
+      },
+      {
+        "name": "movies_dae.pack",
+        "bytes": 181894883,
+        "modified_ms": 1784912663915.4092
+      },
+      {
+        "name": "movies_dwf.pack",
+        "bytes": 68119062,
+        "modified_ms": 1784912663916.4272
+      },
+      {
+        "name": "movies_emp.pack",
+        "bytes": 82091668,
+        "modified_ms": 1784912663917.4202
+      },
+      {
+        "name": "movies_end.pack",
+        "bytes": 540036284,
+        "modified_ms": 1790258330499.2046
+      },
+      {
+        "name": "movies_ev.pack",
+        "bytes": 740601151,
+        "modified_ms": 1790258330500.1992
+      },
+      {
+        "name": "movies_front.pack",
+        "bytes": 652356268,
+        "modified_ms": 1790258330500.1992
+      },
+      {
+        "name": "movies_grn.pack",
+        "bytes": 37465733,
+        "modified_ms": 1784912663923.4263
+      },
+      {
+        "name": "movies_kho.pack",
+        "bytes": 210271490,
+        "modified_ms": 1784912663925.4158
+      },
+      {
+        "name": "movies_ksl.pack",
+        "bytes": 684384623,
+        "modified_ms": 1784912663927.4165
+      },
+      {
+        "name": "movies_nur.pack",
+        "bytes": 261354701,
+        "modified_ms": 1784912663929.4329
+      },
+      {
+        "name": "movies_ogr.pack",
+        "bytes": 295146962,
+        "modified_ms": 1784912663931.4177
+      },
+      {
+        "name": "movies_prologue.pack",
+        "bytes": 425837543,
+        "modified_ms": 1784912663933.431
+      },
+      {
+        "name": "movies_sla.pack",
+        "bytes": 221528932,
+        "modified_ms": 1784912663934.4172
+      },
+      {
+        "name": "movies_spell.pack",
+        "bytes": 347466139,
+        "modified_ms": 1790258330502.2056
+      },
+      {
+        "name": "movies_tze.pack",
+        "bytes": 243248217,
+        "modified_ms": 1784912663936.4465
+      },
+      {
+        "name": "movies_wh3.pack",
+        "bytes": 948652095,
+        "modified_ms": 1784912663937.4197
+      },
+      {
+        "name": "shaders.pack",
+        "bytes": 127886058,
+        "modified_ms": 1790258330504.2048
+      },
+      {
+        "name": "shaders_bl.pack",
+        "bytes": 54795000,
+        "modified_ms": 1790258330585.0515
+      },
+      {
+        "name": "skyboxes.pack",
+        "bytes": 1730317492,
+        "modified_ms": 1790258330505.209
+      },
+      {
+        "name": "tcamp.pack",
+        "bytes": 725816556,
+        "modified_ms": 1790258330506.2056
+      },
+      {
+        "name": "terrain.pack",
+        "bytes": 840183723,
+        "modified_ms": 1790258330507.1982
+      },
+      {
+        "name": "terrain11.pack",
+        "bytes": 370770997,
+        "modified_ms": 1784912663944.436
+      },
+      {
+        "name": "terrain13.pack",
+        "bytes": 44658330,
+        "modified_ms": 1790258330508.2078
+      },
+      {
+        "name": "terrain2.pack",
+        "bytes": 3824236,
+        "modified_ms": 1790258330510.2043
+      },
+      {
+        "name": "terrain3.pack",
+        "bytes": 460734879,
+        "modified_ms": 1784912663946.4175
+      },
+      {
+        "name": "terrain4.pack",
+        "bytes": 347146537,
+        "modified_ms": 1784912663948.417
+      },
+      {
+        "name": "terrain5.pack",
+        "bytes": 264728011,
+        "modified_ms": 1790258330512.2031
+      },
+      {
+        "name": "terrain6.pack",
+        "bytes": 483795484,
+        "modified_ms": 1790258330514.1975
+      },
+      {
+        "name": "terrain7.pack",
+        "bytes": 343645114,
+        "modified_ms": 1784912663950.4326
+      },
+      {
+        "name": "terrain8.pack",
+        "bytes": 442134929,
+        "modified_ms": 1784912663951.431
+      },
+      {
+        "name": "terrain9.pack",
+        "bytes": 368710973,
+        "modified_ms": 1790258330514.1975
+      },
+      {
+        "name": "terrain_camp.pack",
+        "bytes": 964428975,
+        "modified_ms": 1790258330517.2095
+      },
+      {
+        "name": "terrain_camp_models.pack",
+        "bytes": 14012139,
+        "modified_ms": 1790258330519.2087
+      },
+      {
+        "name": "terrain_textures1.pack",
+        "bytes": 445088093,
+        "modified_ms": 1784912663956.4182
+      },
+      {
+        "name": "terrain_textures2.pack",
+        "bytes": 488505504,
+        "modified_ms": 1784912663957.4397
+      },
+      {
+        "name": "terrain_textures3.pack",
+        "bytes": 714220480,
+        "modified_ms": 1784912663958.4316
+      },
+      {
+        "name": "terrain_textures4.pack",
+        "bytes": 614530031,
+        "modified_ms": 1784912663959.4321
+      },
+      {
+        "name": "terrain_textures5.pack",
+        "bytes": 817246041,
+        "modified_ms": 1784912663961.418
+      },
+      {
+        "name": "terrain_textures6.pack",
+        "bytes": 135866406,
+        "modified_ms": 1790258330520.2087
+      },
+      {
+        "name": "terrainb.pack",
+        "bytes": 133683969,
+        "modified_ms": 1790258330516.208
+      },
+      {
+        "name": "tile001.pack",
+        "bytes": 499029270,
+        "modified_ms": 1784912663963.4204
+      },
+      {
+        "name": "tile002.pack",
+        "bytes": 170275062,
+        "modified_ms": 1784912663964.4187
+      },
+      {
+        "name": "tile003.pack",
+        "bytes": 167950391,
+        "modified_ms": 1784912663965.4194
+      },
+      {
+        "name": "tile004.pack",
+        "bytes": 171961883,
+        "modified_ms": 1784912663966.4326
+      },
+      {
+        "name": "tile005.pack",
+        "bytes": 151396657,
+        "modified_ms": 1784912663967.4326
+      },
+      {
+        "name": "tile006.pack",
+        "bytes": 25505038,
+        "modified_ms": 1784912663968.4321
+      },
+      {
+        "name": "tile007.pack",
+        "bytes": 157411264,
+        "modified_ms": 1784912663970.4165
+      },
+      {
+        "name": "tile008.pack",
+        "bytes": 180533685,
+        "modified_ms": 1784912663971.418
+      },
+      {
+        "name": "tile009.pack",
+        "bytes": 474156035,
+        "modified_ms": 1784912663973.418
+      },
+      {
+        "name": "tile010.pack",
+        "bytes": 203119958,
+        "modified_ms": 1784912663974.4163
+      },
+      {
+        "name": "tile011.pack",
+        "bytes": 26046602,
+        "modified_ms": 1784912663976.4165
+      },
+      {
+        "name": "tile012.pack",
+        "bytes": 156697742,
+        "modified_ms": 1784912663977.4175
+      },
+      {
+        "name": "tile013.pack",
+        "bytes": 149504419,
+        "modified_ms": 1784912663979.416
+      },
+      {
+        "name": "tile014.pack",
+        "bytes": 28662893,
+        "modified_ms": 1784912663981.4207
+      },
+      {
+        "name": "tile015.pack",
+        "bytes": 114528295,
+        "modified_ms": 1784912663982.4312
+      },
+      {
+        "name": "tile016.pack",
+        "bytes": 163231242,
+        "modified_ms": 1784912663984.5823
+      },
+      {
+        "name": "tile017.pack",
+        "bytes": 24373479,
+        "modified_ms": 1784912663986.6172
+      },
+      {
+        "name": "tile018.pack",
+        "bytes": 98784881,
+        "modified_ms": 1784912663988.5862
+      },
+      {
+        "name": "tile019.pack",
+        "bytes": 173491848,
+        "modified_ms": 1784912663989.6123
+      },
+      {
+        "name": "tile020.pack",
+        "bytes": 169410582,
+        "modified_ms": 1784912663990.6035
+      },
+      {
+        "name": "tile021.pack",
+        "bytes": 195405255,
+        "modified_ms": 1784912663992.5867
+      },
+      {
+        "name": "tile022.pack",
+        "bytes": 43409813,
+        "modified_ms": 1784912663993.5874
+      },
+      {
+        "name": "tile023.pack",
+        "bytes": 188074000,
+        "modified_ms": 1784912663995.6023
+      },
+      {
+        "name": "tile024.pack",
+        "bytes": 137841151,
+        "modified_ms": 1784912663996.587
+      },
+      {
+        "name": "tile025.pack",
+        "bytes": 168636814,
+        "modified_ms": 1784912663997.6133
+      },
+      {
+        "name": "tile026.pack",
+        "bytes": 158053821,
+        "modified_ms": 1784912663998.5903
+      },
+      {
+        "name": "tile027.pack",
+        "bytes": 149281736,
+        "modified_ms": 1784912663999.5874
+      },
+      {
+        "name": "tile028.pack",
+        "bytes": 171148764,
+        "modified_ms": 1784912664000.6174
+      },
+      {
+        "name": "tile029.pack",
+        "bytes": 150985984,
+        "modified_ms": 1784912664002.798
+      },
+      {
+        "name": "tile030.pack",
+        "bytes": 199066647,
+        "modified_ms": 1784912664002.798
+      },
+      {
+        "name": "tile031.pack",
+        "bytes": 162973048,
+        "modified_ms": 1784912664003.798
+      },
+      {
+        "name": "tile032.pack",
+        "bytes": 144519175,
+        "modified_ms": 1784912664004.7988
+      },
+      {
+        "name": "tile033.pack",
+        "bytes": 132620218,
+        "modified_ms": 1784912664006.8142
+      },
+      {
+        "name": "tile034.pack",
+        "bytes": 151312907,
+        "modified_ms": 1784912664007.8137
+      },
+      {
+        "name": "tile035.pack",
+        "bytes": 159112581,
+        "modified_ms": 1784912664008.7993
+      },
+      {
+        "name": "tile036.pack",
+        "bytes": 200850941,
+        "modified_ms": 1790258330521.1975
+      },
+      {
+        "name": "tile037.pack",
+        "bytes": 154962905,
+        "modified_ms": 1784912664010.7998
+      },
+      {
+        "name": "tile038.pack",
+        "bytes": 194694331,
+        "modified_ms": 1784912664012.2024
+      },
+      {
+        "name": "tile039.pack",
+        "bytes": 167629723,
+        "modified_ms": 1784912664013.2156
+      },
+      {
+        "name": "tile040.pack",
+        "bytes": 168689264,
+        "modified_ms": 1784912664015.4392
+      },
+      {
+        "name": "tile041.pack",
+        "bytes": 137965549,
+        "modified_ms": 1784912664016.4285
+      },
+      {
+        "name": "tile042.pack",
+        "bytes": 180245594,
+        "modified_ms": 1784912664017.4246
+      },
+      {
+        "name": "tile043.pack",
+        "bytes": 30964092,
+        "modified_ms": 1784912664018.4243
+      },
+      {
+        "name": "tile044.pack",
+        "bytes": 199104846,
+        "modified_ms": 1784912664019.4246
+      },
+      {
+        "name": "tile045.pack",
+        "bytes": 529350207,
+        "modified_ms": 1784912664021.427
+      },
+      {
+        "name": "tile046.pack",
+        "bytes": 50319334,
+        "modified_ms": 1784912664022.4297
+      },
+      {
+        "name": "tile047.pack",
+        "bytes": 220362363,
+        "modified_ms": 1784912664023.4373
+      },
+      {
+        "name": "tile048.pack",
+        "bytes": 95801355,
+        "modified_ms": 1784912664024.4404
+      },
+      {
+        "name": "tile049.pack",
+        "bytes": 45696598,
+        "modified_ms": 1784912664025.4243
+      },
+      {
+        "name": "tile050.pack",
+        "bytes": 83267281,
+        "modified_ms": 1784912664026.4243
+      },
+      {
+        "name": "tile051.pack",
+        "bytes": 93394386,
+        "modified_ms": 1784912664027.424
+      },
+      {
+        "name": "tile052.pack",
+        "bytes": 152786122,
+        "modified_ms": 1784912664029.423
+      },
+      {
+        "name": "tile053.pack",
+        "bytes": 138439826,
+        "modified_ms": 1784912664031.425
+      },
+      {
+        "name": "tile054.pack",
+        "bytes": 517056167,
+        "modified_ms": 1784912664032.4253
+      },
+      {
+        "name": "tile055.pack",
+        "bytes": 551290038,
+        "modified_ms": 1784912664034.9453
+      },
+      {
+        "name": "tile056.pack",
+        "bytes": 635311755,
+        "modified_ms": 1784912664036.9292
+      },
+      {
+        "name": "tile057.pack",
+        "bytes": 208997238,
+        "modified_ms": 1784912664038.9265
+      },
+      {
+        "name": "tile058.pack",
+        "bytes": 265697338,
+        "modified_ms": 1784912664039.5552
+      },
+      {
+        "name": "tile060.pack",
+        "bytes": 257276960,
+        "modified_ms": 1784912664040.6294
+      },
+      {
+        "name": "tile061.pack",
+        "bytes": 77510622,
+        "modified_ms": 1784912664042.63
+      },
+      {
+        "name": "tile062.pack",
+        "bytes": 207264754,
+        "modified_ms": 1784912664043.6294
+      },
+      {
+        "name": "tile063.pack",
+        "bytes": 161553006,
+        "modified_ms": 1784912664044.631
+      },
+      {
+        "name": "tile064.pack",
+        "bytes": 188265182,
+        "modified_ms": 1784912664045.6301
+      },
+      {
+        "name": "tile065.pack",
+        "bytes": 43611292,
+        "modified_ms": 1784912664046.67
+      },
+      {
+        "name": "tile066.pack",
+        "bytes": 221947791,
+        "modified_ms": 1790258330522.207
+      },
+      {
+        "name": "tile067.pack",
+        "bytes": 279173422,
+        "modified_ms": 1784912664049.6501
+      },
+      {
+        "name": "tile068.pack",
+        "bytes": 91512149,
+        "modified_ms": 1790258330524.2039
+      },
+      {
+        "name": "tile069.pack",
+        "bytes": 78519127,
+        "modified_ms": 1784912664052.6292
+      },
+      {
+        "name": "tile070.pack",
+        "bytes": 38260992,
+        "modified_ms": 1784912664053.6318
+      },
+      {
+        "name": "tile071.pack",
+        "bytes": 758170787,
+        "modified_ms": 1784912664054.653
+      },
+      {
+        "name": "tile072.pack",
+        "bytes": 205689887,
+        "modified_ms": 1784912664056.822
+      },
+      {
+        "name": "tile073.pack",
+        "bytes": 23725234,
+        "modified_ms": 1784912664057.8154
+      },
+      {
+        "name": "tile074.pack",
+        "bytes": 339653263,
+        "modified_ms": 1784912664059.843
+      },
+      {
+        "name": "tile075.pack",
+        "bytes": 175380230,
+        "modified_ms": 1784912664060.8157
+      },
+      {
+        "name": "tile076.pack",
+        "bytes": 541813442,
+        "modified_ms": 1784912664063.0435
+      },
+      {
+        "name": "tile077.pack",
+        "bytes": 46961807,
+        "modified_ms": 1790258330525.2078
+      },
+      {
+        "name": "tile078.pack",
+        "bytes": 104401053,
+        "modified_ms": 1784912664066.0376
+      },
+      {
+        "name": "tile079.pack",
+        "bytes": 192757313,
+        "modified_ms": 1784912664067.2585
+      },
+      {
+        "name": "tile080.pack",
+        "bytes": 313572536,
+        "modified_ms": 1784912664069.0386
+      },
+      {
+        "name": "tile081.pack",
+        "bytes": 157964760,
+        "modified_ms": 1790258330526.2107
+      },
+      {
+        "name": "tile082.pack",
+        "bytes": 232330397,
+        "modified_ms": 1784912664072.2349
+      },
+      {
+        "name": "tile083.pack",
+        "bytes": 223652831,
+        "modified_ms": 1784912664074.2383
+      },
+      {
+        "name": "tile084.pack",
+        "bytes": 153254176,
+        "modified_ms": 1790258330528.1968
+      },
+      {
+        "name": "tile085.pack",
+        "bytes": 421319223,
+        "modified_ms": 1790258330528.1968
+      },
+      {
+        "name": "tile086.pack",
+        "bytes": 362263908,
+        "modified_ms": 1790258330529.206
+      },
+      {
+        "name": "tile087.pack",
+        "bytes": 252608376,
+        "modified_ms": 1790258330531.209
+      },
+      {
+        "name": "tile088.pack",
+        "bytes": 205725350,
+        "modified_ms": 1784912664083.4192
+      },
+      {
+        "name": "tile089.pack",
+        "bytes": 317277025,
+        "modified_ms": 1784912664085.442
+      },
+      {
+        "name": "tile090.pack",
+        "bytes": 209116261,
+        "modified_ms": 1784912664087.6978
+      },
+      {
+        "name": "tile091.pack",
+        "bytes": 480085702,
+        "modified_ms": 1784912664089.694
+      },
+      {
+        "name": "tile092.pack",
+        "bytes": 197052318,
+        "modified_ms": 1784912664091.7107
+      },
+      {
+        "name": "tile093.pack",
+        "bytes": 197717266,
+        "modified_ms": 1784912664094.0867
+      },
+      {
+        "name": "tile094.pack",
+        "bytes": 538389923,
+        "modified_ms": 1784912664095.0889
+      },
+      {
+        "name": "tile095.pack",
+        "bytes": 132551981,
+        "modified_ms": 1784912664097.0886
+      },
+      {
+        "name": "tile096.pack",
+        "bytes": 404183074,
+        "modified_ms": 1784912664098.0896
+      },
+      {
+        "name": "tile097.pack",
+        "bytes": 149006324,
+        "modified_ms": 1784912664099.0881
+      },
+      {
+        "name": "tile098.pack",
+        "bytes": 127219934,
+        "modified_ms": 1784912664099.0881
+      },
+      {
+        "name": "tile099.pack",
+        "bytes": 342007267,
+        "modified_ms": 1784912664100.5947
+      },
+      {
+        "name": "tile100.pack",
+        "bytes": 439803951,
+        "modified_ms": 1790258330533.8755
+      },
+      {
+        "name": "tile101.pack",
+        "bytes": 397208935,
+        "modified_ms": 1784912664105.7136
+      },
+      {
+        "name": "tile102.pack",
+        "bytes": 272867224,
+        "modified_ms": 1784912664107.714
+      },
+      {
+        "name": "tile103.pack",
+        "bytes": 133495901,
+        "modified_ms": 1784912664110.9695
+      },
+      {
+        "name": "tile104.pack",
+        "bytes": 336525149,
+        "modified_ms": 1784912664113.9675
+      },
+      {
+        "name": "tile105.pack",
+        "bytes": 287831641,
+        "modified_ms": 1784912664115.9917
+      },
+      {
+        "name": "tile106.pack",
+        "bytes": 96307819,
+        "modified_ms": 1784912664117.6853
+      },
+      {
+        "name": "tile107.pack",
+        "bytes": 51297043,
+        "modified_ms": 1784912664120.023
+      },
+      {
+        "name": "tile108.pack",
+        "bytes": 621010240,
+        "modified_ms": 1784912664122.0254
+      },
+      {
+        "name": "tile109.pack",
+        "bytes": 44596266,
+        "modified_ms": 1784912664124.0237
+      },
+      {
+        "name": "tile110.pack",
+        "bytes": 315556324,
+        "modified_ms": 1784912664126.0217
+      },
+      {
+        "name": "tile111.pack",
+        "bytes": 342572080,
+        "modified_ms": 1790258330533.8755
+      },
+      {
+        "name": "tile112.pack",
+        "bytes": 237320735,
+        "modified_ms": 1790258330535.2234
+      },
+      {
+        "name": "tile113.pack",
+        "bytes": 159344592,
+        "modified_ms": 1784912664132.1687
+      },
+      {
+        "name": "tile114.pack",
+        "bytes": 208252213,
+        "modified_ms": 1784912664133.172
+      },
+      {
+        "name": "tile115.pack",
+        "bytes": 211464658,
+        "modified_ms": 1784912664135.4258
+      },
+      {
+        "name": "tile116.pack",
+        "bytes": 200867607,
+        "modified_ms": 1784912664137.4297
+      },
+      {
+        "name": "tile117.pack",
+        "bytes": 289265602,
+        "modified_ms": 1784912664138.417
+      },
+      {
+        "name": "tile118.pack",
+        "bytes": 63305831,
+        "modified_ms": 1784912664141.4348
+      },
+      {
+        "name": "tile119.pack",
+        "bytes": 41190159,
+        "modified_ms": 1784912664142.644
+      },
+      {
+        "name": "tile120.pack",
+        "bytes": 784924994,
+        "modified_ms": 1790258330537.33
+      },
+      {
+        "name": "tile121.pack",
+        "bytes": 302950688,
+        "modified_ms": 1790258330539.2896
+      },
+      {
+        "name": "tile122.pack",
+        "bytes": 169073519,
+        "modified_ms": 1790258330541.2837
+      },
+      {
+        "name": "tile123.pack",
+        "bytes": 226500819,
+        "modified_ms": 1790258330542.2324
+      },
+      {
+        "name": "tiles_campaign.pack",
+        "bytes": 40085614,
+        "modified_ms": 1784912664143.6433
+      },
+      {
+        "name": "ui.pack",
+        "bytes": 983738466,
+        "modified_ms": 1790258330543.2495
+      },
+      {
+        "name": "ui2.pack",
+        "bytes": 858960609,
+        "modified_ms": 1790258330545.2373
+      },
+      {
+        "name": "ui2_bl.pack",
+        "bytes": 299785,
+        "modified_ms": 1784912664210.81
+      },
+      {
+        "name": "ui3.pack",
+        "bytes": 107732880,
+        "modified_ms": 1790258330547.2393
+      },
+      {
+        "name": "ui_3.pack",
+        "bytes": 72442,
+        "modified_ms": 1790258595652.0806
+      },
+      {
+        "name": "variants.pack",
+        "bytes": 1037733354,
+        "modified_ms": 1790258330548.246
+      },
+      {
+        "name": "variants2.pack",
+        "bytes": 673262732,
+        "modified_ms": 1790258330549.2344
+      },
+      {
+        "name": "variants2_bl.pack",
+        "bytes": 2018345,
+        "modified_ms": 1784912664211.8115
+      },
+      {
+        "name": "variants3.pack",
+        "bytes": 1113973515,
+        "modified_ms": 1790258330549.2344
+      },
+      {
+        "name": "variants3_bl.pack",
+        "bytes": 939404,
+        "modified_ms": 1784912664212.7893
+      },
+      {
+        "name": "variants4.pack",
+        "bytes": 893901417,
+        "modified_ms": 1790258330550.247
+      },
+      {
+        "name": "variants4_bl.pack",
+        "bytes": 942493,
+        "modified_ms": 1784912664213.7932
+      },
+      {
+        "name": "variants5.pack",
+        "bytes": 52568722,
+        "modified_ms": 1790258330552.2437
+      },
+      {
+        "name": "variants_bl.pack",
+        "bytes": 1723,
+        "modified_ms": 1790258636688.067
+      },
+      {
+        "name": "variants_dds.pack",
+        "bytes": 773503465,
+        "modified_ms": 1790258330553.5579
+      },
+      {
+        "name": "variants_dds10.pack",
+        "bytes": 627425227,
+        "modified_ms": 1790258330554.5771
+      },
+      {
+        "name": "variants_dds11.pack",
+        "bytes": 586863088,
+        "modified_ms": 1784912664179.3345
+      },
+      {
+        "name": "variants_dds12.pack",
+        "bytes": 770403519,
+        "modified_ms": 1784912664181.3306
+      },
+      {
+        "name": "variants_dds12_bl.pack",
+        "bytes": 343390,
+        "modified_ms": 1784912664216.0708
+      },
+      {
+        "name": "variants_dds13.pack",
+        "bytes": 406046578,
+        "modified_ms": 1790258330555.5723
+      },
+      {
+        "name": "variants_dds14.pack",
+        "bytes": 117353964,
+        "modified_ms": 1790258330556.567
+      },
+      {
+        "name": "variants_dds15.pack",
+        "bytes": 785464979,
+        "modified_ms": 1790258330558.5813
+      },
+      {
+        "name": "variants_dds2.pack",
+        "bytes": 466741974,
+        "modified_ms": 1784912664185.723
+      },
+      {
+        "name": "variants_dds3.pack",
+        "bytes": 1071725650,
+        "modified_ms": 1790258330560.5742
+      },
+      {
+        "name": "variants_dds4.pack",
+        "bytes": 1146896474,
+        "modified_ms": 1790258330561.5789
+      },
+      {
+        "name": "variants_dds5.pack",
+        "bytes": 840756695,
+        "modified_ms": 1790258330562.57
+      },
+      {
+        "name": "variants_dds6.pack",
+        "bytes": 760783188,
+        "modified_ms": 1790258330563.5818
+      },
+      {
+        "name": "variants_dds7.pack",
+        "bytes": 797060790,
+        "modified_ms": 1790258330565.584
+      },
+      {
+        "name": "variants_dds8.pack",
+        "bytes": 605984651,
+        "modified_ms": 1790258330566.5747
+      },
+      {
+        "name": "variants_dds9.pack",
+        "bytes": 360409616,
+        "modified_ms": 1790258330568.576
+      },
+      {
+        "name": "vegetation.pack",
+        "bytes": 641239854,
+        "modified_ms": 1790258330569.5642
+      },
+      {
+        "name": "vfx.pack",
+        "bytes": 559018914,
+        "modified_ms": 1790258330570.7336
+      },
+      {
+        "name": "vfx_desc.pack",
+        "bytes": 692562951,
+        "modified_ms": 1790258330572.7278
+      },
+      {
+        "name": "vfx_desc_bl.pack",
+        "bytes": 454249,
+        "modified_ms": 1784912664217.0637
+      },
+      {
+        "name": "vfx_models.pack",
+        "bytes": 45018376,
+        "modified_ms": 1790258330574.7256
+      },
+      {
+        "name": "vfx_models_dds.pack",
+        "bytes": 72015385,
+        "modified_ms": 1790258330576.7183
+      },
+      {
+        "name": "warmachines.pack",
+        "bytes": 643386123,
+        "modified_ms": 1790258330577.7224
+      },
+      {
+        "name": "warmachines_dds.pack",
+        "bytes": 880100836,
+        "modified_ms": 1790258330579.7273
+      },
+      {
+        "name": "warmachines_dds2.pack",
+        "bytes": 527647483,
+        "modified_ms": 1790258330581.7268
+      }
+    ],
+    "pack_identity_method": "filename, byte count and modification time; not a full pack-content digest"
+  },
+  "decoder_schema_sha256": "15d4006d4e968add518e1d2ba543f38850f467ca4ef6bca52fbbc94b3c3d822e",
+  "decoder": "RPFM MCP schema-decoded export; schema identity recorded separately",
+  "extracted_at_utc": "2026-09-26T08:42:05.586Z",
   "table_folders_requested": [
     "factions_tables",
     "agent_subtypes_tables",
@@ -42,28 +1411,28 @@
   "files": [
     {
       "path": "db/agent_subtypes_tables/data__.tsv",
-      "bytes": 159599,
-      "sha256": "fe7741ad3267f7cee5e4a5112c16349e20d949802d34e9519dd1ccd1b77aabe1"
+      "bytes": 176301,
+      "sha256": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2"
     },
     {
       "path": "db/ancillaries_tables/data__.tsv",
-      "bytes": 569122,
-      "sha256": "b480ae28f3f4bb872afb13e9482192f362d28b914c83021eb4b07d04b041493e"
+      "bytes": 611824,
+      "sha256": "ebc4025e799ebb64860b42344574d08dd489d0a84708c5f2968f5f258f842e64"
     },
     {
       "path": "db/campaign_to_agent_subtypes_tables/data__.tsv",
-      "bytes": 7496,
-      "sha256": "be3fe3644a35097901268d910dd2b504eea93f413b4756c16a0d90a54bdc1d69"
+      "bytes": 8272,
+      "sha256": "c00425dbb270ec9bdd4bbb60dfd69e85a6f3c97474492d76d8cf2529ce0088e7"
     },
     {
       "path": "db/character_skill_level_details_tables/data__.tsv",
-      "bytes": 123746,
-      "sha256": "f1ecd3427aaac0dbb40095a2a215bcf03f56a230d53dbe89213c15f81307ae88"
+      "bytes": 139376,
+      "sha256": "1c6f85f2725f20f8e2f5a83f716560b5dce8254d3b627b469ca72c92f564f278"
     },
     {
       "path": "db/character_skill_level_to_ancillaries_junctions_tables/data__.tsv",
-      "bytes": 82428,
-      "sha256": "ea322381ccd47551cc6422255cbc24d62e6d757eb4ad0a5951ad3ccf8ed71254"
+      "bytes": 88180,
+      "sha256": "7ade15f8f3e06f0a8f028b43512f0c2a17f48e76745f44b64c3f0f58b4a36c3d"
     },
     {
       "path": "db/character_skill_level_to_dilemmas_junctions_tables/data__.tsv",
@@ -72,8 +1441,8 @@
     },
     {
       "path": "db/character_skill_level_to_effects_junctions_tables/data__.tsv",
-      "bytes": 2289394,
-      "sha256": "ab892729845f6eb306ead34a8b7553711871f17824cbecba26e5674ed746915a"
+      "bytes": 2530483,
+      "sha256": "741b8595d22b0f02e0ed5d83837ac4df581365df6844f336c9a0dde32b891441"
     },
     {
       "path": "db/character_skill_node_ancillary_locks_tables/data__.tsv",
@@ -87,113 +1456,113 @@
     },
     {
       "path": "db/character_skill_node_links_tables/data__.tsv",
-      "bytes": 2669820,
-      "sha256": "5c2545755cdff611a4b72f45886c76a85c3423e6d0bd250027a68500595abbc7"
+      "bytes": 2915540,
+      "sha256": "7e31817bf6026c9118b71df40756d94c264dff67812676a80f26c4898a0383f3"
     },
     {
       "path": "db/character_skill_node_set_items_tables/data__.tsv",
-      "bytes": 2939135,
-      "sha256": "01a3d27f3487923a2b19a9eb06b036189f1c672f9530211fc2c41a87a926d67c"
+      "bytes": 3305932,
+      "sha256": "d176a55e8f68abb01490a46db51b9a47c6d2eecdb7a838be5e9f02b06c2aaba4"
     },
     {
       "path": "db/character_skill_node_sets_tables/data__.tsv",
-      "bytes": 53931,
-      "sha256": "145604ab7bfe433294f299c94d726a6409f2c8d4eb3dab55b106bb9c4a980e50"
+      "bytes": 58817,
+      "sha256": "65d7b919822406fef4bb1b2774f12075e155d42dd563fd51a61679e79c1c24c0"
     },
     {
       "path": "db/character_skill_nodes_skill_locks_tables/data__.tsv",
-      "bytes": 244740,
-      "sha256": "f0ecca457ff794e323cc04cb05b93b5d99f43738150eb90b0a11b5d47971ca32"
+      "bytes": 261740,
+      "sha256": "2dcf9ce8c2133c43034ce0ec4cf218663cd184dae4ed64c9936c1df575a200d0"
     },
     {
       "path": "db/character_skill_nodes_tables/data__.tsv",
-      "bytes": 2752096,
-      "sha256": "3d79b912f01837cf599e5818ac581c94a51c807c2d35ba33df65e93a1e9dbe6d"
+      "bytes": 2998000,
+      "sha256": "6ad46efe3815f29fa8ff9c001df023b9786c22f1e566e5da64b70eb3420b3894"
     },
     {
       "path": "db/character_skills_tables/data__.tsv",
-      "bytes": 1264740,
-      "sha256": "26a8d5a6c99fbf202a9e12888e8660f5183651dfac80391ecdf8d218680a84c6"
+      "bytes": 1406214,
+      "sha256": "b413d8d6f76d46bf4c8131126a47a5d82244b31d0f27f0594e28aa5f72b58fe0"
     },
     {
       "path": "db/dilemmas_tables/data__.tsv",
-      "bytes": 523944,
-      "sha256": "ba6200d6d4194ae09ba617de88a9778d4137d4a397f438980cfcf24d36540581"
+      "bytes": 547839,
+      "sha256": "03d5f91028efa3fab9d314ef965b885cc06fbe446de035e01c05c6e442771e68"
     },
     {
       "path": "db/effects_tables/data__.tsv",
-      "bytes": 1571155,
-      "sha256": "c23dd8821dd1e6837258b59cc0382176ea483f0e5b36ba2601b3fdc9f5bed6db"
+      "bytes": 1854729,
+      "sha256": "728524df36e21fde9d8d3b16c5c2674f1b964475f6b2aea31c54c96a56a841d3"
     },
     {
       "path": "db/faction_agent_permitted_subtypes_tables/data__.tsv",
-      "bytes": 654685,
-      "sha256": "62287116f11c7a8dfb5ec8e79d01ff3008f6b2d389f6077ddff81b7e8ba2c29d"
+      "bytes": 753043,
+      "sha256": "00748f428dab88b585d98466007fedc4a34f571b783b1f401808aa8c11bb2f25"
     },
     {
       "path": "db/factions_tables/data__.tsv",
-      "bytes": 403358,
-      "sha256": "49729f488d22915569c55dda14ea85ea7d5b86c7cecd537ae3a46d263039bbdd"
+      "bytes": 415855,
+      "sha256": "e18eea44e16dd4091975214619231bd7da0450c9832627f96e45cbabdc258033"
     },
     {
       "path": "db/frontend_faction_leaders_tables/data__.tsv",
-      "bytes": 53250,
-      "sha256": "7f099e51fab15e20b2db13776be5cb12ff7adbaa6bac31193c8627b96250c00f"
+      "bytes": 55350,
+      "sha256": "853adf7eaa832bd36eb74a0ee7dec42550b645c49eab960458a1c37e3d8c8011"
     },
     {
       "path": "db/unique_agents_tables/data__.tsv",
-      "bytes": 5404,
-      "sha256": "f5012ecc081ab1ca5309fa70a0527bd2a011dbbb6e61c565cd35507e8692a407"
+      "bytes": 6316,
+      "sha256": "7d06b7d8aecef02058c2b8d63c3d4fbb2a15dcdd349b9f5fab115c3a752ed6d4"
     },
     {
       "path": "text/db/agent_subtypes__.loc.tsv",
-      "bytes": 129516,
-      "sha256": "cadb6b3e4009b528ec57406bed44190b54631a28cdb84a1f9bdebd2f307f4328"
+      "bytes": 141294,
+      "sha256": "a7801011da0884a6a565b465dc572b3576ab2574b77464fbb40fa9a88dcdab50"
     },
     {
       "path": "text/db/ancillaries__.loc.tsv",
-      "bytes": 996769,
-      "sha256": "edf229248ca6ef97a9ad63205f42ddc5a7be0432a74d8758a02657be7067b43f"
+      "bytes": 1073238,
+      "sha256": "2508bc63e09c193211836aed6eec8103aee3aacba16344725a43910a7de6005e"
     },
     {
       "path": "text/db/character_skill_level_details__.loc.tsv",
-      "bytes": 444930,
-      "sha256": "4d022f7bc557dd4bc3e7ad6ff1b02426682fdc09e3efaa1090fd701ae3f4f831"
+      "bytes": 500364,
+      "sha256": "bc90b87508f547b15a834168b1ea3d98bb57993f04a3b2e5331850e9b1477218"
     },
     {
       "path": "text/db/character_skill_node_sets__.loc.tsv",
-      "bytes": 55980,
-      "sha256": "f47242dac4212fb73a3a9836957072503f0598f840ad631c5e7771d243df3204"
+      "bytes": 61287,
+      "sha256": "51311658d58498033746019b6f545446438c7a28f4a869c1cedbf3974e41072e"
     },
     {
       "path": "text/db/character_skills__.loc.tsv",
-      "bytes": 1713691,
-      "sha256": "c92c2db4d5e7bb8d52a0ffc89f7b81c5d78b2fef42695ea3bbf9f0a8a4e9510a"
+      "bytes": 1899888,
+      "sha256": "69a0535a6b125adac2df7db76771015ce5acfc87dcbd4c83714c30c0252da816"
     },
     {
       "path": "text/db/dilemmas__.loc.tsv",
-      "bytes": 591781,
-      "sha256": "983430e425e576ddb0e736f0740380553fedc08826bcc94787860b01616475f9"
+      "bytes": 618079,
+      "sha256": "362408d2bdbfe04a7e3167b90c5823f3df79574ff98b40c2f9248fc14b15ae7e"
     },
     {
       "path": "text/db/effects__.loc.tsv",
-      "bytes": 2050603,
-      "sha256": "c131b84afdca5f999162879566ff5fe266cf102f7a8da20dcdda1771ddd8523b"
+      "bytes": 2475724,
+      "sha256": "9d9fc1d16b20e9271bd0c474afb16250c78172088931a2174e7ab9b3c60bfe1f"
     },
     {
       "path": "text/db/effects_additional_tooltip_details__.loc.tsv",
-      "bytes": 73434,
-      "sha256": "7ad4770a385151722202aff04c52760475871d7c9d7237ba1885732d07e06171"
+      "bytes": 104119,
+      "sha256": "3d7479778534091f431336d40fe10b0fbd5aaf8be3ceea65213bc25979639157"
     },
     {
       "path": "text/db/factions__.loc.tsv",
-      "bytes": 297539,
-      "sha256": "be5a3cea7102136b60a7496364fada000369fe32c38532ca921bf09f08c14623"
+      "bytes": 307323,
+      "sha256": "f0d334b64936f0e11001d3b7762e35f29215c1a6a90e4c8630a4884aaf337235"
     },
     {
       "path": "text/db/frontend_factions__.loc.tsv",
-      "bytes": 90478,
-      "sha256": "29d7c87e94764a59e80e960f66718879c026375de85a86ac949b2911c470c0f0"
+      "bytes": 93372,
+      "sha256": "25b921ce1bfafc12597903e79a643805602409650f1a4d59883ad82d2b7cae3a"
     }
   ]
 }

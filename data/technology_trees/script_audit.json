@@ -1,5 +1,5 @@
 {
-  "scanned_files": 418,
+  "scanned_files": 469,
   "whole_lua_files_retained": 0,
   "scope": "script/campaign/**/*.lua and script/_lib/**/*.lua",
   "structured_source_records": 96,
@@ -10,9 +10,41 @@
     "technology_ancillary_reward": 18,
     "vampire_coast_lord_reward": 4
   },
-  "excerpt_count": 141,
-  "unresolved_cases": 35,
+  "excerpt_count": 149,
+  "unresolved_cases": 43,
   "unmodeled_lock_sites": [
+    {
+      "source_file": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
+      "source_sha256": "4be50c7b83909508f86e3e658de8e9e6b0038322887a34a28e0bba4701d8e8e0",
+      "source_line": 579,
+      "operation": "unlock_technology",
+      "evidence_id": "73f5be56a126f9f27d2e5dc0",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
+      "source_sha256": "4be50c7b83909508f86e3e658de8e9e6b0038322887a34a28e0bba4701d8e8e0",
+      "source_line": 580,
+      "operation": "unlock_technology",
+      "evidence_id": "1a7675bbe958d90d7a53a5f3",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+      "source_sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+      "source_line": 1201,
+      "operation": "lock_technology",
+      "evidence_id": "c7cf3317be8dbae163948d40",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+      "source_sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+      "source_line": 1203,
+      "operation": "unlock_technology",
+      "evidence_id": "80f7e950d4cfb64aa938560e",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
     {
       "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
       "source_sha256": "714b726e30a1f5e66dc0220a979a28d051761548535527fd1ee92e67381f9e10",
@@ -254,8 +286,16 @@
       "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
+      "source_file": "script/campaign/wh3_campaign_mutually_exclusive_techs.lua",
+      "source_sha256": "2ab1c73a7e7c48a2b6ebd11172ec0998a9c1a28193f0c92a633f0d50a2ec78c8",
+      "source_line": 53,
+      "operation": "lock_technology",
+      "evidence_id": "caf8c19aa1b5de0fdb350225",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
       "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
       "source_line": 264,
       "operation": "lock_technology",
       "evidence_id": "cdd0b573ac8bb3fa69d5c8b2",
@@ -263,7 +303,7 @@
     },
     {
       "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "source_sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+      "source_sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
       "source_line": 319,
       "operation": "unlock_technology",
       "evidence_id": "1529480131babd55d66a7064",
@@ -271,27 +311,51 @@
     },
     {
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_line": 1712,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_line": 1719,
       "operation": "lock_technology",
-      "evidence_id": "f92f4df973cba02c3a79af68",
+      "evidence_id": "f0a696868e0927b6d01c183f",
       "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
     },
     {
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_line": 2395,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_line": 2413,
       "operation": "unlock_technology",
-      "evidence_id": "96291475b8e352ccbac6c3dd",
+      "evidence_id": "90f0c1a9cc05c8b5e6129a4e",
       "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
     },
     {
       "source_file": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "source_sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "source_line": 2582,
+      "source_sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "source_line": 2600,
       "operation": "unlock_technology",
-      "evidence_id": "9c212a77a5faeea66f7178fe",
+      "evidence_id": "bd10a694e8aecb3a65dbc3f4",
       "limitation": "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_line": 241,
+      "operation": "unlock_technology",
+      "evidence_id": "ea243eafb14d27191ee17efa",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_line": 349,
+      "operation": "unlock_technology",
+      "evidence_id": "c7ab7be979bfb2c0f3ce8627",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+    },
+    {
+      "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "source_sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "source_line": 876,
+      "operation": "unlock_technology",
+      "evidence_id": "f5a5d59398974b5e742136c6",
+      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
     }
   ]
 }

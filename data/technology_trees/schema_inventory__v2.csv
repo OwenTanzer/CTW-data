@@ -132,21 +132,22 @@ factions/<race_slug>/<faction_key>.csv,130,pooled_resource_key,text,false,Source
 factions/<race_slug>/<faction_key>.csv,131,resource_factor_minimum,number,false,Source pooled_resource_factor_junctions_tables.minimum. This is the minimum capacity of the factor - so a value of 0 means the factor can never be negative!
 factions/<race_slug>/<faction_key>.csv,132,resource_factor_maximum,number,false,Source pooled_resource_factor_junctions_tables.maximum. 
 factions/<race_slug>/<faction_key>.csv,133,resource_factor_specific_faction_set,text,false,"Source pooled_resource_factor_junctions_tables.specific_faction_set. If blank, factor shown for all factions. If set, the factor will only show in the UI for factions in the linked faction set"
-factions/<race_slug>/<faction_key>.csv,134,group_optional_background_image,text,false,Source technology_ui_groups_tables.optional_background_image. 
-factions/<race_slug>/<faction_key>.csv,135,group_colour_hex,text,false,Source technology_ui_groups_tables.colour_hex. 
-factions/<race_slug>/<faction_key>.csv,136,group_bounds_bottom_right_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.bottom_right_node. 
-factions/<race_slug>/<faction_key>.csv,137,group_bounds_top_left_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.top_left_node. 
-factions/<race_slug>/<faction_key>.csv,138,group_bounds_optional_top_right_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.optional_top_right_node. 
-factions/<race_slug>/<faction_key>.csv,139,group_bounds_optional_bottom_left_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.optional_bottom_left_node. 
-factions/<race_slug>/<faction_key>.csv,140,ui_tab_key,text,false,Source technology_ui_tabs_tables.key. 
-factions/<race_slug>/<faction_key>.csv,141,tab_sort_order,number,false,Source technology_ui_tabs_tables.sort_order. 
-factions/<race_slug>/<faction_key>.csv,142,tab_tier_offset,number,false,Source technology_ui_tabs_tables.tier_offset. This is how much to substract from the tier of each tech in this tab (since overlapping technologies is not allowed)
-factions/<race_slug>/<faction_key>.csv,143,module_max_tier,number,false,Source technology_category_modules_tables.max_tier. 
-factions/<race_slug>/<faction_key>.csv,144,effect_bundle_key,text,false,Source technology_category_modules_tables.effect_bundle. 
-factions/<race_slug>/<faction_key>.csv,145,module_min_tier,number,false,Source technology_category_modules_tables.min_tier. 
-factions/<race_slug>/<faction_key>.csv,146,category_effect_advancement_stage,text,false,Source effect_bundles_to_effects_junctions_tables.advancement_stage. 
-factions/<race_slug>/<faction_key>.csv,147,effect_definition_icon,text,false,Source effects_tables.icon. 
-factions/<race_slug>/<faction_key>.csv,148,effect_definition_priority,number,false,Source effects_tables.priority. Higher number will be displayed lower down the list. Set to 0 to hide the effect entirely.
-factions/<race_slug>/<faction_key>.csv,149,effect_definition_icon_negative,text,false,Source effects_tables.icon_negative. 
-factions/<race_slug>/<faction_key>.csv,150,effect_definition_category,text,false,Source effects_tables.category. Category for display in ui
-factions/<race_slug>/<faction_key>.csv,151,effect_definition_is_positive_value_good,boolean,false,"Source effects_tables.is_positive_value_good. If true, then positive values shown green in ui. Otherwise shown red and vice versa for negatives. (As sometimes -10% is a good thing like cost)"
+factions/<race_slug>/<faction_key>.csv,134,resource_factor_sort_order,number,false,Source pooled_resource_factor_junctions_tables.sort_order. 
+factions/<race_slug>/<faction_key>.csv,135,group_optional_background_image,text,false,Source technology_ui_groups_tables.optional_background_image. 
+factions/<race_slug>/<faction_key>.csv,136,group_colour_hex,text,false,Source technology_ui_groups_tables.colour_hex. 
+factions/<race_slug>/<faction_key>.csv,137,group_bounds_bottom_right_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.bottom_right_node. 
+factions/<race_slug>/<faction_key>.csv,138,group_bounds_top_left_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.top_left_node. 
+factions/<race_slug>/<faction_key>.csv,139,group_bounds_optional_top_right_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.optional_top_right_node. 
+factions/<race_slug>/<faction_key>.csv,140,group_bounds_optional_bottom_left_node,text,false,Source technology_ui_groups_to_technology_nodes_junctions_tables.optional_bottom_left_node. 
+factions/<race_slug>/<faction_key>.csv,141,ui_tab_key,text,false,Source technology_ui_tabs_tables.key. 
+factions/<race_slug>/<faction_key>.csv,142,tab_sort_order,number,false,Source technology_ui_tabs_tables.sort_order. 
+factions/<race_slug>/<faction_key>.csv,143,tab_tier_offset,number,false,Source technology_ui_tabs_tables.tier_offset. This is how much to substract from the tier of each tech in this tab (since overlapping technologies is not allowed)
+factions/<race_slug>/<faction_key>.csv,144,module_max_tier,number,false,Source technology_category_modules_tables.max_tier. 
+factions/<race_slug>/<faction_key>.csv,145,effect_bundle_key,text,false,Source technology_category_modules_tables.effect_bundle. 
+factions/<race_slug>/<faction_key>.csv,146,module_min_tier,number,false,Source technology_category_modules_tables.min_tier. 
+factions/<race_slug>/<faction_key>.csv,147,category_effect_advancement_stage,text,false,Source effect_bundles_to_effects_junctions_tables.advancement_stage. 
+factions/<race_slug>/<faction_key>.csv,148,effect_definition_icon,text,false,Source effects_tables.icon. 
+factions/<race_slug>/<faction_key>.csv,149,effect_definition_priority,number,false,Source effects_tables.priority. Higher number will be displayed lower down the list. Set to 0 to hide the effect entirely.
+factions/<race_slug>/<faction_key>.csv,150,effect_definition_icon_negative,text,false,Source effects_tables.icon_negative. 
+factions/<race_slug>/<faction_key>.csv,151,effect_definition_category,text,false,Source effects_tables.category. Category for display in ui
+factions/<race_slug>/<faction_key>.csv,152,effect_definition_is_positive_value_good,boolean,false,"Source effects_tables.is_positive_value_good. If true, then positive values shown green in ui. Otherwise shown red and vice versa for negatives. (As sometimes -10% is a good thing like cost)"

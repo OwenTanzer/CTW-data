@@ -47,6 +47,7 @@
     "db/agent_subtype_ownership_content_pack_junctions_tables/data__",
     "db/agent_subtype_set_items_tables/data__",
     "db/agent_subtype_sets_tables/data__",
+    "db/agent_subtype_subculture_overrides_tables/data__",
     "db/agent_subtype_to_vows_tables/data__",
     "db/agent_subtypes_tables/data__",
     "db/agent_subtypes_to_armory_item_sets_tables/data__",
@@ -209,6 +210,7 @@
     "db/autoresolver_unit_record_usage_flags_tables/data__",
     "db/autoresolver_usages_tables/data__",
     "db/background_character_initiative_sets_tables/data__",
+    "db/background_initiative_sets_tables/data__",
     "db/banners_permitted_unit_sets_tables/data__",
     "db/banners_tables/data__",
     "db/battle_ai_abilities_usage_group_names_tables/data__",
@@ -312,6 +314,8 @@
     "db/battles_tables/data__",
     "db/bmd_export_types_tables/data__",
     "db/bmd_layer_groups_tables/data__",
+    "db/books_of_nagash_details_tables/data__",
+    "db/books_of_nagash_to_faction_effect_bundle_junctions_tables/data__",
     "db/bretonnia_vows_tables/data__",
     "db/bretonnia_vows_to_traits_tables/data__",
     "db/building_allied_units_tables/data__",
@@ -331,6 +335,7 @@
     "db/building_instances_tables/data__",
     "db/building_instant_constructions_tables/data__",
     "db/building_level_armed_citizenry_junctions_tables/data__",
+    "db/building_level_character_traits_junctions_tables/data__",
     "db/building_level_ownership_content_pack_junctions_tables/data__",
     "db/building_level_required_buildings_tables/data__",
     "db/building_level_ui_position_override_junctions_tables/data__",
@@ -541,6 +546,10 @@
     "db/campaign_bonus_value_battle_context_ground_type_junctions_tables/data__",
     "db/campaign_bonus_value_battle_context_specifiers_tables/data__",
     "db/campaign_bonus_value_battle_context_territory_status_junctions_tables/data__",
+    "db/campaign_bonus_value_cai_deal_component_culture_junctions_tables/data__",
+    "db/campaign_bonus_value_ids_cai_deal_components_tables/data__",
+    "db/campaign_bonus_value_ids_chaotic_plan_tokens_tables/data__",
+    "db/campaign_bonus_value_ids_chaotic_plans_tables/data__",
     "db/campaign_bonus_value_ids_initiative_set_categories_tables/data__",
     "db/campaign_bonus_value_ids_settlement_types_tables/data__",
     "db/campaign_border_display_modes_tables/data__",
@@ -568,6 +577,7 @@
     "db/campaign_effect_scope_agent_junctions_tables/data__",
     "db/campaign_effect_scope_categories_tables/data__",
     "db/campaign_effect_scope_character_force_relationship_junctions_tables/data__",
+    "db/campaign_effect_scope_faction_set_junctions_tables/data__",
     "db/campaign_effect_scope_territories_tables/data__",
     "db/campaign_effect_scopes_tables/data__",
     "db/campaign_faction_feature_forest_overrides_tables/data__",
@@ -648,6 +658,9 @@
     "db/campaign_map_attrition_faction_immunities_tables/data__",
     "db/campaign_map_attrition_unit_immunities_tables/data__",
     "db/campaign_map_attritions_tables/data__",
+    "db/campaign_map_event_area_province_region_junctions_tables/data__",
+    "db/campaign_map_event_area_types_tables/data__",
+    "db/campaign_map_event_areas_tables/data__",
     "db/campaign_map_masks_tables/data__",
     "db/campaign_map_playable_area_ownership_content_pack_junctions_tables/data__",
     "db/campaign_map_playable_areas_tables/data__",
@@ -680,10 +693,14 @@
     "db/campaign_operation_unlock_pooled_resource_thresholds_tables/data__",
     "db/campaign_payload_basic_components_tables/data__",
     "db/campaign_payload_basic_value_components_tables/data__",
+    "db/campaign_payload_chaotic_plan_targeting_components_tables/data__",
+    "db/campaign_payload_chaotic_plan_token_adding_components_tables/data__",
+    "db/campaign_payload_chaotic_plans_tables/data__",
     "db/campaign_payload_character_trait_change_components_tables/data__",
     "db/campaign_payload_effect_bundles_tables/data__",
     "db/campaign_payload_pooled_resource_components_tables/data__",
     "db/campaign_payload_resource_transactions_tables/data__",
+    "db/campaign_payload_spawn_agents_tables/data__",
     "db/campaign_payload_to_initiative_junctions_tables/data__",
     "db/campaign_payload_ui_details_tables/data__",
     "db/campaign_payload_ui_states_tables/data__",
@@ -781,6 +798,36 @@
     "db/cdir_military_generator_unit_group_overrides_tables/data__",
     "db/cdir_military_generator_unit_groups_tables/data__",
     "db/cdir_military_generator_unit_qualities_tables/data__",
+    "db/chaotic_plan_culture_added_tokens_junctions_tables/data__",
+    "db/chaotic_plan_payload_application_phase_enums_tables/data__",
+    "db/chaotic_plan_region_level_added_tokens_junctions_tables/data__",
+    "db/chaotic_plan_resource_activated_token_groups_tables/data__",
+    "db/chaotic_plan_resource_activated_tokens_tables/data__",
+    "db/chaotic_plan_schemer_linked_magic_plans_tables/data__",
+    "db/chaotic_plan_schemer_skill_to_token_sets_junctions_tables/data__",
+    "db/chaotic_plan_schemer_trait_to_token_set_junctions_tables/data__",
+    "db/chaotic_plan_schemers_special_infos_tables/data__",
+    "db/chaotic_plan_schemers_tables/data__",
+    "db/chaotic_plan_shop_categories_tables/data__",
+    "db/chaotic_plan_shop_category_chain_to_object_junctions_tables/data__",
+    "db/chaotic_plan_shop_category_object_chains_tables/data__",
+    "db/chaotic_plan_shop_category_objects_tables/data__",
+    "db/chaotic_plan_shop_category_to_object_chain_junctions_tables/data__",
+    "db/chaotic_plan_token_flavor_text_descriptions_tables/data__",
+    "db/chaotic_plan_token_removed_token_junctions_tables/data__",
+    "db/chaotic_plan_token_sets_tables/data__",
+    "db/chaotic_plan_token_to_generated_tokens_junctions_tables/data__",
+    "db/chaotic_plan_token_type_enums_tables/data__",
+    "db/chaotic_plan_token_types_tables/data__",
+    "db/chaotic_plan_tokens_tables/data__",
+    "db/chaotic_plan_tokens_to_payloads_junctions_tables/data__",
+    "db/chaotic_plan_tokens_to_token_sets_junctions_tables/data__",
+    "db/chaotic_plan_type_enums_tables/data__",
+    "db/chaotic_plan_types_resource_costs_junctions_tables/data__",
+    "db/chaotic_plan_upgradable_token_chains_tables/data__",
+    "db/chaotic_plan_upgrade_tokens_tables/data__",
+    "db/chaotic_plans_region_group_added_tokens_junctions_tables/data__",
+    "db/chaotic_plans_tables/data__",
     "db/character_ancillary_quest_ui_details_tables/data__",
     "db/character_experience_skill_tiers_tables/data__",
     "db/character_saving_settings_tables/data__",
@@ -867,6 +914,8 @@
     "db/deployables_tables/data__",
     "db/deployment_area_displays_tables/data__",
     "db/destruction_zone_mask_types_tables/data__",
+    "db/devastation_campaign_battle_scenes_tables/data__",
+    "db/devastation_states_tables/data__",
     "db/dilemma_vo_events_tables/data__",
     "db/dilemmas_tables/data__",
     "db/diplomacy_components_tables/data__",
@@ -900,6 +949,9 @@
     "db/effect_bonus_value_battle_context_unit_attribute_junctions_tables/data__",
     "db/effect_bonus_value_building_chain_junctions_tables/data__",
     "db/effect_bonus_value_building_set_junctions_tables/data__",
+    "db/effect_bonus_value_cai_deal_component_junctions_tables/data__",
+    "db/effect_bonus_value_chaotic_plan_junctions_tables/data__",
+    "db/effect_bonus_value_chaotic_plan_token_junctions_tables/data__",
     "db/effect_bonus_value_character_training_group_junctions_tables/data__",
     "db/effect_bonus_value_diplomacy_manipulation_category_junctions_tables/data__",
     "db/effect_bonus_value_faction_junctions_tables/data__",
@@ -926,6 +978,7 @@
     "db/effect_bonus_value_ritual_chains_junctions_tables/data__",
     "db/effect_bonus_value_ritual_junctions_tables/data__",
     "db/effect_bonus_value_scripted_junctions_tables/data__",
+    "db/effect_bonus_value_settlement_type_junctions_tables/data__",
     "db/effect_bonus_value_siege_item_junctions_tables/data__",
     "db/effect_bonus_value_special_ability_group_junctions_tables/data__",
     "db/effect_bonus_value_special_ability_phase_record_junctions_tables/data__",
@@ -934,9 +987,11 @@
     "db/effect_bonus_value_teleportation_node_template_junctions_tables/data__",
     "db/effect_bonus_value_unit_ability_junctions_tables/data__",
     "db/effect_bonus_value_unit_attribute_junctions_tables/data__",
+    "db/effect_bonus_value_unit_class_stat_modifiers_junctions_tables/data__",
     "db/effect_bonus_value_unit_components_animation_table_override_junctions_tables/data__",
     "db/effect_bonus_value_unit_list_junctions_tables/data__",
     "db/effect_bonus_value_unit_record_junctions_tables/data__",
+    "db/effect_bonus_value_unit_recruitment_queue_set_junctions_tables/data__",
     "db/effect_bonus_value_unit_set_special_ability_phase_junctions_tables/data__",
     "db/effect_bonus_value_unit_set_unit_ability_junctions_tables/data__",
     "db/effect_bonus_value_unit_set_unit_attribute_junctions_tables/data__",
@@ -955,6 +1010,8 @@
     "db/end_turn_notifications_pooled_resource_junctions_tables/data__",
     "db/end_turn_notifications_tables/data__",
     "db/entity_association_tags_tables/data__",
+    "db/episode_event_popup_elements_tables/data__",
+    "db/episode_event_popup_sections_tables/data__",
     "db/event_feed_categories_tables/data__",
     "db/event_feed_events_tables/data__",
     "db/event_feed_group_members_tables/data__",
@@ -1035,7 +1092,9 @@
     "db/income_conditions_tables/data__",
     "db/initiative_set_categories_tables/data__",
     "db/initiative_set_items_tables/data__",
+    "db/initiative_set_targets_tables/data__",
     "db/initiative_sets_tables/data__",
+    "db/initiative_to_ui_graph_node_junctions_tables/data__",
     "db/initiative_unit_set_requirements_tables/data__",
     "db/initiatives_tables/data__",
     "db/intrigue_actions_incidents_junctions_tables/data__",
@@ -1107,6 +1166,7 @@
     "db/multiplayer_campaign_settings_options_tables/data__",
     "db/multiplayer_campaign_settings_tables/data__",
     "db/mutually_exclusive_initiative_set_categories_tables/data__",
+    "db/nagash_confederation_rituals_to_missions_tables/data__",
     "db/nakai_temple_levels_tables/data__",
     "db/nakai_temples_tables/data__",
     "db/name_orders_tables/data__",
@@ -1204,6 +1264,9 @@
     "db/random_localisation_strings_tables/data__",
     "db/recruitment_sources_tables/data__",
     "db/region_features_tables/data__",
+    "db/region_group_categories_tables/data__",
+    "db/region_group_category_pooled_resource_junctions_tables/data__",
+    "db/region_group_pooled_resources_tables/data__",
     "db/region_groups_tables/data__",
     "db/region_to_province_junctions_tables/data__",
     "db/regions_tables/data__",
@@ -1235,11 +1298,14 @@
     "db/ritual_payload_change_agent_capacities_tables/data__",
     "db/ritual_payload_change_unit_allowance_capacities_tables/data__",
     "db/ritual_payload_change_unit_capacities_tables/data__",
+    "db/ritual_payload_convert_settlements_tables/data__",
     "db/ritual_payload_cooking_recipes_tables/data__",
+    "db/ritual_payload_development_points_tables/data__",
     "db/ritual_payload_effect_bundles_tables/data__",
     "db/ritual_payload_form_confederations_tables/data__",
     "db/ritual_payload_grant_military_force_stances_tables/data__",
     "db/ritual_payload_modify_current_action_points_tables/data__",
+    "db/ritual_payload_reassign_agents_tables/data__",
     "db/ritual_payload_resource_transactions_tables/data__",
     "db/ritual_payload_spawn_agents_tables/data__",
     "db/ritual_payload_spawn_armies_tables/data__",
@@ -1247,6 +1313,7 @@
     "db/ritual_payload_spawn_mercenaries_tables/data__",
     "db/ritual_payload_spawn_storms_tables/data__",
     "db/ritual_payload_teleport_armies_tables/data__",
+    "db/ritual_payload_text_displays_tables/data__",
     "db/ritual_payload_transported_military_forces_tables/data__",
     "db/ritual_payload_trigger_dilemmas_tables/data__",
     "db/ritual_payloads_tables/data__",
@@ -1272,7 +1339,10 @@
     "db/seasons_tables/data__",
     "db/settlement_abandoment_buildings_tables/data__",
     "db/settlement_climate_types_tables/data__",
+    "db/settlement_nameplate_offsets_per_primary_building_levels_tables/data__",
     "db/settlement_occupation_options_tables/data__",
+    "db/settlement_occupation_pooled_resource_transfers_tables/data__",
+    "db/settlement_type_owning_limit_groups_tables/data__",
     "db/settlement_type_selection_algorithms_tables/data__",
     "db/settlement_type_sets_tables/data__",
     "db/settlement_type_sets_to_settlement_types_tables/data__",
@@ -1300,6 +1370,7 @@
     "db/special_ability_behaviour_groups_tables/data__",
     "db/special_ability_behaviour_groups_to_types_tables/data__",
     "db/special_ability_behaviour_to_ability_junctions_tables/data__",
+    "db/special_ability_contact_phase_groups_tables/data__",
     "db/special_ability_displays_tables/data__",
     "db/special_ability_exclusive_toggle_groups_tables/data__",
     "db/special_ability_groups_tables/data__",
@@ -1356,6 +1427,7 @@
     "db/technology_node_sets_tables/data__",
     "db/technology_nodes_tables/data__",
     "db/technology_nodes_to_ancillaries_junctions_tables/data__",
+    "db/technology_ownership_content_pack_junctions_tables/data__",
     "db/technology_required_building_levels_junctions_tables/data__",
     "db/technology_required_technology_junctions_tables/data__",
     "db/technology_script_lock_reasons_tables/data__",
@@ -1368,7 +1440,6 @@
     "db/teleportation_networks_tables/data__",
     "db/teleportation_node_double_click_events_tables/data__",
     "db/teleportation_node_templates_tables/data__",
-    "db/territory_ownership_scopes_tables/data__",
     "db/time_of_legends_campaigns_tables/data__",
     "db/time_of_legends_campaigns_to_factions_tables/data__",
     "db/toggle_system_building_variants_tables/data__",
@@ -1397,6 +1468,13 @@
     "db/ui_features_tables/data__",
     "db/ui_features_to_cultures_tables/data__",
     "db/ui_features_to_factions_tables/data__",
+    "db/ui_graph_node_clusters_tables/data__",
+    "db/ui_graph_node_links_tables/data__",
+    "db/ui_graph_node_superclusters_tables/data__",
+    "db/ui_graph_node_types_tables/data__",
+    "db/ui_graph_node_unlock_thresholds_tables/data__",
+    "db/ui_graph_nodes_tables/data__",
+    "db/ui_graphs_tables/data__",
     "db/ui_info_ritual_target_criterias_tables/data__",
     "db/ui_initiative_to_agent_subtypes_tables/data__",
     "db/ui_large_images_tables/data__",
@@ -1463,6 +1541,7 @@
     "db/unit_purchasable_effects_tables/data__",
     "db/unit_purchasable_prerequisite_sets_to_effects_junctions_tables/data__",
     "db/unit_quality_progression_functions_tables/data__",
+    "db/unit_recruitment_queue_sets_tables/data__",
     "db/unit_recruitment_source_overrides_tables/data__",
     "db/unit_recruitment_type_recruitment_sources_tables/data__",
     "db/unit_set_special_ability_phase_junctions_tables/data__",
@@ -1501,6 +1580,7 @@
     "db/units_custom_battle_types_to_factions_tables/data__",
     "db/units_to_exclusive_faction_permissions_tables/data__",
     "db/units_to_groupings_military_permissions_tables/data__",
+    "db/vampire_counts_confederation_rituals_to_missions_tables/data__",
     "db/vampire_mercenary_set_junctions_tables/data__",
     "db/variants_tables/data__",
     "db/victory_conditions_tables/data__",
@@ -1533,6 +1613,7 @@
     "text/db/agent_culture_details__.loc",
     "text/db/agent_localisations__.loc",
     "text/db/agent_recruitment_categories__.loc",
+    "text/db/agent_subtype_subculture_overrides__.loc",
     "text/db/agent_subtypes__.loc",
     "text/db/aide_de_camp_speeches__.loc",
     "text/db/ancillaries__.loc",
@@ -1555,6 +1636,7 @@
     "text/db/battlefield_buildings_names__.loc",
     "text/db/battlefield_siege_vehicles__.loc",
     "text/db/battles__.loc",
+    "text/db/books_of_nagash_details__.loc",
     "text/db/bretonnia_vows__.loc",
     "text/db/building_chains__.loc",
     "text/db/building_culture_variants__.loc",
@@ -1594,6 +1676,12 @@
     "text/db/capture_point_types__.loc",
     "text/db/cdir_events_categories__.loc",
     "text/db/cdir_events_dilemma_choice_details__.loc",
+    "text/db/chaotic_plan_schemers_special_infos__.loc",
+    "text/db/chaotic_plan_shop_categories__.loc",
+    "text/db/chaotic_plan_token_flavor_text_descriptions__.loc",
+    "text/db/chaotic_plan_token_types__.loc",
+    "text/db/chaotic_plan_tokens__.loc",
+    "text/db/chaotic_plans__.loc",
     "text/db/character_skill_level_details__.loc",
     "text/db/character_skill_node_sets__.loc",
     "text/db/character_skills__.loc",
@@ -1628,6 +1716,8 @@
     "text/db/encyclopedia_template_strings__coc_.loc",
     "text/db/end_game_settings__.loc",
     "text/db/end_turn_notifications__.loc",
+    "text/db/episode_event_popup_elements__.loc",
+    "text/db/episode_event_popup_sections__.loc",
     "text/db/event_feed_categories__.loc",
     "text/db/event_feed_strings__.loc",
     "text/db/event_feed_subcategories__.loc",
@@ -1723,6 +1813,8 @@
     "text/db/ui_colour_profiles__.loc",
     "text/db/ui_colours__.loc",
     "text/db/ui_faction_set_to_localised_names__.loc",
+    "text/db/ui_graph_node_clusters__.loc",
+    "text/db/ui_graph_node_superclusters__.loc",
     "text/db/ui_info_ritual_target_criterias__.loc",
     "text/db/ui_main_theme_options__.loc",
     "text/db/ui_mercenary_recruitment_infos__.loc",
@@ -1746,6 +1838,7 @@
     "text/db/unit_description_strengths_weaknesses_texts__.loc",
     "text/db/unit_purchasable_effect_lock_reasons__.loc",
     "text/db/unit_purchasable_effects_categories__.loc",
+    "text/db/unit_recruitment_queue_sets__.loc",
     "text/db/unit_set_to_mp_unit_caps__.loc",
     "text/db/unit_stat_localisations__.loc",
     "text/db/unit_weights__.loc",
@@ -1755,6 +1848,7 @@
     "text/db/units_custom_battle_types__.loc",
     "text/db/victory_types__.loc",
     "text/db/vo_fmv_texts__.loc",
+    "text/db/vo_speech_texts__coc_.loc",
     "text/db/war_coordination_invalidation_reasons__.loc",
     "text/db/wind_levels__.loc",
     "text/db/winds_of_magic_compass_actions__.loc"
@@ -1777,6 +1871,7 @@
     "technology_node_sets_tables",
     "technology_nodes_tables",
     "technology_nodes_to_ancillaries_junctions_tables",
+    "technology_ownership_content_pack_junctions_tables",
     "technology_required_building_levels_junctions_tables",
     "technology_required_technology_junctions_tables",
     "technology_script_lock_reasons_tables",
@@ -1837,6 +1932,7 @@
     "technology_node_sets_tables",
     "technology_nodes_tables",
     "technology_nodes_to_ancillaries_junctions_tables",
+    "technology_ownership_content_pack_junctions_tables",
     "technology_required_building_levels_junctions_tables",
     "technology_required_technology_junctions_tables",
     "technology_script_lock_reasons_tables",
@@ -1857,10 +1953,10 @@
   "scripts": [
     {
       "path": "script/_lib/lib_battle_advice.lua",
-      "sha256": "7e8e5f3b2eaf230c62276cd98ef04b65246280189be2d583f125af34d7f305bc",
-      "bytes": 56620,
+      "sha256": "3ecfd51834950452cb6bdd7466f71ba2138029cba1b64f6655d5bf0df575c9bf",
+      "bytes": 56814,
       "contains_technology": false,
-      "line_count": 1551
+      "line_count": 1557
     },
     {
       "path": "script/_lib/lib_battle_attack_lane_manager.lua",
@@ -1920,24 +2016,24 @@
     },
     {
       "path": "script/_lib/lib_battle_ui.lua",
-      "sha256": "8a356b84415dec033d7d12e498b598d52391a84e2c6cc2559657482be5760530",
-      "bytes": 50072,
+      "sha256": "ac8e2c212d694931ec45899c61f9ab8145dbaa73a33a5cc2a382462f7473d2cf",
+      "bytes": 51546,
       "contains_technology": false,
-      "line_count": 1241
+      "line_count": 1268
     },
     {
       "path": "script/_lib/lib_campaign_cutscene.lua",
-      "sha256": "0c87774175e890fe2d3612b3e7488e4e0ba7ffdae3f2f3ac0be78938d0259bf5",
-      "bytes": 54023,
+      "sha256": "89447376da25a0fadbaa4bf99310043fcfb7c45c41c48c892094c33061e5a464",
+      "bytes": 54041,
       "contains_technology": false,
       "line_count": 1482
     },
     {
       "path": "script/_lib/lib_campaign_intervention.lua",
-      "sha256": "6ecc30e748be1facbffaabab8db93cb5c672548fa8a268d639062dbd847f8ae5",
-      "bytes": 154893,
+      "sha256": "62cba22eeb185f91a6307df9e9f6a189ded4ceaf64698a237d34798992fbba8c",
+      "bytes": 155117,
       "contains_technology": true,
-      "line_count": 3990
+      "line_count": 3999
     },
     {
       "path": "script/_lib/lib_campaign_invasion_manager.lua",
@@ -1948,17 +2044,17 @@
     },
     {
       "path": "script/_lib/lib_campaign_manager.lua",
-      "sha256": "974349db05bff1dacefc4e74e8e24993d434732fdb5b55803b2acfbf8799ea7c",
-      "bytes": 803605,
+      "sha256": "3cb5753178e9b3770989997747767cd794df93ea95b6d22eefee66ca8648d070",
+      "bytes": 820500,
       "contains_technology": true,
-      "line_count": 18279
+      "line_count": 18632
     },
     {
       "path": "script/_lib/lib_campaign_mission_manager.lua",
-      "sha256": "41cc7e9d890af5011b5239bcaf0b998e485c933d10fab53e1a8847cb498aaa57",
-      "bytes": 122559,
+      "sha256": "d686bb3e09700ab721541769eef2388547c003ef9ed1aa70a79bc9173c7fdf85",
+      "bytes": 123196,
       "contains_technology": true,
-      "line_count": 2754
+      "line_count": 2774
     },
     {
       "path": "script/_lib/lib_campaign_narrative_events.lua",
@@ -1969,8 +2065,8 @@
     },
     {
       "path": "script/_lib/lib_campaign_random_army.lua",
-      "sha256": "53d8d1715e4659f75b0171f2ddb9aad21c1c1bcc833abc5999678d4140c3e2e6",
-      "bytes": 11560,
+      "sha256": "ada60dbd1adb5c349642cefc1c6e4c7a94f545dd76564f510088b00104be90cf",
+      "bytes": 11565,
       "contains_technology": false,
       "line_count": 295
     },
@@ -1983,17 +2079,17 @@
     },
     {
       "path": "script/_lib/lib_campaign_ui.lua",
-      "sha256": "2a1b0ae12d2c5585c17c06cc0ce132500ff32f032d5035d1b891469d94d81112",
-      "bytes": 543559,
+      "sha256": "17ff5e6997b1440a22b814dd3f0807580c382fb27b59da96c0bb2ed25d305b96",
+      "bytes": 557042,
       "contains_technology": true,
-      "line_count": 11189
+      "line_count": 11425
     },
     {
       "path": "script/_lib/lib_campaign_ui_overrides.lua",
-      "sha256": "bb27d6dde826ba791476790fa9d8fe564fbc9a7ba616677e5b75d244b4f6a713",
-      "bytes": 115541,
+      "sha256": "d26aeda9108ce869365a1ed931ac70d35b80668e8fe24232523a1fc3162c1064",
+      "bytes": 116283,
       "contains_technology": true,
-      "line_count": 3908
+      "line_count": 3935
     },
     {
       "path": "script/_lib/lib_campaign_vector.lua",
@@ -2018,10 +2114,10 @@
     },
     {
       "path": "script/_lib/lib_core.lua",
-      "sha256": "2de888879a797157aa06b5c23df226dcee718601e7eac384cf55efc4b6124b9d",
-      "bytes": 122100,
+      "sha256": "be850ad9855e9d6d23ae1023dfccff7d80a795463a3fc220fe3c7dd8d4bc43d7",
+      "bytes": 123078,
       "contains_technology": false,
-      "line_count": 3149
+      "line_count": 3165
     },
     {
       "path": "script/_lib/lib_custom_context.lua",
@@ -2032,10 +2128,10 @@
     },
     {
       "path": "script/_lib/lib_generated_battle.lua",
-      "sha256": "ce35ae095f526d7a7e3ccd907071ef91eb60329616668ac443d6c3ddf61f1cc0",
-      "bytes": 219736,
+      "sha256": "8226c64f022b3f6b9251bd030f83e0e34391bd32964353454b19580fbbc77008",
+      "bytes": 219813,
       "contains_technology": false,
-      "line_count": 5441
+      "line_count": 5443
     },
     {
       "path": "script/_lib/lib_header.lua",
@@ -2046,10 +2142,10 @@
     },
     {
       "path": "script/_lib/lib_help_pages.lua",
-      "sha256": "ae019388f68395c2824a574f988ee65cfee699f22136600f0532f0478f144b9e",
-      "bytes": 79619,
+      "sha256": "2cc20efa58bddf9c1eda4b0c70f91fce6e963dcd3354389518398bcd723f8f77",
+      "bytes": 80214,
       "contains_technology": true,
-      "line_count": 2799
+      "line_count": 2839
     },
     {
       "path": "script/_lib/lib_infotext.lua",
@@ -2095,22 +2191,22 @@
     },
     {
       "path": "script/_lib/lib_scripted_tours.lua",
-      "sha256": "a793c9dcf4dd783af12113975882d6ed161e4ebb6b4d15d03cee9769ecdd48cd",
-      "bytes": 102984,
+      "sha256": "057d7b4acb889021f9ad55899f22c57f95d2e1ca355264a137c0bbfc2de64791",
+      "bytes": 103080,
       "contains_technology": false,
       "line_count": 2457
     },
     {
       "path": "script/_lib/lib_text_pointers.lua",
-      "sha256": "5db1ced19def2e68d37d00155d8d7ec04c9708222275ae604f919a027a4799ed",
-      "bytes": 82597,
+      "sha256": "a97a921d9906b78e7aef17843b59ddc587264db6c32e8c5129de64d1f60b0164",
+      "bytes": 83379,
       "contains_technology": false,
-      "line_count": 2037
+      "line_count": 2055
     },
     {
       "path": "script/_lib/lib_text_pointers_active.lua",
-      "sha256": "f84f67a9085c79321cecac0e8ba3dc77ee8bc65bc9111d826425d4bb2ae593a6",
-      "bytes": 42421,
+      "sha256": "b97249587920c3f759a5e7234556acf09af04fef0fe6844d1c533424f240dec5",
+      "bytes": 42434,
       "contains_technology": false,
       "line_count": 890
     },
@@ -2137,10 +2233,10 @@
     },
     {
       "path": "script/_lib/lib_types.lua",
-      "sha256": "ec11b66cc533f81d671773e6a57fdbd7665167086f184619358307799ca32a03",
-      "bytes": 115026,
+      "sha256": "8969cfc1cd59e0ff9c731a2b64fd242a00413c40f0faf4cb4c472af18344411d",
+      "bytes": 116513,
       "contains_technology": true,
-      "line_count": 2775
+      "line_count": 2810
     },
     {
       "path": "script/_lib/lib_unique_table.lua",
@@ -2151,10 +2247,17 @@
     },
     {
       "path": "script/_lib/lib_weighted_list.lua",
-      "sha256": "31ba5bbafd0627a8824ee05843fd512e51281ce86720f2c464c4c3dede54525a",
-      "bytes": 976,
+      "sha256": "e76557b56c1766f3ca99dd9b3fdc5cc395f5bebe14117c3f5fb6df778a3d5771",
+      "bytes": 1931,
       "contains_technology": false,
-      "line_count": 45
+      "line_count": 78
+    },
+    {
+      "path": "script/_lib/mod/debugging_helpers.lua",
+      "sha256": "4a9d83038ec07c62219d24f4b47754e521a9264c9c0a11afdae024919f19eb83",
+      "bytes": 6391,
+      "contains_technology": false,
+      "line_count": 218
     },
     {
       "path": "script/_lib/mod/qa_console.lua",
@@ -2312,8 +2415,8 @@
     },
     {
       "path": "script/campaign/_narrative/races/wh3_narrative_slaanesh.lua",
-      "sha256": "af3c07c1c97a381a43b4b9b3059b9210a2d12108a13db39b2c2ea73b601dfc9a",
-      "bytes": 79176,
+      "sha256": "2c1ef53c4377e640f1912d7a370f9233a1d06afe15dd44bd6b094953e10edc09",
+      "bytes": 79185,
       "contains_technology": true,
       "line_count": 1470
     },
@@ -2330,6 +2433,13 @@
       "bytes": 5404,
       "contains_technology": true,
       "line_count": 178
+    },
+    {
+      "path": "script/campaign/_narrative/races/wh3_narrative_undead_legions.lua",
+      "sha256": "25284f14a02691a0a339c2a9f83e5456eaa0a347ada09f882809e9335138404e",
+      "bytes": 2312,
+      "contains_technology": false,
+      "line_count": 57
     },
     {
       "path": "script/campaign/_narrative/races/wh3_narrative_vampire_coast.lua",
@@ -2375,17 +2485,17 @@
     },
     {
       "path": "script/campaign/_narrative/wh3_narrative_shared_chains.lua",
-      "sha256": "984085dc82d817eb937c7c4e795898f19c4012f38b234b9d72349a5bf5773304",
-      "bytes": 258959,
+      "sha256": "560ae5a3f8afb774814e85a1018a634505ba3331e43e8ffea82234360d3204d8",
+      "bytes": 258957,
       "contains_technology": true,
-      "line_count": 4568
+      "line_count": 4567
     },
     {
       "path": "script/campaign/_narrative/wh3_narrative_shared_faction_data.lua",
-      "sha256": "27d9aa387af7c522efbeb3ced9414de889e7285d08c88a6ffcde576294f169f9",
-      "bytes": 64286,
+      "sha256": "020a844c8962060f9059ff0158e20eab1d76c539c38813b9a21cbbea5391f0ee",
+      "bytes": 64661,
       "contains_technology": true,
-      "line_count": 1060
+      "line_count": 1061
     },
     {
       "path": "script/campaign/_narrative/wh3_narrative_system.lua",
@@ -2403,10 +2513,10 @@
     },
     {
       "path": "script/campaign/corruption_swing.lua",
-      "sha256": "4976233f25bf6fc9295d1bcbd57019f12b6a8f2e6e30db0dc50243f7701fec54",
-      "bytes": 15761,
+      "sha256": "ef39c935a131e2009fb49eb3c7dbbef7742bd18874d5e392676cd4a2693b44b2",
+      "bytes": 15953,
       "contains_technology": false,
-      "line_count": 385
+      "line_count": 390
     },
     {
       "path": "script/campaign/debug_economy_logging.lua",
@@ -2417,73 +2527,143 @@
     },
     {
       "path": "script/campaign/faction_intro.lua",
-      "sha256": "b886d34ed2b40dd921a71c83e43db2fedcf0a4022d7d99ee0f18b46175e5519b",
-      "bytes": 24122,
+      "sha256": "7eef655f2d8ff3ba29b7ef059fccc2e196fb5d0da2305617a779468c360a7806",
+      "bytes": 27612,
       "contains_technology": false,
-      "line_count": 453
+      "line_count": 535
     },
     {
-      "path": "script/campaign/main_warhammer/endgame/endgame_grudge_too_far.lua",
-      "sha256": "86304128a597c37bf8c77074b8d08e23724222d4c967180ff71a91ed2538803a",
-      "bytes": 5124,
+      "path": "script/campaign/main_warhammer/crisis/crisis_grudge_too_far.lua",
+      "sha256": "2495edea723935abf85673483f1c1993f7084bd02c69dce8bbad3644a40e789f",
+      "bytes": 5114,
       "contains_technology": true,
       "line_count": 131
     },
     {
-      "path": "script/campaign/main_warhammer/endgame/endgame_pyramid_of_nagash.lua",
-      "sha256": "7662b733f1a709857de0e108d6664e2941abdbe78c33a506a2ebeac062e1b51d",
-      "bytes": 6584,
+      "path": "script/campaign/main_warhammer/crisis/crisis_pyramid_of_nagash.lua",
+      "sha256": "b362dbbfff2d6a4d116aff7488b2ead63c85e395a7263af17a0e70d73f814809",
+      "bytes": 6924,
       "contains_technology": true,
-      "line_count": 182
+      "line_count": 193
     },
     {
-      "path": "script/campaign/main_warhammer/endgame/endgame_vampires_rise.lua",
-      "sha256": "bd345a3dae80e094e13206c4525e8a07f2b11d46248fb12b4b8337c48a08b6c8",
-      "bytes": 3333,
+      "path": "script/campaign/main_warhammer/crisis/crisis_vampires_rise.lua",
+      "sha256": "71fc805d74fb2adc1f50e3f813f8a58b071dbeb1206f1d327c33e5b2e4b9b9d2",
+      "bytes": 3325,
       "contains_technology": true,
       "line_count": 95
     },
     {
-      "path": "script/campaign/main_warhammer/endgame/endgame_vermintide.lua",
-      "sha256": "f0adf002261ec08c4339f4cc30d8df3e12cd7af6731ca3afbb219d6d5626de22",
-      "bytes": 25185,
-      "contains_technology": true,
-      "line_count": 614
-    },
-    {
-      "path": "script/campaign/main_warhammer/endgame/endgame_waaagh.lua",
-      "sha256": "712a4b2910217acf75c456641218035a963a44af21bf58d7783f31ab491cb0c3",
-      "bytes": 5439,
+      "path": "script/campaign/main_warhammer/crisis/crisis_waaagh.lua",
+      "sha256": "7547168b1810f584a6634df16ebe7265c19341a1b2fe210f411d8a38a0938fe6",
+      "bytes": 5426,
       "contains_technology": true,
       "line_count": 145
     },
     {
-      "path": "script/campaign/main_warhammer/endgame/endgame_wild_hunt.lua",
-      "sha256": "7dfcbf409d4c826d59c793b3518f47520450b26917907abffe85801e126218c3",
-      "bytes": 4475,
+      "path": "script/campaign/main_warhammer/crisis/crisis_wild_hunt.lua",
+      "sha256": "b47bdd67ddae03451399058dff57c55a4fe47c0e0548acdfbc3315510cd09d72",
+      "bytes": 4466,
       "contains_technology": true,
       "line_count": 127
     },
     {
-      "path": "script/campaign/main_warhammer/endgame/endgame_will_of_hashut.lua",
-      "sha256": "279a0b890e91777c6d3f4e0919f544cd9c0a33d4f68e10274652ce56696d1c48",
-      "bytes": 7970,
+      "path": "script/campaign/main_warhammer/crisis/crisis_will_of_hashut.lua",
+      "sha256": "79b43f6dce0df542fb902cf6c032e4e42a8d8863360f67ed6df604268e02b743",
+      "bytes": 7947,
       "contains_technology": true,
       "line_count": 188
     },
     {
-      "path": "script/campaign/main_warhammer/endgames.lua",
-      "sha256": "39374202427844d7ec725ef9a7d6d3d5531e3f802f2de03fc4a024a8108a84c7",
-      "bytes": 25702,
+      "path": "script/campaign/main_warhammer/crisis/depricated/crisis_pyramid_of_nagash.lua",
+      "sha256": "10de96f2796964fac6684f75da17baecf47a328aea27a7f36d3bbeff89f5f59b",
+      "bytes": 6565,
+      "contains_technology": true,
+      "line_count": 182
+    },
+    {
+      "path": "script/campaign/main_warhammer/crisis/depricated/crisis_vermintide.lua",
+      "sha256": "47028bcc8c1eb34418ce54ddf952ac314727cfe01fe3c8ad22b456ec395d013d",
+      "bytes": 25111,
+      "contains_technology": true,
+      "line_count": 614
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_chaos_invasion.lua",
+      "sha256": "f1a978d6e3174d823db413545483f691d51dd155e20bae3009df7634553d5c41",
+      "bytes": 113941,
       "contains_technology": false,
-      "line_count": 631
+      "line_count": 2493
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_crisis_example.lua",
+      "sha256": "69f55e2b2d542474d3aaade33345c8e5b55f86be7adc148813a987aa93b16ce7",
+      "bytes": 27004,
+      "contains_technology": false,
+      "line_count": 803
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_glottkin.lua",
+      "sha256": "c96771fd2cf1f66e4788a5f6696fb8e4982c75928eb742fb58421959069345da",
+      "bytes": 48125,
+      "contains_technology": false,
+      "line_count": 1356
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_nagash_endgame.lua",
+      "sha256": "c99b052d71d593213897f0e6d2f3039923384e524abfed5290cea6211b580ec3",
+      "bytes": 95317,
+      "contains_technology": false,
+      "line_count": 2447
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_nagash_narrative.lua",
+      "sha256": "81e501eabaf5a9667d22cd3b574c2a79bdcc696a8173b41bfd97b17f8ebaf992",
+      "bytes": 21040,
+      "contains_technology": false,
+      "line_count": 679
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_nagash_sandbox.lua",
+      "sha256": "06b1b7266cf6af57d3e2de22ded3e1d071addddd9bb2878ff669961dc8f26b91",
+      "bytes": 27351,
+      "contains_technology": false,
+      "line_count": 813
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
+      "sha256": "4be50c7b83909508f86e3e658de8e9e6b0038322887a34a28e0bba4701d8e8e0",
+      "bytes": 40791,
+      "contains_technology": true,
+      "line_count": 1025
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episode_vermintide.lua",
+      "sha256": "fc183fa0d55cf2545aa3c1ce4d11477344cd0faaf342340c1a8fc8307c68078c",
+      "bytes": 73446,
+      "contains_technology": false,
+      "line_count": 1803
+    },
+    {
+      "path": "script/campaign/main_warhammer/episodes/episodes_manager.lua",
+      "sha256": "d52726e4bd6eb59074608104384e90e415ed50e57193249f3abfb509238cee16",
+      "bytes": 31396,
+      "contains_technology": false,
+      "line_count": 867
     },
     {
       "path": "script/campaign/main_warhammer/faction_intro/main_warhammer_faction_intro.lua",
-      "sha256": "63ba0be93ff9b33814d96a82b351101bd0e0b2c4bf78721055b10dd844f710a7",
-      "bytes": 50656,
+      "sha256": "82d18651a99a622f67b9989dad1bd8bc359f40a61370e5fac4bd0338cee6c960",
+      "bytes": 82783,
       "contains_technology": false,
-      "line_count": 1051
+      "line_count": 1631
+    },
+    {
+      "path": "script/campaign/main_warhammer/lua_payloads/lua_payloads_executor.lua",
+      "sha256": "af69b44650eff3918f05d07ff3bdb699fd026197ea38ea84f19432eaab1a0a56",
+      "bytes": 28609,
+      "contains_technology": false,
+      "line_count": 660
     },
     {
       "path": "script/campaign/main_warhammer/minor_cults/mc_assassins.lua",
@@ -2766,11 +2946,25 @@
       "line_count": 118
     },
     {
+      "path": "script/campaign/main_warhammer/narratives/wh3_dlc29_episode_narrative_thanquol.lua",
+      "sha256": "ca13a5ae37b607597d0e3773092487a7698b30fc7c92da23ea0549e9fbcbee6f",
+      "bytes": 30341,
+      "contains_technology": false,
+      "line_count": 778
+    },
+    {
+      "path": "script/campaign/main_warhammer/narratives/wh3_dlc29_middenland_narrative.lua",
+      "sha256": "19ed6c7f266d0244366778a0ae468152fc3a8f51f1e058ce8b42a5decf8ba439",
+      "bytes": 60632,
+      "contains_technology": false,
+      "line_count": 1526
+    },
+    {
       "path": "script/campaign/main_warhammer/required.lua",
-      "sha256": "a84e90a67eb8d2fd071277de9b46f3fb382ff05a99ac00ff4d4eeeb7fc5851eb",
-      "bytes": 9778,
+      "sha256": "520990ba662c641ae181368807ff8aa2d96df8d220e2ab37b8ffc69412e547fb",
+      "bytes": 11968,
       "contains_technology": true,
-      "line_count": 292
+      "line_count": 343
     },
     {
       "path": "script/campaign/main_warhammer/scripting.lua",
@@ -2781,10 +2975,24 @@
     },
     {
       "path": "script/campaign/main_warhammer/victory_objectives.lua",
-      "sha256": "41a6abc585b94e44127d36b9e6c332fd8fd85d377a3866d89007a28ae40ff5b1",
-      "bytes": 168876,
+      "sha256": "8b2e83d31014d74d14341d61465575f18a0e1bd7b6c14092d289e319d210fe46",
+      "bytes": 173887,
       "contains_technology": false,
-      "line_count": 5473
+      "line_count": 5636
+    },
+    {
+      "path": "script/campaign/main_warhammer/victory_objectives_config.lua",
+      "sha256": "94c09f5a202a5616597c78389c435a661f9b611fc36c3ae3bdc2e92d6be072c6",
+      "bytes": 649636,
+      "contains_technology": true,
+      "line_count": 13988
+    },
+    {
+      "path": "script/campaign/main_warhammer/victory_objectives_config_utils.lua",
+      "sha256": "3a75a9002a1d9b82f7f9401eb4328bc572a23b098ddeabdeb82058e90af953bd",
+      "bytes": 131088,
+      "contains_technology": true,
+      "line_count": 2884
     },
     {
       "path": "script/campaign/main_warhammer/wh2_dlc17_thorek.lua",
@@ -2794,11 +3002,11 @@
       "line_count": 242
     },
     {
-      "path": "script/campaign/main_warhammer/wh2_vampire_bloodlines.lua",
-      "sha256": "0bb27643dc441b542928f5531e502b0eb0981db0576cf54a939896fd16495286",
-      "bytes": 21545,
-      "contains_technology": true,
-      "line_count": 555
+      "path": "script/campaign/main_warhammer/wh3_crisis_scenarios.lua",
+      "sha256": "13511ad6bab0a5882deee2bfada4275abe5d214c16819f0263252da0c19c6360",
+      "bytes": 26407,
+      "contains_technology": false,
+      "line_count": 648
     },
     {
       "path": "script/campaign/main_warhammer/wh3_dlc23_chaos_dwarf_relics.lua",
@@ -2822,6 +3030,20 @@
       "line_count": 694
     },
     {
+      "path": "script/campaign/main_warhammer/wh3_dlc29_campaign_devastation.lua",
+      "sha256": "5e8364834beb60256ae8088ce540b917653219e2044a1284476a0419c2b325b3",
+      "bytes": 21134,
+      "contains_technology": false,
+      "line_count": 436
+    },
+    {
+      "path": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+      "sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+      "bytes": 53085,
+      "contains_technology": true,
+      "line_count": 1221
+    },
+    {
       "path": "script/campaign/main_warhammer/wh3_ie_narrative_events.lua",
       "sha256": "dc4a0d9a2c09cb59e64954cda8691106f30e86db37f05eb4b7e64a7fef2bd22d",
       "bytes": 9502,
@@ -2837,10 +3059,10 @@
     },
     {
       "path": "script/campaign/main_warhammer/wh_campaign_faction_start.lua",
-      "sha256": "272eab9ca9dbcdb284e82a266fed010f863a76ea9b8a22271fb65d45a0808aca",
-      "bytes": 10909,
+      "sha256": "c703922375c651adfe86ee671375f124d7e834ef1ac5d9acbb936df88d408aac",
+      "bytes": 11051,
       "contains_technology": false,
-      "line_count": 331
+      "line_count": 333
     },
     {
       "path": "script/campaign/main_warhammer/wh_dlc03_beastmen_moon.lua",
@@ -2893,10 +3115,10 @@
     },
     {
       "path": "script/campaign/main_warhammer/wh_dlc07_schwartzhafen_undying_love.lua",
-      "sha256": "030f733bdeaab7971e3bb8178c6dd0c1386cb3789a2863cbd1f02dd5a4f17dcd",
-      "bytes": 2277,
+      "sha256": "873711d1bd00ca7477d7e2d2c6f7f7a398dc3c5ea4b6c39844f8e189ba05c35b",
+      "bytes": 5087,
       "contains_technology": false,
-      "line_count": 47
+      "line_count": 117
     },
     {
       "path": "script/campaign/main_warhammer/wh_dlc07_the_green_knight.lua",
@@ -2914,17 +3136,17 @@
     },
     {
       "path": "script/campaign/main_warhammer/wh_dlc07_vows.lua",
-      "sha256": "63e76670295d5e09e3e26b500a35871073d858af6e794af76e510e62aa785341",
-      "bytes": 23136,
+      "sha256": "873555a534f2c978428c1b25694c5a2b3aeff76a9af9e0ed1e5afa2152d47f27",
+      "bytes": 22396,
       "contains_technology": true,
-      "line_count": 570
+      "line_count": 548
     },
     {
       "path": "script/campaign/main_warhammer/wh_dlc08_monster_hunt.lua",
-      "sha256": "ce9a427f72869c455582dc86a93d60bb506535967d17099331b8bdb290fa7ee3",
-      "bytes": 168959,
+      "sha256": "55f87176b890e2f23dd26e1446006e739dc2af25174d1929229077c44efd5cc7",
+      "bytes": 168961,
       "contains_technology": true,
-      "line_count": 4397
+      "line_count": 4398
     },
     {
       "path": "script/campaign/main_warhammer/wh_dlc08_norsca.lua",
@@ -2963,10 +3185,10 @@
     },
     {
       "path": "script/campaign/main_warhammer/wh_horde_reemergence.lua",
-      "sha256": "0dbb858e694aa0f61423ea3ba90ce9146cdf52ad38418f1e656fc2ae0a63ddbe",
-      "bytes": 10651,
+      "sha256": "fbe803c15ef6f40db97022541c148b049036f4222e0b8c9f5ab8967b33a52b10",
+      "bytes": 27808,
       "contains_technology": false,
-      "line_count": 268
+      "line_count": 580
     },
     {
       "path": "script/campaign/main_warhammer/wh_pro01_grombrindal.lua",
@@ -2977,17 +3199,17 @@
     },
     {
       "path": "script/campaign/main_warhammer/wh_quests.lua",
-      "sha256": "ab0ae92aeb3c3da4b3be56fa3c3ee5a13f908cec4baade9c94dd08d4645e1505",
-      "bytes": 32498,
+      "sha256": "2d16a7097ed1cb34eda4a557a55590c2fa2525196c40933762c540ed0ed71d8c",
+      "bytes": 34777,
       "contains_technology": false,
-      "line_count": 508
+      "line_count": 541
     },
     {
       "path": "script/campaign/main_warhammer/wh_start.lua",
-      "sha256": "0161c1fb60028b7e2f4b07298e6fffeb257ee9ff0a9e6913e693a786363daf18",
-      "bytes": 22276,
+      "sha256": "2c68e551df541f73bf51dc30fcf5bf4d9a057d48d3435129ea1cd303737a0c32",
+      "bytes": 24053,
       "contains_technology": true,
-      "line_count": 662
+      "line_count": 710
     },
     {
       "path": "script/campaign/mod/battle_logging.lua",
@@ -3061,24 +3283,24 @@
     },
     {
       "path": "script/campaign/wh2_campaign_custom_starts.lua",
-      "sha256": "7d1e1b725146c0f2e1d19dbd18bb4fd5183d49c615b05430140a9b73be016df2",
-      "bytes": 85989,
+      "sha256": "7319bc9c4cdcccf519cb1f30f3fd49ff408fb4f44eeb41a5f85b320c3b683775",
+      "bytes": 87157,
       "contains_technology": false,
-      "line_count": 1689
+      "line_count": 1718
     },
     {
       "path": "script/campaign/wh2_campaign_encounters_at_sea.lua",
-      "sha256": "a75ce0f1dbfa962508382cec6f97e4773b2c77c8688214216a1b6d4aaef873e5",
-      "bytes": 23751,
+      "sha256": "4851b12efd9c11f551f49bea2200c51d0c8742a8e3f5a917b40a54f54f374357",
+      "bytes": 24305,
       "contains_technology": false,
-      "line_count": 553
+      "line_count": 557
     },
     {
       "path": "script/campaign/wh2_campaign_forced_battle_manager.lua",
-      "sha256": "33c4f489f5a271cbbe0818f062760cd4a5c0d23f1bb9b1afcf58fd3ec52fa39e",
-      "bytes": 24566,
+      "sha256": "c9e35d556717a79345a4dc2b9db974928ea7144753dabf8b2a689595a40c9d9d",
+      "bytes": 24591,
       "contains_technology": false,
-      "line_count": 619
+      "line_count": 621
     },
     {
       "path": "script/campaign/wh2_campaign_generated_constants.lua",
@@ -3110,17 +3332,17 @@
     },
     {
       "path": "script/campaign/wh2_campaign_random_armies.lua",
-      "sha256": "af681ca79b96b238749f106136c7ee454ff04128e6a8622e6e0d464de038eeb3",
-      "bytes": 69630,
+      "sha256": "daa68d0bbd62ed27fddc0de5b9d78a85af9f8b2aa8af114414bf1aa51de205e9",
+      "bytes": 79572,
       "contains_technology": false,
-      "line_count": 1120
+      "line_count": 1260
     },
     {
       "path": "script/campaign/wh2_campaign_rites.lua",
-      "sha256": "0f76e8b77f37ab2f3820590b09e51a13b174617fb80eb2073a135e540eb981bc",
-      "bytes": 55198,
+      "sha256": "b021b582a832c28ac083d5ac39042bc589f24b59174b1d78ca6f05fb630f8532",
+      "bytes": 56305,
       "contains_technology": true,
-      "line_count": 1647
+      "line_count": 1679
     },
     {
       "path": "script/campaign/wh2_campaign_tech_tree_lords.lua",
@@ -3131,31 +3353,31 @@
     },
     {
       "path": "script/campaign/wh2_campaign_traits.lua",
-      "sha256": "0b4e6dc740352772c3708cbdb2aa1adb031d30033a31a6f64a7f5172868d587d",
-      "bytes": 56722,
+      "sha256": "14a2cdbb44820a1244418b6a92f94b7409475b9c466b87f62964030bb3f231d8",
+      "bytes": 60410,
       "contains_technology": true,
-      "line_count": 1124
+      "line_count": 1225
     },
     {
       "path": "script/campaign/wh2_dlc09_books_of_nagash.lua",
-      "sha256": "e79fbd38eeacb247878008aa27603b6ceb019a75e52af647f4d44dc1e9a58f50",
-      "bytes": 10461,
+      "sha256": "a76eec674f0d02e7307b04c37aeead02c410098c92663c2debe2ac74058f4063",
+      "bytes": 67579,
       "contains_technology": false,
-      "line_count": 248
+      "line_count": 1610
     },
     {
       "path": "script/campaign/wh2_dlc09_books_of_nagash_effects.lua",
-      "sha256": "ccf10be62a5f806108f22832bce0610d1bb66bf0daa17c0f699766e5f86401e5",
-      "bytes": 8374,
+      "sha256": "9c1dba86af9119577c7bf6441e0abc3f510c5b65d853ae712c30134a878b61fc",
+      "bytes": 2256,
       "contains_technology": false,
-      "line_count": 237
+      "line_count": 78
     },
     {
       "path": "script/campaign/wh2_dlc09_books_of_nagash_locations.lua",
-      "sha256": "ff5f4e2a8949ba57736792df83d39554adb94f8054e71b9451825570a0bf8c45",
-      "bytes": 8366,
+      "sha256": "1531d61021bf65065992fde0ed19c281c3e50909e4fcd61065d06d2a042bf88e",
+      "bytes": 12257,
       "contains_technology": false,
-      "line_count": 105
+      "line_count": 132
     },
     {
       "path": "script/campaign/wh2_dlc09_dynasty_tree.lua",
@@ -3166,10 +3388,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc09_tomb_kings.lua",
-      "sha256": "2bc2e0fa13542060af356a311e47ea0ce41ae93a79a74eaa2c5d78ebe3468123",
-      "bytes": 7177,
+      "sha256": "5bdacaf6341fbacc37b693752b5a62c2abd4e5364b1281e84468ac4050e431b7",
+      "bytes": 7520,
       "contains_technology": true,
-      "line_count": 207
+      "line_count": 217
     },
     {
       "path": "script/campaign/wh2_dlc09_tretch_craventail.lua",
@@ -3243,10 +3465,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc11_treasure_maps.lua",
-      "sha256": "c09a182ec0749adc6c0e7a16dcf3ad074e591e7ecfc8c27d76419c17cbe60d36",
-      "bytes": 18081,
+      "sha256": "43154c87d5eec911de16c7e818c6769bff203feff3175261be9ea3baf9c867b9",
+      "bytes": 18761,
       "contains_technology": false,
-      "line_count": 410
+      "line_count": 423
     },
     {
       "path": "script/campaign/wh2_dlc11_vampire_coast.lua",
@@ -3257,24 +3479,24 @@
     },
     {
       "path": "script/campaign/wh2_dlc11_vampire_coast_loyalty.lua",
-      "sha256": "11640b614eee3c9f917739bb1de7a515425476005af5a5248fbc90b89ec7838b",
-      "bytes": 15274,
+      "sha256": "6c88a2236843c7622504a1222bc0109afe65b6b420224c05501b957f35930eec",
+      "bytes": 15297,
       "contains_technology": false,
       "line_count": 387
     },
     {
       "path": "script/campaign/wh2_dlc12_ikit_workshop.lua",
-      "sha256": "86a24218f60291ed8fd307083ea0af779a5f50d590b6d2f5b22f62c11995e726",
-      "bytes": 33185,
+      "sha256": "01e1dfc6d2b135e0d15ee587c47cc7c318df19ed7e05f9aa07defa652eacc409",
+      "bytes": 34268,
       "contains_technology": true,
-      "line_count": 783
+      "line_count": 795
     },
     {
       "path": "script/campaign/wh2_dlc12_kroak.lua",
-      "sha256": "ede939078f6fe829161730ac2486d5f1956a37f5f5432f90f2e3fcd00f566a16",
-      "bytes": 5959,
+      "sha256": "5593adeeaa750c98cd638c482b852c086361d086ccae61b3e19d8b061bc6b283",
+      "bytes": 6092,
       "contains_technology": false,
-      "line_count": 192
+      "line_count": 195
     },
     {
       "path": "script/campaign/wh2_dlc12_tehenhauin.lua",
@@ -3285,10 +3507,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc12_under_empire.lua",
-      "sha256": "27df596856b0b975191a6692aba489cd47bd42e693baed4552ca0aae310237fc",
-      "bytes": 30113,
+      "sha256": "408b9352fd61bce6d0c1e0bb2dc6bf1a6ae87c5ce80cf4a7b5e1d001fcbdafdc",
+      "bytes": 31628,
       "contains_technology": false,
-      "line_count": 792
+      "line_count": 817
     },
     {
       "path": "script/campaign/wh2_dlc13_empire_politics.lua",
@@ -3299,10 +3521,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc13_nakai_temples.lua",
-      "sha256": "8dde451deae50aa44aba0e3152378639e1c3c2961fe842a0c5ac3154aaf6383a",
-      "bytes": 11696,
+      "sha256": "ca8096665f491d7064f2dc9c8c249b36d5d1804e4666895a5b532be6669c4514",
+      "bytes": 12249,
       "contains_technology": false,
-      "line_count": 357
+      "line_count": 370
     },
     {
       "path": "script/campaign/wh2_dlc13_wulfhart_hunters.lua",
@@ -3313,10 +3535,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc13_wulfhart_imperial_reinforcement.lua",
-      "sha256": "e08bd90693b9bf57b556e10fbe25ac985c521e221d49dfbca760728041f62377",
-      "bytes": 41014,
+      "sha256": "aeda0a11ec336407862b019c60e39e4da48316b3a191dd68faefc8d259e9334a",
+      "bytes": 41181,
       "contains_technology": false,
-      "line_count": 984
+      "line_count": 985
     },
     {
       "path": "script/campaign/wh2_dlc14_malus_malekiths_favour.lua",
@@ -3327,10 +3549,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc14_malus_sanity.lua",
-      "sha256": "6a4d862941906654a11f57f2b5dfcfe46cc8d78d1a2612840f25d780cdb501f6",
-      "bytes": 10952,
+      "sha256": "c24d3ec0535ac9e306da7bf12436ed4853e786ef45d7c127f50559ddb953f0ae",
+      "bytes": 11202,
       "contains_technology": false,
-      "line_count": 342
+      "line_count": 348
     },
     {
       "path": "script/campaign/wh2_dlc14_repanse_confederation.lua",
@@ -3348,10 +3570,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc14_snikch_revitalizing_rite.lua",
-      "sha256": "2551f772f0e22ab88d9681b23c18f5e80256965ecb9f9e6a3e810c134e560442",
-      "bytes": 1355,
+      "sha256": "6b9ceaf7898fc390e9870c8c651b65ed21f64717036f4143b60902ac68c893ea",
+      "bytes": 1626,
       "contains_technology": false,
-      "line_count": 44
+      "line_count": 50
     },
     {
       "path": "script/campaign/wh2_dlc14_snikch_shadowy_dealings.lua",
@@ -3369,17 +3591,17 @@
     },
     {
       "path": "script/campaign/wh2_dlc15_dragon_encounters.lua",
-      "sha256": "18f6153402c316b3f4525dba3a1cbcb57f1f4dd64009597e6a4652abfa39fbb0",
-      "bytes": 27665,
+      "sha256": "beec85c19d73437f592155e9294681fbafb30289d7591406ef7752ad62c63020",
+      "bytes": 27737,
       "contains_technology": false,
       "line_count": 570
     },
     {
       "path": "script/campaign/wh2_dlc15_eltharion_lair.lua",
-      "sha256": "0636597d45b1954b9d993d53f3628ef67d324d6518bd7a35e20e4d85151027c7",
-      "bytes": 23588,
+      "sha256": "55719277eb7544f2a6afd3e6e3749024b96e7fd0e9bea65ae12fa2b88662afe9",
+      "bytes": 23749,
       "contains_technology": false,
-      "line_count": 561
+      "line_count": 563
     },
     {
       "path": "script/campaign/wh2_dlc15_eltharion_mist.lua",
@@ -3418,10 +3640,10 @@
     },
     {
       "path": "script/campaign/wh2_dlc15_waaagh.lua",
-      "sha256": "11f785f07b39aae817b0c2cf10ac1490721d47b39716907c0b69e9771721435f",
-      "bytes": 50349,
+      "sha256": "6ea3acfbcba0c7b800933d9984ac2dd7fe588093f15203bd5c380c3eb8aaa7ca",
+      "bytes": 51214,
       "contains_technology": true,
-      "line_count": 1564
+      "line_count": 1581
     },
     {
       "path": "script/campaign/wh2_dlc16_drycha_coeddil_unchained.lua",
@@ -3530,10 +3752,10 @@
     },
     {
       "path": "script/campaign/wh3_campaign_ai.lua",
-      "sha256": "1fd8f93328bf6dceee45da505f0da8d7eeae968044b1e61b89001d7d2692e009",
-      "bytes": 32987,
+      "sha256": "1f57ba4086ca4f879999f39bf8641c8ff76d0661e593c2c95d5ea772c8c508a7",
+      "bytes": 49378,
       "contains_technology": true,
-      "line_count": 831
+      "line_count": 1269
     },
     {
       "path": "script/campaign/wh3_campaign_belakor.lua",
@@ -3544,31 +3766,31 @@
     },
     {
       "path": "script/campaign/wh3_campaign_bonus_values.lua",
-      "sha256": "ddee551082f6e6a8775123cf71dcdf0e3edbf025ef3836d2bb89da584d9e13e1",
-      "bytes": 103123,
+      "sha256": "a2d8578c15636862a7729c473781bd499728a07e4bb404b0fcba48430fd269fd",
+      "bytes": 115509,
       "contains_technology": true,
-      "line_count": 2832
+      "line_count": 3168
     },
     {
       "path": "script/campaign/wh3_campaign_caravans_core.lua",
-      "sha256": "66d6718abfdf4ddb85a772ee9e66a101e2694e0192d59a3086f9977cd897c9a2",
-      "bytes": 64079,
+      "sha256": "8f16b3ce60bcb85f32818f1164aa260d934868a00dcddead28b9cfc89c5c69d7",
+      "bytes": 65827,
       "contains_technology": false,
-      "line_count": 1663
+      "line_count": 1691
     },
     {
       "path": "script/campaign/wh3_campaign_character_initiative_unlocks.lua",
-      "sha256": "5641e44caccd3066d859118da6821ca7d22663b41820215f2a2ed73958fd7e40",
-      "bytes": 86881,
+      "sha256": "0646b4b58b076962bb3665bb190da4d53080e13976ff48ebcb3eb9e8676a88a7",
+      "bytes": 86860,
       "contains_technology": false,
       "line_count": 1886
     },
     {
       "path": "script/campaign/wh3_campaign_character_upgrading.lua",
-      "sha256": "089a3ba1cdc4bc5305a97f82f7df02df73a17bdb0c5234f0a6663363678cf679",
-      "bytes": 19684,
+      "sha256": "1e59fd89c9441dccfd2f4b0958be3481d97873461369653b743faa53e44ddb60",
+      "bytes": 20001,
       "contains_technology": false,
-      "line_count": 452
+      "line_count": 458
     },
     {
       "path": "script/campaign/wh3_campaign_chd_convoy_events.lua",
@@ -3578,11 +3800,18 @@
       "line_count": 1684
     },
     {
-      "path": "script/campaign/wh3_campaign_corruption.lua",
-      "sha256": "371dd1775872439e0787e167587b695e699a7edf684cbdb05769a4d2618120ed",
-      "bytes": 8534,
+      "path": "script/campaign/wh3_campaign_climate_change_manager.lua",
+      "sha256": "bee5b7569de52cf1fde6499bd26e62060d4796e19d41b1495e8f6ac8cf2e2396",
+      "bytes": 4475,
       "contains_technology": false,
-      "line_count": 254
+      "line_count": 145
+    },
+    {
+      "path": "script/campaign/wh3_campaign_corruption.lua",
+      "sha256": "b952f5f0da4565179bd9b87c9679dcb78015f15948e900d27338dd638aa07d70",
+      "bytes": 9205,
+      "contains_technology": false,
+      "line_count": 258
     },
     {
       "path": "script/campaign/wh3_campaign_daemon_cults.lua",
@@ -3599,18 +3828,32 @@
       "line_count": 167
     },
     {
+      "path": "script/campaign/wh3_campaign_devastation_manager.lua",
+      "sha256": "fdfc65b38a7ece6ae1233cfcc2fb1b21efa2c2e88b833f54eba8f90283c44c39",
+      "bytes": 7288,
+      "contains_technology": false,
+      "line_count": 224
+    },
+    {
+      "path": "script/campaign/wh3_campaign_dragon_graves.lua",
+      "sha256": "84ec9cf785117558eafb88df0f1a8aa7f9f2466fccbae5be81457ed157821a4f",
+      "bytes": 1463,
+      "contains_technology": false,
+      "line_count": 30
+    },
+    {
       "path": "script/campaign/wh3_campaign_faction_initiative_unlocks.lua",
-      "sha256": "0413db1b0553335af9c67dd7089b630767a6672c805f3d362e5353c7bcc908f6",
-      "bytes": 10190,
+      "sha256": "4cafa11999ac79adf208c75dd5f9947d9ba9424f1d92a5ce5de6daae110acde2",
+      "bytes": 10169,
       "contains_technology": true,
       "line_count": 247
     },
     {
       "path": "script/campaign/wh3_campaign_followers.lua",
-      "sha256": "3b9c14e65d80dffef8894415e9f5b4efe7c7348eb64e236254869c33a4ed8b55",
-      "bytes": 126309,
+      "sha256": "62876e59231f8a8a0f40001ca8454edbfabaa2c19ebafac2c3143ac119dbcab2",
+      "bytes": 122226,
       "contains_technology": true,
-      "line_count": 3727
+      "line_count": 3595
     },
     {
       "path": "script/campaign/wh3_campaign_forge.lua",
@@ -3649,10 +3892,10 @@
     },
     {
       "path": "script/campaign/wh3_campaign_grudges.lua",
-      "sha256": "998f3a2e6d33f1a2866f8af78bd9896b1e5b506e4e06ae626fc8d212be4062e3",
-      "bytes": 55902,
+      "sha256": "142db4da8f6a729a127a65467a1944d6c1fb21f5ad703f15444d138ae9f3cb38",
+      "bytes": 55946,
       "contains_technology": false,
-      "line_count": 1536
+      "line_count": 1537
     },
     {
       "path": "script/campaign/wh3_campaign_grudges_legendary.lua",
@@ -3676,11 +3919,18 @@
       "line_count": 34
     },
     {
-      "path": "script/campaign/wh3_campaign_item_fusing.lua",
-      "sha256": "a9884e566a5603cd5d6b93d6eb2dd9445b8388e7438f8a91f7092086c10332cc",
-      "bytes": 3401,
+      "path": "script/campaign/wh3_campaign_innate_trait_reset.lua",
+      "sha256": "93d1e251fb8da855594abd1f938718f77fa1f69bce21196d97b758fe404704f4",
+      "bytes": 7844,
       "contains_technology": false,
-      "line_count": 90
+      "line_count": 204
+    },
+    {
+      "path": "script/campaign/wh3_campaign_item_fusing.lua",
+      "sha256": "5bf1b1ac07c1c786e8038eae098c92e47350aa8f693361b86ca19bb06f062abf",
+      "bytes": 5124,
+      "contains_technology": false,
+      "line_count": 100
     },
     {
       "path": "script/campaign/wh3_campaign_ivory_road_events.lua",
@@ -3691,10 +3941,10 @@
     },
     {
       "path": "script/campaign/wh3_campaign_khorne_skulls.lua",
-      "sha256": "79c74ab71f5c0c7d9d382fc090cf0454ae378fd33a5674a6830f9a04f83d867b",
-      "bytes": 22625,
+      "sha256": "cf81179c5ac119896640329ba5e5bb0141575a88c440286f3ede60a26bcd9220",
+      "bytes": 22689,
       "contains_technology": false,
-      "line_count": 607
+      "line_count": 609
     },
     {
       "path": "script/campaign/wh3_campaign_kislev_devotion.lua",
@@ -3726,17 +3976,24 @@
     },
     {
       "path": "script/campaign/wh3_campaign_minor_cults.lua",
-      "sha256": "f323d2728ab3955d2cbf263ffeaa947a0ebb88a9a134fbc27869a387a4969e9f",
-      "bytes": 20747,
+      "sha256": "f02310eca099f28bc617c3138ccd899ac95c8e52713abd3a354ef85d048b231e",
+      "bytes": 20700,
       "contains_technology": false,
       "line_count": 501
     },
     {
-      "path": "script/campaign/wh3_campaign_nurgle_plagues.lua",
-      "sha256": "e48ea49b92bcb05f4fafa0c98bef9eee703971397c3618ece25df6d05796ff8f",
-      "bytes": 23659,
+      "path": "script/campaign/wh3_campaign_mutually_exclusive_techs.lua",
+      "sha256": "2ab1c73a7e7c48a2b6ebd11172ec0998a9c1a28193f0c92a633f0d50a2ec78c8",
+      "bytes": 2177,
       "contains_technology": true,
-      "line_count": 671
+      "line_count": 60
+    },
+    {
+      "path": "script/campaign/wh3_campaign_nurgle_plagues.lua",
+      "sha256": "7d91ce31aa6c9f8c88913670c86dc8000e13eadeb1ba3543da55e813afaeec2d",
+      "bytes": 24891,
+      "contains_technology": true,
+      "line_count": 687
     },
     {
       "path": "script/campaign/wh3_campaign_ogre_contracts.lua",
@@ -3747,24 +4004,24 @@
     },
     {
       "path": "script/campaign/wh3_campaign_payload_remapping.lua",
-      "sha256": "06a23628e101deb25116b12e9efe78a044ea6a97bc4dcfbfe23166c7e490a648",
-      "bytes": 16817,
+      "sha256": "60454d9aac73f27de0d40933da90d5d12c219089785c1cf0ec411979ba13a9a8",
+      "bytes": 17637,
       "contains_technology": false,
-      "line_count": 463
+      "line_count": 481
     },
     {
       "path": "script/campaign/wh3_campaign_rare_items.lua",
-      "sha256": "31b74cefeedd0bc23359209381fbf7617071649df743c736bd2f376f2c68007e",
-      "bytes": 10362,
+      "sha256": "6747ecb23a185d57caa3b721251b30412dc3ab8148dfebec87df096fed1c216b",
+      "bytes": 11260,
       "contains_technology": false,
-      "line_count": 309
+      "line_count": 320
     },
     {
       "path": "script/campaign/wh3_campaign_recruited_unit_health.lua",
-      "sha256": "08bb61cdde2ccfe99fde081ce385ea329458ef545701077d0caee79b753a7a46",
-      "bytes": 3850,
+      "sha256": "246595a0c585e58f1ee3441048c2b6de2de4594d5b6dd65259872b6a7f077b36",
+      "bytes": 4270,
       "contains_technology": false,
-      "line_count": 77
+      "line_count": 81
     },
     {
       "path": "script/campaign/wh3_campaign_reveal_chaos_realm_mission_areas.lua",
@@ -3838,8 +4095,8 @@
     },
     {
       "path": "script/campaign/wh3_cp1_bhashiva.lua",
-      "sha256": "880a290246000586f4b44f5a2cc0891a420f7c6b689086366815dab37acda661",
-      "bytes": 51724,
+      "sha256": "2cbc5cd8a31740614a2d85ac2982267016c7612449242174ef93aa4248b779d9",
+      "bytes": 51758,
       "contains_technology": false,
       "line_count": 1465
     },
@@ -3873,10 +4130,10 @@
     },
     {
       "path": "script/campaign/wh3_dlc20_campaign_chs_eye_of_the_gods.lua",
-      "sha256": "375805fbace8e9fdcd2a35fee3b9bacb34cc2a040563a29bac7fbb34fdd2a464",
-      "bytes": 15574,
+      "sha256": "275e111e60fad5e852f518fcee0155df62c92c04a00ff85809a2d0299b46348f",
+      "bytes": 16346,
       "contains_technology": false,
-      "line_count": 380
+      "line_count": 405
     },
     {
       "path": "script/campaign/wh3_dlc20_campaign_chs_vassal_dilemmas.lua",
@@ -3943,29 +4200,29 @@
     },
     {
       "path": "script/campaign/wh3_dlc24_mother_ostankya.lua",
-      "sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
-      "bytes": 38009,
+      "sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
+      "bytes": 38295,
       "contains_technology": true,
-      "line_count": 1032
+      "line_count": 1037
     },
     {
       "path": "script/campaign/wh3_dlc24_the_changeling.lua",
-      "sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
-      "bytes": 166464,
+      "sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
+      "bytes": 168458,
       "contains_technology": true,
-      "line_count": 4051
+      "line_count": 4081
     },
     {
       "path": "script/campaign/wh3_dlc25_campaign_nur_chieftains.lua",
-      "sha256": "0075a581d052e4312d49b2424d5a231c939b3a04153f3e9b3cad39607b442f12",
-      "bytes": 48043,
+      "sha256": "155ce5dd46bbd19cda559b5ae41579f383830395d2a09bb92378b1f7b07e52a0",
+      "bytes": 49468,
       "contains_technology": true,
-      "line_count": 1040
+      "line_count": 1068
     },
     {
       "path": "script/campaign/wh3_dlc25_college_of_magic.lua",
-      "sha256": "ff6e159ca483f97b66d92e7960d894f6e1ac10d5ee1c1b4bf49d482fd3c93b6c",
-      "bytes": 12373,
+      "sha256": "122972c0a262deccf9e2b41c127eaf75e448eb791ef140b060354e2ee2445551",
+      "bytes": 12503,
       "contains_technology": false,
       "line_count": 379
     },
@@ -3985,10 +4242,10 @@
     },
     {
       "path": "script/campaign/wh3_dlc25_empire_state_troops.lua",
-      "sha256": "3a8a899ecc135a1e9a6df89bafd293b1b68ec794186fe11142fd429bcf6d237a",
-      "bytes": 10146,
+      "sha256": "eefb63d98cb8527a9feb817d7c0486c0ec64661e4c94f6138ccffed674074d14",
+      "bytes": 13821,
       "contains_technology": true,
-      "line_count": 273
+      "line_count": 375
     },
     {
       "path": "script/campaign/wh3_dlc25_gardens_of_morr.lua",
@@ -4006,10 +4263,10 @@
     },
     {
       "path": "script/campaign/wh3_dlc25_grudge_cycles.lua",
-      "sha256": "823b3c5b5d45e44d554b396655702251c1050af0ca267d975596ac39914ccf63",
-      "bytes": 58483,
+      "sha256": "82d0c4f951311353c57f1f6fdbfc01cb6c00ee37715296c41422df7e30740447",
+      "bytes": 59193,
       "contains_technology": false,
-      "line_count": 1642
+      "line_count": 1655
     },
     {
       "path": "script/campaign/wh3_dlc25_gunnery_school.lua",
@@ -4020,10 +4277,10 @@
     },
     {
       "path": "script/campaign/wh3_dlc25_imperial_authority.lua",
-      "sha256": "a7b2339c0c3f26ebf4f9db35bf69257cd38c3896ca1b1f9812852f1771ae5c62",
-      "bytes": 10341,
+      "sha256": "22a758943b161a9d10dc263457ecbf166ec10aefd5883c6efbf9a303fe8caaa1",
+      "bytes": 10435,
       "contains_technology": false,
-      "line_count": 270
+      "line_count": 271
     },
     {
       "path": "script/campaign/wh3_dlc25_malakai_battles.lua",
@@ -4034,10 +4291,10 @@
     },
     {
       "path": "script/campaign/wh3_dlc25_nemesis_crown.lua",
-      "sha256": "d4754f0a39610faf8ab9d1dba9dfc1d0db67725127e31b441336e1c9ac261441",
-      "bytes": 49214,
+      "sha256": "dacfa280a9a40ac46c3443cb1681c1015f0ca95bc7d9c40b082f784265ee3530",
+      "bytes": 49990,
       "contains_technology": false,
-      "line_count": 1000
+      "line_count": 1019
     },
     {
       "path": "script/campaign/wh3_dlc25_spirit_of_grungni.lua",
@@ -4055,29 +4312,29 @@
     },
     {
       "path": "script/campaign/wh3_dlc26_cloak_of_skulls.lua",
-      "sha256": "41dc6779fe63aeb5572a9e62a2b275b9f55deedec15ae102abe73e0f35b1a293",
-      "bytes": 16301,
+      "sha256": "6c2ae704522082a0c487215aca1c581c348845918aa583fd490452509828e5bd",
+      "bytes": 16757,
       "contains_technology": false,
-      "line_count": 450
+      "line_count": 458
     },
     {
       "path": "script/campaign/wh3_dlc26_contracts.lua",
-      "sha256": "913d51757f12623e1e7a5137e0e4c52675939477d792b16145591d14d7a9c93d",
-      "bytes": 35797,
+      "sha256": "a863f4b4a7dc8d7e65d76342352a3b7b71efa1b27cda7901e3bf741a9c04c8d3",
+      "bytes": 36624,
       "contains_technology": false,
-      "line_count": 955
+      "line_count": 967
     },
     {
       "path": "script/campaign/wh3_dlc26_da_plan.lua",
-      "sha256": "b70b3f7dd167c2d58eb32c772831fab61ad6517cd029edd304ed78c30f8673c1",
-      "bytes": 18354,
+      "sha256": "5d663f01264e43c9216ba6077ce57a141e1d4777099a8bfaabb966921c6f8736",
+      "bytes": 18333,
       "contains_technology": false,
       "line_count": 492
     },
     {
       "path": "script/campaign/wh3_dlc26_fragments_of_sorcery.lua",
-      "sha256": "ed167cc6e8f80db3d21ad044f323819266566194b57ce26a109f05fd00935bc1",
-      "bytes": 2923,
+      "sha256": "f3b29b4b57f6ec86dc664160d38fce4730fdc5a1386d7115a4029c078417ae75",
+      "bytes": 2902,
       "contains_technology": false,
       "line_count": 97
     },
@@ -4174,17 +4431,17 @@
     },
     {
       "path": "script/campaign/wh3_dlc27_eternal_dance.lua",
-      "sha256": "883d9474e181734ca5276f3b8c561c0a9939129ec9ab7410f8fe4575c3572336",
-      "bytes": 52998,
+      "sha256": "88f0599e0128a8e842a79b737e87f09d9e7c3bd02d4feaecc4b4d0652f60a582",
+      "bytes": 53193,
       "contains_technology": true,
-      "line_count": 1233
+      "line_count": 1239
     },
     {
       "path": "script/campaign/wh3_dlc27_intrigue_at_the_court.lua",
-      "sha256": "b9ae5075d858316b54c15929043c0f2c1576f845177fcaea18d3757a08ce59ab",
-      "bytes": 85702,
+      "sha256": "68a3a0dae1508cc881285b6026908e49401a0f9257457d90818bf1d9b21d61cc",
+      "bytes": 86671,
       "contains_technology": false,
-      "line_count": 1897
+      "line_count": 1916
     },
     {
       "path": "script/campaign/wh3_dlc27_nor_confidence.lua",
@@ -4195,10 +4452,10 @@
     },
     {
       "path": "script/campaign/wh3_dlc27_nor_kinfolk.lua",
-      "sha256": "f2a765b77e7a6ddec798b71730db450035b61a373c895507c24646232d9c638c",
-      "bytes": 17210,
+      "sha256": "6b80fb01e5d50426b3d7d94cb08a38f15ebd7b1cca3bada37c3d56f170db4b2b",
+      "bytes": 17337,
       "contains_technology": false,
-      "line_count": 427
+      "line_count": 433
     },
     {
       "path": "script/campaign/wh3_dlc27_nor_pillaging.lua",
@@ -4209,17 +4466,17 @@
     },
     {
       "path": "script/campaign/wh3_dlc27_nor_sayl_manipulation.lua",
-      "sha256": "367aca948a184a9433803dcbb56640201ec77f91e7be050bd5a0560eab85649c",
-      "bytes": 82601,
+      "sha256": "876dc9a7bb305cc50c0753d271ad929d099289ee2180b7869dd84098f0fbf2a2",
+      "bytes": 82935,
       "contains_technology": false,
-      "line_count": 2246
+      "line_count": 2252
     },
     {
       "path": "script/campaign/wh3_dlc27_nor_treacheries.lua",
-      "sha256": "49cf9686cd95407d26fadb1a1f18ea4176b86121317ae6cd98b87bec802c33e1",
-      "bytes": 30414,
+      "sha256": "2b6d132ae892587e813a78c049ea22eef431709c924c7e3692791b4f96fa27b3",
+      "bytes": 30515,
       "contains_technology": false,
-      "line_count": 720
+      "line_count": 721
     },
     {
       "path": "script/campaign/wh3_dlc27_pre_battle_challenges.lua",
@@ -4237,10 +4494,10 @@
     },
     {
       "path": "script/campaign/wh3_dlc27_secrets_of_the_white_tower.lua",
-      "sha256": "9950d60889f9c6158a891456e419204ae67f61a265406cc5009ab7e8bf3e8a0f",
-      "bytes": 15156,
+      "sha256": "323dec6ebe802c818917d4bcacdab9724cdb4e06c30d2a1939207dbf178f9c42",
+      "bytes": 15262,
       "contains_technology": false,
-      "line_count": 419
+      "line_count": 421
     },
     {
       "path": "script/campaign/wh3_dlc27_valiant_imperatives.lua",
@@ -4255,6 +4512,202 @@
       "bytes": 1963,
       "contains_technology": false,
       "line_count": 56
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_archaon_narrative.lua",
+      "sha256": "f684420fa4be1a029d08c8264a676a40a137a6c9e9e7226372ad8c2c87a7fa62",
+      "bytes": 36014,
+      "contains_technology": false,
+      "line_count": 821
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_archaon_subjugation.lua",
+      "sha256": "db259f7f1f2a1d17e031ea2949ae81d3ccd0c95bd5333bee4aaf27490b7369e8",
+      "bytes": 43123,
+      "contains_technology": false,
+      "line_count": 1043
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_glottkin_blessings_of_nurgle.lua",
+      "sha256": "6cd8f571d32353977cbfa5a6838061452860e0246ab1c297e583f858102f8766",
+      "bytes": 3380,
+      "contains_technology": false,
+      "line_count": 82
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_glottkin_gardens_of_nurgle.lua",
+      "sha256": "81902a40effcc24b2756bdaddf5a12bb1623635067f51926034569fc39cad47a",
+      "bytes": 34417,
+      "contains_technology": true,
+      "line_count": 725
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_glottkin_marks_of_nurgle.lua",
+      "sha256": "33088dbad830efa22e49d0b1beb49c93d5cf69e6257a95b8e49baee5eeb0f372",
+      "bytes": 113593,
+      "contains_technology": true,
+      "line_count": 2530
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_glottkin_nurgle_rains.lua",
+      "sha256": "98f5390b290a2b2c3347eafeb96770804a2b91a75d11ab8059a0bf5ad201c8e3",
+      "bytes": 9836,
+      "contains_technology": true,
+      "line_count": 267
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_glottkin_rotborne_rituals.lua",
+      "sha256": "8cbb3be7473d44b3f0e017453130a18ab8588ae189de9e6b10311131b87201c6",
+      "bytes": 37275,
+      "contains_technology": false,
+      "line_count": 976
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_land_of_the_dead.lua",
+      "sha256": "49d21961e6dbbc09abfeb3e8e441ea7597110c45cf4a01609ba9d105c19c8701",
+      "bytes": 25619,
+      "contains_technology": false,
+      "line_count": 745
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_middenland_fervour.lua",
+      "sha256": "4d63944b460940ca4c865c4717cb2579d81d9480fdf5ff5aed410e019b04ca81",
+      "bytes": 29308,
+      "contains_technology": false,
+      "line_count": 811
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_morbidex_nurglings_spawn.lua",
+      "sha256": "d66c3e4130246568597d71dd95f303df5bdf0c42f00925fc4ae297ea3a1591a1",
+      "bytes": 3137,
+      "contains_technology": false,
+      "line_count": 101
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_nag_black_pyramid.lua",
+      "sha256": "4d855d984f9def6c121db2dca8c8f3d3d3a631158eee310156b2e6f4b5d19d29",
+      "bytes": 27547,
+      "contains_technology": false,
+      "line_count": 703
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_nagash_rors.lua",
+      "sha256": "beaab8087e3e5f28062237ccee2c3b1614b92a1df35db67de3e40c46e5905e2f",
+      "bytes": 3900,
+      "contains_technology": false,
+      "line_count": 116
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_thanquol_chaotic_plans.lua",
+      "sha256": "01ffe2028071b857d3ec771dd5d70e7f4b6f21bfb2e12ff19455c07c3cd57c2d",
+      "bytes": 23759,
+      "contains_technology": false,
+      "line_count": 713
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_thanquol_chaotic_plans_missions.lua",
+      "sha256": "ceb8ee6aef97402e2d514098fa1365513da0cf0e11f1f1e05e48a3485bec401b",
+      "bytes": 28362,
+      "contains_technology": false,
+      "line_count": 630
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_thanquol_chaotic_plans_token_payloads.lua",
+      "sha256": "3beb79b980830339b54742f1e181ef91d16c7bc6fb9993f3dbd4eaec8e7e4176",
+      "bytes": 34030,
+      "contains_technology": false,
+      "line_count": 802
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_thanquol_schemers.lua",
+      "sha256": "9926e3f7a967e85bace0d353305c97b164e1ff4bef4710e1db014ed1e6da2611",
+      "bytes": 7497,
+      "contains_technology": false,
+      "line_count": 236
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_ulric_decrees.lua",
+      "sha256": "aa6dfc6a067e80d6d9f5497bc0a6673ccaf633238acbe805eaec81d43307b87c",
+      "bytes": 17377,
+      "contains_technology": false,
+      "line_count": 417
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_ulric_decrees_req.lua",
+      "sha256": "10b5fd40192ef0ad209dbeee6f07b67c7acef0cdf4282f8a40fd3d5ef863f3c2",
+      "bytes": 25788,
+      "contains_technology": false,
+      "line_count": 746
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_bloodlines.lua",
+      "sha256": "90b56f061ee0a8206a943db8c181f997ec01ebc630df876a2651e18b9a77138c",
+      "bytes": 59896,
+      "contains_technology": true,
+      "line_count": 1634
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_concealment.lua",
+      "sha256": "0f5e91ce16680422aa10a9b5c33726ea570ace716c00ffba2ba17db71f5d788f",
+      "bytes": 8002,
+      "contains_technology": true,
+      "line_count": 216
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_corpses.lua",
+      "sha256": "c32be09b8908dd496d9b62ba56066aa81b572561493209b666ef7b0ec1755cfa",
+      "bytes": 25352,
+      "contains_technology": true,
+      "line_count": 645
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_corpses_distribution.lua",
+      "sha256": "31381a87c20b7ab09010f2fcbdc6b759394614a078db4f6a244e2f8a2b249508",
+      "bytes": 23020,
+      "contains_technology": false,
+      "line_count": 560
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_covens.lua",
+      "sha256": "09fac8c88c88465d8be3b387c23a364482b52548aa3112d5dbe5920617c0e92c",
+      "bytes": 17487,
+      "contains_technology": true,
+      "line_count": 448
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_handmaidens.lua",
+      "sha256": "e87d99f65971a1373628403b5f06516eb5bd8443592e73ad334381e1be44ea08",
+      "bytes": 9835,
+      "contains_technology": true,
+      "line_count": 233
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_lairs.lua",
+      "sha256": "43ddf945b3fac25c07467c518a08a11cccc5840a94aca0293c4611158c76e095",
+      "bytes": 65277,
+      "contains_technology": true,
+      "line_count": 1378
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_technology.lua",
+      "sha256": "9afac5ac8124e0c71f1f422af2e8781887b155eb0c76a8686253e5789a924b0c",
+      "bytes": 41357,
+      "contains_technology": true,
+      "line_count": 927
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_vampire_web_of_power.lua",
+      "sha256": "251a2d9a21a2738c57e71343f607a21bc98d017a2f4977ba17a81e41d4c6fd69",
+      "bytes": 30786,
+      "contains_technology": false,
+      "line_count": 775
+    },
+    {
+      "path": "script/campaign/wh3_dlc29_verminlords.lua",
+      "sha256": "ab622f4dace4985f15ee0378b62f1e8e516f3a4d6d5653b1a92e90be86593b88",
+      "bytes": 7814,
+      "contains_technology": true,
+      "line_count": 241
     },
     {
       "path": "script/campaign/wh3_main_chaos/factions/wh3_dlc20_chs_azazel/wh3_dlc20_chs_azazel_start.lua",
@@ -4475,10 +4928,10 @@
     },
     {
       "path": "script/campaign/wh3_main_chaos/required.lua",
-      "sha256": "6dbea05701fb26a05ed466e2688ec0422fc73a276a7bca63f2bdbd2c5051f327",
-      "bytes": 4829,
+      "sha256": "52e141a7eac51f92d52a37b2f22a7395891a3a5338abaf9ade525d59356a2bf9",
+      "bytes": 4877,
       "contains_technology": true,
-      "line_count": 141
+      "line_count": 142
     },
     {
       "path": "script/campaign/wh3_main_chaos/scripting.lua",
@@ -4566,10 +5019,10 @@
     },
     {
       "path": "script/campaign/wh3_main_chaos/wh_start.lua",
-      "sha256": "69fcbc3f3d8955ef64d27c6ab69b7891d16912415d9141695f75c61ae012722d",
-      "bytes": 8167,
+      "sha256": "1324a90cbc2eb22eceaf4cfb970cb3283148bf141b4f59ae8d618e593433096c",
+      "bytes": 8549,
       "contains_technology": true,
-      "line_count": 265
+      "line_count": 271
     },
     {
       "path": "script/campaign/wh3_main_eltharion_yvresse.lua",
@@ -4580,10 +5033,10 @@
     },
     {
       "path": "script/campaign/wh3_main_legendary_characters.lua",
-      "sha256": "4fdd37c9fdb86fe51ffe2756e00d0c2ac377f832eb9e26e8e0c59283ff5d1c29",
-      "bytes": 85880,
+      "sha256": "66c1a35ef0fa3f2a3bb76fe36eb2c7f287c27476f6af081a1b68d21704a97af2",
+      "bytes": 115256,
       "contains_technology": false,
-      "line_count": 2263
+      "line_count": 3013
     },
     {
       "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_achievements.lua",
@@ -4615,10 +5068,10 @@
     },
     {
       "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_interventions.lua",
-      "sha256": "3a51fcfff025126666dd4c70784d7a9c2694738e5e437508074c4fc0b7d69346",
-      "bytes": 233300,
+      "sha256": "643307747c0e0395a106a95462b10617b871e7d31da85372c254d0ab4ccf12d2",
+      "bytes": 233949,
       "contains_technology": true,
-      "line_count": 6172
+      "line_count": 6193
     },
     {
       "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_magic_items.lua",
@@ -4692,10 +5145,10 @@
     },
     {
       "path": "script/campaign/wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_traits.lua",
-      "sha256": "2b3702e60a385abd4a2a4da11c0a407c4e68eb1780429533b88b8de6012a0945",
-      "bytes": 27102,
+      "sha256": "fb21782cf0afbe7f605149c1f06427206fb409a9d03fa5b81548b67e6a13a56a",
+      "bytes": 27226,
       "contains_technology": true,
-      "line_count": 618
+      "line_count": 624
     },
     {
       "path": "script/campaign/wh3_main_prologue/required.lua",
@@ -4741,45 +5194,45 @@
     },
     {
       "path": "script/campaign/wh_campaign_experience_triggers.lua",
-      "sha256": "47a547f56de81200e919c42ebf3430c8107f5695282b3ef4c8233b031e79695b",
-      "bytes": 14580,
+      "sha256": "2e3531fb2c7d610bdff090841fe7cbd925e24b225ade9e5549ecee3c4da326a1",
+      "bytes": 16068,
       "contains_technology": false,
-      "line_count": 457
+      "line_count": 501
     },
     {
       "path": "script/campaign/wh_campaign_help_pages.lua",
-      "sha256": "f314dedd9e51d0acdf5f698529a603622c9e8fb33e04286cc593ca7c26557403",
-      "bytes": 535107,
+      "sha256": "6389769a9b601fc0e9e36a7fe703b4e9a393fff8d5585e8596c56a0b979e1fca",
+      "bytes": 557538,
       "contains_technology": true,
-      "line_count": 14289
+      "line_count": 14856
     },
     {
       "path": "script/campaign/wh_campaign_interventions.lua",
-      "sha256": "6220e49bd124c078965601d60aea13b03fae431b9be327971ebf4482f55656e8",
-      "bytes": 720228,
+      "sha256": "8ab386008375f8d3f0135269898cb1d431bec5e4f323a41a970c3c12c4dd5744",
+      "bytes": 722326,
       "contains_technology": true,
-      "line_count": 21420
+      "line_count": 21484
     },
     {
       "path": "script/campaign/wh_campaign_ror_recruitment.lua",
-      "sha256": "5f17ee04082d6356d778856c1858c6687dab7323a3715ad930dbad83906ba1ba",
-      "bytes": 21520,
+      "sha256": "0ef87b1dbeb1a44c6ee794d39c956ed9adf9011ed8e7ae186f7dcd9a2077044a",
+      "bytes": 21855,
       "contains_technology": false,
-      "line_count": 578
+      "line_count": 585
     },
     {
       "path": "script/campaign/wh_campaign_scripted_tours.lua",
-      "sha256": "e7b4a9bca416b3a4f1c0a0798ce9a643bf370fd81f60eadf3348286b8a6d5c33",
-      "bytes": 381742,
+      "sha256": "d5daace2bbfa5ee4bff571a05a41e382f26b8c6e538d11bd604d3879b3f01059",
+      "bytes": 504006,
       "contains_technology": true,
-      "line_count": 9704
+      "line_count": 12715
     },
     {
       "path": "script/campaign/wh_campaign_setup.lua",
-      "sha256": "fd2a11e89b3badd7ddc4ab0e178859da282d60a28700f82fd6e73b617403f6a8",
-      "bytes": 113721,
+      "sha256": "7421b2a6163d3440fca5f88e7360b2286da4dbdc48dd797263ee123471a18b04",
+      "bytes": 128180,
       "contains_technology": true,
-      "line_count": 2960
+      "line_count": 3342
     }
   ]
 }

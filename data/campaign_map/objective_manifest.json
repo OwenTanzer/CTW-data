@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.2.0",
+  "patch": "9.0",
+  "steam_build_id": "25507028",
+  "source_manifest": "objective_source_exports/source_manifest.json",
+  "schema": "objective_schema.json",
+  "primary_view": "objective_reference",
+  "objectives": 1175,
+  "conditions": 4074,
+  "faction_count": 109,
+  "variant_count": 110,
+  "boundaries": [
+    {
+      "kind": "dynamic_objectives_after_short_victory",
+      "count": 4
+    },
+    {
+      "kind": "runtime_unit_size_multiplier",
+      "count": 8
+    },
+    {
+      "kind": "scripted_completion",
+      "count": 682
+    }
+  ],
+  "scope": "Configured initial single-player short/long/domination objectives; select variant_key and read objective_boundaries. Rewards, scripted listener state, crisis and multiplayer excluded."
+}

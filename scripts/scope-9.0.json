@@ -1,0 +1,596 @@
+{
+  "UNIT_ROSTERS": [
+    {
+      "slug": "beastmen",
+      "faction_name": "Beastmen",
+      "faction_key": "wh_dlc03_bst_beastmen",
+      "subculture_key": "wh_dlc03_sc_bst_beastmen",
+      "military_group": "wh_dlc03_group_beastmen",
+      "military_groups": [
+        "wh_dlc03_group_beastmen"
+      ],
+      "expected_units": 62
+    },
+    {
+      "slug": "bretonnia",
+      "faction_name": "Bretonnia",
+      "faction_key": "wh_main_brt_bretonnia",
+      "subculture_key": "wh_main_sc_brt_bretonnia",
+      "military_group": "wh_main_group_bretonnia",
+      "military_groups": [
+        "wh_main_group_bretonnia"
+      ],
+      "expected_units": 64
+    },
+    {
+      "slug": "chaos_dwarfs",
+      "faction_name": "Chaos Dwarfs",
+      "faction_key": "wh3_dlc23_chd_chaos_dwarfs",
+      "subculture_key": "wh3_dlc23_sc_chd_chaos_dwarfs",
+      "military_group": "wh3_dlc23_group_chaos_dwarfs",
+      "military_groups": [
+        "wh3_dlc23_group_chaos_dwarfs"
+      ],
+      "expected_units": 86
+    },
+    {
+      "slug": "daemons_of_chaos",
+      "faction_name": "Daemons of Chaos",
+      "faction_key": "wh3_main_dae_daemon_prince",
+      "subculture_key": "wh3_main_sc_dae_daemons",
+      "military_group": "wh3_main_dae",
+      "military_groups": [
+        "wh3_main_dae"
+      ],
+      "expected_units": 191
+    },
+    {
+      "slug": "dark_elves",
+      "faction_name": "Dark Elves",
+      "faction_key": "wh2_main_def_dark_elves",
+      "subculture_key": "wh2_main_sc_def_dark_elves",
+      "military_group": "wh2_main_def",
+      "military_groups": [
+        "wh2_main_def",
+        "wh3_main_def_morathi"
+      ],
+      "expected_units": 66
+    },
+    {
+      "slug": "dwarfs",
+      "faction_name": "Dwarfs",
+      "faction_key": "wh_main_dwf_dwarfs",
+      "subculture_key": "wh_main_sc_dwf_dwarfs",
+      "military_group": "wh_main_group_dwarfs",
+      "military_groups": [
+        "wh_main_group_dwarfs"
+      ],
+      "expected_units": 52
+    },
+    {
+      "slug": "empire",
+      "faction_name": "Empire",
+      "faction_key": "wh_main_emp_empire",
+      "subculture_key": "wh_main_sc_emp_empire",
+      "military_group": "wh_main_group_empire",
+      "military_groups": [
+        "wh_main_group_empire",
+        "wh_main_group_empire_golden_order",
+        "wh_main_group_empire_reikland",
+        "wh3_dlc25_group_elspeth"
+      ],
+      "expected_units": 122
+    },
+    {
+      "slug": "grand_cathay",
+      "faction_name": "Grand Cathay",
+      "faction_key": "wh3_main_cth_cathay_mp",
+      "subculture_key": "wh3_main_sc_cth_cathay",
+      "military_group": "wh3_main_cth",
+      "military_groups": [
+        "wh3_main_cth",
+        "wh3_cp1_group_cth_bhashiva"
+      ],
+      "expected_units": 72
+    },
+    {
+      "slug": "greenskins",
+      "faction_name": "Greenskins",
+      "faction_key": "wh_main_grn_greenskins",
+      "subculture_key": "wh_main_sc_grn_greenskins",
+      "military_group": "wh_main_group_greenskins",
+      "military_groups": [
+        "wh_main_group_greenskins"
+      ],
+      "expected_units": 74
+    },
+    {
+      "slug": "high_elves",
+      "faction_name": "High Elves",
+      "faction_key": "wh2_main_hef_high_elves",
+      "subculture_key": "wh2_main_sc_hef_high_elves",
+      "military_group": "wh2_main_hef",
+      "military_groups": [
+        "wh2_main_hef",
+        "wh2_main_hef_imrik"
+      ],
+      "expected_units": 89
+    },
+    {
+      "slug": "khorne",
+      "faction_name": "Khorne",
+      "faction_key": "wh3_main_kho_khorne",
+      "subculture_key": "wh3_main_sc_kho_khorne",
+      "military_group": "wh3_main_kho",
+      "military_groups": [
+        "wh3_main_kho"
+      ],
+      "expected_units": 51
+    },
+    {
+      "slug": "kislev",
+      "faction_name": "Kislev",
+      "faction_key": "wh3_main_ksl_kislev",
+      "subculture_key": "wh3_main_sc_ksl_kislev",
+      "military_group": "wh3_main_ksl",
+      "military_groups": [
+        "wh3_main_ksl"
+      ],
+      "expected_units": 69
+    },
+    {
+      "slug": "lizardmen",
+      "faction_name": "Lizardmen",
+      "faction_key": "wh2_main_lzd_lizardmen",
+      "subculture_key": "wh2_main_sc_lzd_lizardmen",
+      "military_group": "wh2_main_lzd",
+      "military_groups": [
+        "wh2_main_lzd"
+      ],
+      "expected_units": 76
+    },
+    {
+      "slug": "norsca",
+      "faction_name": "Norsca",
+      "faction_key": "wh_dlc08_nor_norsca",
+      "subculture_key": "wh_dlc08_sc_nor_norsca",
+      "military_group": "wh_main_group_norsca",
+      "military_groups": [
+        "wh_main_group_norsca"
+      ],
+      "expected_units": 112
+    },
+    {
+      "slug": "nurgle",
+      "faction_name": "Nurgle",
+      "faction_key": "wh3_main_nur_nurgle",
+      "subculture_key": "wh3_main_sc_nur_nurgle",
+      "military_group": "wh3_main_nur",
+      "military_groups": [
+        "wh3_main_nur",
+        "wh3_dlc25_nur_tamurkhan"
+      ],
+      "expected_units": 91
+    },
+    {
+      "slug": "ogre_kingdoms",
+      "faction_name": "Ogre Kingdoms",
+      "faction_key": "wh3_main_ogr_ogre_kingdoms",
+      "subculture_key": "wh3_main_sc_ogr_ogre_kingdoms",
+      "military_group": "wh3_main_ogr",
+      "military_groups": [
+        "wh3_main_ogr"
+      ],
+      "expected_units": 54
+    },
+    {
+      "slug": "skaven",
+      "faction_name": "Skaven",
+      "faction_key": "wh2_main_skv_skaven",
+      "subculture_key": "wh2_main_sc_skv_skaven",
+      "military_group": "wh2_main_skv",
+      "military_groups": [
+        "wh2_main_skv",
+        "wh2_main_skv_ikit"
+      ],
+      "expected_units": 77
+    },
+    {
+      "slug": "slaanesh",
+      "faction_name": "Slaanesh",
+      "faction_key": "wh3_main_sla_slaanesh",
+      "subculture_key": "wh3_main_sc_sla_slaanesh",
+      "military_group": "wh3_main_sla",
+      "military_groups": [
+        "wh3_main_sla"
+      ],
+      "expected_units": 89
+    },
+    {
+      "slug": "tomb_kings",
+      "faction_name": "Tomb Kings",
+      "faction_key": "wh2_dlc09_tmb_tomb_kings",
+      "subculture_key": "wh2_dlc09_sc_tmb_tomb_kings",
+      "military_group": "wh2_dlc09_tomb_kings",
+      "military_groups": [
+        "wh2_dlc09_tomb_kings",
+        "wh2_dlc09_tomb_kings_arkhan"
+      ],
+      "expected_units": 57
+    },
+    {
+      "slug": "tzeentch",
+      "faction_name": "Tzeentch",
+      "faction_key": "wh3_main_tze_tzeentch",
+      "subculture_key": "wh3_main_sc_tze_tzeentch",
+      "military_group": "wh3_main_tze",
+      "military_groups": [
+        "wh3_main_tze"
+      ],
+      "expected_units": 59
+    },
+    {
+      "slug": "vampire_coast",
+      "faction_name": "Vampire Coast",
+      "faction_key": "wh2_dlc11_cst_vampire_coast",
+      "subculture_key": "wh2_dlc11_sc_cst_vampire_coast",
+      "military_group": "wh2_dlc11_group_vampire_coast",
+      "military_groups": [
+        "wh2_dlc11_group_vampire_coast",
+        "wh2_dlc11_group_vampire_coast_sartosa"
+      ],
+      "expected_units": 41
+    },
+    {
+      "slug": "vampire_counts",
+      "faction_name": "Vampire Counts",
+      "faction_key": "wh_main_vmp_vampire_counts",
+      "subculture_key": "wh_main_sc_vmp_vampire_counts",
+      "military_group": "wh_main_group_vampire_counts",
+      "military_groups": [
+        "wh_main_group_vampire_counts"
+      ],
+      "expected_units": 92
+    },
+    {
+      "slug": "warriors_of_chaos",
+      "faction_name": "Warriors of Chaos",
+      "faction_key": "wh_main_chs_chaos",
+      "subculture_key": "wh_main_sc_chs_chaos",
+      "military_group": "wh_main_group_chaos",
+      "military_groups": [
+        "wh_main_group_chaos",
+        "wh3_dlc20_group_chs_azazel",
+        "wh3_dlc20_group_chs_festus_glottkin",
+        "wh3_dlc20_group_chs_valkia",
+        "wh3_dlc20_group_chs_vilitch",
+        "wh3_main_group_belakor",
+        "wh3_dlc29_group_chs_archaon"
+      ],
+      "expected_units": 326
+    },
+    {
+      "slug": "wood_elves",
+      "faction_name": "Wood Elves",
+      "faction_key": "wh_dlc05_wef_wood_elves",
+      "subculture_key": "wh_dlc05_sc_wef_wood_elves",
+      "military_group": "wh_dlc05_group_wood_elves",
+      "military_groups": [
+        "wh_dlc05_group_wood_elves",
+        "wh2_dlc16_group_drycha"
+      ],
+      "expected_units": 68
+    },
+    {
+      "slug": "undead_legions",
+      "faction_name": "Undead Legions",
+      "faction_key": "wh3_dlc29_nag_host_of_nagash",
+      "subculture_key": "wh3_dlc29_sc_nag_undead_legions",
+      "military_group": "wh3_dlc29_nag_group_undead_legions",
+      "military_groups": [
+        "wh3_dlc29_nag_group_undead_legions"
+      ],
+      "expected_units": 150
+    }
+  ],
+  "SKILL_RACES": [
+    {
+      "slug": "beastmen",
+      "name": "Beastmen",
+      "subculture_key": "wh_dlc03_sc_bst_beastmen",
+      "expected_characters": 16
+    },
+    {
+      "slug": "bretonnia",
+      "name": "Bretonnia",
+      "subculture_key": "wh_main_sc_brt_bretonnia",
+      "expected_characters": 14
+    },
+    {
+      "slug": "chaos_dwarfs",
+      "name": "Chaos Dwarfs",
+      "subculture_key": "wh3_dlc23_sc_chd_chaos_dwarfs",
+      "expected_characters": 16
+    },
+    {
+      "slug": "daemons_of_chaos",
+      "name": "Daemons of Chaos",
+      "subculture_key": "wh3_main_sc_dae_daemons",
+      "expected_characters": 1
+    },
+    {
+      "slug": "dark_elves",
+      "name": "Dark Elves",
+      "subculture_key": "wh2_main_sc_def_dark_elves",
+      "expected_characters": 24
+    },
+    {
+      "slug": "dwarfs",
+      "name": "Dwarfs",
+      "subculture_key": "wh_main_sc_dwf_dwarfs",
+      "expected_characters": 20
+    },
+    {
+      "slug": "empire",
+      "name": "Empire",
+      "subculture_key": "wh_main_sc_emp_empire",
+      "expected_characters": 33
+    },
+    {
+      "slug": "grand_cathay",
+      "name": "Grand Cathay",
+      "subculture_key": "wh3_main_sc_cth_cathay",
+      "expected_characters": 21
+    },
+    {
+      "slug": "greenskins",
+      "name": "Greenskins",
+      "subculture_key": "wh_main_sc_grn_greenskins",
+      "expected_characters": 19
+    },
+    {
+      "slug": "high_elves",
+      "name": "High Elves",
+      "subculture_key": "wh2_main_sc_hef_high_elves",
+      "expected_characters": 40
+    },
+    {
+      "slug": "khorne",
+      "name": "Khorne",
+      "subculture_key": "wh3_main_sc_kho_khorne",
+      "expected_characters": 13
+    },
+    {
+      "slug": "kislev",
+      "name": "Kislev",
+      "subculture_key": "wh3_main_sc_ksl_kislev",
+      "expected_characters": 17
+    },
+    {
+      "slug": "lizardmen",
+      "name": "Lizardmen",
+      "subculture_key": "wh2_main_sc_lzd_lizardmen",
+      "expected_characters": 41
+    },
+    {
+      "slug": "norsca",
+      "name": "Norsca",
+      "subculture_key": "wh_dlc08_sc_nor_norsca",
+      "expected_characters": 20
+    },
+    {
+      "slug": "nurgle",
+      "name": "Nurgle",
+      "subculture_key": "wh3_main_sc_nur_nurgle",
+      "expected_characters": 21
+    },
+    {
+      "slug": "ogre_kingdoms",
+      "name": "Ogre Kingdoms",
+      "subculture_key": "wh3_main_sc_ogr_ogre_kingdoms",
+      "expected_characters": 18
+    },
+    {
+      "slug": "skaven",
+      "name": "Skaven",
+      "subculture_key": "wh2_main_sc_skv_skaven",
+      "expected_characters": 30
+    },
+    {
+      "slug": "slaanesh",
+      "name": "Slaanesh",
+      "subculture_key": "wh3_main_sc_sla_slaanesh",
+      "expected_characters": 16
+    },
+    {
+      "slug": "tomb_kings",
+      "name": "Tomb Kings",
+      "subculture_key": "wh2_dlc09_sc_tmb_tomb_kings",
+      "expected_characters": 25
+    },
+    {
+      "slug": "tzeentch",
+      "name": "Tzeentch",
+      "subculture_key": "wh3_main_sc_tze_tzeentch",
+      "expected_characters": 17
+    },
+    {
+      "slug": "vampire_coast",
+      "name": "Vampire Coast",
+      "subculture_key": "wh2_dlc11_sc_cst_vampire_coast",
+      "expected_characters": 23
+    },
+    {
+      "slug": "vampire_counts",
+      "name": "Vampire Counts",
+      "subculture_key": "wh_main_sc_vmp_vampire_counts",
+      "expected_characters": 31
+    },
+    {
+      "slug": "warriors_of_chaos",
+      "name": "Warriors of Chaos",
+      "subculture_key": "wh_main_sc_chs_chaos",
+      "expected_characters": 47
+    },
+    {
+      "slug": "wood_elves",
+      "name": "Wood Elves",
+      "subculture_key": "wh_dlc05_sc_wef_wood_elves",
+      "expected_characters": 26
+    },
+    {
+      "slug": "undead_legions",
+      "name": "Undead Legions",
+      "subculture_key": "wh3_dlc29_sc_nag_undead_legions",
+      "expected_characters": 1
+    }
+  ],
+  "CHARACTER_RACE_OVERRIDES": {
+    "wh_dlc03_bst_beastlord": "beastmen",
+    "wh_dlc08_nor_arzik": "norsca",
+    "wh_dlc08_nor_kihar": "norsca",
+    "wh_main_chs_lord_of_change": "tzeentch",
+    "wh2_dlc17_lzd_skink_oracle_troglodon": "lizardmen",
+    "wh3_dlc20_chs_exalted_hero_mkho": "warriors_of_chaos",
+    "wh3_dlc20_chs_exalted_hero_mnur": "warriors_of_chaos",
+    "wh3_dlc20_chs_sorcerer_metal_mtze": "warriors_of_chaos",
+    "wh3_dlc20_chs_sorcerer_shadows_msla": "warriors_of_chaos",
+    "wh3_dlc20_chs_sorcerer_slaanesh_msla": "warriors_of_chaos",
+    "wh3_dlc20_chs_sorcerer_tzeentch_mtze": "warriors_of_chaos",
+    "wh3_dlc23_neu_ulrika": "empire",
+    "wh3_dlc24_chs_exalted_hero_mtze": "warriors_of_chaos",
+    "wh3_dlc25_chs_sorcerer_death_mnur": "warriors_of_chaos",
+    "wh3_dlc25_chs_sorcerer_nurgle_mnur": "warriors_of_chaos",
+    "wh3_dlc26_kho_bloodspeaker": "khorne",
+    "wh3_dlc26_kho_scyla_anfingrimm": "khorne",
+    "wh3_dlc26_kho_skarr_bloodwrath": "khorne",
+    "wh3_dlc27_chs_exalted_hero_msla": "warriors_of_chaos",
+    "wh3_dlc27_nor_beorg_bearstruck": "norsca",
+    "wh3_dlc27_sla_druchii_anointed": "slaanesh",
+    "wh3_dlc27_sla_styrkaar_the_sortsvinaer": "slaanesh",
+    "wh3_main_dae_belakor": "warriors_of_chaos",
+    "wh3_main_kho_bloodreaper": "khorne",
+    "wh3_main_kho_herald_of_khorne": "khorne",
+    "wh3_main_nur_cultist_plague_ritual": "nurgle",
+    "wh3_main_nur_herald_of_nurgle_death": "nurgle",
+    "wh3_main_nur_herald_of_nurgle_nurgle": "nurgle",
+    "wh3_main_nur_plagueridden_death": "nurgle",
+    "wh3_main_nur_plagueridden_nurgle": "nurgle",
+    "wh3_main_sla_alluress_shadow": "slaanesh",
+    "wh3_main_sla_alluress_slaanesh": "slaanesh",
+    "wh3_main_sla_herald_of_slaanesh_shadow": "slaanesh",
+    "wh3_main_sla_herald_of_slaanesh_slaanesh": "slaanesh",
+    "wh3_main_tze_herald_of_tzeentch_metal": "tzeentch",
+    "wh3_main_tze_herald_of_tzeentch_tzeentch": "tzeentch",
+    "wh3_main_tze_iridescent_horror_metal": "tzeentch",
+    "wh3_main_tze_iridescent_horror_tzeentch": "tzeentch",
+    "wh3_pro12_kho_cha_karanak": "khorne",
+    "wh2_dlc09_tmb_arkhan": "tomb_kings",
+    "wh2_dlc09_tmb_liche_priest_death": "tomb_kings",
+    "wh2_dlc09_tmb_liche_priest_light": "tomb_kings",
+    "wh2_dlc09_tmb_liche_priest_nehekhara": "tomb_kings",
+    "wh2_dlc09_tmb_liche_priest_shadow": "tomb_kings",
+    "wh2_dlc09_tmb_necrotect": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_king": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_king_alkhazzar_ii": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_king_lahmizzash": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_king_rakhash": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_king_setep": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_king_thutep": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_king_wakhaf": "tomb_kings",
+    "wh2_dlc09_tmb_tomb_prince": "tomb_kings",
+    "wh2_dlc11_cst_admiral_death": "vampire_coast",
+    "wh2_dlc11_cst_admiral_deep": "vampire_coast",
+    "wh2_dlc11_cst_admiral_fem_death": "vampire_coast",
+    "wh2_dlc11_cst_admiral_fem_deep": "vampire_coast",
+    "wh2_dlc11_cst_admiral_fem_vampires": "vampire_coast",
+    "wh2_dlc11_cst_admiral_vampires": "vampire_coast",
+    "wh2_dlc11_cst_fleet_captain_death": "vampire_coast",
+    "wh2_dlc11_cst_fleet_captain_deep": "vampire_coast",
+    "wh2_dlc11_cst_fleet_captain_vampires": "vampire_coast",
+    "wh2_dlc11_cst_gunnery_wight": "vampire_coast",
+    "wh2_dlc11_cst_harkon": "vampire_coast",
+    "wh2_dlc11_cst_mourngul": "vampire_coast",
+    "wh2_dlc17_bst_taurox": "beastmen",
+    "wh3_dlc20_chs_lord_mkho": "khorne",
+    "wh3_dlc20_chs_lord_msla": "slaanesh",
+    "wh3_dlc20_chs_sorcerer_lord_death_mnur": "nurgle",
+    "wh3_dlc20_chs_sorcerer_lord_nurgle_mnur": "nurgle",
+    "wh3_dlc24_chs_lord_mtze": "tzeentch",
+    "wh3_dlc24_tze_the_changeling": "tzeentch",
+    "wh3_dlc25_chs_lord_mnur": "nurgle",
+    "wh3_dlc25_nur_bray_shaman_wild_chieftain": "nurgle",
+    "wh3_dlc25_nur_castellan_chieftain": "nurgle",
+    "wh3_dlc25_nur_epidemius": "nurgle",
+    "wh3_dlc25_nur_exalted_hero_chieftain": "nurgle",
+    "wh3_dlc25_nur_fimir_balefiend_shadow_chieftain": "nurgle",
+    "wh3_dlc25_nur_kayzk_the_befouled": "nurgle",
+    "wh3_dlc25_nur_skin_wolf_werekin_chieftain": "nurgle",
+    "wh3_dlc25_nur_tamurkhan": "nurgle",
+    "wh3_dlc26_kho_arbaal_the_undefeated": "khorne",
+    "wh3_dlc26_kho_skulltaker": "khorne",
+    "wh3_dlc27_nor_sayl_the_faithless": "norsca",
+    "wh3_dlc27_sla_dechala": "slaanesh",
+    "wh3_dlc27_sla_masque_of_slaanesh": "slaanesh",
+    "wh3_main_dae_daemon_prince": "daemons_of_chaos",
+    "wh3_main_kho_skarbrand": "khorne",
+    "wh3_main_nur_kugath": "nurgle",
+    "wh3_main_sla_nkari": "slaanesh",
+    "wh3_main_tze_kairos": "tzeentch",
+    "wh_dlc03_bst_khazrak": "beastmen",
+    "wh_dlc03_bst_malagor": "beastmen",
+    "wh_dlc04_vmp_strigoi_ghoul_king": "vampire_counts",
+    "wh_dlc04_vmp_vlad_con_carstein": "vampire_counts",
+    "wh_dlc05_bst_morghur": "beastmen",
+    "wh_dlc05_vmp_vampire_shadow": "vampire_counts",
+    "wh_dlc08_nor_throgg": "norsca",
+    "wh_dlc08_nor_wulfrik": "norsca",
+    "wh_main_vmp_banshee": "vampire_counts",
+    "wh_main_vmp_lord": "vampire_counts",
+    "wh_main_vmp_mannfred_von_carstein": "vampire_counts",
+    "wh_main_vmp_master_necromancer": "vampire_counts",
+    "wh_main_vmp_necromancer": "vampire_counts",
+    "wh_main_vmp_vampire_death": "vampire_counts",
+    "wh_main_vmp_wight_king": "vampire_counts",
+    "wh_pro02_vmp_isabella_von_carstein_hero": "vampire_counts",
+    "wh3_dlc29_chs_glottkin": "warriors_of_chaos",
+    "wh3_dlc29_chs_gutrot_spume": "warriors_of_chaos",
+    "wh3_dlc29_cst_vampire_fleet_admiral_female_undeath": "vampire_coast",
+    "wh3_dlc29_cst_vampire_fleet_admiral_undeath": "vampire_coast",
+    "wh3_dlc29_cst_vampire_fleet_captain_undeath": "vampire_coast",
+    "wh3_dlc29_tmb_liche_high_priest_death": "tomb_kings",
+    "wh3_dlc29_tmb_liche_high_priest_light": "tomb_kings",
+    "wh3_dlc29_tmb_liche_high_priest_nehekhara": "tomb_kings",
+    "wh3_dlc29_tmb_liche_high_priest_shadow": "tomb_kings",
+    "wh3_dlc29_tmb_liche_high_priest_undeath": "tomb_kings",
+    "wh3_dlc29_tmb_liche_priest_undeath": "tomb_kings",
+    "wh3_dlc29_tmb_tomb_herald": "tomb_kings",
+    "wh3_dlc29_vmp_dieter_helsnicht": "vampire_counts",
+    "wh3_dlc29_vmp_krell": "vampire_counts",
+    "wh3_dlc29_vmp_lahmian_vampire": "vampire_counts",
+    "wh3_dlc29_vmp_master_necromancer_undeath": "vampire_counts",
+    "wh3_dlc29_vmp_necromancer_undeath": "vampire_counts",
+    "wh3_dlc29_vmp_neferata": "vampire_counts",
+    "wh3_dlc29_vmp_walach_harkon": "vampire_counts"
+  },
+  "CHARACTER_SUBTYPE_EXCLUSIONS": [
+    "wh3_dlc24_tze_exalted_lord_of_change_metal_locked_army",
+    "wh3_dlc24_tze_exalted_lord_of_change_tzeentch_locked_army"
+  ],
+  "SHARED_TREE_GROUPS": [
+    {
+      "subtypes": [
+        "wh2_pro08_neu_gotrek",
+        "wh3_dlc25_neu_gotrek_hero"
+      ],
+      "reason": "Separate source node sets use general and champion agent roles; preserve the lord and hero identities."
+    },
+    {
+      "subtypes": [
+        "wh3_dlc29_vmp_handmaiden",
+        "wh3_dlc29_vmp_handmaiden_imentet"
+      ],
+      "reason": "Separate source node sets preserve generic and named Handmaiden identities; identical skill structure does not make them one subtype."
+    }
+  ]
+}

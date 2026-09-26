@@ -1,7 +1,7 @@
 [
   {
-    "path": "main_warhammer/endgame/endgame_will_of_hashut.lua",
-    "sha256": "279a0b890e91777c6d3f4e0919f544cd9c0a33d4f68e10274652ce56696d1c48",
+    "path": "main_warhammer/crisis/crisis_will_of_hashut.lua",
+    "sha256": "79b43f6dce0df542fb902cf6c032e4e42a8d8863360f67ed6df604268e02b743",
     "sites": [
       {
         "line": 173,
@@ -46,6 +46,58 @@
     ]
   },
   {
+    "path": "main_warhammer/episodes/episode_crisis_example.lua",
+    "sha256": "69f55e2b2d542474d3aaade33345c8e5b55f86be7adc148813a987aa93b16ce7",
+    "sites": [
+      {
+        "line": 688,
+        "text": "cm:create_force_with_existing_general("
+      }
+    ]
+  },
+  {
+    "path": "main_warhammer/episodes/episode_nagash_endgame.lua",
+    "sha256": "c99b052d71d593213897f0e6d2f3039923384e524abfed5290cea6211b580ec3",
+    "sites": [
+      {
+        "line": 762,
+        "text": "cm:teleport_to(cm:char_lookup_str(nagash_character), pos_x, pos_y)"
+      },
+      {
+        "line": 1037,
+        "text": "cm:create_force_with_existing_general("
+      },
+      {
+        "line": 1457,
+        "text": "cm:create_force_with_existing_general("
+      }
+    ]
+  },
+  {
+    "path": "main_warhammer/episodes/episode_nagash_sandbox.lua",
+    "sha256": "06b1b7266cf6af57d3e2de22ded3e1d071addddd9bb2878ff669961dc8f26b91",
+    "sites": [
+      {
+        "line": 698,
+        "text": "cm:create_force_with_existing_general("
+      }
+    ]
+  },
+  {
+    "path": "main_warhammer/wh3_dlc29_nag_mortarchs.lua",
+    "sha256": "9dc7a74141f5054f116b666b18c63861ee96b976a551742e5a79a913f028d03a",
+    "sites": [
+      {
+        "line": 924,
+        "text": "cm:teleport_to(cm:char_lookup_str(custom_start_char), x, y)"
+      },
+      {
+        "line": 934,
+        "text": "cm:teleport_to(cm:char_lookup_str(custom_start_char), x, y)"
+      }
+    ]
+  },
+  {
     "path": "main_warhammer/wh3_sea_lanes.lua",
     "sha256": "60aa6680c617da062065bfc01a7925438f9d7a50a19351607e616b337174beb1",
     "sites": [
@@ -69,42 +121,42 @@
   },
   {
     "path": "main_warhammer/wh_dlc07_schwartzhafen_undying_love.lua",
-    "sha256": "030f733bdeaab7971e3bb8178c6dd0c1386cb3789a2863cbd1f02dd5a4f17dcd",
+    "sha256": "873711d1bd00ca7477d7e2d2c6f7f7a398dc3c5ea4b6c39844f8e189ba05c35b",
     "sites": [
       {
-        "line": 27,
+        "line": 48,
         "text": "cm:teleport_to(char_lookup_str, self.melissa_pos.x, self.melissa_pos.y)"
       },
       {
-        "line": 40,
+        "line": 61,
         "text": "cm:teleport_to(char_lookup_str, self.emmanuelle_pos.x, self.emmanuelle_pos.y)"
       }
     ]
   },
   {
     "path": "main_warhammer/wh_dlc08_monster_hunt.lua",
-    "sha256": "ce9a427f72869c455582dc86a93d60bb506535967d17099331b8bdb290fa7ee3",
+    "sha256": "55f87176b890e2f23dd26e1446006e739dc2af25174d1929229077c44efd5cc7",
     "sites": [
       {
-        "line": 3998,
+        "line": 3999,
         "text": "cm:teleport_and_prepare_for_battle(character:command_queue_index(), hunt_config_data.quest_battle, display_x, display_y, true, false)"
       }
     ]
   },
   {
     "path": "wh2_campaign_custom_starts.lua",
-    "sha256": "7d1e1b725146c0f2e1d19dbd18bb4fd5183d49c615b05430140a9b73be016df2",
+    "sha256": "7319bc9c4cdcccf519cb1f30f3fd49ff408fb4f44eeb41a5f85b320c3b683775",
     "sites": [
       {
-        "line": 738,
+        "line": 767,
         "text": "cm:create_force_with_existing_general("
       },
       {
-        "line": 796,
+        "line": 825,
         "text": "cm:teleport_to(cm:char_lookup_str(custom_start_char), end_x, end_y);"
       },
       {
-        "line": 810,
+        "line": 839,
         "text": "cm:teleport_to(cm:char_lookup_str(leader), target_x, target_y);"
       }
     ]
@@ -121,28 +173,28 @@
   },
   {
     "path": "wh3_campaign_bonus_values.lua",
-    "sha256": "ddee551082f6e6a8775123cf71dcdf0e3edbf025ef3836d2bb89da584d9e13e1",
+    "sha256": "a2d8578c15636862a7729c473781bd499728a07e4bb404b0fcba48430fd269fd",
     "sites": [
       {
-        "line": 452,
+        "line": 512,
         "text": "cm:teleport_to(cm:char_lookup_str(character), pos_x, pos_y);"
       },
       {
-        "line": 1363,
+        "line": 1543,
         "text": "local result = cm:teleport_military_force_to(faction_leader:military_force(), x, y)"
       }
     ]
   },
   {
     "path": "wh3_campaign_caravans_core.lua",
-    "sha256": "66d6718abfdf4ddb85a772ee9e66a101e2694e0192d59a3086f9977cd897c9a2",
+    "sha256": "8f16b3ce60bcb85f32818f1164aa260d934868a00dcddead28b9cfc89c5c69d7",
     "sites": [
       {
-        "line": 915,
+        "line": 918,
         "text": "cm:teleport_to(caravan_lookup, x, y);"
       },
       {
-        "line": 1218,
+        "line": 1221,
         "text": "cm:teleport_to(caravan_lookup,  caravan_x,  caravan_y);"
       }
     ]
@@ -171,28 +223,28 @@
   },
   {
     "path": "wh3_dlc24_mother_ostankya.lua",
-    "sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+    "sha256": "91787bec8a5bd831463737c702df599321d43f7229a00f5bad167fa7029e0506",
     "sites": [
       {
-        "line": 930,
+        "line": 934,
         "text": "cm:teleport_to(cm:char_lookup_str(faction_leader), x_pos, y_pos);"
       },
       {
-        "line": 936,
+        "line": 940,
         "text": "cm:teleport_to(cm:char_lookup_str(start_char), x_pos, y_pos);"
       },
       {
-        "line": 950,
+        "line": 954,
         "text": "cm:teleport_to(cm:char_lookup_str(nearby_faction_leader), rx_pos, ry_pos);"
       }
     ]
   },
   {
     "path": "wh3_dlc24_the_changeling.lua",
-    "sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+    "sha256": "09908bdf932a7356c01f8500e5ff29ae056cde5ece84ea4957e229f66efa0028",
     "sites": [
       {
-        "line": 3166,
+        "line": 3196,
         "text": "cm:teleportation_network_open_node(rift_node, self.rift_template)"
       }
     ]
@@ -227,7 +279,7 @@
   },
   {
     "path": "wh3_dlc27_eternal_dance.lua",
-    "sha256": "883d9474e181734ca5276f3b8c561c0a9939129ec9ab7410f8fe4575c3572336",
+    "sha256": "88f0599e0128a8e842a79b737e87f09d9e7c3bd02d4feaecc4b4d0652f60a582",
     "sites": [
       {
         "line": 748,
@@ -241,10 +293,10 @@
   },
   {
     "path": "wh3_dlc27_secrets_of_the_white_tower.lua",
-    "sha256": "9950d60889f9c6158a891456e419204ae67f61a265406cc5009ab7e8bf3e8a0f",
+    "sha256": "323dec6ebe802c818917d4bcacdab9724cdb4e06c30d2a1939207dbf178f9c42",
     "sites": [
       {
-        "line": 235,
+        "line": 237,
         "text": "cm:teleport_military_force_to(mf, x, y)"
       }
     ]
@@ -256,6 +308,64 @@
       {
         "line": 282,
         "text": "cm:teleport_military_force_to(target_force_commander:military_force(), x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc29_archaon_subjugation.lua",
+    "sha256": "db259f7f1f2a1d17e031ea2949ae81d3ccd0c95bd5333bee4aaf27490b7369e8",
+    "sites": [
+      {
+        "line": 869,
+        "text": "cm:create_force_with_existing_general("
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc29_nag_black_pyramid.lua",
+    "sha256": "4d855d984f9def6c121db2dca8c8f3d3d3a631158eee310156b2e6f4b5d19d29",
+    "sites": [
+      {
+        "line": 367,
+        "text": "cm:teleportation_network_open_node(node, self.config.teleport_template)"
+      },
+      {
+        "line": 371,
+        "text": "cm:teleportation_network_close_node(node)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc29_thanquol_chaotic_plans_token_payloads.lua",
+    "sha256": "3beb79b980830339b54742f1e181ef91d16c7bc6fb9993f3dbd4eaec8e7e4176",
+    "sites": [
+      {
+        "line": 740,
+        "text": "cm:teleport_to(cm:char_lookup_str(character), x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc29_vampire_bloodlines.lua",
+    "sha256": "90b56f061ee0a8206a943db8c181f997ec01ebc630df876a2651e18b9a77138c",
+    "sites": [
+      {
+        "line": 1474,
+        "text": "cm:teleport_to(\"character_cqi:\"..character_cqi, x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc29_vampire_web_of_power.lua",
+    "sha256": "251a2d9a21a2738c57e71343f607a21bc98d017a2f4977ba17a81e41d4c6fd69",
+    "sites": [
+      {
+        "line": 226,
+        "text": "cm:teleport_to(char_lookup_str, x, y);"
+      },
+      {
+        "line": 437,
+        "text": "cm:teleport_to(char_lookup_str, x, y);"
       }
     ]
   },

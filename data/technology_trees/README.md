@@ -1,20 +1,21 @@
 # Faction technology trees
 
-Authoritative technology dataset for WARHAMMER III patch **8.1.1**, executable
-**8.1.1.0**, Steam build **24237342**. Start with `dataset_manifest.json`,
-`schema_inventory__v2.csv`, and `faction_index__wh3__8.1.1.csv`. Each of the 104
+Authoritative technology dataset for WARHAMMER III patch **9.0**, executable
+**9.0.0**, Steam build **25507028**. Start with `dataset_manifest.json`,
+`schema_inventory__v2.csv`, and `faction_index__wh3__9.0.csv`. Each of the 109
 playable factions has one self-contained long-form CSV. Filter `record_type`
 and `variant_key`; blank values are unknown/not applicable, never zero.
 
 ## Active trees and precedence
 
 `source_exports/node_set_precedence.json` is the explicit selection model.
-Seven narrow overrides replace a matching generic set with its explicit faction
-assignment: Nakai, Azazel, Festus, Valkia, Vilitch, Be'lakor, and the Changeling.
-Each rule retains both DB selector rows, locations and hash, plus the blocking
-review's gameplay corroboration. The binary engine's selection implementation
-is not exposed in the decoded Lua: these are transparent reviewed exceptions,
-not a claim that a universal engine precedence algorithm was recovered.
+Nine explicit overrides replace matching generic sets. The seven historical
+rules retain their prior gameplay review; Sigvald adds official 9.0 rework
+corroboration, while Glottkin is a source-reviewed interpretation of the same
+faction-over-generic model with runtime not observed. Read each rule's
+interpretation_status and the review in docs/development/update-9.0/technology-selectors.md.
+Both DB selector rows, their locations and hashes remain available. The binary
+engine selector itself is not decoded.
 Unreviewed overlapping sets fail the build. Source fallback sets remain available
 for provenance but are not emitted as active variants of those factions.
 
@@ -25,6 +26,9 @@ The Changeling has exactly two variants: `wh3_main_chaos` (51 nodes) and
 legitimate variant. There is no blank campaign variant. Other unqualified trees
 use `all_campaigns` in their variant key, with a blank DB campaign selector.
 The Daemon Prince has a file with explicit no-research-tree evidence and no nodes.
+Nagash retains the empty `nag_tech` selector with zero technology nodes. His Black
+Pyramid progression is outside ordinary technology normalization; an empty
+selector does not mean that his faction has no progression mechanics.
 
 ## Rows and scripted mechanics
 
@@ -87,7 +91,7 @@ self-contained repeated shared trees do not imply different game mechanics.
 On the verified MSI installation, with read-only RPFM listening locally:
 
 ```
-node scripts/extract-technology-source.mjs work/technology-source
+node scripts/extract-technology-source.mjs work/technology-source 9.0
 node scripts/build-technology-trees.mjs work/technology-source work/technology-candidate
 node scripts/validate-technology-trees.mjs work/technology-source work/technology-candidate
 node scripts/test-technology-trees.mjs work/technology-source work/technology-candidate
@@ -95,7 +99,7 @@ node scripts/test-technology-trees.mjs work/technology-source work/technology-ca
 
 Use fresh destinations. Extraction checks the executable/build before accessing
 the game and verifies RPFM's configured installation. Validation reconciles
-source fields and independently pins gameplay totals/variant identities and
+source fields and independently checks the reviewed source totals/variant identities and
 script contracts. It builds twice into fresh directories and compares all builder
 artifacts byte-for-byte with the candidate. Install source and output together
 only after validation passes. `npm run validate` also checks all other datasets.
@@ -103,19 +107,19 @@ Economy and unit exports are not authoritative homes for technology data.
 
 ## Generated totals
 
-- faction_files: 104
-- races: 24
-- node_set_variants: 104
-- unique_node_sets: 30
-- node_occurrences: 6016
-- technologies: 1620
-- technology_occurrences: 6016
-- dependency_links: 6272
-- effects: 12425
-- locks_exclusions: 230
-- direct_unlocks: 703
-- conditional_initiative_effect_relations: 916
-- unique_structures: 51
+- faction_files: 109
+- races: 25
+- node_set_variants: 109
+- unique_node_sets: 33
+- node_occurrences: 6500
+- technologies: 1722
+- technology_occurrences: 6500
+- dependency_links: 6665
+- effects: 13982
+- locks_exclusions: 340
+- direct_unlocks: 847
+- conditional_initiative_effect_relations: 848
+- unique_structures: 56
 - structured_script_source_records: 96
 - structured_script_occurrences: 306
-- unresolved_scripted_cases: 35
+- unresolved_scripted_cases: 43
