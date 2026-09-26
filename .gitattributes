@@ -24,3 +24,5 @@
 
 # Preserve bounded game-script evidence, including its original trailing spaces.
 /data/campaign_map/starting_positions/source_exports/** -text -whitespace
+
+/archive/campaign_map/9.0_source_exports/** -text -whitespace
