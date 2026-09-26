@@ -9,7 +9,7 @@
   },
   "scripts": {
     "validate": "npm run validate:units && npm run validate:skills && npm run validate:economy && npm run validate:campaign && npm run validate:technologies && npm run validate:guides && npm run test:victory && npm run test:readme",
-    "validate:units": "node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports data/unit_stats && node --test scripts/test-lord-unit-coverage.mjs",
+    "validate:units": "node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports data/unit_stats && node --test scripts/test-lord-unit-coverage.mjs scripts/test-availability-coverage.mjs",
     "validate:skills": "node scripts/validate-skill-trees.mjs data/skill_trees/source_exports data/skill_trees",
     "validate:economy": "node scripts/validate-economy-dataset.mjs data/economy/source_exports data/economy",
     "validate:campaign": "node scripts/validate-campaign-atlas.mjs data/campaign_map/campaign_atlas__wh3__9.0.gpkg data/campaign_map",

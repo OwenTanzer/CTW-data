@@ -1,0 +1,1840 @@
+{
+  "source_commit": "b5b98940617e3d445cdb9e58b84cbc31f6d345a7",
+  "source_hashes": {
+    "data/unit_stats/source_exports/db/main_units_tables/data__.tsv": "06cade538d5736f73521df6c96aa3633cb65a8db66512b4c617445fa71803cb7",
+    "data/unit_stats/source_exports/db/land_units_tables/data__.tsv": "deca81795dd1af2a894406423779e4730e322d365ffd41150e34271d82410a38",
+    "data/unit_stats/source_exports/db/units_custom_battle_permissions_tables/data__.tsv": "ce08520acb50710ae8780126138d501c9b80c14840b29a334b295652cffed194",
+    "data/unit_stats/source_exports/db/units_custom_battle_mounts_tables/data__.tsv": "8a0605046d806c0cab5ec8f0c778928a226c09ada6968e145c0cf176f052fd5d",
+    "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2",
+    "data/skill_trees/source_exports/db/faction_agent_permitted_subtypes_tables/data__.tsv": "00748f428dab88b585d98466007fedc4a34f571b783b1f401808aa8c11bb2f25"
+  },
+  "cases": [
+    {
+      "race": "norsca",
+      "faction": "wh_dlc08_nor_norsca",
+      "unit": "wh3_dlc29_chs_cha_gutrot_spume",
+      "land_unit": "wh3_dlc29_chs_cha_gutrot_spume",
+      "permissions": [
+        {
+          "faction": "wh_dlc08_nor_norsca",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_chs_cha_gutrot_spume",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/chs_gutrot_spume_0.png",
+          "general_uniform": "wh3_dlc29_uniform_chs_gutrot_spume",
+          "set_piece_character": "wh3_dlc29_chs_cha_gutrot_spume",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_chs_gutrot_spume"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_dlc08_nor_norsca; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "norsca",
+      "faction": "wh_dlc08_nor_norsca",
+      "unit": "wh3_dlc29_chs_cha_gutrot_spume_warshrine",
+      "land_unit": "wh3_dlc29_chs_cha_gutrot_spume_warshrine",
+      "permissions": [
+        {
+          "faction": "wh_dlc08_nor_norsca",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_chs_cha_gutrot_spume_warshrine",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/chs_gutrot_spume_0.png",
+          "general_uniform": "wh3_dlc29_uniform_chs_gutrot_spume",
+          "set_piece_character": "wh3_dlc29_chs_cha_gutrot_spume",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_chs_cha_gutrot_spume",
+          "mounted_unit": "wh3_dlc29_chs_cha_gutrot_spume_warshrine",
+          "icon_name": "ui/campaign ui/mounts/mount_warshrine.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_chs_gutrot_spume"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_dlc08_nor_norsca; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "tomb_kings",
+      "faction": "wh2_dlc09_tmb_tomb_kings",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath",
+      "permissions": [
+        {
+          "faction": "wh2_dlc09_tmb_tomb_kings",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_01_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_01",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "tomb_kings",
+      "faction": "wh2_dlc09_tmb_tomb_kings",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed",
+      "permissions": [
+        {
+          "faction": "wh2_dlc09_tmb_tomb_kings",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_01_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_01",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath",
+          "mounted_unit": "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "tomb_kings",
+      "faction": "wh2_dlc09_tmb_tomb_kings",
+      "unit": "wh3_dlc29_tmb_cha_liche_priest_undeath",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_priest_undeath",
+      "permissions": [
+        {
+          "faction": "wh2_dlc09_tmb_tomb_kings",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_tmb_cha_liche_priest_undeath",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/tmb_liche_priest_campaign_05_0.png",
+          "general_uniform": "wh2_dlc09_uniform_tmb_liche_priest_03",
+          "set_piece_character": "wh2_dlc09_tmb_cha_liche_priest_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_priest_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "tomb_kings",
+      "faction": "wh2_dlc09_tmb_tomb_kings",
+      "unit": "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed",
+      "permissions": [
+        {
+          "faction": "wh2_dlc09_tmb_tomb_kings",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/tmb_liche_priest_campaign_05_0.png",
+          "general_uniform": "wh2_dlc09_uniform_tmb_liche_priest_03",
+          "set_piece_character": "wh2_dlc09_tmb_cha_liche_priest_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_liche_priest_undeath",
+          "mounted_unit": "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_priest_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_coast",
+      "faction": "wh2_dlc11_cst_vampire_coast",
+      "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath",
+      "land_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath",
+      "permissions": [
+        {
+          "faction": "wh2_dlc11_cst_vampire_coast",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/cst_cha_vampire_fleet_admiral_female_campaign_03_0.png",
+          "general_uniform": "wh2_dlc11_uniform_cst_vampire_fleet_admiral_female_03",
+          "set_piece_character": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_cst_vampire_fleet_admiral_female_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_coast",
+      "faction": "wh2_dlc11_cst_vampire_coast",
+      "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean",
+      "land_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean",
+      "permissions": [
+        {
+          "faction": "wh2_dlc11_cst_vampire_coast",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/cst_cha_vampire_fleet_admiral_female_campaign_03_0.png",
+          "general_uniform": "wh2_dlc11_uniform_cst_vampire_fleet_admiral_female_03",
+          "set_piece_character": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath",
+          "mounted_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean",
+          "icon_name": "ui/campaign ui/mounts/mount_promethean.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_cst_vampire_fleet_admiral_female_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_coast",
+      "faction": "wh2_dlc11_cst_vampire_coast",
+      "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath",
+      "land_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath",
+      "permissions": [
+        {
+          "faction": "wh2_dlc11_cst_vampire_coast",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/cst_vampire_fleet_admiral_male_campaign_03_0.png",
+          "general_uniform": "wh2_dlc11_uniform_cst_vampire_fleet_admiral_male_03",
+          "set_piece_character": "wh2_dlc11_cst_cha_vampire_fleet_admiral_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_cst_vampire_fleet_admiral_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_coast",
+      "faction": "wh2_dlc11_cst_vampire_coast",
+      "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean",
+      "land_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean",
+      "permissions": [
+        {
+          "faction": "wh2_dlc11_cst_vampire_coast",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/cst_vampire_fleet_admiral_male_campaign_03_0.png",
+          "general_uniform": "wh2_dlc11_uniform_cst_vampire_fleet_admiral_male_03",
+          "set_piece_character": "wh2_dlc11_cst_cha_vampire_fleet_admiral_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath",
+          "mounted_unit": "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean",
+          "icon_name": "ui/campaign ui/mounts/mount_promethean.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_cst_vampire_fleet_admiral_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_coast",
+      "faction": "wh2_dlc11_cst_vampire_coast",
+      "unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath",
+      "land_unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath",
+      "permissions": [
+        {
+          "faction": "wh2_dlc11_cst_vampire_coast",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/cst_fleet_captain_campaign_05_0.png",
+          "general_uniform": "wh2_dlc11_uniform_cst_vampire_fleet_captain_05",
+          "set_piece_character": "wh2_dlc11_cst_cha_vampire_fleet_captain_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_cst_vampire_fleet_captain_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_coast",
+      "faction": "wh2_dlc11_cst_vampire_coast",
+      "unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean",
+      "land_unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean",
+      "permissions": [
+        {
+          "faction": "wh2_dlc11_cst_vampire_coast",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/cst_fleet_captain_campaign_05_0.png",
+          "general_uniform": "wh2_dlc11_uniform_cst_vampire_fleet_captain_05",
+          "set_piece_character": "wh2_dlc11_cst_cha_vampire_fleet_captain_1",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath",
+          "mounted_unit": "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean",
+          "icon_name": "ui/campaign ui/mounts/mount_promethean.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_cst_vampire_fleet_captain_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+      "land_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_master_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_master_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_master_necromancer_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_master_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare",
+      "land_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_master_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_master_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_master_necromancer_5",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare",
+          "icon_name": "ui/campaign ui/mounts/mount_nightmare.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_master_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart",
+      "land_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_master_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_master_necromancer_01",
+          "set_piece_character": "wh_dlc04_vmp_cha_master_necromancer_1",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart",
+          "icon_name": "ui/campaign ui/mounts/mount_corpse_cart.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_master_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire",
+      "land_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_master_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_master_necromancer_01",
+          "set_piece_character": "wh_dlc04_vmp_cha_master_necromancer_2",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire",
+          "icon_name": "UI/Campaign UI/mounts/mount_corpse_cart_with_balefire.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_master_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone",
+      "land_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_master_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_master_necromancer_01",
+          "set_piece_character": "wh_dlc04_vmp_cha_master_necromancer_3",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone",
+          "icon_name": "UI/Campaign UI/mounts/mount_corpse_cart_with_lodestone.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_master_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed",
+      "land_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_master_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_master_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_master_necromancer_4",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed",
+          "icon_name": "ui/campaign ui/mounts/mount_hellsteed.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_master_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_necromancer_undeath",
+      "land_unit": "wh3_dlc29_vmp_cha_necromancer_undeath",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_vmp_cha_necromancer_undeath",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_necromancer_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare",
+      "land_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_necromancer_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare",
+          "icon_name": "wh3_dlc29_vmp_cha_necromancer_undeath"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart",
+      "land_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_necromancer_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart",
+          "icon_name": "ui/campaign ui/mounts/mount_corpse_cart.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire",
+      "land_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_necromancer_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire",
+          "icon_name": "UI/Campaign UI/mounts/mount_corpse_cart_with_balefire.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone",
+      "land_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "false",
+          "unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_necromancer_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_necromancer_01",
+          "set_piece_character": "wh_main_vmp_cha_necromancer_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_necromancer_undeath",
+          "mounted_unit": "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone",
+          "icon_name": "UI/Campaign UI/mounts/mount_corpse_cart_with_lodestone.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_necromancer_undeath"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_arkhan_dread_abyssal",
+      "land_unit": "wh3_dlc29_tmb_cha_arkhan_dread_abyssal",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_arkhan_dread_abyssal",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/tmb_ch_arkhan_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh2_dlc09_cha_arkhan_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh2_dlc09_tmb_cha_arkhan_0",
+          "mounted_unit": "wh3_dlc29_tmb_cha_arkhan_dread_abyssal",
+          "icon_name": "ui/campaign ui/mounts/mount_dread_abyssal.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh2_dlc09_tmb_arkhan"
+      ],
+      "status": "Special mount unlock unresolved",
+      "note": "Mortarch character acquisition is documented, but this exact mount unlock needs source tracing. Include custom-battle availability; do not describe the mount as automatically granted.",
+      "availability_note": "Host of Nagash Mortarch configuration; exact Dread Abyssal campaign unlock is unverified.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_01_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_01",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_death"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_01_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_01",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "mounted_unit": "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_death"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_light",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_light",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_light",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_04_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_04",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_light"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_04_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_04",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_liche_high_priest_light",
+          "mounted_unit": "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_light"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_03_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_03",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_nehekhara"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_03_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_03",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara",
+          "mounted_unit": "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_nehekhara"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_02_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_02",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_shadow"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed",
+      "land_unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\tmb_liche_high_priest_campaign_02_0.png",
+          "general_uniform": "wh3_dlc29_uniform_tmb_liche_high_priest_02",
+          "set_piece_character": "wh3_dlc29_tmb_cha_liche_high_priest_death",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow",
+          "mounted_unit": "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_tmb_liche_high_priest_shadow"
+      ],
+      "status": "Inclusion supported by character permissions",
+      "note": "Recruitable subtype and non-disabled exact-faction permission found for base identity. Preserve source mount relation where applicable; recruitment timing/unlock restrictions not yet traced.",
+      "availability_note": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_dread_abyssal",
+      "land_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_dread_abyssal",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_dread_abyssal",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_ch_mannfred_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh_main_vmp_cha_mannfred_von_carstein_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh_main_vmp_cha_mannfred_von_carstein_0",
+          "mounted_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_dread_abyssal",
+          "icon_name": "ui/campaign ui/mounts/mount_dread_abyssal.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh_main_vmp_mannfred_von_carstein"
+      ],
+      "status": "Special mount unlock unresolved",
+      "note": "Mortarch character acquisition is documented, but this exact mount unlock needs source tracing. Include custom-battle availability; do not describe the mount as automatically granted.",
+      "availability_note": "Host of Nagash Mortarch configuration; exact Dread Abyssal campaign unlock is unverified.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord",
+      "land_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_vampire_lords_sword_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_lord_01",
+          "set_piece_character": "wh_main_vmp_cha_vampire_lord_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [],
+      "status": "Character mapping unresolved",
+      "note": "Explicit custom-battle permission; no direct recruitable subtype mapping established. Resolve special/replacement identity before assigning a campaign route.",
+      "availability_note": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_barded_nightmare",
+      "land_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_barded_nightmare",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_barded_nightmare",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_vampire_lords_sword_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_lord_01",
+          "set_piece_character": "wh_main_vmp_cha_vampire_lord_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord",
+          "mounted_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_barded_nightmare",
+          "icon_name": "ui/campaign ui/mounts/mount_barded_nightmare.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Character mapping unresolved",
+      "note": "Explicit custom-battle permission; no direct recruitable subtype mapping established. Resolve special/replacement identity before assigning a campaign route.",
+      "availability_note": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_hellsteed",
+      "land_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_hellsteed",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_hellsteed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_vampire_lords_sword_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_lord_01",
+          "set_piece_character": "wh_main_vmp_cha_vampire_lord_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord",
+          "mounted_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_hellsteed",
+          "icon_name": "ui/campaign ui/mounts/mount_hellsteed.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Character mapping unresolved",
+      "note": "Explicit custom-battle permission; no direct recruitable subtype mapping established. Resolve special/replacement identity before assigning a campaign route.",
+      "availability_note": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_zombie_dragon",
+      "land_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_zombie_dragon",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_zombie_dragon",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_vampire_lords_sword_campaign_01_0.png",
+          "general_uniform": "wh_main_uniform_vmp_lord_01",
+          "set_piece_character": "wh_main_vmp_cha_vampire_lord_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord",
+          "mounted_unit": "wh3_dlc29_vmp_cha_nagash_vampire_lord_zombie_dragon",
+          "icon_name": "ui/campaign ui/mounts/mount_zombie_dragon.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Character mapping unresolved",
+      "note": "Explicit custom-battle permission; no direct recruitable subtype mapping established. Resolve special/replacement identity before assigning a campaign route.",
+      "availability_note": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_neferata",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_neferata"
+      ],
+      "status": "Inclusion supported; conditional",
+      "note": "Neferata is obtainable through Mortarch subjugation. Preserve unlock condition; verify exact mount access separately.",
+      "availability_note": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare",
+          "icon_name": "ui/campaign ui/mounts/mount_barded_nightmare.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_neferata"
+      ],
+      "status": "Inclusion supported; conditional",
+      "note": "Neferata is obtainable through Mortarch subjugation. Preserve unlock condition; verify exact mount access separately.",
+      "availability_note": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_neferata_coven_throne",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_coven_throne",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_coven_throne",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_coven_throne",
+          "icon_name": "ui/campaign ui/mounts/mount_coven_throne.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_neferata"
+      ],
+      "status": "Inclusion supported; conditional",
+      "note": "Neferata is obtainable through Mortarch subjugation. Preserve unlock condition; verify exact mount access separately.",
+      "availability_note": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_neferata_dread_abyssal",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_dread_abyssal",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_dread_abyssal",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_dread_abyssal",
+          "icon_name": "ui/campaign ui/mounts/mount_dread_abyssal.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_neferata"
+      ],
+      "status": "Inclusion supported; conditional",
+      "note": "Neferata is obtainable through Mortarch subjugation. Preserve unlock condition; verify exact mount access separately.",
+      "availability_note": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_neferata_hellsteed",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_hellsteed",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_hellsteed",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_hellsteed",
+          "icon_name": "ui/campaign ui/mounts/mount_hellsteed.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_neferata"
+      ],
+      "status": "Inclusion supported; conditional",
+      "note": "Neferata is obtainable through Mortarch subjugation. Preserve unlock condition; verify exact mount access separately.",
+      "availability_note": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+      "decision": "include"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon",
+      "permissions": [
+        {
+          "faction": "wh3_dlc29_nag_host_of_nagash",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon",
+          "icon_name": "ui/campaign ui/mounts/mount_zombie_dragon.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [
+        "wh3_dlc29_vmp_neferata"
+      ],
+      "status": "Inclusion supported; conditional",
+      "note": "Neferata is obtainable through Mortarch subjugation. Preserve unlock condition; verify exact mount access separately.",
+      "availability_note": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+      "decision": "include"
+    },
+    {
+      "race": "tomb_kings",
+      "faction": "wh2_dlc09_tmb_tomb_kings",
+      "unit": "wh3_dlc29_tmb_cha_arkhan_the_black_mp",
+      "land_unit": "wh3_dlc29_tmb_cha_arkhan_the_black_mp",
+      "permissions": [
+        {
+          "faction": "wh2_dlc09_tmb_tomb_kings",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_arkhan_the_black_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/tmb_ch_arkhan_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh2_dlc09_cha_arkhan_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh2_dlc09_tmb_cha_arkhan_0",
+      "decision": "exclude_duplicate",
+      "canonical_race": "undead_legions"
+    },
+    {
+      "race": "tomb_kings",
+      "faction": "wh2_dlc09_tmb_tomb_kings",
+      "unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeletal_steed_mp",
+      "land_unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeletal_steed_mp",
+      "permissions": [
+        {
+          "faction": "wh2_dlc09_tmb_tomb_kings",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeletal_steed_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/tmb_ch_arkhan_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh2_dlc09_cha_arkhan_1",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_arkhan_the_black_mp",
+          "mounted_unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeletal_steed_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh2_dlc09_tmb_cha_arkhan_1",
+      "decision": "exclude_duplicate",
+      "canonical_race": "undead_legions"
+    },
+    {
+      "race": "tomb_kings",
+      "faction": "wh2_dlc09_tmb_tomb_kings",
+      "unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeleton_chariot_mp",
+      "land_unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeleton_chariot_mp",
+      "permissions": [
+        {
+          "faction": "wh2_dlc09_tmb_tomb_kings",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeleton_chariot_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/tmb_ch_arkhan_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh2_dlc09_cha_arkhan_2",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_tmb_cha_arkhan_the_black_mp",
+          "mounted_unit": "wh3_dlc29_tmb_cha_arkhan_the_black_skeleton_chariot_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_skeleton_chariot.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh2_dlc09_tmb_cha_arkhan_2",
+      "decision": "exclude_duplicate",
+      "canonical_race": "undead_legions"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_barded_nightmare_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_barded_nightmare_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_barded_nightmare_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_ch_mannfred_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "mounted_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_barded_nightmare_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_barded_nightmare.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh_main_vmp_cha_mannfred_von_carstein_4",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_hellsteed_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_hellsteed_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_hellsteed_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_ch_mannfred_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "mounted_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_hellsteed_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_hellsteed.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh_main_vmp_cha_mannfred_von_carstein_2",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_ch_mannfred_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh_main_vmp_cha_mannfred_von_carstein_0",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_zombie_dragon_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_zombie_dragon_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_zombie_dragon_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "ui/portraits/portholes/no_culture/vmp_ch_mannfred_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_mp",
+          "mounted_unit": "wh3_dlc29_vmp_cha_mannfred_von_carstein_zombie_dragon_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_zombie_dragon.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh_main_vmp_cha_mannfred_von_carstein_3",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata_mp",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_barded_nightmare.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh3_dlc29_vmp_cha_neferata_barded_nightmare",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_neferata_coven_throne_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_coven_throne_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_coven_throne_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata_mp",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_coven_throne_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_coven_throne.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh3_dlc29_vmp_cha_neferata_coven_throne",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_neferata_hellsteed_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_hellsteed_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_hellsteed_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata_mp",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_hellsteed_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_hellsteed.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh3_dlc29_vmp_cha_neferata_hellsteed",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_neferata_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh3_dlc29_vmp_cha_neferata",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "vampire_counts",
+      "faction": "wh_main_vmp_vampire_counts",
+      "unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon_mp",
+      "land_unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon_mp",
+      "permissions": [
+        {
+          "faction": "wh_main_vmp_vampire_counts",
+          "general_unit": "true",
+          "unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon_mp",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI\\Portraits\\Portholes\\no_culture\\vmp_neferata_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh3_dlc29_vmp_cha_neferata_mp",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "mount_edges": [
+        {
+          "base_unit": "wh3_dlc29_vmp_cha_neferata_mp",
+          "mounted_unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon_mp",
+          "icon_name": "ui/campaign ui/mounts/mount_zombie_dragon.png"
+        }
+      ],
+      "recruitable_permitted_subtypes": [],
+      "status": "Duplicate main/land fields and culture-qualified ability links verified; all external script references not compared.",
+      "note": "Excluded duplicate; retain source identity and permissions in evidence. Canonical combat record is selected separately.",
+      "canonical_unit": "wh3_dlc29_vmp_cha_neferata_zombie_dragon",
+      "decision": "exclude_duplicate",
+      "canonical_race": "vampire_counts"
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh2_dlc09_tmb_cha_arkhan_0",
+      "decision": "include",
+      "mount_edges": [],
+      "availability_note": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access."
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh2_dlc09_tmb_cha_arkhan_1",
+      "decision": "include",
+      "mount_edges": [],
+      "availability_note": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access."
+    },
+    {
+      "race": "undead_legions",
+      "faction": "wh3_dlc29_nag_host_of_nagash",
+      "unit": "wh2_dlc09_tmb_cha_arkhan_2",
+      "decision": "include",
+      "mount_edges": [],
+      "availability_note": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access."
+    }
+  ]
+}

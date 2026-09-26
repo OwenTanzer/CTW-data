@@ -377,7 +377,7 @@ for (const roster of ROSTERS) {
       is_faction_exclusive: isFactionExclusive,
       military_group_count: militaryGroups.length,
       permitted_faction_count: permittedFactionCount,
-      availability_notes: militaryGroups.length === 0 ? "Included through reviewed source custom-battle faction permission; no military-group membership. See unit_rosters." : isFactionExclusive ? "Faction-variant roster unit; see unit_rosters for exact military-group and faction permissions." : "",
+      availability_notes: roster.permission_unit_notes?.[unitKey] ?? (militaryGroups.length === 0 ? "Included through reviewed source custom-battle faction permission; no military-group membership. See unit_rosters." : isFactionExclusive ? "Faction-variant roster unit; see unit_rosters for exact military-group and faction permissions." : ""),
       unit_key: unitKey,
       unit_name: unitName(main.land_unit),
       tactical_category: tacticalCategory(unitKey, main, land),

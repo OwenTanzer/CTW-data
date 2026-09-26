@@ -1,3 +1,4 @@
+import { availabilityCoverageErrors } from "./availability-coverage.mjs";
 import { lordUnitCoverageErrors } from "./lord-unit-coverage.mjs";
 import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { matchesTextFingerprint } from "./validation-text.mjs";
@@ -321,6 +322,10 @@ if (PATCH === "9.0") {
     mountVariants.rows);
   coverageErrors.forEach(fail);
   if (!coverageErrors.length) pass("All five new playable lords and reviewed update mount chains have independent coverage checks.");
+  const availabilityErrors = availabilityCoverageErrors(
+    new Map(normalized.map(file => [file.name.split("__")[0], new Map(file.rows.map(r => [r.unit_key, r]))])), mountVariants.rows);
+  availabilityErrors.forEach(fail);
+  if (!availabilityErrors.length) pass("Reviewed availability inclusions, qualifications and duplicate exclusions reconcile.");
   const sourceAbilities = groupBy(await tsv("land_units_to_unit_abilites_junctions_tables"), "land_unit");
   const expected = new Set([...byUnit].flatMap(([key, row]) =>
     (sourceAbilities.get(row.source_land_unit_key) ?? []).map(a => JSON.stringify([key, a.ability, a.culture]))));
