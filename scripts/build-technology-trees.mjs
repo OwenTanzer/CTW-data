@@ -2,7 +2,6 @@ import { resolveSets } from "./technology-rules.mjs";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import {
-  CONTEXT,
   CONFIG,
   cmp,
   hash,
@@ -26,6 +25,7 @@ const output = path.resolve(
 );
 const s = await loadSource(source),
   t = s.tables;
+const CONTEXT = s.context;
 await mkdir(output, { recursive: true });
 const tech = index(t.technologies, "key"),
   effect = index(t.effects, "effect");
@@ -402,7 +402,7 @@ for (const p of s.playable) {
   allRows.push(...rows);
 }
 await writeCsv(
-  path.join(output, "faction_index__wh3__8.1.1.csv"),
+  path.join(output, `faction_index__wh3__${CONTEXT.patch}.csv`),
   Object.keys(indexRows[0]),
   indexRows,
 );
@@ -535,7 +535,7 @@ const manifest = {
   source_manifest_sha256: hash(
     await readFile(path.join(source, "source_manifest.json")),
   ),
-  faction_files: 104,
+  faction_files: s.playable.length,
   races: 24,
   node_set_variants: sum("node_set_variants"),
   unique_node_sets: new Set(

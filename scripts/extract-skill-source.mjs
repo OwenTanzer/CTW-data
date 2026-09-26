@@ -1,3 +1,4 @@
+import { beginSource, verifyDecoder, finishSource } from "./snapshot-source.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -6,6 +7,9 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ENDPOINT = "http://127.0.0.1:45127/mcp";
 const OUTPUT = path.resolve(ROOT, process.argv[2] ?? "work/source_skill_trees__wh3__8.1.1");
+
+if (process.argv[3] && process.argv[3] !== "8.1.1" && !process.argv[2]) throw Error("Explicit candidate destination required");
+const sourceContext = await beginSource(OUTPUT, ROOT, process.argv[3] ?? "8.1.1");
 
 const TABLES = [
   "factions_tables",
@@ -110,6 +114,7 @@ async function walkFiles(directory) {
 
 await mkdir(OUTPUT, { recursive: true });
 await call("set_game_selected", { game_name: "warhammer_3", rebuild_dependencies: false });
+const decoderEvidence = await verifyDecoder(call, sourceContext);
 const loaded = await call("load_all_ca_pack_files");
 const packKey = loaded?.StringContainerInfo?.[0];
 if (!packKey) throw new Error("RPFM did not return a key for the merged CA packs.");
@@ -144,6 +149,10 @@ for (const loc of LOC_FILES) {
 }
 if (missing.length) throw new Error(`RPFM did not export required files:\n${missing.join("\n")}`);
 
+// RPFM can return raw binary without failing when a table is undecodable.
+const undecoded = (await walkFiles(path.join(OUTPUT, "db"))).filter(file => !file.endsWith(".tsv"));
+if (undecoded.length) throw Error(`Undecoded source tables: ${undecoded.join(", ")}`);
+const installationEvidence = await finishSource(sourceContext);
 const files = (await walkFiles(OUTPUT)).filter((file) => !file.endsWith("source_manifest.json"));
 const manifestFiles = [];
 for (const file of files.sort()) {
@@ -157,9 +166,10 @@ for (const file of files.sort()) {
 }
 const manifest = {
   game: "warhammer_3",
-  patch: "8.1.1",
-  steam_build_id: "24237342",
-  decoder: "RPFM 5.0.6",
+  ...sourceContext.profile,
+  installation_evidence: installationEvidence,
+  decoder_schema_sha256: decoderEvidence.schema_sha256,
+  decoder: "RPFM MCP schema-decoded export; schema identity recorded separately",
   extracted_at_utc: new Date().toISOString(),
   table_folders_requested: TABLES,
   localisation_files_requested: LOC_FILES,

@@ -1,14 +1,19 @@
+import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { matchesTextFingerprint } from "./validation-text.mjs";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { UNIT_ROSTERS } from "./dataset-scope.mjs";
+import { buildSnapshot } from "./snapshot-build.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = path.resolve(ROOT, process.argv[2] ?? "work/source_exports__wh3__8.1.1");
+const SNAPSHOT = await buildSnapshot(SOURCE);
+const { UNIT_ROSTERS } = SNAPSHOT.scope;
+const PATCH = SNAPSHOT.context.patch;
 const DATASET = path.resolve(ROOT, process.argv[3] ?? "work/generated_unit_stats__wh3__8.1.1");
 
 function parseDelimited(text, delimiter) {
+  if (delimiter === "\t") return parseRpfmTsv(text);
   const rows = [];
   let row = [];
   let field = "";
@@ -126,31 +131,31 @@ for (const row of allRows) {
 }
 if (!errors.some((message) => message.includes("not numeric") || message.includes("lowercase boolean"))) pass("All populated numeric and boolean fields have valid CSV representations.");
 
-const components = await csv(path.join("lookups", "unit_components__wh3__8.1.1__ultra.csv"));
-const weaponLinks = await csv(path.join("lookups", "unit_weapon_links__wh3__8.1.1__ultra.csv"));
-const projectiles = await csv(path.join("lookups", "projectiles__wh3__8.1.1.csv"));
-const explosions = await csv(path.join("lookups", "explosions__wh3__8.1.1.csv"));
-const abilities = await csv(path.join("lookups", "unit_abilities__wh3__8.1.1__ultra.csv"));
-const attributes = await csv(path.join("lookups", "unit_attributes__wh3__8.1.1__ultra.csv"));
-const contacts = await csv(path.join("lookups", "unit_contact_effects__wh3__8.1.1__ultra.csv"));
-const rosters = await csv(path.join("lookups", "unit_rosters__wh3__8.1.1__ultra.csv"));
-const mountVariants = await csv(path.join("lookups", "unit_mount_variants__wh3__8.1.1__ultra.csv"));
-const quality = await csv(path.join("lookups", "data_quality_flags__wh3__8.1.1__ultra.csv"));
-const schemaInventory = await csv("schema_inventory__v3.csv");
+const components = await csv(path.join("lookups", `unit_components__wh3__${PATCH}__ultra.csv`));
+const weaponLinks = await csv(path.join("lookups", `unit_weapon_links__wh3__${PATCH}__ultra.csv`));
+const projectiles = await csv(path.join("lookups", `projectiles__wh3__${PATCH}.csv`));
+const explosions = await csv(path.join("lookups", `explosions__wh3__${PATCH}.csv`));
+const abilities = await csv(path.join("lookups", `unit_abilities__wh3__${PATCH}__ultra.csv`));
+const attributes = await csv(path.join("lookups", `unit_attributes__wh3__${PATCH}__ultra.csv`));
+const contacts = await csv(path.join("lookups", `unit_contact_effects__wh3__${PATCH}__ultra.csv`));
+const rosters = await csv(path.join("lookups", `unit_rosters__wh3__${PATCH}__ultra.csv`));
+const mountVariants = await csv(path.join("lookups", `unit_mount_variants__wh3__${PATCH}__ultra.csv`));
+const quality = await csv(path.join("lookups", `data_quality_flags__wh3__${PATCH}__ultra.csv`));
+const schemaInventory = await csv(`schema_inventory__v${SNAPSHOT.unitSchema}.csv`);
 if (!errors.some((message) => message.includes("valid UTF-8") || message.includes("line ending") || message.includes("wrong field count"))) pass("Every production CSV is valid UTF-8 with LF or CRLF endings and consistent row widths.");
 
 const actualSchemas = new Map([
-  ["normalized/<faction>__wh3__8.1.1__ultra.csv", canonicalColumns],
-  ["lookups/unit_components__wh3__8.1.1__ultra.csv", components.columns],
-  ["lookups/unit_weapon_links__wh3__8.1.1__ultra.csv", weaponLinks.columns],
-  ["lookups/projectiles__wh3__8.1.1.csv", projectiles.columns],
-  ["lookups/explosions__wh3__8.1.1.csv", explosions.columns],
-  ["lookups/unit_abilities__wh3__8.1.1__ultra.csv", abilities.columns],
-  ["lookups/unit_attributes__wh3__8.1.1__ultra.csv", attributes.columns],
-  ["lookups/unit_contact_effects__wh3__8.1.1__ultra.csv", contacts.columns],
-  ["lookups/unit_rosters__wh3__8.1.1__ultra.csv", rosters.columns],
-  ["lookups/unit_mount_variants__wh3__8.1.1__ultra.csv", mountVariants.columns],
-  ["lookups/data_quality_flags__wh3__8.1.1__ultra.csv", quality.columns],
+  [`normalized/<faction>__wh3__${PATCH}__ultra.csv`, canonicalColumns],
+  [`lookups/unit_components__wh3__${PATCH}__ultra.csv`, components.columns],
+  [`lookups/unit_weapon_links__wh3__${PATCH}__ultra.csv`, weaponLinks.columns],
+  [`lookups/projectiles__wh3__${PATCH}.csv`, projectiles.columns],
+  [`lookups/explosions__wh3__${PATCH}.csv`, explosions.columns],
+  [`lookups/unit_abilities__wh3__${PATCH}__ultra.csv`, abilities.columns],
+  [`lookups/unit_attributes__wh3__${PATCH}__ultra.csv`, attributes.columns],
+  [`lookups/unit_contact_effects__wh3__${PATCH}__ultra.csv`, contacts.columns],
+  [`lookups/unit_rosters__wh3__${PATCH}__ultra.csv`, rosters.columns],
+  [`lookups/unit_mount_variants__wh3__${PATCH}__ultra.csv`, mountVariants.columns],
+  [`lookups/data_quality_flags__wh3__${PATCH}__ultra.csv`, quality.columns],
 ]);
 for (const [dataset, columns] of actualSchemas) {
   const documented = schemaInventory.rows
@@ -303,6 +308,16 @@ const golden = [
   ["wh3_dlc27_hef_veh_skycutter_bolt_thrower", 4, true, true],
 ];
 const byUnit = new Map(allRows.map((row) => [row.unit_key, row]));
+if (PATCH === "9.0") {
+  const sourceAbilities = groupBy(await tsv("land_units_to_unit_abilites_junctions_tables"), "land_unit");
+  const expected = new Set([...byUnit].flatMap(([key, row]) =>
+    (sourceAbilities.get(row.source_land_unit_key) ?? []).map(a => JSON.stringify([key, a.ability, a.culture]))));
+  const actual = abilities.rows.map(a => JSON.stringify([a.unit_key, a.ability_key, a.culture_key]));
+  if (!abilities.columns.includes("culture_key") || new Set(actual).size !== actual.length ||
+      JSON.stringify([...expected].sort()) !== JSON.stringify(actual.sort()))
+    fail("Unit ability relations must exactly preserve source culture conditions, including wildcard values.");
+  else pass("Unit ability relations exactly preserve source culture conditions and wildcard values.");
+}
 for (const [key, count, ranged, large] of golden) {
   const row = byUnit.get(key);
   if (!row) fail(`Golden unit missing: ${key}.`);

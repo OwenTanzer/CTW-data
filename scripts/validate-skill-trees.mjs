@@ -1,9 +1,10 @@
+import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { matchesTextFingerprint } from "./validation-text.mjs";
 import { spawnSync } from "node:child_process";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { CHARACTER_RACE_OVERRIDES, CHARACTER_SUBTYPE_EXCLUSIONS, SKILL_RACES as RACES } from "./dataset-scope.mjs";
+import { buildSnapshot } from "./snapshot-build.mjs";
 
 if (!process.execArgv.some((argument) => argument.startsWith("--max-old-space-size="))) {
   const child = spawnSync(process.execPath, ["--max-old-space-size=8192", fileURLToPath(import.meta.url), ...process.argv.slice(2)], { stdio: "inherit" });
@@ -13,6 +14,9 @@ if (!process.execArgv.some((argument) => argument.startsWith("--max-old-space-si
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = path.resolve(ROOT, process.argv[2] ?? "work/source_skill_trees__wh3__8.1.1");
+const SNAPSHOT = await buildSnapshot(SOURCE);
+const { CHARACTER_RACE_OVERRIDES, CHARACTER_SUBTYPE_EXCLUSIONS, SKILL_RACES: RACES } = SNAPSHOT.scope;
+const PATCH = SNAPSHOT.context.patch;
 const DATASET = path.resolve(ROOT, process.argv[3] ?? "work/generated_skill_trees__wh3__8.1.1");
 const DB = path.join(SOURCE, "db");
 
@@ -24,6 +28,7 @@ const warn = (message) => warnings.push(message);
 const pass = (message) => passes.push(message);
 
 function parseDelimited(text, delimiter) {
+  if (delimiter === "\t") return parseRpfmTsv(text);
   const rows = [];
   let row = [];
   let field = "";
@@ -277,7 +282,7 @@ if (!errors.some((message) => RACES.some((race) => message.startsWith(`${race.sl
   pass(`Race totals reconcile: ${RACES.map((race) => `${race.expected_characters} ${race.name}`).join(", ")}.`);
 }
 
-const indexFile = await csv(path.join(DATASET, "character_index__wh3__8.1.1.csv"));
+const indexFile = await csv(path.join(DATASET, `character_index__wh3__${PATCH}.csv`));
 if (indexFile.rows.length !== expectedCharacterCount) fail(`Character index contains ${indexFile.rows.length} rows instead of ${expectedCharacterCount}.`);
 const indexBySubtype = indexBy(indexFile.rows, "agent_subtype_key");
 for (const [subtype, parsed] of fileBySubtype) {
@@ -296,7 +301,13 @@ if (!errors.some((message) => /Character index|indexed|file hash|byte count/.tes
 const structureGroups = groupBy(indexFile.rows, "tree_structure_sha256");
 const duplicateStructures = [...structureGroups.values()].filter((rows) => rows.length > 1);
 if (duplicateStructures.length) {
-  for (const group of duplicateStructures) fail(`Duplicate complete tree structure: ${group.map((row) => row.agent_subtype_key).join(", ")}.`);
+  for (const group of duplicateStructures) {
+    const subtypes = group.map(row => row.agent_subtype_key).sort();
+    const reviewed = (SNAPSHOT.scope.SHARED_TREE_GROUPS ?? []).find(rule =>
+      JSON.stringify([...rule.subtypes].sort()) === JSON.stringify(subtypes));
+    if (reviewed) warn(`Shared source tree structure: ${subtypes.join(", ")}. ${reviewed.reason}`);
+    else fail(`Duplicate complete tree structure: ${subtypes.join(", ")}.`);
+  }
 } else pass(`All ${expectedCharacterCount} complete tree-structure hashes are unique; no file is a renamed duplicate.`);
 
 const schema = await csv(path.join(DATASET, "schema_inventory__v1.csv"));

@@ -10,7 +10,6 @@ import { readFile, writeFile, mkdir, mkdtemp } from "node:fs/promises";
 import { spawnSync } from "node:child_process";
 import path from "node:path";
 import {
-  CONTEXT,
   CONFIG,
   cmp,
   hash,
@@ -34,6 +33,7 @@ const s = await loadSource(source),
   errors = [],
   warnings = [],
   passes = [];
+const CONTEXT = s.context;
 const check = (v, msg) => {
   if (!v) errors.push(msg);
 };
@@ -60,16 +60,16 @@ eq(
   "Source manifest must inventory every exported file",
 );
 check(
-  s.manifest.executable_version === "8.1.1.0",
+  s.manifest.executable_version === (CONTEXT.patch === "9.0" ? "9.0.0.0" : "8.1.1.0"),
   "Verified executable version is required",
 );
-const idx = await readCsv(path.join(output, "faction_index__wh3__8.1.1.csv"));
+const idx = await readCsv(path.join(output, `faction_index__wh3__${CONTEXT.patch}.csv`));
 const files = (await walk(path.join(output, "factions"))).filter((p) =>
   p.endsWith(".csv"),
 );
 check(
-  idx.rows.length === 104 && files.length === 104,
-  "Exactly 104 indexed faction CSVs required",
+  idx.rows.length === s.snapshot.factionCount && files.length === s.snapshot.factionCount,
+  `Exactly ${s.snapshot.factionCount} indexed faction CSVs required`,
 );
 eq(
   idx.rows.map((r) => r.faction_key).sort(),

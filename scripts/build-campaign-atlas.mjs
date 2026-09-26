@@ -1,3 +1,4 @@
+import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { createHash } from "node:crypto";
 import { readFile, mkdir, readdir, rm, stat } from "node:fs/promises";
 import path from "node:path";
@@ -21,6 +22,7 @@ const PATCH = "8.1.1";
 const BUILD = "24237342";
 
 function parseDelimited(text, delimiter = "\t") {
+  if (delimiter === "\t") return parseRpfmTsv(text);
   const rows = [];
   let row = [], field = "", quoted = false;
   for (let i = 0; i < text.length; i++) {
