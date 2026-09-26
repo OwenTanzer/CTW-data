@@ -33,7 +33,7 @@
   ],
   "datasets": {
     "units": {
-      "description": "Unit statistics and relational combat lookups for 25 race rosters (2,320 roster rows). Culture-qualified ability links are conditional.",
+      "description": "Unit statistics and relational combat lookups for 25 race rosters (2,366 roster rows). Culture-qualified ability links are conditional.",
       "readme": "data/unit_stats/README.md",
       "manifest": "data/unit_stats/dataset_manifest.json",
       "schema": "data/unit_stats/schema_inventory__v4.csv",

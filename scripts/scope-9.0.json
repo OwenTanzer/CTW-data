@@ -165,7 +165,15 @@
       "military_groups": [
         "wh_main_group_norsca"
       ],
-      "expected_units": 112
+      "expected_units": 114,
+      "permission_units": [
+        "wh3_dlc29_chs_cha_gutrot_spume",
+        "wh3_dlc29_chs_cha_gutrot_spume_warshrine"
+      ],
+      "permission_unit_notes": {
+        "wh3_dlc29_chs_cha_gutrot_spume": "Recruitable character subtype has source permission for wh_dlc08_nor_norsca; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_chs_cha_gutrot_spume_warshrine": "Recruitable character subtype has source permission for wh_dlc08_nor_norsca; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction."
+      }
     },
     {
       "slug": "nurgle",
@@ -227,15 +235,25 @@
         "wh2_dlc09_tomb_kings",
         "wh2_dlc09_tomb_kings_arkhan"
       ],
-      "expected_units": 63,
+      "expected_units": 67,
       "permission_units": [
         "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed",
         "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed",
         "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed",
         "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_high_priest_undeath",
+        "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_priest_undeath",
+        "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed",
         "wh3_dlc29_tmb_cha_tomb_herald_skeletal_steed",
         "wh3_dlc29_tmb_cha_tomb_herald_skeleton_chariot"
-      ]
+      ],
+      "permission_unit_notes": {
+        "wh3_dlc29_tmb_cha_liche_high_priest_undeath": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_priest_undeath": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed": "Recruitable character subtype has source permission for wh2_dlc09_tmb_tomb_kings; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction."
+      }
     },
     {
       "slug": "tzeentch",
@@ -258,7 +276,23 @@
         "wh2_dlc11_group_vampire_coast",
         "wh2_dlc11_group_vampire_coast_sartosa"
       ],
-      "expected_units": 41
+      "expected_units": 47,
+      "permission_units": [
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath",
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean",
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath",
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean",
+        "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath",
+        "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean"
+      ],
+      "permission_unit_notes": {
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean": "Recruitable character subtype has source permission for wh2_dlc11_cst_vampire_coast; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction."
+      }
     },
     {
       "slug": "vampire_counts",
@@ -269,7 +303,33 @@
       "military_groups": [
         "wh_main_group_vampire_counts"
       ],
-      "expected_units": 92
+      "expected_units": 103,
+      "permission_units": [
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed",
+        "wh3_dlc29_vmp_cha_necromancer_undeath",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone"
+      ],
+      "permission_unit_notes": {
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_necromancer_undeath": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone": "Recruitable character subtype has source permission for wh_main_vmp_vampire_counts; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction."
+      }
     },
     {
       "slug": "warriors_of_chaos",
@@ -309,26 +369,74 @@
       "military_groups": [
         "wh3_dlc29_nag_group_undead_legions"
       ],
-      "expected_units": 167,
+      "expected_units": 190,
       "permission_units": [
+        "wh2_dlc09_tmb_cha_arkhan_0",
+        "wh2_dlc09_tmb_cha_arkhan_1",
+        "wh2_dlc09_tmb_cha_arkhan_2",
         "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean",
         "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean",
         "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean",
+        "wh3_dlc29_tmb_cha_arkhan_dread_abyssal",
+        "wh3_dlc29_tmb_cha_liche_high_priest_death",
+        "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_high_priest_light",
+        "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara",
+        "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_high_priest_shadow",
+        "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed",
         "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed",
         "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed",
         "wh3_dlc29_tmb_cha_tomb_herald_skeletal_steed",
         "wh3_dlc29_tmb_cha_tomb_herald_skeleton_chariot",
+        "wh3_dlc29_vmp_cha_mannfred_von_carstein_dread_abyssal",
         "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare",
         "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart",
         "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire",
         "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone",
         "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed",
         "wh3_dlc29_vmp_cha_nagash",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord_barded_nightmare",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord_hellsteed",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord_zombie_dragon",
         "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare",
         "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart",
         "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire",
-        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone"
-      ]
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone",
+        "wh3_dlc29_vmp_cha_neferata",
+        "wh3_dlc29_vmp_cha_neferata_barded_nightmare",
+        "wh3_dlc29_vmp_cha_neferata_coven_throne",
+        "wh3_dlc29_vmp_cha_neferata_dread_abyssal",
+        "wh3_dlc29_vmp_cha_neferata_hellsteed",
+        "wh3_dlc29_vmp_cha_neferata_zombie_dragon"
+      ],
+      "permission_unit_notes": {
+        "wh3_dlc29_tmb_cha_arkhan_dread_abyssal": "Host of Nagash Mortarch configuration; exact Dread Abyssal campaign unlock is unverified.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_death": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_light": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_shadow": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed": "Recruitable character subtype has source permission for wh3_dlc29_nag_host_of_nagash; campaign timing and unlock restrictions are not modeled. Race inclusion does not imply access for every faction.",
+        "wh3_dlc29_vmp_cha_mannfred_von_carstein_dread_abyssal": "Host of Nagash Mortarch configuration; exact Dread Abyssal campaign unlock is unverified.",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord_barded_nightmare": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord_hellsteed": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+        "wh3_dlc29_vmp_cha_nagash_vampire_lord_zombie_dragon": "Host of Nagash configuration with explicit custom-battle permission; campaign acquisition/replacement mapping is unverified.",
+        "wh3_dlc29_vmp_cha_neferata": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+        "wh3_dlc29_vmp_cha_neferata_barded_nightmare": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+        "wh3_dlc29_vmp_cha_neferata_coven_throne": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+        "wh3_dlc29_vmp_cha_neferata_dread_abyssal": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+        "wh3_dlc29_vmp_cha_neferata_hellsteed": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+        "wh3_dlc29_vmp_cha_neferata_zombie_dragon": "Host of Nagash: Neferata is obtainable through Mortarch subjugation; exact mount unlock conditions are not established here.",
+        "wh2_dlc09_tmb_cha_arkhan_0": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access.",
+        "wh2_dlc09_tmb_cha_arkhan_1": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access.",
+        "wh2_dlc09_tmb_cha_arkhan_2": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access."
+      }
     }
   ],
   "SKILL_RACES": [
