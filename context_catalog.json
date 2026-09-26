@@ -71,10 +71,16 @@
       "validation": "data/campaign_map/validation_report.json",
       "primary_records": "data/campaign_map/campaign_atlas__wh3__8.1.1.gpkg",
       "format": "GeoPackage 1.3 / SQLite",
-      "preferred_access": "Query narrow tables or views with SQLite; begin with the reference views named in the dataset README.",
-      "manifest": "data/campaign_map/starting_positions/dataset_manifest.json",
-      "schema": "data/campaign_map/starting_positions/schema_inventory.csv",
-      "starting_positions": "data/campaign_map/starting_positions/README.md"
+      "preferred_access": "For starting-army questions, query faction_army_start_reference by faction_key and apply campaign_start_partner_overrides for the selected human partner. faction_start_reference describes capitals, not armies. For other atlas questions use the narrow views in the main README; do not scan raw startpos evidence.",
+      "starting_positions": {
+        "readme": "data/campaign_map/starting_positions/README.md",
+        "manifest": "data/campaign_map/starting_positions/dataset_manifest.json",
+        "schema": "data/campaign_map/starting_positions/schema_inventory.csv",
+        "validation": "data/campaign_map/starting_positions/starting_positions_validation.json",
+        "primary_view": "faction_army_start_reference",
+        "partner_overrides": "campaign_start_partner_overrides",
+        "scope": "Starting positions only; not the full atlas schema. Raw evidence is for provenance checks, not default lookup."
+      }
     },
     "faction_guides": {
       "description": "Qualitative, source-backed campaign mechanics not represented safely in the normalized catalogs.",

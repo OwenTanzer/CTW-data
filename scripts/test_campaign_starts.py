@@ -1,5 +1,6 @@
 """Focused format, source-join, human-branch, and spatial validation."""
 import csv
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -67,6 +68,31 @@ class AtlasTests(unittest.TestCase):
         self.assertEqual(self.start('wh_dlc08_nor_norsca')['logical_x'],153)
         self.assertEqual(self.start('wh3_dlc27_hef_aislinn')['logical_x'],898)
         self.assertEqual(self.start('wh3_main_dae_daemon_prince')['logical_y'],942)
+
+    def test_committed_csv_matches_every_army_and_override_field(self):
+        for filename,table in [('army_starts.csv','campaign_army_starts'),
+                               ('partner_overrides.csv','campaign_start_partner_overrides')]:
+            with (ROOT/'data/campaign_map/starting_positions'/filename).open(newline='') as f:
+                expected=list(csv.DictReader(f))
+            actual=[{k:'' if v is None else str(v) for k,v in dict(r).items()}
+                    for r in self.db.execute('SELECT * FROM '+table)]
+            self.assertEqual(sorted(expected,key=repr),sorted(actual,key=repr))
+
+    def test_retained_lua_matches_parsed_rules(self):
+        source=ROOT/'data/campaign_map/starting_positions/source_exports'
+        rules=json.loads((source/'custom_start_rules.json').read_text())
+        self.assertEqual(lua_table((source/'custom_starts_ie.lua').read_text()),rules)
+        stored=[json.loads(r[0]) for r in self.db.execute(
+            'SELECT rule_json FROM campaign_start_rules ORDER BY rule_index')]
+        self.assertEqual(stored,rules)
+
+    def test_evidence_and_published_csv_hashes(self):
+        folder=ROOT/'data/campaign_map/starting_positions'
+        for manifest,base in [(folder/'dataset_manifest.json',folder),
+                              (folder/'source_exports/source_manifest.json',folder/'source_exports')]:
+            for name,expected in json.loads(manifest.read_text())['files'].items():
+                with self.subTest(file=name):
+                    self.assertEqual(hashlib.sha256((base/name).read_bytes()).hexdigest(),expected)
 
     def test_source_and_region_links(self):
         self.assertEqual(self.db.execute('pragma integrity_check').fetchone()[0],'ok')

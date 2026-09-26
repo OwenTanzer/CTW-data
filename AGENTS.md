@@ -47,3 +47,15 @@ Build candidates belong under ignored `work/` paths and may replace production
 files only after their validator passes. When changing a schema or snapshot,
 update `context_catalog.json`, the relevant manifest and README, and validation
 expectations together.
+
+## Campaign starting positions
+
+For army starts, use `faction_army_start_reference` filtered by faction key.
+`faction_start_reference` describes capitals and must not substitute for army
+positions. Read the starting_positions README and its scoped manifest/schema.
+For two human players, apply `campaign_start_partner_overrides` for that exact
+faction/partner pair. A maritime point has known coordinates but no resolved
+land region; nearest-land anchors are descriptive, not ownership or routes.
+Use raw character/script exports only for a specific provenance question that
+the normalized views cannot answer. Startup positions are statically evaluated
+source evidence, not observed runtime results or movement-distance estimates.

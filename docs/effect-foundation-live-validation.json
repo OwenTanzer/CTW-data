@@ -1,0 +1,274 @@
+{
+  "snapshot": {
+    "game": "warhammer_3",
+    "patch": "8.1.1",
+    "build": "24237342",
+    "executable": "8.1.1.0"
+  },
+  "manifest_sha256": "fd8eabe1b1ea0c18076b5c1d5c00cf3a6ee5aa40d0c478b7b79a5b9c6e89f701",
+  "files": 222,
+  "bytes": 14488501,
+  "roots": 80,
+  "tables": 220,
+  "edge_status_counts": {
+    "selected_dependency": 327,
+    "no_packed_table_in_inventory": 118,
+    "external_dataset_owner": 40
+  },
+  "table_inspection": [
+    {
+      "table": "_kv_experience_bonuses_tables",
+      "rows": 7,
+      "columns": [
+        "key",
+        "value"
+      ],
+      "samples": [
+        {
+          "key": "captured_key_building",
+          "value": "80.0000"
+        },
+        {
+          "key": "captured_victory_location",
+          "value": "160.0000"
+        }
+      ]
+    },
+    {
+      "table": "campaign_effect_scopes_tables",
+      "rows": 435,
+      "columns": [
+        "key",
+        "location",
+        "ownership",
+        "source",
+        "target",
+        "territory"
+      ],
+      "samples": [
+        {
+          "key": "agent_to_parent_army_general_own",
+          "location": "forcewide",
+          "ownership": "yours",
+          "source": "character",
+          "target": "character_when_commanding",
+          "territory": "any"
+        },
+        {
+          "key": "agent_to_parent_army_general_own_armytext",
+          "location": "forcewide",
+          "ownership": "yours",
+          "source": "character",
+          "target": "character_when_commanding",
+          "territory": "any"
+        }
+      ]
+    },
+    {
+      "table": "effect_bonus_value_basic_junction_tables",
+      "rows": 647,
+      "columns": [
+        "effect",
+        "bonus_value_id"
+      ],
+      "samples": [
+        {
+          "effect": "wh2_dlc09_effect_economy_gdp_mod_culture_tmb",
+          "bonus_value_id": "gdp_mod_entertainment"
+        },
+        {
+          "effect": "wh2_dlc09_effect_force_own_campaign_movement_range_province",
+          "bonus_value_id": "mod_land_movement_campaign"
+        }
+      ]
+    },
+    {
+      "table": "effect_bonus_value_unit_record_junctions_tables",
+      "rows": 381,
+      "columns": [
+        "bonus_value_id",
+        "effect",
+        "unit_record_key"
+      ],
+      "samples": [
+        {
+          "bonus_value_id": "unit_cap",
+          "effect": "wh2_dlc15_effect_unit_cap_mistwalkers_melee_knights",
+          "unit_record_key": "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0"
+        },
+        {
+          "bonus_value_id": "unit_cap",
+          "effect": "wh2_dlc15_effect_unit_cap_mistwalkers_melee",
+          "unit_record_key": "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0"
+        }
+      ]
+    },
+    {
+      "table": "unit_experience_bonuses_tables",
+      "rows": 5,
+      "columns": [
+        "stat",
+        "value",
+        "growth_rate",
+        "growth_scalar"
+      ],
+      "samples": [
+        {
+          "stat": "stat_accuracy",
+          "value": "0",
+          "growth_rate": "0.0000",
+          "growth_scalar": "3.0000"
+        },
+        {
+          "stat": "stat_melee_attack",
+          "value": "0",
+          "growth_rate": "0.6000",
+          "growth_scalar": "0.1200"
+        }
+      ]
+    },
+    {
+      "table": "unit_experience_threshold_modifiers_tables",
+      "rows": 18,
+      "columns": [
+        "key",
+        "modifier"
+      ],
+      "samples": [
+        {
+          "key": "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+          "modifier": "0.7500"
+        },
+        {
+          "key": "wh2_dlc12_lzd_cav_ripperdactyl_riders_0_blessed",
+          "modifier": "0.7500"
+        }
+      ]
+    },
+    {
+      "table": "unit_experience_thresholds_tables",
+      "rows": 18,
+      "columns": [
+        "key",
+        "value"
+      ],
+      "samples": [
+        {
+          "key": "land_level_01",
+          "value": "700"
+        },
+        {
+          "key": "land_level_02",
+          "value": "1500"
+        }
+      ]
+    },
+    {
+      "table": "unit_set_to_unit_junctions_tables",
+      "rows": 21476,
+      "columns": [
+        "unit_caste",
+        "unit_category",
+        "unit_class",
+        "unit_record",
+        "unit_set",
+        "exclude"
+      ],
+      "samples": [
+        {
+          "unit_caste": "",
+          "unit_category": "",
+          "unit_class": "art_fix",
+          "unit_record": "",
+          "unit_set": "all_land_artillery_exc_grudge_units",
+          "exclude": "false"
+        },
+        {
+          "unit_caste": "",
+          "unit_category": "",
+          "unit_class": "art_fld",
+          "unit_record": "",
+          "unit_set": "all_land_artillery_exc_grudge_units",
+          "exclude": "false"
+        }
+      ]
+    },
+    {
+      "table": "unit_sets_tables",
+      "rows": 3332,
+      "columns": [
+        "key",
+        "use_unit_exp_level_range",
+        "min_unit_exp_level_inclusive",
+        "max_unit_exp_level_inclusive",
+        "special_category"
+      ],
+      "samples": [
+        {
+          "key": "all_land_artillery",
+          "use_unit_exp_level_range": "false",
+          "min_unit_exp_level_inclusive": "-1",
+          "max_unit_exp_level_inclusive": "-1",
+          "special_category": ""
+        },
+        {
+          "key": "all_land_artillery_exc_grudge_units",
+          "use_unit_exp_level_range": "false",
+          "min_unit_exp_level_inclusive": "-1",
+          "max_unit_exp_level_inclusive": "-1",
+          "special_category": ""
+        }
+      ]
+    },
+    {
+      "table": "unit_stats_land_experience_bonuses_tables",
+      "rows": 10,
+      "columns": [
+        "xp_level",
+        "fatigue",
+        "mp_fixed_cost",
+        "mp_experience_cost_multiplier",
+        "additional_melee_cp",
+        "additional_missile_cp"
+      ],
+      "samples": [
+        {
+          "xp_level": "0",
+          "fatigue": "0",
+          "mp_fixed_cost": "0",
+          "mp_experience_cost_multiplier": "1.0000",
+          "additional_melee_cp": "0.0000",
+          "additional_missile_cp": "0.0000"
+        },
+        {
+          "xp_level": "1",
+          "fatigue": "0",
+          "mp_fixed_cost": "11",
+          "mp_experience_cost_multiplier": "1.0300",
+          "additional_melee_cp": "26.0000",
+          "additional_missile_cp": "26.0000"
+        }
+      ]
+    }
+  ],
+  "exercise_date_utc": "2026-09-19",
+  "extracted_pr_head": "fc7a7bd83d1c9bcb0af07bbc87bae6bf2b75cb16",
+  "candidate_relative_path": "work/source_effect_exercise_20260919",
+  "validation": {
+    "status": "source_integrity_passed",
+    "tables": 220,
+    "rows": 109408,
+    "production_data_promoted": false,
+    "semantic_validation": "not_implemented_in_extraction_increment"
+  },
+  "integration_fixes": [
+    "Compare unique exported column names rather than raw schema field order.",
+    "Validate schema-annotated RGB-to-hex projections explicitly; preserve their source-field mappings in validator output."
+  ],
+  "limitations": [
+    "The 220 tables are the discovered schema closure for 80 selected roots, not proof of complete campaign-modifier coverage.",
+    "Absent packed references and externally owned relations remain unresolved boundaries.",
+    "No foreign-key semantics, arithmetic order, rank formulas, acquisition legality or campaign ceilings are certified.",
+    "Exported colour fields are a decoder projection, not a lossless reconstruction of original binary values."
+  ]
+}

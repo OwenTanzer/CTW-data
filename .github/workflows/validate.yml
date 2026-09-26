@@ -14,3 +14,5 @@ jobs:
       - run: npm run test:validation-text
       - run: npm run validate
       - run: npm run test:technologies
+      - run: npm run test:effect-foundation
+      - run: npm run test:campaign-starts

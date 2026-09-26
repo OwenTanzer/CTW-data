@@ -293,13 +293,13 @@ Equation~\ref{eq:dps-decomposition} by the number of potential targets.
 
 \section{Working missile damage abstraction}
 
-Let $F$ be the number of entities currently able to fire, $n_p$ the number of
-projectiles per shot, $n_v$ the number of shots per volley, and $T_r$ the
-effective reload time.  A first-order direct-fire approximation is
+Let $N_f$ be the number of entities currently able to fire, $n_c$ the number
+of projectiles launched by one such entity during a complete firing cycle,
+and $T_c$ the duration of that cycle.  A first-order direct-fire approximation is
 \begin{equation}
   \mathrm{DPS}_{\mathrm{missile}}
   \approx
-  \underbrace{F\frac{n_p n_v}{T_r}}_{\text{projectile launch rate}}
+  \underbrace{N_f\frac{n_c}{T_c}}_{\text{projectile launch rate}}
   \times
   \underbrace{p_{\mathrm{col}}}_{\text{physical collision}}
   \times
@@ -310,13 +310,220 @@ effective reload time.  A first-order direct-fire approximation is
   \label{eq:missile-dps}
 \end{equation}
 This is a scenario-level abstraction rather than a unit-card identity.
-Formation and line of sight can make $F$ smaller than the living entity count;
-animation, burst timing, and reload modifiers can change the effective firing
-interval; and $p_{\mathrm{col}}$ varies with the target and engagement.  The
+Formation and line of sight can make $N_f$ smaller than the living entity
+count.  The complete cycle includes animation, burst timing, and effective
+reload; the nominal reload field alone does not establish $T_c$.  The count
+$n_c$ must use the same cycle boundary: projectile, shot, volley, and burst
+counts must not be multiplied together without resolving their nesting.
+The shield and damage factors must be conditioned on the same collision
+population, including its incoming directions and eligible targets.
+The probability $p_{\mathrm{col}}$ varies with the target and engagement.  The
 unit-card Missile Strength value is a rate-style summary and should not be
 treated as damage per individual arrow or bullet.  Explosion, penetration,
 contact effects, and multiple collision opportunities must be added as
 separate event-level terms.
+
+\section{Provisional native reconstruction of missile dispersion}
+\label{sec:native-dispersion}
+
+\subsection{Evidence and scope}
+
+A static inspection on 17--18 September 2026 recovered the following arithmetic
+and several caller branches.  This is a reconstruction, not an official
+engine specification or a runtime-validated hit model.  Instruction-level
+operations and constants are directly observed; the mappings to calibration
+area, calibration distance, and marksmanship are corroborated by a generated
+row reader matching the version-53 projectile export and by runtime constructor
+copies.  The reader's registration has not been linked completely to a named
+table.  Effective shooter accuracy remains an accessor interpretation.
+Some modifiers and branch predicates
+remain unidentified.  The executable identity and function addresses are
+recorded in Section~\ref{sec:native-provenance}.  Steam's installed-build
+manifest agrees with the repository baseline; this is installed-build
+evidence, not a depot-level integrity attestation for the executable.
+
+The route has two distinct randomization stages: a target-local aim-point
+offset and angular perturbations of the launch vector.  A preceding
+target-prediction branch can lead a moving target without in-flight homing.
+Other callers,
+projectile categories, and homing branches can add different behavior.
+The category lookup identifies the special category-8 scatter branch as
+rockets; the inspected arrow and Horror-bolt profiles use arrow (1) and axe
+(4), respectively.  Both use the \texttt{dual\_low\_fixed} trajectory setting,
+whose selector resolves to fixed or low according to a runtime state field.
+These shared exclusions and settings do not establish identical complete
+unit firing paths.
+
+\subsection{Prelaunch target prediction}
+
+In the inspected branch with a null homing-parameter pointer, the code
+solves an initial trajectory, obtains its flight-time estimate, and advances
+the target position by that time multiplied by target motion components.
+Height/terrain adjustment, final aim offset, and a final trajectory solve
+follow.  This is prelaunch target leading, not steering toward the target
+after launch.  It does not establish that every target class or projectile
+uses the same prediction routine.  The local jitter below should therefore
+be understood relative to the branch's chosen or predicted target point,
+not necessarily the target's current position.
+
+\subsection{Target-local aim-point offset}
+
+For the inspected eligible-target branch, the recovered local offsets are
+\begin{align}
+  \delta_x &= (2U_1-1)\,mJR,\\
+  \delta_y &= (U_2-\tfrac12)\,mH.
+  \label{eq:target-aim-offset}
+\end{align}
+Here the extracted aiming-size modifier is $m=0.9$.  The target scalars
+$R$, $H$, and $J$ are interpreted as radius, height, and an intersection-radius
+ratio; their full constructor mappings remain unverified.  The helper applies
+$\delta_x$ horizontally perpendicular to the source-to-target bearing and
+$\delta_y$ vertically.  This is a target-facing rectangular offset, not a
+uniform ground-plane disk.
+
+The observed pseudorandom generator updates an unsigned 32-bit state $z$ by
+\begin{equation}
+  z'=(214013z+2531011)\bmod 2^{32},
+  \qquad U=\frac{\lfloor z'/2^{16}\rfloor}{65535}.
+\end{equation}
+Continuous uniform, independent $U_i$ are an analytical approximation to
+these successive discrete draws, not an additional engine finding.
+The target branch requires an existing target with type value 4; its full
+class mapping remains unresolved.  A firing-loop caller can reuse an aim
+offset across a burst, so shot-to-shot independence must not be assumed.
+
+\subsection{Precision factor and effective calibration scale}
+
+Define $\operatorname{clamp}_{\ell}^{u}(x)=\min(u,\max(\ell,x))$.
+For the inspected shooter-present branch and distance $r\geq0.01$, the
+reconstructed precision factor is
+\begin{align}
+  G(\theta)&=1-\frac{\operatorname{clamp}_{-90}^{90}
+                         (\theta_{\mathrm{deg}})}{180},\\
+  F(r)&=\operatorname{clamp}_{0.01}^{1}\!\left[
+    M G(\theta)\frac{\max(0,a+b)}{100}
+    \left(\frac{dV}{r}\right)^2-\pi_{\mathrm{pen}}
+  \right].
+  \label{eq:missile-precision}
+\end{align}
+Here $r$ is the distance scalar consistent with horizontal target distance;
+$d$ is interpreted as calibration distance; $a$ and $b$ are interpreted as
+effective shooter accuracy and effective projectile marksmanship, respectively;
+$b$ includes conditional accessor additions to the base projectile value.
+The angle $\theta$ is the stored launch elevation.  The symbol $M$ collects two multiplicative
+accessor results, $V$ is another unit modifier entering the distance ratio,
+and $\pi_{\mathrm{pen}}$ is a conditional penalty.  Their complete semantic
+mapping and live values remain unresolved.  For $r<0.01$, the inspected
+function returns $F=1$ before this calculation.  When the shooter pointer
+is null, the caller does not invoke this function: it retains a separate
+key-value default previously associated with the tower-accuracy parameter.
+Equation~\ref{eq:missile-precision} must not be extended to that branch.
+In particular, $F$ is
+\emph{not} a hit probability despite its numerical bounds.
+
+For the record scalar $C$ interpreted as calibration area, an unsigned
+firing-history counter $n(t)$ produces
+\begin{equation}
+  C_{\mathrm{eff}}(t)=
+  \begin{cases}
+    C, & n(t)=0,\\
+    \max\{C[1-0.1n(t)],\,0.5C\}, & n(t)>0.
+  \end{cases}
+\end{equation}
+The counter is copied from a shooter field that is incremented in a
+firing/reload completion branch and cleared by separate state-management
+routines.  Its exact event granularity and reset conditions remain unresolved:
+it is not established as unit rank, burst index, or one increment per unit
+volley.  A zero-initialized launch input does not establish a permanently zero
+counter.  The subsequent arithmetic is
+\begin{equation}
+  S(r,t)=\frac{C_{\mathrm{eff}}(t)}{F(r)},\qquad L(r,t)=\sqrt{S(r,t)}.
+  \label{eq:missile-calibration-scale}
+\end{equation}
+The quantity $S$ is an internal area-like dispersion scale, not a measured
+ground-impact area.
+
+\subsection{Angular perturbation and the quadratic regime}
+
+Let $k$ be the aspect scalar, $s_\alpha$ the caller-supplied scatter scale,
+and $D$ the native denominator.  The recovered widths are
+\begin{align}
+  \alpha_\psi&=2\arctan\!\left(\frac{L}{2kD}\right),&
+  \alpha_\theta&=2\arctan\!\left(\frac{kL}{2D}\right),\\
+  \Delta\psi&=(U_3-\tfrac12)\alpha_\psi s_\alpha,&
+  \Delta\theta&=(U_4-\tfrac12)\alpha_\theta s_\alpha.
+  \label{eq:missile-angular-scatter}
+\end{align}
+The vector helper adds these perturbations to azimuth and elevation and
+preserves the launch vector's magnitude.  The aspect scalar is stored as
+$k=1$ in the inspected image, without a dynamic-write audit; the traced
+batch caller supplies $s_\alpha=1$.  An entity firing caller instead reads
+the scale from the shooter and can skip the immediate scatter helper.
+Equation~\ref{eq:missile-angular-scatter} is conditional on that helper being
+invoked.  The denominator is reconstructed as
+$D=\max(|v_y|,r)$.  A follow-up trace of the ordinary ballistic solution
+places vertical launch velocity at state offset \texttt{+4} and horizontal
+distance at \texttt{+0xa0}; the traced firing route reaches scatter without
+overwriting that velocity vector.  This strengthens the operand mapping,
+but does not explain the apparently mixed-unit comparison.  We retain the
+native expression rather than silently replacing it by $r$.
+The inverse-tangent identification is supported by
+the helper's range reduction and ballistic uses, not a separate runtime test.
+
+The traced entity setup has one branch that writes $s_\alpha=1$ and another
+that writes zero or a settings-derived value according to the action state.
+The skip flag starts cleared and subsequently receives an action-descriptor
+bit; it also affects packed launch flags.  Neither constructor defaults nor
+projectile category alone establish which settings a particular unit receives.
+For finite ordinary inputs, zero scale removes this angular contribution,
+not target-local jitter or all other branches.  Skipping one helper call is
+likewise not a guarantee of perfect accuracy.
+
+Within the shooter-present branch, with $M=V=1$, $\pi_{\mathrm{pen}}=0$,
+$\theta=0$, $n(t)=0$, and $a+b>0$,
+between the clamps in Equation~\ref{eq:missile-precision},
+\begin{equation}
+  S(r,t)=\frac{100C}{a+b}\left(\frac{r}{d}\right)^2.
+  \label{eq:missile-quadratic-regime}
+\end{equation}
+Thus quadratic scaling has a native-code basis within a specified regime;
+it is not an unrestricted power law.  For $C\geq0$, the clamps give
+$C\leq S\leq100C$ under these assumptions.  Zero elevation is a simplifying
+reference, not the exact ballistic solution for firing across flat terrain.
+
+Neither this quadratic regime nor the angular perturbations establish a
+uniform circular cone, a uniform impact disk, or a ratio of hit probabilities
+equal to the inverse ratio of calibration areas.  Aim-point jitter,
+trajectory, target spacing, and collision geometry remain separate.
+
+\subsection{From launch dispersion to collisions and attrition}
+
+For an ordinary single-collision projectile, a principled definition is
+\begin{equation}
+  p_{\mathrm{col}}(\mathcal S)=
+  \mathbb E_{\omega\mid\mathcal S}
+  \left[\mathbf 1\{
+    \Gamma(\omega;\mathcal S)
+    \text{ intersects an eligible target}
+  \}\right],
+  \label{eq:missile-collision-expectation}
+\end{equation}
+where $\mathcal S$ specifies the engagement, $\omega$ includes targeting and
+launch randomization, and $\Gamma$ is the resulting flight path through the
+moving scene.  This is a definition of the desired probability, not a claim
+that the full targeting, flight, and collision algorithms have been recovered.
+A simulation using approximate bodies and formation spacing can estimate
+it without live telemetry, but its geometry remains a modeling assumption.
+The shortcut $p_{\mathrm{col}}\approx\min(1,K/S)$, for an assumed coverage
+parameter $K$, is only a surrogate and is not an observed engine rule.
+
+For casualty progression, retain $N_f(t)$ explicitly in
+Equation~\ref{eq:missile-dps}.  It is bounded by living entities but is not
+automatically proportional to remaining unit health: wounded survivors and
+dead models affect firing capacity differently.  Barrier absorption,
+mitigation order, spillover, and regeneration require separate treatment.
+This inspection does not validate treating barrier as additional ordinary
+health or justify precise duel-completion times.
 
 \section{Current data limitations}
 
@@ -324,20 +531,114 @@ The normalized schema currently contains entity count, attack interval,
 small/large classification, mass, anti-infantry and anti-large bonuses,
 maximum splash targets, missile base and armour-piercing damage, projectile
 and volley counts, reload time, projectile velocity, spread, marksmanship,
-calibration fields, damage tags, ammunition, and range.  It does not yet
-contain collision radius, formation spacing, weapon reach, animation
-profiles, splash target-size filters, collision-attack profiles, complete
-projectile penetration rules, direct-projectile shield eligibility, explosion
-profiles, homing parameters, or contact-effect profiles.
+calibration fields, damage tags, ammunition, and range.  The companion
+projectile and explosion lookups additionally preserve collision and timing
+fields, penetration and homing references, contact-effect references, and
+explosion profiles.  A reference key is not a complete implementation of the
+referenced behavior.  Entity dimensions and formation spacing can be
+investigated in source tables but are not a complete collision model in the
+normalized unit row.  Weapon reach, animation-event timing, detailed splash
+and collision-attack behavior, and complete shield eligibility still require
+further reconstruction.
 
 The present data can therefore support scenario-based analysis in which
 $E_{\mathrm{front}}$, $E_{\mathrm{side}}$, and $E_{\mathrm{rear}}$ are supplied
 as assumptions.  It cannot yet derive those engagement counts exactly from
 unit statistics alone.  For missiles it can calculate conditional damage and
-nominal launch rate, but it cannot derive $F$, $p_{\mathrm{col}}$, explosion
+nominal launch rate, but it cannot derive $N_f$, $p_{\mathrm{col}}$, explosion
 coverage, or penetrating-hit counts exactly from the normalized row alone.
+The native reconstruction in Section~\ref{sec:native-dispersion} narrows the
+uncertainty in launch dispersion; it does not remove these limitations.
 
 \section{Sources}
+
+\subsection{Native-inspection provenance}
+\label{sec:native-provenance}
+
+Static inspection of \texttt{Warhammer3.exe}, 17--18 September 2026;
+the executable hash was rechecked on 18 September.
+The image base is \texttt{0x140000000}; addresses below are preferred-image
+virtual addresses, not live relocated addresses.  Executable SHA-256
+(concatenate the two lines):
+\begin{quote}\ttfamily\small
+b7315fa718fd84e2e018e2c4df06600e9\\
+df0076156b474f148d9d558c939aa55
+\end{quote}
+Steam's \texttt{appmanifest\_1142710.acf} reports
+both \texttt{buildid} and \texttt{TargetBuildID} as 24237342, with
+\texttt{StateFlags} equal to 4, matching the repository's Steam-build baseline.
+This does not independently attest the executable against depot hashes.
+The arithmetic was inspected with Capstone 5.0.9 and pefile 2024.8.26 without
+executing the binary or observing a live battle.
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Function or anchor & Preferred-image address\\
+\midrule
+Probable projectile-record constructor & \texttt{0x1404d75cc}\\
+Named aiming-size parameter registration & \texttt{0x1405348db}\\
+Target-local random offsets & \texttt{0x142f698d0}\\
+Target-facing offset transform & \texttt{0x142f657a4}\\
+Prediction and final-solve route & \texttt{0x142f63674}\\
+Target-motion prediction helper & \texttt{0x142e4b4bc}\\
+Precision-factor arithmetic & \texttt{0x142d1df1c}\\
+Launch-elevation modifier & \texttt{0x142f64350}\\
+Calibration-to-angular-width route & \texttt{0x142f654dc}\\
+Angular random draws & \texttt{0x142f65300}\\
+Direction perturbation helper & \texttt{0x142f62d14}\\
+Batch firing route & \texttt{0x142f7c754}\\
+Launch-input default constructor & \texttt{0x142f5ce2c}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+In the ballistic solution, \texttt{0x142f63eae} stores launch elevation,
+\texttt{0x142f63ef5} stores the velocity-vector portion containing the vertical
+component, and \texttt{0x142f63efc} stores horizontal distance.
+The firing route reaches calibration/scatter at \texttt{0x142f7c956}.
+The predictor uses flight time at state \texttt{+0xa4} and target motion
+components at \texttt{+0xe0}, \texttt{+0xe4}, and \texttt{+0xe8}.
+The area-reduction counter at state \texttt{+0x74} traces through
+\texttt{0x142f5c990} and \texttt{0x142f5cd14} to launch-input \texttt{+0x4c},
+initialized to zero by an eight-byte store at \texttt{+0x48}.
+The entity launch builder \texttt{0x142f19f10} subsequently copies shooter
+\texttt{+0xd54} into input \texttt{+0x4c}.  Entity firing/reload route
+\texttt{0x142f4d588} increments that shooter field at \texttt{0x142f4dc94};
+\texttt{0x14312d2df} and \texttt{0x14312d43b} clear it.  The reset-state names
+and increment granularity remain unresolved.
+
+The entity route calls scatter at \texttt{0x142f4db39} with scale from
+shooter \texttt{+0xc88}, unless byte \texttt{+0xd04} skips the call.
+Setter \texttt{0x142f32b0c} writes scale 1; \texttt{0x142f2b930} writes an
+argument supplied by action update \texttt{0x142f48a04}.  That argument is
+zero unless action field \texttt{+0x78} equals 6 and flag bit 0 at
+\texttt{+0xa0} is set, in which case it reads settings field \texttt{+0x218}.
+The choice between the two setters additionally depends on action flags and
+a global-value comparison; their game-mode semantics remain unresolved.
+Action kind 6 is not projectile category 6.
+Function \texttt{0x142f438d0} copies action flag bit 3 into the shooter skip
+byte, and \texttt{0x142f19f10} also uses that byte to alter launch flags.
+
+The constructor copies source offsets \texttt{+0xa0} and \texttt{+0xa4} to
+record offsets \texttt{+0x88} and \texttt{+0x8c}, corroborated as calibration
+distance and area.  Source \texttt{+0x80} maps to marksmanship at record
+\texttt{+0x68}.  Generated reader \texttt{0x14063973c}, registered through
+thunk \texttt{0x140639734} by \texttt{0x1406f3b28}, matches these fields'
+version-53 serialized order.  Category converter \texttt{0x1404d919c} uses
+the table at \texttt{0x143bbf750}.  Trajectory selector
+\texttt{0x142f6f980} resolves \texttt{dual\_low\_fixed} (3) to fixed (2)
+when state \texttt{+0x78}>0, otherwise low (0).
+The target-offset routine reads \texttt{+0x9c}, \texttt{+0xa0}, and
+\texttt{[target+0x2d8]+0x64}.  The named aiming parameter is
+\texttt{projectile\_aiming\_target\_size\_modifier}.
+These pointers and offsets preserve the distinction between observed
+arithmetic and inferred field names.  Schema-decoded projectile, land-unit,
+battle-entity, unit-spacing, and key-value-rule records supplied the
+table-side comparison; the RPFM schema descriptions are corroborating
+metadata, not native engine source.
+
+\subsection{Published sources for the preceding combat relations}
 
 Creative Assembly, ``Feature Focus \#2: Damage (Part 1),'' especially the
 entity attack roll, hit-chance limits, target-class bonuses, and flank/rear
