@@ -79,7 +79,13 @@
         "wh_main_group_empire_reikland",
         "wh3_dlc25_group_elspeth"
       ],
-      "expected_units": 122
+      "expected_units": 126,
+      "permission_units": [
+        "wh3_dlc29_emp_cha_boris_todbringer_toddy_0",
+        "wh3_dlc29_emp_cha_boris_todbringer_toddy_1",
+        "wh3_dlc29_emp_cha_boris_todbringer_toddy_2",
+        "wh3_dlc29_emp_cha_boris_todbringer_toddy_3"
+      ]
     },
     {
       "slug": "grand_cathay",
@@ -290,7 +296,10 @@
       "military_groups": [
         "wh3_dlc29_nag_group_undead_legions"
       ],
-      "expected_units": 150
+      "expected_units": 151,
+      "permission_units": [
+        "wh3_dlc29_vmp_cha_nagash"
+      ]
     }
   ],
   "SKILL_RACES": [

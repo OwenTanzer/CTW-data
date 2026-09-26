@@ -1499,6 +1499,10 @@ military_group,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cav_knights_panther,wh
 military_group,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cav_knights_panther,wh_main_group_empire_golden_order,,,,,,
 military_group,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cav_knights_panther,wh_main_group_empire_reikland,,,,,,
 faction_permission,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cav_knights_panther,,wh_main_emp_empire,false,true,true,false,false
+faction_permission,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cha_boris_todbringer_toddy_0,,wh_main_emp_empire,true,true,true,false,false
+faction_permission,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cha_boris_todbringer_toddy_1,,wh_main_emp_empire,true,true,true,false,false
+faction_permission,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cha_boris_todbringer_toddy_2,,wh_main_emp_empire,true,true,true,false,false
+faction_permission,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cha_boris_todbringer_toddy_3,,wh_main_emp_empire,true,true,true,false,false
 military_group,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cha_emil_valgeir,wh_main_group_empire,,,,,,
 faction_permission,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cha_emil_valgeir,,wh_main_emp_empire,false,true,true,false,false
 military_group,warhammer_3,9.0,ultra,empire,wh3_dlc29_emp_cha_priest_of_ulric,wh_main_group_empire,,,,,,
@@ -7097,6 +7101,7 @@ faction_permission,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_lahmia
 military_group,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_master_necromancer_undeath,wh3_dlc29_nag_group_undead_legions,,,,,,
 faction_permission,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_master_necromancer_undeath,,wh3_dlc29_nag_host_of_nagash,true,true,true,false,false
 faction_permission,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_master_necromancer_undeath,,wh_main_vmp_vampire_counts,true,true,true,false,false
+faction_permission,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_nagash,,wh3_dlc29_nag_host_of_nagash,true,true,true,false,false
 military_group,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_necromancer_undeath,wh3_dlc29_nag_group_undead_legions,,,,,,
 faction_permission,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_necromancer_undeath,,wh3_dlc29_nag_host_of_nagash,false,true,true,false,false
 faction_permission,warhammer_3,9.0,ultra,undead_legions,wh3_dlc29_vmp_cha_necromancer_undeath,,wh_main_vmp_vampire_counts,false,true,true,false,false

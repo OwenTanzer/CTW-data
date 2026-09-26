@@ -312,7 +312,13 @@ for (const roster of ROSTERS) {
       membershipsByUnit.get(membership.unit).add(militaryGroup);
     }
   }
-  const unitKeys = [...membershipsByUnit.keys()].sort();
+  // Reviewed current units can have custom-battle permissions without military-group membership.
+  // Retain the real permission relation; never synthesize a military-group link.
+  for (const key of roster.permission_units ?? []) {
+    if (!(permissionsByUnit.get(key) ?? []).some(p => p.faction === roster.faction_key))
+      throw Error(`Missing source faction permission for ${roster.slug}/${key}`);
+  }
+  const unitKeys = [...new Set([...membershipsByUnit.keys(), ...(roster.permission_units ?? [])])].sort();
   for (const unitKey of unitKeys) {
     selectedUnitKeys.add(unitKey);
     const main = mainByKey.get(unitKey);
@@ -371,7 +377,7 @@ for (const roster of ROSTERS) {
       is_faction_exclusive: isFactionExclusive,
       military_group_count: militaryGroups.length,
       permitted_faction_count: permittedFactionCount,
-      availability_notes: isFactionExclusive ? "Faction-variant roster unit; see unit_rosters for exact military-group and faction permissions." : "",
+      availability_notes: militaryGroups.length === 0 ? "Included through reviewed source custom-battle faction permission; no military-group membership. See unit_rosters." : isFactionExclusive ? "Faction-variant roster unit; see unit_rosters for exact military-group and faction permissions." : "",
       unit_key: unitKey,
       unit_name: unitName(main.land_unit),
       tactical_category: tacticalCategory(unitKey, main, land),
