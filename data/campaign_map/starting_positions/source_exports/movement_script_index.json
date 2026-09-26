@@ -1,0 +1,510 @@
+[
+  {
+    "path": "main_warhammer/endgame/endgame_will_of_hashut.lua",
+    "sha256": "279a0b890e91777c6d3f4e0919f544cd9c0a33d4f68e10274652ce56696d1c48",
+    "sites": [
+      {
+        "line": 173,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_cathay\", \"wh3_dlc23_teleportation_node_template_endgame_chd_cathay\")"
+      },
+      {
+        "line": 174,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_cathay_darklands\", \"wh3_dlc23_teleportation_node_template_endgame_chd_cathay\")"
+      },
+      {
+        "line": 175,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_empire\", \"wh3_dlc23_teleportation_node_template_endgame_chd_empire\")"
+      },
+      {
+        "line": 176,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_empire_darklands\", \"wh3_dlc23_teleportation_node_template_endgame_chd_empire\")"
+      },
+      {
+        "line": 177,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_lustria\", \"wh3_dlc23_teleportation_node_template_endgame_chd_lustria\")"
+      },
+      {
+        "line": 178,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_lustria_darklands\", \"wh3_dlc23_teleportation_node_template_endgame_chd_lustria\")"
+      },
+      {
+        "line": 179,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_naggaroth\", \"wh3_dlc23_teleportation_node_template_endgame_chd_naggaroth\")"
+      },
+      {
+        "line": 180,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_naggaroth_darklands\", \"wh3_dlc23_teleportation_node_template_endgame_chd_naggaroth\")"
+      },
+      {
+        "line": 181,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_southlands\", \"wh3_dlc23_teleportation_node_template_endgame_chd_southlands\")"
+      },
+      {
+        "line": 182,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc23_endgame_chd_southlands_darklands\", \"wh3_dlc23_teleportation_node_template_endgame_chd_southlands\")"
+      }
+    ]
+  },
+  {
+    "path": "main_warhammer/wh3_sea_lanes.lua",
+    "sha256": "60aa6680c617da062065bfc01a7925438f9d7a50a19351607e616b337174beb1",
+    "sites": [
+      {
+        "line": 62,
+        "text": "cm:teleportation_network_open_node(node, template)"
+      },
+      {
+        "line": 71,
+        "text": "cm:teleportation_network_open_node(sea_lanes.aislinn_nodes[i].node, sea_lanes.aislinn_nodes[i].template);"
+      },
+      {
+        "line": 80,
+        "text": "cm:teleportation_network_close_node(sea_lanes.aislinn_nodes[i].node);"
+      },
+      {
+        "line": 89,
+        "text": "cm:teleportation_network_open_node(sea_lanes.lokhir_nodes[i].node, sea_lanes.lokhir_nodes[i].template);"
+      }
+    ]
+  },
+  {
+    "path": "main_warhammer/wh_dlc07_schwartzhafen_undying_love.lua",
+    "sha256": "030f733bdeaab7971e3bb8178c6dd0c1386cb3789a2863cbd1f02dd5a4f17dcd",
+    "sites": [
+      {
+        "line": 27,
+        "text": "cm:teleport_to(char_lookup_str, self.melissa_pos.x, self.melissa_pos.y)"
+      },
+      {
+        "line": 40,
+        "text": "cm:teleport_to(char_lookup_str, self.emmanuelle_pos.x, self.emmanuelle_pos.y)"
+      }
+    ]
+  },
+  {
+    "path": "main_warhammer/wh_dlc08_monster_hunt.lua",
+    "sha256": "ce9a427f72869c455582dc86a93d60bb506535967d17099331b8bdb290fa7ee3",
+    "sites": [
+      {
+        "line": 3998,
+        "text": "cm:teleport_and_prepare_for_battle(character:command_queue_index(), hunt_config_data.quest_battle, display_x, display_y, true, false)"
+      }
+    ]
+  },
+  {
+    "path": "wh2_campaign_custom_starts.lua",
+    "sha256": "7d1e1b725146c0f2e1d19dbd18bb4fd5183d49c615b05430140a9b73be016df2",
+    "sites": [
+      {
+        "line": 738,
+        "text": "cm:create_force_with_existing_general("
+      },
+      {
+        "line": 796,
+        "text": "cm:teleport_to(cm:char_lookup_str(custom_start_char), end_x, end_y);"
+      },
+      {
+        "line": 810,
+        "text": "cm:teleport_to(cm:char_lookup_str(leader), target_x, target_y);"
+      }
+    ]
+  },
+  {
+    "path": "wh2_dlc13_empire_politics.lua",
+    "sha256": "a83a60ed42f23f49053c5299ee37c0fb67a2e36110e1cfdbdfd1cdac8e2392a2",
+    "sites": [
+      {
+        "line": 327,
+        "text": "cm:teleport_military_force_to(character:military_force(), x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_campaign_bonus_values.lua",
+    "sha256": "ddee551082f6e6a8775123cf71dcdf0e3edbf025ef3836d2bb89da584d9e13e1",
+    "sites": [
+      {
+        "line": 452,
+        "text": "cm:teleport_to(cm:char_lookup_str(character), pos_x, pos_y);"
+      },
+      {
+        "line": 1363,
+        "text": "local result = cm:teleport_military_force_to(faction_leader:military_force(), x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_campaign_caravans_core.lua",
+    "sha256": "66d6718abfdf4ddb85a772ee9e66a101e2694e0192d59a3086f9977cd897c9a2",
+    "sites": [
+      {
+        "line": 915,
+        "text": "cm:teleport_to(caravan_lookup, x, y);"
+      },
+      {
+        "line": 1218,
+        "text": "cm:teleport_to(caravan_lookup,  caravan_x,  caravan_y);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_campaign_great_game.lua",
+    "sha256": "4810f096dbc5193113e23e37e9681e79d28f2a56ba1505265e5919acf402e36c",
+    "sites": [
+      {
+        "line": 34,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_combi_province_albion\");"
+      },
+      {
+        "line": 35,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_combi_province_the_southern_wastes\");"
+      },
+      {
+        "line": 36,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_combi_province_gryphon_wood\");"
+      },
+      {
+        "line": 258,
+        "text": "cm:teleportation_network_open_node(general:region():province():key());"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc24_mother_ostankya.lua",
+    "sha256": "931d2265d1d0ff5d8c7558f1bddf5b27ba9a3de9f6643cf370e1f2d6e569b756",
+    "sites": [
+      {
+        "line": 930,
+        "text": "cm:teleport_to(cm:char_lookup_str(faction_leader), x_pos, y_pos);"
+      },
+      {
+        "line": 936,
+        "text": "cm:teleport_to(cm:char_lookup_str(start_char), x_pos, y_pos);"
+      },
+      {
+        "line": 950,
+        "text": "cm:teleport_to(cm:char_lookup_str(nearby_faction_leader), rx_pos, ry_pos);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc24_the_changeling.lua",
+    "sha256": "ac842c747e2649cdf87594d0c88adabf6ce2d104df2374adcadf081dfd44a0da",
+    "sites": [
+      {
+        "line": 3166,
+        "text": "cm:teleportation_network_open_node(rift_node, self.rift_template)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc25_gelt_dilemmas.lua",
+    "sha256": "f3d189cd62f8299c6b8637894b8dbb8afbb88d40ebb784c07d2775773b45cc09",
+    "sites": [
+      {
+        "line": 247,
+        "text": "cm:teleport_military_force_to(mf, x, y)"
+      },
+      {
+        "line": 250,
+        "text": "cm:teleport_to(\"character_cqi:\"..character:command_queue_index(), x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc27_aislinn.lua",
+    "sha256": "e3989a755a8d99b19eb0e270103184ebf483dd8ff387d8ffd547a22c7cf2a6b9",
+    "sites": [
+      {
+        "line": 130,
+        "text": "cm:teleport_to(cm:char_lookup_str(aislinn_character), 928, 132);"
+      },
+      {
+        "line": 189,
+        "text": "cm:teleport_to(ch_str, 295, 243);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc27_eternal_dance.lua",
+    "sha256": "883d9474e181734ca5276f3b8c561c0a9939129ec9ab7410f8fe4575c3572336",
+    "sites": [
+      {
+        "line": 748,
+        "text": "success = cm:teleport_to(lookup, x + expand_param, y + expand_param);"
+      },
+      {
+        "line": 760,
+        "text": "success = cm:teleport_to(lookup, x + expand_param, y + expand_param);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc27_secrets_of_the_white_tower.lua",
+    "sha256": "9950d60889f9c6158a891456e419204ae67f61a265406cc5009ab7e8bf3e8a0f",
+    "sites": [
+      {
+        "line": 235,
+        "text": "cm:teleport_military_force_to(mf, x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_dlc27_valiant_imperatives.lua",
+    "sha256": "33163c4c8de44d9480fa0e449ba2b6d210426d5127a10c4c47ee1c9e554ee0a8",
+    "sites": [
+      {
+        "line": 282,
+        "text": "cm:teleport_military_force_to(target_force_commander:military_force(), x, y)"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_chaos/realms/wh3_realm_common.lua",
+    "sha256": "f2bba5b0f19abdd8f044c913e90e2c77c725bf4c21d9a8ddd4604f129123c51c",
+    "sites": [
+      {
+        "line": 359,
+        "text": "cm:teleport_to(cm:char_lookup_str(character), spawn_positions[i][1], spawn_positions[i][2]);"
+      },
+      {
+        "line": 420,
+        "text": "cm:teleport_to(cm:char_lookup_str(faction_leader), x, y);"
+      },
+      {
+        "line": 794,
+        "text": "cm:teleport_to(cm:char_lookup_str(character), spawn_loc[1], spawn_loc[2]);"
+      },
+      {
+        "line": 870,
+        "text": "cm:teleportation_network_close_node(\"wh3_main_chaos_forge_of_souls\");"
+      },
+      {
+        "line": 1101,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_chaos_forge_of_souls\", \"wh3_main_teleportation_node_template_forge_of_souls\");"
+      },
+      {
+        "line": 1148,
+        "text": "cm:teleportation_network_close_all_nodes(\"wh3_main_teleportation_network_chaos\", template);"
+      },
+      {
+        "line": 1384,
+        "text": "cm:teleportation_network_close_node(\"wh3_main_chaos_forge_of_souls\");"
+      },
+      {
+        "line": 1841,
+        "text": "cm:teleportation_network_close_node(node_details[1]);"
+      },
+      {
+        "line": 1911,
+        "text": "cm:teleportation_network_set_effect_level_modifier(\"wh3_main_teleportation_network_chaos\", 3);"
+      },
+      {
+        "line": 1913,
+        "text": "cm:teleportation_network_set_effect_level_modifier(\"wh3_main_teleportation_network_chaos\", 8);"
+      },
+      {
+        "line": 1915,
+        "text": "cm:teleportation_network_set_effect_level_modifier(\"wh3_main_teleportation_network_chaos\", 13);"
+      },
+      {
+        "line": 1966,
+        "text": "cm:teleportation_network_open_node(region:province_name(), templates[cm:random_number(#templates)]);"
+      },
+      {
+        "line": 1986,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_chaos_khorne_realm_\" .. i, \"wh3_main_teleportation_node_template_kho_realm\");"
+      },
+      {
+        "line": 1987,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_chaos_nurgle_realm_\" .. i, \"wh3_main_teleportation_node_template_nur_realm\");"
+      },
+      {
+        "line": 1988,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_chaos_slaanesh_realm_\" .. i, \"wh3_main_teleportation_node_template_sla_realm\");"
+      },
+      {
+        "line": 1989,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_chaos_tzeentch_realm_\" .. i, \"wh3_main_teleportation_node_template_tze_realm\");"
+      },
+      {
+        "line": 2026,
+        "text": "cm:teleportation_network_open_node(available_nodes[i][1], template);"
+      },
+      {
+        "line": 2455,
+        "text": "cm:move_to_queued(char_lookup_str, final_x, final_y);"
+      },
+      {
+        "line": 2515,
+        "text": "cm:move_to_queued(char_lookup_str, final_x, final_y);"
+      },
+      {
+        "line": 2631,
+        "text": "cm:teleportation_network_close_node(current_rift:record_key());"
+      },
+      {
+        "line": 2850,
+        "text": "cm:teleportation_network_open_node(\"wh3_main_chaos_forge_of_souls\", \"wh3_main_teleportation_node_template_forge_of_souls\");"
+      },
+      {
+        "line": 2855,
+        "text": "cm:teleportation_network_close_all_nodes(\"wh3_main_teleportation_network_chaos\", template);"
+      },
+      {
+        "line": 2856,
+        "text": "cm:teleportation_network_close_all_nodes(\"wh3_main_teleportation_network_chaos\", template .. \"_realm\");"
+      },
+      {
+        "line": 3365,
+        "text": "cm:teleport_military_force_to(mf, current_x, current_y);"
+      },
+      {
+        "line": 3369,
+        "text": "cm:teleport_to(char_lookup_str, current_x, current_y);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_chaos/realms/wh3_realm_slaanesh.lua",
+    "sha256": "38d06595ed570f05ea8e82ce09a054c41bd6a7c339ae509e1d6d98e486d96701",
+    "sites": [
+      {
+        "line": 362,
+        "text": "cm:teleport_to(char_str, final_x, final_y);"
+      },
+      {
+        "line": 844,
+        "text": "cm:teleportation_network_close_node(current_rift:record_key());"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_chaos/realms/wh3_realm_tzeentch.lua",
+    "sha256": "e4c30bc20a763737c98ac740017f702f3f53446841d89cf04e5d807d668ea25b",
+    "sites": [
+      {
+        "line": 204,
+        "text": "cm:move_to_queued(cm:char_lookup_str(character), valid_x, valid_y);"
+      },
+      {
+        "line": 276,
+        "text": "cm:teleport_to(char_str, final_x, final_y);"
+      },
+      {
+        "line": 423,
+        "text": "cm:teleport_to(char_str, final_x, final_y);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_chaos/wh3_boris.lua",
+    "sha256": "61468f0bf62ed370725496781f0f5798bf4f855293e8b75fe2b80d847bc1c8bc",
+    "sites": [
+      {
+        "line": 217,
+        "text": "cm:create_force_with_existing_general("
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_chaos/wh3_dlc20_narrative_champions.lua",
+    "sha256": "d29e522f282ec93889414ab66746afe9a31caf5d95aca409ac185a2e6b1046c5",
+    "sites": [
+      {
+        "line": 129,
+        "text": "cm:teleportation_network_close_node(destination_node_key)"
+      },
+      {
+        "line": 133,
+        "text": "cm:teleportation_network_open_node(destination_node_key, new_template)"
+      },
+      {
+        "line": 168,
+        "text": "cm:teleportation_network_open_node(node_key, new_template)"
+      },
+      {
+        "line": 252,
+        "text": "cm:teleportation_network_open_node(faction_templates.start_node, faction_templates.node_template)"
+      },
+      {
+        "line": 256,
+        "text": "cm:teleportation_network_open_random_nodes(self.chaos_network_key, self.neutral_network_template_key, 20)"
+      },
+      {
+        "line": 289,
+        "text": "cm:teleportation_network_open_random_nodes(self.chaos_network_key, self.neutral_network_template_key, 50)"
+      },
+      {
+        "line": 349,
+        "text": "cm:teleportation_network_close_all_nodes(self.chaos_network_key, self.neutral_network_template_key)"
+      },
+      {
+        "line": 359,
+        "text": "cm:teleportation_network_open_node(\"wh3_dlc20_champions_node_zanbaijin\", \"wh3_dlc20_teleportation_node_template_zanbaijin\")"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_chaos/wh3_starting_armies.lua",
+    "sha256": "4a6eb228cb11ef828b832b339f3651198eb6a8eda81e77a27c59052310f7167a",
+    "sites": [
+      {
+        "line": 174,
+        "text": "cm:teleport_to(char_str, current_army.x_pos, current_army.y_pos);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_chaos/wh3_tol_helpers.lua",
+    "sha256": "3e102daddd79662e8694c87887d7cad7b9c6fdca055df500073f4450555302b0",
+    "sites": [
+      {
+        "line": 64,
+        "text": "cm:teleport_to(cm:char_lookup_str(faction:faction_leader()), target_x, target_y);"
+      },
+      {
+        "line": 78,
+        "text": "cm:teleport_to(cm:char_lookup_str(current_char), target_x, target_y);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_stage_1.lua",
+    "sha256": "63ebb71f2966c010070447fe42e80b7726554715a3ba7fde8722a713c4773a48",
+    "sites": [
+      {
+        "line": 1178,
+        "text": "cutscene_intro:set_skippable(true, function () skipped = true; cm:teleport_to(cm:char_lookup_str(cm:get_faction(prologue_player_faction):faction_leader():command_queue_index()), 396, 102); cm:callback(function() cm:move_character(prologue_player_cqi, 396, 104, false, false);  set_up_first_turn_of_prologue(); end, 0.5 );  end)"
+      },
+      {
+        "line": 1187,
+        "text": "--cm:teleport_to(cm:char_lookup_str(cm:get_faction(prologue_player_faction):faction_leader():command_queue_index()), 396, 297);"
+      },
+      {
+        "line": 1199,
+        "text": "--cm:teleport_to(cm:char_lookup_str(cm:get_faction(prologue_player_faction):faction_leader():command_queue_index()), 405, 247);"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_stage_6.lua",
+    "sha256": "fd829a40d936df65b52af5e9b507fcfc0a002c41047347300b79661237c03434",
+    "sites": [
+      {
+        "line": 210,
+        "text": "cm:teleport_to(cm:char_lookup_str(character:cqi()), character:logical_position_x(), character:logical_position_y());"
+      }
+    ]
+  },
+  {
+    "path": "wh3_main_prologue/factions/wh3_prologue_kislev_expedition/wh3_prologue_kislev_expedition_story_panels.lua",
+    "sha256": "1445ddd4320b0150b5a194b0f4f0a84e01486ad809b6d77172d97f88e7704109",
+    "sites": [
+      {
+        "line": 762,
+        "text": "cm:teleport_to(cm:char_lookup_str(cm:get_faction(prologue_player_faction):faction_leader():command_queue_index()), 413, 481);"
+      }
+    ]
+  }
+]

@@ -35,6 +35,15 @@ check("Campaign key", metadata.campaign_key, "wh3_main_combi");
 check("Campaign map revision", metadata.campaign_map_key, "wh3_main_combi_map_5");
 check("Patch", metadata.patch, "8.1.1");
 check("Steam build", metadata.steam_build_id, "24237342");
+if (metadata.schema_version === "1.1.0") {
+  check("Primary army start coverage", scalar("SELECT COUNT(*) count FROM faction_army_start_reference").count, 104);
+  check("Primary army start uniqueness", scalar("SELECT COUNT(DISTINCT faction_key) count FROM faction_army_start_reference").count, 104);
+  check("Primary army points complete", scalar("SELECT COUNT(*) count FROM faction_army_start_reference WHERE world_x IS NULL OR world_y IS NULL").count, 0);
+  check("All starting generals retained", scalar("SELECT COUNT(*) count FROM campaign_army_starts").count, 109);
+  check("Explicit maritime primary points", scalar("SELECT COUNT(*) count FROM faction_army_start_reference WHERE start_region_key IS NULL").count, 4);
+  check("Human partner position exceptions", scalar("SELECT COUNT(*) count FROM campaign_start_partner_overrides").count, 5);
+  check("Army start regions resolve", scalar("SELECT COUNT(*) count FROM campaign_army_starts a WHERE start_region_key IS NOT NULL AND NOT EXISTS (SELECT 1 FROM regions r WHERE r.region_key=a.start_region_key)").count, 0);
+}
 
 const counts = {};
 for (const table of [

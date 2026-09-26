@@ -8,6 +8,8 @@
 *.tex  text eol=lf
 *.tsv  text eol=lf
 *.ps1  text eol=lf
+*.py   text eol=lf
+*.lua  text eol=lf
 
 # GeoPackages are SQLite databases and must never receive text conversion.
 *.gpkg binary
@@ -19,3 +21,6 @@
 # Technology artifacts and their compact evidence/TSV sources are hashed byte-for-byte.
 # Preserve decoder/builder line endings on checkout so recorded hashes remain valid.
 /data/technology_trees/** -text -whitespace
+
+# Preserve bounded game-script evidence, including its original trailing spaces.
+/data/campaign_map/starting_positions/source_exports/** -text -whitespace

@@ -1,0 +1,217 @@
+{
+
+	--------------------
+	----   DURTHU   ----
+	--------------------
+	{
+		if_human = "wh_dlc05_wef_argwylon",
+		if_ai = {"wh_dlc05_wef_wood_elves"},
+		changes = {
+			{"region_change", "wh3_main_combi_region_the_oak_of_ages", "wh_dlc05_wef_argwylon"},
+		}
+	},
+
+	--------------------
+	----   SISTERS   ----
+	--------------------
+	{
+		if_human = "wh2_dlc16_wef_sisters_of_twilight",
+		if_ai = {"wh_dlc05_wef_wood_elves", "wh_dlc05_wef_argwylon"},
+		changes = {
+			{"region_change", "wh3_main_combi_region_the_oak_of_ages", "wh2_dlc16_wef_sisters_of_twilight"},
+		}
+	},
+
+	--------------------
+	----   TYRION   ----
+	--------------------
+	{
+		if_human = "wh2_main_hef_eataine",
+		if_ai = nil,
+		changes = {
+			{"add_xp_to_unit", "wh2_main_hef_eataine", "wh2_main_hef_inf_lothern_sea_guard_1", 3},
+		}
+	},
+
+	--------------------
+	------ KHAZRAK -----
+	--------------------
+	{
+		if_human = "wh_dlc03_bst_beastmen",
+		if_ai = {"wh_main_emp_empire", "wh2_dlc16_wef_sisters_of_twilight", "wh2_dlc16_wef_drycha", "wh_dlc05_wef_wood_elves", "wh_dlc05_wef_argwylon"},
+		changes = {
+			{"create_army", "wh3_main_wef_laurelorn", "wh_dlc05_wef_inf_dryads_0,wh_dlc05_wef_inf_dryads_0,wh_dlc05_wef_inf_eternal_guard_0,wh_dlc05_wef_inf_eternal_guard_0,wh_dlc05_wef_inf_waywatchers_0,wh_dlc05_wef_inf_waywatchers_0", 
+				"wh3_main_combi_region_middenheim", 525, 720, "wh_dlc05_wef_glade_lord", false
+			},
+			{"force_diplomacy", "wh_dlc03_bst_beastmen", "wh3_main_wef_laurelorn", "war"},
+			{"teleport_character", "wh_dlc03_bst_beastmen", 543, 741, 519, 717, true},
+			{"teleport_character", "wh_dlc03_bst_beastmen", 555, 731, 516, 725, true},
+		}
+	},
+
+	---------------------------
+	------ VLAD/ISABELLA -----
+	---------------------------
+	{
+		if_human = "wh_main_vmp_schwartzhafen",
+		if_ai = nil,
+		changes = {
+			-- If Isabella remove the Vlad specific units and add the Isabella specific ones
+			{"modify_units_in_army", "wh_main_vmp_schwartzhafen", 718, 622, {"wh_main_vmp_inf_crypt_ghouls", "wh_main_vmp_mon_varghulf"}, {"wh_main_vmp_inf_grave_guard_0", "wh_dlc02_vmp_cav_blood_knights_0"}, "names_name_2147345124", "names_name_2147343895"}
+		}
+	},
+	
+	---------------------------
+	-------- ELTHARION --------
+	---------------------------
+	{
+		if_human = "wh2_main_hef_yvresse",
+		if_ai = nil,
+		changes = {
+			{"teleport_character", "wh2_main_hef_yvresse", 328, 570, 573, 407, true},
+			{"teleport_character", "wh2_main_hef_yvresse", 327, 569, 569, 407, false},
+			{"teleport_character", "wh2_main_hef_yvresse", 316, 574, 327, 569, true},
+			{"force_diplomacy", "wh2_main_hef_yvresse", "wh_main_grn_top_knotz", "war"},
+		}
+	},
+	{ --Remove the units in the extra army from AI Eltharion to stop him curbstopping N'kari
+		if_ai = "wh2_main_hef_yvresse",
+		changes = {
+			{"modify_units_in_army", "wh2_main_hef_yvresse", 316, 574, {}, {"wh2_main_hef_cav_ellyrian_reavers_0","wh2_dlc15_hef_inf_mistwalkers_spireguard_0","wh2_main_hef_inf_archers_0","wh2_main_hef_inf_archers_0"}, nil, nil }
+		}
+	},
+
+	-----------------------
+	------ KARL FRANZ -----
+	-----------------------
+	-- In any game where Karl Franz is AI-controlled, give Reikland all of the separatist lands.
+	{
+		if_ai = "wh_main_emp_empire",
+		changes = {
+			{"replace_faction", "wh_main_emp_empire_separatists", "wh_main_emp_empire"},
+		}
+	},
+
+	---------------------------
+	------ BALTHASAR GELT -----
+	---------------------------
+	{
+		if_human = "wh2_dlc13_emp_golden_order",
+		if_ai = nil,
+		changes = {
+			{"char_effect_bundle", "wh2_dlc13_emp_golden_order", 1137, 451, "wh3_main_ie_scripted_endgame_force_immune_to_regionless_attrition", 2},
+		}
+	},
+	
+	--------------------
+	------ ORION ------
+	--------------------
+	{
+		if_human = "wh_dlc05_wef_wood_elves",
+		if_ai = nil,
+		changes = {
+			{"teleport_character", "wh_dlc05_wef_wood_elves", 503, 518, 471, 517, true},
+			{"teleport_character", "wh_dlc05_wef_wood_elves", 515, 516, 467, 518, false},
+		}
+	},
+	
+	-------------------------------------------
+	------ Hag Greaf When Malus is an AI ------
+	-------------------------------------------
+	{
+		if_human = "wh2_main_def_naggarond",
+		if_ai = {"wh2_main_def_hag_graef"},
+		changes = {
+			{"region_change", "wh3_main_combi_region_hag_graef", "wh2_main_def_clar_karond"},
+		}
+	},
+	{
+		if_ai = {"wh2_main_def_hag_graef", "wh2_main_def_naggarond"},
+		changes = {
+			{"region_change", "wh3_main_combi_region_hag_graef", "wh2_main_def_naggarond"},
+		}
+	},
+	---------------------
+	------ Yuan Bo ------
+	---------------------
+	{
+		if_ai = "wh3_dlc24_cth_the_celestial_court",
+		changes = {
+			{"region_change", "wh3_main_combi_region_shang_wu", "wh3_dlc21_vmp_jiangshi_rebels"},
+			{"primary_slot_change", "wh3_main_combi_region_shang_wu", "wh_main_vmp_settlement_major_2"},
+			{"secondary_slot_change", "wh3_main_combi_region_shang_wu", 0, "wh_main_vmp_bindingcircle_2"},
+			{"modify_units_in_army", "wh3_dlc21_vmp_jiangshi_rebels", 316, 574, {"wh_main_vmp_cav_hexwraiths", "wh_main_vmp_inf_grave_guard_0", "wh_main_vmp_mon_fell_bats", "wh_main_vmp_mon_vargheists"}, {"wh_main_vmp_inf_skeleton_warriors_0", "wh_main_vmp_inf_zombie", "wh_main_vmp_inf_zombie", "wh_main_vmp_mon_dire_wolves"}, nil, nil}
+		}
+	},
+	
+	---------------------
+	---- Changeling -----
+	---------------------
+	{
+		if_human = "wh3_dlc24_tze_the_deceivers",
+		if_ai = {"wh_dlc03_bst_beastmen"},
+		changes = {
+			{"teleport_character", "wh_dlc03_bst_beastmen", 514, 723, 605, 587, true},
+			{"teleport_character", "wh_dlc03_bst_beastmen", 518, 732, 604, 585, false},
+		}
+	},
+	--------------------
+	----- MALAKAI ------
+	--------------------
+	{
+		if_human = "wh3_dlc25_dwf_malakai",
+		if_ai = nil,
+		changes = {
+			-- Add additional units for Norscan force to fight on turn 1
+			{"modify_units_in_army", "wh3_main_nur_maggoth_kin", 728, 537, {"wh3_main_nur_inf_nurglings_0","wh3_main_nur_inf_plaguebearers_0","wh3_main_nur_inf_plaguebearers_0"}, {}, nil, nil },
+		}
+	},
+	-----------------------
+	----   EPIDEMIUS   ----
+	-----------------------
+	{
+		if_human = "wh3_dlc25_nur_epidemius",
+		if_ai = nil,
+		changes = {
+			{"add_xp_to_unit", "wh3_dlc25_nur_epidemius", "wh3_main_nur_inf_plaguebearers_0", 3},
+			{"add_xp_to_unit", "wh3_dlc25_nur_epidemius", "wh3_main_nur_inf_plaguebearers_1", 3}
+		}
+	},
+	{
+		if_human = "wh3_dlc25_nur_epidemius",
+		if_ai = "wh3_main_dae_daemon_prince",
+		changes = {
+			{"teleport_character_faction_leader", "wh3_main_dae_daemon_prince", 726, 901}
+		}
+	},
+	-----------------------
+	------   WURRZAG  ------
+	-----------------------
+	-- In any game where Tiktaq'to is AI and Wurrzag is human
+	{
+		if_human = "wh_main_grn_orcs_of_the_bloody_hand",
+		if_ai = "wh2_main_lzd_tlaqua",
+		changes = {
+			{"teleport_character_faction_leader", "wh2_dlc12_grn_leaf_cutterz_tribe", 615, 181},
+			{"region_change", "wh3_main_combi_region_statues_of_the_gods", "wh2_main_lzd_tlaqua"},
+			{"primary_slot_change", "wh3_main_combi_region_statues_of_the_gods", "wh2_main_lzd_settlement_minor_1"},
+			{"region_change", "wh3_main_combi_region_deaths_head_monoliths", "wh2_main_lzd_tlaqua"},
+			{"primary_slot_change", "wh3_main_combi_region_deaths_head_monoliths", "wh2_main_lzd_settlement_minor_2"},
+			{"port_slot_change", "wh3_main_combi_region_deaths_head_monoliths", 0, "wh2_main_lzd_port_1"},
+			{"secondary_slot_change", "wh3_main_combi_region_deaths_head_monoliths", 0, "wh2_main_lzd_skinks_1"},
+		}
+	},
+	-----------------------
+	------ Wulfrik -----
+	-----------------------
+	-- In any game where Wulfrik is AI-controlled he will start near his capital - .
+	{
+		if_ai = "wh_dlc08_nor_norsca",
+		changes = {
+			{"teleport_character_faction_leader", "wh_dlc08_nor_norsca", 416, 792},
+			{"teleport_character", "wh_dlc08_nor_norsca", 151, 478, 422, 792, false},
+			{"force_diplomacy", "wh_dlc08_nor_norsca", "wh_main_nor_bjornling", "war"},
+			{"force_diplomacy", "wh_dlc08_nor_norsca", "wh2_main_emp_new_world_colonies", "peace"},
+		}
+	},
+}

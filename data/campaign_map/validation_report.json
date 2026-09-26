@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "atlas": "C:\\Users\\Owen\\OneDrive\\Funtime\\Computational Total War\\data\\campaign_map\\campaign_atlas__wh3__8.1.1.gpkg",
-  "bytes": 15458304,
+  "atlas": "C:\\Users\\Owen\\ctw-startpos-repair\\work\\start_positions\\candidate\\campaign_atlas__wh3__8.1.1.gpkg",
+  "bytes": 15536128,
   "metadata": {
     "title": "Total War: Warhammer III Immortal Empires Campaign Atlas",
     "game": "warhammer_3",
@@ -9,9 +9,10 @@
     "steam_build_id": "24237342",
     "campaign_key": "wh3_main_combi",
     "campaign_map_key": "wh3_main_combi_map_5",
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "generated_at_utc": "2026-08-30T00:24:34.945Z",
-    "geometry_model": "Exact colour-coded region raster plus derived centroids and raster-border adjacency; sea-region vectors unavailable"
+    "geometry_model": "Exact colour-coded region raster plus derived centroids and raster-border adjacency; sea-region vectors unavailable",
+    "starting_positions_audit_date": "2026-09-06"
   },
   "counts": {
     "regions": 641,
@@ -27,8 +28,8 @@
     "battle_maps": 1533,
     "battle_selection_rules": 1348,
     "map_assets": 4,
-    "source_files": 78,
-    "evidence": 5,
+    "source_files": 84,
+    "evidence": 6,
     "coverage": 7
   },
   "checks": [
@@ -93,6 +94,62 @@
       "passed": true,
       "actual": "24237342",
       "expected": "24237342",
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Primary army start coverage",
+      "passed": true,
+      "actual": 104,
+      "expected": 104,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Primary army start uniqueness",
+      "passed": true,
+      "actual": 104,
+      "expected": 104,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Primary army points complete",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "All starting generals retained",
+      "passed": true,
+      "actual": 109,
+      "expected": 109,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Explicit maritime primary points",
+      "passed": true,
+      "actual": 4,
+      "expected": 4,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Human partner position exceptions",
+      "passed": true,
+      "actual": 5,
+      "expected": 5,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Army start regions resolve",
+      "passed": true,
+      "actual": 0,
+      "expected": 0,
       "severity": "error",
       "note": ""
     },
@@ -243,7 +300,7 @@
     {
       "name": "Source provenance entries",
       "passed": true,
-      "actual": 78,
+      "actual": 84,
       "expected": "predicate",
       "severity": "error",
       "note": ""
@@ -269,5 +326,5 @@
   "warnings": [
     "Battle rules without an exposed group map: got 3; Some engine-resolved catchment groups do not expose a direct group-map row"
   ],
-  "validated_at_utc": "2026-08-30T00:24:42.855Z"
+  "validated_at_utc": "2026-09-07T06:02:37.831Z"
 }

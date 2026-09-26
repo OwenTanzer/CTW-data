@@ -1,0 +1,20 @@
+{
+  "army_starts": 109,
+  "atlas": "campaign_atlas__wh3__8.1.1.gpkg",
+  "audit_date": "2026-09-06",
+  "files": {
+    "army_starts.csv": "91174366c569afe1f6426aa2f55b6bf89c29d7991d65834c246f56d4a8dcef27",
+    "partner_overrides.csv": "2abdd7caa73d5597b4053f19dcf77f7981314529e25ec32af9dd1b2fbe5163d0",
+    "schema_inventory.csv": "fe7d88a8648ffc3e3237edf70ed5960074af8518f1e177c33892c100ac9c6297"
+  },
+  "patch": "8.1.1",
+  "primary_factions": 104,
+  "primary_view": "faction_army_start_reference",
+  "raw_characters": 308,
+  "schema": "starting_positions/schema_inventory.csv",
+  "schema_version": "1.1.0",
+  "source_manifest": "starting_positions/source_exports/source_manifest.json",
+  "source_startpos_sha256": "06b9babd8bf79ef623c6ea67d91362f6954793672347f1e86698a8c33d8e9b97",
+  "steam_build_id": 24237342,
+  "validation": "starting_positions/starting_positions_validation.json"
+}

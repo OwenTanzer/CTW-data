@@ -23,7 +23,8 @@
     "audit:effect-foundation": "node scripts/audit-effect-foundation.mjs",
     "extract:effect-source": "powershell.exe -NoProfile -File scripts/extract-effect-source.ps1",
     "validate:effect-source": "node scripts/validate-effect-source.mjs",
-    "test:effect-foundation": "node --test scripts/test-effect-foundation.mjs"
+    "test:effect-foundation": "node --test scripts/test-effect-foundation.mjs",
+    "test:campaign-starts": "python3 scripts/test_campaign_starts.py"
   },
   "license": "MIT"
 }

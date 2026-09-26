@@ -1,0 +1,34 @@
+{
+  "atlas_sha256": "99e7e858db93f15c864aa3f090d490f89ad969402095fb7f98bd2b7542cef407",
+  "campaign": "wh3_main_combi",
+  "characters": 308,
+  "coordinate_transform": {
+    "control_count": 1017,
+    "evidence_status": "analytical fit to all stored logical/world pairs; not movement costs",
+    "logical_x_scale": 0.6680333612656588,
+    "logical_y_scale": 0.7713784510084412,
+    "max_residual": 3.635854250205739e-05,
+    "odd_x_half_y_offset": true
+  },
+  "custom_script_sha256": "7d1e1b725146c0f2e1d19dbd18bb4fd5183d49c615b05430140a9b73be016df2",
+  "decompressed_sha256": "a62aae433e5e5aef7896f2a353474a0c85296f1960a7cb7079b82ff11d664ab0",
+  "factions": 104,
+  "files": {
+    "characters.csv": "5815b584ea158401754d32435a204850296caaeedf190784ec1eb7ccd7ef9366",
+    "custom_start_rules.json": "68971f93908d9a746a9adafed14112ef72d9e4e043201a90eac9bae77210821e",
+    "custom_starts_ie.lua": "737974f58ea9f4027ec760a1030de68d6939a8906cc45411321a7149cd53efc6",
+    "movement_script_index.json": "81e47d135609b2fee65158096df01f34fd32780633858fa3ec7f868019782c8c",
+    "settlement_controls.csv": "6d64fdc9beccace087ed3046c3f49f9bec33e18cca96d16bf86d32f6df941e9a"
+  },
+  "force_reverse_checks": 207,
+  "frontend_sha256": "7f099e51fab15e20b2db13776be5cb12ff7adbaa6bac31193c8627b96250c00f",
+  "map": "wh3_main_combi_map_5",
+  "patch": "8.1.1",
+  "primary_generals": 104,
+  "schema_version": 1,
+  "script_count": 373,
+  "stage": "binary startpos before scripts; human startup relocations separately preserved",
+  "startpos_bytes": 9237218,
+  "startpos_sha256": "06b9babd8bf79ef623c6ea67d91362f6954793672347f1e86698a8c33d8e9b97",
+  "steam_build_id": 24237342
+}

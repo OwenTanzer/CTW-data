@@ -1,0 +1,36 @@
+{
+  "army_starts": 109,
+  "binary_characters": 308,
+  "caveats": [
+    "Static source audit, not 5,356 runtime multiplayer campaign launches.",
+    "Khazrak human relocation depends on partner identity; consume campaign_start_rules when evaluating a pair.",
+    "Maritime points have no uniquely colored sea-region mask; nearest land is a descriptive anchor, not an owned start or travel route.",
+    "Secondary forces retained separately; pair distance uses the primary general.",
+    "Heroes are binary evidence only; scripted hero spawning and replacement are not a complete post-initialization agent census."
+  ],
+  "changed_primary_start_regions": [
+    "wh2_main_hef_yvresse",
+    "wh_dlc05_wef_wood_elves"
+  ],
+  "factions": 104,
+  "maritime_primary_factions": [
+    "wh2_dlc11_cst_noctilus",
+    "wh2_main_hef_yvresse",
+    "wh3_dlc27_hef_aislinn",
+    "wh_dlc08_nor_norsca"
+  ],
+  "missing_army_positions": 0,
+  "partner_overrides": 5,
+  "primary_generals": 104,
+  "schema_version": "1.1.0",
+  "settlement_controls": 569,
+  "status": "passed",
+  "transform": {
+    "control_count": 1017,
+    "evidence_status": "analytical fit to all stored logical/world pairs; not movement costs",
+    "logical_x_scale": 0.6680333612656588,
+    "logical_y_scale": 0.7713784510084412,
+    "max_residual": 3.635854250205739e-05,
+    "odd_x_half_y_offset": true
+  }
+}
