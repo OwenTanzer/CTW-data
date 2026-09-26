@@ -1,7 +1,8 @@
+import { readVictoryConfig, SOURCE_PATH } from "./victory-config.mjs";
 import { buildSnapshot } from "./snapshot-build.mjs";
 import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { createHash } from "node:crypto";
-import { readFile, mkdir, readdir, rm, stat } from "node:fs/promises";
+import { readFile, writeFile, mkdir, readdir, rm, stat } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { DatabaseSync } from "node:sqlite";
@@ -298,7 +299,7 @@ for (let y = 0; y < lookup.height; y++) {
   }
 }
 
-const victory = parseLuaVictoryTable(await readFile(VICTORY_SCRIPT, "utf8"));
+const victory = PATCH === "9.0" ? null : parseLuaVictoryTable(await readFile(VICTORY_SCRIPT, "utf8"));
 
 const db = new DatabaseSync(OUTPUT);
 db.exec(`
@@ -391,8 +392,9 @@ db.exec(`
   CREATE TABLE objectives (
     objective_key TEXT PRIMARY KEY, faction_key TEXT NOT NULL, victory_tier TEXT NOT NULL,
     objective_order INTEGER NOT NULL, objective_type TEXT NOT NULL, source_scope TEXT NOT NULL,
-    source_scope_key TEXT NOT NULL, FOREIGN KEY (faction_key) REFERENCES factions(faction_key)
+    source_scope_key TEXT NOT NULL, variant_key TEXT NOT NULL DEFAULT '', helper_key TEXT, FOREIGN KEY (faction_key) REFERENCES factions(faction_key)
   );
+  CREATE TABLE objective_boundaries (objective_key TEXT NOT NULL REFERENCES objectives(objective_key), boundary_order INTEGER NOT NULL, kind TEXT NOT NULL, detail TEXT NOT NULL, PRIMARY KEY(objective_key,boundary_order));
   CREATE TABLE objective_conditions (
     objective_key TEXT NOT NULL, condition_order INTEGER NOT NULL, condition_type TEXT NOT NULL,
     target_key TEXT, numeric_value REAL, raw_condition TEXT NOT NULL,
@@ -428,7 +430,7 @@ const metadataInsert = db.prepare("INSERT INTO metadata VALUES (?, ?)");
 for (const [key, value] of Object.entries({
   title: "Total War: Warhammer III Immortal Empires Campaign Atlas",
   game: GAME, patch: PATCH, steam_build_id: BUILD, campaign_key: CAMPAIGN, campaign_map_key: MAP_KEY,
-  schema_version: "1.0.0", generated_at_utc: new Date().toISOString(),
+  schema_version: PATCH === "9.0" ? "1.2.0" : "1.0.0", source_extracted_at_utc: SNAPSHOT.manifest.extracted_at_utc,
   geometry_model: "Exact colour-coded region raster plus derived centroids and raster-border adjacency; sea-region vectors unavailable",
 })) metadataInsert.run(key, value);
 
@@ -535,12 +537,13 @@ for (const row of battleMappings.filter((row) => row.battle_path === "wh3_main_c
   row.required_tile_upgrades || null, row.battle_group, "authoritative_area_rule_region_overlay_not_decoded",
 );
 
-function addObjective(factionKey, tier, order, objective, sourceScope, sourceKey) {
-  const key = `${factionKey}:${tier}:${String(order).padStart(3, "0")}`;
-  db.prepare("INSERT INTO objectives VALUES (?, ?, ?, ?, ?, ?, ?)").run(key, factionKey, tier, order, objective.type ?? "UNKNOWN", sourceScope, sourceKey);
+function addObjective(factionKey, tier, order, objective, sourceScope, sourceKey, variantKey = factionKey) {
+  const key = `${variantKey}:${tier}:${String(order).padStart(3, "0")}`;
+  db.prepare("INSERT INTO objectives VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)").run(key, factionKey, tier, order, objective.type ?? "UNKNOWN", sourceScope, sourceKey, variantKey, objective.helper ?? null);
+  for(const [i,b] of (objective.boundaries??[]).entries()) db.prepare("INSERT INTO objective_boundaries VALUES (?,?,?,?)").run(key,i+1,b.kind,JSON.stringify(b));
   const conditionInsert = db.prepare("INSERT INTO objective_conditions VALUES (?, ?, ?, ?, ?, ?)");
   const conditions = [...(objective.conditions ?? [])];
-  if (["CONSTRUCT_N_BUILDINGS_FROM", "CONSTRUCT_N_BUILDINGS_INCLUDING", "CONSTRUCT_N_OF_A_BUILDING"].includes(objective.type)) conditions.push(`faction ${factionKey}`);
+  if (PATCH !== "9.0" && ["CONSTRUCT_N_BUILDINGS_FROM", "CONSTRUCT_N_BUILDINGS_INCLUDING", "CONSTRUCT_N_OF_A_BUILDING"].includes(objective.type)) conditions.push(`faction ${factionKey}`);
   for (const [index, raw] of conditions.entries()) {
     const match = String(raw).match(/^(\S+)(?:\s+(.+))?$/);
     const type = match?.[1] ?? "unknown"; const target = match?.[2] ?? null;
@@ -548,6 +551,18 @@ function addObjective(factionKey, tier, order, objective, sourceScope, sourceKey
   }
 }
 
+if(PATCH === "9.0") {
+  const config=await readFile(path.join(SOURCE,SOURCE_PATH,'victory_objectives_config.lua'),'utf8');
+  const utils=await readFile(path.join(SOURCE,SOURCE_PATH,'victory_objectives_config_utils.lua'),'utf8');
+  const archaon=await readFile(path.join(SOURCE,'script/campaign/wh3_dlc29_archaon_narrative.lua'),'utf8');
+  const groupResolver=(helper,key)=>{
+    const column=helper.startsWith('province')?'r.province_key':'r.region_key';
+    const rows=db.prepare(`SELECT DISTINCT ${column} value FROM region_groups g JOIN regions r USING(region_key) WHERE g.region_group_key=? AND ${column} IS NOT NULL ORDER BY value`).all(key);
+    if(!rows.length)throw Error(`Empty configured region group ${key}`);return rows.map(r=>r.value);
+  };
+  for(const row of readVictoryConfig(config,utils,playableFactions.map(r=>r.faction),groupResolver,archaon))
+    addObjective(row.faction,row.tier,row.order,row,'active_9.0_config',row.variant,row.variant);
+} else {
 for (const start of playableFactions.sort((a, b) => a.faction.localeCompare(b.faction))) {
   const factionKey = start.faction;
   const subcultureKey = factionByKey.get(factionKey)?.subculture;
@@ -572,6 +587,8 @@ for (const start of playableFactions.sort((a, b) => a.faction.localeCompare(b.fa
     type: "OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS",
     conditions: ["total 272"],
   }, "shared", "create_domination_objective");
+}
+
 }
 
 const missionInsert = db.prepare("INSERT INTO mission_locations VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
@@ -611,7 +628,7 @@ for (const row of [
   ["region_identity", "db/campaign_map_regions_tables + db/regions_tables", "RPFM TSV extraction and stable-key join", "authoritative", `Current map revision filtered to ${MAP_KEY}`],
   ["region_raster", `campaign_maps/${MAP_KEY}/wh3_main_combi_lookup.tga`, "CA zero-based/top-left TGA decode joined to regions_tables colour", "authoritative", `Exact raster masks for ${uniqueRegionByColour.size} current regions; black sea/special records share one colour and remain individually non-spatial`],
   ["start_ownership", "db/start_pos_regions_tables + db/start_pos_factions_tables", "campaign and numeric faction-ID join", "authoritative", "Turn-one region ownership and capitals"],
-  ["objectives", "script/campaign/main_warhammer/victory_objectives.lua", "Parsed declarative victory_objectives_ie table and reproduced effective SP short/long composition plus shared domination", "authoritative", "Runtime-generated crisis and multiplayer branches excluded"],
+  ["objectives", PATCH === "9.0" ? "script/campaign/main_warhammer/victory_objectives_config.lua" : "script/campaign/main_warhammer/victory_objectives.lua", "Active 9.0 configured initial SP objectives, helper conditions and explicit lord variants; legacy composition only for 8.1.1", "authoritative", "Runtime scripted progress, unit-size scaling and Archaon later chosen-path objectives not flattened; see objective_boundaries. Rewards, crisis and multiplayer excluded"],
   ["battle_rules", "db/battle_catchment_override_*", "Area-rule and battle-group relational join", "authoritative_partial", "The native area-to-map rules are present; the binary catchment overlay connecting arbitrary campaign coordinates to areas is not decoded"],
 ]) evidenceInsert.run(...row);
 
@@ -622,7 +639,7 @@ for (const row of [
   ["playable factions", playableFactions.length >= 100 ? "complete" : "review", playableFactions.length, "All start_pos_factions rows marked playable for wh3_main_combi"],
   ["region raster geometry", "partial", db.prepare("SELECT COUNT(*) count FROM region_points").get().count, "Exact masks/centroids/adjacency for 571 uniquely coloured regions; 70 black sea/special-region rows share one mask and lack individual shapes"],
   ["starting forces and agents", "unavailable", 0, "Not exposed by the decoded DB start-position relations in this source pass"],
-  ["victory objectives", "complete_for_scripted_short_long_domination", db.prepare("SELECT COUNT(*) count FROM objectives").get().count, "Effective single-player short, long, and shared domination objectives from victory_objectives_ie"],
+  ["victory objectives", "configured_initial_short_long_domination_with_explicit_boundaries", db.prepare("SELECT COUNT(*) count FROM objectives").get().count, "Initial single-player objective definitions from active configuration; filter variant_key and read objective_boundaries before interpretation"],
   ["battle-map selection", "partial", db.prepare("SELECT COUNT(*) count FROM battle_selection_rules").get().count, "Rules and map groups present; exact campaign-coordinate catchment overlay remains binary"],
 ]) coverageInsert.run(...row);
 
@@ -642,7 +659,7 @@ db.exec(`
   FROM factions f LEFT JOIN regions r ON r.region_key = f.capital_region_key
   WHERE f.playable = 1;
   CREATE VIEW objective_reference AS
-  SELECT o.objective_key, o.faction_key, f.name AS faction_name, o.victory_tier, o.objective_order,
+  SELECT o.objective_key, o.faction_key, f.name AS faction_name, o.victory_tier, o.objective_order, o.variant_key, o.helper_key,
          o.objective_type, o.source_scope, o.source_scope_key,
          c.condition_order, c.condition_type, c.target_key, c.numeric_value, c.raw_condition
   FROM objectives o JOIN factions f USING (faction_key)
@@ -663,12 +680,13 @@ db.exec(`
   LEFT JOIN battle_maps bm USING (battle_map_key);
 `);
 
-const attributeTables = ["metadata", "campaigns", "factions", "provinces", "regions", "region_adjacency", "region_groups", "strategic_nodes", "strategic_links", "battle_areas", "battle_groups", "battle_maps", "battle_group_maps", "battle_selection_rules", "objectives", "objective_conditions", "mission_locations", "map_assets", "source_files", "evidence", "coverage"];
+const attributeTables = ["metadata", "campaigns", "factions", "provinces", "regions", "region_adjacency", "region_groups", "strategic_nodes", "strategic_links", "battle_areas", "battle_groups", "battle_maps", "battle_group_maps", "battle_selection_rules", "objectives", "objective_conditions", "objective_boundaries", "mission_locations", "map_assets", "source_files", "evidence", "coverage"];
 const contentInsert = db.prepare("INSERT INTO gpkg_contents(table_name, data_type, identifier, description, min_x, min_y, max_x, max_y, srs_id) VALUES (?, 'attributes', ?, ?, NULL, NULL, NULL, NULL, NULL)");
 for (const tableName of attributeTables) contentInsert.run(tableName, tableName, `Campaign atlas ${tableName}`);
 db.prepare("INSERT INTO gpkg_contents(table_name, data_type, identifier, description, min_x, min_y, max_x, max_y, srs_id) VALUES ('region_points', 'features', 'region_points', 'Derived centroids of uniquely coloured Immortal Empires region masks', ?, ?, ?, ?, 100000)").run(bounds.minX, bounds.minY, bounds.maxX, bounds.maxY);
 db.prepare("INSERT INTO gpkg_geometry_columns VALUES ('region_points', 'geom', 'POINT', 100000, 0, 0)").run();
 
+db.prepare("UPDATE gpkg_contents SET last_change = ?").run(SNAPSHOT.manifest.extracted_at_utc);
 db.exec("PRAGMA optimize; VACUUM;");
 const integrity = db.prepare("PRAGMA integrity_check").get().integrity_check;
 if (integrity !== "ok") throw new Error(`SQLite integrity check failed: ${integrity}`);
@@ -676,5 +694,21 @@ const summary = Object.fromEntries([
   "regions", "provinces", "factions", "region_points", "region_adjacency", "objectives",
   "objective_conditions", "battle_maps", "battle_selection_rules", "strategic_nodes", "strategic_links",
 ].map((name) => [name, db.prepare(`SELECT COUNT(*) count FROM ${name}`).get().count]));
+if (PATCH === "9.0") {
+  const tables = ["objectives", "objective_conditions", "objective_boundaries", "objective_reference"];
+  const schema = Object.fromEntries(tables.map(name => [name, db.prepare(`PRAGMA table_info(${name})`).all()]));
+  const manifest = {
+    schema_version: "1.2.0", patch: PATCH, steam_build_id: BUILD,
+    source_manifest: "objective_source_exports/source_manifest.json",
+    schema: "objective_schema.json", primary_view: "objective_reference",
+    objectives: summary.objectives, conditions: summary.objective_conditions,
+    faction_count: playableFactions.length,
+    variant_count: db.prepare("SELECT COUNT(DISTINCT variant_key) n FROM objectives").get().n,
+    boundaries: db.prepare("SELECT kind, COUNT(*) count FROM objective_boundaries GROUP BY kind ORDER BY kind").all(),
+    scope: "Configured initial single-player short/long/domination objectives; select variant_key and read objective_boundaries. Rewards, scripted listener state, crisis and multiplayer excluded."
+  };
+  await writeFile(path.join(path.dirname(OUTPUT), "objective_schema.json"), JSON.stringify(schema, null, 2) + "\n");
+  await writeFile(path.join(path.dirname(OUTPUT), "objective_manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
+}
 db.close();
 console.log(JSON.stringify({ output: OUTPUT, bytes: (await stat(OUTPUT)).size, ...summary }, null, 2));

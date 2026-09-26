@@ -2,9 +2,9 @@
 
 - Status: **passed**
 - Atlas: `campaign_atlas__wh3__9.0.gpkg`
-- Size: 16,293,888 bytes
+- Size: 16,941,056 bytes
 - Regions / provinces / playable factions: 644 / 215 / 109
-- Objectives / conditions: 772 / 2458
+- Objectives / conditions: 1175 / 4074
 - Battle maps / IE selection rules: 1645 / 2750
 
 ## Checks
@@ -34,6 +34,7 @@
 - PASS: short objectives cover every playable faction — 109
 - PASS: long objectives cover every playable faction — 109
 - PASS: domination objectives cover every playable faction — 109
+- PASS: Active source objectives, conditions, variants and boundaries reconcile — 1175
 - PASS: Objectives have types — 0
 - PASS: Region objective targets resolve — 0
 - PASS: Province objective targets resolve — 0
@@ -42,7 +43,7 @@
 - WARN: Battle rules without an exposed group map — 3 (Some engine-resolved catchment groups do not expose a direct group-map row)
 - PASS: Embedded map assets — 4
 - PASS: Embedded asset hash coverage — 4
-- PASS: Source provenance entries — 80
+- PASS: Source provenance entries — 83
 - PASS: Source provenance hashes — 0
 - PASS: GeoPackage region feature registration — 1
 

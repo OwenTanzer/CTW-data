@@ -97,6 +97,11 @@ const PACK_FILES = [
   `campaign_maps/${MAP_KEY}/camera_heightmap.png`,
   `campaign_maps/${MAP_KEY}/display/borders/borders.pbd`,
   "script/campaign/main_warhammer/victory_objectives.lua",
+  ...(sourceContext.profile.patch === "9.0" ? [
+    "script/campaign/main_warhammer/victory_objectives_config.lua",
+    "script/campaign/main_warhammer/victory_objectives_config_utils.lua",
+    "script/campaign/wh3_dlc29_archaon_narrative.lua",
+  ] : []),
 ];
 
 function parseSse(text) {

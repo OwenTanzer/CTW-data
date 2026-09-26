@@ -63,3 +63,7 @@ source evidence, not observed runtime results or movement-distance estimates.
 ## Historical guide boundary
 
 The race guides retain their 8.1.1 audit scope. Read `data/faction_guides/COMPATIBILITY_9.0.md` first; do not treat their campaign mechanics as freshly verified 9.0 behavior. For units, skills, buildings, technology selectors and starting positions, use the current database owners. Unit ability `culture_key` values must be retained when joining; `*` is the source wildcard.
+
+## Victory objectives
+
+Use `objective_reference` with `variant_key`; Vlad and Isabella have separate requirements. Read `data/campaign_map/objective_manifest.json` and `objective_boundaries` before interpreting victory conditions. These are initial configured 9.0 objectives; scripted completion, runtime unit-size scaling and Archaon later path additions are explicit boundaries. Rewards, crisis and multiplayer objectives remain out of scope.

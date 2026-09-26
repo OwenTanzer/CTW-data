@@ -146,8 +146,8 @@ def build(args):
         FROM campaign_army_starts a JOIN factions f USING(faction_key)
         LEFT JOIN regions r ON a.start_region_key=r.region_key WHERE a.is_primary=1''')
     # Atlas metadata and provenance are generated along with the candidate.
-    db.execute("UPDATE metadata SET value='1.1.0' WHERE key='schema_version'")
-    db.execute("INSERT OR REPLACE INTO metadata VALUES ('starting_positions_audit_date','2026-09-06')")
+    db.execute("UPDATE metadata SET value='1.1.0' WHERE key='schema_version' AND value='1.0.0'")
+    db.execute("INSERT OR REPLACE INTO metadata VALUES ('starting_positions_audit_date',?)", ('2026-09-26' if patch == '9.0' else '2026-09-06',))
     db.execute('INSERT OR REPLACE INTO source_files VALUES (?,?,?,?)',('campaigns/wh3_main_combi/startpos.esf',manifest['startpos_sha256'],manifest['startpos_bytes'],'binary army start evidence'))
     for name,sha in manifest['files'].items():
         db.execute('INSERT OR REPLACE INTO source_files VALUES (?,?,?,?)',('starting_positions/source_exports/'+name,sha,(source/name).stat().st_size,'starting position evidence'))

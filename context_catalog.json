@@ -80,6 +80,13 @@
         "primary_view": "faction_army_start_reference",
         "partner_overrides": "campaign_start_partner_overrides",
         "scope": "Starting positions only; not the full atlas schema. Raw evidence is for provenance checks, not default lookup."
+      },
+      "objectives": {
+        "manifest": "data/campaign_map/objective_manifest.json",
+        "schema": "data/campaign_map/objective_schema.json",
+        "source_manifest": "data/campaign_map/objective_source_exports/source_manifest.json",
+        "primary_view": "objective_reference",
+        "scope": "Initial single-player configured objectives. Filter variant_key (Vlad/Isabella differ), then read objective_boundaries for runtime dependencies; not complete effective runtime objectives."
       }
     },
     "faction_guides": {

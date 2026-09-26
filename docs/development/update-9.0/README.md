@@ -20,7 +20,7 @@ Updated the upstream RPFM schema after six table types failed decoding. Raw bina
 
 Retained the existing military-group union policy; added Undead Legions and the changed Archaon/Festus/Glottkin groups. Shared character owners remain retrieval choices, not exclusive recruitment claims. Two reviewed subtype pairs share complete trees: Gotrek lord/hero and generic/named Handmaidens. Other duplicate structures still fail.
 
-The old atlas extraction still requested map revision 5. Binary starting-position verification caught the mismatch; revision 7 was freshly extracted and rebuilt. All 572 settlement controls pass against its raster. Corrected effective victory composition and required faction conditions on construction objectives from the shipped Lua.
+The old atlas extraction still requested map revision 5. Binary starting-position verification caught the mismatch; revision 7 was freshly extracted and rebuilt. All 572 settlement controls pass against its raster. The initial refresh incorrectly composed obsolete victory objectives. The PR #17 repair replaces that composition with the active 9.0 configuration: 1,175 initial objectives, 4,074 conditions and separate Vlad/Isabella variants. See `pr17-repair.md` for source boundaries and validation.
 
 ## Evidence limits
 

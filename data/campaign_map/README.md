@@ -8,7 +8,7 @@
 - DB scenario ownership and capital relations, with 109 playable faction identities; capital geometry is reported separately in the atlas. Capital placement is not an army start.
 - Actual binary primary-general positions for all 109 factions, 118 generals including secondary forces, and separately evaluated human startup relocations. See [starting positions](starting_positions/README.md).
 - Exact color-coded raster masks, derived centroids, and raster-border adjacency for 574 regions.
-- 772 effective single-player short/long/domination victory objectives and 2,458 typed conditions for every playable faction.
+- 1,175 configured initial single-player short/long/domination victory objectives and 4,074 typed conditions across 109 factions / 110 variants. Vlad and Isabella retain distinct lord selectors.
 - 1,645 battle-map records and 2,750 Immortal Empires catchment-selection rules.
 - Route, area-of-interest, and teleportation nodes and links.
 - Embedded region lookup, overview, height, and native-border assets.
@@ -22,7 +22,7 @@ The `coverage` and `evidence` tables are part of the atlas. Known boundaries are
 - `faction_army_start_reference`, `campaign_army_starts`, `campaign_start_partner_overrides` — primary human start points, all generals, and partner-specific changes; separate from the preserved capital view.
 - `region_points`, `region_adjacency`, `region_groups` — spatial and topological reference.
 - `strategic_nodes`, `strategic_links` — routes, areas of interest, and teleportation.
-- `objectives`, `objective_conditions` — relational short, long, and domination victory requirements with no list-valued cells.
+- `objectives`, `objective_conditions`, `objective_boundaries` — initial short, long, and domination requirements. Filter `variant_key`; read per-objective runtime boundaries. Conditions remain ordered relational rows.
 - `battle_areas`, `battle_groups`, `battle_maps`, `battle_selection_rules` — the campaign-to-battle bridge.
 - `map_assets`, `source_files`, `evidence`, `coverage` — embedded assets, hashes, provenance, and limitations.
 - `region_reference`, `faction_start_reference`, `objective_reference`, `region_objective_pressure`, `battle_context_reference` — denormalized query views.
@@ -54,6 +54,14 @@ const neighbors = atlas.prepare(`
 );
 ```
 
+## Victory objective interpretation
+
+Read `objective_manifest.json` and `objective_schema.json`. The active 9.0 configuration replaces the obsolete generic/subculture composition. `variant_key` is normally the faction key; for `wh_main_vmp_schwartzhafen`, select `wh_dlc04_vmp_vlad_con_carstein` or `wh_pro02_vmp_isabella_von_carstein`. Never combine their requirements into a single victory.
+
+The bounded parser does not execute Lua. It preserves helper-generated conditions, including zero initial counts. `objective_boundaries` records scripted completion listeners whose state is not evaluated, runtime unit-size multiplication (the numeric value stays null), and Archaon's later chosen-path additions. This dataset represents initial configured requirements, not every subsequent effective campaign objective. Rewards, crisis simulation and multiplayer objectives remain excluded.
+
+Compact verified source evidence lives in `objective_source_exports/`; use it for audits, not normal retrieval. Its manifest includes the active configuration, helper definitions, Archaon dependency and the legacy dispatch bypass. The validator reconciles every objective, condition, variant and boundary; independent mutation tests reject the old generic output and omitted requirements.
+
 ## Rebuild and validation
 
 Run from the repository root:
@@ -61,9 +69,9 @@ Run from the repository root:
 ```powershell
 node scripts/extract-campaign-atlas-source.mjs work/source_campaign_atlas__wh3__9.0 9.0
 node scripts/build-campaign-atlas.mjs work/source_campaign_atlas__wh3__9.0 work/generated_campaign_atlas__wh3__9.0/campaign_atlas__wh3__9.0.gpkg
-node scripts/validate-campaign-atlas.mjs work/generated_campaign_atlas__wh3__9.0/campaign_atlas__wh3__9.0.gpkg work/generated_campaign_atlas__wh3__9.0
+node scripts/validate-campaign-atlas.mjs work/generated_campaign_atlas__wh3__9.0/campaign_atlas__wh3__9.0.gpkg work/generated_campaign_atlas__wh3__9.0 work/source_campaign_atlas__wh3__9.0
 ```
 
 Only install the generated candidate under `data/campaign_map/` after validation reports `passed` with no errors.
 
-The command above regenerates the original base geography (schema 1.0). Apply the [starting-position enrichment](starting_positions/README.md) before promoting a schema 1.1 candidate.
+The command above generates schema 1.2 geography and active objective definitions, plus `objective_manifest.json` and `objective_schema.json`. Apply the [starting-position enrichment](starting_positions/README.md) before promotion; it preserves schema 1.2. Install the matching objective evidence and metadata with the validated atlas. Run `npm run test:victory` against the installed snapshot.

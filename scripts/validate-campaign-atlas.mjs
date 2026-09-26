@@ -1,3 +1,4 @@
+import { validateVictoryConfig } from "./validate-victory-config.mjs";
 import { snapshotProfile } from "./snapshot-source.mjs";
 import { DatabaseSync } from "node:sqlite";
 import { mkdir, stat, writeFile } from "node:fs/promises";
@@ -39,7 +40,7 @@ check("Campaign key", metadata.campaign_key, "wh3_main_combi");
 check("Campaign map revision", metadata.campaign_map_key, current ? "wh3_main_combi_map_7" : "wh3_main_combi_map_5");
 check("Patch", metadata.patch, profile.patch);
 check("Steam build", metadata.steam_build_id, profile.steam_build_id);
-if (metadata.schema_version === "1.1.0") {
+if (scalar("SELECT COUNT(*) count FROM sqlite_master WHERE name='campaign_army_starts'").count) {
   check("Primary army start coverage", scalar("SELECT COUNT(*) count FROM faction_army_start_reference").count, factionCount);
   check("Primary army start uniqueness", scalar("SELECT COUNT(DISTINCT faction_key) count FROM faction_army_start_reference").count, factionCount);
   check("Primary army points complete", scalar("SELECT COUNT(*) count FROM faction_army_start_reference WHERE world_x IS NULL OR world_y IS NULL").count, 0);
@@ -66,6 +67,10 @@ check("Raster adjacency relations", counts.region_adjacency, current ? 1316 : 13
 
 for (const tier of ["short", "long", "domination"]) {
   check(`${tier} objectives cover every playable faction`, scalar("SELECT COUNT(DISTINCT faction_key) count FROM objectives WHERE victory_tier = ?", [tier]).count, factionCount);
+}
+if(current) {
+  try { check("Active source objectives, conditions, variants and boundaries reconcile",await validateVictoryConfig(db,path.resolve(ROOT,process.argv[4]??"data/campaign_map/objective_source_exports")),1175); }
+  catch(error) { check("Active source objectives, conditions, variants and boundaries reconcile",String(error),"1175 configured objectives match"); }
 }
 check("Objectives have types", scalar("SELECT COUNT(*) count FROM objectives WHERE objective_type IS NULL OR objective_type = 'UNKNOWN'").count, 0);
 check("Region objective targets resolve", scalar("SELECT COUNT(*) count FROM objective_conditions c WHERE c.condition_type = 'region' AND NOT EXISTS (SELECT 1 FROM regions r WHERE r.region_key = c.target_key)").count, 0);

@@ -1,5 +1,43 @@
 {
-  "atlas_sha256": "c8b1b5f9b45e0fd141fedba923ecdbe092836ed7970a030b84894aea77a03da4",
+  "atlas_rebind": {
+    "compared_prior_atlas_sha256": "0f2d4765193ef501132e74293724c87c569a66f99da551e517d325943a8b0907",
+    "dependency_checks": {
+      "campaigns": {
+        "rows": 1,
+        "sha256": "734b666a7305f61c863e28f15c93426c3ae333ed828b2a3600d1bf3ba52bf378"
+      },
+      "factions": {
+        "rows": 560,
+        "sha256": "8ea3ea4aef9b06add874f5e446a9befca8130d8c4f8cb73352767f9dd0109a26"
+      },
+      "map_assets": {
+        "rows": 4,
+        "sha256": "c2f2dc0f2feeb638d5f83217b8f2b591908a8b9db8c8543e8301b2bdb5b9794e"
+      },
+      "provinces": {
+        "rows": 215,
+        "sha256": "9101d4014adc3fe1e08929cd5344bdb6eb65be1938cbadda489d11e7abca1c00"
+      },
+      "region_points": {
+        "rows": 574,
+        "sha256": "785237d5c474213c37916fbc896480434f1de81cfca002215d9ca81f2db92646"
+      },
+      "regions": {
+        "rows": 644,
+        "sha256": "1cebaada3a9388b497f92c665ee478381ae0280b5357f60efd3a4ceab1323aef"
+      }
+    },
+    "original_extraction_atlas_sha256": "c8b1b5f9b45e0fd141fedba923ecdbe092836ed7970a030b84894aea77a03da4",
+    "reason": "9.0 active victory-objective repair; geographic/startpos evidence unchanged",
+    "unchanged_source_files": {
+      "characters.csv": "d71432a8109ed3113dacae18e3bc45148cf027c4fcba964ccde0c6193e4c3912",
+      "custom_start_rules.json": "b93966462d08047c816a5a80b413c4b8a883990ee43d122be552ce7456ee3551",
+      "custom_starts_ie.lua": "06180f6322ad9418b846f28dae82bb6f3864ff9af25af8b983213ea64ff11881",
+      "movement_script_index.json": "fabd5a5e6fd701a9e0ff7b65ebb65b35d0f28142d66ee717a145163bd7cf7937",
+      "settlement_controls.csv": "45a1f504c1036918e75503a8d84257fc617017e7bcfcfe7fb68b9d9ab887bd90"
+    }
+  },
+  "atlas_sha256": "8f05b661cd033dd5c260d8ccbe7e65966355240bdc96da0905338094f991ebbb",
   "campaign": "wh3_main_combi",
   "characters": 326,
   "coordinate_transform": {
