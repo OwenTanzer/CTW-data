@@ -82,7 +82,7 @@ for (const p of s.playable) {
     {
       ...common,
       record_type: "faction",
-      classification: sets.length ? "has_database_tree" : "no_database_tree",
+      classification: p.faction.key === "wh3_dlc29_nag_host_of_nagash" ? "empty_database_tree_feature_progression_out_of_scope" : sets.length ? "has_database_tree" : "no_database_tree",
       ...provenance(s, "factions", p.faction),
     },
   ];
@@ -124,10 +124,10 @@ for (const p of s.playable) {
         set_culture_key: set.culture,
         set_subculture_key: set.subculture,
         set_campaign_key: set.campaign_key,
-        variant_status: set.faction_key
+        variant_status: set.key === "nag_tech" ? "empty_source_node_set" : set.faction_key
           ? "active_faction_override"
           : "active_generic_tree",
-        applicability_basis: set.faction_key
+        applicability_basis: set.key === "nag_tech" ? "Source selector has zero technology nodes; Black Pyramid progression is not normalized as an ordinary research tree." : set.faction_key
           ? "Explicit faction selector replaces the reviewed generic fallback; see source_exports/node_set_precedence.json."
           : "Matching source culture/subculture selector with no overriding faction assignment.",
         node_set_name: loc("technology_node_sets_localised_name_" + set.key),
@@ -536,7 +536,7 @@ const manifest = {
     await readFile(path.join(source, "source_manifest.json")),
   ),
   faction_files: s.playable.length,
-  races: 24,
+  races: new Set(s.playable.map(p => p.race.slug)).size,
   node_set_variants: sum("node_set_variants"),
   unique_node_sets: new Set(
     allRows
@@ -599,7 +599,7 @@ await writeFile(
   JSON.stringify(classifications, null, 2) + "\n",
 );
 const readme = await readFile(
-  new URL("./technology-readme.md", import.meta.url),
+  new URL(CONTEXT.patch === "9.0" ? "./technology-readme-9.0.md" : "./technology-readme.md", import.meta.url),
   "utf8",
 );
 await writeFile(

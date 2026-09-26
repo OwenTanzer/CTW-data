@@ -82,6 +82,10 @@ def build(args):
     source=Path(args.source);output=Path(args.output)
     if output.resolve()==Path(args.atlas).resolve():raise ValueError('Build into work candidate, not source atlas')
     manifest=json.loads((source/'source_manifest.json').read_text())
+    patch = manifest['patch']
+    build_id, expected_controls = {'8.1.1': (24237342, 569), '9.0': (25507028, 572)}[patch]
+    if manifest['steam_build_id'] != build_id: raise ValueError('Mixed start evidence snapshot')
+    if digest(Path(args.atlas).read_bytes()) != manifest['atlas_sha256']: raise ValueError('Base atlas differs from extraction evidence')
     for name,expected in manifest['files'].items():
         if digest((source/name).read_bytes())!=expected:raise ValueError('Source hash mismatch '+name)
     raw=list(csv.DictReader((source/'characters.csv').open()))
@@ -90,7 +94,7 @@ def build(args):
         for k in ('world_x','world_y'):r[k]=float(r[k])
     rules=json.loads((source/'custom_start_rules.json').read_text())
     output.mkdir(parents=True,exist_ok=True)
-    target=output/'campaign_atlas__wh3__8.1.1.gpkg'
+    target=output/f'campaign_atlas__wh3__{patch}.gpkg'
     shutil.copyfile(args.atlas,target)
     db=sqlite3.connect(target);db.row_factory=sqlite3.Row
     playable={r[0] for r in db.execute('select faction_key from factions where playable=1')}
@@ -98,7 +102,7 @@ def build(args):
     raster=Raster(db)
     controls=list(csv.DictReader((source/'settlement_controls.csv').open()))
     matches=sum(raster.region(float(r['world_x']),float(r['world_y']))==r['region_key'] for r in controls)
-    if matches!=len(controls) or matches!=569:raise ValueError('World-to-atlas settlement controls failed')
+    if matches!=len(controls) or matches!=expected_controls:raise ValueError('World-to-atlas settlement controls failed')
     output_rows=[]
     for key in sorted(playable):
         human=human_positions(raw,rules,{key},manifest['coordinate_transform'])
@@ -147,8 +151,8 @@ def build(args):
     db.execute('INSERT OR REPLACE INTO source_files VALUES (?,?,?,?)',('campaigns/wh3_main_combi/startpos.esf',manifest['startpos_sha256'],manifest['startpos_bytes'],'binary army start evidence'))
     for name,sha in manifest['files'].items():
         db.execute('INSERT OR REPLACE INTO source_files VALUES (?,?,?,?)',('starting_positions/source_exports/'+name,sha,(source/name).stat().st_size,'starting position evidence'))
-    db.execute('INSERT OR REPLACE INTO coverage VALUES (?,?,?,?)',('starting forces and agents','primary_armies_complete_static_scripts',len(output_rows),'104 primary generals; 109 generals including secondary forces. Raw 308-character evidence; hero replacements not a post-init census.'))
-    db.execute('INSERT OR REPLACE INTO evidence VALUES (?,?,?,?,?)',('army_starts','campaigns/wh3_main_combi/startpos.esf + campaign custom starts','ESF CHARACTER / FAMILY_MEMBER / MILITARY_FORCE joins; raster point lookup; literal human startup rules','source_backed_static','569/569 settlement controls. Four human primary starts have no distinct maritime mask. Partner-dependent Khazrak rule retained. Runtime not observed.'))
+    db.execute('INSERT OR REPLACE INTO coverage VALUES (?,?,?,?)',('starting forces and agents','primary_armies_complete_static_scripts',len(output_rows),f"{len(playable)} primary generals; {len(output_rows)} generals including secondary forces. Raw {len(raw)}-character evidence; hero replacements not a post-init census."))
+    db.execute('INSERT OR REPLACE INTO evidence VALUES (?,?,?,?,?)',('army_starts','campaigns/wh3_main_combi/startpos.esf + campaign custom starts','ESF CHARACTER / FAMILY_MEMBER / MILITARY_FORCE joins; raster point lookup; literal human startup rules','source_backed_static',f'{matches}/{len(controls)} settlement controls. Maritime starts have no distinct mask. Partner-dependent rules retained. Runtime not observed.'))
     for table in ('campaign_army_starts','campaign_start_rules','campaign_start_partner_overrides'):
         db.execute("INSERT OR REPLACE INTO gpkg_contents(table_name,data_type,identifier,description,last_change) VALUES (?,'attributes',?,?,'2026-09-07T00:00:00.000Z')",(table,table,'Army start evidence and static human startup rules'))
     schema=[]
@@ -163,14 +167,14 @@ def build(args):
         maritime_primary_factions=[r['faction_key'] for r in primary if not r['start_region_key']],
         changed_primary_start_regions=[r['faction_key'] for r in primary if r['start_region_key']!=r['binary_region_key']],
         transform=manifest['coordinate_transform'],
-        caveats=['Static source audit, not 5,356 runtime multiplayer campaign launches.',
+        caveats=['Static source audit; multiplayer campaigns were not launched.',
                  'Khazrak human relocation depends on partner identity; consume campaign_start_rules when evaluating a pair.',
                  'Maritime points have no uniquely colored sea-region mask; nearest land is a descriptive anchor, not an owned start or travel route.',
                  'Secondary forces retained separately; pair distance uses the primary general.',
                  'Heroes are binary evidence only; scripted hero spawning and replacement are not a complete post-initialization agent census.'])
     write_json(output/'starting_positions_validation.json',report)
-    write_json(output/'dataset_manifest.json',dict(schema_version='1.1.0',patch='8.1.1',steam_build_id=24237342,
-        atlas='campaign_atlas__wh3__8.1.1.gpkg',primary_view='faction_army_start_reference',audit_date='2026-09-06',
+    write_json(output/'dataset_manifest.json',dict(schema_version='1.1.0',patch=patch,steam_build_id=build_id,
+        atlas=target.name,primary_view='faction_army_start_reference',audit_date='2026-09-26' if patch == '9.0' else '2026-09-06',
         source_manifest='starting_positions/source_exports/source_manifest.json',source_startpos_sha256=manifest['startpos_sha256'],
         raw_characters=len(raw),army_starts=len(output_rows),primary_factions=len(primary),
         schema='starting_positions/schema_inventory.csv',validation='starting_positions/starting_positions_validation.json',

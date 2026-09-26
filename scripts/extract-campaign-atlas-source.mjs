@@ -14,6 +14,8 @@ const OUTPUT = path.resolve(ROOT, process.argv[2] ?? "work/source_campaign_atlas
 if (process.argv[3] && process.argv[3] !== "8.1.1" && !process.argv[2]) throw Error("Explicit candidate destination required");
 const sourceContext = await beginSource(OUTPUT, ROOT, process.argv[3] ?? "8.1.1");
 
+const MAP_KEY = sourceContext.profile.patch === "9.0" ? "wh3_main_combi_map_7" : "wh3_main_combi_map_5";
+
 const TABLES = [
   "campaign_map_playable_areas_tables",
   "campaign_map_regions_tables",
@@ -90,10 +92,10 @@ const LOC_FILES = [
 ];
 
 const PACK_FILES = [
-  "campaign_maps/wh3_main_combi_map_5/wh3_main_combi_lookup.tga",
-  "campaign_maps/wh3_main_combi_map_5/prebattle_map.png",
-  "campaign_maps/wh3_main_combi_map_5/camera_heightmap.png",
-  "campaign_maps/wh3_main_combi_map_5/display/borders/borders.pbd",
+  `campaign_maps/${MAP_KEY}/wh3_main_combi_lookup.tga`,
+  `campaign_maps/${MAP_KEY}/prebattle_map.png`,
+  `campaign_maps/${MAP_KEY}/camera_heightmap.png`,
+  `campaign_maps/${MAP_KEY}/display/borders/borders.pbd`,
   "script/campaign/main_warhammer/victory_objectives.lua",
 ];
 

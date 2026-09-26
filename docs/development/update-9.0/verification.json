@@ -1,0 +1,17 @@
+{
+  "patch": "9.0",
+  "steam_build_id": "25507028",
+  "validation": "passed",
+  "commands": {
+    "npm run validate": "passed",
+    "npm run test:technologies": "8 corruption cases passed",
+    "npm run test:validation-text": "passed",
+    "npm run test:snapshot": "3 tests passed",
+    "npm run test:effect-foundation": "passed",
+    "python scripts/test_campaign_starts.py": "13 tests passed"
+  },
+  "technology_final_candidate": "work/generated_technology_9.0_release",
+  "technology_final_validation": "passed with two independent byte-identical rebuilds",
+  "cross_owner_audit": "connections-and-delta.json",
+  "runtime_gameplay_observed": false
+}

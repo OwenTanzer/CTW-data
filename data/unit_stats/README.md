@@ -5,8 +5,8 @@ This directory is the versioned, reproducible data layer for computational analy
 ## Baseline
 
 - Game: `warhammer_3`
-- Patch: `8.1.1`
-- Steam build ID: `24237342`
+- Patch: `9.0`
+- Steam build ID: `25507028`
 - Unit scale: `ultra`
 - Rank: `0`
 - Context: unmodified custom-battle base stats
@@ -15,10 +15,10 @@ This directory is the versioned, reproducible data layer for computational analy
 ## Directory layout
 
 - `source_exports/` — untouched schema-decoded exports from the installed game packs, plus `source_manifest.json` with byte counts and SHA-256 hashes.
-- `normalized/` — 24 analysis-ready race CSVs, each containing the deduplicated union of its core and configured faction-variant military groups.
+- `normalized/` — 25 analysis-ready race CSVs, each containing the deduplicated union of its core and configured faction-variant military groups.
 - `lookups/` — one-to-many components, weapons, projectiles, explosions, abilities, attributes, contact effects, roster permissions, mount variants, and data-quality flags.
 - `archive/` — previous extracts retained unchanged for comparison and recovery.
-- `schema_inventory__v3.csv` — the authoritative dataset-to-column mapping and column order for every generated CSV.
+- `schema_inventory__v4.csv` — the authoritative dataset-to-column mapping and column order for every generated CSV.
 - `dataset_manifest.json` — schema version, source path, row counts, and build timestamp.
 - `audit_report.md` and `audit_report.json` — the most recent validation results.
 
@@ -36,11 +36,11 @@ Do not edit `source_exports/` by hand. Regenerate normalized and lookup files fr
 - Lists are never stored in cells. One-to-many relationships belong in `lookups/`.
 - Derived outputs such as hit chance, AP ratio, expected damage, or DPS are calculated downstream and are not stored here.
 
-The full header inventory is machine-readable in `schema_inventory__v3.csv`; that file is generated from the same column definitions as the CSV writers and is checked against every output header during validation.
+The full header inventory is machine-readable in `schema_inventory__v4.csv`; that file is generated from the same column definitions as the CSV writers and is checked against every output header during validation.
 
 ## Normalized schema v3 semantics
 
-The 24 files in `normalized/` retain convenient one-row-per-unit statistics, but the following fields have precise meanings:
+The 25 files in `normalized/` retain convenient one-row-per-unit statistics, but the following fields have precise meanings:
 
 - `tactical_category` is the canonical coarse body-plan category for comparison and retrieval: `character`, `artillery`, `monster`, `cavalry`, or `infantry` where those categories apply. It is a curated analytical semantic, not a verbatim Creative Assembly field. Units whose tactical body plan conflicts with an internal database label are deliberately normalized here; missile hunting packs, Cygors, and ranged Soul Grinders are monsters.
 - `source_unit_class` and `source_caste` preserve Creative Assembly's raw `land_units.class` and `main_units.caste` values for provenance. Do not use them as the primary tactical ontology.
@@ -51,7 +51,7 @@ The 24 files in `normalized/` retain convenient one-row-per-unit statistics, but
 - `primary_component_role` identifies whether the primary body is a man, mount, or engine.
 - `primary_target_size` is the raw battle-entity size class. `is_large` is true for `large` and `very_large` primary bodies.
 - `has_missile_weapon` is derived from all supported attachment paths: the land unit, unit/weapon junctions, the primary artillery engine, and extra engines.
-- Inline missile and explosion columns describe the selected default projectile for convenient comparisons. Every attached weapon and alternate projectile is retained in `lookups/unit_weapon_links__wh3__8.1.1__ultra.csv`.
+- Inline missile and explosion columns describe the selected default projectile for convenient comparisons. Every attached weapon and alternate projectile is retained in `lookups/unit_weapon_links__wh3__9.0__ultra.csv`.
 - Missile-only fields, including `accuracy`, are blank on units without a resolved missile weapon.
 - `source_*` columns preserve the exact joined CA keys used for the normalized row.
 - `roster_scope` distinguishes core, core-and-variant, faction-exclusive, and shared-variant availability. `is_faction_exclusive` is true when a unit is supplied only by a configured faction-variant military group.
@@ -61,10 +61,10 @@ The 24 files in `normalized/` retain convenient one-row-per-unit statistics, but
 
 ## Companion relations
 
-- `unit_components__wh3__8.1.1__ultra.csv` separates primary bodies, crew/riders, and extra engines. Secondary-component targetability is left blank where the source tables do not encode it.
-- `unit_weapon_links__wh3__8.1.1__ultra.csv` records melee and missile attachment paths, component roles, slots, ammunition pools, missile weapons, every projectile variant, and the default-projectile flag.
-- `projectiles__wh3__8.1.1.csv` preserves direct damage, AP damage, bonuses, timing, burst/volley counts, collision, calibration, penetration, expiry, homing, friendly-fire, building-damage, contact-effect, shrapnel, and explosion references.
-- `explosions__wh3__8.1.1.csv` preserves radius, direct/AP damage, force, ignition, magical/spell flags, ally interaction, contact effects, and shrapnel.
+- `unit_components__wh3__9.0__ultra.csv` separates primary bodies, crew/riders, and extra engines. Secondary-component targetability is left blank where the source tables do not encode it.
+- `unit_weapon_links__wh3__9.0__ultra.csv` records melee and missile attachment paths, component roles, slots, ammunition pools, missile weapons, every projectile variant, and the default-projectile flag.
+- `projectiles__wh3__9.0.csv` preserves direct damage, AP damage, bonuses, timing, burst/volley counts, collision, calibration, penetration, expiry, homing, friendly-fire, building-damage, contact-effect, shrapnel, and explosion references.
+- `explosions__wh3__9.0.csv` preserves radius, direct/AP damage, force, ignition, magical/spell flags, ally interaction, contact effects, and shrapnel.
 - `unit_abilities`, `unit_attributes`, and `unit_contact_effects` provide normalized one-to-many keys.
 - `unit_rosters` uses typed rows to preserve exact race-specific military-group memberships and custom-battle faction permissions separately.
 - `unit_mount_variants` preserves base-to-mounted unit relationships.
@@ -77,9 +77,9 @@ The installed game stores its records inside `.pack` archives. RPFM 5.0.6 suppli
 From the workspace root, with `rpfm_server.exe` running locally:
 
 ```powershell
-node .\scripts\extract-source.mjs data\unit_stats\source_exports
-node .\scripts\build-unit-dataset.mjs data\unit_stats\source_exports work\generated_unit_stats__final
-node .\scripts\validate-unit-dataset.mjs data\unit_stats\source_exports work\generated_unit_stats__final
+node .\scripts\extract-source.mjs work\source_units_9.0 9.0
+node .\scripts\build-unit-dataset.mjs work\source_units_9.0 work\generated_unit_stats__final
+node .\scripts\validate-unit-dataset.mjs work\source_units_9.0 work\generated_unit_stats__final
 ```
 
 Install generated files only after the validator exits successfully. The validator checks source hashes, roster completeness, keys, headers, types, primary components, health identities, size classifications, every missile/projectile/explosion link, companion-table references, and representative golden units.
@@ -87,3 +87,7 @@ Install generated files only after the validator exits successfully. The validat
 ## Historical repair
 
 The original six normalized files are preserved under `archive/8.1.1__initial_extract_2026-08-24/`. Schema v2 repaired the failed missile joins, component-count/health averaging, large-unit classification, undocumented headers, non-applicable accuracy values, missing one-to-many relations, and absent raw-source provenance. Schema v3 separates the canonical `tactical_category` from the explicitly named `source_unit_class` and `source_caste` provenance fields.
+
+## 9.0 compatibility
+
+Schema v4 retains `culture_key` on ability links. `*` is the literal unrestricted source value; a named culture conditions the relationship. Join on unit, ability and culture together. The Undead Legions roster is included; Archaon and Festus/Glottkin military-group changes are preserved. These are source roster permissions, not a complete runtime recruitment model.

@@ -1,5 +1,7 @@
 # Wood Elves campaign systems
 
+> **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
+
 > **Scope:** *Total War: WARHAMMER III* | patch **8.1.1** | Steam build **24237342**  
 > **Race:** Wood Elves | `race_slug=wood_elves` | **Playable factions:** 4  
 > **Campaign:** Immortal Empires (`main_warhammer`). The installed Realm-of-Chaos Wood Elf narrative loader contains no parallel playable campaign branch.

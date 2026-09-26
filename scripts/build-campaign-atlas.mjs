@@ -1,3 +1,4 @@
+import { buildSnapshot } from "./snapshot-build.mjs";
 import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { createHash } from "node:crypto";
 import { readFile, mkdir, readdir, rm, stat } from "node:fs/promises";
@@ -8,18 +9,19 @@ import { DatabaseSync } from "node:sqlite";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = path.resolve(ROOT, process.argv[2] ?? "work/source_campaign_atlas__wh3__8.1.1");
 const OUTPUT = path.resolve(ROOT, process.argv[3] ?? "work/generated_campaign_atlas__wh3__8.1.1/campaign_atlas__wh3__8.1.1.gpkg");
+const SNAPSHOT = await buildSnapshot(SOURCE);
 const DB_DIR = path.join(SOURCE, "db");
 const LOC_DIR = path.join(SOURCE, "text", "db");
-const MAP_DIR = path.join(SOURCE, "campaign_maps", "wh3_main_combi_map_5");
+const MAP_KEY = SNAPSHOT.context.patch === "9.0" ? "wh3_main_combi_map_7" : "wh3_main_combi_map_5";
+const MAP_DIR = path.join(SOURCE, "campaign_maps", MAP_KEY);
 let VICTORY_SCRIPT = path.join(SOURCE, "script", "campaign", "main_warhammer", "victory_objectives.lua");
 try { await stat(VICTORY_SCRIPT); }
-catch { VICTORY_SCRIPT = path.join(ROOT, "work", "pilot_online_audit_gamefiles", "script", "campaign", "main_warhammer", "victory_objectives.lua"); }
+catch { if (SNAPSHOT.context.patch !== "8.1.1") throw Error("Current victory script missing from verified snapshot"); VICTORY_SCRIPT = path.join(ROOT, "work", "pilot_online_audit_gamefiles", "script", "campaign", "main_warhammer", "victory_objectives.lua"); }
 
 const CAMPAIGN = "wh3_main_combi";
-const MAP_KEY = "wh3_main_combi_map_5";
 const GAME = "warhammer_3";
-const PATCH = "8.1.1";
-const BUILD = "24237342";
+const PATCH = SNAPSHOT.context.patch;
+const BUILD = SNAPSHOT.context.steam_build_id;
 
 function parseDelimited(text, delimiter = "\t") {
   if (delimiter === "\t") return parseRpfmTsv(text);
@@ -273,6 +275,7 @@ const currentProvinceKeys = new Set(currentRegions.map((row) => provinceLinkByRe
 const currentStartFactions = startFactions.filter((row) => row.campaign === CAMPAIGN);
 const playableFactions = currentStartFactions.filter((row) => row.playable === "true");
 const mapRow = playableAreas.find((row) => row.campaign_key === CAMPAIGN && row.mapname === MAP_KEY);
+if (!mapRow) throw Error("Configured map revision does not match the campaign source");
 const bounds = { minX: 0, minY: 0, maxX: 961, maxY: 748 };
 
 const lookupBuffer = await readFile(path.join(MAP_DIR, "wh3_main_combi_lookup.tga"));
@@ -536,7 +539,9 @@ function addObjective(factionKey, tier, order, objective, sourceScope, sourceKey
   const key = `${factionKey}:${tier}:${String(order).padStart(3, "0")}`;
   db.prepare("INSERT INTO objectives VALUES (?, ?, ?, ?, ?, ?, ?)").run(key, factionKey, tier, order, objective.type ?? "UNKNOWN", sourceScope, sourceKey);
   const conditionInsert = db.prepare("INSERT INTO objective_conditions VALUES (?, ?, ?, ?, ?, ?)");
-  for (const [index, raw] of (objective.conditions ?? []).entries()) {
+  const conditions = [...(objective.conditions ?? [])];
+  if (["CONSTRUCT_N_BUILDINGS_FROM", "CONSTRUCT_N_BUILDINGS_INCLUDING", "CONSTRUCT_N_OF_A_BUILDING"].includes(objective.type)) conditions.push(`faction ${factionKey}`);
+  for (const [index, raw] of conditions.entries()) {
     const match = String(raw).match(/^(\S+)(?:\s+(.+))?$/);
     const type = match?.[1] ?? "unknown"; const target = match?.[2] ?? null;
     conditionInsert.run(key, index + 1, type, target, target !== null && Number.isFinite(Number(target)) ? Number(target) : null, String(raw));
@@ -560,7 +565,7 @@ for (const start of playableFactions.sort((a, b) => a.faction.localeCompare(b.fa
     addObjective(factionKey, "long", ++order, objective, "alignment", alignmentKey);
   }
   for (const objective of factionSpec.long_objectives ?? []) addObjective(factionKey, "long", ++order, objective, "faction", factionKey);
-  if (factionSpec.no_subculture_objective !== true) for (const objective of subcultureSpec.objectives ?? []) {
+  if (victory.factions?.[factionKey] && factionSpec.no_subculture_objective !== true) for (const objective of subcultureSpec.objectives ?? []) {
     addObjective(factionKey, "long", ++order, objective, "subculture", subcultureKey);
   }
   addObjective(factionKey, "domination", 1, {
@@ -603,8 +608,8 @@ sourceFileInsert.run(victorySourceKey.replaceAll(path.sep, "/"), sha256(victoryD
 
 const evidenceInsert = db.prepare("INSERT INTO evidence VALUES (?, ?, ?, ?, ?)");
 for (const row of [
-  ["region_identity", "db/campaign_map_regions_tables + db/regions_tables", "RPFM TSV extraction and stable-key join", "authoritative", "Current map revision filtered to wh3_main_combi_map_5"],
-  ["region_raster", `campaign_maps/${MAP_KEY}/wh3_main_combi_lookup.tga`, "CA zero-based/top-left TGA decode joined to regions_tables colour", "authoritative", "Exact raster masks for 571 current regions; 70 black sea/special records share one colour and remain individually non-spatial"],
+  ["region_identity", "db/campaign_map_regions_tables + db/regions_tables", "RPFM TSV extraction and stable-key join", "authoritative", `Current map revision filtered to ${MAP_KEY}`],
+  ["region_raster", `campaign_maps/${MAP_KEY}/wh3_main_combi_lookup.tga`, "CA zero-based/top-left TGA decode joined to regions_tables colour", "authoritative", `Exact raster masks for ${uniqueRegionByColour.size} current regions; black sea/special records share one colour and remain individually non-spatial`],
   ["start_ownership", "db/start_pos_regions_tables + db/start_pos_factions_tables", "campaign and numeric faction-ID join", "authoritative", "Turn-one region ownership and capitals"],
   ["objectives", "script/campaign/main_warhammer/victory_objectives.lua", "Parsed declarative victory_objectives_ie table and reproduced effective SP short/long composition plus shared domination", "authoritative", "Runtime-generated crisis and multiplayer branches excluded"],
   ["battle_rules", "db/battle_catchment_override_*", "Area-rule and battle-group relational join", "authoritative_partial", "The native area-to-map rules are present; the binary catchment overlay connecting arbitrary campaign coordinates to areas is not decoded"],
@@ -612,7 +617,7 @@ for (const row of [
 
 const coverageInsert = db.prepare("INSERT INTO coverage VALUES (?, ?, ?, ?)");
 for (const row of [
-  ["IE regions", currentRegions.length === 641 ? "complete" : "review", currentRegions.length, "All current campaign_map_regions rows for wh3_main_combi_map_5"],
+  ["IE regions", currentRegions.length === (PATCH === "9.0" ? 644 : 641) ? "complete" : "review", currentRegions.length, `All current campaign_map_regions rows for ${MAP_KEY}`],
   ["turn-one region ownership", ieStartRegions.length === currentRegions.length ? "complete" : "review", ieStartRegions.length, "Owner, province capital, and faction capital relations"],
   ["playable factions", playableFactions.length >= 100 ? "complete" : "review", playableFactions.length, "All start_pos_factions rows marked playable for wh3_main_combi"],
   ["region raster geometry", "partial", db.prepare("SELECT COUNT(*) count FROM region_points").get().count, "Exact masks/centroids/adjacency for 571 uniquely coloured regions; 70 black sea/special-region rows share one mask and lack individual shapes"],

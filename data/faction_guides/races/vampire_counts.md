@@ -1,5 +1,7 @@
 # Vampire Counts campaign mechanics — patch 8.1.1
 
+> **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
+
 > **Scope:** Total War: WARHAMMER III, patch **8.1.1**, Steam build **24237342**. Race: Vampire Counts (`vampire_counts`). Playable factions: 4. Campaign: Immortal Empires (`wh3_main_combi`); this installed snapshot maps none of these factions to a playable Realms of Chaos campaign.
 
 ## Catalog boundary

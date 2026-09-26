@@ -49,6 +49,32 @@
 		}
 	},
 
+	------------------
+	------ BORIS -----
+	------------------
+	{
+		if_human = "wh_main_emp_middenland",
+		if_ai = "wh_dlc03_bst_beastmen",
+		changes = {
+			-- Remove Khazrak in Middenland is human and Khazrak is AI
+			{"kill_faction", "wh_dlc03_bst_beastmen"},
+			-- Add XP ranks to starting units to reflect the Lord trait
+			{"add_xp_to_unit", "wh_main_emp_middenland", "wh3_dlc29_emp_inf_warriors_of_ulric", 2},
+			{"add_xp_to_unit", "wh_main_emp_middenland", "wh3_dlc29_emp_inf_wolf_kin", 2},
+			{"add_xp_to_unit", "wh_main_emp_middenland", "wh3_dlc29_emp_cav_knights_of_the_white_wolf", 2},
+			{"add_xp_to_unit", "wh_main_emp_middenland", "wh3_dlc29_emp_inf_teutogen_guard", 2},
+		}
+	},
+
+	{
+		if_human = "wh_main_emp_middenland",
+		if_ai = "wh3_dlc20_chs_festus",
+		changes = {
+			--Remove unit(s) from AI Festus to make Boris start a bit easier
+			{"modify_units_in_army", "wh3_dlc20_chs_festus", 590, 718, {}, {"wh_main_chs_mon_giant"}, nil, nil }
+		}
+	},
+
 	---------------------------
 	------ VLAD/ISABELLA -----
 	---------------------------

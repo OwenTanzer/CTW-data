@@ -1,48 +1,39 @@
-# 9.0 compatibility migration — work in progress
+# 9.0 database compatibility refresh
 
-Tracks #16. Production remains 8.1.1/build 24237342 until all owners and connections pass a coherent migration. This branch does not publish a completed 9.0 database.
+Implements the bounded database refresh in #16. The review branch contains 9.0/build 25507028; main is unchanged until review and merge. Magic #14 remains deferred on its preserved checkpoint.
 
-## Verified installation and extraction
+| Owner | Validated coverage |
+|---|---|
+| Units | 25 race rosters, 2,290 rows; schema v4 retains ability culture qualifiers |
+| Skills | 550 distinct subtypes, 575 node sets; 50 added subtypes, 483 changed existing structural fingerprints |
+| Economy | 109 faction files, 26,438 building rows |
+| Technology | 109 faction files, 6,500 node occurrences, 1,722 technologies; explicit empty Nagash selector |
+| Campaign | Map revision 7, 644 regions, 215 provinces, 109 primary starts and 118 total generals |
 
-On 2026-09-26 the MSI installation reported Warhammer3.exe 9.0.0.0, Steam build 25507028. Executable SHA-256: `fa06fa719e68eabd0522091cace8f750d4e5ef46346ccdc86b0a7a3bdb682d97`. Extraction checks identity before and after, records the executable and appmanifest hashes, 271 pack filenames/sizes/mtimes, configured decoder installation, and decoder schema SHA-256. Pack metadata is not a full content digest.
+`connections-and-delta.json` records stable-key additions/removals/changes and raw-table deltas. All 109 faction keys match across economy, technology and atlas; every primary lord joins to a skill file. Nine overlapping raw DB tables have identical source hashes across owners. Raw row-set differences count modifications on both sides and are not counts of distinct new mechanics.
 
-The original RPFM schema could not decode six changed table types. Updated the upstream schema using RPFM's update_schemas command. Extractors now reject raw binary DB fallbacks instead of reporting success. Valid replacement exports are in the isolated MSI checkout `C:\Users\Owen\ctw-update-9\work`:
+## Source and compatibility fixes
 
-| Owner | Source candidate | Files |
-|---|---|---:|
-| Units | source_units_9.0_retry | 290 |
-| Skills | source_skills_9.0_retry | 31 |
-| Economy | source_economy_9.0_retry | 33 |
-| Campaign atlas | source_atlas_9.0_retry | 74 |
-| Technology | source_technology_9.0 | 84 |
+Installation verified September 26, 2026: executable 9.0.0.0, Steam build 25507028, executable SHA-256 `fa06fa719e68eabd0522091cace8f750d4e5ef46346ccdc86b0a7a3bdb682d97`. Extractors check source identity before/after and pin decoder schema and configured installation. Pack inventory records 271 names, sizes and mtimes, not full pack-content digests.
 
-Initial candidates without `_retry` are superseded and must not be promoted.
+Updated the upstream RPFM schema after six table types failed decoding. Raw binary DB fallbacks now fail extraction. Fixed literal TSV parsing so unmatched prose quotation marks cannot swallow later records. Added source fingerprint checks before building, explicit patch profiles, fresh work-only extraction guards, and snapshot-specific scope.
 
-## Reviewed scope decisions
+Retained the existing military-group union policy; added Undead Legions and the changed Archaon/Festus/Glottkin groups. Shared character owners remain retrieval choices, not exclusive recruitment claims. Two reviewed subtype pairs share complete trees: Gotrek lord/hero and generic/named Handmaidens. Other duplicate structures still fail.
 
-- Preserve the existing union-of-military-groups roster policy, adding Undead Legions. Source faction assignments replace Festus's old group with `wh3_dlc20_group_chs_festus_glottkin` and add Archaon's `wh3_dlc29_group_chs_archaon`.
-- Frontend faction cohort is 109 distinct non-prologue keys across 25 subcultures. This does not imply 109 new factions or all campaign variants.
-- Preserve existing canonical character owners when expanded cross-race permissions make them shared. Canonical owner is a retrieval choice, not exclusive recruitment availability.
-- New shared subtypes use explicitly configured owners in scope-9.0.json. Glottkin/Gutrot are filed under Warriors of Chaos; shared Coast/Tomb Kings/Vampire Counts subtypes remain under their corresponding source race families. Nagash is under Undead Legions. All source permissions and node-set variants remain in each character file. The mapping is an editorial normalization policy, not a claim that the game declares a single owner.
-- Gotrek lord/hero and generic/named Handmaidens have separate subtype/node-set identities but matching tree structures. Exact pairs are documented exceptions; other duplicate structures still fail.
-- Unit schema v4 adds `culture_key` to ability links and their uniqueness key. Preserve literal `*` as the source wildcard. Specific cultures are conditions; blanks are not to be treated as universal. This is compatibility work, not the deferred spell-effect integration.
+The old atlas extraction still requested map revision 5. Binary starting-position verification caught the mismatch; revision 7 was freshly extracted and rebuilt. All 572 settlement controls pass against its raster. Corrected effective victory composition and required faction conditions on construction objectives from the shipped Lua.
 
-## Validation and remaining work
+## Evidence limits
 
-Initial unit and economy candidates passed their validators (25 rosters; 109 economy files and 26,438 building rows). Skill validation exposed an existing parser bug: RPFM literal TSV quotation marks were interpreted as CSV delimiters, swallowing later records. The new TSV reader rejects inconsistent widths and preserves quotes; 919 available TSV files passed a literal width check. Rebuild and revalidation are required after this fix.
+Read `technology-selectors.md`: Sigvald's override has official rework corroboration; Glottkin is a specifically reviewed source interpretation, with runtime not observed. Nagash's Black Pyramid is outside ordinary technology normalization. The technology audit retains 43 unmodeled lock sites, 96 typed script definitions and 5,478 missing-localization occurrences. Skills retain 190 unnamed node occurrences and 1,613 undescribed effect occurrences; keys and typed relations remain available.
 
-Technology generation correctly stops on the newly overlapping Sigvald selector. Glottkin also has a new faction selector. Their replacement semantics require explicit review/evidence before adding overrides; existing Azazel semantics must not be blindly copied. Source script compaction currently retains the existing typed families (96 mechanics) and bounded references; that is not proof that new scripted behavior is fully normalized.
+The 24 faction guides retain their 8.1.1 evidence scope. Each links to `data/faction_guides/COMPATIBILITY_9.0.md`; the catalog distinguishes historical guide completion from current database coverage. Full new bespoke-mechanics guides, spell effects, expanded recruitment models, dynamic crisis maps and downstream analysis-project migration are not claimed complete by this database refresh.
 
-Still required: technology selector/script review, campaign atlas and binary starting-position rebuilds, source-versus-normalized change reconciliation, cross-owner key checks, guide/catalog/readme compatibility revisions, and coherent promotion only after all required validators pass. Magic #14 remains deferred; its separate checkpoint is preserved.
+## Validation
 
-## Reproduction
+Passed: `npm run validate` across all database owners plus historical guide structure; eight technology corruption tests; thirteen campaign-start tests; validation-text and effect-foundation suites; three new snapshot/parser regression tests. Technology generation is byte-identical across two independent builds. Source and cross-owner audits are retained alongside this report. No game sessions were launched for runtime verification.
 
-Extract to a fresh ignored work directory with an explicit snapshot argument, for example:
+## Reproduction and retained evidence
 
-```powershell
-node scripts/extract-source.mjs work/source_units_9.0_fresh 9.0
-node scripts/build-unit-dataset.mjs work/source_units_9.0_fresh work/generated_units_9.0_fresh
-node scripts/validate-unit-dataset.mjs work/source_units_9.0_fresh work/generated_units_9.0_fresh
-```
+Extract into a fresh ignored work destination with explicit final argument `9.0`; build and validate before installing source/output together. Example: `node scripts/extract-source.mjs work/source_units_9.0_fresh 9.0`. Builders infer the profile from verified source manifests. Historical 8.1.1 profiles remain available and reject a 9.0 installation.
 
-Skills, economy and technology use their corresponding extract/build/validate scripts. Builders derive the snapshot from validated source manifests; extraction defaults remain pinned to 8.1.1 and reject a mismatched installation. Do not use the old README extraction commands that write directly to production source directories.
+The full map-7 atlas source is preserved separately on `checkpoint/campaign-map-9.0-source-20260926` under `archive/campaign_map/9.0_source_exports`; normal retrieval uses the GeoPackage. The compact starting-position evidence remains under its existing production owner. Raw game binaries and broad script scans stay out of production.

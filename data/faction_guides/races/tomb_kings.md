@@ -1,5 +1,7 @@
 # Tomb Kings campaign mechanics guide
 
+> **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
+
 Snapshot: Total War: WARHAMMER III 8.1.1, Steam build 24237342. The installed playable catalog contains four Tomb Kings factions, all in the Immortal Empires (`main_warhammer`) branch.
 
 ## Catalog boundary

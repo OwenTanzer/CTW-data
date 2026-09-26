@@ -1,14 +1,14 @@
 {
   "game": "warhammer_3",
-  "patch": "8.1.1",
-  "steam_build_id": "24237342",
-  "generated_at_utc": "2026-08-26T04:18:14.887Z",
-  "source_extracted_at_utc": "2026-08-25T01:20:14.549Z",
-  "source_decoder": "RPFM 5.0.6",
-  "character_files": 500,
-  "node_sets": 521,
-  "nodes": 28254,
-  "effects": 140413,
+  "patch": "9.0",
+  "steam_build_id": "25507028",
+  "generated_at_utc": "2026-09-26T09:01:27.050Z",
+  "source_extracted_at_utc": "2026-09-26T08:42:05.586Z",
+  "source_decoder": "RPFM MCP schema-decoded export; schema identity recorded separately",
+  "character_files": 550,
+  "node_sets": 575,
+  "nodes": 32385,
+  "effects": 157965,
   "races": {
     "beastmen": 16,
     "bretonnia": 14,
@@ -16,7 +16,7 @@
     "daemons_of_chaos": 1,
     "dark_elves": 24,
     "dwarfs": 20,
-    "empire": 27,
+    "empire": 33,
     "grand_cathay": 21,
     "greenskins": 19,
     "high_elves": 40,
@@ -26,14 +26,15 @@
     "norsca": 20,
     "nurgle": 21,
     "ogre_kingdoms": 18,
-    "skaven": 20,
+    "skaven": 30,
     "slaanesh": 16,
-    "tomb_kings": 18,
+    "tomb_kings": 25,
     "tzeentch": 17,
-    "vampire_coast": 20,
-    "vampire_counts": 22,
-    "warriors_of_chaos": 33,
-    "wood_elves": 26
+    "vampire_coast": 23,
+    "vampire_counts": 31,
+    "warriors_of_chaos": 47,
+    "wood_elves": 26,
+    "undead_legions": 1
   },
   "record_types": [
     "character",
@@ -48,6 +49,6 @@
     "dilemma_grant"
   ],
   "file_layout": "characters/<race>/<character>.csv",
-  "character_index": "character_index__wh3__8.1.1.csv",
+  "character_index": "character_index__wh3__9.0.csv",
   "schema_inventory": "schema_inventory__v1.csv"
 }

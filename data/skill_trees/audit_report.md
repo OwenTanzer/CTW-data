@@ -2,29 +2,30 @@
 
 Status: **PASSED**
 
-Checked 500 character files, 521 conditional node sets, 28254 node occurrences, and 140413 effect rows.
+Checked 550 character files, 575 conditional node sets, 32385 node occurrences, and 157965 effect rows.
 
 ## Passed checks
 
-- The source scope resolves to exactly 500 character subtypes.
-- All 500 character CSV files are present.
-- Every character CSV is valid UTF-8, uses CRLF endings, has consistent row widths, and shares one canonical header.
+- The source scope resolves to exactly 550 character subtypes.
+- All 550 character CSV files are present.
+- Every character CSV is valid UTF-8, uses LF or CRLF endings, has consistent row widths, and shares one canonical header.
 - Each source subtype maps to exactly one self-contained character file.
 - Record types, required fields, booleans, and numeric representations are valid across every CSV.
 - Every skill, effect, lock, ancillary, and dilemma foreign key resolves to its source table.
-- All 521 node sets, 28254 node occurrences, and 140413 effect rows reconcile exactly to the source junctions.
+- All 575 node sets, 32385 node occurrences, and 157965 effect rows reconcile exactly to the source junctions.
 - All prerequisite endpoints resolve inside their applicable node-set variant.
-- Race totals reconcile: 16 Beastmen, 14 Bretonnia, 16 Chaos Dwarfs, 1 Daemons of Chaos, 24 Dark Elves, 20 Dwarfs, 27 Empire, 21 Grand Cathay, 19 Greenskins, 40 High Elves, 13 Khorne, 17 Kislev, 41 Lizardmen, 20 Norsca, 21 Nurgle, 18 Ogre Kingdoms, 20 Skaven, 16 Slaanesh, 18 Tomb Kings, 17 Tzeentch, 20 Vampire Coast, 22 Vampire Counts, 33 Warriors of Chaos, 26 Wood Elves.
+- Race totals reconcile: 16 Beastmen, 14 Bretonnia, 16 Chaos Dwarfs, 1 Daemons of Chaos, 24 Dark Elves, 20 Dwarfs, 33 Empire, 21 Grand Cathay, 19 Greenskins, 40 High Elves, 13 Khorne, 17 Kislev, 41 Lizardmen, 20 Norsca, 21 Nurgle, 18 Ogre Kingdoms, 30 Skaven, 16 Slaanesh, 25 Tomb Kings, 17 Tzeentch, 23 Vampire Coast, 31 Vampire Counts, 47 Warriors of Chaos, 26 Wood Elves, 1 Undead Legions.
 - The character index reconciles every path, row count, byte count, and SHA-256 file hash.
-- All 500 complete tree-structure hashes are unique; no file is a renamed duplicate.
 - The machine-readable schema inventory matches every character CSV column and position.
 - All 31 authoritative source-export hashes match their manifest.
 - Golden checks cover representative lords or heroes from all 24 races, including unique nodes for Beastmen, Greenskins, High Elves, and Skaven.
 
 ## Warnings
 
-- 182 node occurrences have no English skill name in the authoritative localisation source.
-- 1402 effect occurrences have no English description in the authoritative localisation source; keys, values, and scopes remain present.
+- Shared source tree structure: wh2_pro08_neu_gotrek, wh3_dlc25_neu_gotrek_hero. Separate source node sets use general and champion agent roles; preserve the lord and hero identities.
+- Shared source tree structure: wh3_dlc29_vmp_handmaiden, wh3_dlc29_vmp_handmaiden_imentet. Separate source node sets preserve generic and named Handmaiden identities; identical skill structure does not make them one subtype.
+- 190 node occurrences have no English skill name in the authoritative localisation source.
+- 1613 effect occurrences have no English description in the authoritative localisation source; keys, values, and scopes remain present.
 
 ## Errors
 

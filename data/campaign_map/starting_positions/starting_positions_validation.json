@@ -1,8 +1,8 @@
 {
-  "army_starts": 109,
-  "binary_characters": 308,
+  "army_starts": 118,
+  "binary_characters": 326,
   "caveats": [
-    "Static source audit, not 5,356 runtime multiplayer campaign launches.",
+    "Static source audit; multiplayer campaigns were not launched.",
     "Khazrak human relocation depends on partner identity; consume campaign_start_rules when evaluating a pair.",
     "Maritime points have no uniquely colored sea-region mask; nearest land is a descriptive anchor, not an owned start or travel route.",
     "Secondary forces retained separately; pair distance uses the primary general.",
@@ -12,7 +12,7 @@
     "wh2_main_hef_yvresse",
     "wh_dlc05_wef_wood_elves"
   ],
-  "factions": 104,
+  "factions": 109,
   "maritime_primary_factions": [
     "wh2_dlc11_cst_noctilus",
     "wh2_main_hef_yvresse",
@@ -21,16 +21,16 @@
   ],
   "missing_army_positions": 0,
   "partner_overrides": 5,
-  "primary_generals": 104,
+  "primary_generals": 109,
   "schema_version": "1.1.0",
-  "settlement_controls": 569,
+  "settlement_controls": 572,
   "status": "passed",
   "transform": {
-    "control_count": 1017,
+    "control_count": 1033,
     "evidence_status": "analytical fit to all stored logical/world pairs; not movement costs",
-    "logical_x_scale": 0.6680333612656588,
-    "logical_y_scale": 0.7713784510084412,
-    "max_residual": 3.635854250205739e-05,
+    "logical_x_scale": 0.6680333613274083,
+    "logical_y_scale": 0.771378451235019,
+    "max_residual": 3.614578588440054e-05,
     "odd_x_half_y_offset": true
   }
 }

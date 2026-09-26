@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { hash, parse, csv, cmp } from "./technology-lib.mjs";
-import { OVERRIDES, SCRIPT_COLUMNS } from "./technology-rules.mjs";
+import { overridesFor, SCRIPT_COLUMNS } from "./technology-rules.mjs";
 
 // Parse only literal Lua tables. Never evaluate or run the game's Lua code.
 // Unknown expressions fail extraction rather than becoming an inferred value.
@@ -121,7 +121,7 @@ function literalTable(text, name) {
 const fields = (table) =>
   Object.fromEntries(table.entries.map((e) => [e.key, e.value]));
 
-export async function compactScripts(output, scratch, scan) {
+export async function compactScripts(output, scratch, scan, patch = "8.1.1") {
   const excerpts = [],
     mechanics = [],
     cache = new Map();
@@ -445,7 +445,7 @@ export async function compactScripts(output, scratch, scan) {
   const setFile = "db/technology_node_sets_tables/data__.tsv",
     setBuffer = await readFile(path.join(output, setFile));
   const sets = parse(setBuffer.toString("utf8"), "\t").rows;
-  const overrides = OVERRIDES.map((r) => {
+  const overrides = overridesFor(patch).map((r) => {
     const a = sets.find((s) => s.key === r.selected_node_set_key),
       b = sets.find((s) => s.key === r.overridden_node_set_key);
     if (
@@ -498,9 +498,9 @@ export async function compactScripts(output, scratch, scan) {
       {
         schema_version: 2,
         policy:
-          "Only the seven reviewed faction selectors replace their matching generic fallback; unreviewed overlaps fail the build.",
+          `Only the ${overrides.length} explicitly reviewed faction selectors replace their matching generic fallback; unreviewed overlaps fail the build.`,
         provenance_limit:
-          "The binary engine selector is not implemented in Lua. Replacement is encoded narrowly from the explicit faction DB assignments and review-confirmed gameplay, never inferred from key prefixes or output counts.",
+          "The binary engine selector is not implemented in Lua. Each explicit override carries its interpretation status and corroborating evidence. Source-reviewed 9.0 mappings are not claims of observed runtime gameplay.",
         overrides,
         campaign_variants: variants,
       },

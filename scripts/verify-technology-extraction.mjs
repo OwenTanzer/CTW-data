@@ -10,9 +10,10 @@ const expected = path.resolve(
 );
 await mkdir("work", { recursive: true });
 const fresh = await mkdtemp(path.resolve("work/technology_extraction_verify_"));
+const patch = JSON.parse(await readFile(path.join(expected, "source_manifest.json"), "utf8")).patch;
 const result = spawnSync(
   process.execPath,
-  ["scripts/extract-technology-source.mjs", fresh],
+  ["scripts/extract-technology-source.mjs", fresh, patch],
   { encoding: "utf8", maxBuffer: 8 * 1024 * 1024 },
 );
 assert.equal(result.status, 0, result.stdout + result.stderr);

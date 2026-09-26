@@ -1,3 +1,5 @@
+> **Current database: 9.0.** These guides retain their 8.1.1 evidence scope. Read [COMPATIBILITY_9.0.md](COMPATIBILITY_9.0.md) first. Their structural completion status is historical, not a 9.0 mechanics certification.
+
 # Race campaign guides
 
 This directory is the qualitative companion to the normalized unit, character, technology-tree,

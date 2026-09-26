@@ -1,24 +1,24 @@
 {
   "status": "passed",
   "game": "warhammer_3",
-  "patch": "8.1.1",
-  "steam_build_id": "24237342",
-  "faction_files": 104,
-  "node_set_variants": 104,
-  "node_occurrences": 6016,
-  "technologies": 1620,
-  "technology_occurrences": 6016,
-  "dependency_links": 6272,
-  "effects": 12425,
-  "locks_exclusions": 230,
-  "direct_unlocks": 703,
-  "missing_localizations": 5269,
-  "distinct_missing_localization_keys": 1490,
+  "patch": "9.0",
+  "steam_build_id": "25507028",
+  "faction_files": 109,
+  "node_set_variants": 109,
+  "node_occurrences": 6500,
+  "technologies": 1722,
+  "technology_occurrences": 6500,
+  "dependency_links": 6665,
+  "effects": 13982,
+  "locks_exclusions": 340,
+  "direct_unlocks": 847,
+  "missing_localizations": 5478,
+  "distinct_missing_localization_keys": 1528,
   "missing_by_field": {
-    "technology_long_description": 4794,
-    "ui_group_description": 420,
+    "technology_long_description": 4927,
+    "ui_group_description": 465,
     "ui_group_name": 13,
-    "effect_description": 34,
+    "effect_description": 65,
     "node_set_name": 4,
     "node_set_tooltip": 4
   },
@@ -31,10 +31,10 @@
     "norsca_target_culture_wins": 69,
     "norsca_region_gate": 63
   },
-  "unresolved_scripted_cases": 35,
+  "unresolved_scripted_cases": 43,
   "external_technology_requirements": 0,
-  "unique_structures": 51,
-  "shared_structure_groups": 18,
+  "unique_structures": 56,
+  "shared_structure_groups": 17,
   "hidden_node_occurrences": 6,
   "duplicate_technology_occurrences": 4,
   "deterministic_rebuild_verified": true,
@@ -42,7 +42,7 @@
     {
       "race": "skaven",
       "faction_key": "wh2_dlc09_skv_clan_rictus",
-      "nodes": 52,
+      "nodes": 56,
       "source_reconciled": true
     },
     {
@@ -66,7 +66,7 @@
     {
       "race": "vampire_counts",
       "faction_key": "wh2_dlc11_vmp_the_barrow_legion",
-      "nodes": 46,
+      "nodes": 97,
       "source_reconciled": true
     },
     {
@@ -178,6 +178,12 @@
       "source_reconciled": true
     },
     {
+      "race": "undead_legions",
+      "faction_key": "wh3_dlc29_nag_host_of_nagash",
+      "nodes": 0,
+      "source_reconciled": true
+    },
+    {
       "race": "daemons_of_chaos",
       "faction_key": "wh3_main_dae_daemon_prince",
       "nodes": 0,
@@ -185,18 +191,18 @@
     }
   ],
   "passes": [
-    "104 unique indexed faction files; 24 race representatives; hashes, sizes, context, canonical schema, selector variants and source fields verified.",
+    "109 unique indexed faction files; 25 race representatives; hashes, sizes, context, canonical schema, selector variants and source fields verified.",
     "All nodes, technologies, prerequisite links, research costs, effect junctions, scopes, priorities and localizations reconcile to source.",
     "Prerequisite DAGs checked; zero required_parents means all source parents. Hidden and repeated technology nodes are retained and classified.",
     "Nakai wh2_dlc13 branches, ordering, prerequisites, costs and effects verified against complete lzd_nakai source membership.",
-    "Independent gameplay override totals and the two Changeling campaigns verified; 96 structured script definitions and bounded evidence validated; zero whole Lua files.",
+    "Explicit selector totals and the two Changeling campaigns verified; 96 structured script definitions and bounded evidence validated; zero whole Lua files.",
     "Shared fingerprints recomputed and faction-specific Wood Elf structure distinguished.",
     "Two independent builds and the candidate are byte-identical across all builder artifacts."
   ],
   "warnings": [
-    "5269 missing localization occurrences (1490 distinct keys); structural records retained.",
-    "35 bounded lock sites are not normalized: Beastmen challenge predicates/counters, Ostankya hex progression, and Changeling saved-state-guarded rift release (Empire minor-2 mission or at least two Rift Gems). See script_audit.json for individual locations.",
-    "Seven explicit faction DB assignments replace generic fallbacks using reviewed gameplay exceptions; the binary engine selector is not decoded. See node_set_precedence.json.",
+    "5478 missing localization occurrences (1528 distinct keys); structural records retained.",
+    "43 bounded lock sites are not normalized. See script_audit.json for individual source locations and scopes; this count is not a complete list of runtime mechanics.",
+    "9 explicit faction DB assignments replace generic fallbacks. Read each rule interpretation_status: source review is distinguished from observed gameplay. The binary engine selector is not decoded.",
     "Feature forests and transitions are retained in source, but runtime feature transitions and script-controlled effect/unlock behavior are not statically executed."
   ],
   "errors": []

@@ -1,21 +1,21 @@
 {
   "game": "warhammer_3",
-  "patch": "8.1.1",
-  "steam_build_id": "24237342",
-  "generated_at_utc": "2026-09-05T12:09:49.532Z",
-  "source_extracted_at_utc": "2026-09-05T12:09:48.690Z",
-  "source_decoder": "RPFM 5.0.6",
+  "patch": "9.0",
+  "steam_build_id": "25507028",
+  "generated_at_utc": "2026-09-26T09:01:35.683Z",
+  "source_extracted_at_utc": "2026-09-26T08:42:14.025Z",
+  "source_decoder": "RPFM MCP schema-decoded export; schema identity recorded separately",
   "schema_version": 1,
-  "playable_factions": 104,
-  "building_rows": 24108,
+  "playable_factions": 109,
+  "building_rows": 26438,
   "standard_metric_rows": {
-    "income": 9326,
-    "growth": 7552,
-    "control": 3429,
-    "trade_resource": 3824
+    "income": 10067,
+    "growth": 7727,
+    "control": 3850,
+    "trade_resource": 3996
   },
   "deliberately_omitted_from_standard_columns": {
-    "multi_resource_building_rows": 342,
+    "multi_resource_building_rows": 356,
     "conditional_effects": true,
     "percentage_income_modifiers": true,
     "faction_specific_resource_transactions": true
@@ -27,7 +27,7 @@
     "daemons_of_chaos": 1,
     "dark_elves": 6,
     "dwarfs": 6,
-    "empire": 5,
+    "empire": 6,
     "grand_cathay": 4,
     "greenskins": 6,
     "high_elves": 7,
@@ -37,16 +37,17 @@
     "norsca": 3,
     "nurgle": 3,
     "ogre_kingdoms": 3,
-    "skaven": 6,
+    "skaven": 7,
     "slaanesh": 3,
     "tomb_kings": 4,
     "tzeentch": 2,
     "vampire_coast": 4,
-    "vampire_counts": 4,
-    "warriors_of_chaos": 8,
-    "wood_elves": 4
+    "vampire_counts": 5,
+    "warriors_of_chaos": 9,
+    "wood_elves": 4,
+    "undead_legions": 1
   },
   "file_layout": "factions/<race>/<faction_key>.csv",
-  "faction_index": "faction_index__wh3__8.1.1.csv",
+  "faction_index": "faction_index__wh3__9.0.csv",
   "schema_inventory": "schema_inventory__v1.csv"
 }

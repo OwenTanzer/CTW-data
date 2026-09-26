@@ -1,5 +1,5 @@
 import {
-  GAMEPLAY_TREES,
+  selectorTrees,
   CHANGELING,
   CHANGELING_CAMPAIGNS,
   gameplayTrees,
@@ -275,11 +275,11 @@ for (const ir of idx.rows) {
         });
     }
   }
-  gameplayTrees(p.faction.key, rows, check);
+  gameplayTrees(p.faction.key, rows, check, CONTEXT.patch);
   // Independent gameplay fixtures select overrides; source membership is checked
   // separately. Do not import or call the builder's resolveSets function.
   const wanted =
-    GAMEPLAY_TREES[p.faction.key]?.[0] ??
+    selectorTrees(CONTEXT.patch)[p.faction.key]?.[0] ??
     (p.faction.key === CHANGELING ? "tze_the_changeling" : null);
   const expectedSets = t.technology_node_sets.filter((r) =>
     wanted
@@ -663,12 +663,20 @@ for (const p of s.playable.filter(
 )) {
   const rows = fileRows.get(p.faction.key);
   check(rows.length > 0, `Representative ${p.race.slug}`);
-  if (p.race.slug !== "daemons_of_chaos")
+  if (!["daemons_of_chaos", "undead_legions"].includes(p.race.slug))
     check(
       rows.some((r) => r.record_type === "node") &&
         rows.some((r) => r.record_type === "effect"),
       `Representative node/effect ${p.race.slug}`,
     );
+  if (p.race.slug === "undead_legions") {
+    check(CONTEXT.patch === "9.0" && p.faction.key === "wh3_dlc29_nag_host_of_nagash" &&
+      rows.filter(r => r.record_type === "node_set").length === 1 &&
+      rows.some(r => r.record_type === "node_set" && r.node_set_key === "nag_tech" && r.variant_status === "empty_source_node_set") &&
+      !rows.some(r => ["node", "technology", "effect"].includes(r.record_type)) &&
+      rows.some(r => r.record_type === "faction" && r.classification === "empty_database_tree_feature_progression_out_of_scope"),
+      "Nagash exact empty nag_tech selector; feature progression is not ordinary technology coverage");
+  }
   raceChecks.push({
     race: p.race.slug,
     faction_key: p.faction.key,
@@ -676,7 +684,7 @@ for (const p of s.playable.filter(
     source_reconciled: true,
   });
 }
-check(raceChecks.length === 24, "Representative checks cover all 24 races");
+check(raceChecks.length === s.snapshot.scope.SKILL_RACES.length, "Representative checks cover all snapshot races");
 const nakai = fileRows
   .get("wh2_dlc13_lzd_spirits_of_the_jungle")
   .filter((r) => r.node_set_key === "lzd_nakai");
@@ -691,7 +699,7 @@ check(
     nakai.filter((r) => r.record_type === "dependency_link").length === 26 &&
     nakai.filter((r) => r.record_type === "effect").length === 99 &&
     nakai.filter((r) => r.record_type === "resource_cost").length === 14,
-  "Nakai pinned 8.1.1 structural counts",
+  "Nakai retained structural regression counts",
 );
 check(
   new Set(nakaiNodes.map((r) => r.node_indent)).size > 1 &&
@@ -750,10 +758,10 @@ if (missing.length)
     `${missing.length} missing localization occurrences (${new Set(missing.map((r) => r.localisation_key)).size} distinct keys); structural records retained.`,
   );
 warnings.push(
-  `${scriptAudit.unresolved_cases} bounded lock sites are not normalized: Beastmen challenge predicates/counters, Ostankya hex progression, and Changeling saved-state-guarded rift release (Empire minor-2 mission or at least two Rift Gems). See script_audit.json for individual locations.`,
+  `${scriptAudit.unresolved_cases} bounded lock sites are not normalized. See script_audit.json for individual source locations and scopes; this count is not a complete list of runtime mechanics.`,
 );
 warnings.push(
-  "Seven explicit faction DB assignments replace generic fallbacks using reviewed gameplay exceptions; the binary engine selector is not decoded. See node_set_precedence.json.",
+  `${s.precedence.overrides.length} explicit faction DB assignments replace generic fallbacks. Read each rule interpretation_status: source review is distinguished from observed gameplay. The binary engine selector is not decoded.`,
 );
 warnings.push(
   "Feature forests and transitions are retained in source, but runtime feature transitions and script-controlled effect/unlock behavior are not statically executed.",
@@ -793,11 +801,11 @@ if (!process.argv.includes("--skip-rebuild")) {
 }
 if (!errors.length)
   passes.push(
-    "104 unique indexed faction files; 24 race representatives; hashes, sizes, context, canonical schema, selector variants and source fields verified.",
+    `${idx.rows.length} unique indexed faction files; ${raceChecks.length} race representatives; hashes, sizes, context, canonical schema, selector variants and source fields verified.`,
     "All nodes, technologies, prerequisite links, research costs, effect junctions, scopes, priorities and localizations reconcile to source.",
     "Prerequisite DAGs checked; zero required_parents means all source parents. Hidden and repeated technology nodes are retained and classified.",
     "Nakai wh2_dlc13 branches, ordering, prerequisites, costs and effects verified against complete lzd_nakai source membership.",
-    "Independent gameplay override totals and the two Changeling campaigns verified; 96 structured script definitions and bounded evidence validated; zero whole Lua files.",
+    "Explicit selector totals and the two Changeling campaigns verified; 96 structured script definitions and bounded evidence validated; zero whole Lua files.",
     "Shared fingerprints recomputed and faction-specific Wood Elf structure distinguished.",
     ...(determinism
       ? [

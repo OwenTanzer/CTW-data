@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const GUIDE_ROOT = path.join(ROOT, "data", "faction_guides");
 const QUEUE_PATH = path.join(GUIDE_ROOT, "queue.json");
-const INDEX_PATH = path.join(ROOT, "data", "economy", "faction_index__wh3__8.1.1.csv");
+const INDEX_PATH = path.join(GUIDE_ROOT, "reference", "faction_index__wh3__8.1.1.csv");
 
 function parseCsv(text) {
   const rows = [];

@@ -167,7 +167,7 @@ for (const p of scriptPaths) {
   });
 }
 const { compactScripts } = await import("./technology-script-source.mjs");
-const compact = await compactScripts(output, scriptScratch, scan);
+const compact = await compactScripts(output, scriptScratch, scan, sourceContext.profile.patch);
 const selectedSchema = Object.fromEntries(
   tables.map((t) => [t, schema.definitions[t]]),
 );

@@ -20,6 +20,22 @@ export const OVERRIDES = [
     "https://github.com/OwenTanzer/computational-total-war/pull/3#issuecomment-5552741940",
 }));
 
+// Reviewed 9.0 source selectors. The Glottkin replacement is a bounded
+// interpretation of the explicit faction selector under the established engine
+// precedence model; it is not a claim of observed runtime gameplay.
+export function overridesFor(patch = "8.1.1") {
+  if (patch === "8.1.1") return OVERRIDES;
+  if (patch !== "9.0") throw Error(`Unsupported technology snapshot ${patch}`);
+  return [...OVERRIDES,
+    { faction_key: "wh3_dlc20_chs_sigvald", selected_node_set_key: "chs_mil_sigvald", overridden_node_set_key: "chs_mil",
+      rule: "faction_specific_replaces_generic", interpretation_status: "source_selector_with_official_rework_corroboration",
+      corroborating_review: "https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/110" },
+    { faction_key: "wh3_dlc29_chs_host_of_the_triplets", selected_node_set_key: "chs_mil_glottkin", overridden_node_set_key: "chs_mil",
+      rule: "faction_specific_replaces_generic", interpretation_status: "reviewed_source_selector_runtime_not_observed",
+      corroborating_review: "docs/development/update-9.0/technology-selectors.md" },
+  ];
+}
+
 export function resolveSets(tables, p, precedence) {
   const matches = tables.technology_node_sets.filter(
     (r) =>

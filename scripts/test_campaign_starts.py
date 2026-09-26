@@ -11,7 +11,7 @@ from extract_campaign_starts import lua_table
 
 
 ROOT=Path(__file__).resolve().parents[1]
-ATLAS=Path(os.environ.get('CTW_STARTS_ATLAS',ROOT/'data/campaign_map/campaign_atlas__wh3__8.1.1.gpkg')).resolve()
+ATLAS=Path(os.environ.get('CTW_STARTS_ATLAS',ROOT/'data/campaign_map'/('campaign_atlas__wh3__'+json.loads((ROOT/'context_catalog.json').read_text())['snapshot']['patch']+'.gpkg'))).resolve()
 
 
 class FormatTests(unittest.TestCase):
@@ -36,9 +36,9 @@ class AtlasTests(unittest.TestCase):
     def test_primary_coverage_and_uniqueness(self):
         expected={r[0] for r in self.db.execute('select faction_key from factions where playable=1')}
         rows=list(self.db.execute('select faction_key,world_x,world_y from faction_army_start_reference'))
-        self.assertEqual(len(rows),104);self.assertEqual({r[0] for r in rows},expected)
+        self.assertEqual(len(rows),109 if dict(self.db.execute("select key,value from metadata"))["patch"]=="9.0" else 104);self.assertEqual({r[0] for r in rows},expected)
         self.assertTrue(all(r[1] is not None and r[2] is not None for r in rows))
-        self.assertEqual(self.db.execute('select count(*) from campaign_army_starts').fetchone()[0],109)
+        self.assertEqual(self.db.execute('select count(*) from campaign_army_starts').fetchone()[0],118 if dict(self.db.execute("select key,value from metadata"))["patch"]=="9.0" else 109)
 
     def test_gelt_has_army_without_capital(self):
         r=self.start('wh2_dlc13_emp_golden_order')

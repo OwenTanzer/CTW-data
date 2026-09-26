@@ -786,37 +786,46 @@
     "faction_key": "wh3_dlc20_chs_kholek",
     "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
+    "source_key": "dlc20_chs_kho_0|dlc20_chs_kho_start_archaon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_0",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
+    "parent_node_key": "dlc20_chs_kho_start_archaon",
+    "child_node_key": "dlc20_chs_kho_0"
   },
   {
     "faction_key": "wh3_dlc20_chs_kholek",
     "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
+    "source_key": "dlc20_chs_kho_1|dlc20_chs_kho_start_archaon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_1",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
+    "parent_node_key": "dlc20_chs_kho_start_archaon",
+    "child_node_key": "dlc20_chs_kho_1"
   },
   {
     "faction_key": "wh3_dlc20_chs_kholek",
     "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
+    "source_key": "dlc20_chs_kho_2|dlc20_chs_kho_start_archaon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_2",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
+    "parent_node_key": "dlc20_chs_kho_start_archaon",
+    "child_node_key": "dlc20_chs_kho_2"
   },
   {
     "faction_key": "wh3_dlc20_chs_kholek",
     "variant_key": "chs_mil@all_campaigns",
     "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
+    "source_key": "dlc20_chs_kho_3|dlc20_chs_kho_start_archaon",
     "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_3",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
+    "parent_node_key": "dlc20_chs_kho_start_archaon",
+    "child_node_key": "dlc20_chs_kho_3"
+  },
+  {
+    "faction_key": "wh3_dlc20_chs_kholek",
+    "variant_key": "chs_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "dlc20_chs_kho_start_archaon|dlc20_chs_und_14",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "dlc20_chs_und_14",
+    "child_node_key": "dlc20_chs_kho_start_archaon"
   },
   {
     "faction_key": "wh3_dlc24_cth_the_celestial_court",
@@ -1197,6 +1206,96 @@
     "child_node_key": "wh3_dlc27_tech_nor_cam_faction_wulfrik_01"
   },
   {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "wh2_main_tech_skv_3_1|tech_dlc14_skv_3_0_eshin",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "tech_dlc14_skv_3_0_eshin",
+    "child_node_key": "wh2_main_tech_skv_3_1"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "wh2_main_tech_skv_8_1|tech_dlc14_skv_8_0_eshin",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "tech_dlc14_skv_8_0_eshin",
+    "child_node_key": "wh2_main_tech_skv_8_1"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "wh2_main_tech_skv_8_2|tech_dlc14_skv_8_0_eshin",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "tech_dlc14_skv_8_0_eshin",
+    "child_node_key": "wh2_main_tech_skv_8_2"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "wh2_main_tech_skv_8_3|tech_dlc14_skv_8_0_eshin",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "tech_dlc14_skv_8_0_eshin",
+    "child_node_key": "wh2_main_tech_skv_8_3"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "wh2_main_tech_skv_8_4|tech_dlc14_skv_8_0_eshin",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "tech_dlc14_skv_8_0_eshin",
+    "child_node_key": "wh2_main_tech_skv_8_4"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "wh2_main_tech_skv_8_5|tech_dlc14_skv_8_0_eshin",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "tech_dlc14_skv_8_0_eshin",
+    "child_node_key": "wh2_main_tech_skv_8_5"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "wh2_main_tech_skv_1_1|tech_skv_1_0_moulder",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "tech_skv_1_0_moulder",
+    "child_node_key": "wh2_main_tech_skv_1_1"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "tech_dlc14_skv_2_4_eshin|wh2_main_tech_skv_2_2",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "wh2_main_tech_skv_2_2",
+    "child_node_key": "tech_dlc14_skv_2_4_eshin"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_3_7",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "wh2_main_tech_skv_3_7",
+    "child_node_key": "tech_dlc14_skv_8_0_eshin"
+  },
+  {
+    "faction_key": "wh3_dlc29_skv_clan_scruten",
+    "variant_key": "skv_mil@all_campaigns",
+    "record_type": "dependency_link",
+    "source_key": "tech_dlc14_skv_8_0_eshin|wh2_main_tech_skv_5_4",
+    "classification": "endpoint_excluded_by_faction_or_campaign",
+    "parent_node_key": "wh2_main_tech_skv_5_4",
+    "child_node_key": "tech_dlc14_skv_8_0_eshin"
+  },
+  {
     "faction_key": "wh3_main_cth_the_northern_provinces",
     "variant_key": "cth_mil@all_campaigns",
     "record_type": "dependency_link",
@@ -1690,42 +1789,6 @@
     "classification": "endpoint_excluded_by_faction_or_campaign",
     "parent_node_key": "wh_dlc07_tech_brt_heraldry_start",
     "child_node_key": "tech_dlc14_brt_the_ladys_favour"
-  },
-  {
-    "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@all_campaigns",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_0",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_0",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@all_campaigns",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_1",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_1",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@all_campaigns",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_2",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_2",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
-  },
-  {
-    "faction_key": "wh_main_chs_chaos",
-    "variant_key": "chs_mil@all_campaigns",
-    "record_type": "dependency_link",
-    "source_key": "dlc20_chs_sla_sigvald_bonus_1|dlc20_chs_sla_3",
-    "classification": "endpoint_excluded_by_faction_or_campaign",
-    "parent_node_key": "dlc20_chs_sla_3",
-    "child_node_key": "dlc20_chs_sla_sigvald_bonus_1"
   },
   {
     "record_type": "node",
@@ -2178,6 +2241,11 @@
   },
   {
     "record_type": "technology",
+    "source_key": "wh2_dlc13_tech_emp_economy_1_b",
+    "classification": "outside_playable_trees"
+  },
+  {
+    "record_type": "technology",
     "source_key": "wh2_dlc13_tech_emp_economy_2_b",
     "classification": "outside_playable_trees"
   },
@@ -2234,6 +2302,406 @@
   {
     "record_type": "technology",
     "source_key": "wh3_dlc26_tech_kho_blood_hosts_2",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_emp_boris_count_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_black_pyramid_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_07",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_08",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_09",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_books_tech_10",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cav_buff_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cav_buff_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cav_buff_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cav_buff_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cav_buff_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cav_buff_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_chaff_buff_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_chaff_buff_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_chaff_buff_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_chaff_buff_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_chaff_buff_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_command_start_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_command_start_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_command_start_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_command_start_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cst_unlock_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cst_unlock_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cst_unlock_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cst_unlock_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_cst_unlock_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_economy_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_economy_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_economy_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_economy_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_economy_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_economy_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_heroes_mortarchs_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_heroes_mortarchs_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_heroes_mortarchs_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_heroes_mortarchs_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_heroes_mortarchs_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_magic_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_magic_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_magic_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_magic_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_magic_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_magic_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_mon_buff_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_mon_buff_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_mon_buff_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_mon_buff_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_ranged_buff_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_ranged_buff_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_ranged_buff_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_ranged_buff_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_recruitment_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_recruitment_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_recruitment_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_recruitment_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_recruitment_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_recruitment_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_recruitment_07",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_requiem_souls_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_shyish_start_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_shyish_start_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_shyish_start_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_top_buff_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_top_buff_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_top_buff_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_top_buff_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_vmp_unlock_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_vmp_unlock_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_vmp_unlock_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_vmp_unlock_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_vmp_unlock_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_war_start_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_nag_war_start_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh3_dlc29_tech_emp_Boris_economy_1_b",
     "classification": "registry_without_node"
   },
   {
@@ -3354,6 +3822,236 @@
   {
     "record_type": "technology",
     "source_key": "wh_main_tech_grn_unlock_siegeengines",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_07",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_08",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_beasts_09",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_07",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_08",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_09",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_binding_10",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_06A",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_07",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_08",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_09",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_09A",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_10",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_11",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_blood_12",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_01",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_02",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_02a",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_03",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_04",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_04a",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_05",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_05a",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_06",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_07",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_08",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_09",
+    "classification": "registry_without_node"
+  },
+  {
+    "record_type": "technology",
+    "source_key": "wh_main_tech_vmp_bones_10",
     "classification": "registry_without_node"
   }
 ]
