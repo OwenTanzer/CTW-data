@@ -1,0 +1,1343 @@
+{
+  "game": "warhammer_3",
+  "patch": "8.1.1",
+  "steam_build_id": "24237342",
+  "executable_version": "8.1.1.0",
+  "appmanifest_sha256": "79a5f4233d06fc7e3309a6d2d05b32f8143b7ceefc2194b430916db84583c302",
+  "decoder": "RPFM schema-decoded TSV; version to be verified on host",
+  "source_kind": "read-only merged vanilla CA packs",
+  "table_folders_requested": [
+    "_kv_experience_bonuses_tables",
+    "abilities_tables",
+    "action_results_additional_outcomes_tables",
+    "action_results_tables",
+    "agent_ability_categories_tables",
+    "agent_actions_tables",
+    "agent_attributes_tables",
+    "agents_tables",
+    "area_of_effect_displays_tables",
+    "armory_item_categories_tables",
+    "army_special_abilities_tables",
+    "audio_abilities_tables",
+    "audio_armour_types_tables",
+    "audio_campaign_environment_reverbs_tables",
+    "audio_entity_actors_tables",
+    "audio_entity_focus_pools_tables",
+    "audio_entity_looping_sounds_tables",
+    "audio_entity_random_vocalisations_tables",
+    "audio_entity_type_limitations_tables",
+    "audio_entity_types_tables",
+    "audio_explosions_tables",
+    "audio_group_focus_pools_tables",
+    "audio_group_sound_groupings_tables",
+    "audio_group_sounds_tables",
+    "audio_materials_tables",
+    "audio_music_sync_events_tables",
+    "audio_projectile_bombardments_tables",
+    "audio_sphere_of_influence_groups_tables",
+    "audio_sphere_of_influence_one_shots_tables",
+    "audio_sphere_of_influences_tables",
+    "autoresolver_usages_tables",
+    "battle_ai_abilities_usage_group_names_tables",
+    "battle_ai_abilities_usage_template_names_tables",
+    "battle_animations_table_tables",
+    "battle_camera_shake_parameters_tables",
+    "battle_context_army_special_ability_junctions_tables",
+    "battle_context_unit_ability_junctions_tables",
+    "battle_context_unit_attribute_junctions_tables",
+    "battle_entity_stats_tables",
+    "battle_personalities_tables",
+    "battle_secondary_currency_types_tables",
+    "battle_skeletons_tables",
+    "battle_vortex_collision_responses_tables",
+    "battle_vortex_composite_scene_groups_tables",
+    "battle_vortex_launch_sources_tables",
+    "battle_vortex_shapes_tables",
+    "battle_vortexs_tables",
+    "battlefield_deployable_siege_items_tables",
+    "battlefield_engines_tables",
+    "battlefield_siege_vehicles_tables",
+    "building_sets_tables",
+    "campaign_bonus_value_battle_context_battle_type_junctions_tables",
+    "campaign_bonus_value_battle_context_culture_junctions_tables",
+    "campaign_bonus_value_battle_context_faction_junctions_tables",
+    "campaign_bonus_value_battle_context_force_status_junctions_tables",
+    "campaign_bonus_value_battle_context_ground_type_junctions_tables",
+    "campaign_bonus_value_battle_context_specifiers_tables",
+    "campaign_bonus_value_battle_context_territory_status_junctions_tables",
+    "campaign_bonus_value_ids_initiative_set_categories_tables",
+    "campaign_composite_scenes_tables",
+    "campaign_effect_list_chains_tables",
+    "campaign_effect_lists_tables",
+    "campaign_effect_scope_agent_junctions_tables",
+    "campaign_effect_scope_categories_tables",
+    "campaign_effect_scope_character_force_relationship_junctions_tables",
+    "campaign_effect_scope_territories_tables",
+    "campaign_effect_scopes_tables",
+    "campaign_ground_types_tables",
+    "campaign_map_attrition_damages_tables",
+    "campaign_map_attritions_tables",
+    "campaign_payloads_tables",
+    "campaign_stances_tables",
+    "campaign_unit_stat_bonuses_tables",
+    "character_training_groups_tables",
+    "commodity_unit_names_tables",
+    "composite_scene_files_tables",
+    "cursors_tables",
+    "custom_splines_tables",
+    "diplomatic_faction_sets_tables",
+    "diplomatic_manipulation_categories_tables",
+    "effect_bonus_value_agent_action_record_junctions_tables",
+    "effect_bonus_value_agent_junction_tables",
+    "effect_bonus_value_agent_subtype_junctions_tables",
+    "effect_bonus_value_armory_item_category_junctions_tables",
+    "effect_bonus_value_attrition_record_junctions_tables",
+    "effect_bonus_value_basic_junction_tables",
+    "effect_bonus_value_battle_context_army_special_ability_junctions_tables",
+    "effect_bonus_value_battle_context_junctions_tables",
+    "effect_bonus_value_battle_context_unit_ability_junctions_tables",
+    "effect_bonus_value_battle_context_unit_attribute_junctions_tables",
+    "effect_bonus_value_building_chain_junctions_tables",
+    "effect_bonus_value_building_set_junctions_tables",
+    "effect_bonus_value_character_training_group_junctions_tables",
+    "effect_bonus_value_diplomacy_manipulation_category_junctions_tables",
+    "effect_bonus_value_faction_junctions_tables",
+    "effect_bonus_value_id_action_results_additional_outcomes_junctions_tables",
+    "effect_bonus_value_ids_unit_sets_tables",
+    "effect_bonus_value_initiative_junctions_tables",
+    "effect_bonus_value_initiative_set_categories_junctions_tables",
+    "effect_bonus_value_initiative_set_junctions_tables",
+    "effect_bonus_value_loyalty_event_junctions_tables",
+    "effect_bonus_value_military_force_ability_junctions_tables",
+    "effect_bonus_value_missile_weapon_junctions_tables",
+    "effect_bonus_value_name_record_junctions_tables",
+    "effect_bonus_value_plague_component_junctions_tables",
+    "effect_bonus_value_plague_junctions_tables",
+    "effect_bonus_value_pooled_resource_factor_junctions_tables",
+    "effect_bonus_value_pooled_resource_junctions_tables",
+    "effect_bonus_value_pre_battle_unit_targeted_ability_junctions_tables",
+    "effect_bonus_value_province_growth_factor_junctions_tables",
+    "effect_bonus_value_provincial_initiative_effect_record_junctions_tables",
+    "effect_bonus_value_public_order_provider_junctions_tables",
+    "effect_bonus_value_recruitment_source_junctions_tables",
+    "effect_bonus_value_resource_junction_tables",
+    "effect_bonus_value_ritual_category_junctions_tables",
+    "effect_bonus_value_ritual_chains_junctions_tables",
+    "effect_bonus_value_ritual_junctions_tables",
+    "effect_bonus_value_scripted_junctions_tables",
+    "effect_bonus_value_siege_item_junctions_tables",
+    "effect_bonus_value_special_ability_group_junctions_tables",
+    "effect_bonus_value_special_ability_phase_record_junctions_tables",
+    "effect_bonus_value_stance_junctions_tables",
+    "effect_bonus_value_subculture_junctions_tables",
+    "effect_bonus_value_teleportation_node_template_junctions_tables",
+    "effect_bonus_value_unit_ability_junctions_tables",
+    "effect_bonus_value_unit_attribute_junctions_tables",
+    "effect_bonus_value_unit_components_animation_table_override_junctions_tables",
+    "effect_bonus_value_unit_list_junctions_tables",
+    "effect_bonus_value_unit_record_junctions_tables",
+    "effect_bonus_value_unit_set_special_ability_phase_junctions_tables",
+    "effect_bonus_value_unit_set_unit_ability_junctions_tables",
+    "effect_bonus_value_unit_set_unit_attribute_junctions_tables",
+    "effect_bonus_value_unit_upgrade_to_unit_group_junctions_tables",
+    "effect_bundle_advancement_stages_tables",
+    "effect_bundles_tables",
+    "effect_categories_tables",
+    "effects_tables",
+    "faction_sets_tables",
+    "first_person_engines_tables",
+    "initiative_set_categories_tables",
+    "initiative_sets_tables",
+    "initiatives_tables",
+    "loyalty_event_effects_tables",
+    "loyalty_factors_tables",
+    "message_events_tables",
+    "military_force_types_tables",
+    "models_sieges_tables",
+    "modifiable_unit_stats_tables",
+    "names_groups_tables",
+    "names_tables",
+    "particle_effects_tables",
+    "plague_component_types_tables",
+    "plague_components_tables",
+    "plague_parameters_tables",
+    "plagues_tables",
+    "pooled_resource_battle_conversions_tables",
+    "pooled_resource_factor_junctions_tables",
+    "pooled_resource_factors_tables",
+    "pooled_resources_tables",
+    "pre_battle_unit_targeted_abilities_tables",
+    "pre_battle_unit_targeted_ability_types_tables",
+    "projectile_bombardment_launch_sources_tables",
+    "projectile_bombardments_tables",
+    "projectile_shrapnels_tables",
+    "projectiles_explosions_tables",
+    "province_growth_factors_tables",
+    "public_order_providers_tables",
+    "recruitment_sources_tables",
+    "region_groups_tables",
+    "resource_costs_tables",
+    "resources_tables",
+    "ritual_categories_tables",
+    "ritual_category_groups_tables",
+    "ritual_chains_tables",
+    "ritual_faction_target_criterias_tables",
+    "ritual_flag_sets_tables",
+    "ritual_military_force_target_criterias_context_expressions_tables",
+    "ritual_military_force_target_criterias_tables",
+    "ritual_payloads_tables",
+    "ritual_region_target_criterias_context_expressions_tables",
+    "ritual_region_target_criterias_tables",
+    "ritual_targets_tables",
+    "rituals_tables",
+    "scoped_resource_costs_tables",
+    "scripted_bonus_value_ids_tables",
+    "slot_set_types_tables",
+    "slot_sets_tables",
+    "slot_templates_tables",
+    "slot_types_tables",
+    "special_abilities_specific_formation_types_tables",
+    "special_ability_behaviour_groups_tables",
+    "special_ability_displays_tables",
+    "special_ability_groups_tables",
+    "special_unit_categories_tables",
+    "spline_types_tables",
+    "teleportation_node_double_click_events_tables",
+    "teleportation_node_templates_tables",
+    "ui_info_ritual_target_criterias_tables",
+    "unit_castes_tables",
+    "unit_category_tables",
+    "unit_class_tables",
+    "unit_component_animation_table_junctions_tables",
+    "unit_experience_bonuses_tables",
+    "unit_experience_threshold_modifiers_tables",
+    "unit_experience_thresholds_tables",
+    "unit_lists_tables",
+    "unit_missile_weapon_junctions_tables",
+    "unit_set_special_ability_phase_junctions_tables",
+    "unit_set_to_unit_junctions_tables",
+    "unit_set_unit_ability_junctions_tables",
+    "unit_set_unit_attribute_junctions_tables",
+    "unit_sets_tables",
+    "unit_special_abilities_tables",
+    "unit_stat_localisations_tables",
+    "unit_stat_modifiers_tables",
+    "unit_stats_land_experience_bonuses_tables",
+    "unit_upgrade_groups_tables",
+    "unit_upgrade_to_unit_groups_tables",
+    "variants_tables",
+    "warscape_animated_tables"
+  ],
+  "files": [
+    {
+      "path": "db/_kv_experience_bonuses_tables/data__.tsv",
+      "bytes": 334,
+      "sha256": "47b5f025120981acf3d5688a270d6c00bea3c894c27674ad30f643426702cb83"
+    },
+    {
+      "path": "db/abilities_tables/data__.tsv",
+      "bytes": 272,
+      "sha256": "7dd655a3c51a12333e05af47dd308396407261c6c2471f4c0231417990fccb34"
+    },
+    {
+      "path": "db/action_results_additional_outcomes_tables/data__.tsv",
+      "bytes": 18888,
+      "sha256": "5c162921b627ec6499b32d10498ad54c30b1d408d3414520d0516360eb87f58a"
+    },
+    {
+      "path": "db/action_results_tables/data__.tsv",
+      "bytes": 13171,
+      "sha256": "3532f0d302890fe73c9ba79eab7bd0276f9c15dc0e09475d9a836d87295b1413"
+    },
+    {
+      "path": "db/agent_ability_categories_tables/data__.tsv",
+      "bytes": 111,
+      "sha256": "d7626c71585a01a7208606d1f94f492bb793e55bc2a69187a5398c3683628b3f"
+    },
+    {
+      "path": "db/agent_actions_tables/data__.tsv",
+      "bytes": 116895,
+      "sha256": "950fb464bc6e00dccc53fd98c3793e9de6f6467c2a392bb5fda2d6cb9bd8bdc8"
+    },
+    {
+      "path": "db/agent_attributes_tables/data__.tsv",
+      "bytes": 91,
+      "sha256": "6069a1567b093739c241d9eb2d1f957fcc49add2856ef127b45d5850e4faa095"
+    },
+    {
+      "path": "db/agents_tables/data__.tsv",
+      "bytes": 539,
+      "sha256": "810ca8704b4cfe69ebbd0d8c0e021b399b9c23993675c189d068f89137e2ce63"
+    },
+    {
+      "path": "db/area_of_effect_displays_tables/data__.tsv",
+      "bytes": 22057,
+      "sha256": "69584014cc38e4a4d019f386f1fba02f6e92db582ca09fcbebc3e5ea2e2972eb"
+    },
+    {
+      "path": "db/armory_item_categories_tables/data__.tsv",
+      "bytes": 156,
+      "sha256": "8762e7e2c5e42d8614155130f00f2fb9e8fa5852338d2cf18a9ad63ea6e8be40"
+    },
+    {
+      "path": "db/army_special_abilities_tables/data__.tsv",
+      "bytes": 26741,
+      "sha256": "0b95c763bf822f511bf126e7f0362571b01918d631b84d7e893b87975790d6ff"
+    },
+    {
+      "path": "db/audio_abilities_tables/data__.tsv",
+      "bytes": 103732,
+      "sha256": "734631871f1d0d18bb08b97eca3bd11e1e46f6e02268cbc0d5d9580989bb78e0"
+    },
+    {
+      "path": "db/audio_armour_types_tables/data__.tsv",
+      "bytes": 1118,
+      "sha256": "9ad55c513ff8da6174dbcf219c1198f2fa0b62113c036404f3505928e0171e1f"
+    },
+    {
+      "path": "db/audio_campaign_environment_reverbs_tables/data__.tsv",
+      "bytes": 780,
+      "sha256": "749867c63b0af916bd4668a50bfd5015454f07389442a4ab0c1c28262f6aca7d"
+    },
+    {
+      "path": "db/audio_entity_actors_tables/data__.tsv",
+      "bytes": 8052,
+      "sha256": "f023cce57d0f1d4980bd002e7b70fdf7ce23050981639eafba35c54d1a4a7621"
+    },
+    {
+      "path": "db/audio_entity_focus_pools_tables/data__.tsv",
+      "bytes": 3697,
+      "sha256": "222dbfd779b77fc53f86e8ff7af7e21a087a2eb07024c458f433a159c63d5812"
+    },
+    {
+      "path": "db/audio_entity_looping_sounds_tables/data__.tsv",
+      "bytes": 43894,
+      "sha256": "c271ed00b435d66ca5ee7e3784e87d58cb930c699da985d596647d2a8c7e7445"
+    },
+    {
+      "path": "db/audio_entity_random_vocalisations_tables/data__.tsv",
+      "bytes": 169821,
+      "sha256": "17f42ea984f0b125323d03531cf492e68536b37c7b44a01b1fc49acc7387a9f3"
+    },
+    {
+      "path": "db/audio_entity_type_limitations_tables/data__.tsv",
+      "bytes": 1576,
+      "sha256": "b98c1e53bbe3fb03c2973260c1a2c446715d717222d88bdd1887974e7b2c86c5"
+    },
+    {
+      "path": "db/audio_entity_types_tables/data__.tsv",
+      "bytes": 276320,
+      "sha256": "23086e22ca94c6d6b515fe52f9632c2560e71df5585fee59dde05522d306a422"
+    },
+    {
+      "path": "db/audio_explosions_tables/data__.tsv",
+      "bytes": 19236,
+      "sha256": "e5ea806782ef46d7cf1c0ebb1afbac582f56966cdc27b6c55375f0914ff6194e"
+    },
+    {
+      "path": "db/audio_group_focus_pools_tables/data__.tsv",
+      "bytes": 283,
+      "sha256": "678827d896e996a1ded0660b172f79c68fe4d4ca2570a582b4329ac0fcb84dbf"
+    },
+    {
+      "path": "db/audio_group_sound_groupings_tables/data__.tsv",
+      "bytes": 354,
+      "sha256": "040ad4191ecdfbf4133bcddd9bde05e5f6ec81f7530101a0cb177973f7568d23"
+    },
+    {
+      "path": "db/audio_group_sounds_tables/data__.tsv",
+      "bytes": 535311,
+      "sha256": "277d056353ac7a205e36c26db7ae9a0687f53348cad22a6a4621a155b409358c"
+    },
+    {
+      "path": "db/audio_materials_tables/data__.tsv",
+      "bytes": 215,
+      "sha256": "ded3fff75a11ccaa2c6f905b9b3ddf52cd27f12667171ab2fd70022b99ab75ad"
+    },
+    {
+      "path": "db/audio_music_sync_events_tables/data__.tsv",
+      "bytes": 331,
+      "sha256": "ee93c69b8d9bbe038075fe55264d083edb640b612296276eace6ee8bf8917284"
+    },
+    {
+      "path": "db/audio_projectile_bombardments_tables/data__.tsv",
+      "bytes": 4493,
+      "sha256": "30c9e39cc04b8d373cc6e11f8588f43be27280c3142bc61aa042ee0e4e79bd21"
+    },
+    {
+      "path": "db/audio_sphere_of_influence_groups_tables/data__.tsv",
+      "bytes": 125,
+      "sha256": "4dfe9e2d2a098c4f3d9e5890223fccaf1c0d8b75a57dbe0f13dd6148c787e050"
+    },
+    {
+      "path": "db/audio_sphere_of_influence_one_shots_tables/data__.tsv",
+      "bytes": 699,
+      "sha256": "d96081512e6918ab60710f8215c41b3040da8e1916af7b5601f4a8ac781a7461"
+    },
+    {
+      "path": "db/audio_sphere_of_influences_tables/data__.tsv",
+      "bytes": 1643,
+      "sha256": "47d808e3b8d9ef1f842d0d991eae737965870ccfc63dd8d136388060ce454220"
+    },
+    {
+      "path": "db/autoresolver_usages_tables/data__.tsv",
+      "bytes": 215,
+      "sha256": "d7fe917ec65b85b7899300171adc10ee15d433e2f661f1aefbc6e6a5f59e29b7"
+    },
+    {
+      "path": "db/battle_ai_abilities_usage_group_names_tables/data__.tsv",
+      "bytes": 148,
+      "sha256": "be279d3fbfa27e1ca491df3581fb0ac26b7be89bf7b64de7f519bb6162582570"
+    },
+    {
+      "path": "db/battle_ai_abilities_usage_template_names_tables/data__.tsv",
+      "bytes": 2427,
+      "sha256": "159ac1289cacdb1bf2712d25e88fa020822baf5538585b2b164d62016357eb41"
+    },
+    {
+      "path": "db/battle_animations_table_tables/data__.tsv",
+      "bytes": 58487,
+      "sha256": "2a2a8af27bd9ae86cc22044a32c9093338709c0494f4e4870825ff9a8a7c3568"
+    },
+    {
+      "path": "db/battle_camera_shake_parameters_tables/data__.tsv",
+      "bytes": 8613,
+      "sha256": "d166bd3e8339f041394ab26fd919de44c1970033ef64b2a5277f60dfee21f836"
+    },
+    {
+      "path": "db/battle_context_army_special_ability_junctions_tables/data__.tsv",
+      "bytes": 987,
+      "sha256": "1d2b3fc534d48cba107a2464df23fd5f939b9025c1ba0480b36a973544e89628"
+    },
+    {
+      "path": "db/battle_context_unit_ability_junctions_tables/data__.tsv",
+      "bytes": 1060,
+      "sha256": "991c74dd5ef1429213abf65009f7e7c8543af594a76c352a99b30c3144a07258"
+    },
+    {
+      "path": "db/battle_context_unit_attribute_junctions_tables/data__.tsv",
+      "bytes": 8448,
+      "sha256": "12c88fcf4a6dcbdd3393ab6fee3cef1475000650f7f86a82d29662bb49bd9da5"
+    },
+    {
+      "path": "db/battle_entity_stats_tables/data__.tsv",
+      "bytes": 7766,
+      "sha256": "b8660a9912f4f1cc59af983c3afc415be1ce3595f631c32c913fe942af3f08f1"
+    },
+    {
+      "path": "db/battle_personalities_tables/data__.tsv",
+      "bytes": 171621,
+      "sha256": "1c51ac37e56467b347b7c53db4efab7f39cb36cdcdbdcf52eda2c7a0180730e5"
+    },
+    {
+      "path": "db/battle_secondary_currency_types_tables/data__.tsv",
+      "bytes": 258,
+      "sha256": "a2f0674b01146ef938cb9b70ac5b7c7a70215b9a2b8bdd7d9f8fa11f2dc52463"
+    },
+    {
+      "path": "db/battle_skeletons_tables/data__.tsv",
+      "bytes": 115354,
+      "sha256": "82efe13471eef606aae8cabba3a4c6d1f98ddb1ff3cebab0c183bad769396924"
+    },
+    {
+      "path": "db/battle_vortex_collision_responses_tables/data__.tsv",
+      "bytes": 209,
+      "sha256": "867df4a4799662458178645d6383e543a7f0e124cf8c5940fb59457fc1124271"
+    },
+    {
+      "path": "db/battle_vortex_composite_scene_groups_tables/data__.tsv",
+      "bytes": 7730,
+      "sha256": "803ded603495268d430a504134bc299c822be3375f2e4dd2e571682294133f36"
+    },
+    {
+      "path": "db/battle_vortex_launch_sources_tables/data__.tsv",
+      "bytes": 291,
+      "sha256": "18f2a2a3434296b85d7399982c6de8328f8e362d35f5c41459e070533599b607"
+    },
+    {
+      "path": "db/battle_vortex_shapes_tables/data__.tsv",
+      "bytes": 96,
+      "sha256": "3134a25fdea15765108b1fc7395b5ce74be127bcfc591eaf667485ea6cb44e50"
+    },
+    {
+      "path": "db/battle_vortexs_tables/data__.tsv",
+      "bytes": 86977,
+      "sha256": "ba1198ca9ef31e63e45ccb1ac7263751b1d01bd754108ac6cc423e38ab6e26a1"
+    },
+    {
+      "path": "db/battlefield_deployable_siege_items_tables/data__.tsv",
+      "bytes": 2666,
+      "sha256": "59e8564e459ec46fd07de8a0e7aead3e9d6d4b64b1e8a48292662d9604b20403"
+    },
+    {
+      "path": "db/battlefield_engines_tables/data__.tsv",
+      "bytes": 62390,
+      "sha256": "a53b6298515a2ea6ad0baeaba71326a7caf4f2fdc687235a35e500caa1da62c0"
+    },
+    {
+      "path": "db/battlefield_siege_vehicles_tables/data__.tsv",
+      "bytes": 11374,
+      "sha256": "73ebc351b0a5206dc0b5ffd92bc41ce2e4d01703fb1ced1f134d9446ed9f4241"
+    },
+    {
+      "path": "db/building_sets_tables/data__.tsv",
+      "bytes": 25543,
+      "sha256": "d287c928111c8c462e68b0b9d8923fd4629996fdd738f893a24099601e937d04"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_battle_type_junctions_tables/data__.tsv",
+      "bytes": 529,
+      "sha256": "194b227b230583856d9eb12063585ee1f2f4472285190891e89c4293804f34ea"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_culture_junctions_tables/data__.tsv",
+      "bytes": 14222,
+      "sha256": "e1b2eaa7e1c1bc216e6ab2b708965ac23d994014c3697c7426994210a4f267dc"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_faction_junctions_tables/data__.tsv",
+      "bytes": 417,
+      "sha256": "34126b1f92c2f9676304e534d7adc0207ec4d17b12578401a46f5202301789c4"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_force_status_junctions_tables/data__.tsv",
+      "bytes": 815,
+      "sha256": "95e326412653bcc5477dc4566d67b6613c3662bc1e58306debeffff2a3250e2c"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_ground_type_junctions_tables/data__.tsv",
+      "bytes": 646,
+      "sha256": "d61daf137998cdf4eca2fd526fe6da5bda8b61de1e3a602c986e8552246bf3fc"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_specifiers_tables/data__.tsv",
+      "bytes": 4670,
+      "sha256": "bc445eb0a1feb1fbd73534401b8b9caa7f0985e252026d8f5bbab493c3ce3dc0"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_territory_status_junctions_tables/data__.tsv",
+      "bytes": 607,
+      "sha256": "15556554886d1711ab726712afe4cafd049cf78aedd0b24d6c36a66225ab3898"
+    },
+    {
+      "path": "db/campaign_bonus_value_ids_initiative_set_categories_tables/data__.tsv",
+      "bytes": 180,
+      "sha256": "4731626fdc8e730baa0bbcd455faea7d806e9576e4f8ba72b81ff80f6668ae6a"
+    },
+    {
+      "path": "db/campaign_composite_scenes_tables/data__.tsv",
+      "bytes": 14591,
+      "sha256": "16bd36f151d5b263afc5ca10da19c8552ce8e5248b4968ba451371e02af1027d"
+    },
+    {
+      "path": "db/campaign_effect_list_chains_tables/data__.tsv",
+      "bytes": 962,
+      "sha256": "fa4a9594accb5b70a312029fc9f72886c7efff55d5141d98e81cfd31eac8efba"
+    },
+    {
+      "path": "db/campaign_effect_lists_tables/data__.tsv",
+      "bytes": 50045,
+      "sha256": "a2df1d7c48808c33c9ffe891239d2dba5d8d701d1c44c4b4409e20b5c7077b1a"
+    },
+    {
+      "path": "db/campaign_effect_scope_agent_junctions_tables/data__.tsv",
+      "bytes": 2543,
+      "sha256": "fa818476e6cadf4fd01313fc43cd2d35c10864fae3a42e9f9eaf02c6a7d09f33"
+    },
+    {
+      "path": "db/campaign_effect_scope_categories_tables/data__.tsv",
+      "bytes": 332,
+      "sha256": "55d58fd3d4baa5c5bdfc4d956b483c7200e47a30b82d352b8bd9777df4b1e372"
+    },
+    {
+      "path": "db/campaign_effect_scope_character_force_relationship_junctions_tables/data__.tsv",
+      "bytes": 236,
+      "sha256": "c8bb59bf4a477c379092180820699b52eb90590b86e71767080744e69b27abc5"
+    },
+    {
+      "path": "db/campaign_effect_scope_territories_tables/data__.tsv",
+      "bytes": 131,
+      "sha256": "3445087124bd5c8bafd97a32660745cd26829f1953e1f098459249c73db27030"
+    },
+    {
+      "path": "db/campaign_effect_scopes_tables/data__.tsv",
+      "bytes": 35373,
+      "sha256": "4cc555cf80c8daf9ed52a6021d716fa7d812733e9663319cc465217d80b3f8a0"
+    },
+    {
+      "path": "db/campaign_ground_types_tables/data__.tsv",
+      "bytes": 2039,
+      "sha256": "dabdfedc7d862b5a989ccaf8ec72f07dc498007ffb56fdd70e57aaba261b1230"
+    },
+    {
+      "path": "db/campaign_map_attrition_damages_tables/data__.tsv",
+      "bytes": 1016,
+      "sha256": "6390a7a8104d9f91e99d5cb2a3e370fc34a31b3c9ad2ceca5ea7a3c6aaa2c226"
+    },
+    {
+      "path": "db/campaign_map_attritions_tables/data__.tsv",
+      "bytes": 4339,
+      "sha256": "56579578426432f0b69db3dc02b5d1679163f4641ffde43fe6bb411f0d2d0bf2"
+    },
+    {
+      "path": "db/campaign_payloads_tables/data__.tsv",
+      "bytes": 11835,
+      "sha256": "fb13c8f38a428f0e6c127a9dd0d5709e48eef94c8cbd9704b95e76839dfe9cfd"
+    },
+    {
+      "path": "db/campaign_stances_tables/data__.tsv",
+      "bytes": 1067,
+      "sha256": "71594a061bf4379e64aff56bcd727616beb1e0aa3333a5cfbc53e949858abef0"
+    },
+    {
+      "path": "db/campaign_unit_stat_bonuses_tables/data__.tsv",
+      "bytes": 4539,
+      "sha256": "1aa07539009d51b82dc48a840390787847fe83892ca175fbdb33ce6c971a8e3c"
+    },
+    {
+      "path": "db/character_training_groups_tables/data__.tsv",
+      "bytes": 498,
+      "sha256": "0341fa7e22189e273955b4b3dcdc45601ca94720572b380de7fa2ab43930145c"
+    },
+    {
+      "path": "db/commodity_unit_names_tables/data__.tsv",
+      "bytes": 150,
+      "sha256": "b6206af303e4d8e588a54a129b10009a077bdcc61040a0ca9256059ccfc4ee86"
+    },
+    {
+      "path": "db/composite_scene_files_tables/data__.tsv",
+      "bytes": 24342,
+      "sha256": "ca4e04c944692def0ddff0e4e84b9ea56ca071ac2becfa818dfc6c72e2c4187a"
+    },
+    {
+      "path": "db/cursors_tables/data__.tsv",
+      "bytes": 12886,
+      "sha256": "b36d0cab3105fc2a6b0b7c72c679a53f05aa5b350535dc2f45e3f6dd129bf90e"
+    },
+    {
+      "path": "db/custom_splines_tables/data__.tsv",
+      "bytes": 1273,
+      "sha256": "d7a03027409ed6643a6d146aea78397b04e415d663628d7bc678807e3f1907d4"
+    },
+    {
+      "path": "db/diplomatic_faction_sets_tables/data__.tsv",
+      "bytes": 450,
+      "sha256": "bbc99590b2b8737800851cefd872f67f604ff0df87cb836dbaf9d058541c0270"
+    },
+    {
+      "path": "db/diplomatic_manipulation_categories_tables/data__.tsv",
+      "bytes": 432,
+      "sha256": "e24444d0cfc24d57ffc124a4e2efebaec345fa9b6fc9d9054d4c52cbfe212c53"
+    },
+    {
+      "path": "db/effect_bonus_value_agent_action_record_junctions_tables/data__.tsv",
+      "bytes": 45146,
+      "sha256": "d9e36b8afe0ff2af57061dfea65d1813dea2dba9f01ad26ca201a15bbfde74df"
+    },
+    {
+      "path": "db/effect_bonus_value_agent_junction_tables/data__.tsv",
+      "bytes": 50413,
+      "sha256": "5bf961d77f7e7e3a2923fe11ecf8e106541e12b550ac8bd11e50e0de03e75d17"
+    },
+    {
+      "path": "db/effect_bonus_value_agent_subtype_junctions_tables/data__.tsv",
+      "bytes": 47319,
+      "sha256": "4325e2714c50cff4e88771836c3a7809211d89369b714ddd30b40dd4656efb97"
+    },
+    {
+      "path": "db/effect_bonus_value_armory_item_category_junctions_tables/data__.tsv",
+      "bytes": 592,
+      "sha256": "18d71603702250e36e01ac7628c2d3848ec5edf7f7a279d34263669eb8702cee"
+    },
+    {
+      "path": "db/effect_bonus_value_attrition_record_junctions_tables/data__.tsv",
+      "bytes": 50604,
+      "sha256": "f3b3a819e305a58f35163f3cbb7488cc8328855beefc4b8b6ff217227bd09e12"
+    },
+    {
+      "path": "db/effect_bonus_value_basic_junction_tables/data__.tsv",
+      "bytes": 49703,
+      "sha256": "2079513b9d58d0d78b89d01b2e829cfc133a86bfd4fcbfe072aab3bf21753d83"
+    },
+    {
+      "path": "db/effect_bonus_value_battle_context_army_special_ability_junctions_tables/data__.tsv",
+      "bytes": 955,
+      "sha256": "502f4aadf1c6bb736c60e57a53e98be81c7905f045a8f79703015dfb29a2d851"
+    },
+    {
+      "path": "db/effect_bonus_value_battle_context_junctions_tables/data__.tsv",
+      "bytes": 47263,
+      "sha256": "344d9d95bdbb5986912666bc2db9e2d4235b791e8a854d5d506ffbcbdfd1df5d"
+    },
+    {
+      "path": "db/effect_bonus_value_battle_context_unit_ability_junctions_tables/data__.tsv",
+      "bytes": 871,
+      "sha256": "6ff9009dafebc644fa3643a769ea815c3c64d15d973b9ff4c589619f4c02fafb"
+    },
+    {
+      "path": "db/effect_bonus_value_battle_context_unit_attribute_junctions_tables/data__.tsv",
+      "bytes": 7657,
+      "sha256": "158f44bda4a4d1b3ea962a1f91e39b6c32162ce6f5aaf73394926f43a9664af6"
+    },
+    {
+      "path": "db/effect_bonus_value_building_chain_junctions_tables/data__.tsv",
+      "bytes": 2227,
+      "sha256": "5d98fe32677898186c3d607351dc01cbbfb24107592e88746dd14aa72aa20a42"
+    },
+    {
+      "path": "db/effect_bonus_value_building_set_junctions_tables/data__.tsv",
+      "bytes": 26359,
+      "sha256": "ab5975d373fefded8bea785a38daaa9e91798973314e4a8988e8682607f38d7e"
+    },
+    {
+      "path": "db/effect_bonus_value_character_training_group_junctions_tables/data__.tsv",
+      "bytes": 395,
+      "sha256": "9ada1a55ca7ee37033440abb7b8eab507b271203bbba6d019b175a6eec792fe1"
+    },
+    {
+      "path": "db/effect_bonus_value_diplomacy_manipulation_category_junctions_tables/data__.tsv",
+      "bytes": 1801,
+      "sha256": "6a7e8d7f3c5861404961e7fb1141ea94260368173d311ecfeed4cfa518224dca"
+    },
+    {
+      "path": "db/effect_bonus_value_faction_junctions_tables/data__.tsv",
+      "bytes": 6346,
+      "sha256": "36825d6bbac8baa06dabb12a3cbaae00d5a70f5ab77bf1d727ed7ebecfc68445"
+    },
+    {
+      "path": "db/effect_bonus_value_id_action_results_additional_outcomes_junctions_tables/data__.tsv",
+      "bytes": 8568,
+      "sha256": "b10a74bd086a88a0d89062093ec46df9dff925b736aff86e2e25758c84f13eaf"
+    },
+    {
+      "path": "db/effect_bonus_value_ids_unit_sets_tables/data__.tsv",
+      "bytes": 905165,
+      "sha256": "65d264797234b7070276d26ad8e2a755699677605de406d85933efb0c285cf0a"
+    },
+    {
+      "path": "db/effect_bonus_value_initiative_junctions_tables/data__.tsv",
+      "bytes": 15788,
+      "sha256": "1e4b86b879c0822198a61c26623c89908d87af3dcc6e3f0959fe9b899dfca0db"
+    },
+    {
+      "path": "db/effect_bonus_value_initiative_set_categories_junctions_tables/data__.tsv",
+      "bytes": 589,
+      "sha256": "ba81773ef37c128dec2d21afbec31b4482a08f21bad9c1456d0ca6fb3c6ce7b9"
+    },
+    {
+      "path": "db/effect_bonus_value_initiative_set_junctions_tables/data__.tsv",
+      "bytes": 10709,
+      "sha256": "8a5290ecce502e77ef7ca6a4f485b652370dd0466911cd095e88e5f6e35e64d8"
+    },
+    {
+      "path": "db/effect_bonus_value_loyalty_event_junctions_tables/data__.tsv",
+      "bytes": 2934,
+      "sha256": "df4d3e9e0cd6e8d19f8b14b98d9dd4e4361717dc7b9c1cbf339695aee2faac6f"
+    },
+    {
+      "path": "db/effect_bonus_value_military_force_ability_junctions_tables/data__.tsv",
+      "bytes": 39765,
+      "sha256": "cfd627e726de6b6aea3605f43ece60c98f46c5366ab036950516f6fe9e9cc5b0"
+    },
+    {
+      "path": "db/effect_bonus_value_missile_weapon_junctions_tables/data__.tsv",
+      "bytes": 18629,
+      "sha256": "93a6e727767b35ae02c29527281cdfeac94147993c66dc80f426016ee15757ee"
+    },
+    {
+      "path": "db/effect_bonus_value_name_record_junctions_tables/data__.tsv",
+      "bytes": 17236,
+      "sha256": "ae752a56c1e0c5e3ff8c549eee2c1c29251ea1d38c1212b089a3db4911aa1a43"
+    },
+    {
+      "path": "db/effect_bonus_value_plague_component_junctions_tables/data__.tsv",
+      "bytes": 4573,
+      "sha256": "4ea571a2da25f292e5305c3c4d9ace7d49ef2fc8c03e1bc215ef7e328b69e5a0"
+    },
+    {
+      "path": "db/effect_bonus_value_plague_junctions_tables/data__.tsv",
+      "bytes": 507,
+      "sha256": "ab84c3e3c46e83e3784f61e2f451880796013e043ef383c0e3f2c7610a54eb1a"
+    },
+    {
+      "path": "db/effect_bonus_value_pooled_resource_factor_junctions_tables/data__.tsv",
+      "bytes": 72419,
+      "sha256": "fc60991e383852206354ac2df577ab823aa27441da457f8201597e04497bad3e"
+    },
+    {
+      "path": "db/effect_bonus_value_pooled_resource_junctions_tables/data__.tsv",
+      "bytes": 6459,
+      "sha256": "dd50319918c5ac9dd261c2eccc18055446b6732cc112c064241d5315950b97f3"
+    },
+    {
+      "path": "db/effect_bonus_value_pre_battle_unit_targeted_ability_junctions_tables/data__.tsv",
+      "bytes": 1206,
+      "sha256": "2ac72bb2847175fac744bb5ceddd93d709544be530b74b65b6c338be5fe5ab34"
+    },
+    {
+      "path": "db/effect_bonus_value_province_growth_factor_junctions_tables/data__.tsv",
+      "bytes": 2496,
+      "sha256": "aa7989e1e81a9797f2cb7fe079b5886af0926b5028847ed324258e7f6587829f"
+    },
+    {
+      "path": "db/effect_bonus_value_provincial_initiative_effect_record_junctions_tables/data__.tsv",
+      "bytes": 6514,
+      "sha256": "7966ad1dba057f8ce61652ac12054cc94ddef8264d02c371d7234d7233855ce7"
+    },
+    {
+      "path": "db/effect_bonus_value_public_order_provider_junctions_tables/data__.tsv",
+      "bytes": 5309,
+      "sha256": "62c1b9988dbeb8e51eccf7948bd1c8c7f346145e5a96957358d0d853712ac0c6"
+    },
+    {
+      "path": "db/effect_bonus_value_recruitment_source_junctions_tables/data__.tsv",
+      "bytes": 557,
+      "sha256": "02beee1698bee63e98f1887382a797fc4e0f2ca52f0f24dc289aff2cbd3682bd"
+    },
+    {
+      "path": "db/effect_bonus_value_resource_junction_tables/data__.tsv",
+      "bytes": 1370,
+      "sha256": "4b0ad60b6790910e6f0ceb8dea7f6020a8f6b68a7b2f292b4bd5f9a833f7b140"
+    },
+    {
+      "path": "db/effect_bonus_value_ritual_category_junctions_tables/data__.tsv",
+      "bytes": 2402,
+      "sha256": "330671e72d5e0392812444f1eb82b3e061f26d875abf5d12244fb0c1caecd32b"
+    },
+    {
+      "path": "db/effect_bonus_value_ritual_chains_junctions_tables/data__.tsv",
+      "bytes": 881,
+      "sha256": "b8800022361c73a5eaf25ee250d27a3a026e36d616966a0f07fa2b4e6b8f712a"
+    },
+    {
+      "path": "db/effect_bonus_value_ritual_junctions_tables/data__.tsv",
+      "bytes": 104015,
+      "sha256": "4a7679119b19f48e8f6d21d5c2ea8733aaf79a6167b48f81fe7f818699bd19bb"
+    },
+    {
+      "path": "db/effect_bonus_value_scripted_junctions_tables/data__.tsv",
+      "bytes": 29523,
+      "sha256": "1e97e3eb34bf32e801acb8671a34a1bf7d380ab676e9e1aeb4a6727748179883"
+    },
+    {
+      "path": "db/effect_bonus_value_siege_item_junctions_tables/data__.tsv",
+      "bytes": 19752,
+      "sha256": "8901d940704f22841190ffe2266295c800779324b0621fc74568f1ce7d72bd6b"
+    },
+    {
+      "path": "db/effect_bonus_value_special_ability_group_junctions_tables/data__.tsv",
+      "bytes": 37645,
+      "sha256": "bc303d1eece74dc029f79fef3b9d396f16bc616f397d55ed06f1c053a40381b6"
+    },
+    {
+      "path": "db/effect_bonus_value_special_ability_phase_record_junctions_tables/data__.tsv",
+      "bytes": 3957,
+      "sha256": "cfeae3f60f60abd887538be2414aa371d5fcb7d706ec5dc99c97f716f3981aa1"
+    },
+    {
+      "path": "db/effect_bonus_value_stance_junctions_tables/data__.tsv",
+      "bytes": 5561,
+      "sha256": "7a710867126154a58619c18283b2686e5c21ae199839654e5c600dea27e373cc"
+    },
+    {
+      "path": "db/effect_bonus_value_subculture_junctions_tables/data__.tsv",
+      "bytes": 49724,
+      "sha256": "98ebb0cd18b8a5b8b550dc60ce8d9b430e4981bba239ba8c971053f67fbf4d5b"
+    },
+    {
+      "path": "db/effect_bonus_value_teleportation_node_template_junctions_tables/data__.tsv",
+      "bytes": 2104,
+      "sha256": "e05e96750acc501b7f323bcf42923fe3babae625351095756aef3d53815ad35d"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_ability_junctions_tables/data__.tsv",
+      "bytes": 486544,
+      "sha256": "7da148d7628a0202ee6c60568f94605903ee2304861a3e0f90ec5aa212a7a62c"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_attribute_junctions_tables/data__.tsv",
+      "bytes": 3995,
+      "sha256": "c5f19ec047b227e59779610c947c80b6a8be06b023d06d4869c56e00d161b1bb"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_components_animation_table_override_junctions_tables/data__.tsv",
+      "bytes": 1481,
+      "sha256": "8ebd724848a4df0c3d6e430b1470fd4cb53e47d15c7222aa6c83c5ba60d5c5a9"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_list_junctions_tables/data__.tsv",
+      "bytes": 2666,
+      "sha256": "ae2e550e3c1518d7244a3d7fdb0340be038e38f49c5ad80e1051c5861ea8d446"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_record_junctions_tables/data__.tsv",
+      "bytes": 40547,
+      "sha256": "262025c1afc6d6f013597f85c833f7b35b0746c2561edaed8bf7bf0675a7f238"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_set_special_ability_phase_junctions_tables/data__.tsv",
+      "bytes": 7533,
+      "sha256": "81334ceb1df3ddb58d9f2135962e3caace35232eece7d0e73556fe946a56cd55"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_set_unit_ability_junctions_tables/data__.tsv",
+      "bytes": 69184,
+      "sha256": "c776e6680b4258afb0024009bce9328cffc147d3d3a4966749d6909819cc65f3"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_set_unit_attribute_junctions_tables/data__.tsv",
+      "bytes": 48079,
+      "sha256": "c4dc3d1472750a9e9a914dd3cc8a8ea45456a5b6fb2cdf48e30535942df67394"
+    },
+    {
+      "path": "db/effect_bonus_value_unit_upgrade_to_unit_group_junctions_tables/data__.tsv",
+      "bytes": 23813,
+      "sha256": "947d67b6f80e7e4ea2ce36583cd9f4950226f08b80d237686257c75ac568d9ad"
+    },
+    {
+      "path": "db/effect_bundle_advancement_stages_tables/data__.tsv",
+      "bytes": 261,
+      "sha256": "f667607e7bb134739a853815fec0e610ed7e2b7d50a406b5da7c25c31dd0da20"
+    },
+    {
+      "path": "db/effect_bundles_tables/data__.tsv",
+      "bytes": 1051685,
+      "sha256": "40f7144583e1fadd72ddb4d2346e8c129221f02c39e9e91dd97b1192b765cce2"
+    },
+    {
+      "path": "db/effect_categories_tables/data__.tsv",
+      "bytes": 88,
+      "sha256": "614949803a7cef19441e3888e281c4ff6e70b344684d23fdaaa00b8854d2ca35"
+    },
+    {
+      "path": "db/effects_tables/data__.tsv",
+      "bytes": 1571155,
+      "sha256": "c23dd8821dd1e6837258b59cc0382176ea483f0e5b36ba2601b3fdc9f5bed6db"
+    },
+    {
+      "path": "db/faction_sets_tables/data__.tsv",
+      "bytes": 5936,
+      "sha256": "640d07f4ebfa1a9a6285064264044a159f9116c5cf3cd52c7877857051245206"
+    },
+    {
+      "path": "db/first_person_engines_tables/data__.tsv",
+      "bytes": 3944,
+      "sha256": "72ed45fe2ed2e74ccbaabbd09363fb46a37272c27359bea57a64abacf0f994da"
+    },
+    {
+      "path": "db/initiative_set_categories_tables/data__.tsv",
+      "bytes": 1497,
+      "sha256": "537abc852ee788a0aced89860a2f2427130ebe9d73b7834a71492f7a34efce67"
+    },
+    {
+      "path": "db/initiative_sets_tables/data__.tsv",
+      "bytes": 11859,
+      "sha256": "9fac091ed319d110459feacf1d90b2f504e176aed7e5f73d183add1d7cd14537"
+    },
+    {
+      "path": "db/initiatives_tables/data__.tsv",
+      "bytes": 136463,
+      "sha256": "55f3c39be81e92864d933268064230fa7879e7b805fed775e02b18e0f239bfc5"
+    },
+    {
+      "path": "db/loyalty_event_effects_tables/data__.tsv",
+      "bytes": 893,
+      "sha256": "8d27411483a07dccfac0dd8e72993dbb7954d17f15d7a26f2c1395668f08b30d"
+    },
+    {
+      "path": "db/loyalty_factors_tables/data__.tsv",
+      "bytes": 315,
+      "sha256": "0de2c03f9535036b941c1e24e7ca87d76f5d40eda1ac2446c8b71d89e74a0e82"
+    },
+    {
+      "path": "db/message_events_tables/data__.tsv",
+      "bytes": 1726,
+      "sha256": "da591db1e36fc5f07fae8c60f048c7ef93987028c72b9f95d0d4b60ea87fccd9"
+    },
+    {
+      "path": "db/military_force_types_tables/data__.tsv",
+      "bytes": 567,
+      "sha256": "85933f99a541617ae90b555adae493804733a6ce76b63f300b774aa8020d6206"
+    },
+    {
+      "path": "db/models_sieges_tables/data__.tsv",
+      "bytes": 8107,
+      "sha256": "73351bc1b5dccc352fcf4679d549317fbef5b31a600d43e19c151f9d218d1678"
+    },
+    {
+      "path": "db/modifiable_unit_stats_tables/data__.tsv",
+      "bytes": 2585,
+      "sha256": "e8dfb7e93ad64009feb23bf1d51165fa0469a6fab5cb24265caf69312bb51c79"
+    },
+    {
+      "path": "db/names_groups_tables/data__.tsv",
+      "bytes": 638,
+      "sha256": "fc2fd2ec925f33b805059ae255b0434e098ffbb2c3c23ddf7d2051ac4f328cc6"
+    },
+    {
+      "path": "db/names_tables/data__.tsv",
+      "bytes": 306427,
+      "sha256": "819a9379620e807efa02ae6069de64cd14865fd845901136c20b7bbf58678ae9"
+    },
+    {
+      "path": "db/particle_effects_tables/data__.tsv",
+      "bytes": 73318,
+      "sha256": "4426eff160908ffe70d5aa1450bb6f5ad5f6236d3a60e3b23163ebe4af92e73d"
+    },
+    {
+      "path": "db/plague_component_types_tables/data__.tsv",
+      "bytes": 145,
+      "sha256": "884dc4a22d37551452220c05ae18ac5461667cdf904dd06eb37513f685b4849c"
+    },
+    {
+      "path": "db/plague_components_tables/data__.tsv",
+      "bytes": 8795,
+      "sha256": "0a3768bd1c833ab32d2ecdb3b4831235d8a44b80c292ed73b148b3111880af35"
+    },
+    {
+      "path": "db/plague_parameters_tables/data__.tsv",
+      "bytes": 2451,
+      "sha256": "19da7b878eb04da2c3418d86c7cf53685b2b4894ee134b4c6e06327383b73b97"
+    },
+    {
+      "path": "db/plagues_tables/data__.tsv",
+      "bytes": 2391,
+      "sha256": "98d7f3b8398dd02735d7852d7269016f1f2bbba78c319077fd92202c602d849c"
+    },
+    {
+      "path": "db/pooled_resource_battle_conversions_tables/data__.tsv",
+      "bytes": 152,
+      "sha256": "edd9fec1a05f1c981e3c3f820603863a83145b7ed5631dad86c6bfbafe8c1929"
+    },
+    {
+      "path": "db/pooled_resource_factor_junctions_tables/data__.tsv",
+      "bytes": 119085,
+      "sha256": "786c58ad044fe6f18102758b55eb00ac8ace692b94a466ed6ea323f0fee05815"
+    },
+    {
+      "path": "db/pooled_resource_factors_tables/data__.tsv",
+      "bytes": 14098,
+      "sha256": "3739b34ca8da577d84bfb3f5441a6f7544080abbdf3f7e09e10450e50eea128e"
+    },
+    {
+      "path": "db/pooled_resources_tables/data__.tsv",
+      "bytes": 32678,
+      "sha256": "b1afe5cd94ed46955c2981cbdc301f7d60ef7e89dbe98c9d460395d2638083f0"
+    },
+    {
+      "path": "db/pre_battle_unit_targeted_abilities_tables/data__.tsv",
+      "bytes": 342,
+      "sha256": "ea32c2dd8adefd2f142029005625812c6b6bd1da9d917bb8eede4fb8985a65aa"
+    },
+    {
+      "path": "db/pre_battle_unit_targeted_ability_types_tables/data__.tsv",
+      "bytes": 123,
+      "sha256": "61e4056a19719cbf67bf7742998e0db79ee8d64aeb76c595882fedeb6704d587"
+    },
+    {
+      "path": "db/projectile_bombardment_launch_sources_tables/data__.tsv",
+      "bytes": 692,
+      "sha256": "c43b36c850c56bd57546669a5929fa350a32512c27e6c1d1c7506201e3a4e93c"
+    },
+    {
+      "path": "db/projectile_bombardments_tables/data__.tsv",
+      "bytes": 22793,
+      "sha256": "17324a6787f100a7733f519f39fccd04717f06cad82aca22f323e7894c26e617"
+    },
+    {
+      "path": "db/projectile_shrapnels_tables/data__.tsv",
+      "bytes": 2525,
+      "sha256": "37118fe30b0730ee6c225912865939814351c7f7583ad65531955c01172ad839"
+    },
+    {
+      "path": "db/projectiles_explosions_tables/data__.tsv",
+      "bytes": 98409,
+      "sha256": "8acd0366945a4a7927ab3521e0d2ad3bbf57c9f8ecd7286fad67bb5153eb5262"
+    },
+    {
+      "path": "db/province_growth_factors_tables/data__.tsv",
+      "bytes": 506,
+      "sha256": "ad37b2141ae1af0c6792d7c3591d31b678cfb5c1070c14ffb1ede1ee466d48b1"
+    },
+    {
+      "path": "db/public_order_providers_tables/data__.tsv",
+      "bytes": 3251,
+      "sha256": "7101491d516f79d9f02f722e2aa0f8c9a316ef72d335101b8a96f2c1ba324f9e"
+    },
+    {
+      "path": "db/recruitment_sources_tables/data__.tsv",
+      "bytes": 688,
+      "sha256": "21f92a856d15f6506b6ed6be5cee012658482a4181b55ea79d71e7eef0ce21fd"
+    },
+    {
+      "path": "db/region_groups_tables/data__.tsv",
+      "bytes": 26648,
+      "sha256": "b0cfc3c09737c7db6fb2473fda071d7bdcf8b0378cfdb69be8e3b4b816f0e17d"
+    },
+    {
+      "path": "db/resource_costs_tables/data__.tsv",
+      "bytes": 177368,
+      "sha256": "289a9219a03b444de7c767ccacfc76055f4456ad88cc989c9de07d932c9c8da1"
+    },
+    {
+      "path": "db/resources_tables/data__.tsv",
+      "bytes": 6828,
+      "sha256": "879889b2f2318057d9e38ed4a3733e9d8fae2c08dd77d585dbf96bd295da3da4"
+    },
+    {
+      "path": "db/ritual_categories_tables/data__.tsv",
+      "bytes": 15567,
+      "sha256": "7a7b1fbf4220e06c60426399c6131d440d375fd99c44910c9f33e404b07327fe"
+    },
+    {
+      "path": "db/ritual_category_groups_tables/data__.tsv",
+      "bytes": 295,
+      "sha256": "db1746f299ce8711756734eb7816513355f0c9d72de194dfd59fe24b215382f6"
+    },
+    {
+      "path": "db/ritual_chains_tables/data__.tsv",
+      "bytes": 6794,
+      "sha256": "edc958edca9f8a81204ae688c30e564558308f164cb72ce7203e19cf5ffe54d8"
+    },
+    {
+      "path": "db/ritual_faction_target_criterias_tables/data__.tsv",
+      "bytes": 2494,
+      "sha256": "d251e7e528bc588193133a26389f44d9b89fd85b9878d4d979865791cb64dea7"
+    },
+    {
+      "path": "db/ritual_flag_sets_tables/data__.tsv",
+      "bytes": 165,
+      "sha256": "d01e4cb294991bd0325208c5646b911a45f7f574e2b45e98aa2707a68e91c3a9"
+    },
+    {
+      "path": "db/ritual_military_force_target_criterias_context_expressions_tables/data__.tsv",
+      "bytes": 933,
+      "sha256": "984bc4f63987f9d0d163ac2050d883e7dc0c0f70de73af7e528cddbbdb25edc8"
+    },
+    {
+      "path": "db/ritual_military_force_target_criterias_tables/data__.tsv",
+      "bytes": 15177,
+      "sha256": "28b2f9ad65a8964e43fcc6927cf9f22a645ff42e17285c2ce7b0e13eb1506a1c"
+    },
+    {
+      "path": "db/ritual_payloads_tables/data__.tsv",
+      "bytes": 71527,
+      "sha256": "c295df9fe9ee7e79aa4af7b5cf5eaa2a8be919c2e1cab54f8c7aefb8dc56e0b4"
+    },
+    {
+      "path": "db/ritual_region_target_criterias_context_expressions_tables/data__.tsv",
+      "bytes": 459,
+      "sha256": "0475b1fe29a883b16a652e4125d8f44cf73ef06995a2aff133441c39bc3b29a7"
+    },
+    {
+      "path": "db/ritual_region_target_criterias_tables/data__.tsv",
+      "bytes": 5993,
+      "sha256": "50b8ed216dbdf58e1d3ad3d0d0bfaf523694eda8a78ff09310998e9662afcef3"
+    },
+    {
+      "path": "db/ritual_targets_tables/data__.tsv",
+      "bytes": 16953,
+      "sha256": "f2432fc23ec03a4cebf9fa050f6ea98c1ccb40101ed139b4a572f44b909718e3"
+    },
+    {
+      "path": "db/rituals_tables/data__.tsv",
+      "bytes": 348945,
+      "sha256": "e6d417b1e44ace7a4417105d9c4021aa72e2652e3ed6f9c71dcdca0c74706f39"
+    },
+    {
+      "path": "db/scoped_resource_costs_tables/data__.tsv",
+      "bytes": 1592,
+      "sha256": "05224a428252815c490330e070229a3e4b621c2ca02eea6c8898f4ef4889f8c3"
+    },
+    {
+      "path": "db/scripted_bonus_value_ids_tables/data__.tsv",
+      "bytes": 9793,
+      "sha256": "1d8be981309438fad74ca68b9ff6d280104b205b0900052fc8c9820e46788893"
+    },
+    {
+      "path": "db/slot_set_types_tables/data__.tsv",
+      "bytes": 210,
+      "sha256": "3f12ab6f8b7bf4d2a47b1e18503454c332610f23700e1a6721a289b08f063cb9"
+    },
+    {
+      "path": "db/slot_sets_tables/data__.tsv",
+      "bytes": 4064,
+      "sha256": "85438b29f9b9c7e7ad88dad2f58be3d428e4b4053e6e7237fcb3d5077e03dcc2"
+    },
+    {
+      "path": "db/slot_templates_tables/data__.tsv",
+      "bytes": 29895,
+      "sha256": "d13583563c13e5639a5bf68470e862db7593529ab617e977859ab3bee01fc4e6"
+    },
+    {
+      "path": "db/slot_types_tables/data__.tsv",
+      "bytes": 203,
+      "sha256": "817c5c6570d68aa9ebf37bf073b8266649d2549439f0b1f2c76112c4d595abf5"
+    },
+    {
+      "path": "db/special_abilities_specific_formation_types_tables/data__.tsv",
+      "bytes": 398,
+      "sha256": "2a05ea7a179815d1d9e93f9d8c45fb051079021e9a152085c47543dc9fa2d34a"
+    },
+    {
+      "path": "db/special_ability_behaviour_groups_tables/data__.tsv",
+      "bytes": 376,
+      "sha256": "a6b812084de258602aa5a0400b14b71c7ac6467fa6c11d9583ef5f2f4ee42e4f"
+    },
+    {
+      "path": "db/special_ability_displays_tables/data__.tsv",
+      "bytes": 7172,
+      "sha256": "2289649c8737ff71a31b4848a79ec78f7f2edfbb4fd1fc56b6fc0ba69f858a1e"
+    },
+    {
+      "path": "db/special_ability_groups_tables/data__.tsv",
+      "bytes": 21393,
+      "sha256": "2d7b4b420c19abdb73bc33d043badd783cc70a9fcec685df3cba20a1d8f6f383"
+    },
+    {
+      "path": "db/special_unit_categories_tables/data__.tsv",
+      "bytes": 176,
+      "sha256": "189b32f157e709943eeba66a989f435d6dd8ab0885d2be8b153a517cb99330f9"
+    },
+    {
+      "path": "db/spline_types_tables/data__.tsv",
+      "bytes": 105,
+      "sha256": "1f9b6fbe82767084bf1141d20868d60b577caeeaefbc3772671197582c73b544"
+    },
+    {
+      "path": "db/teleportation_node_double_click_events_tables/data__.tsv",
+      "bytes": 136,
+      "sha256": "61971faedd294abcaec36e30954c307a0c255df9845e17a4a0dcfe6b9d302825"
+    },
+    {
+      "path": "db/teleportation_node_templates_tables/data__.tsv",
+      "bytes": 8972,
+      "sha256": "4d96822c04aa14e738acf16239595c226675d2a64a23764faf81653ee927132a"
+    },
+    {
+      "path": "db/ui_info_ritual_target_criterias_tables/data__.tsv",
+      "bytes": 2026,
+      "sha256": "e6f66fa3dfd8e7794047f25b26b920cd54ad200c014c01d50016b1b1e6355fe9"
+    },
+    {
+      "path": "db/unit_castes_tables/data__.tsv",
+      "bytes": 423,
+      "sha256": "96ac586a7710d5943493149ca1058119def14686ef98ac9df76eaacef891981a"
+    },
+    {
+      "path": "db/unit_category_tables/data__.tsv",
+      "bytes": 279,
+      "sha256": "ec22030b2998d022631144153ea7d1d8d88c949b3cbb76673deda184c3cccc97"
+    },
+    {
+      "path": "db/unit_class_tables/data__.tsv",
+      "bytes": 494,
+      "sha256": "a845c0ba4922c0b94d7f61471101dc3f41df4b208dece2b1105daccd183d6b06"
+    },
+    {
+      "path": "db/unit_component_animation_table_junctions_tables/data__.tsv",
+      "bytes": 947,
+      "sha256": "680c2849d4a81802f2a610dce1193327032e3d4155149404cf1dccbb9a4e5a0d"
+    },
+    {
+      "path": "db/unit_experience_bonuses_tables/data__.tsv",
+      "bytes": 273,
+      "sha256": "2e29eadaf78eb84385d574e05902408f96e28e61746475ca11946404e4471739"
+    },
+    {
+      "path": "db/unit_experience_threshold_modifiers_tables/data__.tsv",
+      "bytes": 959,
+      "sha256": "ea1b585710e9e182292dbf9b2b3ddede04dead61f1cc279e8b5dd785c15e3fb6"
+    },
+    {
+      "path": "db/unit_experience_thresholds_tables/data__.tsv",
+      "bytes": 447,
+      "sha256": "b3b13f076b1f87953c35e7ea2634940859089201593d815419730d4a1a06eca4"
+    },
+    {
+      "path": "db/unit_lists_tables/data__.tsv",
+      "bytes": 977,
+      "sha256": "5ef32e54fb10481cd3e1b0f5a9c717f87b4dc1b01c1c60e635e4bb36178f0599"
+    },
+    {
+      "path": "db/unit_missile_weapon_junctions_tables/data__.tsv",
+      "bytes": 30849,
+      "sha256": "1f137ae9dd3b5939dd2ae6d58f74b7de05e5114dcd4571a3999b8941d110df3e"
+    },
+    {
+      "path": "db/unit_set_special_ability_phase_junctions_tables/data__.tsv",
+      "bytes": 7528,
+      "sha256": "a799628e26ad2cc88974c6b6238d2a7217653e2ae67c1fd59bc3f6dd4ea46a9f"
+    },
+    {
+      "path": "db/unit_set_to_unit_junctions_tables/data__.tsv",
+      "bytes": 1556987,
+      "sha256": "39ebf6a17afc408e8f187f2491e52d1628d7215866fbd8ac47994ae9ad6181f6"
+    },
+    {
+      "path": "db/unit_set_unit_ability_junctions_tables/data__.tsv",
+      "bytes": 69306,
+      "sha256": "1c33f44a228ec8c288070c4e0b6c09fd422483692eda708320a8cb131e693d2a"
+    },
+    {
+      "path": "db/unit_set_unit_attribute_junctions_tables/data__.tsv",
+      "bytes": 38947,
+      "sha256": "0a79a232dd2766de9ec29964bc72f8af65b8fbc55502c6fc71372304037c81bc"
+    },
+    {
+      "path": "db/unit_sets_tables/data__.tsv",
+      "bytes": 150440,
+      "sha256": "615764bc614f61e32a97dd4867204c4d586ec78525c3d796336935cf7e24db99"
+    },
+    {
+      "path": "db/unit_special_abilities_tables/data__.tsv",
+      "bytes": 1351315,
+      "sha256": "a7daff3032bb54a418d4a93cbc73a134af57140d5af115620f31fd5834f9c40f"
+    },
+    {
+      "path": "db/unit_stat_localisations_tables/data__.tsv",
+      "bytes": 1410,
+      "sha256": "b9dff6eaa6870ee52cd7d83d95d7ee71c6d6f7a3b1c390bf2b18cdd9de70a394"
+    },
+    {
+      "path": "db/unit_stat_modifiers_tables/data__.tsv",
+      "bytes": 287,
+      "sha256": "ad5be78a6760159039dda3bd504e21e864b0dc90db888842a30795a7875cc295"
+    },
+    {
+      "path": "db/unit_stats_land_experience_bonuses_tables/data__.tsv",
+      "bytes": 521,
+      "sha256": "2b2d8ff17ba32dff53813009eabe9da12f4e3dcac653ad6dd0a1e1919eda75c9"
+    },
+    {
+      "path": "db/unit_upgrade_groups_tables/data__.tsv",
+      "bytes": 3350,
+      "sha256": "332dd4c3f4d1dc50813f7cf1385dd0481211ec30408f27022e6823e89db2a6e7"
+    },
+    {
+      "path": "db/unit_upgrade_to_unit_groups_tables/data__.tsv",
+      "bytes": 23126,
+      "sha256": "78bfa66ef5d11425d3e8b62767f9cd21fa1b8c7f66046d28941ae175e0411f85"
+    },
+    {
+      "path": "db/variants_tables/data__.tsv",
+      "bytes": 366200,
+      "sha256": "480795c33de98c5b679c6de69977c186d24d18f08710a15be498df6f059330b0"
+    },
+    {
+      "path": "db/warscape_animated_tables/data__.tsv",
+      "bytes": 20087,
+      "sha256": "5f126160fe97fecbc9c309323913a08000952851aee1f8b081ebce6bc9514fe3"
+    },
+    {
+      "path": "decoded_schema.json",
+      "bytes": 1830333,
+      "sha256": "cc64b863fc8ee12475d52b5c0a704000feb54c0f11899feae1b70286605e4c33"
+    },
+    {
+      "path": "discovery.json",
+      "bytes": 231161,
+      "sha256": "35a2c555beb80c0bfe1d011ee5dd1959216693a225681ce2e5c88bc53b2fabeb"
+    }
+  ]
+}

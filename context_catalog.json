@@ -101,6 +101,15 @@
       "node_set_precedence": "data/technology_trees/source_exports/node_set_precedence.json",
       "script_mechanics": "data/technology_trees/source_exports/script_mechanics.csv",
       "script_evidence": "data/technology_trees/source_exports/script_evidence.json"
+    },
+    "effect_source": {
+      "description": "Raw decoded effect evidence; no derived modifier applicability or arithmetic.",
+      "readme": "data/effect_semantics/README.md",
+      "source_manifest": "data/effect_semantics/source_exports/source_manifest.json",
+      "schema": "data/effect_semantics/source_exports/decoded_schema.json",
+      "primary_records": "data/effect_semantics/source_exports/db/<table>/data__.tsv",
+      "validator": "node scripts/validate-effect-source.mjs data/effect_semantics/source_exports",
+      "preferred_access": "Select a narrow table using its schema; use Analysis for experimental modifier interpretation."
     }
   },
   "out_of_scope": [

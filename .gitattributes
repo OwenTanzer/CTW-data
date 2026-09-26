@@ -19,3 +19,6 @@
 # Technology artifacts and their compact evidence/TSV sources are hashed byte-for-byte.
 # Preserve decoder/builder line endings on checkout so recorded hashes remain valid.
 /data/technology_trees/** -text -whitespace
+
+# Raw extraction hashes require exact bytes on every platform.
+/data/effect_semantics/source_exports/** -text -whitespace
