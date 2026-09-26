@@ -1,3 +1,4 @@
+import { lordUnitCoverageErrors } from "./lord-unit-coverage.mjs";
 import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { matchesTextFingerprint } from "./validation-text.mjs";
 import { readdir, readFile, writeFile } from "node:fs/promises";
@@ -243,13 +244,19 @@ for (const row of groupLinks) {
   if (!sourceGroupsByUnit.has(row.unit)) sourceGroupsByUnit.set(row.unit, new Set());
   sourceGroupsByUnit.get(row.unit).add(row.military_group);
 }
+const sourcePermissionRows = await tsv("units_custom_battle_permissions_tables");
 const rosterConfigBySlug = new Map(UNIT_ROSTERS.map((roster) => [roster.slug, roster]));
 for (const file of normalized) {
   const slug = file.name.split("__")[0];
   const rosterConfig = rosterConfigBySlug.get(slug);
   const expectedUnitKeys = new Set((rosterConfig?.military_groups ?? []).flatMap((group) => [...(sourceGroupCounts.get(group) ?? [])]));
+  for (const key of rosterConfig?.permission_units ?? []) {
+    if (!sourcePermissionRows.some(p => p.unit === key && p.faction === rosterConfig.faction_key))
+      fail(`${slug}/${key}: reviewed inclusion lacks source faction permission.`);
+    expectedUnitKeys.add(key);
+  }
   const actualUnitKeys = new Set(file.rows.map((row) => row.unit_key));
-  if (JSON.stringify([...actualUnitKeys].sort()) !== JSON.stringify([...expectedUnitKeys].sort())) fail(`${file.name}: roster membership differs from its configured source military-group union.`);
+  if (JSON.stringify([...actualUnitKeys].sort()) !== JSON.stringify([...expectedUnitKeys].sort())) fail(`${file.name}: roster membership differs from its configured source military-group union and reviewed permission inclusions.`);
   for (const row of file.rows) {
     const sourceMain = main.get(row.unit_key);
     const sourceLand = sourceMain ? land.get(sourceMain.land_unit) : null;
@@ -259,7 +266,7 @@ for (const file of normalized) {
     if (sourceLand && row.source_unit_class !== sourceLand.class) fail(`${row.unit_key}: source_unit_class disagrees with raw land_units.`);
   }
 }
-if (!errors.some((message) => message.includes("military-group union") || message.includes("raw main/land"))) pass(`Roster membership exactly matches all configured source military-group unions for ${UNIT_ROSTERS.length} races.`);
+if (!errors.some((message) => message.includes("military-group union") || message.includes("raw main/land"))) pass(`Roster membership exactly matches configured military-group unions and reviewed source permission inclusions for ${UNIT_ROSTERS.length} races.`);
 
 const sourcePermissionsByUnit = groupBy(await tsv("units_custom_battle_permissions_tables"), "unit");
 const rosterLookupByRaceUnit = new Map();
@@ -309,6 +316,11 @@ const golden = [
 ];
 const byUnit = new Map(allRows.map((row) => [row.unit_key, row]));
 if (PATCH === "9.0") {
+  const coverageErrors = lordUnitCoverageErrors(
+    new Map(normalized.map(file => [file.name.split("__")[0], new Set(file.rows.map(r => r.unit_key))])),
+    mountVariants.rows);
+  coverageErrors.forEach(fail);
+  if (!coverageErrors.length) pass("All five new playable lords and reviewed update mount chains have independent coverage checks.");
   const sourceAbilities = groupBy(await tsv("land_units_to_unit_abilites_junctions_tables"), "land_unit");
   const expected = new Set([...byUnit].flatMap(([key, row]) =>
     (sourceAbilities.get(row.source_land_unit_key) ?? []).map(a => JSON.stringify([key, a.ability, a.culture]))));

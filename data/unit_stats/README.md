@@ -15,7 +15,7 @@ This directory is the versioned, reproducible data layer for computational analy
 ## Directory layout
 
 - `source_exports/` — untouched schema-decoded exports from the installed game packs, plus `source_manifest.json` with byte counts and SHA-256 hashes.
-- `normalized/` — 25 analysis-ready race CSVs, each containing the deduplicated union of its core and configured faction-variant military groups.
+- `normalized/` — 25 analysis-ready race CSVs, each containing the deduplicated union of its core and configured faction-variant military groups, plus reviewed current units supported by explicit custom-battle faction permissions.
 - `lookups/` — one-to-many components, weapons, projectiles, explosions, abilities, attributes, contact effects, roster permissions, mount variants, and data-quality flags.
 - `archive/` — previous extracts retained unchanged for comparison and recovery.
 - `schema_inventory__v4.csv` — the authoritative dataset-to-column mapping and column order for every generated CSV.
@@ -54,7 +54,7 @@ The 25 files in `normalized/` retain convenient one-row-per-unit statistics, but
 - Inline missile and explosion columns describe the selected default projectile for convenient comparisons. Every attached weapon and alternate projectile is retained in `lookups/unit_weapon_links__wh3__9.0__ultra.csv`.
 - Missile-only fields, including `accuracy`, are blank on units without a resolved missile weapon.
 - `source_*` columns preserve the exact joined CA keys used for the normalized row.
-- `roster_scope` distinguishes core, core-and-variant, faction-exclusive, and shared-variant availability. `is_faction_exclusive` is true when a unit is supplied only by a configured faction-variant military group.
+- `roster_scope` distinguishes core, core-and-variant, faction-exclusive, and shared-variant availability. `is_faction_exclusive` is true when a unit is outside the core military group (configured variant membership or reviewed permission-only inclusion).
 - `military_group_count` and `permitted_faction_count` provide convenient structured availability counts without embedding lists in normalized rows.
 - `availability_notes` provides a concise human-readable qualification when availability needs explanation. Exact memberships and permissions remain authoritative in the typed `unit_rosters` lookup rather than being encoded as prose or delimited lists.
 - `data_quality_status` is `complete` only when all required joins resolve. Any failure is also written to the data-quality lookup.
@@ -91,3 +91,9 @@ The original six normalized files are preserved under `archive/8.1.1__initial_ex
 ## 9.0 compatibility
 
 Schema v4 retains `culture_key` on ability links. `*` is the literal unrestricted source value; a named culture conditions the relationship. Join on unit, ability and culture together. The Undead Legions roster is included; Archaon and Festus/Glottkin military-group changes are preserved. These are source roster permissions, not a complete runtime recruitment model.
+
+## 9.0 lord coverage repair
+
+Boris Todbringer's four current `wh3_dlc29_emp_cha_boris_todbringer_toddy_*` variants and `wh3_dlc29_vmp_cha_nagash` have valid custom-battle faction permissions but no military-group membership. Reviewed `permission_units` entries in the snapshot scope include these records without inventing military-group links. Such rows have `military_group_count=0`; the inline `military_group` remains the roster's core identifier, not evidence of membership. Exact permissions live in `unit_rosters`. This remains the existing unit schema, not a campaign recruitment model.
+
+Legacy Boris custom-battle permissions and land-unit records remain in source evidence, but have no matching legacy `main_units` records in this snapshot. They must not replace the current identities. Independent coverage fixtures check all five new playable lords and ten mount links; mutation tests reject missing units, missing links and legacy substitution. This bounded repair is not a claim that every older permission-only unit has been reconciled.

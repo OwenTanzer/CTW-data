@@ -5,8 +5,8 @@ This dataset contains one self-contained CSV for each lord, hero, named unique c
 - Game patch: 9.0 (Steam build 25507028)
 - Character files: 550
 - Underlying conditional node sets: 575
-- Node occurrences: 28,254
-- Effect rows: 140,413
+- Node occurrences: 32,385
+- Effect rows: 157,965
 - Layout: `characters/<race>/<character>.csv`
 
 ## Scope and ownership

@@ -37,3 +37,7 @@ Passed: `npm run validate` across all database owners plus historical guide stru
 Extract into a fresh ignored work destination with explicit final argument `9.0`; build and validate before installing source/output together. Example: `node scripts/extract-source.mjs work/source_units_9.0_fresh 9.0`. Builders infer the profile from verified source manifests. Historical 8.1.1 profiles remain available and reject a 9.0 installation.
 
 The full map-7 atlas source is preserved separately on `checkpoint/campaign-map-9.0-source-20260926` under `archive/campaign_map/9.0_source_exports`; normal retrieval uses the GeoPackage. The compact starting-position evidence remains under its existing production owner. Raw game binaries and broad script scans stay out of production.
+
+## Post-merge existing-table review
+
+See [lord-coverage-reconciliation.md](lord-coverage-reconciliation.md) for the Boris/Nagash repair (current total 2,295 roster rows), independent lord fixtures and the remaining bounded reconciliation. Historical checkpoint counts above describe PR #17. No new mechanics model is included.

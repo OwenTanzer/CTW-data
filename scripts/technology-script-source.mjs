@@ -1,3 +1,4 @@
+import { fallbackLockLimitation } from "./technology-lock-limitations.mjs";
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { hash, parse, csv, cmp } from "./technology-lib.mjs";
@@ -438,7 +439,7 @@ export async function compactScripts(output, scratch, scan, patch = "8.1.1") {
             ? "Rift lock release depends on the saved unlock flag and either the initial Empire minor-2 mission or at least two Rift Gems; campaign selection is modeled but progress triggers are not."
             : info.path.includes("mother_ostankya")
               ? "Hex unlock progression is not normalized; DB lock reasons and exact lock API site are retained."
-              : "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained.",
+              : fallbackLockLimitation(info.path),
       });
     }
   }

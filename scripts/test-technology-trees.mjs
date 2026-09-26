@@ -1,3 +1,4 @@
+import { fallbackLockLimitation } from "./technology-lock-limitations.mjs";
 import { cp, readFile, writeFile, mkdir, mkdtemp, rm } from "node:fs/promises";
 import path from "node:path";
 import assert from "node:assert/strict";
@@ -7,6 +8,12 @@ const source = path.resolve(
   process.argv[2] ?? "data/technology_trees/source_exports",
 );
 const dataset = path.resolve(process.argv[3] ?? "data/technology_trees");
+const audit = JSON.parse(await readFile(path.join(dataset, 'script_audit.json'), 'utf8'));
+for (const site of audit.unmodeled_lock_sites) {
+  if (!site.source_file.includes('beastmen')) assert.ok(!site.limitation.includes('Beastmen'), site.source_file);
+}
+assert.match(fallbackLockLimitation('script/campaign/wh2_dlc17_beastmen_tech.lua'), /Beastmen/);
+assert.doesNotMatch(fallbackLockLimitation('script/campaign/future_technology.lua'), /Beastmen/);
 await mkdir("work", { recursive: true });
 const fixture = await mkdtemp(path.resolve("work/technology_mutations_"));
 await cp(dataset, fixture, { recursive: true });

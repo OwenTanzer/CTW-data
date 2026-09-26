@@ -19,7 +19,7 @@
       "source_line": 579,
       "operation": "unlock_technology",
       "evidence_id": "73f5be56a126f9f27d2e5dc0",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
       "source_file": "script/campaign/main_warhammer/episodes/episode_neferata.lua",
@@ -27,7 +27,7 @@
       "source_line": 580,
       "operation": "unlock_technology",
       "evidence_id": "1a7675bbe958d90d7a53a5f3",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
       "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
@@ -35,7 +35,7 @@
       "source_line": 1201,
       "operation": "lock_technology",
       "evidence_id": "c7cf3317be8dbae163948d40",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
       "source_file": "script/campaign/main_warhammer/wh3_dlc29_nag_mortarchs.lua",
@@ -43,7 +43,7 @@
       "source_line": 1203,
       "operation": "unlock_technology",
       "evidence_id": "80f7e950d4cfb64aa938560e",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
       "source_file": "script/campaign/wh2_dlc17_beastmen_tech.lua",
@@ -291,7 +291,7 @@
       "source_line": 53,
       "operation": "lock_technology",
       "evidence_id": "caf8c19aa1b5de0fdb350225",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
       "source_file": "script/campaign/wh3_dlc24_mother_ostankya.lua",
@@ -339,7 +339,7 @@
       "source_line": 241,
       "operation": "unlock_technology",
       "evidence_id": "ea243eafb14d27191ee17efa",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
       "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
@@ -347,7 +347,7 @@
       "source_line": 349,
       "operation": "unlock_technology",
       "evidence_id": "c7ab7be979bfb2c0f3ce8627",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     },
     {
       "source_file": "script/campaign/wh3_dlc29_vampire_technology.lua",
@@ -355,7 +355,7 @@
       "source_line": 876,
       "operation": "unlock_technology",
       "evidence_id": "f5a5d59398974b5e742136c6",
-      "limitation": "Beastmen challenge predicates/counters are not normalized; DB lock reasons and exact lock API site are retained."
+      "limitation": "Scripted technology lock/unlock conditions are not normalized; DB lock reasons and exact lock API site are retained."
     }
   ]
 }
