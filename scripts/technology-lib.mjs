@@ -1,3 +1,4 @@
+import { fallbackLockLimitation } from "./technology-lock-limitations.mjs";
 import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { SCRIPT_COLUMNS } from "./technology-rules.mjs";
 import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
@@ -384,6 +385,11 @@ export async function loadSource(source) {
   const scriptEvidence = JSON.parse(
     await readFile(path.join(source, "script_evidence.json"), "utf8"),
   );
+  // Older compact exports used a Beastmen-specific default for unrelated sites.
+  // Reclassify descriptive metadata while preserving the hashed source evidence.
+  for (const site of scriptEvidence.unmodeled_lock_sites)
+    if (site.limitation.startsWith("Beastmen challenge"))
+      site.limitation = fallbackLockLimitation(site.source_file);
   const mechanics = parse(
     await readFile(path.join(source, "script_mechanics.csv"), "utf8"),
   ).rows;

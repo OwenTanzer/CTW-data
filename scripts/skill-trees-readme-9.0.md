@@ -3,10 +3,10 @@
 This dataset contains one self-contained CSV for each lord, hero, named unique character, and legendary lord subtype in the 25 in-scope Warhammer III races.
 
 - Game patch: 9.0 (Steam build 25507028)
-- Character files: 550
-- Underlying conditional node sets: 575
-- Node occurrences: 28,254
-- Effect rows: 140,413
+- Character files: {{character_files}}
+- Underlying conditional node sets: {{node_sets}}
+- Node occurrences: {{nodes}}
+- Effect rows: {{effects}}
 - Layout: `characters/<race>/<character>.csv`
 
 ## Scope and ownership

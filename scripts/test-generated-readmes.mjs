@@ -14,6 +14,11 @@ for (const [owner, builder, extractor] of [
     execFileSync(process.execPath, [`scripts/${builder}`, `data/${owner}/source_exports`, output], { stdio: 'pipe' });
     const generated = await readFile(`${output}/README.md`, 'utf8');
     assert.equal(generated, await readFile(`data/${owner}/README.md`, 'utf8'));
+    if (owner === 'skill_trees') {
+      const manifest = JSON.parse(await readFile(`${output}/dataset_manifest.json`, 'utf8'));
+      for (const [label, key] of [['Character files', 'character_files'], ['Underlying conditional node sets', 'node_sets'], ['Node occurrences', 'nodes'], ['Effect rows', 'effects']])
+        assert.ok(generated.includes(`- ${label}: ${manifest[key].toLocaleString('en-US')}`));
+    }
     const command = generated.split('\n').find(line => line.includes(extractor));
     assert.ok(command, 'extraction instructions missing');
     assert.match(command, / work\\\S+ 9\.0$/);

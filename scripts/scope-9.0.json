@@ -79,12 +79,13 @@
         "wh_main_group_empire_reikland",
         "wh3_dlc25_group_elspeth"
       ],
-      "expected_units": 126,
+      "expected_units": 127,
       "permission_units": [
         "wh3_dlc29_emp_cha_boris_todbringer_toddy_0",
         "wh3_dlc29_emp_cha_boris_todbringer_toddy_1",
         "wh3_dlc29_emp_cha_boris_todbringer_toddy_2",
-        "wh3_dlc29_emp_cha_boris_todbringer_toddy_3"
+        "wh3_dlc29_emp_cha_boris_todbringer_toddy_3",
+        "wh3_dlc29_emp_cha_emil_valgeir_warhorse"
       ]
     },
     {
@@ -199,7 +200,11 @@
         "wh2_main_skv",
         "wh2_main_skv_ikit"
       ],
-      "expected_units": 77
+      "expected_units": 79,
+      "permission_units": [
+        "wh3_dlc29_skv_cha_lord_skrolk_cauldron",
+        "wh3_dlc29_skv_cha_plague_priest_cauldron"
+      ]
     },
     {
       "slug": "slaanesh",
@@ -222,7 +227,15 @@
         "wh2_dlc09_tomb_kings",
         "wh2_dlc09_tomb_kings_arkhan"
       ],
-      "expected_units": 57
+      "expected_units": 63,
+      "permission_units": [
+        "wh3_dlc29_tmb_cha_liche_high_priest_death_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_high_priest_light_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_high_priest_nehekhara_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_high_priest_shadow_skeletal_steed",
+        "wh3_dlc29_tmb_cha_tomb_herald_skeletal_steed",
+        "wh3_dlc29_tmb_cha_tomb_herald_skeleton_chariot"
+      ]
     },
     {
       "slug": "tzeentch",
@@ -296,9 +309,25 @@
       "military_groups": [
         "wh3_dlc29_nag_group_undead_legions"
       ],
-      "expected_units": 151,
+      "expected_units": 167,
       "permission_units": [
-        "wh3_dlc29_vmp_cha_nagash"
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_female_undeath_rotting_promethean",
+        "wh3_dlc29_cst_cha_vampire_fleet_admiral_undeath_rotting_promethean",
+        "wh3_dlc29_cst_cha_vampire_fleet_captain_undeath_rotting_promethean",
+        "wh3_dlc29_tmb_cha_liche_high_priest_undeath_skeletal_steed",
+        "wh3_dlc29_tmb_cha_liche_priest_undeath_skeletal_steed",
+        "wh3_dlc29_tmb_cha_tomb_herald_skeletal_steed",
+        "wh3_dlc29_tmb_cha_tomb_herald_skeleton_chariot",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_barded_nightmare",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_balefire",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_corpse_cart_lodestone",
+        "wh3_dlc29_vmp_cha_master_necromancer_undeath_hellsteed",
+        "wh3_dlc29_vmp_cha_nagash",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_barded_nightmare",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_balefire",
+        "wh3_dlc29_vmp_cha_necromancer_undeath_corpse_cart_lodestone"
       ]
     }
   ],

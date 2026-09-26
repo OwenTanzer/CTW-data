@@ -320,7 +320,7 @@ if (PATCH === "9.0") {
     new Map(normalized.map(file => [file.name.split("__")[0], new Set(file.rows.map(r => r.unit_key))])),
     mountVariants.rows);
   coverageErrors.forEach(fail);
-  if (!coverageErrors.length) pass("All five new playable lords and their mount variants have independent coverage checks.");
+  if (!coverageErrors.length) pass("All five new playable lords and reviewed update mount chains have independent coverage checks.");
   const sourceAbilities = groupBy(await tsv("land_units_to_unit_abilites_junctions_tables"), "land_unit");
   const expected = new Set([...byUnit].flatMap(([key, row]) =>
     (sourceAbilities.get(row.source_land_unit_key) ?? []).map(a => JSON.stringify([key, a.ability, a.culture]))));

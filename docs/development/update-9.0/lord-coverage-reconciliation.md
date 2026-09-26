@@ -29,6 +29,16 @@ Run `python3 scripts/audit-9.0-lord-coverage.py` to reproduce the accompanying J
 | N'Kari / Masque / Dechala buildings | Current economy owner retains building levels and tiers | Reconcile those fields only; full unit recruitment semantics are not existing economy coverage |
 | Archaon subjugation, Vampire Lairs and other bespoke systems | Existing boundaries in `COMPATIBILITY_9.0.md` | No new structured model or closure requirement introduced by this review |
 
-The broader permission comparison finds **872 candidate race/unit rows across 23 rosters**, including **80 DLC29 candidate rows** after the bounded repair. These are not 872 proven missing playable units: rows repeat across race permissions and include special/custom-battle identities. Do not bulk-import them. Review source identities and applicability before deciding inclusion. Concrete examples include Emil Valgeir's warhorse, Skrolk/Plague Priest Cauldron mounts, and undead caster/mount variants. This pattern predates the two repaired lords and shows why military-group equality alone cannot prove roster completeness.
+The broader permission comparison finds **847 candidate race/unit rows across 23 rosters**, including **55 DLC29 candidate rows** after the bounded repair. These are not 847 proven missing playable units: rows repeat across race permissions and include special/custom-battle identities. Do not bulk-import them. Review source identities and applicability before deciding inclusion. The 25 confirmed mount omissions described below have now been restored; remaining candidates still require individual scope review. This pattern predates the two repaired lords and shows why military-group equality alone cannot prove roster completeness.
 
 Next existing-scope review: resolve the DLC29 candidate identities and mount chains, then trace each announced skill/building/research change to current rows and old/new evidence. Keep unresolved cases on #16; do not turn deferred new capabilities into migration blockers.
+
+## General update fixes added to PR #18
+
+Restored 25 reviewed mounted race/unit entries whose base units were already covered: Empire 1, Skaven 2, Tomb Kings 6, Undead Legions 16. Each has a current main/land record, an explicit source mount edge, and permission for the roster faction. Total coverage is now 2,320 rows (30 above main). The independent fixtures retain all five new playable lords and add every reviewed mount chain. Existing global mount lookup edges were already present; the repair fills the missing race-roster statistics and their associated relations. It does not establish campaign acquisition.
+
+Corrected eight non-Beastmen technology audit descriptions. The extractor and the reader of older compact evidence share a conservative fallback description; original source exports, hashes, line numbers and evidence IDs remain intact. Scripted unlock semantics remain unmodeled.
+
+Skill README totals now render from the generated manifest: 550 files, 575 node sets, 32,385 nodes and 157,965 effects. The template uses placeholders and regeneration tests compare the displayed totals with the manifest.
+
+Issue #16 remains open for the remaining 55 DLC29 candidates and broader existing-table reconciliation. These repairs add no new mechanics model; magic remains paused.
