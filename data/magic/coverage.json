@@ -1,29 +1,29 @@
 {
   "status": "partial_source_backed_increment",
   "issue_complete": false,
-  "source_tables": 79,
-  "normalized_tables": 59,
+  "source_tables": 114,
+  "normalized_tables": 98,
   "ability_records": 3179,
   "magic_candidates": 696,
   "characters": 550,
-  "characters_with_skill_bindings": 323,
-  "skill_ability_relations": 44275,
+  "characters_with_skill_bindings": 534,
+  "skill_ability_relations": 50934,
   "foreign_keys": {
-    "external_or_unextracted": 43000,
-    "resolved": 49944,
-    "external_owner_resolved": 8914
+    "resolved": 89027,
+    "external_owner_resolved": 37536,
+    "external_or_unextracted": 39949
   },
   "missing_relation_families_recovered": 9,
   "boundaries": [
     "Inventory includes source records, not a certified inventory of obtainable playable spells; inactive/legacy/scripted access remains unresolved.",
     "Skill bindings describe conditional possibilities; they are not selected skills or proof of active availability. Query retains the source tree and rank conditions.",
     "Item, trait, form, mount and scripted grants are not fully reconstructed; unit grants can be retrieved separately with culture conditions.",
-    "The character index covers direct ability, ability-group and phase skill bindings. Unit-set and battle-context binding families are retained under effect semantics but not expanded in character queries.",
+    "Character queries include unit-set, army and battle-context routes with source conditions; these do not establish a personal spell grant.",
     "Lore groups are exact source memberships, including composite and upgraded groups; membership does not grant every group spell to a character.",
     "Source_type is not a complete classifier of ordinary versus bound variants. No key-name classification is used.",
     "Base numeric values and bonus_value_id tokens are reported separately; engine arithmetic, stacking, intensity and tick scheduling are not simulated.",
     "Phase order and recipient flags are source records; runtime simultaneity, trigger and refresh behavior is not fully established.",
     "Negative use/recharge values are native sentinels whose runtime interpretation is unresolved; never negative resources.",
-    "Projectile/explosion payloads expose explicitly marked source-only records from the canonical unit source; normalized spell payload closure remains a follow-up."
+    "Normalized shared payload graphs preserve branches and cycles; structural closure does not certify runtime arithmetic or acquisition."
   ]
 }

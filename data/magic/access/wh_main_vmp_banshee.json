@@ -1,0 +1,110 @@
+{
+  "agent_subtype_key": "wh_main_vmp_banshee",
+  "skill_relation_count": 15,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh_main_vmp_cha_banshee",
+      "land_unit_key": "wh_main_vmp_cha_banshee",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh_main_vmp_banshee",
+          "auto_generate": "true",
+          "is_caster": "false",
+          "small_icon": "ui/campaign ui/agents/wh_main_vmp_spy.png",
+          "associated_unit_override": "wh_main_vmp_cha_banshee",
+          "audio_voiceover_actor_group": "wh_main_vo_actor_Vampire_Banshee",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "true",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "",
+          "magic_lore": "",
+          "names_group": "names_vmp_vampire_counts",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "750",
+          "recruitment_button_active_icon_path": "UI\\skins\\default\\icon_wh_main_vmp_banshee.png",
+          "recruitment_button_background_icon_path": "UI\\skins\\default\\button_lore_shadow_active.png",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "654",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_active_ghostly_howl",
+            "land_unit": "wh_main_vmp_cha_banshee",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "9409",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh_main_vmp_cha_banshee",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "9410",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_hero_abilities_slippery",
+            "land_unit": "wh_main_vmp_cha_banshee",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "9411",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh_main_vmp_cha_banshee",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "9412",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh_main_vmp_cha_banshee",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "9413",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

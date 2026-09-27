@@ -1,0 +1,464 @@
+{
+  "agent_subtype_key": "wh_dlc05_vmp_red_duke",
+  "skill_relation_count": 63,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh_dlc05_vmp_cha_red_duke_0",
+      "land_unit_key": "wh_dlc05_vmp_cha_red_duke_0",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh_dlc05_vmp_red_duke",
+          "auto_generate": "false",
+          "is_caster": "true",
+          "small_icon": "",
+          "associated_unit_override": "wh_dlc05_vmp_cha_red_duke_0",
+          "audio_voiceover_actor_group": "wh_main_vo_actor_Vampire_Lord",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "legendary_lords",
+          "magic_lore": "",
+          "names_group": "names_vmp_vampire_counts",
+          "can_be_loaned": "false",
+          "recruitable": "true",
+          "saving_settings": "cannot_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1650",
+          "recruitment_button_active_icon_path": "",
+          "recruitment_button_background_icon_path": "",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "563",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8481",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc05_weapon_abilities_el_syf",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8482",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_foe_seeker",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8483",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_the_hunger",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8484",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_frenzy",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8485",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8486",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8487",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh_dlc05_vmp_cha_red_duke_1",
+      "land_unit_key": "wh_dlc05_vmp_cha_red_duke_1",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh_dlc05_vmp_cha_red_duke_0",
+          "mounted_unit_key": "wh_dlc05_vmp_cha_red_duke_1",
+          "icon_name": "ui/campaign ui/mounts/mount_hellsteed.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8488",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc05_weapon_abilities_el_syf",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8489",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_foe_seeker",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8490",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_the_hunger",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8491",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_frenzy",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8492",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8493",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8494",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh_dlc05_vmp_cha_red_duke_2",
+      "land_unit_key": "wh_dlc05_vmp_cha_red_duke_2",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh_dlc05_vmp_cha_red_duke_0",
+          "mounted_unit_key": "wh_dlc05_vmp_cha_red_duke_2",
+          "icon_name": "ui/campaign ui/mounts/mount_barded_nightmare.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8495",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc05_weapon_abilities_el_syf",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8496",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_foe_seeker",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8497",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_the_hunger",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8498",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_frenzy",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8499",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8500",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8501",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh_dlc05_vmp_cha_red_duke_3",
+      "land_unit_key": "wh_dlc05_vmp_cha_red_duke_3",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh_dlc05_vmp_cha_red_duke_0",
+          "mounted_unit_key": "wh_dlc05_vmp_cha_red_duke_3",
+          "icon_name": "ui/campaign ui/mounts/mount_zombie_dragon.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_abilities_pestilential_breath",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8502",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8503",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc05_weapon_abilities_el_syf",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8504",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_foe_seeker",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8505",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_hero_passive_swarm_of_flies",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8506",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_the_hunger",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8507",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_frenzy",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8508",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8509",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh_dlc05_vmp_cha_red_duke_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "8510",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

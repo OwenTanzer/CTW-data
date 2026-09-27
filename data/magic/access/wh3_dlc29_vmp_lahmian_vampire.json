@@ -1,0 +1,374 @@
+{
+  "agent_subtype_key": "wh3_dlc29_vmp_lahmian_vampire",
+  "skill_relation_count": 144,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire",
+      "land_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh3_dlc29_vmp_lahmian_vampire",
+          "auto_generate": "true",
+          "is_caster": "true",
+          "small_icon": "ui/campaign ui/agents/wh3_dlc29_vmp_handmaiden.png",
+          "associated_unit_override": "wh3_dlc29_vmp_cha_lahmian_vampire",
+          "audio_voiceover_actor_group": "wh3_dlc29_vo_actor_Vampire_Lahmian_Vampire",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "true",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "",
+          "magic_lore": "",
+          "names_group": "names_vmp_vampire_counts",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1050",
+          "recruitment_button_active_icon_path": "UI\\skins\\default\\icon_wh3_dlc29_vmp_lahmian_vampire.png",
+          "recruitment_button_background_icon_path": "UI\\skins\\default\\button_lore_shadow_active.png",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "418",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_abilities_whispering_mist",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5616",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_dominate",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5617",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_seduction",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5618",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_unit_abilities_entice",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5619",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5620",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_the_hunger",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5621",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5622",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5623",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+      "land_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire",
+          "mounted_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+          "icon_name": "placeholder"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_abilities_whispering_mist",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5600",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_dominate",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5601",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_seduction",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5602",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_unit_abilities_entice",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5603",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5604",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_the_hunger",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5605",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5606",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_barded_nightmare",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5607",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+      "land_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire",
+          "mounted_unit_key": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+          "icon_name": "placeholder"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_abilities_whispering_mist",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5608",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_dominate",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5609",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_seduction",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5610",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_unit_abilities_entice",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5611",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5612",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_the_hunger",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5613",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5614",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh3_dlc29_vmp_cha_lahmian_vampire_hellsteed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5615",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

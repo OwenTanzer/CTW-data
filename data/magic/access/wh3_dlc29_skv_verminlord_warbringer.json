@@ -1,0 +1,158 @@
+{
+  "agent_subtype_key": "wh3_dlc29_skv_verminlord_warbringer",
+  "skill_relation_count": 55,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh3_dlc29_skv_cha_verminlord_warbringer",
+      "land_unit_key": "wh3_dlc29_skv_cha_verminlord_warbringer",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh3_dlc29_skv_verminlord_warbringer",
+          "auto_generate": "false",
+          "is_caster": "true",
+          "small_icon": "ui/campaign ui/agents/icon_wh_main_lore_warbringer.png",
+          "associated_unit_override": "wh3_dlc29_skv_cha_verminlord_warbringer",
+          "audio_voiceover_actor_group": "wh3_dlc29_vo_actor_Skaven_Verminlord_Warbringer",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "wh3_skv_verminlord",
+          "magic_lore": "wh3_dlc29_lore_verminlord_warbringer",
+          "names_group": "names_skv_skaven_verminlords",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1000",
+          "recruitment_button_active_icon_path": "",
+          "recruitment_button_background_icon_path": "",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "405",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_passive_scurry_away",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "wh2_main_skv_skaven",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5352",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_lord_abilities_in_the_name_of_war",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5353",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_lord_abilities_verminous_fury",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5354",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_lord_passive_protection_of_the_great_horned_rat",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5355",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_lord_passive_warmongering_murmur",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5356",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_daemon",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5357",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_daemon_ii",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5358",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5359",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh3_dlc29_skv_cha_verminlord_warbringer",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5360",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

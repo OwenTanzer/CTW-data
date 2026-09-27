@@ -39,6 +39,18 @@
       "retained_sha256": "94bbeaf4ff550da276ce3667c47bf5c96f7ce54786f79a24103251128fc36d4b"
     },
     {
+      "path": "data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "2e19a5e4496f63351ea42eb9e39b032c52fbebcb8850eae1f6479632dbefb776",
+      "retained_sha256": "2e19a5e4496f63351ea42eb9e39b032c52fbebcb8850eae1f6479632dbefb776"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectile_penetration_junctions_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "a8bc272cfdef03ffeeab34c8b8633f7ef6a3f0b8e63598a6a615ecc82ff134e6",
+      "retained_sha256": "a8bc272cfdef03ffeeab34c8b8633f7ef6a3f0b8e63598a6a615ecc82ff134e6"
+    },
+    {
       "path": "data/unit_stats/source_exports/db/projectile_shrapnels_tables/data__.tsv",
       "status": "identical_text",
       "extracted_sha256": "0fae2e0fddf4f760d2a34635292f0bf99672ba53757d9c2ed2387a5504fd38bf",
@@ -49,6 +61,12 @@
       "status": "identical_text",
       "extracted_sha256": "f27a6e68d096253e56f3556a8a48c6b465a2bb143cefe278933f0ae4013d8203",
       "retained_sha256": "f27a6e68d096253e56f3556a8a48c6b465a2bb143cefe278933f0ae4013d8203"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectiles_scaling_damages_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "3089bc0fe5aaa73eae1813a72df52e4a3b8a1ffa8f5e73eeee16f60b4b7a9230",
+      "retained_sha256": "3089bc0fe5aaa73eae1813a72df52e4a3b8a1ffa8f5e73eeee16f60b4b7a9230"
     },
     {
       "path": "data/unit_stats/source_exports/db/projectiles_tables/data__.tsv",
@@ -73,6 +91,12 @@
       "status": "identical_text",
       "extracted_sha256": "735c652f4a479c6ae63be4ecaa5ffddc27c77ba81c518d4205674c66da93b158",
       "retained_sha256": "735c652f4a479c6ae63be4ecaa5ffddc27c77ba81c518d4205674c66da93b158"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/unit_attributes_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "3b280f6ed7cb1a043cf1f61c5fcad7bc3c77fe4814731c1109936be998ecc8ca",
+      "retained_sha256": "3b280f6ed7cb1a043cf1f61c5fcad7bc3c77fe4814731c1109936be998ecc8ca"
     }
   ],
   "scope": "Every DB export overlapping this extraction; not a global hotfix audit."

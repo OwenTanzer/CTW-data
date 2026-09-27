@@ -1,0 +1,302 @@
+{
+  "agent_subtype_key": "wh2_dlc09_tmb_tomb_prince",
+  "skill_relation_count": 6,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_0",
+      "land_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_0",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh2_dlc09_tmb_tomb_prince",
+          "auto_generate": "true",
+          "is_caster": "false",
+          "small_icon": "ui/campaign ui/agents/wh2_dlc09_tmb_champion.png",
+          "associated_unit_override": "wh2_dlc09_tmb_cha_tomb_prince_0",
+          "audio_voiceover_actor_group": "wh2_dlc09_vo_actor_Tomb_Kings_Tomb_Prince",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "",
+          "magic_lore": "",
+          "names_group": "names_tmb_tomb_kings",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "700",
+          "recruitment_button_active_icon_path": "UI\\skins\\default\\icon_wh2_dlc09_tmb_tomb_prince.png",
+          "recruitment_button_background_icon_path": "UI\\skins\\default\\button_lore_the_great_maw_active.png",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "21",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_dlc09_character_abilities_curse_of_djaf",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "225",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_character_abilities_strike_of_tombs",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "226",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_unit_passive_unstable_mark_ii_sand",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "227",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_unit_passive_unstable_sand",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "228",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_hold_the_line",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "229",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "230",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_1",
+      "land_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_1",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_0",
+          "mounted_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_1",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_dlc09_character_abilities_curse_of_djaf",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "231",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_character_abilities_strike_of_tombs",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "232",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_unit_passive_unstable_mark_ii_sand",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "233",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_unit_passive_unstable_sand",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "234",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_hold_the_line",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "235",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "236",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_2",
+      "land_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_2",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_0",
+          "mounted_unit_key": "wh2_dlc09_tmb_cha_tomb_prince_2",
+          "icon_name": "ui/campaign ui/mounts/mount_skeleton_chariot.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_dlc09_character_abilities_curse_of_djaf",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "237",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_character_abilities_strike_of_tombs",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "238",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_unit_passive_unstable_mark_ii_sand",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "239",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc09_unit_passive_unstable_sand",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "240",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_hero_passive_hold_the_line",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "241",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc09_tmb_cha_tomb_prince_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "242",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

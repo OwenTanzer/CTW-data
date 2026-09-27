@@ -3,9 +3,10 @@
   "base_patch": "9.0",
   "extraction_patch": "9.0.1",
   "extraction_build": "25546563",
-  "source_manifest_sha256": "20b563a22b237fb23ea07c8a5d271d1a7903086efb4f1e292d4b2b66c55f3126",
-  "source_archive_ref": "checkpoint/magic-source-9.0.1-20260927",
-  "source_archive_commit": "4d16368f1d5ab822197dade576c4e27ce24d5596",
+  "source_manifest_sha256": "048092c034e02e607df2ac9758e6ff70a58778b7d4d2295b7677bbbc6828736b",
+  "source_archive_ref": "checkpoint/magic-source-phase2-20260927",
+  "source_archive_path": "work/magic-source-review.tar.gz",
+  "source_archive_commit": "9d5c8bee9888fe1092528472f4faa3e0260a8c83",
   "coverage": "partial",
   "issue": 14
 }

@@ -1,0 +1,302 @@
+{
+  "agent_subtype_key": "wh2_dlc15_hef_archmage_death",
+  "skill_relation_count": 320,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh2_dlc15_hef_cha_archmage_death_0",
+      "land_unit_key": "wh2_dlc15_hef_cha_archmage_death_0",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh2_dlc15_hef_archmage_death",
+          "auto_generate": "true",
+          "is_caster": "true",
+          "small_icon": "UI/Campaign UI/Agents/wh_main_lore_death.png",
+          "associated_unit_override": "wh2_dlc15_hef_cha_archmage_death_0",
+          "audio_voiceover_actor_group": "wh2_dlc15_vo_actor_High_Elves_Arch_Mage",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "true",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "hef_archmage",
+          "magic_lore": "wh_main_lore_death",
+          "names_group": "",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "950",
+          "recruitment_button_active_icon_path": "",
+          "recruitment_button_background_icon_path": "",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "121",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_passive_martial_prowess",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1774",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1775",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1776",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh2_dlc15_hef_cha_archmage_death_1",
+      "land_unit_key": "wh2_dlc15_hef_cha_archmage_death_1",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh2_dlc15_hef_cha_archmage_death_0",
+          "mounted_unit_key": "wh2_dlc15_hef_cha_archmage_death_1",
+          "icon_name": "ui/campaign ui/mounts/mount_barded_ithilmar_steed.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_passive_martial_prowess",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1777",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1778",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1779",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh2_dlc15_hef_cha_archmage_death_2",
+      "land_unit_key": "wh2_dlc15_hef_cha_archmage_death_2",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh2_dlc15_hef_cha_archmage_death_0",
+          "mounted_unit_key": "wh2_dlc15_hef_cha_archmage_death_2",
+          "icon_name": "ui/campaign ui/mounts/mount_ithilmar_chariot.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_passive_martial_prowess",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1780",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1781",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1782",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh2_dlc15_hef_cha_archmage_death_3",
+      "land_unit_key": "wh2_dlc15_hef_cha_archmage_death_3",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh2_dlc15_hef_cha_archmage_death_0",
+          "mounted_unit_key": "wh2_dlc15_hef_cha_archmage_death_3",
+          "icon_name": "ui/campaign ui/mounts/mount_great_eagle.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_passive_martial_prowess",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1783",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1784",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1785",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh2_dlc15_hef_cha_archmage_death_4",
+      "land_unit_key": "wh2_dlc15_hef_cha_archmage_death_4",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh2_dlc15_hef_cha_archmage_death_0",
+          "mounted_unit_key": "wh2_dlc15_hef_cha_archmage_death_4",
+          "icon_name": "ui/campaign ui/mounts/mount_moon_dragon.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_abilities_moon_dragons_breath",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_4",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1786",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_4",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1787",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh2_dlc15_hef_cha_archmage_death_4",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "1788",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

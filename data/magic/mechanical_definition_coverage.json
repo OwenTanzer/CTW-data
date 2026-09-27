@@ -1,0 +1,245 @@
+{
+  "categories": {
+    "engine_definition_no_packed_table": 16823,
+    "presentation_or_audio": 13340,
+    "unextracted_dependency": 9786
+  },
+  "interpretation": "No packed table is an evidence boundary, not proof of engine semantics. Packed unresolved dependencies remain explicit.",
+  "by_target": [
+    {
+      "table": "agent_attributes_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 9
+    },
+    {
+      "table": "agent_recruitment_categories_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 357
+    },
+    {
+      "table": "ancillary_uniqueness_groupings_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 3179
+    },
+    {
+      "table": "armory_item_sets_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 85
+    },
+    {
+      "table": "audio_abilities_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 1980
+    },
+    {
+      "table": "audio_ability_phases_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 1175
+    },
+    {
+      "table": "audio_campaign_environment_reverbs_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 21
+    },
+    {
+      "table": "audio_campaign_ground_types_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 21
+    },
+    {
+      "table": "audio_projectile_bombardments_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 74
+    },
+    {
+      "table": "audio_vo_actor_groups_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 662
+    },
+    {
+      "table": "audio_vo_actors_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 4
+    },
+    {
+      "table": "audio_vo_battle_special_ability_states_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 3173
+    },
+    {
+      "table": "autoresolver_usages_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 3173
+    },
+    {
+      "table": "battle_ai_abilities_usage_template_names_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 1966
+    },
+    {
+      "table": "campaign_battle_type_enums_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 6
+    },
+    {
+      "table": "campaign_bonus_value_battle_context_force_status_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 13
+    },
+    {
+      "table": "campaign_bonus_value_battle_context_territory_status_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 10
+    },
+    {
+      "table": "campaign_bonus_value_ids_battle_context_army_special_abilities_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 6
+    },
+    {
+      "table": "campaign_bonus_value_ids_battle_context_unit_abilities_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 6
+    },
+    {
+      "table": "campaign_bonus_value_ids_military_force_abilitys_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 436
+    },
+    {
+      "table": "campaign_bonus_value_ids_pre_battle_unit_targeted_abilities_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 11
+    },
+    {
+      "table": "campaign_bonus_value_ids_special_ability_groups_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 405
+    },
+    {
+      "table": "campaign_bonus_value_ids_special_ability_phases_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 46
+    },
+    {
+      "table": "campaign_bonus_value_ids_unit_ability_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 5608
+    },
+    {
+      "table": "campaign_bonus_value_ids_unit_set_special_ability_phases_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 97
+    },
+    {
+      "table": "campaign_bonus_value_ids_unit_set_unit_abilities_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 721
+    },
+    {
+      "table": "campaign_effect_scope_character_force_relationships_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 1
+    },
+    {
+      "table": "campaign_effect_scope_locations_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 540
+    },
+    {
+      "table": "campaign_effect_scope_objects_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 1080
+    },
+    {
+      "table": "campaign_effect_scope_ownerships_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 540
+    },
+    {
+      "table": "character_saving_settings_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 662
+    },
+    {
+      "table": "composite_scene_files_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 504
+    },
+    {
+      "table": "cursors_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 34
+    },
+    {
+      "table": "custom_splines_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 1
+    },
+    {
+      "table": "entity_vfx_attach_types_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 553
+    },
+    {
+      "table": "genders_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 140
+    },
+    {
+      "table": "mission_groups_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 11
+    },
+    {
+      "table": "names_groups_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 150
+    },
+    {
+      "table": "particle_effects_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 1498
+    },
+    {
+      "table": "shrapnel_launch_type_enums_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 26
+    },
+    {
+      "table": "special_abilities_specific_behaviour_types_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 21
+    },
+    {
+      "table": "special_ability_phase_effect_types_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 3026
+    },
+    {
+      "table": "special_ability_spawn_types_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 100
+    },
+    {
+      "table": "special_ability_stance_enums_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 729
+    },
+    {
+      "table": "unit_stat_modifiers_how_enums_tables",
+      "category": "engine_definition_no_packed_table",
+      "reference_count": 3255
+    },
+    {
+      "table": "variants_tables",
+      "category": "unextracted_dependency",
+      "reference_count": 3338
+    },
+    {
+      "table": "videos_tables",
+      "category": "presentation_or_audio",
+      "reference_count": 496
+    }
+  ]
+}

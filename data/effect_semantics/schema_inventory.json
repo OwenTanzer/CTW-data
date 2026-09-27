@@ -1,4 +1,452 @@
 {
+  "campaign_bonus_value_battle_context_battle_type_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_battle_type_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "battle_type_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "battle_type_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "battle_type_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_battle_type_enums",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 6
+  },
+  "campaign_bonus_value_battle_context_culture_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_culture_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "culture_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "culture_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "culture_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "cultures",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 286
+  },
+  "campaign_bonus_value_battle_context_faction_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_faction_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "faction_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "faction_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "faction_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "factions",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 6
+  },
+  "campaign_bonus_value_battle_context_force_status_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_force_status_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "force_status_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "force_status_key",
+      "is_yours"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "force_status_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_force_status",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "is_yours",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 13
+  },
+  "campaign_bonus_value_battle_context_ground_type_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_ground_type_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "ground_type_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "ground_type_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "ground_type_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_ground_types",
+            "type"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 11
+  },
+  "campaign_bonus_value_battle_context_specifiers_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_specifiers.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "night_battles_only",
+      "your_force_type",
+      "their_force_type",
+      "war_contract_battles_only"
+    ],
+    "definition": {
+      "version": 1,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "night_battles_only",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "your_force_type",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "military_force_types",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "their_force_type",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "military_force_types",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "war_contract_battles_only",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 104
+  },
+  "campaign_bonus_value_battle_context_territory_status_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_territory_status_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "territory_status_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "territory_status_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "territory_status_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_territory_status",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 10
+  },
   "campaign_effect_scope_agent_junctions_tables": {
     "path": "data/effect_semantics/tables/campaign_effect_scope_agent_junctions.csv",
     "keys": [
@@ -1137,5 +1585,126 @@
       "localised_key_order": []
     },
     "rows": 721
+  },
+  "modifiable_unit_stats_tables": {
+    "path": "data/effect_semantics/tables/modifiable_unit_stats.csv",
+    "keys": [
+      "stat_key"
+    ],
+    "columns": [
+      "stat_key",
+      "localisation"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "localisation",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_stat_localisations",
+            "stat_key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "stat_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 51
+  },
+  "unit_stat_modifiers_tables": {
+    "path": "data/effect_semantics/tables/unit_stat_modifiers.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "how",
+      "stat"
+    ],
+    "definition": {
+      "version": 2,
+      "fields": [
+        {
+          "name": "how",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_stat_modifiers_how_enums",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "stat",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "modifiable_unit_stats",
+            "stat_key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 6
   }
 }

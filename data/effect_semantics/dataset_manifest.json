@@ -3,6 +3,13 @@
   "extraction_patch": "9.0.1",
   "base_patch": "9.0",
   "tables": {
+    "campaign_bonus_value_battle_context_battle_type_junctions_tables": 6,
+    "campaign_bonus_value_battle_context_culture_junctions_tables": 286,
+    "campaign_bonus_value_battle_context_faction_junctions_tables": 6,
+    "campaign_bonus_value_battle_context_force_status_junctions_tables": 13,
+    "campaign_bonus_value_battle_context_ground_type_junctions_tables": 11,
+    "campaign_bonus_value_battle_context_specifiers_tables": 104,
+    "campaign_bonus_value_battle_context_territory_status_junctions_tables": 10,
     "campaign_effect_scope_agent_junctions_tables": 141,
     "campaign_effect_scope_categories_tables": 8,
     "campaign_effect_scope_character_force_relationship_junctions_tables": 1,
@@ -17,7 +24,9 @@
     "effect_bonus_value_special_ability_phase_record_junctions_tables": 46,
     "effect_bonus_value_unit_ability_junctions_tables": 5608,
     "effect_bonus_value_unit_set_special_ability_phase_junctions_tables": 97,
-    "effect_bonus_value_unit_set_unit_ability_junctions_tables": 721
+    "effect_bonus_value_unit_set_unit_ability_junctions_tables": 721,
+    "modifiable_unit_stats_tables": 51,
+    "unit_stat_modifiers_tables": 6
   },
   "source_registry": "data/magic/source_registry.json",
   "source_completeness": "partial"

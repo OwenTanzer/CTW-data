@@ -1374,8 +1374,16 @@
   "source_kind": "fresh read-only merged vanilla CA packs",
   "table_folders_requested": [
     "ability_to_ui_collection_junctions_tables",
+    "agent_culture_details_tables",
     "agent_subtypes_tables",
+    "agent_subtypes_to_armory_item_sets_tables",
+    "agent_subtypes_to_mission_groups_tables",
+    "agent_uniforms_tables",
+    "agents_tables",
+    "area_of_effect_displays_tables",
+    "army_special_abilities_for_faction_junctions_tables",
     "army_special_abilities_tables",
+    "battle_context_army_special_ability_junctions_tables",
     "battle_context_unit_ability_junctions_tables",
     "battle_currency_army_special_abilities_cost_values_tables",
     "battle_currency_army_special_abilities_group_upgrades_cost_values_tables",
@@ -1390,12 +1398,21 @@
     "battle_vortex_launch_sources_tables",
     "battle_vortex_shapes_tables",
     "battle_vortexs_tables",
+    "campaign_bonus_value_battle_context_battle_type_junctions_tables",
+    "campaign_bonus_value_battle_context_culture_junctions_tables",
+    "campaign_bonus_value_battle_context_faction_junctions_tables",
+    "campaign_bonus_value_battle_context_force_status_junctions_tables",
+    "campaign_bonus_value_battle_context_ground_type_junctions_tables",
+    "campaign_bonus_value_battle_context_specifiers_tables",
+    "campaign_bonus_value_battle_context_territory_status_junctions_tables",
     "campaign_effect_scope_agent_junctions_tables",
     "campaign_effect_scope_categories_tables",
     "campaign_effect_scope_character_force_relationship_junctions_tables",
     "campaign_effect_scope_faction_set_junctions_tables",
     "campaign_effect_scope_territories_tables",
     "campaign_effect_scopes_tables",
+    "campaign_ground_types_tables",
+    "default_army_special_abilities_tables",
     "deployables_tables",
     "effect_bonus_value_battle_context_army_special_ability_junctions_tables",
     "effect_bonus_value_battle_context_unit_ability_junctions_tables",
@@ -1406,14 +1423,23 @@
     "effect_bonus_value_unit_ability_junctions_tables",
     "effect_bonus_value_unit_set_special_ability_phase_junctions_tables",
     "effect_bonus_value_unit_set_unit_ability_junctions_tables",
+    "faction_set_items_tables",
+    "faction_sets_tables",
     "land_units_to_unit_abilites_junctions_tables",
     "melee_weapons_tables",
+    "military_force_types_tables",
     "missile_weapons_tables",
     "missile_weapons_to_projectiles_tables",
+    "modifiable_unit_stats_tables",
+    "pre_battle_unit_targeted_abilities_tables",
+    "pre_battle_unit_targeted_ability_types_tables",
     "projectile_bombardment_launch_sources_tables",
     "projectile_bombardments_tables",
+    "projectile_homing_params_tables",
+    "projectile_penetration_junctions_tables",
     "projectile_shrapnels_tables",
     "projectiles_explosions_tables",
+    "projectiles_scaling_damages_tables",
     "projectiles_tables",
     "special_abilities_specific_formation_types_tables",
     "special_ability_behaviour_groups_tables",
@@ -1440,6 +1466,7 @@
     "special_ability_to_invalid_usage_flags_tables",
     "special_ability_to_recharge_contexts_tables",
     "special_ability_to_special_ability_phase_junctions_tables",
+    "special_unit_categories_tables",
     "storm_of_magic_ascendancy_types_tables",
     "unit_abilities_additional_ui_effects_tables",
     "unit_abilities_tables",
@@ -1448,10 +1475,18 @@
     "unit_ability_superseded_abilities_set_elements_tables",
     "unit_ability_superseded_abilities_sets_tables",
     "unit_ability_types_tables",
+    "unit_attributes_tables",
+    "unit_castes_tables",
+    "unit_category_tables",
+    "unit_class_tables",
     "unit_set_special_ability_phase_junctions_tables",
+    "unit_set_to_unit_junctions_tables",
     "unit_set_unit_ability_junctions_tables",
+    "unit_sets_tables",
     "unit_special_abilities_tables",
-    "unit_special_ability_to_special_ability_toggle_groups_junctions_tables"
+    "unit_special_ability_to_special_ability_toggle_groups_junctions_tables",
+    "unit_stat_localisations_tables",
+    "unit_stat_modifiers_tables"
   ],
   "files": [
     {
@@ -1460,14 +1495,54 @@
       "sha256": "27f166d0b3869f212bc02099f83a18ccd36f9d375d5efdec72c1c7aa56a0f96c"
     },
     {
+      "path": "db/agent_culture_details_tables/data__.tsv",
+      "bytes": 27070,
+      "sha256": "4a3373ca3c8b34c4fe0440f5157015bdd33645f82c59f646deae94f3b05efc38"
+    },
+    {
       "path": "db/agent_subtypes_tables/data__.tsv",
       "bytes": 176301,
       "sha256": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2"
     },
     {
+      "path": "db/agent_subtypes_to_armory_item_sets_tables/data__.tsv",
+      "bytes": 6994,
+      "sha256": "e88a55873e02e7732bfdfd82bb72bdb1f2aab276ece037de329a29692ea9c415"
+    },
+    {
+      "path": "db/agent_subtypes_to_mission_groups_tables/data__.tsv",
+      "bytes": 1985,
+      "sha256": "97ad9545dac29107c040d028f6f49b16a4e8d60b1f86dd76392b614ff25c698c"
+    },
+    {
+      "path": "db/agent_uniforms_tables/data__.tsv",
+      "bytes": 172637,
+      "sha256": "1fe80c68bf447569015eff4f32af03dce68a8b99d7eb3972849505c444e7257d"
+    },
+    {
+      "path": "db/agents_tables/data__.tsv",
+      "bytes": 539,
+      "sha256": "810ca8704b4cfe69ebbd0d8c0e021b399b9c23993675c189d068f89137e2ce63"
+    },
+    {
+      "path": "db/area_of_effect_displays_tables/data__.tsv",
+      "bytes": 22589,
+      "sha256": "dbc3173339e35812c6c83e2af125923f8b797c8d3754750c806e5cab7dda8ca7"
+    },
+    {
+      "path": "db/army_special_abilities_for_faction_junctions_tables/data__.tsv",
+      "bytes": 26235,
+      "sha256": "76c4d9ded3a43da6453342bf9966303459441e544d0b45ad3c3f53cd6a5ed8d5"
+    },
+    {
       "path": "db/army_special_abilities_tables/data__.tsv",
       "bytes": 31101,
       "sha256": "53beeaf7966e959d9e8720b9d466861ceb2590ff6eb032e6780c2f4c6fa5ad69"
+    },
+    {
+      "path": "db/battle_context_army_special_ability_junctions_tables/data__.tsv",
+      "bytes": 987,
+      "sha256": "1d2b3fc534d48cba107a2464df23fd5f939b9025c1ba0480b36a973544e89628"
     },
     {
       "path": "db/battle_context_unit_ability_junctions_tables/data__.tsv",
@@ -1540,6 +1615,41 @@
       "sha256": "16914338c40da168093a48da4e351cebfb663f147e7c204879c8bc558bec2e53"
     },
     {
+      "path": "db/campaign_bonus_value_battle_context_battle_type_junctions_tables/data__.tsv",
+      "bytes": 529,
+      "sha256": "194b227b230583856d9eb12063585ee1f2f4472285190891e89c4293804f34ea"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_culture_junctions_tables/data__.tsv",
+      "bytes": 17337,
+      "sha256": "9602b44118c554d08577e20e29ad6d695cb36ae6358bcdcf8388250ac0432936"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_faction_junctions_tables/data__.tsv",
+      "bytes": 486,
+      "sha256": "7cfa5979f36110441b495bd97031894f6aaa0de0ff000a4c82c25b9c4879deeb"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_force_status_junctions_tables/data__.tsv",
+      "bytes": 971,
+      "sha256": "af436be537e423922420a97ce52116427be17ec4aaba63e17b74b60b4814e710"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_ground_type_junctions_tables/data__.tsv",
+      "bytes": 646,
+      "sha256": "d61daf137998cdf4eca2fd526fe6da5bda8b61de1e3a602c986e8552246bf3fc"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_specifiers_tables/data__.tsv",
+      "bytes": 5248,
+      "sha256": "15f7c9bd8aa16125b06892983ca3f1b49274afcc811df2ed26ba5a9c0e4fa2c8"
+    },
+    {
+      "path": "db/campaign_bonus_value_battle_context_territory_status_junctions_tables/data__.tsv",
+      "bytes": 607,
+      "sha256": "15556554886d1711ab726712afe4cafd049cf78aedd0b24d6c36a66225ab3898"
+    },
+    {
       "path": "db/campaign_effect_scope_agent_junctions_tables/data__.tsv",
       "bytes": 9749,
       "sha256": "3fd9b96fd9722a69552d09ed6a0584f262aa679d0576817267a43983ffcb5e99"
@@ -1568,6 +1678,16 @@
       "path": "db/campaign_effect_scopes_tables/data__.tsv",
       "bytes": 43697,
       "sha256": "e40717b517f0fe9b4cc5954484e46c9020d3cead0a7dd2fd178313eba4abd5e8"
+    },
+    {
+      "path": "db/campaign_ground_types_tables/data__.tsv",
+      "bytes": 2039,
+      "sha256": "dabdfedc7d862b5a989ccaf8ec72f07dc498007ffb56fdd70e57aaba261b1230"
+    },
+    {
+      "path": "db/default_army_special_abilities_tables/data__.tsv",
+      "bytes": 158,
+      "sha256": "d5309173a4d8897e405c6d2e7340976cacb3c2e000e3b0f00b52a05c925177b0"
     },
     {
       "path": "db/deployables_tables/data__.tsv",
@@ -1620,6 +1740,16 @@
       "sha256": "626a52518b80d3bedc450c63d691d250365f03bb7af2f26821637cce688a6d71"
     },
     {
+      "path": "db/faction_set_items_tables/data__.tsv",
+      "bytes": 93253,
+      "sha256": "0c00598bc374eb78b02377c208a70a7c90d42d1636a2310b7c46251ffed31bf5"
+    },
+    {
+      "path": "db/faction_sets_tables/data__.tsv",
+      "bytes": 6814,
+      "sha256": "74d6738f1f27c30155af125fb320536506f57572c6b79497f9b3352d2521db70"
+    },
+    {
       "path": "db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
       "bytes": 779577,
       "sha256": "2949c8f1a6aecf81ee5791b289dbdf64f42036bfcc2f19bd877187835c7541c2"
@@ -1628,6 +1758,11 @@
       "path": "db/melee_weapons_tables/data__.tsv",
       "bytes": 162081,
       "sha256": "7f6921dda8cc528f9ae7e21f103d63344f9159e7362b84612792b7f1c34cd4b6"
+    },
+    {
+      "path": "db/military_force_types_tables/data__.tsv",
+      "bytes": 673,
+      "sha256": "0ddfbbb244507db8236f2046696cbcededfa80224dc49341e8fbf2f8cc8af851"
     },
     {
       "path": "db/missile_weapons_tables/data__.tsv",
@@ -1640,6 +1775,21 @@
       "sha256": "94bbeaf4ff550da276ce3667c47bf5c96f7ce54786f79a24103251128fc36d4b"
     },
     {
+      "path": "db/modifiable_unit_stats_tables/data__.tsv",
+      "bytes": 2585,
+      "sha256": "e8dfb7e93ad64009feb23bf1d51165fa0469a6fab5cb24265caf69312bb51c79"
+    },
+    {
+      "path": "db/pre_battle_unit_targeted_abilities_tables/data__.tsv",
+      "bytes": 342,
+      "sha256": "ea32c2dd8adefd2f142029005625812c6b6bd1da9d917bb8eede4fb8985a65aa"
+    },
+    {
+      "path": "db/pre_battle_unit_targeted_ability_types_tables/data__.tsv",
+      "bytes": 123,
+      "sha256": "61e4056a19719cbf67bf7742998e0db79ee8d64aeb76c595882fedeb6704d587"
+    },
+    {
       "path": "db/projectile_bombardment_launch_sources_tables/data__.tsv",
       "bytes": 692,
       "sha256": "c43b36c850c56bd57546669a5929fa350a32512c27e6c1d1c7506201e3a4e93c"
@@ -1650,6 +1800,16 @@
       "sha256": "fdfa1751884e41def991570a4dbd0d8ad126101edf9f5076f0e59344025472c7"
     },
     {
+      "path": "db/projectile_homing_params_tables/data__.tsv",
+      "bytes": 1129,
+      "sha256": "2e19a5e4496f63351ea42eb9e39b032c52fbebcb8850eae1f6479632dbefb776"
+    },
+    {
+      "path": "db/projectile_penetration_junctions_tables/data__.tsv",
+      "bytes": 1893,
+      "sha256": "a8bc272cfdef03ffeeab34c8b8633f7ef6a3f0b8e63598a6a615ecc82ff134e6"
+    },
+    {
       "path": "db/projectile_shrapnels_tables/data__.tsv",
       "bytes": 2606,
       "sha256": "0fae2e0fddf4f760d2a34635292f0bf99672ba53757d9c2ed2387a5504fd38bf"
@@ -1658,6 +1818,11 @@
       "path": "db/projectiles_explosions_tables/data__.tsv",
       "bytes": 102651,
       "sha256": "f27a6e68d096253e56f3556a8a48c6b465a2bb143cefe278933f0ae4013d8203"
+    },
+    {
+      "path": "db/projectiles_scaling_damages_tables/data__.tsv",
+      "bytes": 684,
+      "sha256": "3089bc0fe5aaa73eae1813a72df52e4a3b8a1ffa8f5e73eeee16f60b4b7a9230"
     },
     {
       "path": "db/projectiles_tables/data__.tsv",
@@ -1790,6 +1955,11 @@
       "sha256": "57cad8197d5ee9deb31376ac716e0059adae0174b4a850fa90dc7c80730804fc"
     },
     {
+      "path": "db/special_unit_categories_tables/data__.tsv",
+      "bytes": 176,
+      "sha256": "189b32f157e709943eeba66a989f435d6dd8ab0885d2be8b153a517cb99330f9"
+    },
+    {
       "path": "db/storm_of_magic_ascendancy_types_tables/data__.tsv",
       "bytes": 814,
       "sha256": "8a49ed0c2eddfa71b19445970999372785de556c86a31e157a12e759e0937aeb"
@@ -1830,14 +2000,44 @@
       "sha256": "40fa026da11f1ea82e3991203204d654d35e076e6317ccc7f308e85ee1d6b899"
     },
     {
+      "path": "db/unit_attributes_tables/data__.tsv",
+      "bytes": 1211,
+      "sha256": "3b280f6ed7cb1a043cf1f61c5fcad7bc3c77fe4814731c1109936be998ecc8ca"
+    },
+    {
+      "path": "db/unit_castes_tables/data__.tsv",
+      "bytes": 423,
+      "sha256": "96ac586a7710d5943493149ca1058119def14686ef98ac9df76eaacef891981a"
+    },
+    {
+      "path": "db/unit_category_tables/data__.tsv",
+      "bytes": 279,
+      "sha256": "ec22030b2998d022631144153ea7d1d8d88c949b3cbb76673deda184c3cccc97"
+    },
+    {
+      "path": "db/unit_class_tables/data__.tsv",
+      "bytes": 494,
+      "sha256": "a845c0ba4922c0b94d7f61471101dc3f41df4b208dece2b1105daccd183d6b06"
+    },
+    {
       "path": "db/unit_set_special_ability_phase_junctions_tables/data__.tsv",
       "bytes": 10611,
       "sha256": "ddc59364ea9fde97ea0385ecaa013a31fdab60f037b0fa190696285382e0b2a3"
     },
     {
+      "path": "db/unit_set_to_unit_junctions_tables/data__.tsv",
+      "bytes": 1935396,
+      "sha256": "214c8df2a0ba9eacafd13f6c9ed3b97ba3dd3202e6a6156e364a0ab1ade94ad3"
+    },
+    {
       "path": "db/unit_set_unit_ability_junctions_tables/data__.tsv",
       "bytes": 82786,
       "sha256": "788c12a616ea78dafceaa67d4dd17c6fe481b4846c62ff5dd6e01e59d4eeba55"
+    },
+    {
+      "path": "db/unit_sets_tables/data__.tsv",
+      "bytes": 170765,
+      "sha256": "6ee3aaf008cee29a7e1826ab9ece5c996ccc38b8a8f3a25aa29d60c8d1931727"
     },
     {
       "path": "db/unit_special_abilities_tables/data__.tsv",
@@ -1850,14 +2050,24 @@
       "sha256": "5b129212e93b925b2c84ef1533afbe7caeac20a60208fe59bee1479a7a267ea2"
     },
     {
+      "path": "db/unit_stat_localisations_tables/data__.tsv",
+      "bytes": 1410,
+      "sha256": "b9dff6eaa6870ee52cd7d83d95d7ee71c6d6f7a3b1c390bf2b18cdd9de70a394"
+    },
+    {
+      "path": "db/unit_stat_modifiers_tables/data__.tsv",
+      "bytes": 336,
+      "sha256": "884d0af318b37f01ac674ecc09865b011ef9fe13666cd4d1a74566dc6e903839"
+    },
+    {
       "path": "decoded_schema.json",
-      "bytes": 1121343,
-      "sha256": "a20338ec19debc57e9967b86f525edd6b96fea75144be6ea7025c8fc39267d68"
+      "bytes": 1266448,
+      "sha256": "5a5b13471bd9b990b1288192b22d81a6a1805a812703c3e58eb73674d482cc0b"
     },
     {
       "path": "discovery.json",
-      "bytes": 392109,
-      "sha256": "abd8a9d9dfba10c3188e92c6227933a24e36326a507e7600f43b8f4c71cb96ca"
+      "bytes": 397474,
+      "sha256": "1683e6be49c999f48ab20b1c9696712b68caeabf853af0925562c977f5bb4a83"
     }
   ]
 }

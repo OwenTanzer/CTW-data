@@ -1,0 +1,122 @@
+{
+  "agent_subtype_key": "wh2_pro08_neu_gotrek",
+  "skill_relation_count": 11,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh2_pro08_neu_cha_gotrek",
+      "land_unit_key": "wh2_pro08_neu_cha_gotrek",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh2_pro08_neu_gotrek",
+          "auto_generate": "false",
+          "is_caster": "true",
+          "small_icon": "ui/campaign ui/agents/wh_main_dwf_champion.png",
+          "associated_unit_override": "wh2_pro08_neu_cha_gotrek",
+          "audio_voiceover_actor_group": "wh2_pro08_vo_actor_neu_Gotrek",
+          "show_in_ui": "true",
+          "cap": "1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "false",
+          "recruitment_category": "legendary_lords",
+          "magic_lore": "",
+          "names_group": "names_dwf_dwarfs",
+          "can_be_loaned": "false",
+          "recruitable": "true",
+          "saving_settings": "cannot_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1200",
+          "recruitment_button_active_icon_path": "",
+          "recruitment_button_background_icon_path": "",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "212",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_pro08_character_abilities_gotrek_doom",
+            "land_unit": "wh2_pro08_neu_cha_gotrek",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "3118",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_pro08_character_passive_heroic_fortitude",
+            "land_unit": "wh2_pro08_neu_cha_gotrek",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "3119",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_pro08_neu_cha_gotrek",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "3120",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_deadly_onslaught",
+            "land_unit": "wh2_pro08_neu_cha_gotrek",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "3121",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_foe_seeker",
+            "land_unit": "wh2_pro08_neu_cha_gotrek",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "3122",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_lord_passive_deathblow",
+            "land_unit": "wh2_pro08_neu_cha_gotrek",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "3123",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

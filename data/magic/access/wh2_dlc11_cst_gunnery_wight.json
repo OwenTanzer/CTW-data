@@ -1,0 +1,284 @@
+{
+  "agent_subtype_key": "wh2_dlc11_cst_gunnery_wight",
+  "skill_relation_count": 18,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh2_dlc11_cst_cha_gunnery_wight_0",
+      "land_unit_key": "wh2_dlc11_cst_cha_gunnery_wight_0",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh2_dlc11_cst_gunnery_wight",
+          "auto_generate": "true",
+          "is_caster": "false",
+          "small_icon": "ui/campaign ui/agents/wh2_dlc11_cst_engineer.png",
+          "associated_unit_override": "wh2_dlc11_cst_cha_gunnery_wight_0",
+          "audio_voiceover_actor_group": "wh2_dlc11_vo_actor_VampireCoast_Gunnery_Wight",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "",
+          "magic_lore": "",
+          "names_group": "names_cst_vampire_coast",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "600",
+          "recruitment_button_active_icon_path": "UI\\skins\\default\\icon_wh2_dlc11_cst_gunnery_wight.png",
+          "recruitment_button_background_icon_path": "UI\\skins\\default\\button_lore_deeps_active.png",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "56",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_dlc11_character_abilities_ballistic_enchantment",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "766",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_character_abilities_cackle_fruit",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "767",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_hero_abilities_bomb_throw",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "768",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_hero_abilities_more_powder",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "769",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_hero_passive_dead_eyes",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "770",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_unit_passive_extra_powder",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "771",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "772",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "773",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "774",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh2_dlc11_cst_cha_gunnery_wight_1",
+      "land_unit_key": "wh2_dlc11_cst_cha_gunnery_wight_1",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh2_dlc11_cst_cha_gunnery_wight_0",
+          "mounted_unit_key": "wh2_dlc11_cst_cha_gunnery_wight_1",
+          "icon_name": "ui/campaign ui/mounts/mount_promethean.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_dlc11_character_abilities_ballistic_enchantment",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "775",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_character_abilities_cackle_fruit",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "776",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_hero_abilities_bomb_throw",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "777",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_hero_abilities_more_powder",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "778",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_hero_passive_dead_eyes",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "779",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc11_unit_passive_extra_powder",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "780",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "781",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "782",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_unstable_mark_ii",
+            "land_unit": "wh2_dlc11_cst_cha_gunnery_wight_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "783",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

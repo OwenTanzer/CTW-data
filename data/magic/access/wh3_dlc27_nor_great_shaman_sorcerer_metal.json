@@ -1,0 +1,356 @@
+{
+  "agent_subtype_key": "wh3_dlc27_nor_great_shaman_sorcerer_metal",
+  "skill_relation_count": 92,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+      "land_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh3_dlc27_nor_great_shaman_sorcerer_metal",
+          "auto_generate": "true",
+          "is_caster": "true",
+          "small_icon": "ui/campaign ui/agents/wh_main_lore_metal.png",
+          "associated_unit_override": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+          "audio_voiceover_actor_group": "wh3_dlc27_vo_actor_Norsca_Great_Shaman_Sorcerer",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "true",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "nor_great_shaman_sorcerer_lord",
+          "magic_lore": "wh_main_lore_metal",
+          "names_group": "",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1000",
+          "recruitment_button_active_icon_path": "",
+          "recruitment_button_background_icon_path": "",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "356",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc27_lord_abilities_offering_to_the_gods",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4858",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4859",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_lord_abilities_fight_or_die",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4860",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_lord_passive_rage",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4861",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_passive_evasion",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4862",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+      "land_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+          "mounted_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+          "icon_name": "ui/campaign ui/mounts/mount_chaos_chariot.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc27_lord_abilities_offering_to_the_gods",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4842",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4843",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_lord_abilities_fight_or_die",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4844",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_lord_passive_rage",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4845",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_passive_evasion",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_chariot",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4846",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+      "land_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+          "mounted_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+          "icon_name": "ui/campaign ui/mounts/mount_mammoth.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc20_unit_passive_giver_of_glory",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4847",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_lord_abilities_offering_to_the_gods",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4848",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4849",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_lord_abilities_fight_or_die",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4850",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_unit_passive_favour_of_the_ruinous_powers",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4851",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_passive_evasion",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_mammoth",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4852",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+      "land_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal",
+          "mounted_unit_key": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+          "icon_name": "ui/campaign ui/mounts/mount_warhorse.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc27_lord_abilities_offering_to_the_gods",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4853",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4854",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_lord_abilities_fight_or_die",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4855",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_lord_passive_rage",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4856",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_passive_evasion",
+            "land_unit": "wh3_dlc27_nor_cha_great_shaman_sorcerer_metal_warhorse",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4857",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

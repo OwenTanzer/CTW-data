@@ -152,5 +152,20 @@ for the race. Individual mount unlocks are not certified.
 Generic definitions, casting, phases, lifecycle, vortices and bombardments now
 have a [shared ability owner](abilities/README.md). The [magic entry point](../magic/README.md)
 connects character skill effects to those records. It preserves the existing
-unit roster and projectile lookup contracts. Source-only spell projectiles remain
-explicitly qualified; the first increment does not complete payload normalization.
+unit roster and projectile lookup contracts. Spell projectiles use these shared
+normalized lookups. Runtime interpretation and wider acquisition coverage remain
+explicitly qualified.
+
+
+The magic review pass extends existing projectile/explosion lookups additively
+(schema v4 headers are recorded in the regenerated inventory). Every previous
+row value and weapon link is preserved. Extra columns retain native source names,
+including spawned vortices, overhead phases and fuse settings. Existing renamed
+columns keep their prior meanings and numeric formatting. `payload_extension`
+in the manifest records the scoped 9.0.1 extraction; unchanged 9.0 sources remain
+authoritative for the retained fields.
+
+The ordinary 9.0 unit builder loads ability roots from the shared ability source
+owner. For a fresh magic extraction, `magic_pipeline.py build` supplies its verified
+candidate source as the fourth unit-builder argument. Validate the combined
+candidate with both unit and magic validators before installing it.

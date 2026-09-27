@@ -1,0 +1,19 @@
+key,onscreen,sort_priority,source_path,source_line,source_patch
+art_fix,Fixed Artillery,11,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,3,9.0.1
+art_fld,Field Artillery,10,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,4,9.0.1
+art_siege,Siege Artillery,12,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,5,9.0.1
+cav_mel,Melee Cavalry,4,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,6,9.0.1
+cav_mis,Missile Cavalry,5,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,7,9.0.1
+cav_shk,Shock Cavalry,3,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,8,9.0.1
+chariot,Chariot,2,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,9,9.0.1
+com,Command,0,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,10,9.0.1
+elph,Elephant,1,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,11,9.0.1
+inf_mel,Melee Infantry,7,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,12,9.0.1
+inf_mis,Missile Infantry,9,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,13,9.0.1
+inf_pik,Pike Infantry,6,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,14,9.0.1
+inf_spr,Spear Infantry,8,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,15,9.0.1
+shp_art,Artillery Ship,1,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,16,9.0.1
+shp_mel,Melee Ship,2,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,17,9.0.1
+shp_mis,Missile Ship,3,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,18,9.0.1
+shp_trn,Transport Ship,4,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,19,9.0.1
+spcl,Special,13,data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv,20,9.0.1

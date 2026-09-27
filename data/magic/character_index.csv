@@ -1,551 +1,551 @@
 agent_subtype_key,character_name,character_class,is_caster,path,skill_source_path,relation_count,direct_ability_count
-wh_dlc03_bst_beastlord,Beastlord,lord,false,,data/skill_trees/characters/beastmen/Beastlord.csv,0,0
-wh_dlc03_bst_bray_shaman_beasts,Bray-Shaman (Beasts),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_beasts.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Beasts.csv,54,12
-wh_dlc03_bst_bray_shaman_death,Bray-Shaman (Death),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_death.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Death.csv,55,12
-wh_dlc03_bst_bray_shaman_shadows,Bray-Shaman (Shadows),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_shadows.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Shadows.csv,61,13
-wh_dlc03_bst_bray_shaman_wild,Bray-Shaman (Wild),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_wild.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Wild.csv,54,12
-wh_dlc03_bst_gorebull,Gorebull,hero,false,,data/skill_trees/characters/beastmen/Gorebull.csv,0,0
-wh_dlc03_bst_khazrak,Khazrak One-Eye,legendary_lord,false,,data/skill_trees/characters/beastmen/Khazrak_One_Eye.csv,0,0
-wh_dlc03_bst_malagor,Malagor the Dark Omen,legendary_lord,true,characters/beastmen/wh_dlc03_bst_malagor.csv,data/skill_trees/characters/beastmen/Malagor_the_Dark_Omen.csv,118,15
-wh_dlc05_bst_morghur,Morghur the Shadowgave,legendary_lord,false,,data/skill_trees/characters/beastmen/Morghur_the_Shadowgave.csv,0,0
-wh2_dlc17_bst_doombull,Doombull,lord,false,,data/skill_trees/characters/beastmen/Doombull.csv,0,0
-wh2_dlc17_bst_taurox,Taurox the Brass Bull,legendary_lord,false,,data/skill_trees/characters/beastmen/Taurox_the_Brass_Bull.csv,0,0
-wh2_dlc17_bst_wargor,Wargor,hero,false,,data/skill_trees/characters/beastmen/Wargor.csv,0,0
-wh2_twa04_bst_great_bray_shaman_beasts,Great Bray-Shaman (Beasts),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_beasts.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Beasts.csv,181,13
-wh2_twa04_bst_great_bray_shaman_death,Great Bray-Shaman (Death),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_death.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Death.csv,181,13
-wh2_twa04_bst_great_bray_shaman_shadows,Great Bray-Shaman (Shadows),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_shadows.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Shadows.csv,188,14
-wh2_twa04_bst_great_bray_shaman_wild,Great Bray-Shaman (Wild),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_wild.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Wild.csv,177,13
-wh_dlc07_brt_alberic,Alberic de Bordeleaux,legendary_lord,false,,data/skill_trees/characters/bretonnia/Alberic_de_Bordeleaux.csv,0,0
-wh_dlc07_brt_damsel_beasts,Damsel (Beasts),hero,true,characters/bretonnia/wh_dlc07_brt_damsel_beasts.csv,data/skill_trees/characters/bretonnia/Damsel_Beasts.csv,54,12
-wh_dlc07_brt_damsel_life,Damsel (Life),hero,true,characters/bretonnia/wh_dlc07_brt_damsel_life.csv,data/skill_trees/characters/bretonnia/Damsel_Life.csv,57,12
-wh_dlc07_brt_fay_enchantress,The Fay Enchantress,legendary_lord,true,characters/bretonnia/wh_dlc07_brt_fay_enchantress.csv,data/skill_trees/characters/bretonnia/The_Fay_Enchantress.csv,67,12
+wh_dlc03_bst_beastlord,Beastlord,lord,false,characters/beastmen/wh_dlc03_bst_beastlord.csv,data/skill_trees/characters/beastmen/Beastlord.csv,19,14
+wh_dlc03_bst_bray_shaman_beasts,Bray-Shaman (Beasts),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_beasts.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Beasts.csv,66,22
+wh_dlc03_bst_bray_shaman_death,Bray-Shaman (Death),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_death.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Death.csv,67,22
+wh_dlc03_bst_bray_shaman_shadows,Bray-Shaman (Shadows),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_shadows.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Shadows.csv,73,23
+wh_dlc03_bst_bray_shaman_wild,Bray-Shaman (Wild),hero,true,characters/beastmen/wh_dlc03_bst_bray_shaman_wild.csv,data/skill_trees/characters/beastmen/Bray_Shaman_Wild.csv,66,22
+wh_dlc03_bst_gorebull,Gorebull,hero,false,characters/beastmen/wh_dlc03_bst_gorebull.csv,data/skill_trees/characters/beastmen/Gorebull.csv,17,14
+wh_dlc03_bst_khazrak,Khazrak One-Eye,legendary_lord,false,characters/beastmen/wh_dlc03_bst_khazrak.csv,data/skill_trees/characters/beastmen/Khazrak_One_Eye.csv,6,4
+wh_dlc03_bst_malagor,Malagor the Dark Omen,legendary_lord,true,characters/beastmen/wh_dlc03_bst_malagor.csv,data/skill_trees/characters/beastmen/Malagor_the_Dark_Omen.csv,125,21
+wh_dlc05_bst_morghur,Morghur the Shadowgave,legendary_lord,false,characters/beastmen/wh_dlc05_bst_morghur.csv,data/skill_trees/characters/beastmen/Morghur_the_Shadowgave.csv,10,6
+wh2_dlc17_bst_doombull,Doombull,lord,false,characters/beastmen/wh2_dlc17_bst_doombull.csv,data/skill_trees/characters/beastmen/Doombull.csv,18,13
+wh2_dlc17_bst_taurox,Taurox the Brass Bull,legendary_lord,false,characters/beastmen/wh2_dlc17_bst_taurox.csv,data/skill_trees/characters/beastmen/Taurox_the_Brass_Bull.csv,12,7
+wh2_dlc17_bst_wargor,Wargor,hero,false,characters/beastmen/wh2_dlc17_bst_wargor.csv,data/skill_trees/characters/beastmen/Wargor.csv,17,13
+wh2_twa04_bst_great_bray_shaman_beasts,Great Bray-Shaman (Beasts),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_beasts.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Beasts.csv,200,27
+wh2_twa04_bst_great_bray_shaman_death,Great Bray-Shaman (Death),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_death.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Death.csv,200,27
+wh2_twa04_bst_great_bray_shaman_shadows,Great Bray-Shaman (Shadows),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_shadows.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Shadows.csv,207,28
+wh2_twa04_bst_great_bray_shaman_wild,Great Bray-Shaman (Wild),lord,true,characters/beastmen/wh2_twa04_bst_great_bray_shaman_wild.csv,data/skill_trees/characters/beastmen/Great_Bray_Shaman_Wild.csv,197,27
+wh_dlc07_brt_alberic,Alberic de Bordeleaux,legendary_lord,false,characters/bretonnia/wh_dlc07_brt_alberic.csv,data/skill_trees/characters/bretonnia/Alberic_de_Bordeleaux.csv,9,6
+wh_dlc07_brt_damsel_beasts,Damsel (Beasts),hero,true,characters/bretonnia/wh_dlc07_brt_damsel_beasts.csv,data/skill_trees/characters/bretonnia/Damsel_Beasts.csv,61,18
+wh_dlc07_brt_damsel_life,Damsel (Life),hero,true,characters/bretonnia/wh_dlc07_brt_damsel_life.csv,data/skill_trees/characters/bretonnia/Damsel_Life.csv,64,18
+wh_dlc07_brt_fay_enchantress,The Fay Enchantress,legendary_lord,true,characters/bretonnia/wh_dlc07_brt_fay_enchantress.csv,data/skill_trees/characters/bretonnia/The_Fay_Enchantress.csv,75,17
 wh_dlc07_brt_green_knight,Green Knight,hero,false,,data/skill_trees/characters/bretonnia/Green_Knight.csv,0,0
-wh_dlc07_brt_prophetess_beasts,Prophetess (Beasts),lord,true,characters/bretonnia/wh_dlc07_brt_prophetess_beasts.csv,data/skill_trees/characters/bretonnia/Prophetess_Beasts.csv,54,12
-wh_dlc07_brt_prophetess_heavens,Prophetess (Heavens),lord,true,characters/bretonnia/wh_dlc07_brt_prophetess_heavens.csv,data/skill_trees/characters/bretonnia/Prophetess_Heavens.csv,54,12
-wh_dlc07_brt_prophetess_life,Prophetess (Life),lord,true,characters/bretonnia/wh_dlc07_brt_prophetess_life.csv,data/skill_trees/characters/bretonnia/Prophetess_Life.csv,58,12
-wh_main_brt_damsel_heavens,Damsel (Heavens),hero,true,characters/bretonnia/wh_main_brt_damsel_heavens.csv,data/skill_trees/characters/bretonnia/Damsel_Heavens.csv,55,12
-wh_main_brt_lord,Lord,lord,false,,data/skill_trees/characters/bretonnia/Lord.csv,0,0
-wh_main_brt_louen_leoncouer,King Louen Leoncoeur,legendary_lord,false,,data/skill_trees/characters/bretonnia/King_Louen_Leoncoeur.csv,0,0
-wh_main_brt_paladin,Paladin,hero,false,,data/skill_trees/characters/bretonnia/Paladin.csv,0,0
-wh2_dlc14_brt_henri_le_massif,Legendary Paladin,hero,false,,data/skill_trees/characters/bretonnia/Legendary_Paladin.csv,0,0
-wh2_dlc14_brt_repanse,Repanse de Lyonesse,legendary_lord,false,,data/skill_trees/characters/bretonnia/Repanse_de_Lyonesse.csv,0,0
-wh3_dlc23_chd_astragoth,Astragoth Ironhand,legendary_lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_astragoth.csv,data/skill_trees/characters/chaos_dwarfs/Astragoth_Ironhand.csv,56,14
-wh3_dlc23_chd_bull_centaur_taurruk,Bull Centaur Taur'ruk,hero,false,,data/skill_trees/characters/chaos_dwarfs/Bull_Centaur_Taur_ruk.csv,0,0
-wh3_dlc23_chd_daemonsmith_sorcerer_death,Daemonsmith Sorcerer (Death),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_death.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Death.csv,143,12
-wh3_dlc23_chd_daemonsmith_sorcerer_fire,Daemonsmith Sorcerer (Fire),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_fire.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Fire.csv,143,12
-wh3_dlc23_chd_daemonsmith_sorcerer_hashut,Daemonsmith Sorcerer (Hashut),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_hashut.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Hashut.csv,149,13
-wh3_dlc23_chd_daemonsmith_sorcerer_metal,Daemonsmith Sorcerer (Metal),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_metal.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Metal.csv,161,18
-wh3_dlc23_chd_drazhoath,Drazhoath the Ashen,legendary_lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_drazhoath.csv,data/skill_trees/characters/chaos_dwarfs/Drazhoath_the_Ashen.csv,60,13
-wh3_dlc23_chd_gorduz_backstabber,Gorduz Backstabber,hero,false,,data/skill_trees/characters/chaos_dwarfs/Gorduz_Backstabber.csv,0,0
-wh3_dlc23_chd_infernal_castellan,Infernal Castellan,hero,false,,data/skill_trees/characters/chaos_dwarfs/Infernal_Castellan.csv,0,0
-wh3_dlc23_chd_lord_convoy_overseer,Convoy Overseer,lord,false,,data/skill_trees/characters/chaos_dwarfs/Convoy_Overseer.csv,0,0
-wh3_dlc23_chd_overseer,Overseer,lord,false,,data/skill_trees/characters/chaos_dwarfs/Overseer.csv,0,0
-wh3_dlc23_chd_sorcerer_prophet_death,Sorcerer-Prophet (Death),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_death.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Death.csv,437,12
-wh3_dlc23_chd_sorcerer_prophet_fire,Sorcerer-Prophet (Fire),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_fire.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Fire.csv,438,12
-wh3_dlc23_chd_sorcerer_prophet_hashut,Sorcerer-Prophet (Hashut),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_hashut.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Hashut.csv,441,13
-wh3_dlc23_chd_sorcerer_prophet_metal,Sorcerer-Prophet (Metal),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_metal.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Metal.csv,444,13
-wh3_dlc23_chd_zhatan,Zhatan the Black,legendary_lord,false,,data/skill_trees/characters/chaos_dwarfs/Zhatan_the_Black.csv,0,0
+wh_dlc07_brt_prophetess_beasts,Prophetess (Beasts),lord,true,characters/bretonnia/wh_dlc07_brt_prophetess_beasts.csv,data/skill_trees/characters/bretonnia/Prophetess_Beasts.csv,62,17
+wh_dlc07_brt_prophetess_heavens,Prophetess (Heavens),lord,true,characters/bretonnia/wh_dlc07_brt_prophetess_heavens.csv,data/skill_trees/characters/bretonnia/Prophetess_Heavens.csv,62,17
+wh_dlc07_brt_prophetess_life,Prophetess (Life),lord,true,characters/bretonnia/wh_dlc07_brt_prophetess_life.csv,data/skill_trees/characters/bretonnia/Prophetess_Life.csv,66,17
+wh_main_brt_damsel_heavens,Damsel (Heavens),hero,true,characters/bretonnia/wh_main_brt_damsel_heavens.csv,data/skill_trees/characters/bretonnia/Damsel_Heavens.csv,62,18
+wh_main_brt_lord,Lord,lord,false,characters/bretonnia/wh_main_brt_lord.csv,data/skill_trees/characters/bretonnia/Lord.csv,9,5
+wh_main_brt_louen_leoncouer,King Louen Leoncoeur,legendary_lord,false,characters/bretonnia/wh_main_brt_louen_leoncouer.csv,data/skill_trees/characters/bretonnia/King_Louen_Leoncoeur.csv,11,8
+wh_main_brt_paladin,Paladin,hero,false,characters/bretonnia/wh_main_brt_paladin.csv,data/skill_trees/characters/bretonnia/Paladin.csv,4,4
+wh2_dlc14_brt_henri_le_massif,Legendary Paladin,hero,false,characters/bretonnia/wh2_dlc14_brt_henri_le_massif.csv,data/skill_trees/characters/bretonnia/Legendary_Paladin.csv,2,2
+wh2_dlc14_brt_repanse,Repanse de Lyonesse,legendary_lord,false,characters/bretonnia/wh2_dlc14_brt_repanse.csv,data/skill_trees/characters/bretonnia/Repanse_de_Lyonesse.csv,10,7
+wh3_dlc23_chd_astragoth,Astragoth Ironhand,legendary_lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_astragoth.csv,data/skill_trees/characters/chaos_dwarfs/Astragoth_Ironhand.csv,63,20
+wh3_dlc23_chd_bull_centaur_taurruk,Bull Centaur Taur'ruk,hero,false,characters/chaos_dwarfs/wh3_dlc23_chd_bull_centaur_taurruk.csv,data/skill_trees/characters/chaos_dwarfs/Bull_Centaur_Taur_ruk.csv,14,11
+wh3_dlc23_chd_daemonsmith_sorcerer_death,Daemonsmith Sorcerer (Death),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_death.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Death.csv,156,23
+wh3_dlc23_chd_daemonsmith_sorcerer_fire,Daemonsmith Sorcerer (Fire),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_fire.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Fire.csv,156,23
+wh3_dlc23_chd_daemonsmith_sorcerer_hashut,Daemonsmith Sorcerer (Hashut),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_hashut.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Hashut.csv,162,24
+wh3_dlc23_chd_daemonsmith_sorcerer_metal,Daemonsmith Sorcerer (Metal),hero,true,characters/chaos_dwarfs/wh3_dlc23_chd_daemonsmith_sorcerer_metal.csv,data/skill_trees/characters/chaos_dwarfs/Daemonsmith_Sorcerer_Metal.csv,174,29
+wh3_dlc23_chd_drazhoath,Drazhoath the Ashen,legendary_lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_drazhoath.csv,data/skill_trees/characters/chaos_dwarfs/Drazhoath_the_Ashen.csv,67,19
+wh3_dlc23_chd_gorduz_backstabber,Gorduz Backstabber,hero,false,characters/chaos_dwarfs/wh3_dlc23_chd_gorduz_backstabber.csv,data/skill_trees/characters/chaos_dwarfs/Gorduz_Backstabber.csv,5,5
+wh3_dlc23_chd_infernal_castellan,Infernal Castellan,hero,false,characters/chaos_dwarfs/wh3_dlc23_chd_infernal_castellan.csv,data/skill_trees/characters/chaos_dwarfs/Infernal_Castellan.csv,13,10
+wh3_dlc23_chd_lord_convoy_overseer,Convoy Overseer,lord,false,characters/chaos_dwarfs/wh3_dlc23_chd_lord_convoy_overseer.csv,data/skill_trees/characters/chaos_dwarfs/Convoy_Overseer.csv,5,4
+wh3_dlc23_chd_overseer,Overseer,lord,false,characters/chaos_dwarfs/wh3_dlc23_chd_overseer.csv,data/skill_trees/characters/chaos_dwarfs/Overseer.csv,15,11
+wh3_dlc23_chd_sorcerer_prophet_death,Sorcerer-Prophet (Death),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_death.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Death.csv,453,24
+wh3_dlc23_chd_sorcerer_prophet_fire,Sorcerer-Prophet (Fire),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_fire.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Fire.csv,454,24
+wh3_dlc23_chd_sorcerer_prophet_hashut,Sorcerer-Prophet (Hashut),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_hashut.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Hashut.csv,457,25
+wh3_dlc23_chd_sorcerer_prophet_metal,Sorcerer-Prophet (Metal),lord,true,characters/chaos_dwarfs/wh3_dlc23_chd_sorcerer_prophet_metal.csv,data/skill_trees/characters/chaos_dwarfs/Sorcerer_Prophet_Metal.csv,460,25
+wh3_dlc23_chd_zhatan,Zhatan the Black,legendary_lord,false,characters/chaos_dwarfs/wh3_dlc23_chd_zhatan.csv,data/skill_trees/characters/chaos_dwarfs/Zhatan_the_Black.csv,7,6
 wh3_main_dae_daemon_prince,Daemon Prince,legendary_lord,true,,data/skill_trees/characters/daemons_of_chaos/Daemon_Prince.csv,0,0
-wh2_dlc10_def_crone_hellebron,Crone Hellebron,legendary_lord,false,,data/skill_trees/characters/dark_elves/Crone_Hellebron.csv,0,0
-wh2_dlc10_def_sorceress_beasts,Sorceress (Beasts),hero,true,characters/dark_elves/wh2_dlc10_def_sorceress_beasts.csv,data/skill_trees/characters/dark_elves/Sorceress_Beasts.csv,54,12
-wh2_dlc10_def_sorceress_death,Sorceress (Death),hero,true,characters/dark_elves/wh2_dlc10_def_sorceress_death.csv,data/skill_trees/characters/dark_elves/Sorceress_Death.csv,55,12
-wh2_dlc10_def_supreme_sorceress_beasts,Supreme Sorceress (Beasts),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_beasts.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Beasts.csv,119,13
-wh2_dlc10_def_supreme_sorceress_dark,Supreme Sorceress (Dark),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_dark.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Dark.csv,113,12
-wh2_dlc10_def_supreme_sorceress_death,Supreme Sorceress (Death),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_death.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Death.csv,119,13
-wh2_dlc10_def_supreme_sorceress_fire,Supreme Sorceress (Fire),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_fire.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Fire.csv,120,13
-wh2_dlc10_def_supreme_sorceress_shadow,Supreme Sorceress (Shadows),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_shadow.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Shadows.csv,126,14
-wh2_dlc11_def_lokhir,Lokhir Fellheart,legendary_lord,false,,data/skill_trees/characters/dark_elves/Lokhir_Fellheart.csv,0,0
-wh2_dlc14_def_high_beastmaster,High Beastmaster,lord,false,,data/skill_trees/characters/dark_elves/High_Beastmaster.csv,0,0
-wh2_dlc14_def_malus_darkblade,Malus Darkblade,legendary_lord,false,,data/skill_trees/characters/dark_elves/Malus_Darkblade.csv,0,0
-wh2_dlc14_def_master,Master,hero,false,,data/skill_trees/characters/dark_elves/Master.csv,0,0
-wh2_main_def_black_ark,Black Ark,lord,false,,data/skill_trees/characters/dark_elves/Black_Ark.csv,0,0
-wh2_main_def_black_ark_blessed_dread,The Blessed Dread,lord,false,,data/skill_trees/characters/dark_elves/The_Blessed_Dread.csv,0,0
-wh2_main_def_death_hag,Death Hag,hero,false,,data/skill_trees/characters/dark_elves/Death_Hag.csv,0,0
-wh2_main_def_dreadlord,Dreadlord (Sword & Crossbow),lord,false,,data/skill_trees/characters/dark_elves/Dreadlord_Sword_Crossbow.csv,0,0
-wh2_main_def_dreadlord_fem,Dreadlord (Sword & Shield),lord,false,,data/skill_trees/characters/dark_elves/Dreadlord_Sword_Shield.csv,0,0
-wh2_main_def_khainite_assassin,Khainite Assassin,hero,false,,data/skill_trees/characters/dark_elves/Khainite_Assassin.csv,0,0
-wh2_main_def_malekith,Malekith,legendary_lord,true,characters/dark_elves/wh2_main_def_malekith.csv,data/skill_trees/characters/dark_elves/Malekith.csv,48,11
-wh2_main_def_morathi,Morathi,legendary_lord,true,characters/dark_elves/wh2_main_def_morathi.csv,data/skill_trees/characters/dark_elves/Morathi.csv,120,13
-wh2_main_def_sorceress_dark,Sorceress (Dark),hero,true,characters/dark_elves/wh2_main_def_sorceress_dark.csv,data/skill_trees/characters/dark_elves/Sorceress_Dark.csv,49,11
-wh2_main_def_sorceress_fire,Sorceress (Fire),hero,true,characters/dark_elves/wh2_main_def_sorceress_fire.csv,data/skill_trees/characters/dark_elves/Sorceress_Fire.csv,55,12
-wh2_main_def_sorceress_shadow,Sorceress (Shadows),hero,true,characters/dark_elves/wh2_main_def_sorceress_shadow.csv,data/skill_trees/characters/dark_elves/Sorceress_Shadows.csv,61,13
-wh2_twa03_def_rakarth,Rakarth,legendary_lord,false,,data/skill_trees/characters/dark_elves/Rakarth.csv,0,0
-wh_dlc06_dwf_belegar,Belegar Ironhammer,legendary_lord,true,,data/skill_trees/characters/dwarfs/Belegar_Ironhammer.csv,0,0
-wh_dlc06_dwf_master_engineer_ghost,Master Engineer,hero,true,,data/skill_trees/characters/dwarfs/Master_Engineer.csv,0,0
-wh_dlc06_dwf_runelord,Runelord,lord,true,characters/dwarfs/wh_dlc06_dwf_runelord.csv,data/skill_trees/characters/dwarfs/Runelord.csv,66,12
-wh_dlc06_dwf_runesmith_ghost,Runesmith,hero,true,characters/dwarfs/wh_dlc06_dwf_runesmith_ghost.csv,data/skill_trees/characters/dwarfs/Runesmith.csv,78,12
-wh_dlc06_dwf_thane_ghost_1,Thane,hero,true,,data/skill_trees/characters/dwarfs/Thane.csv,0,0
-wh_dlc06_dwf_thane_ghost_2,Thane,hero,true,,data/skill_trees/characters/dwarfs/Thane__thane_ghost_2.csv,0,0
-wh_main_dwf_lord,Lord,lord,true,,data/skill_trees/characters/dwarfs/Lord.csv,0,0
-wh_main_dwf_master_engineer,Master Engineer,hero,true,,data/skill_trees/characters/dwarfs/Master_Engineer__master_engineer.csv,0,0
-wh_main_dwf_runesmith,Runesmith,hero,true,characters/dwarfs/wh_main_dwf_runesmith.csv,data/skill_trees/characters/dwarfs/Runesmith__runesmith.csv,90,12
-wh_main_dwf_thane,Thane,hero,true,,data/skill_trees/characters/dwarfs/Thane__thane.csv,0,0
-wh_main_dwf_thorgrim_grudgebearer,Thorgrim Grudgebearer,legendary_lord,true,,data/skill_trees/characters/dwarfs/Thorgrim_Grudgebearer.csv,0,0
-wh_main_dwf_ungrim_ironfist,Ungrim Ironfist,legendary_lord,true,,data/skill_trees/characters/dwarfs/Ungrim_Ironfist.csv,0,0
-wh_pro01_dwf_grombrindal,Grombrindal,legendary_lord,true,,data/skill_trees/characters/dwarfs/Grombrindal.csv,0,0
-wh2_dlc17_dwf_thane_ghost_artifact,Great Axe Thane,hero,true,,data/skill_trees/characters/dwarfs/Great_Axe_Thane.csv,0,0
-wh2_dlc17_dwf_thorek,Thorek Ironbrow,legendary_lord,true,characters/dwarfs/wh2_dlc17_dwf_thorek.csv,data/skill_trees/characters/dwarfs/Thorek_Ironbrow.csv,67,12
-wh3_dlc25_dwf_daemon_slayer,Daemon Slayer,lord,true,,data/skill_trees/characters/dwarfs/Daemon_Slayer.csv,0,0
-wh3_dlc25_dwf_dragon_slayer,Dragon Slayer,hero,true,,data/skill_trees/characters/dwarfs/Dragon_Slayer.csv,0,0
-wh3_dlc25_dwf_garagrim_ironfist,Garagrim Ironfist,hero,true,,data/skill_trees/characters/dwarfs/Garagrim_Ironfist.csv,0,0
-wh3_dlc25_dwf_lord_mikael_leadstrong,Lord Mikael Leadstrong,lord,true,,data/skill_trees/characters/dwarfs/Lord_Mikael_Leadstrong.csv,0,0
-wh3_dlc25_dwf_malakai_makaisson,Malakai Makaisson,legendary_lord,true,,data/skill_trees/characters/dwarfs/Malakai_Makaisson.csv,0,0
-wh_dlc03_emp_amber_wizard,Amber Wizard,hero,true,characters/empire/wh_dlc03_emp_amber_wizard.csv,data/skill_trees/characters/empire/Amber_Wizard.csv,58,12
-wh_dlc03_emp_boris_todbringer,Boris Todbringer,legendary_lord,false,,data/skill_trees/characters/empire/Boris_Todbringer.csv,0,0
-wh_dlc04_emp_arch_lector,Arch Lector,lord,false,characters/empire/wh_dlc04_emp_arch_lector.csv,data/skill_trees/characters/empire/Arch_Lector.csv,6,3
-wh_dlc04_emp_volkmar,Volkmar the Grim,legendary_lord,false,characters/empire/wh_dlc04_emp_volkmar.csv,data/skill_trees/characters/empire/Volkmar_the_Grim.csv,6,3
-wh_dlc05_emp_grey_wizard,Grey Wizard,hero,true,characters/empire/wh_dlc05_emp_grey_wizard.csv,data/skill_trees/characters/empire/Grey_Wizard.csv,65,13
-wh_dlc05_emp_jade_wizard,Jade Wizard,hero,true,characters/empire/wh_dlc05_emp_jade_wizard.csv,data/skill_trees/characters/empire/Jade_Wizard.csv,65,12
-wh_main_emp_balthasar_gelt,Balthasar Gelt,legendary_lord,true,characters/empire/wh_main_emp_balthasar_gelt.csv,data/skill_trees/characters/empire/Balthasar_Gelt.csv,87,13
-wh_main_emp_bright_wizard,Bright Wizard,hero,true,characters/empire/wh_main_emp_bright_wizard.csv,data/skill_trees/characters/empire/Bright_Wizard.csv,59,12
-wh_main_emp_captain,Empire Captain,hero,false,,data/skill_trees/characters/empire/Empire_Captain.csv,0,0
-wh_main_emp_celestial_wizard,Celestial Wizard,hero,true,characters/empire/wh_main_emp_celestial_wizard.csv,data/skill_trees/characters/empire/Celestial_Wizard.csv,59,12
-wh_main_emp_karl_franz,Karl Franz,legendary_lord,false,,data/skill_trees/characters/empire/Karl_Franz.csv,0,0
-wh_main_emp_light_wizard,Light Wizard,hero,true,characters/empire/wh_main_emp_light_wizard.csv,data/skill_trees/characters/empire/Light_Wizard.csv,65,13
-wh_main_emp_lord,General of the Empire,lord,false,,data/skill_trees/characters/empire/General_of_the_Empire.csv,0,0
-wh_main_emp_warrior_priest,Warrior Priest,hero,false,characters/empire/wh_main_emp_warrior_priest.csv,data/skill_trees/characters/empire/Warrior_Priest.csv,6,6
-wh_main_emp_witch_hunter,Witch Hunter,hero,false,,data/skill_trees/characters/empire/Witch_Hunter.csv,0,0
-wh2_dlc13_emp_cha_huntsmarshal,Huntsman General,lord,false,,data/skill_trees/characters/empire/Huntsman_General.csv,0,0
-wh2_dlc13_emp_cha_markus_wulfhart,Markus Wulfhart,legendary_lord,false,,data/skill_trees/characters/empire/Markus_Wulfhart.csv,0,0
-wh2_dlc13_emp_hunter_doctor_hertwig_van_hal,Wulfhart's Hunter,hero,false,,data/skill_trees/characters/empire/Wulfhart_s_Hunter.csv,0,0
-wh2_dlc13_emp_hunter_jorek_grimm,Wulfhart's Hunter,hero,false,,data/skill_trees/characters/empire/Wulfhart_s_Hunter__hunter_jorek_grimm.csv,0,0
-wh2_dlc13_emp_hunter_kalara_of_wydrioth,Wulfhart's Hunter,hero,false,,data/skill_trees/characters/empire/Wulfhart_s_Hunter__hunter_kalara_of_wydrioth.csv,0,0
-wh2_dlc13_emp_hunter_rodrik_l_anguille,Wulfhart's Hunter,hero,false,,data/skill_trees/characters/empire/Wulfhart_s_Hunter__hunter_rodrik_l_anguille.csv,0,0
-wh2_pro07_emp_amethyst_wizard,Amethyst Wizard,hero,true,characters/empire/wh2_pro07_emp_amethyst_wizard.csv,data/skill_trees/characters/empire/Amethyst_Wizard.csv,68,12
-wh2_pro08_neu_gotrek,Gotrek,lord,true,,data/skill_trees/characters/empire/Gotrek.csv,0,0
-wh3_dlc23_neu_ulrika,Ulrika,hero,true,characters/empire/wh3_dlc23_neu_ulrika.csv,data/skill_trees/characters/empire/Ulrika.csv,60,13
-wh3_dlc25_emp_elspeth_von_draken,Elspeth von Draken,legendary_lord,true,characters/empire/wh3_dlc25_emp_elspeth_von_draken.csv,data/skill_trees/characters/empire/Elspeth_von_Draken.csv,69,12
-wh3_dlc25_emp_engineer,Engineer,hero,false,,data/skill_trees/characters/empire/Engineer.csv,0,0
-wh3_dlc25_emp_gold_wizard,Gold Wizard,hero,true,characters/empire/wh3_dlc25_emp_gold_wizard.csv,data/skill_trees/characters/empire/Gold_Wizard.csv,75,13
-wh3_dlc25_emp_master_engineer,Master Engineer,lord,false,,data/skill_trees/characters/empire/Master_Engineer.csv,0,0
-wh3_dlc25_emp_theodore_bruckner,Theodore Bruckner,hero,false,,data/skill_trees/characters/empire/Theodore_Bruckner.csv,0,0
-wh3_dlc25_neu_gotrek_hero,Gotrek Hero,hero,true,,data/skill_trees/characters/empire/Gotrek_Hero.csv,0,0
-wh3_dlc29_emp_cha_emil_valgeir,Cha Emil Valgeir,hero,false,characters/empire/wh3_dlc29_emp_cha_emil_valgeir.csv,data/skill_trees/characters/empire/Cha_Emil_Valgeir.csv,13,6
-wh3_dlc29_emp_cha_priest_of_ulric,Priest of Ulric,hero,false,characters/empire/wh3_dlc29_emp_cha_priest_of_ulric.csv,data/skill_trees/characters/empire/Priest_of_Ulric.csv,13,6
-wh3_dlc29_emp_cha_seneschal_of_the_white_wolf,Seneschal,lord,false,,data/skill_trees/characters/empire/Seneschal.csv,0,0
-wh3_cp1_cth_bhashiva,Bhashiva,legendary_lord,false,,data/skill_trees/characters/grand_cathay/Bhashiva.csv,0,0
-wh3_cp1_cth_cha_taoyan,Taoyan,hero,false,,data/skill_trees/characters/grand_cathay/Taoyan.csv,0,0
-wh3_cp1_cth_clawspeaker_beasts,Clawspeaker (Beasts),hero,true,characters/grand_cathay/wh3_cp1_cth_clawspeaker_beasts.csv,data/skill_trees/characters/grand_cathay/Clawspeaker_Beasts.csv,93,27
-wh3_cp1_cth_clawspeaker_life,Clawspeaker (Life),hero,true,characters/grand_cathay/wh3_cp1_cth_clawspeaker_life.csv,data/skill_trees/characters/grand_cathay/Clawspeaker_Life.csv,96,27
-wh3_cp1_cth_clawspeaker_shadows,Clawspeaker (Shadows),hero,true,characters/grand_cathay/wh3_cp1_cth_clawspeaker_shadows.csv,data/skill_trees/characters/grand_cathay/Clawspeaker_Shadows.csv,100,28
-wh3_cp1_cth_sawai,Sawai,lord,false,,data/skill_trees/characters/grand_cathay/Sawai.csv,0,0
-wh3_cp1_cth_sawai_caravan,Sawai Mercenary,lord,false,,data/skill_trees/characters/grand_cathay/Sawai_Mercenary.csv,0,0
-wh3_dlc24_cth_celestial_general_yang,Celestial General (Yang),lord,false,,data/skill_trees/characters/grand_cathay/Celestial_General_Yang.csv,0,0
-wh3_dlc24_cth_celestial_general_yin,Celestial General (Yin),lord,false,,data/skill_trees/characters/grand_cathay/Celestial_General_Yin.csv,0,0
-wh3_dlc24_cth_gate_master,Gate Master,hero,false,,data/skill_trees/characters/grand_cathay/Gate_Master.csv,0,0
-wh3_dlc24_cth_saytang_the_watcher,Saytang The Watcher,hero,false,,data/skill_trees/characters/grand_cathay/Saytang_The_Watcher.csv,0,0
-wh3_dlc24_cth_yuan_bo,Yuan Bo,legendary_lord,true,characters/grand_cathay/wh3_dlc24_cth_yuan_bo.csv,data/skill_trees/characters/grand_cathay/Yuan_Bo.csv,112,14
-wh3_main_cth_alchemist,Alchemist,hero,true,characters/grand_cathay/wh3_main_cth_alchemist.csv,data/skill_trees/characters/grand_cathay/Alchemist.csv,73,13
-wh3_main_cth_astromancer,Astromancer,hero,true,characters/grand_cathay/wh3_main_cth_astromancer.csv,data/skill_trees/characters/grand_cathay/Astromancer.csv,118,12
-wh3_main_cth_dragon_blooded_shugengan_yang,Dragon-Blooded Shugengan Lord (Yang),lord,true,characters/grand_cathay/wh3_main_cth_dragon_blooded_shugengan_yang.csv,data/skill_trees/characters/grand_cathay/Dragon_Blooded_Shugengan_Lord_Yang.csv,97,21
-wh3_main_cth_dragon_blooded_shugengan_yin,Dragon-Blooded Shugengan Lord (Yin),lord,true,characters/grand_cathay/wh3_main_cth_dragon_blooded_shugengan_yin.csv,data/skill_trees/characters/grand_cathay/Dragon_Blooded_Shugengan_Lord_Yin.csv,97,21
-wh3_main_cth_lord_caravan_master,Caravan Master,lord,false,,data/skill_trees/characters/grand_cathay/Caravan_Master.csv,0,0
-wh3_main_cth_lord_magistrate_yang,Lord Magistrate (Yang),lord,false,,data/skill_trees/characters/grand_cathay/Lord_Magistrate_Yang.csv,0,0
-wh3_main_cth_lord_magistrate_yin,Lord Magistrate (Yin),lord,false,,data/skill_trees/characters/grand_cathay/Lord_Magistrate_Yin.csv,0,0
-wh3_main_cth_miao_ying,Miao Ying,legendary_lord,true,characters/grand_cathay/wh3_main_cth_miao_ying.csv,data/skill_trees/characters/grand_cathay/Miao_Ying.csv,56,17
-wh3_main_cth_zhao_ming,Zhao Ming,legendary_lord,true,characters/grand_cathay/wh3_main_cth_zhao_ming.csv,data/skill_trees/characters/grand_cathay/Zhao_Ming.csv,61,20
-wh_dlc06_grn_night_goblin_warboss,Night Goblin Warboss,lord,false,,data/skill_trees/characters/greenskins/Night_Goblin_Warboss.csv,0,0
-wh_dlc06_grn_skarsnik,Skarsnik,legendary_lord,false,,data/skill_trees/characters/greenskins/Skarsnik.csv,0,0
-wh_dlc06_grn_wurrzag_da_great_prophet,Wurrzag da Great Green Prophet,legendary_lord,true,characters/greenskins/wh_dlc06_grn_wurrzag_da_great_prophet.csv,data/skill_trees/characters/greenskins/Wurrzag_da_Great_Green_Prophet.csv,55,17
-wh_main_grn_azhag_the_slaughterer,Azhag the Slaughterer,legendary_lord,true,characters/greenskins/wh_main_grn_azhag_the_slaughterer.csv,data/skill_trees/characters/greenskins/Azhag_the_Slaughterer.csv,55,13
-wh_main_grn_goblin_big_boss,Goblin Big Boss,hero,false,,data/skill_trees/characters/greenskins/Goblin_Big_Boss.csv,0,0
-wh_main_grn_goblin_great_shaman,Goblin Great Shaman,lord,true,characters/greenskins/wh_main_grn_goblin_great_shaman.csv,data/skill_trees/characters/greenskins/Goblin_Great_Shaman.csv,48,10
-wh_main_grn_grimgor_ironhide,Grimgor Ironhide,legendary_lord,false,,data/skill_trees/characters/greenskins/Grimgor_Ironhide.csv,0,0
-wh_main_grn_night_goblin_shaman,Night Goblin Shaman,hero,true,characters/greenskins/wh_main_grn_night_goblin_shaman.csv,data/skill_trees/characters/greenskins/Night_Goblin_Shaman.csv,55,10
-wh_main_grn_orc_shaman,Orc Shaman,hero,true,characters/greenskins/wh_main_grn_orc_shaman.csv,data/skill_trees/characters/greenskins/Orc_Shaman.csv,125,11
-wh_main_grn_orc_warboss,Orc Warboss,lord,false,,data/skill_trees/characters/greenskins/Orc_Warboss.csv,0,0
-wh2_dlc15_grn_goblin_great_shaman_raknik,Raknik Spiderclaw,lord,true,characters/greenskins/wh2_dlc15_grn_goblin_great_shaman_raknik.csv,data/skill_trees/characters/greenskins/Raknik_Spiderclaw.csv,48,10
-wh2_dlc15_grn_grom_the_paunch,Grom the Paunch,legendary_lord,false,,data/skill_trees/characters/greenskins/Grom_the_Paunch.csv,0,0
-wh2_dlc15_grn_orc_warboss_oglok,Oglok the 'Orrible,lord,false,,data/skill_trees/characters/greenskins/Oglok_the_Orrible.csv,0,0
-wh2_dlc15_grn_river_troll_hag,Giant River Troll Hag,hero,true,characters/greenskins/wh2_dlc15_grn_river_troll_hag.csv,data/skill_trees/characters/greenskins/Giant_River_Troll_Hag.csv,59,12
-wh2_pro09_grn_black_orc_big_boss,Black Orc Big Boss,hero,false,,data/skill_trees/characters/greenskins/Black_Orc_Big_Boss.csv,0,0
-wh3_dlc26_grn_gorbad_ironclaw,Gorbad Ironclaw,legendary_lord,false,,data/skill_trees/characters/greenskins/Gorbad_Ironclaw.csv,0,0
-wh3_dlc26_grn_night_goblin_big_boss,Night Goblin Big Boss,hero,false,,data/skill_trees/characters/greenskins/Night_Goblin_Big_Boss.csv,0,0
-wh3_dlc26_grn_savage_orc_great_shaman,Savage Orc Great Shaman,lord,true,characters/greenskins/wh3_dlc26_grn_savage_orc_great_shaman.csv,data/skill_trees/characters/greenskins/Savage_Orc_Great_Shaman.csv,55,11
-wh3_dlc26_grn_snagla_grobpsit,Snagla Grobspit,hero,false,,data/skill_trees/characters/greenskins/Snagla_Grobspit.csv,0,0
-wh2_dlc10_hef_alarielle,Alarielle the Radiant,legendary_lord,true,characters/high_elves/wh2_dlc10_hef_alarielle.csv,data/skill_trees/characters/high_elves/Alarielle_the_Radiant.csv,129,15
-wh2_dlc10_hef_alith_anar,Alith Anar,legendary_lord,false,,data/skill_trees/characters/high_elves/Alith_Anar.csv,0,0
-wh2_dlc10_hef_handmaiden,Handmaiden,hero,false,,data/skill_trees/characters/high_elves/Handmaiden.csv,0,0
-wh2_dlc10_hef_mage_heavens,Mage (Heavens),hero,true,characters/high_elves/wh2_dlc10_hef_mage_heavens.csv,data/skill_trees/characters/high_elves/Mage_Heavens.csv,628,16
-wh2_dlc10_hef_mage_shadows,Mage (Shadows),hero,true,characters/high_elves/wh2_dlc10_hef_mage_shadows.csv,data/skill_trees/characters/high_elves/Mage_Shadows.csv,640,16
+wh2_dlc10_def_crone_hellebron,Crone Hellebron,legendary_lord,false,characters/dark_elves/wh2_dlc10_def_crone_hellebron.csv,data/skill_trees/characters/dark_elves/Crone_Hellebron.csv,11,7
+wh2_dlc10_def_sorceress_beasts,Sorceress (Beasts),hero,true,characters/dark_elves/wh2_dlc10_def_sorceress_beasts.csv,data/skill_trees/characters/dark_elves/Sorceress_Beasts.csv,65,21
+wh2_dlc10_def_sorceress_death,Sorceress (Death),hero,true,characters/dark_elves/wh2_dlc10_def_sorceress_death.csv,data/skill_trees/characters/dark_elves/Sorceress_Death.csv,66,21
+wh2_dlc10_def_supreme_sorceress_beasts,Supreme Sorceress (Beasts),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_beasts.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Beasts.csv,136,26
+wh2_dlc10_def_supreme_sorceress_dark,Supreme Sorceress (Dark),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_dark.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Dark.csv,130,25
+wh2_dlc10_def_supreme_sorceress_death,Supreme Sorceress (Death),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_death.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Death.csv,136,26
+wh2_dlc10_def_supreme_sorceress_fire,Supreme Sorceress (Fire),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_fire.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Fire.csv,137,26
+wh2_dlc10_def_supreme_sorceress_shadow,Supreme Sorceress (Shadows),lord,true,characters/dark_elves/wh2_dlc10_def_supreme_sorceress_shadow.csv,data/skill_trees/characters/dark_elves/Supreme_Sorceress_Shadows.csv,143,27
+wh2_dlc11_def_lokhir,Lokhir Fellheart,legendary_lord,false,characters/dark_elves/wh2_dlc11_def_lokhir.csv,data/skill_trees/characters/dark_elves/Lokhir_Fellheart.csv,15,4
+wh2_dlc14_def_high_beastmaster,High Beastmaster,lord,false,characters/dark_elves/wh2_dlc14_def_high_beastmaster.csv,data/skill_trees/characters/dark_elves/High_Beastmaster.csv,16,13
+wh2_dlc14_def_malus_darkblade,Malus Darkblade,legendary_lord,false,characters/dark_elves/wh2_dlc14_def_malus_darkblade.csv,data/skill_trees/characters/dark_elves/Malus_Darkblade.csv,9,8
+wh2_dlc14_def_master,Master,hero,false,characters/dark_elves/wh2_dlc14_def_master.csv,data/skill_trees/characters/dark_elves/Master.csv,14,11
+wh2_main_def_black_ark,Black Ark,lord,false,characters/dark_elves/wh2_main_def_black_ark.csv,data/skill_trees/characters/dark_elves/Black_Ark.csv,5,4
+wh2_main_def_black_ark_blessed_dread,The Blessed Dread,lord,false,characters/dark_elves/wh2_main_def_black_ark_blessed_dread.csv,data/skill_trees/characters/dark_elves/The_Blessed_Dread.csv,5,4
+wh2_main_def_death_hag,Death Hag,hero,false,characters/dark_elves/wh2_main_def_death_hag.csv,data/skill_trees/characters/dark_elves/Death_Hag.csv,14,11
+wh2_main_def_dreadlord,Dreadlord (Sword & Crossbow),lord,false,characters/dark_elves/wh2_main_def_dreadlord.csv,data/skill_trees/characters/dark_elves/Dreadlord_Sword_Crossbow.csv,16,13
+wh2_main_def_dreadlord_fem,Dreadlord (Sword & Shield),lord,false,characters/dark_elves/wh2_main_def_dreadlord_fem.csv,data/skill_trees/characters/dark_elves/Dreadlord_Sword_Shield.csv,17,13
+wh2_main_def_khainite_assassin,Khainite Assassin,hero,false,characters/dark_elves/wh2_main_def_khainite_assassin.csv,data/skill_trees/characters/dark_elves/Khainite_Assassin.csv,14,12
+wh2_main_def_malekith,Malekith,legendary_lord,true,characters/dark_elves/wh2_main_def_malekith.csv,data/skill_trees/characters/dark_elves/Malekith.csv,56,18
+wh2_main_def_morathi,Morathi,legendary_lord,true,characters/dark_elves/wh2_main_def_morathi.csv,data/skill_trees/characters/dark_elves/Morathi.csv,128,20
+wh2_main_def_sorceress_dark,Sorceress (Dark),hero,true,characters/dark_elves/wh2_main_def_sorceress_dark.csv,data/skill_trees/characters/dark_elves/Sorceress_Dark.csv,60,20
+wh2_main_def_sorceress_fire,Sorceress (Fire),hero,true,characters/dark_elves/wh2_main_def_sorceress_fire.csv,data/skill_trees/characters/dark_elves/Sorceress_Fire.csv,66,21
+wh2_main_def_sorceress_shadow,Sorceress (Shadows),hero,true,characters/dark_elves/wh2_main_def_sorceress_shadow.csv,data/skill_trees/characters/dark_elves/Sorceress_Shadows.csv,72,22
+wh2_twa03_def_rakarth,Rakarth,legendary_lord,false,characters/dark_elves/wh2_twa03_def_rakarth.csv,data/skill_trees/characters/dark_elves/Rakarth.csv,15,6
+wh_dlc06_dwf_belegar,Belegar Ironhammer,legendary_lord,true,characters/dwarfs/wh_dlc06_dwf_belegar.csv,data/skill_trees/characters/dwarfs/Belegar_Ironhammer.csv,8,6
+wh_dlc06_dwf_master_engineer_ghost,Master Engineer,hero,true,characters/dwarfs/wh_dlc06_dwf_master_engineer_ghost.csv,data/skill_trees/characters/dwarfs/Master_Engineer.csv,9,4
+wh_dlc06_dwf_runelord,Runelord,lord,true,characters/dwarfs/wh_dlc06_dwf_runelord.csv,data/skill_trees/characters/dwarfs/Runelord.csv,79,22
+wh_dlc06_dwf_runesmith_ghost,Runesmith,hero,true,characters/dwarfs/wh_dlc06_dwf_runesmith_ghost.csv,data/skill_trees/characters/dwarfs/Runesmith.csv,87,21
+wh_dlc06_dwf_thane_ghost_1,Thane,hero,true,characters/dwarfs/wh_dlc06_dwf_thane_ghost_1.csv,data/skill_trees/characters/dwarfs/Thane.csv,5,4
+wh_dlc06_dwf_thane_ghost_2,Thane,hero,true,characters/dwarfs/wh_dlc06_dwf_thane_ghost_2.csv,data/skill_trees/characters/dwarfs/Thane__thane_ghost_2.csv,5,4
+wh_main_dwf_lord,Lord,lord,true,characters/dwarfs/wh_main_dwf_lord.csv,data/skill_trees/characters/dwarfs/Lord.csv,13,10
+wh_main_dwf_master_engineer,Master Engineer,hero,true,characters/dwarfs/wh_main_dwf_master_engineer.csv,data/skill_trees/characters/dwarfs/Master_Engineer__master_engineer.csv,15,9
+wh_main_dwf_runesmith,Runesmith,hero,true,characters/dwarfs/wh_main_dwf_runesmith.csv,data/skill_trees/characters/dwarfs/Runesmith__runesmith.csv,103,24
+wh_main_dwf_thane,Thane,hero,true,characters/dwarfs/wh_main_dwf_thane.csv,data/skill_trees/characters/dwarfs/Thane__thane.csv,12,9
+wh_main_dwf_thorgrim_grudgebearer,Thorgrim Grudgebearer,legendary_lord,true,characters/dwarfs/wh_main_dwf_thorgrim_grudgebearer.csv,data/skill_trees/characters/dwarfs/Thorgrim_Grudgebearer.csv,8,6
+wh_main_dwf_ungrim_ironfist,Ungrim Ironfist,legendary_lord,true,characters/dwarfs/wh_main_dwf_ungrim_ironfist.csv,data/skill_trees/characters/dwarfs/Ungrim_Ironfist.csv,15,9
+wh_pro01_dwf_grombrindal,Grombrindal,legendary_lord,true,characters/dwarfs/wh_pro01_dwf_grombrindal.csv,data/skill_trees/characters/dwarfs/Grombrindal.csv,8,6
+wh2_dlc17_dwf_thane_ghost_artifact,Great Axe Thane,hero,true,characters/dwarfs/wh2_dlc17_dwf_thane_ghost_artifact.csv,data/skill_trees/characters/dwarfs/Great_Axe_Thane.csv,5,4
+wh2_dlc17_dwf_thorek,Thorek Ironbrow,legendary_lord,true,characters/dwarfs/wh2_dlc17_dwf_thorek.csv,data/skill_trees/characters/dwarfs/Thorek_Ironbrow.csv,78,19
+wh3_dlc25_dwf_daemon_slayer,Daemon Slayer,lord,true,characters/dwarfs/wh3_dlc25_dwf_daemon_slayer.csv,data/skill_trees/characters/dwarfs/Daemon_Slayer.csv,20,14
+wh3_dlc25_dwf_dragon_slayer,Dragon Slayer,hero,true,characters/dwarfs/wh3_dlc25_dwf_dragon_slayer.csv,data/skill_trees/characters/dwarfs/Dragon_Slayer.csv,14,10
+wh3_dlc25_dwf_garagrim_ironfist,Garagrim Ironfist,hero,true,characters/dwarfs/wh3_dlc25_dwf_garagrim_ironfist.csv,data/skill_trees/characters/dwarfs/Garagrim_Ironfist.csv,11,9
+wh3_dlc25_dwf_lord_mikael_leadstrong,Lord Mikael Leadstrong,lord,true,characters/dwarfs/wh3_dlc25_dwf_lord_mikael_leadstrong.csv,data/skill_trees/characters/dwarfs/Lord_Mikael_Leadstrong.csv,7,5
+wh3_dlc25_dwf_malakai_makaisson,Malakai Makaisson,legendary_lord,true,characters/dwarfs/wh3_dlc25_dwf_malakai_makaisson.csv,data/skill_trees/characters/dwarfs/Malakai_Makaisson.csv,15,10
+wh_dlc03_emp_amber_wizard,Amber Wizard,hero,true,characters/empire/wh_dlc03_emp_amber_wizard.csv,data/skill_trees/characters/empire/Amber_Wizard.csv,67,20
+wh_dlc03_emp_boris_todbringer,Boris Todbringer,legendary_lord,false,characters/empire/wh_dlc03_emp_boris_todbringer.csv,data/skill_trees/characters/empire/Boris_Todbringer.csv,10,8
+wh_dlc04_emp_arch_lector,Arch Lector,lord,false,characters/empire/wh_dlc04_emp_arch_lector.csv,data/skill_trees/characters/empire/Arch_Lector.csv,22,16
+wh_dlc04_emp_volkmar,Volkmar the Grim,legendary_lord,false,characters/empire/wh_dlc04_emp_volkmar.csv,data/skill_trees/characters/empire/Volkmar_the_Grim.csv,15,9
+wh_dlc05_emp_grey_wizard,Grey Wizard,hero,true,characters/empire/wh_dlc05_emp_grey_wizard.csv,data/skill_trees/characters/empire/Grey_Wizard.csv,74,21
+wh_dlc05_emp_jade_wizard,Jade Wizard,hero,true,characters/empire/wh_dlc05_emp_jade_wizard.csv,data/skill_trees/characters/empire/Jade_Wizard.csv,73,19
+wh_main_emp_balthasar_gelt,Balthasar Gelt,legendary_lord,true,characters/empire/wh_main_emp_balthasar_gelt.csv,data/skill_trees/characters/empire/Balthasar_Gelt.csv,94,19
+wh_main_emp_bright_wizard,Bright Wizard,hero,true,characters/empire/wh_main_emp_bright_wizard.csv,data/skill_trees/characters/empire/Bright_Wizard.csv,68,19
+wh_main_emp_captain,Empire Captain,hero,false,characters/empire/wh_main_emp_captain.csv,data/skill_trees/characters/empire/Empire_Captain.csv,14,12
+wh_main_emp_celestial_wizard,Celestial Wizard,hero,true,characters/empire/wh_main_emp_celestial_wizard.csv,data/skill_trees/characters/empire/Celestial_Wizard.csv,67,19
+wh_main_emp_karl_franz,Karl Franz,legendary_lord,false,characters/empire/wh_main_emp_karl_franz.csv,data/skill_trees/characters/empire/Karl_Franz.csv,6,5
+wh_main_emp_light_wizard,Light Wizard,hero,true,characters/empire/wh_main_emp_light_wizard.csv,data/skill_trees/characters/empire/Light_Wizard.csv,74,21
+wh_main_emp_lord,General of the Empire,lord,false,characters/empire/wh_main_emp_lord.csv,data/skill_trees/characters/empire/General_of_the_Empire.csv,16,13
+wh_main_emp_warrior_priest,Warrior Priest,hero,false,characters/empire/wh_main_emp_warrior_priest.csv,data/skill_trees/characters/empire/Warrior_Priest.csv,18,16
+wh_main_emp_witch_hunter,Witch Hunter,hero,false,characters/empire/wh_main_emp_witch_hunter.csv,data/skill_trees/characters/empire/Witch_Hunter.csv,13,10
+wh2_dlc13_emp_cha_huntsmarshal,Huntsman General,lord,false,characters/empire/wh2_dlc13_emp_cha_huntsmarshal.csv,data/skill_trees/characters/empire/Huntsman_General.csv,21,15
+wh2_dlc13_emp_cha_markus_wulfhart,Markus Wulfhart,legendary_lord,false,characters/empire/wh2_dlc13_emp_cha_markus_wulfhart.csv,data/skill_trees/characters/empire/Markus_Wulfhart.csv,14,8
+wh2_dlc13_emp_hunter_doctor_hertwig_van_hal,Wulfhart's Hunter,hero,false,characters/empire/wh2_dlc13_emp_hunter_doctor_hertwig_van_hal.csv,data/skill_trees/characters/empire/Wulfhart_s_Hunter.csv,13,10
+wh2_dlc13_emp_hunter_jorek_grimm,Wulfhart's Hunter,hero,false,characters/empire/wh2_dlc13_emp_hunter_jorek_grimm.csv,data/skill_trees/characters/empire/Wulfhart_s_Hunter__hunter_jorek_grimm.csv,15,9
+wh2_dlc13_emp_hunter_kalara_of_wydrioth,Wulfhart's Hunter,hero,false,characters/empire/wh2_dlc13_emp_hunter_kalara_of_wydrioth.csv,data/skill_trees/characters/empire/Wulfhart_s_Hunter__hunter_kalara_of_wydrioth.csv,13,11
+wh2_dlc13_emp_hunter_rodrik_l_anguille,Wulfhart's Hunter,hero,false,characters/empire/wh2_dlc13_emp_hunter_rodrik_l_anguille.csv,data/skill_trees/characters/empire/Wulfhart_s_Hunter__hunter_rodrik_l_anguille.csv,4,4
+wh2_pro07_emp_amethyst_wizard,Amethyst Wizard,hero,true,characters/empire/wh2_pro07_emp_amethyst_wizard.csv,data/skill_trees/characters/empire/Amethyst_Wizard.csv,76,19
+wh2_pro08_neu_gotrek,Gotrek,lord,true,characters/empire/wh2_pro08_neu_gotrek.csv,data/skill_trees/characters/empire/Gotrek.csv,11,8
+wh3_dlc23_neu_ulrika,Ulrika,hero,true,characters/empire/wh3_dlc23_neu_ulrika.csv,data/skill_trees/characters/empire/Ulrika.csv,78,26
+wh3_dlc25_emp_elspeth_von_draken,Elspeth von Draken,legendary_lord,true,characters/empire/wh3_dlc25_emp_elspeth_von_draken.csv,data/skill_trees/characters/empire/Elspeth_von_Draken.csv,79,20
+wh3_dlc25_emp_engineer,Engineer,hero,false,characters/empire/wh3_dlc25_emp_engineer.csv,data/skill_trees/characters/empire/Engineer.csv,10,10
+wh3_dlc25_emp_gold_wizard,Gold Wizard,hero,true,characters/empire/wh3_dlc25_emp_gold_wizard.csv,data/skill_trees/characters/empire/Gold_Wizard.csv,84,21
+wh3_dlc25_emp_master_engineer,Master Engineer,lord,false,characters/empire/wh3_dlc25_emp_master_engineer.csv,data/skill_trees/characters/empire/Master_Engineer.csv,23,19
+wh3_dlc25_emp_theodore_bruckner,Theodore Bruckner,hero,false,characters/empire/wh3_dlc25_emp_theodore_bruckner.csv,data/skill_trees/characters/empire/Theodore_Bruckner.csv,9,7
+wh3_dlc25_neu_gotrek_hero,Gotrek Hero,hero,true,characters/empire/wh3_dlc25_neu_gotrek_hero.csv,data/skill_trees/characters/empire/Gotrek_Hero.csv,11,8
+wh3_dlc29_emp_cha_emil_valgeir,Cha Emil Valgeir,hero,false,characters/empire/wh3_dlc29_emp_cha_emil_valgeir.csv,data/skill_trees/characters/empire/Cha_Emil_Valgeir.csv,27,14
+wh3_dlc29_emp_cha_priest_of_ulric,Priest of Ulric,hero,false,characters/empire/wh3_dlc29_emp_cha_priest_of_ulric.csv,data/skill_trees/characters/empire/Priest_of_Ulric.csv,34,20
+wh3_dlc29_emp_cha_seneschal_of_the_white_wolf,Seneschal,lord,false,characters/empire/wh3_dlc29_emp_cha_seneschal_of_the_white_wolf.csv,data/skill_trees/characters/empire/Seneschal.csv,16,13
+wh3_cp1_cth_bhashiva,Bhashiva,legendary_lord,false,characters/grand_cathay/wh3_cp1_cth_bhashiva.csv,data/skill_trees/characters/grand_cathay/Bhashiva.csv,9,8
+wh3_cp1_cth_cha_taoyan,Taoyan,hero,false,characters/grand_cathay/wh3_cp1_cth_cha_taoyan.csv,data/skill_trees/characters/grand_cathay/Taoyan.csv,4,4
+wh3_cp1_cth_clawspeaker_beasts,Clawspeaker (Beasts),hero,true,characters/grand_cathay/wh3_cp1_cth_clawspeaker_beasts.csv,data/skill_trees/characters/grand_cathay/Clawspeaker_Beasts.csv,103,36
+wh3_cp1_cth_clawspeaker_life,Clawspeaker (Life),hero,true,characters/grand_cathay/wh3_cp1_cth_clawspeaker_life.csv,data/skill_trees/characters/grand_cathay/Clawspeaker_Life.csv,106,36
+wh3_cp1_cth_clawspeaker_shadows,Clawspeaker (Shadows),hero,true,characters/grand_cathay/wh3_cp1_cth_clawspeaker_shadows.csv,data/skill_trees/characters/grand_cathay/Clawspeaker_Shadows.csv,110,37
+wh3_cp1_cth_sawai,Sawai,lord,false,characters/grand_cathay/wh3_cp1_cth_sawai.csv,data/skill_trees/characters/grand_cathay/Sawai.csv,15,12
+wh3_cp1_cth_sawai_caravan,Sawai Mercenary,lord,false,characters/grand_cathay/wh3_cp1_cth_sawai_caravan.csv,data/skill_trees/characters/grand_cathay/Sawai_Mercenary.csv,166,8
+wh3_dlc24_cth_celestial_general_yang,Celestial General (Yang),lord,false,characters/grand_cathay/wh3_dlc24_cth_celestial_general_yang.csv,data/skill_trees/characters/grand_cathay/Celestial_General_Yang.csv,10,8
+wh3_dlc24_cth_celestial_general_yin,Celestial General (Yin),lord,false,characters/grand_cathay/wh3_dlc24_cth_celestial_general_yin.csv,data/skill_trees/characters/grand_cathay/Celestial_General_Yin.csv,13,9
+wh3_dlc24_cth_gate_master,Gate Master,hero,false,characters/grand_cathay/wh3_dlc24_cth_gate_master.csv,data/skill_trees/characters/grand_cathay/Gate_Master.csv,16,13
+wh3_dlc24_cth_saytang_the_watcher,Saytang The Watcher,hero,false,characters/grand_cathay/wh3_dlc24_cth_saytang_the_watcher.csv,data/skill_trees/characters/grand_cathay/Saytang_The_Watcher.csv,6,5
+wh3_dlc24_cth_yuan_bo,Yuan Bo,legendary_lord,true,characters/grand_cathay/wh3_dlc24_cth_yuan_bo.csv,data/skill_trees/characters/grand_cathay/Yuan_Bo.csv,158,19
+wh3_main_cth_alchemist,Alchemist,hero,true,characters/grand_cathay/wh3_main_cth_alchemist.csv,data/skill_trees/characters/grand_cathay/Alchemist.csv,90,26
+wh3_main_cth_astromancer,Astromancer,hero,true,characters/grand_cathay/wh3_main_cth_astromancer.csv,data/skill_trees/characters/grand_cathay/Astromancer.csv,127,18
+wh3_main_cth_dragon_blooded_shugengan_yang,Dragon-Blooded Shugengan Lord (Yang),lord,true,characters/grand_cathay/wh3_main_cth_dragon_blooded_shugengan_yang.csv,data/skill_trees/characters/grand_cathay/Dragon_Blooded_Shugengan_Lord_Yang.csv,105,28
+wh3_main_cth_dragon_blooded_shugengan_yin,Dragon-Blooded Shugengan Lord (Yin),lord,true,characters/grand_cathay/wh3_main_cth_dragon_blooded_shugengan_yin.csv,data/skill_trees/characters/grand_cathay/Dragon_Blooded_Shugengan_Lord_Yin.csv,107,28
+wh3_main_cth_lord_caravan_master,Caravan Master,lord,false,characters/grand_cathay/wh3_main_cth_lord_caravan_master.csv,data/skill_trees/characters/grand_cathay/Caravan_Master.csv,184,17
+wh3_main_cth_lord_magistrate_yang,Lord Magistrate (Yang),lord,false,characters/grand_cathay/wh3_main_cth_lord_magistrate_yang.csv,data/skill_trees/characters/grand_cathay/Lord_Magistrate_Yang.csv,27,15
+wh3_main_cth_lord_magistrate_yin,Lord Magistrate (Yin),lord,false,characters/grand_cathay/wh3_main_cth_lord_magistrate_yin.csv,data/skill_trees/characters/grand_cathay/Lord_Magistrate_Yin.csv,30,16
+wh3_main_cth_miao_ying,Miao Ying,legendary_lord,true,characters/grand_cathay/wh3_main_cth_miao_ying.csv,data/skill_trees/characters/grand_cathay/Miao_Ying.csv,76,20
+wh3_main_cth_zhao_ming,Zhao Ming,legendary_lord,true,characters/grand_cathay/wh3_main_cth_zhao_ming.csv,data/skill_trees/characters/grand_cathay/Zhao_Ming.csv,96,25
+wh_dlc06_grn_night_goblin_warboss,Night Goblin Warboss,lord,false,characters/greenskins/wh_dlc06_grn_night_goblin_warboss.csv,data/skill_trees/characters/greenskins/Night_Goblin_Warboss.csv,21,13
+wh_dlc06_grn_skarsnik,Skarsnik,legendary_lord,false,characters/greenskins/wh_dlc06_grn_skarsnik.csv,data/skill_trees/characters/greenskins/Skarsnik.csv,10,6
+wh_dlc06_grn_wurrzag_da_great_prophet,Wurrzag da Great Green Prophet,legendary_lord,true,characters/greenskins/wh_dlc06_grn_wurrzag_da_great_prophet.csv,data/skill_trees/characters/greenskins/Wurrzag_da_Great_Green_Prophet.csv,62,21
+wh_main_grn_azhag_the_slaughterer,Azhag the Slaughterer,legendary_lord,true,characters/greenskins/wh_main_grn_azhag_the_slaughterer.csv,data/skill_trees/characters/greenskins/Azhag_the_Slaughterer.csv,67,21
+wh_main_grn_goblin_big_boss,Goblin Big Boss,hero,false,characters/greenskins/wh_main_grn_goblin_big_boss.csv,data/skill_trees/characters/greenskins/Goblin_Big_Boss.csv,17,10
+wh_main_grn_goblin_great_shaman,Goblin Great Shaman,lord,true,characters/greenskins/wh_main_grn_goblin_great_shaman.csv,data/skill_trees/characters/greenskins/Goblin_Great_Shaman.csv,67,24
+wh_main_grn_grimgor_ironhide,Grimgor Ironhide,legendary_lord,false,characters/greenskins/wh_main_grn_grimgor_ironhide.csv,data/skill_trees/characters/greenskins/Grimgor_Ironhide.csv,11,8
+wh_main_grn_night_goblin_shaman,Night Goblin Shaman,hero,true,characters/greenskins/wh_main_grn_night_goblin_shaman.csv,data/skill_trees/characters/greenskins/Night_Goblin_Shaman.csv,64,18
+wh_main_grn_orc_shaman,Orc Shaman,hero,true,characters/greenskins/wh_main_grn_orc_shaman.csv,data/skill_trees/characters/greenskins/Orc_Shaman.csv,134,19
+wh_main_grn_orc_warboss,Orc Warboss,lord,false,characters/greenskins/wh_main_grn_orc_warboss.csv,data/skill_trees/characters/greenskins/Orc_Warboss.csv,24,14
+wh2_dlc15_grn_goblin_great_shaman_raknik,Raknik Spiderclaw,lord,true,characters/greenskins/wh2_dlc15_grn_goblin_great_shaman_raknik.csv,data/skill_trees/characters/greenskins/Raknik_Spiderclaw.csv,68,25
+wh2_dlc15_grn_grom_the_paunch,Grom the Paunch,legendary_lord,false,characters/greenskins/wh2_dlc15_grn_grom_the_paunch.csv,data/skill_trees/characters/greenskins/Grom_the_Paunch.csv,7,4
+wh2_dlc15_grn_orc_warboss_oglok,Oglok the 'Orrible,lord,false,characters/greenskins/wh2_dlc15_grn_orc_warboss_oglok.csv,data/skill_trees/characters/greenskins/Oglok_the_Orrible.csv,23,14
+wh2_dlc15_grn_river_troll_hag,Giant River Troll Hag,hero,true,characters/greenskins/wh2_dlc15_grn_river_troll_hag.csv,data/skill_trees/characters/greenskins/Giant_River_Troll_Hag.csv,73,23
+wh2_pro09_grn_black_orc_big_boss,Black Orc Big Boss,hero,false,characters/greenskins/wh2_pro09_grn_black_orc_big_boss.csv,data/skill_trees/characters/greenskins/Black_Orc_Big_Boss.csv,20,11
+wh3_dlc26_grn_gorbad_ironclaw,Gorbad Ironclaw,legendary_lord,false,characters/greenskins/wh3_dlc26_grn_gorbad_ironclaw.csv,data/skill_trees/characters/greenskins/Gorbad_Ironclaw.csv,13,7
+wh3_dlc26_grn_night_goblin_big_boss,Night Goblin Big Boss,hero,false,characters/greenskins/wh3_dlc26_grn_night_goblin_big_boss.csv,data/skill_trees/characters/greenskins/Night_Goblin_Big_Boss.csv,16,11
+wh3_dlc26_grn_savage_orc_great_shaman,Savage Orc Great Shaman,lord,true,characters/greenskins/wh3_dlc26_grn_savage_orc_great_shaman.csv,data/skill_trees/characters/greenskins/Savage_Orc_Great_Shaman.csv,67,21
+wh3_dlc26_grn_snagla_grobpsit,Snagla Grobspit,hero,false,characters/greenskins/wh3_dlc26_grn_snagla_grobpsit.csv,data/skill_trees/characters/greenskins/Snagla_Grobspit.csv,10,5
+wh2_dlc10_hef_alarielle,Alarielle the Radiant,legendary_lord,true,characters/high_elves/wh2_dlc10_hef_alarielle.csv,data/skill_trees/characters/high_elves/Alarielle_the_Radiant.csv,134,19
+wh2_dlc10_hef_alith_anar,Alith Anar,legendary_lord,false,characters/high_elves/wh2_dlc10_hef_alith_anar.csv,data/skill_trees/characters/high_elves/Alith_Anar.csv,8,6
+wh2_dlc10_hef_handmaiden,Handmaiden,hero,false,characters/high_elves/wh2_dlc10_hef_handmaiden.csv,data/skill_trees/characters/high_elves/Handmaiden.csv,21,5
+wh2_dlc10_hef_mage_heavens,Mage (Heavens),hero,true,characters/high_elves/wh2_dlc10_hef_mage_heavens.csv,data/skill_trees/characters/high_elves/Mage_Heavens.csv,634,19
+wh2_dlc10_hef_mage_shadows,Mage (Shadows),hero,true,characters/high_elves/wh2_dlc10_hef_mage_shadows.csv,data/skill_trees/characters/high_elves/Mage_Shadows.csv,646,19
 wh2_dlc10_hef_shadow_walker,Hand of the Shadow Crown,hero,false,,data/skill_trees/characters/high_elves/Hand_of_the_Shadow_Crown.csv,0,0
-wh2_dlc15_hef_archmage_beasts,Archmage (Beasts),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_beasts.csv,data/skill_trees/characters/high_elves/Archmage_Beasts.csv,314,18
-wh2_dlc15_hef_archmage_death,Archmage (Death),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_death.csv,data/skill_trees/characters/high_elves/Archmage_Death.csv,314,18
-wh2_dlc15_hef_archmage_fire,Archmage (Fire),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_fire.csv,data/skill_trees/characters/high_elves/Archmage_Fire.csv,630,18
-wh2_dlc15_hef_archmage_heavens,Archmage (Heavens),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_heavens.csv,data/skill_trees/characters/high_elves/Archmage_Heavens.csv,628,17
-wh2_dlc15_hef_archmage_high,Archmage (High),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_high.csv,data/skill_trees/characters/high_elves/Archmage_High.csv,322,19
-wh2_dlc15_hef_archmage_life,Archmage (Life),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_life.csv,data/skill_trees/characters/high_elves/Archmage_Life.csv,636,18
-wh2_dlc15_hef_archmage_light,Archmage (Light),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_light.csv,data/skill_trees/characters/high_elves/Archmage_Light.csv,322,19
-wh2_dlc15_hef_archmage_metal,Archmage (Metal),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_metal.csv,data/skill_trees/characters/high_elves/Archmage_Metal.csv,321,17
-wh2_dlc15_hef_archmage_shadows,Archmage (Shadows),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_shadows.csv,data/skill_trees/characters/high_elves/Archmage_Shadows.csv,321,17
-wh2_dlc15_hef_eltharion,Eltharion the Grim,legendary_lord,true,characters/high_elves/wh2_dlc15_hef_eltharion.csv,data/skill_trees/characters/high_elves/Eltharion_the_Grim.csv,60,13
-wh2_dlc15_hef_imrik,Imrik,legendary_lord,false,characters/high_elves/wh2_dlc15_hef_imrik.csv,data/skill_trees/characters/high_elves/Imrik.csv,1,1
-wh2_dlc15_hef_mage_beasts,Mage (Beasts),hero,true,characters/high_elves/wh2_dlc15_hef_mage_beasts.csv,data/skill_trees/characters/high_elves/Mage_Beasts.csv,313,17
-wh2_dlc15_hef_mage_death,Mage (Death),hero,true,characters/high_elves/wh2_dlc15_hef_mage_death.csv,data/skill_trees/characters/high_elves/Mage_Death.csv,628,17
-wh2_dlc15_hef_mage_fire,Mage (Fire),hero,true,characters/high_elves/wh2_dlc15_hef_mage_fire.csv,data/skill_trees/characters/high_elves/Mage_Fire.csv,628,17
-wh2_dlc15_hef_mage_metal,Mage (Metal),hero,true,characters/high_elves/wh2_dlc15_hef_mage_metal.csv,data/skill_trees/characters/high_elves/Mage_Metal.csv,640,16
-wh2_main_hef_loremaster_of_hoeth,Loremaster of Hoeth,hero,true,characters/high_elves/wh2_main_hef_loremaster_of_hoeth.csv,data/skill_trees/characters/high_elves/Loremaster_of_Hoeth.csv,933,14
-wh2_main_hef_mage_high,Mage (High),hero,true,characters/high_elves/wh2_main_hef_mage_high.csv,data/skill_trees/characters/high_elves/Mage_High.csv,320,18
-wh2_main_hef_mage_life,Mage (Life),hero,true,characters/high_elves/wh2_main_hef_mage_life.csv,data/skill_trees/characters/high_elves/Mage_Life.csv,316,17
-wh2_main_hef_mage_light,Mage (Light),hero,true,characters/high_elves/wh2_main_hef_mage_light.csv,data/skill_trees/characters/high_elves/Mage_Light.csv,640,18
-wh2_main_hef_noble,Noble,hero,false,,data/skill_trees/characters/high_elves/Noble.csv,0,0
-wh2_main_hef_prince,Prince,lord,false,,data/skill_trees/characters/high_elves/Prince.csv,0,0
-wh2_main_hef_prince_alastar,Alastar the White Lion,lord,false,,data/skill_trees/characters/high_elves/Alastar_the_White_Lion.csv,0,0
-wh2_main_hef_princess,Princess,lord,false,characters/high_elves/wh2_main_hef_princess.csv,data/skill_trees/characters/high_elves/Princess.csv,2,1
-wh2_main_hef_teclis,Teclis,legendary_lord,true,characters/high_elves/wh2_main_hef_teclis.csv,data/skill_trees/characters/high_elves/Teclis.csv,124,23
-wh2_main_hef_tyrion,Tyrion,legendary_lord,false,,data/skill_trees/characters/high_elves/Tyrion.csv,0,0
-wh3_dlc27_hef_aislinn,Sea Lord Aislinn,legendary_lord,false,,data/skill_trees/characters/high_elves/Sea_Lord_Aislinn.csv,0,0
-wh3_dlc27_hef_caradryan,Caradryan,hero,false,characters/high_elves/wh3_dlc27_hef_caradryan.csv,data/skill_trees/characters/high_elves/Caradryan.csv,4,0
-wh3_dlc27_hef_dragonship_captain_01,Dragonship Admiral,lord,false,,data/skill_trees/characters/high_elves/Dragonship_Admiral.csv,0,0
-wh3_dlc27_hef_dragonship_captain_02,Dragonship Captain 02,lord,false,,data/skill_trees/characters/high_elves/Dragonship_Captain_02.csv,0,0
-wh3_dlc27_hef_dragonship_captain_03,Dragonship Captain 03,lord,false,,data/skill_trees/characters/high_elves/Dragonship_Captain_03.csv,0,0
-wh3_dlc27_hef_dragonship_captain_04,Dragonship Captain 04,lord,false,,data/skill_trees/characters/high_elves/Dragonship_Captain_04.csv,0,0
-wh3_dlc27_hef_dragonship_captain_05,Dragonship Captain 05,lord,false,,data/skill_trees/characters/high_elves/Dragonship_Captain_05.csv,0,0
-wh3_dlc27_hef_mist_mage,Mist Mage,hero,true,characters/high_elves/wh3_dlc27_hef_mist_mage.csv,data/skill_trees/characters/high_elves/Mist_Mage.csv,942,17
-wh3_dlc27_hef_sea_helm,Sea Helm,lord,false,,data/skill_trees/characters/high_elves/Sea_Helm.csv,0,0
-wh3_dlc20_chs_lord_mkho,Chaos Lord of Khorne,lord,false,,data/skill_trees/characters/khorne/Chaos_Lord_of_Khorne.csv,0,0
-wh3_dlc26_kho_arbaal_the_undefeated,Arbaal the Undefeated,legendary_lord,false,,data/skill_trees/characters/khorne/Arbaal_the_Undefeated.csv,0,0
-wh3_dlc26_kho_bloodspeaker,Bloodspeaker,lord,false,,data/skill_trees/characters/khorne/Bloodspeaker.csv,0,0
-wh3_dlc26_kho_scyla_anfingrimm,Scyla Anfingrimm,hero,false,,data/skill_trees/characters/khorne/Scyla_Anfingrimm.csv,0,0
-wh3_dlc26_kho_skarr_bloodwrath,Skarr Bloodwrath,hero,false,,data/skill_trees/characters/khorne/Skarr_Bloodwrath.csv,0,0
-wh3_dlc26_kho_skulltaker,Skulltaker,legendary_lord,false,,data/skill_trees/characters/khorne/Skulltaker.csv,0,0
-wh3_main_kho_bloodreaper,Bloodreaper,hero,false,,data/skill_trees/characters/khorne/Bloodreaper.csv,0,0
+wh2_dlc15_hef_archmage_beasts,Archmage (Beasts),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_beasts.csv,data/skill_trees/characters/high_elves/Archmage_Beasts.csv,320,23
+wh2_dlc15_hef_archmage_death,Archmage (Death),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_death.csv,data/skill_trees/characters/high_elves/Archmage_Death.csv,320,23
+wh2_dlc15_hef_archmage_fire,Archmage (Fire),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_fire.csv,data/skill_trees/characters/high_elves/Archmage_Fire.csv,642,23
+wh2_dlc15_hef_archmage_heavens,Archmage (Heavens),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_heavens.csv,data/skill_trees/characters/high_elves/Archmage_Heavens.csv,640,22
+wh2_dlc15_hef_archmage_high,Archmage (High),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_high.csv,data/skill_trees/characters/high_elves/Archmage_High.csv,329,25
+wh2_dlc15_hef_archmage_life,Archmage (Life),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_life.csv,data/skill_trees/characters/high_elves/Archmage_Life.csv,648,23
+wh2_dlc15_hef_archmage_light,Archmage (Light),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_light.csv,data/skill_trees/characters/high_elves/Archmage_Light.csv,328,24
+wh2_dlc15_hef_archmage_metal,Archmage (Metal),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_metal.csv,data/skill_trees/characters/high_elves/Archmage_Metal.csv,327,22
+wh2_dlc15_hef_archmage_shadows,Archmage (Shadows),lord,true,characters/high_elves/wh2_dlc15_hef_archmage_shadows.csv,data/skill_trees/characters/high_elves/Archmage_Shadows.csv,327,22
+wh2_dlc15_hef_eltharion,Eltharion the Grim,legendary_lord,true,characters/high_elves/wh2_dlc15_hef_eltharion.csv,data/skill_trees/characters/high_elves/Eltharion_the_Grim.csv,73,21
+wh2_dlc15_hef_imrik,Imrik,legendary_lord,false,characters/high_elves/wh2_dlc15_hef_imrik.csv,data/skill_trees/characters/high_elves/Imrik.csv,9,7
+wh2_dlc15_hef_mage_beasts,Mage (Beasts),hero,true,characters/high_elves/wh2_dlc15_hef_mage_beasts.csv,data/skill_trees/characters/high_elves/Mage_Beasts.csv,316,20
+wh2_dlc15_hef_mage_death,Mage (Death),hero,true,characters/high_elves/wh2_dlc15_hef_mage_death.csv,data/skill_trees/characters/high_elves/Mage_Death.csv,634,20
+wh2_dlc15_hef_mage_fire,Mage (Fire),hero,true,characters/high_elves/wh2_dlc15_hef_mage_fire.csv,data/skill_trees/characters/high_elves/Mage_Fire.csv,634,20
+wh2_dlc15_hef_mage_metal,Mage (Metal),hero,true,characters/high_elves/wh2_dlc15_hef_mage_metal.csv,data/skill_trees/characters/high_elves/Mage_Metal.csv,646,19
+wh2_main_hef_loremaster_of_hoeth,Loremaster of Hoeth,hero,true,characters/high_elves/wh2_main_hef_loremaster_of_hoeth.csv,data/skill_trees/characters/high_elves/Loremaster_of_Hoeth.csv,951,20
+wh2_main_hef_mage_high,Mage (High),hero,true,characters/high_elves/wh2_main_hef_mage_high.csv,data/skill_trees/characters/high_elves/Mage_High.csv,323,21
+wh2_main_hef_mage_life,Mage (Life),hero,true,characters/high_elves/wh2_main_hef_mage_life.csv,data/skill_trees/characters/high_elves/Mage_Life.csv,320,21
+wh2_main_hef_mage_light,Mage (Light),hero,true,characters/high_elves/wh2_main_hef_mage_light.csv,data/skill_trees/characters/high_elves/Mage_Light.csv,646,21
+wh2_main_hef_noble,Noble,hero,false,characters/high_elves/wh2_main_hef_noble.csv,data/skill_trees/characters/high_elves/Noble.csv,21,6
+wh2_main_hef_prince,Prince,lord,false,characters/high_elves/wh2_main_hef_prince.csv,data/skill_trees/characters/high_elves/Prince.csv,18,4
+wh2_main_hef_prince_alastar,Alastar the White Lion,lord,false,characters/high_elves/wh2_main_hef_prince_alastar.csv,data/skill_trees/characters/high_elves/Alastar_the_White_Lion.csv,5,4
+wh2_main_hef_princess,Princess,lord,false,characters/high_elves/wh2_main_hef_princess.csv,data/skill_trees/characters/high_elves/Princess.csv,20,9
+wh2_main_hef_teclis,Teclis,legendary_lord,true,characters/high_elves/wh2_main_hef_teclis.csv,data/skill_trees/characters/high_elves/Teclis.csv,130,28
+wh2_main_hef_tyrion,Tyrion,legendary_lord,false,characters/high_elves/wh2_main_hef_tyrion.csv,data/skill_trees/characters/high_elves/Tyrion.csv,6,5
+wh3_dlc27_hef_aislinn,Sea Lord Aislinn,legendary_lord,false,characters/high_elves/wh3_dlc27_hef_aislinn.csv,data/skill_trees/characters/high_elves/Sea_Lord_Aislinn.csv,16,7
+wh3_dlc27_hef_caradryan,Caradryan,hero,false,characters/high_elves/wh3_dlc27_hef_caradryan.csv,data/skill_trees/characters/high_elves/Caradryan.csv,8,4
+wh3_dlc27_hef_dragonship_captain_01,Dragonship Admiral,lord,false,characters/high_elves/wh3_dlc27_hef_dragonship_captain_01.csv,data/skill_trees/characters/high_elves/Dragonship_Admiral.csv,8,6
+wh3_dlc27_hef_dragonship_captain_02,Dragonship Captain 02,lord,false,characters/high_elves/wh3_dlc27_hef_dragonship_captain_02.csv,data/skill_trees/characters/high_elves/Dragonship_Captain_02.csv,8,6
+wh3_dlc27_hef_dragonship_captain_03,Dragonship Captain 03,lord,false,characters/high_elves/wh3_dlc27_hef_dragonship_captain_03.csv,data/skill_trees/characters/high_elves/Dragonship_Captain_03.csv,8,6
+wh3_dlc27_hef_dragonship_captain_04,Dragonship Captain 04,lord,false,characters/high_elves/wh3_dlc27_hef_dragonship_captain_04.csv,data/skill_trees/characters/high_elves/Dragonship_Captain_04.csv,8,6
+wh3_dlc27_hef_dragonship_captain_05,Dragonship Captain 05,lord,false,characters/high_elves/wh3_dlc27_hef_dragonship_captain_05.csv,data/skill_trees/characters/high_elves/Dragonship_Captain_05.csv,8,6
+wh3_dlc27_hef_mist_mage,Mist Mage,hero,true,characters/high_elves/wh3_dlc27_hef_mist_mage.csv,data/skill_trees/characters/high_elves/Mist_Mage.csv,960,23
+wh3_dlc27_hef_sea_helm,Sea Helm,lord,false,characters/high_elves/wh3_dlc27_hef_sea_helm.csv,data/skill_trees/characters/high_elves/Sea_Helm.csv,18,6
+wh3_dlc20_chs_lord_mkho,Chaos Lord of Khorne,lord,false,characters/khorne/wh3_dlc20_chs_lord_mkho.csv,data/skill_trees/characters/khorne/Chaos_Lord_of_Khorne.csv,11,8
+wh3_dlc26_kho_arbaal_the_undefeated,Arbaal the Undefeated,legendary_lord,false,characters/khorne/wh3_dlc26_kho_arbaal_the_undefeated.csv,data/skill_trees/characters/khorne/Arbaal_the_Undefeated.csv,12,7
+wh3_dlc26_kho_bloodspeaker,Bloodspeaker,lord,false,characters/khorne/wh3_dlc26_kho_bloodspeaker.csv,data/skill_trees/characters/khorne/Bloodspeaker.csv,23,17
+wh3_dlc26_kho_scyla_anfingrimm,Scyla Anfingrimm,hero,false,characters/khorne/wh3_dlc26_kho_scyla_anfingrimm.csv,data/skill_trees/characters/khorne/Scyla_Anfingrimm.csv,12,6
+wh3_dlc26_kho_skarr_bloodwrath,Skarr Bloodwrath,hero,false,characters/khorne/wh3_dlc26_kho_skarr_bloodwrath.csv,data/skill_trees/characters/khorne/Skarr_Bloodwrath.csv,8,6
+wh3_dlc26_kho_skulltaker,Skulltaker,legendary_lord,false,characters/khorne/wh3_dlc26_kho_skulltaker.csv,data/skill_trees/characters/khorne/Skulltaker.csv,11,7
+wh3_main_kho_bloodreaper,Bloodreaper,hero,false,characters/khorne/wh3_main_kho_bloodreaper.csv,data/skill_trees/characters/khorne/Bloodreaper.csv,15,12
 wh3_main_kho_cult_magus,Khorne Cult Magus,hero,false,,data/skill_trees/characters/khorne/Khorne_Cult_Magus.csv,0,0
-wh3_main_kho_cultist,Cultist of Khorne,hero,false,,data/skill_trees/characters/khorne/Cultist_of_Khorne.csv,0,0
-wh3_main_kho_exalted_bloodthirster,Exalted Bloodthirster,lord,false,,data/skill_trees/characters/khorne/Exalted_Bloodthirster.csv,0,0
-wh3_main_kho_herald_of_khorne,Herald of Khorne,lord,false,,data/skill_trees/characters/khorne/Herald_of_Khorne.csv,0,0
-wh3_main_kho_skarbrand,Skarbrand,legendary_lord,false,,data/skill_trees/characters/khorne/Skarbrand.csv,0,0
-wh3_pro12_kho_cha_karanak,Karanak,hero,false,,data/skill_trees/characters/khorne/Karanak.csv,0,0
-wh3_dlc24_ksl_druzhina,Druzhina,lord,false,,data/skill_trees/characters/kislev/Druzhina.csv,0,0
-wh3_dlc24_ksl_hag_witch_beasts,Hag Witch (Beasts),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_beasts.csv,data/skill_trees/characters/kislev/Hag_Witch_Beasts.csv,68,24
-wh3_dlc24_ksl_hag_witch_death,Hag Witch (Death),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_death.csv,data/skill_trees/characters/kislev/Hag_Witch_Death.csv,69,22
-wh3_dlc24_ksl_hag_witch_hag,Hag Witch (Hag),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_hag.csv,data/skill_trees/characters/kislev/Hag_Witch_Hag.csv,91,24
-wh3_dlc24_ksl_hag_witch_shadows,Hag Witch (Shadows),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_shadows.csv,data/skill_trees/characters/kislev/Hag_Witch_Shadows.csv,75,23
-wh3_dlc24_ksl_mother_ostankya,Mother Ostankya,legendary_lord,true,characters/kislev/wh3_dlc24_ksl_mother_ostankya.csv,data/skill_trees/characters/kislev/Mother_Ostankya.csv,131,13
-wh3_dlc24_ksl_the_golden_knight,The Golden Knight,hero,false,characters/kislev/wh3_dlc24_ksl_the_golden_knight.csv,data/skill_trees/characters/kislev/The_Golden_Knight.csv,64,0
-wh3_main_ksl_ataman,Ataman,lord,false,,data/skill_trees/characters/kislev/Ataman.csv,0,0
-wh3_main_ksl_boris,Boris Ursus,legendary_lord,false,,data/skill_trees/characters/kislev/Boris_Ursus.csv,0,0
-wh3_main_ksl_boyar,Boyar,lord,false,,data/skill_trees/characters/kislev/Boyar.csv,0,0
-wh3_main_ksl_frost_maiden_ice,Frost Maiden (Ice),hero,true,characters/kislev/wh3_main_ksl_frost_maiden_ice.csv,data/skill_trees/characters/kislev/Frost_Maiden_Ice.csv,253,204
-wh3_main_ksl_frost_maiden_tempest,Frost Maiden (Tempest),hero,true,characters/kislev/wh3_main_ksl_frost_maiden_tempest.csv,data/skill_trees/characters/kislev/Frost_Maiden_Tempest.csv,259,205
-wh3_main_ksl_ice_witch_ice,Ice Witch (Ice),lord,true,characters/kislev/wh3_main_ksl_ice_witch_ice.csv,data/skill_trees/characters/kislev/Ice_Witch_Ice.csv,56,12
-wh3_main_ksl_ice_witch_tempest,Ice Witch (Tempest),lord,true,characters/kislev/wh3_main_ksl_ice_witch_tempest.csv,data/skill_trees/characters/kislev/Ice_Witch_Tempest.csv,61,13
-wh3_main_ksl_katarin,Tzarina Katarin,legendary_lord,true,characters/kislev/wh3_main_ksl_katarin.csv,data/skill_trees/characters/kislev/Tzarina_Katarin.csv,133,12
-wh3_main_ksl_kostaltyn,Kostaltyn,legendary_lord,false,characters/kislev/wh3_main_ksl_kostaltyn.csv,data/skill_trees/characters/kislev/Kostaltyn.csv,1,1
-wh3_main_ksl_patriarch,Patriarch,hero,false,,data/skill_trees/characters/kislev/Patriarch.csv,0,0
-wh2_dlc12_lzd_lord_kroak,Lord Kroak,hero,true,characters/lizardmen/wh2_dlc12_lzd_lord_kroak.csv,data/skill_trees/characters/lizardmen/Lord_Kroak.csv,15,6
-wh2_dlc12_lzd_red_crested_skink_chief,Red Crested Skink Chief,lord,false,,data/skill_trees/characters/lizardmen/Red_Crested_Skink_Chief.csv,0,0
-wh2_dlc12_lzd_red_crested_skink_chief_legendary,Red Crested Skink Chief,lord,false,,data/skill_trees/characters/lizardmen/Red_Crested_Skink_Chief__red_crested_skink_chief_legendary.csv,0,0
-wh2_dlc12_lzd_tehenhauin,Tehenhauin,legendary_lord,true,characters/lizardmen/wh2_dlc12_lzd_tehenhauin.csv,data/skill_trees/characters/lizardmen/Tehenhauin.csv,56,12
-wh2_dlc12_lzd_tiktaqto,Tiktaqto,legendary_lord,false,,data/skill_trees/characters/lizardmen/Tiktaqto.csv,0,0
-wh2_dlc12_lzd_tlaqua_skink_chief,Skink Chief,hero,false,,data/skill_trees/characters/lizardmen/Skink_Chief.csv,0,0
-wh2_dlc12_lzd_tlaqua_skink_priest_beasts,Skink Priest (Beasts),hero,true,characters/lizardmen/wh2_dlc12_lzd_tlaqua_skink_priest_beasts.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Beasts.csv,57,13
-wh2_dlc12_lzd_tlaqua_skink_priest_heavens,Skink Priest (Heavens),hero,true,characters/lizardmen/wh2_dlc12_lzd_tlaqua_skink_priest_heavens.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Heavens.csv,58,13
-wh2_dlc13_lzd_gor_rok,Gor Rok,legendary_lord,false,,data/skill_trees/characters/lizardmen/Gor_Rok.csv,0,0
-wh2_dlc13_lzd_kroxigor_ancient,Kroxigor Ancient,lord,false,,data/skill_trees/characters/lizardmen/Kroxigor_Ancient.csv,0,0
-wh2_dlc13_lzd_kroxigor_ancient_horde,Kroxigor Ancient,lord,false,,data/skill_trees/characters/lizardmen/Kroxigor_Ancient__kroxigor_ancient_horde.csv,0,0
-wh2_dlc13_lzd_nakai,Nakai,legendary_lord,false,,data/skill_trees/characters/lizardmen/Nakai.csv,0,0
-wh2_dlc13_lzd_red_crested_skink_chief_horde,Red Crested Skink Chief,lord,false,,data/skill_trees/characters/lizardmen/Red_Crested_Skink_Chief__red_crested_skink_chief_horde.csv,0,0
-wh2_dlc13_lzd_saurus_old_blood_horde,Saurus Oldblood,lord,false,,data/skill_trees/characters/lizardmen/Saurus_Oldblood.csv,0,0
-wh2_dlc13_lzd_slann_mage_priest_beasts,Slann Mage-Priest (Beasts),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_beasts.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Beasts.csv,55,13
-wh2_dlc13_lzd_slann_mage_priest_beasts_horde,Slann Mage Priest Beasts Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_beasts_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Beasts_Horde.csv,55,13
-wh2_dlc13_lzd_slann_mage_priest_death,Slann Mage-Priest (Death),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_death.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Death.csv,55,13
-wh2_dlc13_lzd_slann_mage_priest_death_horde,Slann Mage Priest Death Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_death_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Death_Horde.csv,55,13
-wh2_dlc13_lzd_slann_mage_priest_fire,Slann Mage-Priest (Fire),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_fire.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Fire.csv,56,13
-wh2_dlc13_lzd_slann_mage_priest_fire_horde,Slann Mage-Priest (Fire),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_fire_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Fire__slann_mage_priest_fire_horde.csv,56,13
-wh2_dlc13_lzd_slann_mage_priest_heavens,Slann Mage-Priest (Heavens),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_heavens.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Heavens.csv,55,13
-wh2_dlc13_lzd_slann_mage_priest_heavens_horde,Slann Mage Priest Heavens Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_heavens_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Heavens_Horde.csv,55,13
-wh2_dlc13_lzd_slann_mage_priest_high,Slann Mage-Priest (High),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_high.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_High.csv,61,14
-wh2_dlc13_lzd_slann_mage_priest_high_horde,Slann Mage-Priest (High),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_high_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_High__slann_mage_priest_high_horde.csv,61,14
-wh2_dlc13_lzd_slann_mage_priest_life,Slann Mage-Priest (Life),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_life.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Life.csv,59,13
-wh2_dlc13_lzd_slann_mage_priest_life_horde,Slann Mage-Priest (Life),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_life_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Life__slann_mage_priest_life_horde.csv,59,13
-wh2_dlc13_lzd_slann_mage_priest_metal,Slann Mage-Priest (Metal),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_metal.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Metal.csv,62,14
-wh2_dlc13_lzd_slann_mage_priest_metal_horde,Slann Mage Priest Metal Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_metal_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Metal_Horde.csv,62,14
-wh2_dlc13_lzd_slann_mage_priest_shadows,Slann Mage-Priest (Shadows),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_shadows.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Shadows.csv,62,14
-wh2_dlc13_lzd_slann_mage_priest_shadows_horde,Slann Mage Priest Shadows Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_shadows_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Shadows_Horde.csv,62,14
-wh2_dlc17_lzd_oxyotl,Oxyotl,legendary_lord,false,,data/skill_trees/characters/lizardmen/Oxyotl.csv,0,0
-wh2_dlc17_lzd_skink_oracle_troglodon,Skink Oracle,hero,true,characters/lizardmen/wh2_dlc17_lzd_skink_oracle_troglodon.csv,data/skill_trees/characters/lizardmen/Skink_Oracle.csv,126,15
-wh2_main_lzd_kroq_gar,Kroq Gar,legendary_lord,false,,data/skill_trees/characters/lizardmen/Kroq_Gar.csv,0,0
-wh2_main_lzd_lord_mazdamundi,Lord Mazdamundi,legendary_lord,true,characters/lizardmen/wh2_main_lzd_lord_mazdamundi.csv,data/skill_trees/characters/lizardmen/Lord_Mazdamundi.csv,77,18
-wh2_main_lzd_saurus_old_blood,Saurus Oldblood,lord,false,,data/skill_trees/characters/lizardmen/Saurus_Oldblood__saurus_old_blood.csv,0,0
-wh2_main_lzd_saurus_scar_veteran,Saurus Scar-Veteran,hero,false,,data/skill_trees/characters/lizardmen/Saurus_Scar_Veteran.csv,0,0
-wh2_main_lzd_skink_chief,Skink Chief,hero,false,,data/skill_trees/characters/lizardmen/Skink_Chief__skink_chief.csv,0,0
-wh2_main_lzd_skink_priest_beasts,Skink Priest (Beasts),hero,true,characters/lizardmen/wh2_main_lzd_skink_priest_beasts.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Beasts__skink_priest_beasts.csv,57,13
-wh2_main_lzd_skink_priest_heavens,Skink Priest (Heavens),hero,true,characters/lizardmen/wh2_main_lzd_skink_priest_heavens.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Heavens__skink_priest_heavens.csv,58,13
-wh2_main_lzd_slann_mage_priest,Slann Mage-Priest (Light),lord,true,characters/lizardmen/wh2_main_lzd_slann_mage_priest.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Light.csv,63,14
-wh2_main_lzd_slann_mage_priest_horde,Slann Mage-Priest (Light),lord,true,characters/lizardmen/wh2_main_lzd_slann_mage_priest_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Light__slann_mage_priest_horde.csv,63,14
-wh_dlc08_nor_arzik,Lord of Change,lord,true,characters/norsca/wh_dlc08_nor_arzik.csv,data/skill_trees/characters/norsca/Lord_of_Change.csv,187,13
-wh_dlc08_nor_fimir_balefiend_fire,Fimir Balefiend (Fire),hero,true,characters/norsca/wh_dlc08_nor_fimir_balefiend_fire.csv,data/skill_trees/characters/norsca/Fimir_Balefiend_Fire.csv,55,12
-wh_dlc08_nor_fimir_balefiend_shadow,Fimir Balefiend (Shadows),hero,true,characters/norsca/wh_dlc08_nor_fimir_balefiend_shadow.csv,data/skill_trees/characters/norsca/Fimir_Balefiend_Shadows.csv,61,13
-wh_dlc08_nor_kihar,Legendary Sorcerer,hero,true,characters/norsca/wh_dlc08_nor_kihar.csv,data/skill_trees/characters/norsca/Legendary_Sorcerer.csv,386,206
-wh_dlc08_nor_shaman_sorcerer_death,Shaman-Sorcerer (Death),hero,true,characters/norsca/wh_dlc08_nor_shaman_sorcerer_death.csv,data/skill_trees/characters/norsca/Shaman_Sorcerer_Death.csv,182,12
-wh_dlc08_nor_shaman_sorcerer_fire,Shaman-Sorcerer (Fire),hero,true,characters/norsca/wh_dlc08_nor_shaman_sorcerer_fire.csv,data/skill_trees/characters/norsca/Shaman_Sorcerer_Fire.csv,182,12
-wh_dlc08_nor_shaman_sorcerer_metal,Shaman-Sorcerer (Metal),hero,true,characters/norsca/wh_dlc08_nor_shaman_sorcerer_metal.csv,data/skill_trees/characters/norsca/Shaman_Sorcerer_Metal.csv,188,13
-wh_dlc08_nor_skin_wolf_werekin,Skin Wolf Werekin,hero,false,,data/skill_trees/characters/norsca/Skin_Wolf_Werekin.csv,0,0
-wh_dlc08_nor_throgg,Throgg,legendary_lord,false,,data/skill_trees/characters/norsca/Throgg.csv,0,0
-wh_dlc08_nor_wulfrik,Wulfrik,legendary_lord,false,,data/skill_trees/characters/norsca/Wulfrik.csv,0,0
-wh_main_nor_marauder_chieftain,Marauder Chieftain,lord,false,characters/norsca/wh_main_nor_marauder_chieftain.csv,data/skill_trees/characters/norsca/Marauder_Chieftain.csv,1,1
-wh3_dlc27_nor_beorg_bearstruck,Beorg Bearstruck,hero,false,,data/skill_trees/characters/norsca/Beorg_Bearstruck.csv,0,0
-wh3_dlc27_nor_fimir_noble,Fimir Noble,hero,false,,data/skill_trees/characters/norsca/Fimir_Noble.csv,0,0
-wh3_dlc27_nor_great_shaman_sorcerer_death,Great Shaman Sorcerer Death,lord,true,characters/norsca/wh3_dlc27_nor_great_shaman_sorcerer_death.csv,data/skill_trees/characters/norsca/Great_Shaman_Sorcerer_Death.csv,65,20
-wh3_dlc27_nor_great_shaman_sorcerer_fire,Great Shaman Sorcerer Fire,lord,true,characters/norsca/wh3_dlc27_nor_great_shaman_sorcerer_fire.csv,data/skill_trees/characters/norsca/Great_Shaman_Sorcerer_Fire.csv,66,19
-wh3_dlc27_nor_great_shaman_sorcerer_metal,Great Shaman Sorcerer Metal,lord,true,characters/norsca/wh3_dlc27_nor_great_shaman_sorcerer_metal.csv,data/skill_trees/characters/norsca/Great_Shaman_Sorcerer_Metal.csv,72,20
-wh3_dlc27_nor_sayl_the_faithless,Sayl The Faithless,legendary_lord,true,characters/norsca/wh3_dlc27_nor_sayl_the_faithless.csv,data/skill_trees/characters/norsca/Sayl_The_Faithless.csv,82,25
-wh3_main_ie_nor_burplesmirk_spewpit,Exalted Great Unclean One,lord,true,characters/norsca/wh3_main_ie_nor_burplesmirk_spewpit.csv,data/skill_trees/characters/norsca/Exalted_Great_Unclean_One.csv,65,13
-wh3_main_ie_nor_killgore_slaymaim,Legendary Champion,hero,false,,data/skill_trees/characters/norsca/Legendary_Champion.csv,0,0
+wh3_main_kho_cultist,Cultist of Khorne,hero,false,characters/khorne/wh3_main_kho_cultist.csv,data/skill_trees/characters/khorne/Cultist_of_Khorne.csv,21,12
+wh3_main_kho_exalted_bloodthirster,Exalted Bloodthirster,lord,false,characters/khorne/wh3_main_kho_exalted_bloodthirster.csv,data/skill_trees/characters/khorne/Exalted_Bloodthirster.csv,21,15
+wh3_main_kho_herald_of_khorne,Herald of Khorne,lord,false,characters/khorne/wh3_main_kho_herald_of_khorne.csv,data/skill_trees/characters/khorne/Herald_of_Khorne.csv,21,14
+wh3_main_kho_skarbrand,Skarbrand,legendary_lord,false,characters/khorne/wh3_main_kho_skarbrand.csv,data/skill_trees/characters/khorne/Skarbrand.csv,12,8
+wh3_pro12_kho_cha_karanak,Karanak,hero,false,characters/khorne/wh3_pro12_kho_cha_karanak.csv,data/skill_trees/characters/khorne/Karanak.csv,9,8
+wh3_dlc24_ksl_druzhina,Druzhina,lord,false,characters/kislev/wh3_dlc24_ksl_druzhina.csv,data/skill_trees/characters/kislev/Druzhina.csv,19,13
+wh3_dlc24_ksl_hag_witch_beasts,Hag Witch (Beasts),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_beasts.csv,data/skill_trees/characters/kislev/Hag_Witch_Beasts.csv,77,31
+wh3_dlc24_ksl_hag_witch_death,Hag Witch (Death),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_death.csv,data/skill_trees/characters/kislev/Hag_Witch_Death.csv,78,29
+wh3_dlc24_ksl_hag_witch_hag,Hag Witch (Hag),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_hag.csv,data/skill_trees/characters/kislev/Hag_Witch_Hag.csv,100,31
+wh3_dlc24_ksl_hag_witch_shadows,Hag Witch (Shadows),hero,true,characters/kislev/wh3_dlc24_ksl_hag_witch_shadows.csv,data/skill_trees/characters/kislev/Hag_Witch_Shadows.csv,84,30
+wh3_dlc24_ksl_mother_ostankya,Mother Ostankya,legendary_lord,true,characters/kislev/wh3_dlc24_ksl_mother_ostankya.csv,data/skill_trees/characters/kislev/Mother_Ostankya.csv,140,20
+wh3_dlc24_ksl_the_golden_knight,The Golden Knight,hero,false,characters/kislev/wh3_dlc24_ksl_the_golden_knight.csv,data/skill_trees/characters/kislev/The_Golden_Knight.csv,73,8
+wh3_main_ksl_ataman,Ataman,lord,false,characters/kislev/wh3_main_ksl_ataman.csv,data/skill_trees/characters/kislev/Ataman.csv,9,6
+wh3_main_ksl_boris,Boris Ursus,legendary_lord,false,characters/kislev/wh3_main_ksl_boris.csv,data/skill_trees/characters/kislev/Boris_Ursus.csv,7,5
+wh3_main_ksl_boyar,Boyar,lord,false,characters/kislev/wh3_main_ksl_boyar.csv,data/skill_trees/characters/kislev/Boyar.csv,20,13
+wh3_main_ksl_frost_maiden_ice,Frost Maiden (Ice),hero,true,characters/kislev/wh3_main_ksl_frost_maiden_ice.csv,data/skill_trees/characters/kislev/Frost_Maiden_Ice.csv,258,209
+wh3_main_ksl_frost_maiden_tempest,Frost Maiden (Tempest),hero,true,characters/kislev/wh3_main_ksl_frost_maiden_tempest.csv,data/skill_trees/characters/kislev/Frost_Maiden_Tempest.csv,264,210
+wh3_main_ksl_ice_witch_ice,Ice Witch (Ice),lord,true,characters/kislev/wh3_main_ksl_ice_witch_ice.csv,data/skill_trees/characters/kislev/Ice_Witch_Ice.csv,64,19
+wh3_main_ksl_ice_witch_tempest,Ice Witch (Tempest),lord,true,characters/kislev/wh3_main_ksl_ice_witch_tempest.csv,data/skill_trees/characters/kislev/Ice_Witch_Tempest.csv,69,20
+wh3_main_ksl_katarin,Tzarina Katarin,legendary_lord,true,characters/kislev/wh3_main_ksl_katarin.csv,data/skill_trees/characters/kislev/Tzarina_Katarin.csv,140,18
+wh3_main_ksl_kostaltyn,Kostaltyn,legendary_lord,false,characters/kislev/wh3_main_ksl_kostaltyn.csv,data/skill_trees/characters/kislev/Kostaltyn.csv,19,12
+wh3_main_ksl_patriarch,Patriarch,hero,false,characters/kislev/wh3_main_ksl_patriarch.csv,data/skill_trees/characters/kislev/Patriarch.csv,23,11
+wh2_dlc12_lzd_lord_kroak,Lord Kroak,hero,true,characters/lizardmen/wh2_dlc12_lzd_lord_kroak.csv,data/skill_trees/characters/lizardmen/Lord_Kroak.csv,22,9
+wh2_dlc12_lzd_red_crested_skink_chief,Red Crested Skink Chief,lord,false,characters/lizardmen/wh2_dlc12_lzd_red_crested_skink_chief.csv,data/skill_trees/characters/lizardmen/Red_Crested_Skink_Chief.csv,13,10
+wh2_dlc12_lzd_red_crested_skink_chief_legendary,Red Crested Skink Chief,lord,false,characters/lizardmen/wh2_dlc12_lzd_red_crested_skink_chief_legendary.csv,data/skill_trees/characters/lizardmen/Red_Crested_Skink_Chief__red_crested_skink_chief_legendary.csv,6,5
+wh2_dlc12_lzd_tehenhauin,Tehenhauin,legendary_lord,true,characters/lizardmen/wh2_dlc12_lzd_tehenhauin.csv,data/skill_trees/characters/lizardmen/Tehenhauin.csv,63,18
+wh2_dlc12_lzd_tiktaqto,Tiktaqto,legendary_lord,false,characters/lizardmen/wh2_dlc12_lzd_tiktaqto.csv,data/skill_trees/characters/lizardmen/Tiktaqto.csv,8,6
+wh2_dlc12_lzd_tlaqua_skink_chief,Skink Chief,hero,false,characters/lizardmen/wh2_dlc12_lzd_tlaqua_skink_chief.csv,data/skill_trees/characters/lizardmen/Skink_Chief.csv,10,7
+wh2_dlc12_lzd_tlaqua_skink_priest_beasts,Skink Priest (Beasts),hero,true,characters/lizardmen/wh2_dlc12_lzd_tlaqua_skink_priest_beasts.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Beasts.csv,64,18
+wh2_dlc12_lzd_tlaqua_skink_priest_heavens,Skink Priest (Heavens),hero,true,characters/lizardmen/wh2_dlc12_lzd_tlaqua_skink_priest_heavens.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Heavens.csv,65,18
+wh2_dlc13_lzd_gor_rok,Gor Rok,legendary_lord,false,characters/lizardmen/wh2_dlc13_lzd_gor_rok.csv,data/skill_trees/characters/lizardmen/Gor_Rok.csv,9,7
+wh2_dlc13_lzd_kroxigor_ancient,Kroxigor Ancient,lord,false,characters/lizardmen/wh2_dlc13_lzd_kroxigor_ancient.csv,data/skill_trees/characters/lizardmen/Kroxigor_Ancient.csv,15,10
+wh2_dlc13_lzd_kroxigor_ancient_horde,Kroxigor Ancient,lord,false,characters/lizardmen/wh2_dlc13_lzd_kroxigor_ancient_horde.csv,data/skill_trees/characters/lizardmen/Kroxigor_Ancient__kroxigor_ancient_horde.csv,15,10
+wh2_dlc13_lzd_nakai,Nakai,legendary_lord,false,characters/lizardmen/wh2_dlc13_lzd_nakai.csv,data/skill_trees/characters/lizardmen/Nakai.csv,9,5
+wh2_dlc13_lzd_red_crested_skink_chief_horde,Red Crested Skink Chief,lord,false,characters/lizardmen/wh2_dlc13_lzd_red_crested_skink_chief_horde.csv,data/skill_trees/characters/lizardmen/Red_Crested_Skink_Chief__red_crested_skink_chief_horde.csv,13,10
+wh2_dlc13_lzd_saurus_old_blood_horde,Saurus Oldblood,lord,false,characters/lizardmen/wh2_dlc13_lzd_saurus_old_blood_horde.csv,data/skill_trees/characters/lizardmen/Saurus_Oldblood.csv,13,9
+wh2_dlc13_lzd_slann_mage_priest_beasts,Slann Mage-Priest (Beasts),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_beasts.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Beasts.csv,61,18
+wh2_dlc13_lzd_slann_mage_priest_beasts_horde,Slann Mage Priest Beasts Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_beasts_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Beasts_Horde.csv,61,18
+wh2_dlc13_lzd_slann_mage_priest_death,Slann Mage-Priest (Death),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_death.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Death.csv,61,18
+wh2_dlc13_lzd_slann_mage_priest_death_horde,Slann Mage Priest Death Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_death_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Death_Horde.csv,61,18
+wh2_dlc13_lzd_slann_mage_priest_fire,Slann Mage-Priest (Fire),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_fire.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Fire.csv,62,18
+wh2_dlc13_lzd_slann_mage_priest_fire_horde,Slann Mage-Priest (Fire),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_fire_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Fire__slann_mage_priest_fire_horde.csv,62,18
+wh2_dlc13_lzd_slann_mage_priest_heavens,Slann Mage-Priest (Heavens),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_heavens.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Heavens.csv,61,18
+wh2_dlc13_lzd_slann_mage_priest_heavens_horde,Slann Mage Priest Heavens Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_heavens_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Heavens_Horde.csv,61,18
+wh2_dlc13_lzd_slann_mage_priest_high,Slann Mage-Priest (High),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_high.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_High.csv,67,19
+wh2_dlc13_lzd_slann_mage_priest_high_horde,Slann Mage-Priest (High),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_high_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_High__slann_mage_priest_high_horde.csv,67,19
+wh2_dlc13_lzd_slann_mage_priest_life,Slann Mage-Priest (Life),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_life.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Life.csv,65,18
+wh2_dlc13_lzd_slann_mage_priest_life_horde,Slann Mage-Priest (Life),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_life_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Life__slann_mage_priest_life_horde.csv,65,18
+wh2_dlc13_lzd_slann_mage_priest_metal,Slann Mage-Priest (Metal),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_metal.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Metal.csv,68,19
+wh2_dlc13_lzd_slann_mage_priest_metal_horde,Slann Mage Priest Metal Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_metal_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Metal_Horde.csv,68,19
+wh2_dlc13_lzd_slann_mage_priest_shadows,Slann Mage-Priest (Shadows),lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_shadows.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Shadows.csv,68,19
+wh2_dlc13_lzd_slann_mage_priest_shadows_horde,Slann Mage Priest Shadows Horde,lord,true,characters/lizardmen/wh2_dlc13_lzd_slann_mage_priest_shadows_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Shadows_Horde.csv,68,19
+wh2_dlc17_lzd_oxyotl,Oxyotl,legendary_lord,false,characters/lizardmen/wh2_dlc17_lzd_oxyotl.csv,data/skill_trees/characters/lizardmen/Oxyotl.csv,5,4
+wh2_dlc17_lzd_skink_oracle_troglodon,Skink Oracle,hero,true,characters/lizardmen/wh2_dlc17_lzd_skink_oracle_troglodon.csv,data/skill_trees/characters/lizardmen/Skink_Oracle.csv,134,22
+wh2_main_lzd_kroq_gar,Kroq Gar,legendary_lord,false,characters/lizardmen/wh2_main_lzd_kroq_gar.csv,data/skill_trees/characters/lizardmen/Kroq_Gar.csv,6,5
+wh2_main_lzd_lord_mazdamundi,Lord Mazdamundi,legendary_lord,true,characters/lizardmen/wh2_main_lzd_lord_mazdamundi.csv,data/skill_trees/characters/lizardmen/Lord_Mazdamundi.csv,85,24
+wh2_main_lzd_saurus_old_blood,Saurus Oldblood,lord,false,characters/lizardmen/wh2_main_lzd_saurus_old_blood.csv,data/skill_trees/characters/lizardmen/Saurus_Oldblood__saurus_old_blood.csv,13,9
+wh2_main_lzd_saurus_scar_veteran,Saurus Scar-Veteran,hero,false,characters/lizardmen/wh2_main_lzd_saurus_scar_veteran.csv,data/skill_trees/characters/lizardmen/Saurus_Scar_Veteran.csv,12,9
+wh2_main_lzd_skink_chief,Skink Chief,hero,false,characters/lizardmen/wh2_main_lzd_skink_chief.csv,data/skill_trees/characters/lizardmen/Skink_Chief__skink_chief.csv,10,7
+wh2_main_lzd_skink_priest_beasts,Skink Priest (Beasts),hero,true,characters/lizardmen/wh2_main_lzd_skink_priest_beasts.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Beasts__skink_priest_beasts.csv,64,18
+wh2_main_lzd_skink_priest_heavens,Skink Priest (Heavens),hero,true,characters/lizardmen/wh2_main_lzd_skink_priest_heavens.csv,data/skill_trees/characters/lizardmen/Skink_Priest_Heavens__skink_priest_heavens.csv,65,18
+wh2_main_lzd_slann_mage_priest,Slann Mage-Priest (Light),lord,true,characters/lizardmen/wh2_main_lzd_slann_mage_priest.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Light.csv,69,19
+wh2_main_lzd_slann_mage_priest_horde,Slann Mage-Priest (Light),lord,true,characters/lizardmen/wh2_main_lzd_slann_mage_priest_horde.csv,data/skill_trees/characters/lizardmen/Slann_Mage_Priest_Light__slann_mage_priest_horde.csv,69,19
+wh_dlc08_nor_arzik,Lord of Change,lord,true,characters/norsca/wh_dlc08_nor_arzik.csv,data/skill_trees/characters/norsca/Lord_of_Change.csv,199,22
+wh_dlc08_nor_fimir_balefiend_fire,Fimir Balefiend (Fire),hero,true,characters/norsca/wh_dlc08_nor_fimir_balefiend_fire.csv,data/skill_trees/characters/norsca/Fimir_Balefiend_Fire.csv,64,19
+wh_dlc08_nor_fimir_balefiend_shadow,Fimir Balefiend (Shadows),hero,true,characters/norsca/wh_dlc08_nor_fimir_balefiend_shadow.csv,data/skill_trees/characters/norsca/Fimir_Balefiend_Shadows.csv,70,20
+wh_dlc08_nor_kihar,Legendary Sorcerer,hero,true,characters/norsca/wh_dlc08_nor_kihar.csv,data/skill_trees/characters/norsca/Legendary_Sorcerer.csv,390,210
+wh_dlc08_nor_shaman_sorcerer_death,Shaman-Sorcerer (Death),hero,true,characters/norsca/wh_dlc08_nor_shaman_sorcerer_death.csv,data/skill_trees/characters/norsca/Shaman_Sorcerer_Death.csv,191,19
+wh_dlc08_nor_shaman_sorcerer_fire,Shaman-Sorcerer (Fire),hero,true,characters/norsca/wh_dlc08_nor_shaman_sorcerer_fire.csv,data/skill_trees/characters/norsca/Shaman_Sorcerer_Fire.csv,191,19
+wh_dlc08_nor_shaman_sorcerer_metal,Shaman-Sorcerer (Metal),hero,true,characters/norsca/wh_dlc08_nor_shaman_sorcerer_metal.csv,data/skill_trees/characters/norsca/Shaman_Sorcerer_Metal.csv,197,20
+wh_dlc08_nor_skin_wolf_werekin,Skin Wolf Werekin,hero,false,characters/norsca/wh_dlc08_nor_skin_wolf_werekin.csv,data/skill_trees/characters/norsca/Skin_Wolf_Werekin.csv,22,16
+wh_dlc08_nor_throgg,Throgg,legendary_lord,false,characters/norsca/wh_dlc08_nor_throgg.csv,data/skill_trees/characters/norsca/Throgg.csv,18,8
+wh_dlc08_nor_wulfrik,Wulfrik,legendary_lord,false,characters/norsca/wh_dlc08_nor_wulfrik.csv,data/skill_trees/characters/norsca/Wulfrik.csv,16,9
+wh_main_nor_marauder_chieftain,Marauder Chieftain,lord,false,characters/norsca/wh_main_nor_marauder_chieftain.csv,data/skill_trees/characters/norsca/Marauder_Chieftain.csv,24,16
+wh3_dlc27_nor_beorg_bearstruck,Beorg Bearstruck,hero,false,characters/norsca/wh3_dlc27_nor_beorg_bearstruck.csv,data/skill_trees/characters/norsca/Beorg_Bearstruck.csv,9,7
+wh3_dlc27_nor_fimir_noble,Fimir Noble,hero,false,characters/norsca/wh3_dlc27_nor_fimir_noble.csv,data/skill_trees/characters/norsca/Fimir_Noble.csv,11,9
+wh3_dlc27_nor_great_shaman_sorcerer_death,Great Shaman Sorcerer Death,lord,true,characters/norsca/wh3_dlc27_nor_great_shaman_sorcerer_death.csv,data/skill_trees/characters/norsca/Great_Shaman_Sorcerer_Death.csv,85,34
+wh3_dlc27_nor_great_shaman_sorcerer_fire,Great Shaman Sorcerer Fire,lord,true,characters/norsca/wh3_dlc27_nor_great_shaman_sorcerer_fire.csv,data/skill_trees/characters/norsca/Great_Shaman_Sorcerer_Fire.csv,86,33
+wh3_dlc27_nor_great_shaman_sorcerer_metal,Great Shaman Sorcerer Metal,lord,true,characters/norsca/wh3_dlc27_nor_great_shaman_sorcerer_metal.csv,data/skill_trees/characters/norsca/Great_Shaman_Sorcerer_Metal.csv,92,34
+wh3_dlc27_nor_sayl_the_faithless,Sayl The Faithless,legendary_lord,true,characters/norsca/wh3_dlc27_nor_sayl_the_faithless.csv,data/skill_trees/characters/norsca/Sayl_The_Faithless.csv,97,33
+wh3_main_ie_nor_burplesmirk_spewpit,Exalted Great Unclean One,lord,true,characters/norsca/wh3_main_ie_nor_burplesmirk_spewpit.csv,data/skill_trees/characters/norsca/Exalted_Great_Unclean_One.csv,80,23
+wh3_main_ie_nor_killgore_slaymaim,Legendary Champion,hero,false,characters/norsca/wh3_main_ie_nor_killgore_slaymaim.csv,data/skill_trees/characters/norsca/Legendary_Champion.csv,9,8
 wh3_main_pro_slavin_0,Slavin Kurnz,lord,true,,data/skill_trees/characters/norsca/Slavin_Kurnz.csv,0,0
-wh3_dlc20_chs_sorcerer_lord_death_mnur,Chaos Sorcerer Lord of Nurgle (Death),lord,true,characters/nurgle/wh3_dlc20_chs_sorcerer_lord_death_mnur.csv,data/skill_trees/characters/nurgle/Chaos_Sorcerer_Lord_of_Nurgle_Death.csv,118,12
-wh3_dlc20_chs_sorcerer_lord_nurgle_mnur,Chaos Sorcerer Lord of Nurgle (Nurgle),lord,true,characters/nurgle/wh3_dlc20_chs_sorcerer_lord_nurgle_mnur.csv,data/skill_trees/characters/nurgle/Chaos_Sorcerer_Lord_of_Nurgle_Nurgle.csv,125,13
-wh3_dlc25_chs_lord_mnur,Chaos Lord of Nurgle,lord,false,,data/skill_trees/characters/nurgle/Chaos_Lord_of_Nurgle.csv,0,0
-wh3_dlc25_nur_bray_shaman_wild_chieftain,Bray-Shaman (Wild),hero,true,characters/nurgle/wh3_dlc25_nur_bray_shaman_wild_chieftain.csv,data/skill_trees/characters/nurgle/Bray_Shaman_Wild.csv,55,13
-wh3_dlc25_nur_castellan_chieftain,Infernal Castellan,hero,false,,data/skill_trees/characters/nurgle/Infernal_Castellan.csv,0,0
-wh3_dlc25_nur_epidemius,Epidemius,legendary_lord,false,,data/skill_trees/characters/nurgle/Epidemius.csv,0,0
-wh3_dlc25_nur_exalted_hero_chieftain,Exalted Hero,hero,false,,data/skill_trees/characters/nurgle/Exalted_Hero.csv,0,0
-wh3_dlc25_nur_fimir_balefiend_shadow_chieftain,Fimir Balefiend (Shadows),hero,true,characters/nurgle/wh3_dlc25_nur_fimir_balefiend_shadow_chieftain.csv,data/skill_trees/characters/nurgle/Fimir_Balefiend_Shadows.csv,64,14
-wh3_dlc25_nur_kayzk_the_befouled,Kayzk The Befouled,hero,false,,data/skill_trees/characters/nurgle/Kayzk_The_Befouled.csv,0,0
-wh3_dlc25_nur_skin_wolf_werekin_chieftain,Skin Wolf Werekin,hero,false,,data/skill_trees/characters/nurgle/Skin_Wolf_Werekin.csv,0,0
-wh3_dlc25_nur_tamurkhan,Tamurkhan,legendary_lord,false,,data/skill_trees/characters/nurgle/Tamurkhan.csv,0,0
+wh3_dlc20_chs_sorcerer_lord_death_mnur,Chaos Sorcerer Lord of Nurgle (Death),lord,true,characters/nurgle/wh3_dlc20_chs_sorcerer_lord_death_mnur.csv,data/skill_trees/characters/nurgle/Chaos_Sorcerer_Lord_of_Nurgle_Death.csv,127,19
+wh3_dlc20_chs_sorcerer_lord_nurgle_mnur,Chaos Sorcerer Lord of Nurgle (Nurgle),lord,true,characters/nurgle/wh3_dlc20_chs_sorcerer_lord_nurgle_mnur.csv,data/skill_trees/characters/nurgle/Chaos_Sorcerer_Lord_of_Nurgle_Nurgle.csv,134,20
+wh3_dlc25_chs_lord_mnur,Chaos Lord of Nurgle,lord,false,characters/nurgle/wh3_dlc25_chs_lord_mnur.csv,data/skill_trees/characters/nurgle/Chaos_Lord_of_Nurgle.csv,10,8
+wh3_dlc25_nur_bray_shaman_wild_chieftain,Bray-Shaman (Wild),hero,true,characters/nurgle/wh3_dlc25_nur_bray_shaman_wild_chieftain.csv,data/skill_trees/characters/nurgle/Bray_Shaman_Wild.csv,57,15
+wh3_dlc25_nur_castellan_chieftain,Infernal Castellan,hero,false,characters/nurgle/wh3_dlc25_nur_castellan_chieftain.csv,data/skill_trees/characters/nurgle/Infernal_Castellan.csv,9,7
+wh3_dlc25_nur_epidemius,Epidemius,legendary_lord,false,characters/nurgle/wh3_dlc25_nur_epidemius.csv,data/skill_trees/characters/nurgle/Epidemius.csv,17,12
+wh3_dlc25_nur_exalted_hero_chieftain,Exalted Hero,hero,false,characters/nurgle/wh3_dlc25_nur_exalted_hero_chieftain.csv,data/skill_trees/characters/nurgle/Exalted_Hero.csv,4,4
+wh3_dlc25_nur_fimir_balefiend_shadow_chieftain,Fimir Balefiend (Shadows),hero,true,characters/nurgle/wh3_dlc25_nur_fimir_balefiend_shadow_chieftain.csv,data/skill_trees/characters/nurgle/Fimir_Balefiend_Shadows.csv,68,16
+wh3_dlc25_nur_kayzk_the_befouled,Kayzk The Befouled,hero,false,characters/nurgle/wh3_dlc25_nur_kayzk_the_befouled.csv,data/skill_trees/characters/nurgle/Kayzk_The_Befouled.csv,4,4
+wh3_dlc25_nur_skin_wolf_werekin_chieftain,Skin Wolf Werekin,hero,false,characters/nurgle/wh3_dlc25_nur_skin_wolf_werekin_chieftain.csv,data/skill_trees/characters/nurgle/Skin_Wolf_Werekin.csv,14,10
+wh3_dlc25_nur_tamurkhan,Tamurkhan,legendary_lord,false,characters/nurgle/wh3_dlc25_nur_tamurkhan.csv,data/skill_trees/characters/nurgle/Tamurkhan.csv,9,7
 wh3_main_nur_cult_magus,Nurgle Cult Magus,hero,false,,data/skill_trees/characters/nurgle/Nurgle_Cult_Magus.csv,0,0
-wh3_main_nur_cultist,Cultist of Nurgle,hero,false,,data/skill_trees/characters/nurgle/Cultist_of_Nurgle.csv,0,0
+wh3_main_nur_cultist,Cultist of Nurgle,hero,false,characters/nurgle/wh3_main_nur_cultist.csv,data/skill_trees/characters/nurgle/Cultist_of_Nurgle.csv,14,8
 wh3_main_nur_cultist_plague_ritual,Plague Cultist,hero,false,,data/skill_trees/characters/nurgle/Plague_Cultist.csv,0,0
-wh3_main_nur_exalted_great_unclean_one_death,Exalted Great Unclean One (Death),lord,true,characters/nurgle/wh3_main_nur_exalted_great_unclean_one_death.csv,data/skill_trees/characters/nurgle/Exalted_Great_Unclean_One_Death.csv,58,12
-wh3_main_nur_exalted_great_unclean_one_nurgle,Exalted Great Unclean One (Nurgle),lord,true,characters/nurgle/wh3_main_nur_exalted_great_unclean_one_nurgle.csv,data/skill_trees/characters/nurgle/Exalted_Great_Unclean_One_Nurgle.csv,65,13
-wh3_main_nur_herald_of_nurgle_death,Herald of Nurgle (Death),lord,true,characters/nurgle/wh3_main_nur_herald_of_nurgle_death.csv,data/skill_trees/characters/nurgle/Herald_of_Nurgle_Death.csv,54,12
-wh3_main_nur_herald_of_nurgle_nurgle,Herald of Nurgle (Nurgle),lord,true,characters/nurgle/wh3_main_nur_herald_of_nurgle_nurgle.csv,data/skill_trees/characters/nurgle/Herald_of_Nurgle_Nurgle.csv,61,13
-wh3_main_nur_kugath,Ku'gath Plaguefather,legendary_lord,true,characters/nurgle/wh3_main_nur_kugath.csv,data/skill_trees/characters/nurgle/Ku_gath_Plaguefather.csv,61,13
-wh3_main_nur_plagueridden_death,Plagueridden (Death),hero,true,characters/nurgle/wh3_main_nur_plagueridden_death.csv,data/skill_trees/characters/nurgle/Plagueridden_Death.csv,55,12
-wh3_main_nur_plagueridden_nurgle,Plagueridden (Nurgle),hero,true,characters/nurgle/wh3_main_nur_plagueridden_nurgle.csv,data/skill_trees/characters/nurgle/Plagueridden_Nurgle.csv,61,13
-wh3_dlc26_ogr_bragg_the_gutsman,Bragg The Gutsman,hero,false,,data/skill_trees/characters/ogre_kingdoms/Bragg_The_Gutsman.csv,0,0
-wh3_dlc26_ogr_bruiser,Bruiser,hero,false,,data/skill_trees/characters/ogre_kingdoms/Bruiser.csv,0,0
-wh3_dlc26_ogr_cha_butcher_death,Cha Butcher Death,hero,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_butcher_death.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Butcher_Death.csv,118,12
-wh3_dlc26_ogr_cha_butcher_heavens,Cha Butcher Heavens,hero,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_butcher_heavens.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Butcher_Heavens.csv,118,12
-wh3_dlc26_ogr_cha_slaughtermaster_death,Cha Slaughtermaster Death,lord,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_slaughtermaster_death.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Slaughtermaster_Death.csv,117,12
-wh3_dlc26_ogr_cha_slaughtermaster_heavens,Cha Slaughtermaster Heavens,lord,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_slaughtermaster_heavens.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Slaughtermaster_Heavens.csv,117,12
-wh3_dlc26_ogr_golgfag_maneater,Golgfag Maneater,legendary_lord,false,,data/skill_trees/characters/ogre_kingdoms/Golgfag_Maneater.csv,0,0
-wh3_dlc26_ogr_paymaster,Paymaster,lord,false,,data/skill_trees/characters/ogre_kingdoms/Paymaster.csv,0,0
-wh3_main_ogr_butcher_beasts,Butcher (Beasts),hero,true,characters/ogre_kingdoms/wh3_main_ogr_butcher_beasts.csv,data/skill_trees/characters/ogre_kingdoms/Butcher_Beasts.csv,117,12
-wh3_main_ogr_butcher_great_maw,Butcher (Great Maw),hero,true,characters/ogre_kingdoms/wh3_main_ogr_butcher_great_maw.csv,data/skill_trees/characters/ogre_kingdoms/Butcher_Great_Maw.csv,124,13
-wh3_main_ogr_firebelly,Firebelly,hero,true,characters/ogre_kingdoms/wh3_main_ogr_firebelly.csv,data/skill_trees/characters/ogre_kingdoms/Firebelly.csv,253,204
-wh3_main_ogr_greasus_goldtooth,Greasus Goldtooth,legendary_lord,false,,data/skill_trees/characters/ogre_kingdoms/Greasus_Goldtooth.csv,0,0
-wh3_main_ogr_hunter,Hunter,hero,false,,data/skill_trees/characters/ogre_kingdoms/Hunter.csv,0,0
-wh3_main_ogr_skrag_the_slaughterer,Skrag the Slaughterer,legendary_lord,true,characters/ogre_kingdoms/wh3_main_ogr_skrag_the_slaughterer.csv,data/skill_trees/characters/ogre_kingdoms/Skrag_the_Slaughterer.csv,261,205
-wh3_main_ogr_slaughtermaster_beasts,Slaughtermaster (Beasts),lord,true,characters/ogre_kingdoms/wh3_main_ogr_slaughtermaster_beasts.csv,data/skill_trees/characters/ogre_kingdoms/Slaughtermaster_Beasts.csv,117,12
-wh3_main_ogr_slaughtermaster_great_maw,Slaughtermaster (Great Maw),lord,true,characters/ogre_kingdoms/wh3_main_ogr_slaughtermaster_great_maw.csv,data/skill_trees/characters/ogre_kingdoms/Slaughtermaster_Great_Maw.csv,124,13
-wh3_main_ogr_tyrant,Tyrant,lord,false,,data/skill_trees/characters/ogre_kingdoms/Tyrant.csv,0,0
-wh3_main_ogr_tyrant_camp,Camp Tyrant,lord,false,,data/skill_trees/characters/ogre_kingdoms/Camp_Tyrant.csv,0,0
-wh2_dlc09_skv_tretch_craventail,Tretch Craventail,legendary_lord,false,,data/skill_trees/characters/skaven/Tretch_Craventail.csv,0,0
-wh2_dlc12_skv_ikit_claw,Ikit Claw,legendary_lord,true,characters/skaven/wh2_dlc12_skv_ikit_claw.csv,data/skill_trees/characters/skaven/Ikit_Claw.csv,259,206
-wh2_dlc12_skv_warlock_master,Warlock Master,lord,true,characters/skaven/wh2_dlc12_skv_warlock_master.csv,data/skill_trees/characters/skaven/Warlock_Master.csv,259,206
-wh2_dlc14_skv_deathmaster_snikch,Deathmaster Snikch,legendary_lord,false,,data/skill_trees/characters/skaven/Deathmaster_Snikch.csv,0,0
-wh2_dlc14_skv_eshin_sorcerer,Eshin Sorcerer,hero,true,characters/skaven/wh2_dlc14_skv_eshin_sorcerer.csv,data/skill_trees/characters/skaven/Eshin_Sorcerer.csv,56,14
-wh2_dlc14_skv_master_assassin,Master Assassin,lord,false,,data/skill_trees/characters/skaven/Master_Assassin.csv,0,0
-wh2_dlc16_skv_chieftain,Chieftain,hero,false,,data/skill_trees/characters/skaven/Chieftain.csv,0,0
-wh2_dlc16_skv_ghoritch,Ghoritch,hero,false,,data/skill_trees/characters/skaven/Ghoritch.csv,0,0
-wh2_dlc16_skv_packmaster,Packmaster,hero,false,,data/skill_trees/characters/skaven/Packmaster.csv,0,0
-wh2_dlc16_skv_throt_the_unclean,Throt the Unclean,legendary_lord,false,,data/skill_trees/characters/skaven/Throt_the_Unclean.csv,0,0
-wh2_main_skv_assassin,Assassin,hero,false,,data/skill_trees/characters/skaven/Assassin.csv,0,0
-wh2_main_skv_grey_seer_plague,Grey Seer (Plague),lord,true,characters/skaven/wh2_main_skv_grey_seer_plague.csv,data/skill_trees/characters/skaven/Grey_Seer_Plague.csv,51,12
-wh2_main_skv_grey_seer_ruin,Grey Seer (Ruin),lord,true,characters/skaven/wh2_main_skv_grey_seer_ruin.csv,data/skill_trees/characters/skaven/Grey_Seer_Ruin.csv,58,13
-wh2_main_skv_lord_skrolk,Lord Skrolk,legendary_lord,true,characters/skaven/wh2_main_skv_lord_skrolk.csv,data/skill_trees/characters/skaven/Lord_Skrolk.csv,47,11
-wh2_main_skv_plague_priest,Plague Priest,hero,true,characters/skaven/wh2_main_skv_plague_priest.csv,data/skill_trees/characters/skaven/Plague_Priest.csv,49,11
+wh3_main_nur_exalted_great_unclean_one_death,Exalted Great Unclean One (Death),lord,true,characters/nurgle/wh3_main_nur_exalted_great_unclean_one_death.csv,data/skill_trees/characters/nurgle/Exalted_Great_Unclean_One_Death.csv,75,24
+wh3_main_nur_exalted_great_unclean_one_nurgle,Exalted Great Unclean One (Nurgle),lord,true,characters/nurgle/wh3_main_nur_exalted_great_unclean_one_nurgle.csv,data/skill_trees/characters/nurgle/Exalted_Great_Unclean_One_Nurgle.csv,82,25
+wh3_main_nur_herald_of_nurgle_death,Herald of Nurgle (Death),lord,true,characters/nurgle/wh3_main_nur_herald_of_nurgle_death.csv,data/skill_trees/characters/nurgle/Herald_of_Nurgle_Death.csv,78,27
+wh3_main_nur_herald_of_nurgle_nurgle,Herald of Nurgle (Nurgle),lord,true,characters/nurgle/wh3_main_nur_herald_of_nurgle_nurgle.csv,data/skill_trees/characters/nurgle/Herald_of_Nurgle_Nurgle.csv,85,28
+wh3_main_nur_kugath,Ku'gath Plaguefather,legendary_lord,true,characters/nurgle/wh3_main_nur_kugath.csv,data/skill_trees/characters/nurgle/Ku_gath_Plaguefather.csv,73,21
+wh3_main_nur_plagueridden_death,Plagueridden (Death),hero,true,characters/nurgle/wh3_main_nur_plagueridden_death.csv,data/skill_trees/characters/nurgle/Plagueridden_Death.csv,68,23
+wh3_main_nur_plagueridden_nurgle,Plagueridden (Nurgle),hero,true,characters/nurgle/wh3_main_nur_plagueridden_nurgle.csv,data/skill_trees/characters/nurgle/Plagueridden_Nurgle.csv,74,24
+wh3_dlc26_ogr_bragg_the_gutsman,Bragg The Gutsman,hero,false,characters/ogre_kingdoms/wh3_dlc26_ogr_bragg_the_gutsman.csv,data/skill_trees/characters/ogre_kingdoms/Bragg_The_Gutsman.csv,8,6
+wh3_dlc26_ogr_bruiser,Bruiser,hero,false,characters/ogre_kingdoms/wh3_dlc26_ogr_bruiser.csv,data/skill_trees/characters/ogre_kingdoms/Bruiser.csv,8,7
+wh3_dlc26_ogr_cha_butcher_death,Cha Butcher Death,hero,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_butcher_death.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Butcher_Death.csv,130,21
+wh3_dlc26_ogr_cha_butcher_heavens,Cha Butcher Heavens,hero,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_butcher_heavens.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Butcher_Heavens.csv,130,21
+wh3_dlc26_ogr_cha_slaughtermaster_death,Cha Slaughtermaster Death,lord,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_slaughtermaster_death.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Slaughtermaster_Death.csv,131,22
+wh3_dlc26_ogr_cha_slaughtermaster_heavens,Cha Slaughtermaster Heavens,lord,true,characters/ogre_kingdoms/wh3_dlc26_ogr_cha_slaughtermaster_heavens.csv,data/skill_trees/characters/ogre_kingdoms/Cha_Slaughtermaster_Heavens.csv,131,22
+wh3_dlc26_ogr_golgfag_maneater,Golgfag Maneater,legendary_lord,false,characters/ogre_kingdoms/wh3_dlc26_ogr_golgfag_maneater.csv,data/skill_trees/characters/ogre_kingdoms/Golgfag_Maneater.csv,7,6
+wh3_dlc26_ogr_paymaster,Paymaster,lord,false,characters/ogre_kingdoms/wh3_dlc26_ogr_paymaster.csv,data/skill_trees/characters/ogre_kingdoms/Paymaster.csv,19,12
+wh3_main_ogr_butcher_beasts,Butcher (Beasts),hero,true,characters/ogre_kingdoms/wh3_main_ogr_butcher_beasts.csv,data/skill_trees/characters/ogre_kingdoms/Butcher_Beasts.csv,129,21
+wh3_main_ogr_butcher_great_maw,Butcher (Great Maw),hero,true,characters/ogre_kingdoms/wh3_main_ogr_butcher_great_maw.csv,data/skill_trees/characters/ogre_kingdoms/Butcher_Great_Maw.csv,136,22
+wh3_main_ogr_firebelly,Firebelly,hero,true,characters/ogre_kingdoms/wh3_main_ogr_firebelly.csv,data/skill_trees/characters/ogre_kingdoms/Firebelly.csv,268,213
+wh3_main_ogr_greasus_goldtooth,Greasus Goldtooth,legendary_lord,false,characters/ogre_kingdoms/wh3_main_ogr_greasus_goldtooth.csv,data/skill_trees/characters/ogre_kingdoms/Greasus_Goldtooth.csv,8,7
+wh3_main_ogr_hunter,Hunter,hero,false,characters/ogre_kingdoms/wh3_main_ogr_hunter.csv,data/skill_trees/characters/ogre_kingdoms/Hunter.csv,10,8
+wh3_main_ogr_skrag_the_slaughterer,Skrag the Slaughterer,legendary_lord,true,characters/ogre_kingdoms/wh3_main_ogr_skrag_the_slaughterer.csv,data/skill_trees/characters/ogre_kingdoms/Skrag_the_Slaughterer.csv,268,210
+wh3_main_ogr_slaughtermaster_beasts,Slaughtermaster (Beasts),lord,true,characters/ogre_kingdoms/wh3_main_ogr_slaughtermaster_beasts.csv,data/skill_trees/characters/ogre_kingdoms/Slaughtermaster_Beasts.csv,131,22
+wh3_main_ogr_slaughtermaster_great_maw,Slaughtermaster (Great Maw),lord,true,characters/ogre_kingdoms/wh3_main_ogr_slaughtermaster_great_maw.csv,data/skill_trees/characters/ogre_kingdoms/Slaughtermaster_Great_Maw.csv,138,23
+wh3_main_ogr_tyrant,Tyrant,lord,false,characters/ogre_kingdoms/wh3_main_ogr_tyrant.csv,data/skill_trees/characters/ogre_kingdoms/Tyrant.csv,13,10
+wh3_main_ogr_tyrant_camp,Camp Tyrant,lord,false,characters/ogre_kingdoms/wh3_main_ogr_tyrant_camp.csv,data/skill_trees/characters/ogre_kingdoms/Camp_Tyrant.csv,11,9
+wh2_dlc09_skv_tretch_craventail,Tretch Craventail,legendary_lord,false,characters/skaven/wh2_dlc09_skv_tretch_craventail.csv,data/skill_trees/characters/skaven/Tretch_Craventail.csv,11,7
+wh2_dlc12_skv_ikit_claw,Ikit Claw,legendary_lord,true,characters/skaven/wh2_dlc12_skv_ikit_claw.csv,data/skill_trees/characters/skaven/Ikit_Claw.csv,269,214
+wh2_dlc12_skv_warlock_master,Warlock Master,lord,true,characters/skaven/wh2_dlc12_skv_warlock_master.csv,data/skill_trees/characters/skaven/Warlock_Master.csv,271,216
+wh2_dlc14_skv_deathmaster_snikch,Deathmaster Snikch,legendary_lord,false,characters/skaven/wh2_dlc14_skv_deathmaster_snikch.csv,data/skill_trees/characters/skaven/Deathmaster_Snikch.csv,10,7
+wh2_dlc14_skv_eshin_sorcerer,Eshin Sorcerer,hero,true,characters/skaven/wh2_dlc14_skv_eshin_sorcerer.csv,data/skill_trees/characters/skaven/Eshin_Sorcerer.csv,63,20
+wh2_dlc14_skv_master_assassin,Master Assassin,lord,false,characters/skaven/wh2_dlc14_skv_master_assassin.csv,data/skill_trees/characters/skaven/Master_Assassin.csv,14,10
+wh2_dlc16_skv_chieftain,Chieftain,hero,false,characters/skaven/wh2_dlc16_skv_chieftain.csv,data/skill_trees/characters/skaven/Chieftain.csv,13,11
+wh2_dlc16_skv_ghoritch,Ghoritch,hero,false,characters/skaven/wh2_dlc16_skv_ghoritch.csv,data/skill_trees/characters/skaven/Ghoritch.csv,9,9
+wh2_dlc16_skv_packmaster,Packmaster,hero,false,characters/skaven/wh2_dlc16_skv_packmaster.csv,data/skill_trees/characters/skaven/Packmaster.csv,15,9
+wh2_dlc16_skv_throt_the_unclean,Throt the Unclean,legendary_lord,false,characters/skaven/wh2_dlc16_skv_throt_the_unclean.csv,data/skill_trees/characters/skaven/Throt_the_Unclean.csv,11,8
+wh2_main_skv_assassin,Assassin,hero,false,characters/skaven/wh2_main_skv_assassin.csv,data/skill_trees/characters/skaven/Assassin.csv,11,8
+wh2_main_skv_grey_seer_plague,Grey Seer (Plague),lord,true,characters/skaven/wh2_main_skv_grey_seer_plague.csv,data/skill_trees/characters/skaven/Grey_Seer_Plague.csv,60,19
+wh2_main_skv_grey_seer_ruin,Grey Seer (Ruin),lord,true,characters/skaven/wh2_main_skv_grey_seer_ruin.csv,data/skill_trees/characters/skaven/Grey_Seer_Ruin.csv,67,20
+wh2_main_skv_lord_skrolk,Lord Skrolk,legendary_lord,true,characters/skaven/wh2_main_skv_lord_skrolk.csv,data/skill_trees/characters/skaven/Lord_Skrolk.csv,55,18
+wh2_main_skv_plague_priest,Plague Priest,hero,true,characters/skaven/wh2_main_skv_plague_priest.csv,data/skill_trees/characters/skaven/Plague_Priest.csv,57,18
 wh2_main_skv_plague_priest_ritual,Pestilent Scheme Priest,hero,false,,data/skill_trees/characters/skaven/Pestilent_Scheme_Priest.csv,0,0
-wh2_main_skv_queek_headtaker,Queek Headtaker,legendary_lord,false,,data/skill_trees/characters/skaven/Queek_Headtaker.csv,0,0
-wh2_main_skv_warlock_engineer,Warlock Engineer,hero,true,characters/skaven/wh2_main_skv_warlock_engineer.csv,data/skill_trees/characters/skaven/Warlock_Engineer.csv,25,7
+wh2_main_skv_queek_headtaker,Queek Headtaker,legendary_lord,false,characters/skaven/wh2_main_skv_queek_headtaker.csv,data/skill_trees/characters/skaven/Queek_Headtaker.csv,8,5
+wh2_main_skv_warlock_engineer,Warlock Engineer,hero,true,characters/skaven/wh2_main_skv_warlock_engineer.csv,data/skill_trees/characters/skaven/Warlock_Engineer.csv,37,17
 wh2_main_skv_warlock_engineer_ritual,DOOOOM! Engineer,hero,false,,data/skill_trees/characters/skaven/DOOOOM_Engineer.csv,0,0
-wh2_main_skv_warlord,Warlord,lord,false,,data/skill_trees/characters/skaven/Warlord.csv,0,0
-wh3_dlc29_skv_schemer_grey_seer,Grey Seer Underling,lord,true,characters/skaven/wh3_dlc29_skv_schemer_grey_seer.csv,data/skill_trees/characters/skaven/Grey_Seer_Underling.csv,58,13
-wh3_dlc29_skv_schemer_master_assassin,Master Assassin Underling,lord,false,,data/skill_trees/characters/skaven/Master_Assassin_Underling.csv,0,0
-wh3_dlc29_skv_schemer_warlock_master,Warlock Master Underling,lord,true,characters/skaven/wh3_dlc29_skv_schemer_warlock_master.csv,data/skill_trees/characters/skaven/Warlock_Master_Underling.csv,259,206
-wh3_dlc29_skv_schemer_warlord,Warlord Underling,lord,false,,data/skill_trees/characters/skaven/Warlord_Underling.csv,0,0
-wh3_dlc29_skv_skreech_verminking,Skreech Verminking,hero,true,characters/skaven/wh3_dlc29_skv_skreech_verminking.csv,data/skill_trees/characters/skaven/Skreech_Verminking.csv,247,13
-wh3_dlc29_skv_thanquol,Thanquol,legendary_lord,true,characters/skaven/wh3_dlc29_skv_thanquol.csv,data/skill_trees/characters/skaven/Thanquol.csv,129,15
-wh3_dlc29_skv_verminlord_corruptor,Verminlord Corruptor,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_corruptor.csv,data/skill_trees/characters/skaven/Verminlord_Corruptor.csv,59,14
-wh3_dlc29_skv_verminlord_deceiver,Verminlord Deceiver,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_deceiver.csv,data/skill_trees/characters/skaven/Verminlord_Deceiver.csv,69,16
-wh3_dlc29_skv_verminlord_warbringer,Verminlord Warbringer,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_warbringer.csv,data/skill_trees/characters/skaven/Verminlord_Warbringer.csv,42,10
-wh3_dlc29_skv_verminlord_warpseer,Verminlord Warpseer,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_warpseer.csv,data/skill_trees/characters/skaven/Verminlord_Warpseer.csv,252,15
-wh3_dlc20_chs_lord_msla,Chaos Lord of Slaanesh,lord,false,,data/skill_trees/characters/slaanesh/Chaos_Lord_of_Slaanesh.csv,0,0
-wh3_dlc27_chs_sorcerer_lord_shadows_msla,Sorcerer Lord Shadows Slaanesh,lord,true,characters/slaanesh/wh3_dlc27_chs_sorcerer_lord_shadows_msla.csv,data/skill_trees/characters/slaanesh/Sorcerer_Lord_Shadows_Slaanesh.csv,61,13
-wh3_dlc27_chs_sorcerer_lord_slaanesh_msla,Sorcerer Lord Slaanesh Slaanesh,lord,true,characters/slaanesh/wh3_dlc27_chs_sorcerer_lord_slaanesh_msla.csv,data/skill_trees/characters/slaanesh/Sorcerer_Lord_Slaanesh_Slaanesh.csv,61,13
-wh3_dlc27_sla_dechala,Dechala the Denied One,legendary_lord,false,,data/skill_trees/characters/slaanesh/Dechala_the_Denied_One.csv,0,0
-wh3_dlc27_sla_druchii_anointed,Druchii Anointed,hero,false,characters/slaanesh/wh3_dlc27_sla_druchii_anointed.csv,data/skill_trees/characters/slaanesh/Druchii_Anointed.csv,10,6
-wh3_dlc27_sla_masque_of_slaanesh,The Masque of Slaanesh,legendary_lord,false,,data/skill_trees/characters/slaanesh/The_Masque_of_Slaanesh.csv,0,0
-wh3_dlc27_sla_styrkaar_the_sortsvinaer,Styrkaar the Sortsvinaer,hero,false,,data/skill_trees/characters/slaanesh/Styrkaar_the_Sortsvinaer.csv,0,0
-wh3_main_sla_alluress_shadow,Alluress (Shadows),hero,true,characters/slaanesh/wh3_main_sla_alluress_shadow.csv,data/skill_trees/characters/slaanesh/Alluress_Shadows.csv,61,13
-wh3_main_sla_alluress_slaanesh,Alluress (Slaanesh),hero,true,characters/slaanesh/wh3_main_sla_alluress_slaanesh.csv,data/skill_trees/characters/slaanesh/Alluress_Slaanesh.csv,61,13
+wh2_main_skv_warlord,Warlord,lord,false,characters/skaven/wh2_main_skv_warlord.csv,data/skill_trees/characters/skaven/Warlord.csv,12,9
+wh3_dlc29_skv_schemer_grey_seer,Grey Seer Underling,lord,true,characters/skaven/wh3_dlc29_skv_schemer_grey_seer.csv,data/skill_trees/characters/skaven/Grey_Seer_Underling.csv,63,17
+wh3_dlc29_skv_schemer_master_assassin,Master Assassin Underling,lord,false,characters/skaven/wh3_dlc29_skv_schemer_master_assassin.csv,data/skill_trees/characters/skaven/Master_Assassin_Underling.csv,8,5
+wh3_dlc29_skv_schemer_warlock_master,Warlock Master Underling,lord,true,characters/skaven/wh3_dlc29_skv_schemer_warlock_master.csv,data/skill_trees/characters/skaven/Warlock_Master_Underling.csv,265,211
+wh3_dlc29_skv_schemer_warlord,Warlord Underling,lord,false,characters/skaven/wh3_dlc29_skv_schemer_warlord.csv,data/skill_trees/characters/skaven/Warlord_Underling.csv,5,4
+wh3_dlc29_skv_skreech_verminking,Skreech Verminking,hero,true,characters/skaven/wh3_dlc29_skv_skreech_verminking.csv,data/skill_trees/characters/skaven/Skreech_Verminking.csv,258,20
+wh3_dlc29_skv_thanquol,Thanquol,legendary_lord,true,characters/skaven/wh3_dlc29_skv_thanquol.csv,data/skill_trees/characters/skaven/Thanquol.csv,136,20
+wh3_dlc29_skv_verminlord_corruptor,Verminlord Corruptor,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_corruptor.csv,data/skill_trees/characters/skaven/Verminlord_Corruptor.csv,69,21
+wh3_dlc29_skv_verminlord_deceiver,Verminlord Deceiver,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_deceiver.csv,data/skill_trees/characters/skaven/Verminlord_Deceiver.csv,80,25
+wh3_dlc29_skv_verminlord_warbringer,Verminlord Warbringer,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_warbringer.csv,data/skill_trees/characters/skaven/Verminlord_Warbringer.csv,55,20
+wh3_dlc29_skv_verminlord_warpseer,Verminlord Warpseer,lord,true,characters/skaven/wh3_dlc29_skv_verminlord_warpseer.csv,data/skill_trees/characters/skaven/Verminlord_Warpseer.csv,263,24
+wh3_dlc20_chs_lord_msla,Chaos Lord of Slaanesh,lord,false,characters/slaanesh/wh3_dlc20_chs_lord_msla.csv,data/skill_trees/characters/slaanesh/Chaos_Lord_of_Slaanesh.csv,11,8
+wh3_dlc27_chs_sorcerer_lord_shadows_msla,Sorcerer Lord Shadows Slaanesh,lord,true,characters/slaanesh/wh3_dlc27_chs_sorcerer_lord_shadows_msla.csv,data/skill_trees/characters/slaanesh/Sorcerer_Lord_Shadows_Slaanesh.csv,70,20
+wh3_dlc27_chs_sorcerer_lord_slaanesh_msla,Sorcerer Lord Slaanesh Slaanesh,lord,true,characters/slaanesh/wh3_dlc27_chs_sorcerer_lord_slaanesh_msla.csv,data/skill_trees/characters/slaanesh/Sorcerer_Lord_Slaanesh_Slaanesh.csv,70,20
+wh3_dlc27_sla_dechala,Dechala the Denied One,legendary_lord,false,characters/slaanesh/wh3_dlc27_sla_dechala.csv,data/skill_trees/characters/slaanesh/Dechala_the_Denied_One.csv,17,7
+wh3_dlc27_sla_druchii_anointed,Druchii Anointed,hero,false,characters/slaanesh/wh3_dlc27_sla_druchii_anointed.csv,data/skill_trees/characters/slaanesh/Druchii_Anointed.csv,29,18
+wh3_dlc27_sla_masque_of_slaanesh,The Masque of Slaanesh,legendary_lord,false,characters/slaanesh/wh3_dlc27_sla_masque_of_slaanesh.csv,data/skill_trees/characters/slaanesh/The_Masque_of_Slaanesh.csv,20,10
+wh3_dlc27_sla_styrkaar_the_sortsvinaer,Styrkaar the Sortsvinaer,hero,false,characters/slaanesh/wh3_dlc27_sla_styrkaar_the_sortsvinaer.csv,data/skill_trees/characters/slaanesh/Styrkaar_the_Sortsvinaer.csv,6,4
+wh3_main_sla_alluress_shadow,Alluress (Shadows),hero,true,characters/slaanesh/wh3_main_sla_alluress_shadow.csv,data/skill_trees/characters/slaanesh/Alluress_Shadows.csv,82,26
+wh3_main_sla_alluress_slaanesh,Alluress (Slaanesh),hero,true,characters/slaanesh/wh3_main_sla_alluress_slaanesh.csv,data/skill_trees/characters/slaanesh/Alluress_Slaanesh.csv,82,26
 wh3_main_sla_cult_magus,Slaanesh Cult Magus,hero,false,,data/skill_trees/characters/slaanesh/Slaanesh_Cult_Magus.csv,0,0
-wh3_main_sla_cultist,Cultist of Slaanesh,hero,false,,data/skill_trees/characters/slaanesh/Cultist_of_Slaanesh.csv,0,0
-wh3_main_sla_exalted_keeper_of_secrets_shadow,Exalted Keeper of Secrets (Shadows),lord,true,characters/slaanesh/wh3_main_sla_exalted_keeper_of_secrets_shadow.csv,data/skill_trees/characters/slaanesh/Exalted_Keeper_of_Secrets_Shadows.csv,61,13
-wh3_main_sla_exalted_keeper_of_secrets_slaanesh,Exalted Keeper of Secrets (Slaanesh),lord,true,characters/slaanesh/wh3_main_sla_exalted_keeper_of_secrets_slaanesh.csv,data/skill_trees/characters/slaanesh/Exalted_Keeper_of_Secrets_Slaanesh.csv,61,13
-wh3_main_sla_herald_of_slaanesh_shadow,Herald of Slaanesh (Shadows),lord,true,characters/slaanesh/wh3_main_sla_herald_of_slaanesh_shadow.csv,data/skill_trees/characters/slaanesh/Herald_of_Slaanesh_Shadows.csv,124,13
-wh3_main_sla_herald_of_slaanesh_slaanesh,Herald of Slaanesh (Slaanesh),lord,true,characters/slaanesh/wh3_main_sla_herald_of_slaanesh_slaanesh.csv,data/skill_trees/characters/slaanesh/Herald_of_Slaanesh_Slaanesh.csv,124,13
-wh3_main_sla_nkari,N'Kari,legendary_lord,true,characters/slaanesh/wh3_main_sla_nkari.csv,data/skill_trees/characters/slaanesh/N_Kari.csv,61,13
-wh2_dlc09_tmb_arkhan,Arkhan the Black,legendary_lord,true,characters/tomb_kings/wh2_dlc09_tmb_arkhan.csv,data/skill_trees/characters/tomb_kings/Arkhan_the_Black.csv,55,13
-wh2_dlc09_tmb_khalida,High Queen Khalida,legendary_lord,false,,data/skill_trees/characters/tomb_kings/High_Queen_Khalida.csv,0,0
-wh2_dlc09_tmb_khatep,Grand Hierophant Khatep,legendary_lord,true,characters/tomb_kings/wh2_dlc09_tmb_khatep.csv,data/skill_trees/characters/tomb_kings/Grand_Hierophant_Khatep.csv,59,13
-wh2_dlc09_tmb_liche_priest_death,Liche Priest (Death),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_death.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Death.csv,178,13
-wh2_dlc09_tmb_liche_priest_light,Liche Priest (Light),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_light.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Light.csv,125,14
-wh2_dlc09_tmb_liche_priest_nehekhara,Liche Priest (Nehekhara),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_nehekhara.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Nehekhara.csv,124,14
-wh2_dlc09_tmb_liche_priest_shadow,Liche Priest (Shadows),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_shadow.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Shadows.csv,125,14
-wh2_dlc09_tmb_necrotect,Necrotect,hero,false,characters/tomb_kings/wh2_dlc09_tmb_necrotect.csv,data/skill_trees/characters/tomb_kings/Necrotect.csv,1,1
+wh3_main_sla_cultist,Cultist of Slaanesh,hero,false,characters/slaanesh/wh3_main_sla_cultist.csv,data/skill_trees/characters/slaanesh/Cultist_of_Slaanesh.csv,21,11
+wh3_main_sla_exalted_keeper_of_secrets_shadow,Exalted Keeper of Secrets (Shadows),lord,true,characters/slaanesh/wh3_main_sla_exalted_keeper_of_secrets_shadow.csv,data/skill_trees/characters/slaanesh/Exalted_Keeper_of_Secrets_Shadows.csv,91,31
+wh3_main_sla_exalted_keeper_of_secrets_slaanesh,Exalted Keeper of Secrets (Slaanesh),lord,true,characters/slaanesh/wh3_main_sla_exalted_keeper_of_secrets_slaanesh.csv,data/skill_trees/characters/slaanesh/Exalted_Keeper_of_Secrets_Slaanesh.csv,91,31
+wh3_main_sla_herald_of_slaanesh_shadow,Herald of Slaanesh (Shadows),lord,true,characters/slaanesh/wh3_main_sla_herald_of_slaanesh_shadow.csv,data/skill_trees/characters/slaanesh/Herald_of_Slaanesh_Shadows.csv,160,30
+wh3_main_sla_herald_of_slaanesh_slaanesh,Herald of Slaanesh (Slaanesh),lord,true,characters/slaanesh/wh3_main_sla_herald_of_slaanesh_slaanesh.csv,data/skill_trees/characters/slaanesh/Herald_of_Slaanesh_Slaanesh.csv,159,30
+wh3_main_sla_nkari,N'Kari,legendary_lord,true,characters/slaanesh/wh3_main_sla_nkari.csv,data/skill_trees/characters/slaanesh/N_Kari.csv,76,22
+wh2_dlc09_tmb_arkhan,Arkhan the Black,legendary_lord,true,characters/tomb_kings/wh2_dlc09_tmb_arkhan.csv,data/skill_trees/characters/tomb_kings/Arkhan_the_Black.csv,67,22
+wh2_dlc09_tmb_khalida,High Queen Khalida,legendary_lord,false,characters/tomb_kings/wh2_dlc09_tmb_khalida.csv,data/skill_trees/characters/tomb_kings/High_Queen_Khalida.csv,15,10
+wh2_dlc09_tmb_khatep,Grand Hierophant Khatep,legendary_lord,true,characters/tomb_kings/wh2_dlc09_tmb_khatep.csv,data/skill_trees/characters/tomb_kings/Grand_Hierophant_Khatep.csv,68,20
+wh2_dlc09_tmb_liche_priest_death,Liche Priest (Death),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_death.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Death.csv,182,16
+wh2_dlc09_tmb_liche_priest_light,Liche Priest (Light),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_light.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Light.csv,129,17
+wh2_dlc09_tmb_liche_priest_nehekhara,Liche Priest (Nehekhara),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_nehekhara.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Nehekhara.csv,128,17
+wh2_dlc09_tmb_liche_priest_shadow,Liche Priest (Shadows),hero,true,characters/tomb_kings/wh2_dlc09_tmb_liche_priest_shadow.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Shadows.csv,129,17
+wh2_dlc09_tmb_necrotect,Necrotect,hero,false,characters/tomb_kings/wh2_dlc09_tmb_necrotect.csv,data/skill_trees/characters/tomb_kings/Necrotect.csv,11,7
 wh2_dlc09_tmb_necrotect_ritual,Ptra's Necrotect,hero,false,,data/skill_trees/characters/tomb_kings/Ptra_s_Necrotect.csv,0,0
-wh2_dlc09_tmb_settra,Settra the Imperishable,legendary_lord,true,characters/tomb_kings/wh2_dlc09_tmb_settra.csv,data/skill_trees/characters/tomb_kings/Settra_the_Imperishable.csv,58,13
-wh2_dlc09_tmb_tomb_king,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king.csv,data/skill_trees/characters/tomb_kings/Tomb_King.csv,3,3
-wh2_dlc09_tmb_tomb_king_alkhazzar_ii,Tomb King,lord,false,,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_alkhazzar_ii.csv,0,0
-wh2_dlc09_tmb_tomb_king_lahmizzash,Tomb King,lord,false,,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_lahmizzash.csv,0,0
-wh2_dlc09_tmb_tomb_king_rakhash,Tomb King,lord,false,,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_rakhash.csv,0,0
-wh2_dlc09_tmb_tomb_king_setep,Tomb King,lord,false,,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_setep.csv,0,0
-wh2_dlc09_tmb_tomb_king_thutep,Tomb King,lord,false,,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_thutep.csv,0,0
-wh2_dlc09_tmb_tomb_king_wakhaf,Tomb King,lord,false,,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_wakhaf.csv,0,0
-wh2_dlc09_tmb_tomb_prince,Tomb Prince,hero,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_prince.csv,data/skill_trees/characters/tomb_kings/Tomb_Prince.csv,1,1
-wh3_dlc29_tmb_liche_high_priest_death,Liche High Priest (Death),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_death.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Death.csv,371,14
-wh3_dlc29_tmb_liche_high_priest_light,Liche High Priest (Light),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_light.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Light.csv,378,15
-wh3_dlc29_tmb_liche_high_priest_nehekhara,Liche High Priest (Nehekhara),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_nehekhara.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Nehekhara.csv,375,15
-wh3_dlc29_tmb_liche_high_priest_shadow,Liche High Priest (Shadows),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_shadow.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Shadows.csv,377,15
-wh3_dlc29_tmb_liche_high_priest_undeath,Liche High Priest (Undeath),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_undeath.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Undeath.csv,373,14
-wh3_dlc29_tmb_liche_priest_undeath,Liche Priest (Undeath),hero,true,characters/tomb_kings/wh3_dlc29_tmb_liche_priest_undeath.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Undeath.csv,180,13
-wh3_dlc29_tmb_tomb_herald,Tomb Herald,hero,false,characters/tomb_kings/wh3_dlc29_tmb_tomb_herald.csv,data/skill_trees/characters/tomb_kings/Tomb_Herald.csv,2,1
-wh_main_chs_lord_of_change,Lord Of Change,lord,true,characters/tzeentch/wh_main_chs_lord_of_change.csv,data/skill_trees/characters/tzeentch/Lord_Of_Change.csv,185,13
-wh3_dlc20_chs_sorcerer_lord_metal_mtze,Chaos Sorcerer Lord of Tzeentch (Metal),lord,true,characters/tzeentch/wh3_dlc20_chs_sorcerer_lord_metal_mtze.csv,data/skill_trees/characters/tzeentch/Chaos_Sorcerer_Lord_of_Tzeentch_Metal.csv,125,13
-wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze,Chaos Sorcerer Lord of Tzeentch (Tzeentch),lord,true,characters/tzeentch/wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze.csv,data/skill_trees/characters/tzeentch/Chaos_Sorcerer_Lord_of_Tzeentch_Tzeentch.csv,125,13
-wh3_dlc24_chs_lord_mtze,Chaos Lord of Tzeentch,lord,false,,data/skill_trees/characters/tzeentch/Chaos_Lord_of_Tzeentch.csv,0,0
-wh3_dlc24_tze_aekold_helbrass,Aekold Helbrass,hero,false,characters/tzeentch/wh3_dlc24_tze_aekold_helbrass.csv,data/skill_trees/characters/tzeentch/Aekold_Helbrass.csv,3,1
+wh2_dlc09_tmb_settra,Settra the Imperishable,legendary_lord,true,characters/tomb_kings/wh2_dlc09_tmb_settra.csv,data/skill_trees/characters/tomb_kings/Settra_the_Imperishable.csv,71,23
+wh2_dlc09_tmb_tomb_king,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king.csv,data/skill_trees/characters/tomb_kings/Tomb_King.csv,14,11
+wh2_dlc09_tmb_tomb_king_alkhazzar_ii,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king_alkhazzar_ii.csv,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_alkhazzar_ii.csv,8,6
+wh2_dlc09_tmb_tomb_king_lahmizzash,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king_lahmizzash.csv,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_lahmizzash.csv,10,8
+wh2_dlc09_tmb_tomb_king_rakhash,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king_rakhash.csv,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_rakhash.csv,8,6
+wh2_dlc09_tmb_tomb_king_setep,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king_setep.csv,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_setep.csv,8,6
+wh2_dlc09_tmb_tomb_king_thutep,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king_thutep.csv,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_thutep.csv,8,6
+wh2_dlc09_tmb_tomb_king_wakhaf,Tomb King,lord,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_king_wakhaf.csv,data/skill_trees/characters/tomb_kings/Tomb_King__tomb_king_wakhaf.csv,8,6
+wh2_dlc09_tmb_tomb_prince,Tomb Prince,hero,false,characters/tomb_kings/wh2_dlc09_tmb_tomb_prince.csv,data/skill_trees/characters/tomb_kings/Tomb_Prince.csv,6,4
+wh3_dlc29_tmb_liche_high_priest_death,Liche High Priest (Death),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_death.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Death.csv,384,21
+wh3_dlc29_tmb_liche_high_priest_light,Liche High Priest (Light),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_light.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Light.csv,391,22
+wh3_dlc29_tmb_liche_high_priest_nehekhara,Liche High Priest (Nehekhara),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_nehekhara.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Nehekhara.csv,388,22
+wh3_dlc29_tmb_liche_high_priest_shadow,Liche High Priest (Shadows),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_shadow.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Shadows.csv,390,22
+wh3_dlc29_tmb_liche_high_priest_undeath,Liche High Priest (Undeath),lord,true,characters/tomb_kings/wh3_dlc29_tmb_liche_high_priest_undeath.csv,data/skill_trees/characters/tomb_kings/Liche_High_Priest_Undeath.csv,386,21
+wh3_dlc29_tmb_liche_priest_undeath,Liche Priest (Undeath),hero,true,characters/tomb_kings/wh3_dlc29_tmb_liche_priest_undeath.csv,data/skill_trees/characters/tomb_kings/Liche_Priest_Undeath.csv,184,16
+wh3_dlc29_tmb_tomb_herald,Tomb Herald,hero,false,characters/tomb_kings/wh3_dlc29_tmb_tomb_herald.csv,data/skill_trees/characters/tomb_kings/Tomb_Herald.csv,26,11
+wh_main_chs_lord_of_change,Lord Of Change,lord,true,characters/tzeentch/wh_main_chs_lord_of_change.csv,data/skill_trees/characters/tzeentch/Lord_Of_Change.csv,193,19
+wh3_dlc20_chs_sorcerer_lord_metal_mtze,Chaos Sorcerer Lord of Tzeentch (Metal),lord,true,characters/tzeentch/wh3_dlc20_chs_sorcerer_lord_metal_mtze.csv,data/skill_trees/characters/tzeentch/Chaos_Sorcerer_Lord_of_Tzeentch_Metal.csv,134,20
+wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze,Chaos Sorcerer Lord of Tzeentch (Tzeentch),lord,true,characters/tzeentch/wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze.csv,data/skill_trees/characters/tzeentch/Chaos_Sorcerer_Lord_of_Tzeentch_Tzeentch.csv,134,20
+wh3_dlc24_chs_lord_mtze,Chaos Lord of Tzeentch,lord,false,characters/tzeentch/wh3_dlc24_chs_lord_mtze.csv,data/skill_trees/characters/tzeentch/Chaos_Lord_of_Tzeentch.csv,10,8
+wh3_dlc24_tze_aekold_helbrass,Aekold Helbrass,hero,false,characters/tzeentch/wh3_dlc24_tze_aekold_helbrass.csv,data/skill_trees/characters/tzeentch/Aekold_Helbrass.csv,10,4
 wh3_dlc24_tze_blue_scribes,Blue Scribes,hero,true,characters/tzeentch/wh3_dlc24_tze_blue_scribes.csv,data/skill_trees/characters/tzeentch/Blue_Scribes.csv,1314,191
-wh3_dlc24_tze_the_changeling,The Changeling,legendary_lord,true,characters/tzeentch/wh3_dlc24_tze_the_changeling.csv,data/skill_trees/characters/tzeentch/The_Changeling.csv,235,13
+wh3_dlc24_tze_the_changeling,The Changeling,legendary_lord,true,characters/tzeentch/wh3_dlc24_tze_the_changeling.csv,data/skill_trees/characters/tzeentch/The_Changeling.csv,264,19
 wh3_dlc24_tze_the_changeling_cultist_special,Trickster Cultist,hero,false,,data/skill_trees/characters/tzeentch/Trickster_Cultist.csv,0,0
 wh3_main_tze_cult_magus,Tzeentch Cult Magus,hero,false,,data/skill_trees/characters/tzeentch/Tzeentch_Cult_Magus.csv,0,0
-wh3_main_tze_cultist,Cultist of Tzeentch,hero,true,characters/tzeentch/wh3_main_tze_cultist.csv,data/skill_trees/characters/tzeentch/Cultist_of_Tzeentch.csv,56,13
-wh3_main_tze_exalted_lord_of_change_metal,Exalted Lord of Change (Metal),lord,true,characters/tzeentch/wh3_main_tze_exalted_lord_of_change_metal.csv,data/skill_trees/characters/tzeentch/Exalted_Lord_of_Change_Metal.csv,124,13
-wh3_main_tze_exalted_lord_of_change_tzeentch,Exalted Lord of Change (Tzeentch),lord,true,characters/tzeentch/wh3_main_tze_exalted_lord_of_change_tzeentch.csv,data/skill_trees/characters/tzeentch/Exalted_Lord_of_Change_Tzeentch.csv,124,13
-wh3_main_tze_herald_of_tzeentch_metal,Herald of Tzeentch (Metal),lord,true,characters/tzeentch/wh3_main_tze_herald_of_tzeentch_metal.csv,data/skill_trees/characters/tzeentch/Herald_of_Tzeentch_Metal.csv,69,17
-wh3_main_tze_herald_of_tzeentch_tzeentch,Herald of Tzeentch (Tzeentch),lord,true,characters/tzeentch/wh3_main_tze_herald_of_tzeentch_tzeentch.csv,data/skill_trees/characters/tzeentch/Herald_of_Tzeentch_Tzeentch.csv,69,17
-wh3_main_tze_iridescent_horror_metal,Iridescent Horror (Metal),hero,true,characters/tzeentch/wh3_main_tze_iridescent_horror_metal.csv,data/skill_trees/characters/tzeentch/Iridescent_Horror_Metal.csv,62,14
-wh3_main_tze_iridescent_horror_tzeentch,Iridescent Horror (Tzeentch),hero,true,characters/tzeentch/wh3_main_tze_iridescent_horror_tzeentch.csv,data/skill_trees/characters/tzeentch/Iridescent_Horror_Tzeentch.csv,62,14
-wh3_main_tze_kairos,Kairos Fateweaver,legendary_lord,true,characters/tzeentch/wh3_main_tze_kairos.csv,data/skill_trees/characters/tzeentch/Kairos_Fateweaver.csv,173,9
-wh2_dlc11_cst_admiral_death,Vampire Fleet Admiral (Death),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_death.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Death.csv,54,12
-wh2_dlc11_cst_admiral_deep,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_deep.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep.csv,55,12
-wh2_dlc11_cst_admiral_fem_death,Vampire Fleet Admiral (Death),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_fem_death.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Death__admiral_fem_death.csv,54,12
-wh2_dlc11_cst_admiral_fem_deep,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_fem_deep.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep__admiral_fem_deep.csv,55,12
-wh2_dlc11_cst_admiral_fem_vampires,Vampire Fleet Admiral (Vampires),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_fem_vampires.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Vampires.csv,51,12
-wh2_dlc11_cst_admiral_tech_01,Vampire Fleet Admiral (Vampires),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_01.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Vampires__admiral_tech_01.csv,51,12
-wh2_dlc11_cst_admiral_tech_02,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_02.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep__admiral_tech_02.csv,55,12
-wh2_dlc11_cst_admiral_tech_03,Vampire Fleet Admiral (Death),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_03.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Death__admiral_tech_03.csv,54,12
-wh2_dlc11_cst_admiral_tech_04,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_04.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep__admiral_tech_04.csv,55,12
-wh2_dlc11_cst_admiral_vampires,Vampire Fleet Admiral (Vampires),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_vampires.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Vampires__admiral_vampires.csv,51,12
-wh2_dlc11_cst_aranessa,Aranessa Saltspite,legendary_lord,false,,data/skill_trees/characters/vampire_coast/Aranessa_Saltspite.csv,0,0
-wh2_dlc11_cst_cylostra,Cylostra Direfin,legendary_lord,true,characters/vampire_coast/wh2_dlc11_cst_cylostra.csv,data/skill_trees/characters/vampire_coast/Cylostra_Direfin.csv,65,12
-wh2_dlc11_cst_fleet_captain_death,Vampire Fleet Captain (Death),hero,true,characters/vampire_coast/wh2_dlc11_cst_fleet_captain_death.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Death.csv,56,13
-wh2_dlc11_cst_fleet_captain_deep,Vampire Fleet Captain (Deep),hero,true,characters/vampire_coast/wh2_dlc11_cst_fleet_captain_deep.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Deep.csv,55,13
-wh2_dlc11_cst_fleet_captain_vampires,Vampire Fleet Captain (Vampires),hero,true,characters/vampire_coast/wh2_dlc11_cst_fleet_captain_vampires.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Vampires.csv,56,13
-wh2_dlc11_cst_ghost_paladin,Damned Paladin,hero,false,,data/skill_trees/characters/vampire_coast/Damned_Paladin.csv,0,0
-wh2_dlc11_cst_gunnery_wight,Gunnery Wight,hero,false,characters/vampire_coast/wh2_dlc11_cst_gunnery_wight.csv,data/skill_trees/characters/vampire_coast/Gunnery_Wight.csv,1,1
-wh2_dlc11_cst_harkon,Luthor Harkon,legendary_lord,false,,data/skill_trees/characters/vampire_coast/Luthor_Harkon.csv,0,0
-wh2_dlc11_cst_mourngul,Mourngul Haunter,hero,false,characters/vampire_coast/wh2_dlc11_cst_mourngul.csv,data/skill_trees/characters/vampire_coast/Mourngul_Haunter.csv,3,1
-wh2_dlc11_cst_noctilus,Count Noctilus,legendary_lord,true,characters/vampire_coast/wh2_dlc11_cst_noctilus.csv,data/skill_trees/characters/vampire_coast/Count_Noctilus.csv,60,14
-wh3_dlc29_cst_vampire_fleet_admiral_female_undeath,Vampire Fleet Admiral (Undeath),lord,true,characters/vampire_coast/wh3_dlc29_cst_vampire_fleet_admiral_female_undeath.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Undeath.csv,56,12
-wh3_dlc29_cst_vampire_fleet_admiral_undeath,Vampire Fleet Admiral (Undeath),lord,true,characters/vampire_coast/wh3_dlc29_cst_vampire_fleet_admiral_undeath.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Undeath__vampire_fleet_admiral_undeath.csv,56,12
-wh3_dlc29_cst_vampire_fleet_captain_undeath,Vampire Fleet Captain (Undeath),hero,true,characters/vampire_coast/wh3_dlc29_cst_vampire_fleet_captain_undeath.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Undeath.csv,58,13
-wh_dlc04_vmp_helman_ghorst,Helman Ghorst,legendary_lord,true,characters/vampire_counts/wh_dlc04_vmp_helman_ghorst.csv,data/skill_trees/characters/vampire_counts/Helman_Ghorst.csv,50,12
-wh_dlc04_vmp_strigoi_ghoul_king,Strigoi Ghoul King,lord,true,characters/vampire_counts/wh_dlc04_vmp_strigoi_ghoul_king.csv,data/skill_trees/characters/vampire_counts/Strigoi_Ghoul_King.csv,21,9
-wh_dlc04_vmp_vlad_con_carstein,Vlad von Carstein,legendary_lord,true,characters/vampire_counts/wh_dlc04_vmp_vlad_con_carstein.csv,data/skill_trees/characters/vampire_counts/Vlad_von_Carstein.csv,65,12
-wh_dlc04_vmp_vlad_von_carstein_hero,Vlad Von Carstein Hero,hero,true,characters/vampire_counts/wh_dlc04_vmp_vlad_von_carstein_hero.csv,data/skill_trees/characters/vampire_counts/Vlad_Von_Carstein_Hero.csv,65,12
-wh_dlc05_vmp_red_duke,Red Duke,lord,true,characters/vampire_counts/wh_dlc05_vmp_red_duke.csv,data/skill_trees/characters/vampire_counts/Red_Duke.csv,51,12
-wh_dlc05_vmp_vampire_shadow,Vampire (Shadows),hero,true,characters/vampire_counts/wh_dlc05_vmp_vampire_shadow.csv,data/skill_trees/characters/vampire_counts/Vampire_Shadows.csv,189,14
-wh_main_vmp_banshee,Banshee,hero,false,,data/skill_trees/characters/vampire_counts/Banshee.csv,0,0
-wh_main_vmp_heinrich_kemmler,Heinrich Kemmler,legendary_lord,true,characters/vampire_counts/wh_main_vmp_heinrich_kemmler.csv,data/skill_trees/characters/vampire_counts/Heinrich_Kemmler.csv,86,12
-wh_main_vmp_lord,Vampire Lord,lord,true,characters/vampire_counts/wh_main_vmp_lord.csv,data/skill_trees/characters/vampire_counts/Vampire_Lord.csv,67,15
-wh_main_vmp_mannfred_von_carstein,Mannfred von Carstein,legendary_lord,true,characters/vampire_counts/wh_main_vmp_mannfred_von_carstein.csv,data/skill_trees/characters/vampire_counts/Mannfred_von_Carstein.csv,131,24
-wh_main_vmp_master_necromancer,Master Necromancer (Vampires),lord,true,characters/vampire_counts/wh_main_vmp_master_necromancer.csv,data/skill_trees/characters/vampire_counts/Master_Necromancer_Vampires.csv,112,15
-wh_main_vmp_necromancer,Necromancer,hero,true,characters/vampire_counts/wh_main_vmp_necromancer.csv,data/skill_trees/characters/vampire_counts/Necromancer.csv,74,13
-wh_main_vmp_vampire_death,Vampire (Death),hero,true,characters/vampire_counts/wh_main_vmp_vampire_death.csv,data/skill_trees/characters/vampire_counts/Vampire_Death.csv,183,13
-wh_main_vmp_wight_king,Wight King,hero,false,,data/skill_trees/characters/vampire_counts/Wight_King.csv,0,0
-wh_pro02_vmp_isabella_von_carstein,Isabella von Carstein,legendary_lord,true,characters/vampire_counts/wh_pro02_vmp_isabella_von_carstein.csv,data/skill_trees/characters/vampire_counts/Isabella_von_Carstein.csv,51,12
-wh_pro02_vmp_isabella_von_carstein_hero,Isabella von Carstein (Hero),hero,true,characters/vampire_counts/wh_pro02_vmp_isabella_von_carstein_hero.csv,data/skill_trees/characters/vampire_counts/Isabella_von_Carstein_Hero.csv,51,12
-wh2_dlc11_vmp_bloodline_blood_dragon,Blood Dragon Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_blood_dragon.csv,data/skill_trees/characters/vampire_counts/Blood_Dragon_Bloodline.csv,52,13
-wh2_dlc11_vmp_bloodline_lahmian,Lahmian Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_lahmian.csv,data/skill_trees/characters/vampire_counts/Lahmian_Bloodline.csv,53,14
-wh2_dlc11_vmp_bloodline_necrarch,Necrarch Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_necrarch.csv,data/skill_trees/characters/vampire_counts/Necrarch_Bloodline.csv,123,16
-wh2_dlc11_vmp_bloodline_strigoi,Strigoi Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_strigoi.csv,data/skill_trees/characters/vampire_counts/Strigoi_Bloodline.csv,21,9
-wh2_dlc11_vmp_bloodline_von_carstein,Von Carstein Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_von_carstein.csv,data/skill_trees/characters/vampire_counts/Von_Carstein_Bloodline.csv,82,26
-wh2_dlc17_vmp_kevon_lloydstein,Wight King,hero,false,,data/skill_trees/characters/vampire_counts/Wight_King__kevon_lloydstein.csv,0,0
-wh3_dlc29_vmp_dieter_helsnicht,Dieter Helsnicht,hero,true,characters/vampire_counts/wh3_dlc29_vmp_dieter_helsnicht.csv,data/skill_trees/characters/vampire_counts/Dieter_Helsnicht.csv,324,15
+wh3_main_tze_cultist,Cultist of Tzeentch,hero,true,characters/tzeentch/wh3_main_tze_cultist.csv,data/skill_trees/characters/tzeentch/Cultist_of_Tzeentch.csv,70,21
+wh3_main_tze_exalted_lord_of_change_metal,Exalted Lord of Change (Metal),lord,true,characters/tzeentch/wh3_main_tze_exalted_lord_of_change_metal.csv,data/skill_trees/characters/tzeentch/Exalted_Lord_of_Change_Metal.csv,140,24
+wh3_main_tze_exalted_lord_of_change_tzeentch,Exalted Lord of Change (Tzeentch),lord,true,characters/tzeentch/wh3_main_tze_exalted_lord_of_change_tzeentch.csv,data/skill_trees/characters/tzeentch/Exalted_Lord_of_Change_Tzeentch.csv,140,24
+wh3_main_tze_herald_of_tzeentch_metal,Herald of Tzeentch (Metal),lord,true,characters/tzeentch/wh3_main_tze_herald_of_tzeentch_metal.csv,data/skill_trees/characters/tzeentch/Herald_of_Tzeentch_Metal.csv,87,29
+wh3_main_tze_herald_of_tzeentch_tzeentch,Herald of Tzeentch (Tzeentch),lord,true,characters/tzeentch/wh3_main_tze_herald_of_tzeentch_tzeentch.csv,data/skill_trees/characters/tzeentch/Herald_of_Tzeentch_Tzeentch.csv,87,29
+wh3_main_tze_iridescent_horror_metal,Iridescent Horror (Metal),hero,true,characters/tzeentch/wh3_main_tze_iridescent_horror_metal.csv,data/skill_trees/characters/tzeentch/Iridescent_Horror_Metal.csv,72,23
+wh3_main_tze_iridescent_horror_tzeentch,Iridescent Horror (Tzeentch),hero,true,characters/tzeentch/wh3_main_tze_iridescent_horror_tzeentch.csv,data/skill_trees/characters/tzeentch/Iridescent_Horror_Tzeentch.csv,72,23
+wh3_main_tze_kairos,Kairos Fateweaver,legendary_lord,true,characters/tzeentch/wh3_main_tze_kairos.csv,data/skill_trees/characters/tzeentch/Kairos_Fateweaver.csv,181,16
+wh2_dlc11_cst_admiral_death,Vampire Fleet Admiral (Death),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_death.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Death.csv,65,20
+wh2_dlc11_cst_admiral_deep,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_deep.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep.csv,66,20
+wh2_dlc11_cst_admiral_fem_death,Vampire Fleet Admiral (Death),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_fem_death.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Death__admiral_fem_death.csv,64,20
+wh2_dlc11_cst_admiral_fem_deep,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_fem_deep.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep__admiral_fem_deep.csv,65,20
+wh2_dlc11_cst_admiral_fem_vampires,Vampire Fleet Admiral (Vampires),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_fem_vampires.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Vampires.csv,61,20
+wh2_dlc11_cst_admiral_tech_01,Vampire Fleet Admiral (Vampires),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_01.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Vampires__admiral_tech_01.csv,60,19
+wh2_dlc11_cst_admiral_tech_02,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_02.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep__admiral_tech_02.csv,64,19
+wh2_dlc11_cst_admiral_tech_03,Vampire Fleet Admiral (Death),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_03.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Death__admiral_tech_03.csv,63,19
+wh2_dlc11_cst_admiral_tech_04,Vampire Fleet Admiral (Deep),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_tech_04.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Deep__admiral_tech_04.csv,63,19
+wh2_dlc11_cst_admiral_vampires,Vampire Fleet Admiral (Vampires),lord,true,characters/vampire_coast/wh2_dlc11_cst_admiral_vampires.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Vampires__admiral_vampires.csv,62,20
+wh2_dlc11_cst_aranessa,Aranessa Saltspite,legendary_lord,false,characters/vampire_coast/wh2_dlc11_cst_aranessa.csv,data/skill_trees/characters/vampire_coast/Aranessa_Saltspite.csv,9,4
+wh2_dlc11_cst_cylostra,Cylostra Direfin,legendary_lord,true,characters/vampire_coast/wh2_dlc11_cst_cylostra.csv,data/skill_trees/characters/vampire_coast/Cylostra_Direfin.csv,84,21
+wh2_dlc11_cst_fleet_captain_death,Vampire Fleet Captain (Death),hero,true,characters/vampire_coast/wh2_dlc11_cst_fleet_captain_death.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Death.csv,67,21
+wh2_dlc11_cst_fleet_captain_deep,Vampire Fleet Captain (Deep),hero,true,characters/vampire_coast/wh2_dlc11_cst_fleet_captain_deep.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Deep.csv,66,21
+wh2_dlc11_cst_fleet_captain_vampires,Vampire Fleet Captain (Vampires),hero,true,characters/vampire_coast/wh2_dlc11_cst_fleet_captain_vampires.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Vampires.csv,67,21
+wh2_dlc11_cst_ghost_paladin,Damned Paladin,hero,false,characters/vampire_coast/wh2_dlc11_cst_ghost_paladin.csv,data/skill_trees/characters/vampire_coast/Damned_Paladin.csv,3,3
+wh2_dlc11_cst_gunnery_wight,Gunnery Wight,hero,false,characters/vampire_coast/wh2_dlc11_cst_gunnery_wight.csv,data/skill_trees/characters/vampire_coast/Gunnery_Wight.csv,18,10
+wh2_dlc11_cst_harkon,Luthor Harkon,legendary_lord,false,characters/vampire_coast/wh2_dlc11_cst_harkon.csv,data/skill_trees/characters/vampire_coast/Luthor_Harkon.csv,8,6
+wh2_dlc11_cst_mourngul,Mourngul Haunter,hero,false,characters/vampire_coast/wh2_dlc11_cst_mourngul.csv,data/skill_trees/characters/vampire_coast/Mourngul_Haunter.csv,36,8
+wh2_dlc11_cst_noctilus,Count Noctilus,legendary_lord,true,characters/vampire_coast/wh2_dlc11_cst_noctilus.csv,data/skill_trees/characters/vampire_coast/Count_Noctilus.csv,70,22
+wh3_dlc29_cst_vampire_fleet_admiral_female_undeath,Vampire Fleet Admiral (Undeath),lord,true,characters/vampire_coast/wh3_dlc29_cst_vampire_fleet_admiral_female_undeath.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Undeath.csv,66,20
+wh3_dlc29_cst_vampire_fleet_admiral_undeath,Vampire Fleet Admiral (Undeath),lord,true,characters/vampire_coast/wh3_dlc29_cst_vampire_fleet_admiral_undeath.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Admiral_Undeath__vampire_fleet_admiral_undeath.csv,67,20
+wh3_dlc29_cst_vampire_fleet_captain_undeath,Vampire Fleet Captain (Undeath),hero,true,characters/vampire_coast/wh3_dlc29_cst_vampire_fleet_captain_undeath.csv,data/skill_trees/characters/vampire_coast/Vampire_Fleet_Captain_Undeath.csv,69,21
+wh_dlc04_vmp_helman_ghorst,Helman Ghorst,legendary_lord,true,characters/vampire_counts/wh_dlc04_vmp_helman_ghorst.csv,data/skill_trees/characters/vampire_counts/Helman_Ghorst.csv,62,20
+wh_dlc04_vmp_strigoi_ghoul_king,Strigoi Ghoul King,lord,true,characters/vampire_counts/wh_dlc04_vmp_strigoi_ghoul_king.csv,data/skill_trees/characters/vampire_counts/Strigoi_Ghoul_King.csv,42,22
+wh_dlc04_vmp_vlad_con_carstein,Vlad von Carstein,legendary_lord,true,characters/vampire_counts/wh_dlc04_vmp_vlad_con_carstein.csv,data/skill_trees/characters/vampire_counts/Vlad_von_Carstein.csv,82,22
+wh_dlc04_vmp_vlad_von_carstein_hero,Vlad Von Carstein Hero,hero,true,characters/vampire_counts/wh_dlc04_vmp_vlad_von_carstein_hero.csv,data/skill_trees/characters/vampire_counts/Vlad_Von_Carstein_Hero.csv,75,20
+wh_dlc05_vmp_red_duke,Red Duke,lord,true,characters/vampire_counts/wh_dlc05_vmp_red_duke.csv,data/skill_trees/characters/vampire_counts/Red_Duke.csv,63,20
+wh_dlc05_vmp_vampire_shadow,Vampire (Shadows),hero,true,characters/vampire_counts/wh_dlc05_vmp_vampire_shadow.csv,data/skill_trees/characters/vampire_counts/Vampire_Shadows.csv,199,23
+wh_main_vmp_banshee,Banshee,hero,false,characters/vampire_counts/wh_main_vmp_banshee.csv,data/skill_trees/characters/vampire_counts/Banshee.csv,15,9
+wh_main_vmp_heinrich_kemmler,Heinrich Kemmler,legendary_lord,true,characters/vampire_counts/wh_main_vmp_heinrich_kemmler.csv,data/skill_trees/characters/vampire_counts/Heinrich_Kemmler.csv,109,22
+wh_main_vmp_lord,Vampire Lord,lord,true,characters/vampire_counts/wh_main_vmp_lord.csv,data/skill_trees/characters/vampire_counts/Vampire_Lord.csv,84,28
+wh_main_vmp_mannfred_von_carstein,Mannfred von Carstein,legendary_lord,true,characters/vampire_counts/wh_main_vmp_mannfred_von_carstein.csv,data/skill_trees/characters/vampire_counts/Mannfred_von_Carstein.csv,141,32
+wh_main_vmp_master_necromancer,Master Necromancer (Vampires),lord,true,characters/vampire_counts/wh_main_vmp_master_necromancer.csv,data/skill_trees/characters/vampire_counts/Master_Necromancer_Vampires.csv,124,23
+wh_main_vmp_necromancer,Necromancer,hero,true,characters/vampire_counts/wh_main_vmp_necromancer.csv,data/skill_trees/characters/vampire_counts/Necromancer.csv,89,22
+wh_main_vmp_vampire_death,Vampire (Death),hero,true,characters/vampire_counts/wh_main_vmp_vampire_death.csv,data/skill_trees/characters/vampire_counts/Vampire_Death.csv,196,24
+wh_main_vmp_wight_king,Wight King,hero,false,characters/vampire_counts/wh_main_vmp_wight_king.csv,data/skill_trees/characters/vampire_counts/Wight_King.csv,12,10
+wh_pro02_vmp_isabella_von_carstein,Isabella von Carstein,legendary_lord,true,characters/vampire_counts/wh_pro02_vmp_isabella_von_carstein.csv,data/skill_trees/characters/vampire_counts/Isabella_von_Carstein.csv,69,21
+wh_pro02_vmp_isabella_von_carstein_hero,Isabella von Carstein (Hero),hero,true,characters/vampire_counts/wh_pro02_vmp_isabella_von_carstein_hero.csv,data/skill_trees/characters/vampire_counts/Isabella_von_Carstein_Hero.csv,66,19
+wh2_dlc11_vmp_bloodline_blood_dragon,Blood Dragon Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_blood_dragon.csv,data/skill_trees/characters/vampire_counts/Blood_Dragon_Bloodline.csv,69,25
+wh2_dlc11_vmp_bloodline_lahmian,Lahmian Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_lahmian.csv,data/skill_trees/characters/vampire_counts/Lahmian_Bloodline.csv,71,28
+wh2_dlc11_vmp_bloodline_necrarch,Necrarch Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_necrarch.csv,data/skill_trees/characters/vampire_counts/Necrarch_Bloodline.csv,142,31
+wh2_dlc11_vmp_bloodline_strigoi,Strigoi Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_strigoi.csv,data/skill_trees/characters/vampire_counts/Strigoi_Bloodline.csv,42,22
+wh2_dlc11_vmp_bloodline_von_carstein,Von Carstein Bloodline,lord,true,characters/vampire_counts/wh2_dlc11_vmp_bloodline_von_carstein.csv,data/skill_trees/characters/vampire_counts/Von_Carstein_Bloodline.csv,99,39
+wh2_dlc17_vmp_kevon_lloydstein,Wight King,hero,false,characters/vampire_counts/wh2_dlc17_vmp_kevon_lloydstein.csv,data/skill_trees/characters/vampire_counts/Wight_King__kevon_lloydstein.csv,12,10
+wh3_dlc29_vmp_dieter_helsnicht,Dieter Helsnicht,hero,true,characters/vampire_counts/wh3_dlc29_vmp_dieter_helsnicht.csv,data/skill_trees/characters/vampire_counts/Dieter_Helsnicht.csv,333,21
 wh3_dlc29_vmp_handmaiden,Handmaiden,hero,true,,data/skill_trees/characters/vampire_counts/Handmaiden.csv,0,0
 wh3_dlc29_vmp_handmaiden_imentet,Handmaiden Imentet,hero,true,,data/skill_trees/characters/vampire_counts/Handmaiden_Imentet.csv,0,0
-wh3_dlc29_vmp_krell,Krell,hero,false,,data/skill_trees/characters/vampire_counts/Krell.csv,0,0
-wh3_dlc29_vmp_lahmian_vampire,Lahmian Vampire,hero,true,characters/vampire_counts/wh3_dlc29_vmp_lahmian_vampire.csv,data/skill_trees/characters/vampire_counts/Lahmian_Vampire.csv,112,13
-wh3_dlc29_vmp_master_necromancer_undeath,Master Necromancer (Undeath),lord,true,characters/vampire_counts/wh3_dlc29_vmp_master_necromancer_undeath.csv,data/skill_trees/characters/vampire_counts/Master_Necromancer_Undeath.csv,114,15
-wh3_dlc29_vmp_necromancer_undeath,Necromancer (Undeath),hero,true,characters/vampire_counts/wh3_dlc29_vmp_necromancer_undeath.csv,data/skill_trees/characters/vampire_counts/Necromancer_Undeath.csv,73,13
-wh3_dlc29_vmp_neferata,Neferata,legendary_lord,true,characters/vampire_counts/wh3_dlc29_vmp_neferata.csv,data/skill_trees/characters/vampire_counts/Neferata.csv,63,13
-wh3_dlc29_vmp_walach_harkon,Walach Harkon,hero,true,characters/vampire_counts/wh3_dlc29_vmp_walach_harkon.csv,data/skill_trees/characters/vampire_counts/Walach_Harkon.csv,55,12
-wh_dlc01_chs_kholek_suneater,Kholek Suneater,legendary_lord,false,,data/skill_trees/characters/warriors_of_chaos/Kholek_Suneater.csv,0,0
-wh_dlc01_chs_prince_sigvald,Prince Sigvald,legendary_lord,false,,data/skill_trees/characters/warriors_of_chaos/Prince_Sigvald.csv,0,0
-wh_dlc01_chs_sorcerer_lord_death,Chaos Sorcerer Lord (Death),lord,true,characters/warriors_of_chaos/wh_dlc01_chs_sorcerer_lord_death.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Death.csv,118,12
-wh_dlc01_chs_sorcerer_lord_fire,Chaos Sorcerer Lord (Fire),lord,true,characters/warriors_of_chaos/wh_dlc01_chs_sorcerer_lord_fire.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Fire.csv,119,12
-wh_dlc01_chs_sorcerer_lord_metal,Chaos Sorcerer Lord (Metal),lord,true,characters/warriors_of_chaos/wh_dlc01_chs_sorcerer_lord_metal.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Metal.csv,125,13
-wh_dlc07_chs_chaos_sorcerer_shadow,Chaos Sorcerer (Shadows),hero,true,characters/warriors_of_chaos/wh_dlc07_chs_chaos_sorcerer_shadow.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Shadows.csv,384,205
-wh_dlc07_chs_sorcerer_lord_shadow,Chaos Sorcerer Lord (Shadows),lord,true,characters/warriors_of_chaos/wh_dlc07_chs_sorcerer_lord_shadow.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Shadows.csv,125,13
-wh_dlc08_chs_challenger_khorne,Chaos Challenger,lord,false,,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger.csv,0,0
-wh_dlc08_chs_challenger_nurgle,Chaos Challenger,lord,false,,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger__challenger_nurgle.csv,0,0
-wh_dlc08_chs_challenger_slaanesh,Chaos Challenger,lord,false,,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger__challenger_slaanesh.csv,0,0
-wh_dlc08_chs_challenger_tzeentch,Chaos Challenger,lord,false,,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger__challenger_tzeentch.csv,0,0
-wh_main_chs_archaon,Archaon the Everchosen,legendary_lord,true,characters/warriors_of_chaos/wh_main_chs_archaon.csv,data/skill_trees/characters/warriors_of_chaos/Archaon_the_Everchosen.csv,61,13
-wh_main_chs_chaos_sorcerer_death,Chaos Sorcerer (Death),hero,true,characters/warriors_of_chaos/wh_main_chs_chaos_sorcerer_death.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Death.csv,378,204
-wh_main_chs_chaos_sorcerer_fire,Chaos Sorcerer (Fire),hero,true,characters/warriors_of_chaos/wh_main_chs_chaos_sorcerer_fire.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Fire.csv,378,204
-wh_main_chs_chaos_sorcerer_metal,Chaos Sorcerer (Metal),hero,true,characters/warriors_of_chaos/wh_main_chs_chaos_sorcerer_metal.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Metal.csv,384,205
-wh_main_chs_exalted_hero,Exalted Hero,hero,false,,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero.csv,0,0
-wh_main_chs_lord,Chaos Lord,lord,false,,data/skill_trees/characters/warriors_of_chaos/Chaos_Lord.csv,0,0
-wh3_dlc20_chs_daemon_prince_khorne,Daemon Prince of Khorne,lord,false,,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Khorne.csv,0,0
-wh3_dlc20_chs_daemon_prince_nurgle,Daemon Prince of Nurgle,lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_nurgle.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Nurgle.csv,126,14
-wh3_dlc20_chs_daemon_prince_slaanesh,Daemon Prince of Slaanesh,lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_slaanesh.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Slaanesh.csv,126,14
-wh3_dlc20_chs_daemon_prince_tzeentch,Daemon Prince of Tzeentch,lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_tzeentch.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Tzeentch.csv,126,14
-wh3_dlc20_chs_daemon_prince_undivided,Daemon Prince (Chaos Undivided),lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_undivided.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_Chaos_Undivided.csv,55,12
-wh3_dlc20_chs_exalted_hero_mkho,Exalted Hero of Khorne,hero,false,,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_of_Khorne.csv,0,0
-wh3_dlc20_chs_exalted_hero_mnur,Exalted Hero of Nurgle,hero,false,,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_of_Nurgle.csv,0,0
-wh3_dlc20_chs_sorcerer_metal_mtze,Chaos Sorcerer of Tzeentch (Metal),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_metal_mtze.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Tzeentch_Metal.csv,385,206
-wh3_dlc20_chs_sorcerer_shadows_msla,Chaos Sorcerer of Slaanesh (Shadows),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_shadows_msla.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Slaanesh_Shadows.csv,385,206
-wh3_dlc20_chs_sorcerer_slaanesh_msla,Chaos Sorcerer of Slaanesh (Slaanesh),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_slaanesh_msla.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Slaanesh_Slaanesh.csv,385,206
-wh3_dlc20_chs_sorcerer_tzeentch_mtze,Chaos Sorcerer of Tzeentch (Tzeentch),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_tzeentch_mtze.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Tzeentch_Tzeentch.csv,385,206
-wh3_dlc20_kho_valkia,Valkia the Bloody,legendary_lord,false,,data/skill_trees/characters/warriors_of_chaos/Valkia_the_Bloody.csv,0,0
-wh3_dlc20_nur_festus,Festus the Leechlord,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc20_nur_festus.csv,data/skill_trees/characters/warriors_of_chaos/Festus_the_Leechlord.csv,63,13
-wh3_dlc20_sla_azazel,Azazel,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc20_sla_azazel.csv,data/skill_trees/characters/warriors_of_chaos/Azazel.csv,63,13
-wh3_dlc20_tze_vilitch,Vilitch the Curseling,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc20_tze_vilitch.csv,data/skill_trees/characters/warriors_of_chaos/Vilitch_the_Curseling.csv,63,13
-wh3_dlc24_chs_exalted_hero_mtze,Exalted Hero of Tzeentch,hero,false,,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_of_Tzeentch.csv,0,0
-wh3_dlc25_chs_sorcerer_death_mnur,Chaos Sorcerer of Nurgle (Death),hero,true,characters/warriors_of_chaos/wh3_dlc25_chs_sorcerer_death_mnur.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Nurgle_Death.csv,378,204
-wh3_dlc25_chs_sorcerer_nurgle_mnur,Chaos Sorcerer of Nurgle (Nurgle),hero,true,characters/warriors_of_chaos/wh3_dlc25_chs_sorcerer_nurgle_mnur.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Nurgle_Nurgle.csv,384,205
-wh3_dlc27_chs_exalted_hero_msla,Exalted Hero Slaanesh,hero,false,,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_Slaanesh.csv,0,0
-wh3_dlc29_chs_bloab,Bloab,hero,true,characters/warriors_of_chaos/wh3_dlc29_chs_bloab.csv,data/skill_trees/characters/warriors_of_chaos/Bloab.csv,252,194
-wh3_dlc29_chs_bloab_lord,Bloab Lord,lord,true,characters/warriors_of_chaos/wh3_dlc29_chs_bloab_lord.csv,data/skill_trees/characters/warriors_of_chaos/Bloab_Lord.csv,251,194
-wh3_dlc29_chs_glottkin,Glottkin,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc29_chs_glottkin.csv,data/skill_trees/characters/warriors_of_chaos/Glottkin.csv,76,13
-wh3_dlc29_chs_gutrot_spume,Gutrot Spume,hero,false,,data/skill_trees/characters/warriors_of_chaos/Gutrot_Spume.csv,0,0
-wh3_dlc29_chs_morbidex,Morbidex,hero,false,,data/skill_trees/characters/warriors_of_chaos/Morbidex.csv,0,0
-wh3_dlc29_chs_morbidex_lord,Morbidex Lord,lord,false,,data/skill_trees/characters/warriors_of_chaos/Morbidex_Lord.csv,0,0
-wh3_dlc29_chs_orghotts,Orghotts,hero,false,,data/skill_trees/characters/warriors_of_chaos/Orghotts.csv,0,0
-wh3_dlc29_chs_orghotts_lord,Orghotts Lord,lord,false,,data/skill_trees/characters/warriors_of_chaos/Orghotts_Lord.csv,0,0
+wh3_dlc29_vmp_krell,Krell,hero,false,characters/vampire_counts/wh3_dlc29_vmp_krell.csv,data/skill_trees/characters/vampire_counts/Krell.csv,11,8
+wh3_dlc29_vmp_lahmian_vampire,Lahmian Vampire,hero,true,characters/vampire_counts/wh3_dlc29_vmp_lahmian_vampire.csv,data/skill_trees/characters/vampire_counts/Lahmian_Vampire.csv,144,26
+wh3_dlc29_vmp_master_necromancer_undeath,Master Necromancer (Undeath),lord,true,characters/vampire_counts/wh3_dlc29_vmp_master_necromancer_undeath.csv,data/skill_trees/characters/vampire_counts/Master_Necromancer_Undeath.csv,126,23
+wh3_dlc29_vmp_necromancer_undeath,Necromancer (Undeath),hero,true,characters/vampire_counts/wh3_dlc29_vmp_necromancer_undeath.csv,data/skill_trees/characters/vampire_counts/Necromancer_Undeath.csv,88,22
+wh3_dlc29_vmp_neferata,Neferata,legendary_lord,true,characters/vampire_counts/wh3_dlc29_vmp_neferata.csv,data/skill_trees/characters/vampire_counts/Neferata.csv,84,27
+wh3_dlc29_vmp_walach_harkon,Walach Harkon,hero,true,characters/vampire_counts/wh3_dlc29_vmp_walach_harkon.csv,data/skill_trees/characters/vampire_counts/Walach_Harkon.csv,63,17
+wh_dlc01_chs_kholek_suneater,Kholek Suneater,legendary_lord,false,characters/warriors_of_chaos/wh_dlc01_chs_kholek_suneater.csv,data/skill_trees/characters/warriors_of_chaos/Kholek_Suneater.csv,12,8
+wh_dlc01_chs_prince_sigvald,Prince Sigvald,legendary_lord,false,characters/warriors_of_chaos/wh_dlc01_chs_prince_sigvald.csv,data/skill_trees/characters/warriors_of_chaos/Prince_Sigvald.csv,14,7
+wh_dlc01_chs_sorcerer_lord_death,Chaos Sorcerer Lord (Death),lord,true,characters/warriors_of_chaos/wh_dlc01_chs_sorcerer_lord_death.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Death.csv,126,18
+wh_dlc01_chs_sorcerer_lord_fire,Chaos Sorcerer Lord (Fire),lord,true,characters/warriors_of_chaos/wh_dlc01_chs_sorcerer_lord_fire.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Fire.csv,127,18
+wh_dlc01_chs_sorcerer_lord_metal,Chaos Sorcerer Lord (Metal),lord,true,characters/warriors_of_chaos/wh_dlc01_chs_sorcerer_lord_metal.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Metal.csv,133,19
+wh_dlc07_chs_chaos_sorcerer_shadow,Chaos Sorcerer (Shadows),hero,true,characters/warriors_of_chaos/wh_dlc07_chs_chaos_sorcerer_shadow.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Shadows.csv,388,208
+wh_dlc07_chs_sorcerer_lord_shadow,Chaos Sorcerer Lord (Shadows),lord,true,characters/warriors_of_chaos/wh_dlc07_chs_sorcerer_lord_shadow.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Lord_Shadows.csv,133,19
+wh_dlc08_chs_challenger_khorne,Chaos Challenger,lord,false,characters/warriors_of_chaos/wh_dlc08_chs_challenger_khorne.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger.csv,7,5
+wh_dlc08_chs_challenger_nurgle,Chaos Challenger,lord,false,characters/warriors_of_chaos/wh_dlc08_chs_challenger_nurgle.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger__challenger_nurgle.csv,7,5
+wh_dlc08_chs_challenger_slaanesh,Chaos Challenger,lord,false,characters/warriors_of_chaos/wh_dlc08_chs_challenger_slaanesh.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger__challenger_slaanesh.csv,7,5
+wh_dlc08_chs_challenger_tzeentch,Chaos Challenger,lord,false,characters/warriors_of_chaos/wh_dlc08_chs_challenger_tzeentch.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Challenger__challenger_tzeentch.csv,7,5
+wh_main_chs_archaon,Archaon the Everchosen,legendary_lord,true,characters/warriors_of_chaos/wh_main_chs_archaon.csv,data/skill_trees/characters/warriors_of_chaos/Archaon_the_Everchosen.csv,70,21
+wh_main_chs_chaos_sorcerer_death,Chaos Sorcerer (Death),hero,true,characters/warriors_of_chaos/wh_main_chs_chaos_sorcerer_death.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Death.csv,382,207
+wh_main_chs_chaos_sorcerer_fire,Chaos Sorcerer (Fire),hero,true,characters/warriors_of_chaos/wh_main_chs_chaos_sorcerer_fire.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Fire.csv,382,207
+wh_main_chs_chaos_sorcerer_metal,Chaos Sorcerer (Metal),hero,true,characters/warriors_of_chaos/wh_main_chs_chaos_sorcerer_metal.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_Metal.csv,388,208
+wh_main_chs_exalted_hero,Exalted Hero,hero,false,characters/warriors_of_chaos/wh_main_chs_exalted_hero.csv,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero.csv,5,4
+wh_main_chs_lord,Chaos Lord,lord,false,characters/warriors_of_chaos/wh_main_chs_lord.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Lord.csv,9,7
+wh3_dlc20_chs_daemon_prince_khorne,Daemon Prince of Khorne,lord,false,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_khorne.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Khorne.csv,11,8
+wh3_dlc20_chs_daemon_prince_nurgle,Daemon Prince of Nurgle,lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_nurgle.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Nurgle.csv,138,23
+wh3_dlc20_chs_daemon_prince_slaanesh,Daemon Prince of Slaanesh,lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_slaanesh.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Slaanesh.csv,137,23
+wh3_dlc20_chs_daemon_prince_tzeentch,Daemon Prince of Tzeentch,lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_tzeentch.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_of_Tzeentch.csv,138,24
+wh3_dlc20_chs_daemon_prince_undivided,Daemon Prince (Chaos Undivided),lord,true,characters/warriors_of_chaos/wh3_dlc20_chs_daemon_prince_undivided.csv,data/skill_trees/characters/warriors_of_chaos/Daemon_Prince_Chaos_Undivided.csv,66,21
+wh3_dlc20_chs_exalted_hero_mkho,Exalted Hero of Khorne,hero,false,characters/warriors_of_chaos/wh3_dlc20_chs_exalted_hero_mkho.csv,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_of_Khorne.csv,6,5
+wh3_dlc20_chs_exalted_hero_mnur,Exalted Hero of Nurgle,hero,false,characters/warriors_of_chaos/wh3_dlc20_chs_exalted_hero_mnur.csv,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_of_Nurgle.csv,7,6
+wh3_dlc20_chs_sorcerer_metal_mtze,Chaos Sorcerer of Tzeentch (Metal),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_metal_mtze.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Tzeentch_Metal.csv,389,209
+wh3_dlc20_chs_sorcerer_shadows_msla,Chaos Sorcerer of Slaanesh (Shadows),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_shadows_msla.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Slaanesh_Shadows.csv,390,210
+wh3_dlc20_chs_sorcerer_slaanesh_msla,Chaos Sorcerer of Slaanesh (Slaanesh),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_slaanesh_msla.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Slaanesh_Slaanesh.csv,390,210
+wh3_dlc20_chs_sorcerer_tzeentch_mtze,Chaos Sorcerer of Tzeentch (Tzeentch),hero,true,characters/warriors_of_chaos/wh3_dlc20_chs_sorcerer_tzeentch_mtze.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Tzeentch_Tzeentch.csv,389,209
+wh3_dlc20_kho_valkia,Valkia the Bloody,legendary_lord,false,characters/warriors_of_chaos/wh3_dlc20_kho_valkia.csv,data/skill_trees/characters/warriors_of_chaos/Valkia_the_Bloody.csv,10,9
+wh3_dlc20_nur_festus,Festus the Leechlord,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc20_nur_festus.csv,data/skill_trees/characters/warriors_of_chaos/Festus_the_Leechlord.csv,71,20
+wh3_dlc20_sla_azazel,Azazel,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc20_sla_azazel.csv,data/skill_trees/characters/warriors_of_chaos/Azazel.csv,75,24
+wh3_dlc20_tze_vilitch,Vilitch the Curseling,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc20_tze_vilitch.csv,data/skill_trees/characters/warriors_of_chaos/Vilitch_the_Curseling.csv,76,24
+wh3_dlc24_chs_exalted_hero_mtze,Exalted Hero of Tzeentch,hero,false,characters/warriors_of_chaos/wh3_dlc24_chs_exalted_hero_mtze.csv,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_of_Tzeentch.csv,7,6
+wh3_dlc25_chs_sorcerer_death_mnur,Chaos Sorcerer of Nurgle (Death),hero,true,characters/warriors_of_chaos/wh3_dlc25_chs_sorcerer_death_mnur.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Nurgle_Death.csv,384,209
+wh3_dlc25_chs_sorcerer_nurgle_mnur,Chaos Sorcerer of Nurgle (Nurgle),hero,true,characters/warriors_of_chaos/wh3_dlc25_chs_sorcerer_nurgle_mnur.csv,data/skill_trees/characters/warriors_of_chaos/Chaos_Sorcerer_of_Nurgle_Nurgle.csv,390,210
+wh3_dlc27_chs_exalted_hero_msla,Exalted Hero Slaanesh,hero,false,characters/warriors_of_chaos/wh3_dlc27_chs_exalted_hero_msla.csv,data/skill_trees/characters/warriors_of_chaos/Exalted_Hero_Slaanesh.csv,7,6
+wh3_dlc29_chs_bloab,Bloab,hero,true,characters/warriors_of_chaos/wh3_dlc29_chs_bloab.csv,data/skill_trees/characters/warriors_of_chaos/Bloab.csv,266,204
+wh3_dlc29_chs_bloab_lord,Bloab Lord,lord,true,characters/warriors_of_chaos/wh3_dlc29_chs_bloab_lord.csv,data/skill_trees/characters/warriors_of_chaos/Bloab_Lord.csv,268,206
+wh3_dlc29_chs_glottkin,Glottkin,legendary_lord,true,characters/warriors_of_chaos/wh3_dlc29_chs_glottkin.csv,data/skill_trees/characters/warriors_of_chaos/Glottkin.csv,87,23
+wh3_dlc29_chs_gutrot_spume,Gutrot Spume,hero,false,characters/warriors_of_chaos/wh3_dlc29_chs_gutrot_spume.csv,data/skill_trees/characters/warriors_of_chaos/Gutrot_Spume.csv,9,6
+wh3_dlc29_chs_morbidex,Morbidex,hero,false,characters/warriors_of_chaos/wh3_dlc29_chs_morbidex.csv,data/skill_trees/characters/warriors_of_chaos/Morbidex.csv,11,9
+wh3_dlc29_chs_morbidex_lord,Morbidex Lord,lord,false,characters/warriors_of_chaos/wh3_dlc29_chs_morbidex_lord.csv,data/skill_trees/characters/warriors_of_chaos/Morbidex_Lord.csv,14,11
+wh3_dlc29_chs_orghotts,Orghotts,hero,false,characters/warriors_of_chaos/wh3_dlc29_chs_orghotts.csv,data/skill_trees/characters/warriors_of_chaos/Orghotts.csv,10,8
+wh3_dlc29_chs_orghotts_lord,Orghotts Lord,lord,false,characters/warriors_of_chaos/wh3_dlc29_chs_orghotts_lord.csv,data/skill_trees/characters/warriors_of_chaos/Orghotts_Lord.csv,13,10
 wh3_dlc29_episode_dark_fortress,Dark Fortress,lord,true,,data/skill_trees/characters/warriors_of_chaos/Dark_Fortress.csv,0,0
-wh3_main_dae_belakor,Be'lakor,legendary_lord,true,characters/warriors_of_chaos/wh3_main_dae_belakor.csv,data/skill_trees/characters/warriors_of_chaos/Be_lakor.csv,65,13
-wh3_pro11_chs_cha_harald_hammerstorm,Harald Hammerstorm,hero,false,,data/skill_trees/characters/warriors_of_chaos/Harald_Hammerstorm.csv,0,0
-wh_dlc05_wef_ancient_treeman,Ancient Treeman,lord,true,characters/wood_elves/wh_dlc05_wef_ancient_treeman.csv,data/skill_trees/characters/wood_elves/Ancient_Treeman.csv,121,12
-wh_dlc05_wef_branchwraith,Branchwraith,hero,true,characters/wood_elves/wh_dlc05_wef_branchwraith.csv,data/skill_trees/characters/wood_elves/Branchwraith.csv,81,7
-wh_dlc05_wef_durthu,Durthu,legendary_lord,true,characters/wood_elves/wh_dlc05_wef_durthu.csv,data/skill_trees/characters/wood_elves/Durthu.csv,58,12
-wh_dlc05_wef_glade_lord,Glade Lord,lord,false,,data/skill_trees/characters/wood_elves/Glade_Lord.csv,0,0
-wh_dlc05_wef_glade_lord_fem,Glade Lord,lord,false,,data/skill_trees/characters/wood_elves/Glade_Lord__glade_lord_fem.csv,0,0
-wh_dlc05_wef_orion,Orion,legendary_lord,false,,data/skill_trees/characters/wood_elves/Orion.csv,0,0
-wh_dlc05_wef_spellsinger_beasts,Spellsinger (Beasts),hero,true,characters/wood_elves/wh_dlc05_wef_spellsinger_beasts.csv,data/skill_trees/characters/wood_elves/Spellsinger_Beasts.csv,54,12
-wh_dlc05_wef_spellsinger_life,Spellsinger (Life),hero,true,characters/wood_elves/wh_dlc05_wef_spellsinger_life.csv,data/skill_trees/characters/wood_elves/Spellsinger_Life.csv,57,12
-wh_dlc05_wef_spellsinger_shadow,Spellsinger (Shadows),hero,true,characters/wood_elves/wh_dlc05_wef_spellsinger_shadow.csv,data/skill_trees/characters/wood_elves/Spellsinger_Shadows.csv,61,13
-wh_dlc05_wef_waystalker,Waystalker,hero,false,,data/skill_trees/characters/wood_elves/Waystalker.csv,0,0
-wh2_dlc16_wef_ariel,Avatar of Isha,hero,true,characters/wood_elves/wh2_dlc16_wef_ariel.csv,data/skill_trees/characters/wood_elves/Avatar_of_Isha.csv,377,14
-wh2_dlc16_wef_coeddil,Maddened Ancient,hero,true,characters/wood_elves/wh2_dlc16_wef_coeddil.csv,data/skill_trees/characters/wood_elves/Maddened_Ancient.csv,110,12
-wh2_dlc16_wef_drycha,Drycha,legendary_lord,true,characters/wood_elves/wh2_dlc16_wef_drycha.csv,data/skill_trees/characters/wood_elves/Drycha.csv,63,13
-wh2_dlc16_wef_malicious_ancient_treeman_beasts,Malevolent Ancient Treeman (Beasts),lord,true,characters/wood_elves/wh2_dlc16_wef_malicious_ancient_treeman_beasts.csv,data/skill_trees/characters/wood_elves/Malevolent_Ancient_Treeman_Beasts.csv,117,12
-wh2_dlc16_wef_malicious_ancient_treeman_life,Malevolent Ancient Treeman (Life),lord,true,characters/wood_elves/wh2_dlc16_wef_malicious_ancient_treeman_life.csv,data/skill_trees/characters/wood_elves/Malevolent_Ancient_Treeman_Life.csv,121,12
-wh2_dlc16_wef_malicious_ancient_treeman_shadows,Malevolent Ancient Treeman (Shadows),lord,true,characters/wood_elves/wh2_dlc16_wef_malicious_ancient_treeman_shadows.csv,data/skill_trees/characters/wood_elves/Malevolent_Ancient_Treeman_Shadows.csv,124,13
-wh2_dlc16_wef_malicious_branchwraith_beasts,Malevolent Branchwraith (Beasts),hero,true,characters/wood_elves/wh2_dlc16_wef_malicious_branchwraith_beasts.csv,data/skill_trees/characters/wood_elves/Malevolent_Branchwraith_Beasts.csv,117,12
-wh2_dlc16_wef_malicious_branchwraith_life,Malevolent Branchwraith (Life),hero,true,characters/wood_elves/wh2_dlc16_wef_malicious_branchwraith_life.csv,data/skill_trees/characters/wood_elves/Malevolent_Branchwraith_Life.csv,120,12
-wh2_dlc16_wef_malicious_branchwraith_shadows,Malevolent Branchwraith (Shadows),hero,true,characters/wood_elves/wh2_dlc16_wef_malicious_branchwraith_shadows.csv,data/skill_trees/characters/wood_elves/Malevolent_Branchwraith_Shadows.csv,124,13
-wh2_dlc16_wef_sisters_of_twilight,Sisters of Twilight,legendary_lord,false,,data/skill_trees/characters/wood_elves/Sisters_of_Twilight.csv,0,0
-wh2_dlc16_wef_spellweaver_beasts,Spellweaver (Beasts),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_beasts.csv,data/skill_trees/characters/wood_elves/Spellweaver_Beasts.csv,119,13
-wh2_dlc16_wef_spellweaver_dark,Spellweaver (Dark),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_dark.csv,data/skill_trees/characters/wood_elves/Spellweaver_Dark.csv,113,12
-wh2_dlc16_wef_spellweaver_high,Spellweaver (High),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_high.csv,data/skill_trees/characters/wood_elves/Spellweaver_High.csv,127,14
-wh2_dlc16_wef_spellweaver_life,Spellweaver (Life),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_life.csv,data/skill_trees/characters/wood_elves/Spellweaver_Life.csv,123,13
-wh2_dlc16_wef_spellweaver_shadows,Spellweaver (Shadows),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_shadows.csv,data/skill_trees/characters/wood_elves/Spellweaver_Shadows.csv,126,14
-wh2_twa02_wef_glade_captain,Glade Captain,hero,false,,data/skill_trees/characters/wood_elves/Glade_Captain.csv,0,0
-wh3_dlc29_nag_nagash,Nagash,legendary_lord,true,characters/undead_legions/wh3_dlc29_nag_nagash.csv,data/skill_trees/characters/undead_legions/Nagash.csv,69,12
+wh3_main_dae_belakor,Be'lakor,legendary_lord,true,characters/warriors_of_chaos/wh3_main_dae_belakor.csv,data/skill_trees/characters/warriors_of_chaos/Be_lakor.csv,78,23
+wh3_pro11_chs_cha_harald_hammerstorm,Harald Hammerstorm,hero,false,characters/warriors_of_chaos/wh3_pro11_chs_cha_harald_hammerstorm.csv,data/skill_trees/characters/warriors_of_chaos/Harald_Hammerstorm.csv,4,4
+wh_dlc05_wef_ancient_treeman,Ancient Treeman,lord,true,characters/wood_elves/wh_dlc05_wef_ancient_treeman.csv,data/skill_trees/characters/wood_elves/Ancient_Treeman.csv,148,34
+wh_dlc05_wef_branchwraith,Branchwraith,hero,true,characters/wood_elves/wh_dlc05_wef_branchwraith.csv,data/skill_trees/characters/wood_elves/Branchwraith.csv,97,21
+wh_dlc05_wef_durthu,Durthu,legendary_lord,true,characters/wood_elves/wh_dlc05_wef_durthu.csv,data/skill_trees/characters/wood_elves/Durthu.csv,72,23
+wh_dlc05_wef_glade_lord,Glade Lord,lord,false,characters/wood_elves/wh_dlc05_wef_glade_lord.csv,data/skill_trees/characters/wood_elves/Glade_Lord.csv,23,18
+wh_dlc05_wef_glade_lord_fem,Glade Lord,lord,false,characters/wood_elves/wh_dlc05_wef_glade_lord_fem.csv,data/skill_trees/characters/wood_elves/Glade_Lord__glade_lord_fem.csv,23,18
+wh_dlc05_wef_orion,Orion,legendary_lord,false,characters/wood_elves/wh_dlc05_wef_orion.csv,data/skill_trees/characters/wood_elves/Orion.csv,16,10
+wh_dlc05_wef_spellsinger_beasts,Spellsinger (Beasts),hero,true,characters/wood_elves/wh_dlc05_wef_spellsinger_beasts.csv,data/skill_trees/characters/wood_elves/Spellsinger_Beasts.csv,60,17
+wh_dlc05_wef_spellsinger_life,Spellsinger (Life),hero,true,characters/wood_elves/wh_dlc05_wef_spellsinger_life.csv,data/skill_trees/characters/wood_elves/Spellsinger_Life.csv,63,17
+wh_dlc05_wef_spellsinger_shadow,Spellsinger (Shadows),hero,true,characters/wood_elves/wh_dlc05_wef_spellsinger_shadow.csv,data/skill_trees/characters/wood_elves/Spellsinger_Shadows.csv,67,18
+wh_dlc05_wef_waystalker,Waystalker,hero,false,characters/wood_elves/wh_dlc05_wef_waystalker.csv,data/skill_trees/characters/wood_elves/Waystalker.csv,13,11
+wh2_dlc16_wef_ariel,Avatar of Isha,hero,true,characters/wood_elves/wh2_dlc16_wef_ariel.csv,data/skill_trees/characters/wood_elves/Avatar_of_Isha.csv,399,21
+wh2_dlc16_wef_coeddil,Maddened Ancient,hero,true,characters/wood_elves/wh2_dlc16_wef_coeddil.csv,data/skill_trees/characters/wood_elves/Maddened_Ancient.csv,123,21
+wh2_dlc16_wef_drycha,Drycha,legendary_lord,true,characters/wood_elves/wh2_dlc16_wef_drycha.csv,data/skill_trees/characters/wood_elves/Drycha.csv,80,23
+wh2_dlc16_wef_malicious_ancient_treeman_beasts,Malevolent Ancient Treeman (Beasts),lord,true,characters/wood_elves/wh2_dlc16_wef_malicious_ancient_treeman_beasts.csv,data/skill_trees/characters/wood_elves/Malevolent_Ancient_Treeman_Beasts.csv,139,29
+wh2_dlc16_wef_malicious_ancient_treeman_life,Malevolent Ancient Treeman (Life),lord,true,characters/wood_elves/wh2_dlc16_wef_malicious_ancient_treeman_life.csv,data/skill_trees/characters/wood_elves/Malevolent_Ancient_Treeman_Life.csv,143,30
+wh2_dlc16_wef_malicious_ancient_treeman_shadows,Malevolent Ancient Treeman (Shadows),lord,true,characters/wood_elves/wh2_dlc16_wef_malicious_ancient_treeman_shadows.csv,data/skill_trees/characters/wood_elves/Malevolent_Ancient_Treeman_Shadows.csv,148,31
+wh2_dlc16_wef_malicious_branchwraith_beasts,Malevolent Branchwraith (Beasts),hero,true,characters/wood_elves/wh2_dlc16_wef_malicious_branchwraith_beasts.csv,data/skill_trees/characters/wood_elves/Malevolent_Branchwraith_Beasts.csv,134,27
+wh2_dlc16_wef_malicious_branchwraith_life,Malevolent Branchwraith (Life),hero,true,characters/wood_elves/wh2_dlc16_wef_malicious_branchwraith_life.csv,data/skill_trees/characters/wood_elves/Malevolent_Branchwraith_Life.csv,138,28
+wh2_dlc16_wef_malicious_branchwraith_shadows,Malevolent Branchwraith (Shadows),hero,true,characters/wood_elves/wh2_dlc16_wef_malicious_branchwraith_shadows.csv,data/skill_trees/characters/wood_elves/Malevolent_Branchwraith_Shadows.csv,141,28
+wh2_dlc16_wef_sisters_of_twilight,Sisters of Twilight,legendary_lord,false,characters/wood_elves/wh2_dlc16_wef_sisters_of_twilight.csv,data/skill_trees/characters/wood_elves/Sisters_of_Twilight.csv,17,16
+wh2_dlc16_wef_spellweaver_beasts,Spellweaver (Beasts),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_beasts.csv,data/skill_trees/characters/wood_elves/Spellweaver_Beasts.csv,138,27
+wh2_dlc16_wef_spellweaver_dark,Spellweaver (Dark),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_dark.csv,data/skill_trees/characters/wood_elves/Spellweaver_Dark.csv,133,27
+wh2_dlc16_wef_spellweaver_high,Spellweaver (High),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_high.csv,data/skill_trees/characters/wood_elves/Spellweaver_High.csv,146,28
+wh2_dlc16_wef_spellweaver_life,Spellweaver (Life),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_life.csv,data/skill_trees/characters/wood_elves/Spellweaver_Life.csv,142,27
+wh2_dlc16_wef_spellweaver_shadows,Spellweaver (Shadows),lord,true,characters/wood_elves/wh2_dlc16_wef_spellweaver_shadows.csv,data/skill_trees/characters/wood_elves/Spellweaver_Shadows.csv,145,28
+wh2_twa02_wef_glade_captain,Glade Captain,hero,false,characters/wood_elves/wh2_twa02_wef_glade_captain.csv,data/skill_trees/characters/wood_elves/Glade_Captain.csv,14,11
+wh3_dlc29_nag_nagash,Nagash,legendary_lord,true,characters/undead_legions/wh3_dlc29_nag_nagash.csv,data/skill_trees/characters/undead_legions/Nagash.csv,80,20

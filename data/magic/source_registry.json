@@ -8,28 +8,92 @@
     "status": "archived_outside_increment"
   },
   {
+    "table": "agent_culture_details_tables",
+    "packed_path": "db/agent_culture_details_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/agent_culture_details_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "4a3373ca3c8b34c4fe0440f5157015bdd33645f82c59f646deae94f3b05efc38",
+    "status": "canonical_source"
+  },
+  {
     "table": "agent_subtypes_tables",
     "packed_path": "db/agent_subtypes_tables/data__.tsv",
     "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
-    "normalized_owner": "",
+    "normalized_owner": "unit_stats/abilities",
     "extracted_sha256": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2",
+    "status": "canonical_source"
+  },
+  {
+    "table": "agent_subtypes_to_armory_item_sets_tables",
+    "packed_path": "db/agent_subtypes_to_armory_item_sets_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/agent_subtypes_to_armory_item_sets_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "e88a55873e02e7732bfdfd82bb72bdb1f2aab276ece037de329a29692ea9c415",
+    "status": "canonical_source"
+  },
+  {
+    "table": "agent_subtypes_to_mission_groups_tables",
+    "packed_path": "db/agent_subtypes_to_mission_groups_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/agent_subtypes_to_mission_groups_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "97ad9545dac29107c040d028f6f49b16a4e8d60b1f86dd76392b614ff25c698c",
+    "status": "canonical_source"
+  },
+  {
+    "table": "agent_uniforms_tables",
+    "packed_path": "db/agent_uniforms_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/agent_uniforms_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "1fe80c68bf447569015eff4f32af03dce68a8b99d7eb3972849505c444e7257d",
+    "status": "canonical_source"
+  },
+  {
+    "table": "agents_tables",
+    "packed_path": "db/agents_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "810ca8704b4cfe69ebbd0d8c0e021b399b9c23993675c189d068f89137e2ce63",
+    "status": "canonical_source"
+  },
+  {
+    "table": "area_of_effect_displays_tables",
+    "packed_path": "db/area_of_effect_displays_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/area_of_effect_displays_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "dbc3173339e35812c6c83e2af125923f8b797c8d3754750c806e5cab7dda8ca7",
+    "status": "canonical_source"
+  },
+  {
+    "table": "army_special_abilities_for_faction_junctions_tables",
+    "packed_path": "db/army_special_abilities_for_faction_junctions_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/army_special_abilities_for_faction_junctions_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "76c4d9ded3a43da6453342bf9966303459441e544d0b45ad3c3f53cd6a5ed8d5",
     "status": "canonical_source"
   },
   {
     "table": "army_special_abilities_tables",
     "packed_path": "db/army_special_abilities_tables/data__.tsv",
-    "source_path": "",
-    "normalized_owner": "",
+    "source_path": "data/unit_stats/abilities/source_exports/db/army_special_abilities_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
     "extracted_sha256": "53beeaf7966e959d9e8720b9d466861ceb2590ff6eb032e6780c2f4c6fa5ad69",
-    "status": "archived_outside_increment"
+    "status": "canonical_source"
+  },
+  {
+    "table": "battle_context_army_special_ability_junctions_tables",
+    "packed_path": "db/battle_context_army_special_ability_junctions_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/battle_context_army_special_ability_junctions_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "1d2b3fc534d48cba107a2464df23fd5f939b9025c1ba0480b36a973544e89628",
+    "status": "canonical_source"
   },
   {
     "table": "battle_context_unit_ability_junctions_tables",
     "packed_path": "db/battle_context_unit_ability_junctions_tables/data__.tsv",
-    "source_path": "",
-    "normalized_owner": "",
+    "source_path": "data/unit_stats/abilities/source_exports/db/battle_context_unit_ability_junctions_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
     "extracted_sha256": "991c74dd5ef1429213abf65009f7e7c8543af594a76c352a99b30c3144a07258",
-    "status": "archived_outside_increment"
+    "status": "canonical_source"
   },
   {
     "table": "battle_currency_army_special_abilities_cost_values_tables",
@@ -136,6 +200,62 @@
     "status": "canonical_source"
   },
   {
+    "table": "campaign_bonus_value_battle_context_battle_type_junctions_tables",
+    "packed_path": "db/campaign_bonus_value_battle_context_battle_type_junctions_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/campaign_bonus_value_battle_context_battle_type_junctions_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "194b227b230583856d9eb12063585ee1f2f4472285190891e89c4293804f34ea",
+    "status": "canonical_source"
+  },
+  {
+    "table": "campaign_bonus_value_battle_context_culture_junctions_tables",
+    "packed_path": "db/campaign_bonus_value_battle_context_culture_junctions_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/campaign_bonus_value_battle_context_culture_junctions_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "9602b44118c554d08577e20e29ad6d695cb36ae6358bcdcf8388250ac0432936",
+    "status": "canonical_source"
+  },
+  {
+    "table": "campaign_bonus_value_battle_context_faction_junctions_tables",
+    "packed_path": "db/campaign_bonus_value_battle_context_faction_junctions_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/campaign_bonus_value_battle_context_faction_junctions_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "7cfa5979f36110441b495bd97031894f6aaa0de0ff000a4c82c25b9c4879deeb",
+    "status": "canonical_source"
+  },
+  {
+    "table": "campaign_bonus_value_battle_context_force_status_junctions_tables",
+    "packed_path": "db/campaign_bonus_value_battle_context_force_status_junctions_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/campaign_bonus_value_battle_context_force_status_junctions_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "af436be537e423922420a97ce52116427be17ec4aaba63e17b74b60b4814e710",
+    "status": "canonical_source"
+  },
+  {
+    "table": "campaign_bonus_value_battle_context_ground_type_junctions_tables",
+    "packed_path": "db/campaign_bonus_value_battle_context_ground_type_junctions_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/campaign_bonus_value_battle_context_ground_type_junctions_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "d61daf137998cdf4eca2fd526fe6da5bda8b61de1e3a602c986e8552246bf3fc",
+    "status": "canonical_source"
+  },
+  {
+    "table": "campaign_bonus_value_battle_context_specifiers_tables",
+    "packed_path": "db/campaign_bonus_value_battle_context_specifiers_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/campaign_bonus_value_battle_context_specifiers_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "15f7c9bd8aa16125b06892983ca3f1b49274afcc811df2ed26ba5a9c0e4fa2c8",
+    "status": "canonical_source"
+  },
+  {
+    "table": "campaign_bonus_value_battle_context_territory_status_junctions_tables",
+    "packed_path": "db/campaign_bonus_value_battle_context_territory_status_junctions_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/campaign_bonus_value_battle_context_territory_status_junctions_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "15556554886d1711ab726712afe4cafd049cf78aedd0b24d6c36a66225ab3898",
+    "status": "canonical_source"
+  },
+  {
     "table": "campaign_effect_scope_agent_junctions_tables",
     "packed_path": "db/campaign_effect_scope_agent_junctions_tables/data__.tsv",
     "source_path": "data/effect_semantics/source_exports/db/campaign_effect_scope_agent_junctions_tables/data__.tsv",
@@ -181,6 +301,22 @@
     "source_path": "data/technology_trees/source_exports/db/campaign_effect_scopes_tables/data__.tsv",
     "normalized_owner": "effect_semantics",
     "extracted_sha256": "e40717b517f0fe9b4cc5954484e46c9020d3cead0a7dd2fd178313eba4abd5e8",
+    "status": "canonical_source"
+  },
+  {
+    "table": "campaign_ground_types_tables",
+    "packed_path": "db/campaign_ground_types_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/campaign_ground_types_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "dabdfedc7d862b5a989ccaf8ec72f07dc498007ffb56fdd70e57aaba261b1230",
+    "status": "canonical_source"
+  },
+  {
+    "table": "default_army_special_abilities_tables",
+    "packed_path": "db/default_army_special_abilities_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/default_army_special_abilities_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "d5309173a4d8897e405c6d2e7340976cacb3c2e000e3b0f00b52a05c925177b0",
     "status": "canonical_source"
   },
   {
@@ -264,6 +400,22 @@
     "status": "canonical_source"
   },
   {
+    "table": "faction_set_items_tables",
+    "packed_path": "db/faction_set_items_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/faction_set_items_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "0c00598bc374eb78b02377c208a70a7c90d42d1636a2310b7c46251ffed31bf5",
+    "status": "canonical_source"
+  },
+  {
+    "table": "faction_sets_tables",
+    "packed_path": "db/faction_sets_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/faction_sets_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "74d6738f1f27c30155af125fb320536506f57572c6b79497f9b3352d2521db70",
+    "status": "canonical_source"
+  },
+  {
     "table": "land_units_to_unit_abilites_junctions_tables",
     "packed_path": "db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
     "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
@@ -277,6 +429,14 @@
     "source_path": "data/unit_stats/source_exports/db/melee_weapons_tables/data__.tsv",
     "normalized_owner": "",
     "extracted_sha256": "7f6921dda8cc528f9ae7e21f103d63344f9159e7362b84612792b7f1c34cd4b6",
+    "status": "canonical_source"
+  },
+  {
+    "table": "military_force_types_tables",
+    "packed_path": "db/military_force_types_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/military_force_types_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "0ddfbbb244507db8236f2046696cbcededfa80224dc49341e8fbf2f8cc8af851",
     "status": "canonical_source"
   },
   {
@@ -296,6 +456,30 @@
     "status": "canonical_source"
   },
   {
+    "table": "modifiable_unit_stats_tables",
+    "packed_path": "db/modifiable_unit_stats_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/modifiable_unit_stats_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "e8dfb7e93ad64009feb23bf1d51165fa0469a6fab5cb24265caf69312bb51c79",
+    "status": "canonical_source"
+  },
+  {
+    "table": "pre_battle_unit_targeted_abilities_tables",
+    "packed_path": "db/pre_battle_unit_targeted_abilities_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/pre_battle_unit_targeted_abilities_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "ea32c2dd8adefd2f142029005625812c6b6bd1da9d917bb8eede4fb8985a65aa",
+    "status": "canonical_source"
+  },
+  {
+    "table": "pre_battle_unit_targeted_ability_types_tables",
+    "packed_path": "db/pre_battle_unit_targeted_ability_types_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/pre_battle_unit_targeted_ability_types_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "61e4056a19719cbf67bf7742998e0db79ee8d64aeb76c595882fedeb6704d587",
+    "status": "canonical_source"
+  },
+  {
     "table": "projectile_bombardment_launch_sources_tables",
     "packed_path": "db/projectile_bombardment_launch_sources_tables/data__.tsv",
     "source_path": "data/unit_stats/abilities/source_exports/db/projectile_bombardment_launch_sources_tables/data__.tsv",
@@ -312,10 +496,26 @@
     "status": "canonical_source"
   },
   {
+    "table": "projectile_homing_params_tables",
+    "packed_path": "db/projectile_homing_params_tables/data__.tsv",
+    "source_path": "data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "2e19a5e4496f63351ea42eb9e39b032c52fbebcb8850eae1f6479632dbefb776",
+    "status": "canonical_source"
+  },
+  {
+    "table": "projectile_penetration_junctions_tables",
+    "packed_path": "db/projectile_penetration_junctions_tables/data__.tsv",
+    "source_path": "data/unit_stats/source_exports/db/projectile_penetration_junctions_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "a8bc272cfdef03ffeeab34c8b8633f7ef6a3f0b8e63598a6a615ecc82ff134e6",
+    "status": "canonical_source"
+  },
+  {
     "table": "projectile_shrapnels_tables",
     "packed_path": "db/projectile_shrapnels_tables/data__.tsv",
     "source_path": "data/unit_stats/source_exports/db/projectile_shrapnels_tables/data__.tsv",
-    "normalized_owner": "",
+    "normalized_owner": "unit_stats/abilities",
     "extracted_sha256": "0fae2e0fddf4f760d2a34635292f0bf99672ba53757d9c2ed2387a5504fd38bf",
     "status": "canonical_source"
   },
@@ -325,6 +525,14 @@
     "source_path": "data/unit_stats/source_exports/db/projectiles_explosions_tables/data__.tsv",
     "normalized_owner": "",
     "extracted_sha256": "f27a6e68d096253e56f3556a8a48c6b465a2bb143cefe278933f0ae4013d8203",
+    "status": "canonical_source"
+  },
+  {
+    "table": "projectiles_scaling_damages_tables",
+    "packed_path": "db/projectiles_scaling_damages_tables/data__.tsv",
+    "source_path": "data/unit_stats/source_exports/db/projectiles_scaling_damages_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "3089bc0fe5aaa73eae1813a72df52e4a3b8a1ffa8f5e73eeee16f60b4b7a9230",
     "status": "canonical_source"
   },
   {
@@ -536,6 +744,14 @@
     "status": "canonical_source"
   },
   {
+    "table": "special_unit_categories_tables",
+    "packed_path": "db/special_unit_categories_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "189b32f157e709943eeba66a989f435d6dd8ab0885d2be8b153a517cb99330f9",
+    "status": "canonical_source"
+  },
+  {
     "table": "storm_of_magic_ascendancy_types_tables",
     "packed_path": "db/storm_of_magic_ascendancy_types_tables/data__.tsv",
     "source_path": "",
@@ -600,6 +816,38 @@
     "status": "canonical_source"
   },
   {
+    "table": "unit_attributes_tables",
+    "packed_path": "db/unit_attributes_tables/data__.tsv",
+    "source_path": "data/unit_stats/source_exports/db/unit_attributes_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "3b280f6ed7cb1a043cf1f61c5fcad7bc3c77fe4814731c1109936be998ecc8ca",
+    "status": "canonical_source"
+  },
+  {
+    "table": "unit_castes_tables",
+    "packed_path": "db/unit_castes_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "96ac586a7710d5943493149ca1058119def14686ef98ac9df76eaacef891981a",
+    "status": "canonical_source"
+  },
+  {
+    "table": "unit_category_tables",
+    "packed_path": "db/unit_category_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "ec22030b2998d022631144153ea7d1d8d88c949b3cbb76673deda184c3cccc97",
+    "status": "canonical_source"
+  },
+  {
+    "table": "unit_class_tables",
+    "packed_path": "db/unit_class_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/unit_class_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "a845c0ba4922c0b94d7f61471101dc3f41df4b208dece2b1105daccd183d6b06",
+    "status": "canonical_source"
+  },
+  {
     "table": "unit_set_special_ability_phase_junctions_tables",
     "packed_path": "db/unit_set_special_ability_phase_junctions_tables/data__.tsv",
     "source_path": "data/unit_stats/abilities/source_exports/db/unit_set_special_ability_phase_junctions_tables/data__.tsv",
@@ -608,11 +856,27 @@
     "status": "canonical_source"
   },
   {
+    "table": "unit_set_to_unit_junctions_tables",
+    "packed_path": "db/unit_set_to_unit_junctions_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/unit_set_to_unit_junctions_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "214c8df2a0ba9eacafd13f6c9ed3b97ba3dd3202e6a6156e364a0ab1ade94ad3",
+    "status": "canonical_source"
+  },
+  {
     "table": "unit_set_unit_ability_junctions_tables",
     "packed_path": "db/unit_set_unit_ability_junctions_tables/data__.tsv",
     "source_path": "data/unit_stats/abilities/source_exports/db/unit_set_unit_ability_junctions_tables/data__.tsv",
     "normalized_owner": "unit_stats/abilities",
     "extracted_sha256": "788c12a616ea78dafceaa67d4dd17c6fe481b4846c62ff5dd6e01e59d4eeba55",
+    "status": "canonical_source"
+  },
+  {
+    "table": "unit_sets_tables",
+    "packed_path": "db/unit_sets_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/unit_sets_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "6ee3aaf008cee29a7e1826ab9ece5c996ccc38b8a8f3a25aa29d60c8d1931727",
     "status": "canonical_source"
   },
   {
@@ -629,6 +893,22 @@
     "source_path": "data/unit_stats/abilities/source_exports/db/unit_special_ability_to_special_ability_toggle_groups_junctions_tables/data__.tsv",
     "normalized_owner": "unit_stats/abilities",
     "extracted_sha256": "5b129212e93b925b2c84ef1533afbe7caeac20a60208fe59bee1479a7a267ea2",
+    "status": "canonical_source"
+  },
+  {
+    "table": "unit_stat_localisations_tables",
+    "packed_path": "db/unit_stat_localisations_tables/data__.tsv",
+    "source_path": "data/unit_stats/abilities/source_exports/db/unit_stat_localisations_tables/data__.tsv",
+    "normalized_owner": "unit_stats/abilities",
+    "extracted_sha256": "b9dff6eaa6870ee52cd7d83d95d7ee71c6d6f7a3b1c390bf2b18cdd9de70a394",
+    "status": "canonical_source"
+  },
+  {
+    "table": "unit_stat_modifiers_tables",
+    "packed_path": "db/unit_stat_modifiers_tables/data__.tsv",
+    "source_path": "data/effect_semantics/source_exports/db/unit_stat_modifiers_tables/data__.tsv",
+    "normalized_owner": "effect_semantics",
+    "extracted_sha256": "884d0af318b37f01ac674ecc09865b011ef9fe13666cd4d1a74566dc6e903839",
     "status": "canonical_source"
   }
 ]

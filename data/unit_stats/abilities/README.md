@@ -17,6 +17,7 @@ Do not hand-edit generated records. Ordinary character/spell retrieval starts
 with [magic](../../magic/README.md), not these raw source exports.
 
 This increment uses 9.0.1 extraction evidence with exact comparisons to reused
-9.0 inputs. Projectile/explosion normalization remains under the existing unit
-lookups; magic queries explicitly expose source-only payloads outside current
-lookup coverage. This directory does not create another projectile catalog.
+9.0 inputs. Projectile/explosion normalization extends the existing unit lookups to the
+weapon/ability payload closure. Native shrapnel, homing, penetration and scaling
+relations live here; `payload_provenance.csv` points projected lookup records to
+canonical source lines. This directory does not create another projectile catalog.

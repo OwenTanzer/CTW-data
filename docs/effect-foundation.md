@@ -135,3 +135,12 @@ casting, phase and lifecycle records are under `data/unit_stats/abilities/`.
 Their source registry identifies reused 9.0 inputs and newly promoted evidence.
 The prior 220-table 8.1.1 candidate remains historical development evidence;
 it has not been relabelled or merged wholesale. Neither #7 nor #14 is complete.
+
+### Magic PR #30 review pass
+
+Shared projectile/explosion lookups now include weapon/ability closure. Character
+retrieval covers all represented direct, group, phase, unit-set, army and context
+binding families. Native stat/attribute/unit-set/context definitions and indirect
+phase effects are queryable; missing packed dependencies and engine-only tokens
+remain separate audits. This is data discovery, not a universal build solver or
+runtime modifier evaluator. See `data/magic/README.md` and the development handoff.

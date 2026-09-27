@@ -79,5 +79,8 @@ owned by `data/unit_stats/abilities/`; binding/scope truth by
 `data/effect_semantics/`; progression stays in `data/skill_trees/`.
 The magic extraction is explicitly 9.0.1/build 25546563, with identical shared
 9.0 inputs checked and pinned. This is a scoped exception to the base snapshot,
-not a global database migration. Source-only payloads and unresolved runtime or
-acquisition routes must remain labelled; do not claim #14 is complete.
+not a global database migration. Supported projectile/explosion graphs use the existing unit lookups. Read
+per-variant structural, definition and runtime coverage separately. Conditional
+army/unit-set/context bindings are not personal spell grants; unit/form links
+retain enabling and culture conditions. Source-only summons and unresolved
+acquisition/runtime routes must remain labelled; do not claim #14 is complete.

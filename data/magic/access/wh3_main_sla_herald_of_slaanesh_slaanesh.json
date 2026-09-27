@@ -1,0 +1,482 @@
+{
+  "agent_subtype_key": "wh3_main_sla_herald_of_slaanesh_slaanesh",
+  "skill_relation_count": 159,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+      "land_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh3_main_sla_herald_of_slaanesh_slaanesh",
+          "auto_generate": "true",
+          "is_caster": "true",
+          "small_icon": "ui/campaign ui/agents/wh3_main_lore_slaanesh.png",
+          "associated_unit_override": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+          "audio_voiceover_actor_group": "wh3_main_vo_actor_Slaanesh_Herald_Of_Slaanesh",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "wh3_main_sla_herald_of_slaanesh",
+          "magic_lore": "wh3_main_lore_slaanesh",
+          "names_group": "names_sla_slaanesh",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "wh3_main_vo_culture_Slaanesh",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1000",
+          "recruitment_button_active_icon_path": "ui/skins/default/icon_wh_main_lore_slaanesh.png",
+          "recruitment_button_background_icon_path": "ui/skins/default/button_lore_slaanesh_active.png",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "510",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_character_abilities_locus_of_grace",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7305",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_lord_passive_soul_siphon",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7306",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7307",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh_ii",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7308",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7309",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7310",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+      "land_unit_key": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+          "mounted_unit_key": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_daemonic_steed.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_character_abilities_locus_of_grace",
+            "land_unit": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4981",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_lord_passive_soul_siphon",
+            "land_unit": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4982",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh",
+            "land_unit": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4983",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh_ii",
+            "land_unit": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4984",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4985",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh3_dlc27_sla_cha_herald_of_slaanesh_slaanesh_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4986",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+      "land_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+          "mounted_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+          "icon_name": "ui/campaign ui/mounts/mount_steed_of_slaanesh.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_character_abilities_locus_of_grace",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7311",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_lord_passive_soul_siphon",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7312",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7313",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh_ii",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7314",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7315",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_1",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7316",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+      "land_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+          "mounted_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+          "icon_name": "ui/campaign ui/mounts/mount_seeker_chariot.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_character_abilities_locus_of_grace",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7317",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_lord_passive_soul_siphon",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7318",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7319",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh_ii",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7320",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7321",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_2",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7322",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+      "land_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0",
+          "mounted_unit_key": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+          "icon_name": "ui/campaign ui/mounts/mount_exalted_seeker_chariot.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_main_character_abilities_locus_of_grace",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7323",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_lord_passive_soul_siphon",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7324",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7325",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_slaanesh_ii",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7326",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7327",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh3_main_sla_cha_herald_of_slaanesh_slaanesh_3",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "7328",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

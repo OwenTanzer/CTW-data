@@ -10,6 +10,7 @@ const SNAPSHOT = await buildSnapshot(SOURCE);
 const { UNIT_ROSTERS: ROSTERS } = SNAPSHOT.scope;
 const PATCH = SNAPSHOT.context.patch;
 const OUTPUT = path.resolve(ROOT, process.argv[3] ?? "work/generated_unit_stats__wh3__8.1.1");
+const MAGIC_SOURCE = process.argv[4] ? path.resolve(ROOT, process.argv[4]) : PATCH === "9.0" ? path.join(ROOT,"data/unit_stats/abilities/source_exports") : null;
 const DB = path.join(SOURCE, "db");
 
 const CONTEXT = { ...SNAPSHOT.context, unit_scale: "ultra" };
@@ -301,7 +302,12 @@ const rosterRows = [];
 const mountVariantRows = [];
 const quality = [];
 const selectedUnitKeys = new Set();
-const extractedAt = new Date().toISOString();
+// Preserve the original unit snapshot timestamp for this additive payload pass.
+// The fresh extraction has its own separately pinned magic manifest.
+const extractedAt = MAGIC_SOURCE
+  ? JSON.parse(await readFile(path.join(ROOT,"scripts/magic_payload_baseline.json"),"utf8")).unit_built_at_utc
+  : SNAPSHOT.manifest.extracted_at_utc;
+if (!extractedAt) throw Error("Missing deterministic snapshot timestamp");
 
 for (const roster of ROSTERS) {
   const rows = [];
@@ -543,12 +549,47 @@ for (const unitKey of [...selectedUnitKeys].sort()) {
   for (const variant of mountVariantsByBase.get(unitKey) ?? []) mountVariantRows.push({ ...CONTEXT, base_unit_key: unitKey, mounted_unit_key: variant.mounted_unit, icon_name: variant.icon_name });
 }
 
+// A verified magic source adds ability roots to the same weapon payload owner.
+// Missing references are reported by magic's graph audit; never synthesize rows.
+if (MAGIC_SOURCE) {
+  for (const table of ["unit_special_abilities", "projectile_bombardments"]) {
+    const folder = path.join(MAGIC_SOURCE, "db", table + "_tables");
+    for (const file of (await readdir(folder)).sort()) {
+      if (!file.endsWith(".tsv")) continue;
+      for (const row of recordsFromText(await readFile(path.join(folder,file),"utf8"),"\t")) {
+        const projectile = row.activated_projectile || row.projectile_type;
+        if (projectile && projectileByKey.has(projectile)) projectileKeysUsed.add(projectile);
+        if (row.miscast_explosion && explosionByKey.has(row.miscast_explosion)) explosionKeysUsed.add(row.miscast_explosion);
+      }
+    }
+  }
+  let changed = true;
+  while (changed) {
+    const before = projectileKeysUsed.size + explosionKeysUsed.size;
+    for (const key of projectileKeysUsed) {
+      const explosion = projectileByKey.get(key)?.explosion_type;
+      if (explosion && explosionByKey.has(explosion)) explosionKeysUsed.add(explosion);
+    }
+    for (const key of explosionKeysUsed) {
+      const projectile = shrapnelByKey.get(explosionByKey.get(key)?.shrapnel)?.projectile;
+      if (projectile && projectileByKey.has(projectile)) projectileKeysUsed.add(projectile);
+    }
+    changed = before !== projectileKeysUsed.size + explosionKeysUsed.size;
+  }
+}
+const projectileAliases = {key:"projectile_key", damage:"base_damage", bonus_v_infantry:"bonus_vs_infantry", bonus_v_large:"bonus_vs_large", explosion_type:"explosion_key"};
+const explosionAliases = {key:"explosion_key", detonation_radius:"radius", detonation_duration:"duration", detonation_speed:"speed", detonation_damage:"base_damage", detonation_damage_ap:"ap_damage", detonation_force:"force", shrapnel:"shrapnel_key"};
+const projectileExtra = MAGIC_SOURCE ? Object.keys(tables.projectiles_tables[0]).filter(c => !PROJECTILE_COLUMNS.includes(projectileAliases[c] || c)) : [];
+const explosionExtra = MAGIC_SOURCE ? Object.keys(tables.projectiles_explosions_tables[0]).filter(c => !EXPLOSION_COLUMNS.includes(explosionAliases[c] || c)) : [];
+PROJECTILE_COLUMNS.push(...projectileExtra);
+EXPLOSION_COLUMNS.push(...explosionExtra);
 const projectileRows = [...projectileKeysUsed].sort().map((key) => {
   const row = projectileByKey.get(key);
   const penetration = penetrationByKey.get(row?.projectile_penetration);
   return {
     ...CONTEXT,
     projectile_key: key,
+    ...Object.fromEntries(projectileExtra.map(c => [c,row?.[c]])),
     category: row?.category,
     shot_type: row?.shot_type,
     projectile_number: number(row?.projectile_number),
@@ -597,6 +638,7 @@ const explosionRows = [...explosionKeysUsed].sort().map((key) => {
   return {
     ...CONTEXT,
     explosion_key: key,
+    ...Object.fromEntries(explosionExtra.map(c => [c,row?.[c]])),
     detonator_type: row?.detonator_type,
     detonation_type: row?.detonation_type,
     radius: number(row?.detonation_radius),
@@ -669,6 +711,7 @@ const manifest = {
   source_manifest: path.relative(ROOT, path.join(SOURCE, "source_manifest.json")).replaceAll(path.sep, "/"),
   roster_counts: counts,
   total_units: Object.values(counts).reduce((sum, count) => sum + count, 0),
+  ...(MAGIC_SOURCE ? {payload_extension: {schema_version: 1, extraction_patch: "9.0.1", source_registry: "data/magic/source_registry.json", scope: "weapon and ability payload closure; existing values preserved"}} : {}),
   lookup_counts: {
     unit_components: componentRows.length,
     unit_weapon_links: weaponLinkRows.length,

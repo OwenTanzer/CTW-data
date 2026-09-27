@@ -1,0 +1,14 @@
+caste,localised_name,sort_priority,source_path,source_line,source_patch
+chariot,Chariot,0,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,3,9.0.1
+generic,Generic,0,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,4,9.0.1
+hero,Hero,1,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,5,9.0.1
+lord,Lord,0,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,6,9.0.1
+melee_cavalry,Melee Cavalry,2,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,7,9.0.1
+melee_infantry,Melee Infantry,1,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,8,9.0.1
+missile_cavalry,Missile Cavalry,2,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,9,9.0.1
+missile_infantry,Missile Infantry,1,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,10,9.0.1
+monster,Monster,0,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,11,9.0.1
+monstrous_cavalry,Monstrous Cavalry,2,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,12,9.0.1
+monstrous_infantry,Monstrous Infantry,6,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,13,9.0.1
+war_beast,War Beast,5,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,14,9.0.1
+warmachine,War Machine,3,data/unit_stats/abilities/source_exports/db/unit_castes_tables/data__.tsv,15,9.0.1

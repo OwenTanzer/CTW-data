@@ -1,4 +1,1792 @@
 {
+  "agent_culture_details_tables": {
+    "path": "data/unit_stats/abilities/tables/agent_culture_details.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "agent",
+      "culture",
+      "associated_unit",
+      "season",
+      "level",
+      "agent_recruited_movie",
+      "gender",
+      "icon",
+      "small_icon",
+      "recruitable_in_ui"
+    ],
+    "definition": {
+      "version": 9,
+      "fields": [
+        {
+          "name": "agent",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "agents",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "culture",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "cultures",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "associated_unit",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "main_units",
+            "unit"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "I32",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "season",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 6,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "level",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 7,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "agent_recruited_movie",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "movie_event_strings",
+            "event"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 8,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "gender",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "genders",
+            "gender"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 9,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "icon",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": true,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 10,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "small_icon",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": "ui/campaign ui/agents/paladin.png",
+          "is_filename": true,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Small icon used in various places like agent id, minimap, etc",
+          "ca_order": 11,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "recruitable_in_ui",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 12,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "onscreen_name",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "description_text",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        3
+      ]
+    },
+    "rows": 207
+  },
+  "agent_subtypes_tables": {
+    "path": "data/unit_stats/abilities/tables/agent_subtypes.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "auto_generate",
+      "is_caster",
+      "small_icon",
+      "associated_unit_override",
+      "audio_voiceover_actor_group",
+      "show_in_ui",
+      "cap",
+      "has_female_name",
+      "can_gain_xp",
+      "loyalty_is_applicable",
+      "contributes_to_agent_cap",
+      "recruitment_category",
+      "magic_lore",
+      "names_group",
+      "can_be_loaned",
+      "recruitable",
+      "saving_settings",
+      "audio_vo_culture_override",
+      "spam_click_vo_enabled",
+      "can_equip_ancillaries",
+      "cost",
+      "recruitment_button_active_icon_path",
+      "recruitment_button_background_icon_path",
+      "audio_force_contextual_vo"
+    ],
+    "definition": {
+      "version": 3,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "auto_generate",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "is_caster",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "small_icon",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": "ui/campaign ui/agents/paladin.png",
+          "is_filename": true,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Small icon shown in various places like agent id, minimap, etc. Leave blank to fall back to icon found in agent_culture_details",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "associated_unit_override",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "main_units",
+            "unit"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "audio_voiceover_actor_group",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "audio_vo_actor_groups",
+            "name"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 7,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "show_in_ui",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 8,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "cap",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "-1",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 9,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "has_female_name",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 10,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "can_gain_xp",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 11,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "loyalty_is_applicable",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Enables and disables loyalty for a character if the faction features are setup to allow for it.",
+          "ca_order": 12,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "contributes_to_agent_cap",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 13,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "recruitment_category",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "agent_recruitment_categories",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 15,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "magic_lore",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "special_ability_groups",
+            "ability_group"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 16,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "names_group",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "names_groups",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 14,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "can_be_loaned",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "This character can be loaned under war coordination. Irrelevant if the character is a hero",
+          "ca_order": 17,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "recruitable",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Can this agent subtype be recruited through normal means?",
+          "ca_order": 18,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "saving_settings",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "character_saving_settings",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 19,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "audio_vo_culture_override",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 20,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "spam_click_vo_enabled",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 21,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "can_equip_ancillaries",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 22,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "cost",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 23,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "recruitment_button_active_icon_path",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 24,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "recruitment_button_background_icon_path",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 25,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "audio_force_contextual_vo",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Force having contextual voice-over for the character. This is needed as in the code there is a hard-coded check for the agent subtype's key in order to disallow old characters (from wh) to have such voice-over.",
+          "ca_order": 26,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "onscreen_name_override",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "If this exists, this name will be used on ui for agents of this type. Otherwise will fallback to name in agent_culture_details",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "description_text_override",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        0
+      ]
+    },
+    "rows": 662
+  },
+  "agent_subtypes_to_armory_item_sets_tables": {
+    "path": "data/unit_stats/abilities/tables/agent_subtypes_to_armory_item_sets.csv",
+    "keys": [
+      "armory_item_set"
+    ],
+    "columns": [
+      "armory_item_set",
+      "agent_subtype"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "agent_subtype",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "agent_subtypes",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "armory_item_set",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "armory_item_sets",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 85
+  },
+  "agent_subtypes_to_mission_groups_tables": {
+    "path": "data/unit_stats/abilities/tables/agent_subtypes_to_mission_groups.csv",
+    "keys": [
+      "agent"
+    ],
+    "columns": [
+      "agent",
+      "battle_effect",
+      "effect_bundle",
+      "mission_group",
+      "video_path",
+      "image_path",
+      "order"
+    ],
+    "definition": {
+      "version": 1,
+      "fields": [
+        {
+          "name": "agent",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "agent_subtypes",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "battle_effect",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "effect_bundles",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "effect_bundle",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "effect_bundles",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "mission_group",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "mission_groups",
+            "group_key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "video_path",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "image_path",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "order",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 6,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 11
+  },
+  "agent_uniforms_tables": {
+    "path": "data/unit_stats/abilities/tables/agent_uniforms.csv",
+    "keys": [
+      "uniform_name"
+    ],
+    "columns": [
+      "uniform_name",
+      "filename",
+      "battle_filename",
+      "campaign_porthole_filename",
+      "campaign_politician_filename",
+      "campaign_override_skeleton"
+    ],
+    "definition": {
+      "version": 10,
+      "fields": [
+        {
+          "name": "filename",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "variants",
+            "variant_name"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "uniform_name",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "battle_filename",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": ".",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "variants",
+            "variant_name"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "campaign_porthole_filename",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "variants",
+            "variant_name"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "campaign_politician_filename",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "campaign_override_skeleton",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 1128
+  },
+  "agents_tables": {
+    "path": "data/unit_stats/abilities/tables/agents.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "move_points",
+      "line_of_sight",
+      "playable",
+      "portrait_override",
+      "primary_attribute",
+      "faction_total_cap",
+      "in_encyclopedia",
+      "encyclopedia_url"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "move_points",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "For generals (lords) and units they command, this is superseded by the campaign_action_points value in the land_units table. However, the AI uses this value when estimating the movement range of its forces",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "line_of_sight",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "playable",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "true",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "portrait_override",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "primary_attribute",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "agent_attributes",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "faction_total_cap",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "10",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 6,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "in_encyclopedia",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 7,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "encyclopedia_url",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "URL for encyclopedia",
+          "ca_order": 8,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 9
+  },
+  "area_of_effect_displays_tables": {
+    "path": "data/unit_stats/abilities/tables/area_of_effect_displays.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "decal",
+      "vfx_central",
+      "vfx_ring",
+      "spline_animation_speed",
+      "spline_tile_count",
+      "composite_scene",
+      "is_targetting_per_entity",
+      "vfx_ring_segment_length",
+      "use_model_time",
+      "custom_spline",
+      "spawn_no_proxy",
+      "spline_col_hex",
+      "spline_oor_col_hex"
+    ],
+    "definition": {
+      "version": 10,
+      "fields": [
+        {
+          "name": "decal",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Example: RigidModels/Decals/battle/impact_decal.rigid_model_v2",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "vfx_central",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "particle_effects",
+            "key"
+          ],
+          "lookup": null,
+          "description": "Effect that appears in centre",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "vfx_ring",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "particle_effects",
+            "key"
+          ],
+          "lookup": null,
+          "description": "Effect that appears in ring around bounds",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "spline_col_r",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "255",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Colour when in range or cast",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": 1
+        },
+        {
+          "name": "spline_col_g",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "255",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Colour when in range or cast",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": 1
+        },
+        {
+          "name": "spline_col_b",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "255",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Colour when in range or cast",
+          "ca_order": 6,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": 1
+        },
+        {
+          "name": "spline_oor_col_r",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "255",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Colour when out of casting range",
+          "ca_order": 7,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": 2
+        },
+        {
+          "name": "spline_oor_col_g",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "255",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Colour when out of casting range",
+          "ca_order": 8,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": 2
+        },
+        {
+          "name": "spline_oor_col_b",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "255",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Colour when out of casting range",
+          "ca_order": 9,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": 2
+        },
+        {
+          "name": "spline_animation_speed",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "If not 0, spline will spin around. Higher the value, the slower it will spin. If set negative will spin opposite direction.",
+          "ca_order": 10,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "spline_tile_count",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "1",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Default to 1 to have regular behaviour, this is how many times will repeat texture along spline",
+          "ca_order": 11,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "composite_scene",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": true,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "This is composite scene that will be rendered in centre (in same fashion as central vfx)",
+          "ca_order": 12,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "is_targetting_per_entity",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "This is for single click abilities where want aoe display to be shown per entity rather than per unit (mainly gyrobombers bomb drop ability)",
+          "ca_order": 13,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "vfx_ring_segment_length",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "-1",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "If set to value other than -1, this is used to create number of segments instead of spline tile count",
+          "ca_order": 14,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "use_model_time",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "If true will animate in model time not real time",
+          "ca_order": 15,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "custom_spline",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "custom_splines",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 16,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "spawn_no_proxy",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "If you want to disable showing the spawned unit proxy/decal, please set this value to true",
+          "ca_order": 17,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 148
+  },
+  "army_special_abilities_for_faction_junctions_tables": {
+    "path": "data/unit_stats/abilities/tables/army_special_abilities_for_faction_junctions.csv",
+    "keys": [
+      "army_special_ability",
+      "faction"
+    ],
+    "columns": [
+      "army_special_ability",
+      "faction",
+      "is_hidden_in_ui"
+    ],
+    "definition": {
+      "version": 1,
+      "fields": [
+        {
+          "name": "army_special_ability",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "army_special_abilities",
+            "army_special_ability"
+          ],
+          "lookup": null,
+          "description": "Please don't add army abilities to this table unless they are explicitly designed to be usable in custom battle. This table is only used for junctioning army abilities to factions for custom battle, so it doesn't affect campaign.",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "faction",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "factions",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "is_hidden_in_ui",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 373
+  },
+  "army_special_abilities_tables": {
+    "path": "data/unit_stats/abilities/tables/army_special_abilities.csv",
+    "keys": [
+      "army_special_ability"
+    ],
+    "columns": [
+      "army_special_ability",
+      "unit_special_ability",
+      "unique_id",
+      "enables_siege_assault"
+    ],
+    "definition": {
+      "version": 2,
+      "fields": [
+        {
+          "name": "army_special_ability",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unit_special_ability",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_special_abilities",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unique_id",
+          "field_type": "I64",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "enables_siege_assault",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 286
+  },
+  "battle_context_army_special_ability_junctions_tables": {
+    "path": "data/unit_stats/abilities/tables/battle_context_army_special_ability_junctions.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "army_special_ability",
+      "battle_context"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "army_special_ability",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "army_special_abilities",
+            "army_special_ability"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "battle_context",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 6
+  },
+  "battle_context_unit_ability_junctions_tables": {
+    "path": "data/unit_stats/abilities/tables/battle_context_unit_ability_junctions.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "battle_context",
+      "unit_ability"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unit_ability",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_abilities",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 8
+  },
   "battle_vortex_collision_responses_tables": {
     "path": "data/unit_stats/abilities/tables/battle_vortex_collision_responses.csv",
     "keys": [
@@ -912,6 +2700,454 @@
     },
     "rows": 313
   },
+  "campaign_bonus_value_battle_context_battle_type_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_battle_type_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "battle_type_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "battle_type_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "battle_type_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_battle_type_enums",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 6
+  },
+  "campaign_bonus_value_battle_context_culture_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_culture_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "culture_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "culture_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "culture_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "cultures",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 286
+  },
+  "campaign_bonus_value_battle_context_faction_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_faction_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "faction_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "faction_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "faction_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "factions",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 6
+  },
+  "campaign_bonus_value_battle_context_force_status_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_force_status_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "force_status_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "force_status_key",
+      "is_yours"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "force_status_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_force_status",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "is_yours",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 13
+  },
+  "campaign_bonus_value_battle_context_ground_type_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_ground_type_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "ground_type_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "ground_type_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "ground_type_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_ground_types",
+            "type"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 11
+  },
+  "campaign_bonus_value_battle_context_specifiers_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_specifiers.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "night_battles_only",
+      "your_force_type",
+      "their_force_type",
+      "war_contract_battles_only"
+    ],
+    "definition": {
+      "version": 1,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "night_battles_only",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "your_force_type",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "military_force_types",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "their_force_type",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "military_force_types",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "war_contract_battles_only",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 104
+  },
+  "campaign_bonus_value_battle_context_territory_status_junctions_tables": {
+    "path": "data/effect_semantics/tables/campaign_bonus_value_battle_context_territory_status_junctions.csv",
+    "keys": [
+      "battle_context_key",
+      "territory_status_key"
+    ],
+    "columns": [
+      "battle_context_key",
+      "territory_status_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "battle_context_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_specifiers",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "territory_status_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_bonus_value_battle_context_territory_status",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 10
+  },
   "campaign_effect_scope_agent_junctions_tables": {
     "path": "data/effect_semantics/tables/campaign_effect_scope_agent_junctions.csv",
     "keys": [
@@ -1359,6 +3595,215 @@
       ]
     },
     "rows": 540
+  },
+  "campaign_ground_types_tables": {
+    "path": "data/unit_stats/abilities/tables/campaign_ground_types.csv",
+    "keys": [
+      "type"
+    ],
+    "columns": [
+      "type",
+      "movement_cost",
+      "is_sea",
+      "icon",
+      "audio_type",
+      "standard_cursor",
+      "selection_cursor",
+      "audio_reverb"
+    ],
+    "definition": {
+      "version": 10,
+      "fields": [
+        {
+          "name": "type",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "movement_cost",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "is_sea",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "icon",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": "terrain_grassland_plains.png",
+          "is_filename": true,
+          "filename_relative_path": "ui/campaign ui/terrain_pips/%",
+          "is_reference": null,
+          "lookup": null,
+          "description": "icon for tooltips",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "audio_type",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "audio_campaign_ground_types",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "standard_cursor",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "cursors",
+            "key"
+          ],
+          "lookup": null,
+          "description": "Cursor shown when nothing selected and over this ground type",
+          "ca_order": 6,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "selection_cursor",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "cursors",
+            "key"
+          ],
+          "lookup": null,
+          "description": "Cursor shown when character selected and over this ground type",
+          "ca_order": 7,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "audio_reverb",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "audio_campaign_environment_reverbs",
+            "name"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 8,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "onscreen_name",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        0
+      ]
+    },
+    "rows": 21
+  },
+  "default_army_special_abilities_tables": {
+    "path": "data/unit_stats/abilities/tables/default_army_special_abilities.csv",
+    "keys": [
+      "army_special_ability"
+    ],
+    "columns": [
+      "army_special_ability"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "army_special_ability",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "army_special_abilities",
+            "army_special_ability"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 2
   },
   "effect_bonus_value_battle_context_army_special_ability_junctions_tables": {
     "path": "data/effect_semantics/tables/effect_bonus_value_battle_context_army_special_ability_junctions.csv",
@@ -2051,6 +4496,449 @@
     },
     "rows": 721
   },
+  "faction_set_items_tables": {
+    "path": "data/unit_stats/abilities/tables/faction_set_items.csv",
+    "keys": [
+      "id"
+    ],
+    "columns": [
+      "id",
+      "culture",
+      "faction",
+      "remove",
+      "set",
+      "subculture"
+    ],
+    "definition": {
+      "version": 1,
+      "fields": [
+        {
+          "name": "culture",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "cultures",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "faction",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "factions",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "remove",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "set",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "faction_sets",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "subculture",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "cultures_subcultures",
+            "subculture"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "id",
+          "field_type": "I64",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 1234
+  },
+  "faction_sets_tables": {
+    "path": "data/unit_stats/abilities/tables/faction_sets.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 231
+  },
+  "military_force_types_tables": {
+    "path": "data/unit_stats/abilities/tables/military_force_types.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "flag_model_skin_override"
+    ],
+    "definition": {
+      "version": 1,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "flag_model_skin_override",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Use to change model used for campaign flags for this army type (for exmaple used on wh3 caravans). Refers to folder in ui/3dui/models",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 33
+  },
+  "modifiable_unit_stats_tables": {
+    "path": "data/effect_semantics/tables/modifiable_unit_stats.csv",
+    "keys": [
+      "stat_key"
+    ],
+    "columns": [
+      "stat_key",
+      "localisation"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "localisation",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_stat_localisations",
+            "stat_key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "stat_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 51
+  },
+  "pre_battle_unit_targeted_abilities_tables": {
+    "path": "data/unit_stats/abilities/tables/pre_battle_unit_targeted_abilities.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "allowed_as_reinforcing_faction",
+      "allowed_as_reinforcing_force",
+      "applied_effects",
+      "type",
+      "allowed_as_agent",
+      "cost_resource_factor",
+      "gain_resource_factor"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "allowed_as_reinforcing_faction",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "allowed_as_reinforcing_force",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 6,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "applied_effects",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "campaign_effect_lists",
+            "key"
+          ],
+          "lookup": null,
+          "description": "What effects to apply to the affected units",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "type",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "pre_battle_unit_targeted_ability_types",
+            "key"
+          ],
+          "lookup": null,
+          "description": "Hard-coded ability type. Determines what actually happens to the units.",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "allowed_as_agent",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 7,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "cost_resource_factor",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "pooled_resource_factor_junctions",
+            "unique_id"
+          ],
+          "lookup": null,
+          "description": "Used when paying to apply the ability. Empty means gold.",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "gain_resource_factor",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "pooled_resource_factor_junctions",
+            "unique_id"
+          ],
+          "lookup": null,
+          "description": "Used when gaining a reward for applying the ability. Empty means gold.",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 1
+  },
+  "pre_battle_unit_targeted_ability_types_tables": {
+    "path": "data/unit_stats/abilities/tables/pre_battle_unit_targeted_ability_types.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 1
+  },
   "projectile_bombardment_launch_sources_tables": {
     "path": "data/unit_stats/abilities/tables/projectile_bombardment_launch_sources.csv",
     "keys": [
@@ -2334,6 +5222,383 @@
       "localised_key_order": []
     },
     "rows": 130
+  },
+  "projectile_homing_params_tables": {
+    "path": "data/unit_stats/abilities/tables/projectile_homing_params.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "lookahead_time",
+      "max_target_angle_delta",
+      "start_time",
+      "steering_coefficient"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "lookahead_time",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Time to look ahead to predict future position of target (intercept vs pursuit).",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "max_target_angle_delta",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "60",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "If target angle delta is greater than this threshold, stop homing.",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "start_time",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Time after launch to start homing.",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "steering_coefficient",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0.1",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Multiplier to muzzle speed to get velocity correction per second.",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 15
+  },
+  "projectile_penetration_junctions_tables": {
+    "path": "data/unit_stats/abilities/tables/projectile_penetration_junctions.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "description",
+      "entity_size_cap",
+      "max_penetration"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "description",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "User description.",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "entity_size_cap",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "battle_entities_size_enums",
+            "key"
+          ],
+          "lookup": null,
+          "description": "Size of entity that will stop this projectile immediately.",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Unique key.",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "max_penetration",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "Penetration stat. A higher number means this projectile passes through more penetration points before being stopped. Check the battle entities table to see how many penetration points a single entity has.",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 21
+  },
+  "projectile_shrapnels_tables": {
+    "path": "data/unit_stats/abilities/tables/projectile_shrapnels.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "projectile",
+      "amount",
+      "launch_type",
+      "sector_angle"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "projectile",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "projectiles",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "amount",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "1",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "launch_type",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "shrapnel_launch_type_enums",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "sector_angle",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 26
+  },
+  "projectiles_scaling_damages_tables": {
+    "path": "data/unit_stats/abilities/tables/projectiles_scaling_damages.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "max_damage_multiplier",
+      "max_health_ratio",
+      "min_damage_multiplier",
+      "min_health_ratio"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "max_damage_multiplier",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "max_health_ratio",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "min_damage_multiplier",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "min_health_ratio",
+          "field_type": "F32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 9
   },
   "special_abilities_specific_formation_types_tables": {
     "path": "data/unit_stats/abilities/tables/special_abilities_specific_formation_types.csv",
@@ -4661,6 +7926,38 @@
     },
     "rows": 2730
   },
+  "special_unit_categories_tables": {
+    "path": "data/unit_stats/abilities/tables/special_unit_categories.csv",
+    "keys": [
+      "category"
+    ],
+    "columns": [
+      "category"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "category",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 8
+  },
   "unit_abilities_additional_ui_effects_tables": {
     "path": "data/unit_stats/abilities/tables/unit_abilities_additional_ui_effects.csv",
     "keys": [
@@ -5306,6 +8603,331 @@
     },
     "rows": 30
   },
+  "unit_attributes_tables": {
+    "path": "data/unit_stats/abilities/tables/unit_attributes.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key"
+    ],
+    "definition": {
+      "version": 5,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "bullet_text",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "imued_effect_text",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": "placeholder",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "removed_effect_text",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        0
+      ]
+    },
+    "rows": 87
+  },
+  "unit_castes_tables": {
+    "path": "data/unit_stats/abilities/tables/unit_castes.csv",
+    "keys": [
+      "caste"
+    ],
+    "columns": [
+      "caste",
+      "localised_name",
+      "sort_priority"
+    ],
+    "definition": {
+      "version": 2,
+      "fields": [
+        {
+          "name": "caste",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "localised_name",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "sort_priority",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "localised_name",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        0
+      ]
+    },
+    "rows": 13
+  },
+  "unit_category_tables": {
+    "path": "data/unit_stats/abilities/tables/unit_category.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "localised_name"
+    ],
+    "definition": {
+      "version": 3,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "localised_name",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "localised_name",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        0
+      ]
+    },
+    "rows": 9
+  },
+  "unit_class_tables": {
+    "path": "data/unit_stats/abilities/tables/unit_class.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "onscreen",
+      "sort_priority"
+    ],
+    "definition": {
+      "version": 5,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "onscreen",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "sort_priority",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "0",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "onscreen",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "tooltip",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        0
+      ]
+    },
+    "rows": 18
+  },
   "unit_set_special_ability_phase_junctions_tables": {
     "path": "data/unit_stats/abilities/tables/unit_set_special_ability_phase_junctions.csv",
     "keys": [
@@ -5376,6 +8998,137 @@
     },
     "rows": 104
   },
+  "unit_set_to_unit_junctions_tables": {
+    "path": "data/unit_stats/abilities/tables/unit_set_to_unit_junctions.csv",
+    "keys": [
+      "unit_caste",
+      "unit_category",
+      "unit_class",
+      "unit_record",
+      "unit_set"
+    ],
+    "columns": [
+      "unit_caste",
+      "unit_category",
+      "unit_class",
+      "unit_record",
+      "unit_set",
+      "exclude"
+    ],
+    "definition": {
+      "version": 1,
+      "fields": [
+        {
+          "name": "exclude",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 5,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unit_caste",
+          "field_type": "OptionalStringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_castes",
+            "caste"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unit_category",
+          "field_type": "OptionalStringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_category",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unit_class",
+          "field_type": "OptionalStringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_class",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unit_record",
+          "field_type": "OptionalStringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "main_units",
+            "unit"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "unit_set",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_sets",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 26559
+  },
   "unit_set_unit_ability_junctions_tables": {
     "path": "data/unit_stats/abilities/tables/unit_set_unit_ability_junctions.csv",
     "keys": [
@@ -5445,6 +9198,105 @@
       "localised_key_order": []
     },
     "rows": 726
+  },
+  "unit_sets_tables": {
+    "path": "data/unit_stats/abilities/tables/unit_sets.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "use_unit_exp_level_range",
+      "min_unit_exp_level_inclusive",
+      "max_unit_exp_level_inclusive",
+      "special_category"
+    ],
+    "definition": {
+      "version": 2,
+      "fields": [
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "use_unit_exp_level_range",
+          "field_type": "Boolean",
+          "is_key": false,
+          "default_value": "false",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "min_unit_exp_level_inclusive",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "-1",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "max_unit_exp_level_inclusive",
+          "field_type": "I32",
+          "is_key": false,
+          "default_value": "-1",
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 3,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "special_category",
+          "field_type": "OptionalStringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "special_unit_categories",
+            "category"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 4,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 3779
   },
   "unit_special_abilities_tables": {
     "path": "data/unit_stats/abilities/tables/ability_casting.csv",
@@ -6729,5 +10581,140 @@
       "localised_key_order": []
     },
     "rows": 17
+  },
+  "unit_stat_localisations_tables": {
+    "path": "data/unit_stats/abilities/tables/unit_stat_localisations.csv",
+    "keys": [
+      "stat_key"
+    ],
+    "columns": [
+      "stat_key"
+    ],
+    "definition": {
+      "version": 0,
+      "fields": [
+        {
+          "name": "stat_key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [
+        {
+          "name": "onscreen_name",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "tooltip_text",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": -1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_key_order": [
+        0
+      ]
+    },
+    "rows": 56
+  },
+  "unit_stat_modifiers_tables": {
+    "path": "data/effect_semantics/tables/unit_stat_modifiers.csv",
+    "keys": [
+      "key"
+    ],
+    "columns": [
+      "key",
+      "how",
+      "stat"
+    ],
+    "definition": {
+      "version": 2,
+      "fields": [
+        {
+          "name": "how",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "unit_stat_modifiers_how_enums",
+            "key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 2,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "key",
+          "field_type": "StringU8",
+          "is_key": true,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": null,
+          "lookup": null,
+          "description": "",
+          "ca_order": 0,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        },
+        {
+          "name": "stat",
+          "field_type": "StringU8",
+          "is_key": false,
+          "default_value": null,
+          "is_filename": false,
+          "filename_relative_path": null,
+          "is_reference": [
+            "modifiable_unit_stats",
+            "stat_key"
+          ],
+          "lookup": null,
+          "description": "",
+          "ca_order": 1,
+          "is_bitwise": 0,
+          "enum_values": {},
+          "is_part_of_colour": null
+        }
+      ],
+      "localised_fields": [],
+      "localised_key_order": []
+    },
+    "rows": 6
   }
 }

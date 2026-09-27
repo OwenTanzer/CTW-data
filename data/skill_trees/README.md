@@ -57,3 +57,7 @@ Use [the magic entry point](../magic/README.md) for indexed skill-effect → bin
 node-set conditions and ranks. The magic index is not a selected skill allocation;
 base payloads and modifiers remain separate, and lore-group modifiers do not
 establish access to every spell in that group.
+
+Magic retrieval also exposes conditional unit-set/army/battle-context routes and
+exact base-unit/mount access evidence. Repeat `--skill KEY:LEVEL` to retrieve a
+supplied selection; legality solving and effective-build arithmetic stay downstream.

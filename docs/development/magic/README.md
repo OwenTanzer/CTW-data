@@ -1,107 +1,126 @@
-# Magic: first source-backed retrieval increment (#14)
+# Magic retrieval and shared payload integration (#14, PR #30)
 
-This increment resumes the preserved September 26 checkpoint on main
-`63c93e453a8ed35ba8f8a166253c4c03b9eb1ac5`. It does **not close #14**.
-The prior checkpoint remains at `checkpoint/magic-partial-20260926`; its importer
-and 8.1.1 snapshot assumptions are not promoted into the production workflow.
+This PR delivers a bounded database increment. It does **not close #14** or
+implement build legality solving, expected damage or runtime combat simulation.
 
-## Evidence recovered
+## Evidence and ownership
 
-The MSI installation now reports executable 9.0.1.0 / Steam build 25546563.
-The 9.0 guard correctly rejected it. An explicit 9.0.1 profile then performed
-fresh read-only extraction under the existing shared RPFM mutex. Neither a game
-pack nor an existing production snapshot was modified. The user explicitly
-excluded a separate hotfix migration from this work.
+The read-only guarded MSI extraction is 9.0.1 / build 25546563, executable
+9.0.1.0. The final source contains 114 tables / 85,299 rows. Every overlapping
+DB export matches its existing 9.0 owner, which is reused and hash-pinned.
+This records hotfix provenance, not a global snapshot migration.
 
-The extractor recovered 79 tables / 50,742 records. All nine previously missing
-relation families are present. Source validation checks the exact file inventory,
-hashes, sizes, selected packed paths, schema versions/columns, native types and
-source-key uniqueness. Every database export overlapping a current owner is
-text-identical to that owner's 9.0 export. This is a bounded source comparison,
-not a claim about all hotfix content. Unchanged sources are referenced in place.
+The source archive is pinned at commit
+`9d5c8bee9888fe1092528472f4faa3e0260a8c83`, branch
+`checkpoint/magic-source-phase2-20260927`, path `work/magic-source-review.tar.gz`.
+The extraction manifest records installation checks before and after extraction,
+executable hashing and pack name/size/mtime, not full hashes of every game pack.
+Source verification checks the exact inventory, hashes, sizes, packed paths,
+schema versions, native column types and source-key uniqueness.
 
-The source archive is retained on a development checkpoint, not default agent
-routing: commit `4d16368f1d5ab822197dade576c4e27ce24d5596`, path
-`work/magic-source-9.0.1.tar.gz`. Its extraction manifest is included in the
-magic dataset; its metadata records installation checks before and after the run.
-The installation check includes executable hashing and pack name/size/mtime,
-not a full content digest of every pack.
-
-## Delivered contract
-
-- Shared unit ability/casting/phase/lifecycle/vortex/bombardment relations:
-  `data/unit_stats/abilities/`.
-- Shared effect, ability/group/phase bindings and scope definitions:
+- Shared ability/phase/lifecycle, army/context, unit-set and payload companion
+  definitions: `data/unit_stats/abilities/`.
+- Existing projectile/explosion lookups: `data/unit_stats/lookups/`. The unit
+  builder extends these same files; no second magic payload catalog exists.
+- Shared effect bindings, stat definitions and scope/context semantics:
   `data/effect_semantics/`.
-- Spell-candidate inventory, per-character relation indices, coverage and source
-  routing: `data/magic/`.
-- Existing skill trees own progression and constraints. Indices point to exact
-  skill rows; group modifiers are not expanded into thousands of copied grants.
-- Existing projectile, explosion, land-unit and main-unit sources retain their
-  owners. Their source-only payload records are explicitly marked by queries.
+- Character progression and constraints: existing `data/skill_trees/`.
+- Discovery, source pointers and coverage: `data/magic/`.
 
-There are 59 normalized shared tables / 35,220 rows, 3,179 ability identities,
-696 magic candidates, and 44,275 skill-binding rows across 323 of 550 indexed
-characters. These are distinct counts. “Magic candidate” is the documented
-union of source types spell/bound/rune/cataclysm/lore and explicit group
-membership, not a count of distinct playable spells. The whole ability inventory
-is retained so provisional classification never erases another source type.
+There are 98 native normalized tables / 70,759 rows, 3,179 ability identities,
+696 source-selected magic candidates, and 50,934 conditional skill-binding rows
+across 534 of 550 characters. All 550 remain indexed. Candidate classification
+uses source types and exact group memberships; these counts are not a certified
+inventory of distinct obtainable spells.
+
+## What the review pass adds
+
+The existing 522 projectile and 121 explosion rows retain every previous field
+value. The shared lookups add 238 projectiles and 214 explosions plus native
+fields for secondary payloads and targeting/fuse details. All 3,181 weapon links
+are unchanged. `scripts/magic_payload_baseline.json` records legacy-column row
+fingerprints and the original file hashes at PR head `13b4ff9`;
+`payload_baseline_comparison.json` records the exhaustive comparison.
+
+Queries follow projectile, bombardment, explosion, shrapnel, spawned/subsequent
+vortex, contact/overhead/imbued/spreading phase and homing/scaling/penetration
+relations. Nodes are visited once; all incoming and branching edges remain.
+Indirect phases include their stat and attribute effects. All 696 candidate
+variants resolve the supported graph in this snapshot. Source-only summoned
+land-unit records, definition dependencies and runtime uncertainty are separate
+fields; supported graph closure does not mean every mechanic is modeled.
+
+All nine represented binding families reach character retrieval. Unit-set rules
+retain exclusions and class/category/caste predicates; army and battle-context
+routes retain recipients and conditions. Lokhir's Black Ark modifier is an army
+route, not a personal spell grant. Supplied `--skill KEY:LEVEL` selections filter
+records while exposing unresolved components and leaving legality unevaluated.
+
+Every character has exact subtype-to-unit evidence; base/mount evidence covers
+1,370 unit forms. Culture-qualified unit abilities and enabling flags remain
+conditional. This does not certify mount unlocks or scripted transformations.
+No indexed skill grant is never interpreted as inability to cast.
+
+Mechanical definitions include stats, attributes, unit-set membership/classifiers,
+targeting displays, scopes and battle contexts. The dependency audit distinguishes
+packed but unextracted targets, presentation/audio references, and schema targets
+without packed tables. Operation enums, phase effect types and scope component
+tokens without packed definitions remain uninterpreted. Display geometry does not
+by itself certify targeting behavior.
 
 ## Reproduce
 
-From a checkout containing the source-checkpoint commit:
-
 ```bash
+git fetch origin checkpoint/magic-source-phase2-20260927
 mkdir -p work
-# Use Python to avoid binary redirection corruption in older Windows PowerShell.
-python -c "import subprocess,pathlib; pathlib.Path('work/magic-source.tar.gz').write_bytes(subprocess.check_output(['git','show','4d16368f1d5ab822197dade576c4e27ce24d5596:work/magic-source-9.0.1.tar.gz']))"
-tar -xzf work/magic-source.tar.gz -C work
-python scripts/magic_pipeline.py verify-source work/magic-source-9.0.1
-python scripts/magic_pipeline.py build work/magic-source-9.0.1 work/magic-candidate
+python -c "import subprocess,pathlib; pathlib.Path('work/magic-review.tar.gz').write_bytes(subprocess.check_output(['git','show','9d5c8bee9888fe1092528472f4faa3e0260a8c83:work/magic-source-review.tar.gz']))"
+tar -xzf work/magic-review.tar.gz -C work
+python scripts/magic_pipeline.py verify-source work/magic-source-review
+python scripts/magic_pipeline.py build work/magic-source-review work/magic-candidate
 python scripts/validate_magic.py --data-root work/magic-candidate
+node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports work/magic-candidate/data/unit_stats
 CTW_MAGIC_TEST_ROOT=work/magic-candidate python scripts/test_magic.py
 ```
 
-If the checkpoint object is absent, fetch the named checkpoint branch first.
-Build into a fresh ignored work directory. Install generated `data/` artifacts
-only after validation passes; preserve the human-authored README files.
-On PowerShell, set `$env:CTW_MAGIC_TEST_ROOT='work/magic-candidate'` before running
-the test command. A fresh live extraction uses:
+On PowerShell, set `$env:CTW_MAGIC_TEST_ROOT='work/magic-candidate'` before the
+test command. Generate into a fresh ignored directory. Install only after both
+validators pass, using the output manifest and preserving authored README files.
+Copy the unit validator's audit reports separately; reports are not hashed as
+builder outputs. The magic builder invokes the existing unit builder with the
+verified source as its fourth argument. The ordinary 9.0 unit builder defaults
+to the installed shared ability source owner for its ability roots.
+
+Fresh extraction uses the existing shared RPFM mutex and snapshot guard:
 
 ```powershell
 powershell.exe -NoProfile -File scripts/extract-magic-source.ps1 work/magic-fresh 9.0.1
 ```
 
-Never remove the snapshot guard or relabel existing archived rows.
+## Validation and remaining boundaries
 
-## Validation and remaining work
+The validator reconciles every native normalized row to source, every projected
+payload source field, derived penetration/shrapnel fields, every skill/binding
+pointer and expected binding cardinality, all character unit/form evidence, every
+candidate's coverage report and all graph edges. Baseline comparison detects any
+changed previous payload field or weapon link. Golden fixtures cover Apotheosis,
+Chain Lightning, normal/bound Fireball, Searing Doom bombardment, Doomrocket
+shrapnel, summons, multiple phases, Lokhir, unit sets and supplied skill/rank pairs.
 
-`npm run validate:magic` reconciles every normalized row to its canonical source,
-checks all generated/input hashes, checks every character skill/binding pointer,
-and runs concrete query fixtures. `npm run test:magic` includes mutations with
-refreshed output hashes: crossed phase links, recipient flags, conflated overcast
-costs, wrong skill ranks and sentinel-to-zero conversion must still fail.
-Two fresh builds produced identical artifact hashes. This is source/structural
-validation, not live battle validation or an independent reviewer approval.
+Ten regression tests include refreshed-hash mutations for phase recipients,
+variant cost, crossed phases, skill ranks, sentinels, secondary references and
+omitted conditional bindings, plus dropped-branch and cycle/multiple-parent tests.
+These are source/structural checks, not observed battle execution or independent
+review. `validation.json` records the latest candidate result.
 
-Outstanding #14 scope:
+Remaining #14 scope:
 
-1. Normalize complete spell-reachable projectile/explosion closure under the
-   existing shared owner; expose remaining projectile and contact-effect fields
-   without a parallel payload database.
-2. Extend access coverage to item/trait/form/mount/scripted grants and unit-set /
-   battle-context bindings. The latter sources are retained but not interpreted
-   as direct character grants by this increment.
-3. Reconcile active/inactive/legacy content and all lore/passive acquisition
-   routes. Missing labels must continue to leave stable keys queryable.
-4. Resolve supported units/operations/sentinels and engine-dependent timing,
-   conditions and stacking. Unresolved values must remain visibly unresolved;
-   no numerical damage predictions or build arithmetic are implemented here.
-5. Expand fixtures and coverage to the remaining grant and payload families,
-   then assess the full issue's completion criteria separately.
+1. Wider item/trait/script acquisition, dynamic forms and verified mount unlocks.
+2. Active/inactive/legacy classification and exhaustive lore/passive obtainability.
+3. Engine-only operation/sentinel definitions and runtime timing, stacking,
+   refresh, intensity and collision behavior where recoverable.
+4. Explicitly listed external definitions and unsupported payload namespaces
+   outside the supported graph (for example `mom_vortex_key`).
 
-The relation audit reports 49,944 references resolved within the extracted
-relations and 8,914 resolved through existing owners. Its 43,000 external or
-unextracted references include visual/audio assets and engine enums as well as
-mechanical definitions; they are reference occurrences, not 43,000 missing
-spells. They remain queryable in `unresolved_relations.csv`.
+Database work retains source facts, dependencies and constraints for arbitrary
+encountered builds. Global legality solving, optimization and effective combat
+outcomes belong in Analysis. Missing acquisition evidence remains a database gap.

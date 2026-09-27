@@ -4,6 +4,8 @@ from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from unittest.mock import patch
+from magic_payloads import graph
 from magic_pipeline import ROOT, csvrows, readj, writej, writecsv, digest
 from validate_magic import validate, golden_checks
 from query_magic import Magic
@@ -37,5 +39,28 @@ class MagicRegressions(unittest.TestCase):
  def test_zero_and_sentinel_are_distinct(self):
   def edit(rows): next(r for r in rows if r['num_uses']=='-1')['num_uses']='0'
   self.mutate('data/unit_stats/abilities/tables/ability_casting.csv',edit)
+
+ def test_secondary_reference_mutation(self):
+  self.mutate('data/unit_stats/lookups/explosions__wh3__9.0.csv',lambda rows:next(r for r in rows if r['shrapnel_key']).update(shrapnel_key='missing_secondary'))
+ def test_dropped_conditional_binding(self):
+  self.mutate('data/magic/characters/dark_elves/wh2_dlc11_def_lokhir.csv',lambda rows:rows.pop(next(i for i,r in enumerate(rows) if r['target_kind']=='army_ability')))
+ def test_cycle_retains_both_incoming_edges(self):
+  db=Magic(self.base)
+  db.cache['projectiles']=[dict(projectile_key='test_p',explosion_key='test_e')]
+  db.cache['explosions']=[dict(explosion_key='test_e',shrapnel_key='test_s')]
+  db.cache['projectile_shrapnels']=[dict(key='test_s',projectile='test_p')]
+  db.cache['payload_provenance']=[dict(kind=k,key=v,source_path='synthetic_cycle_fixture',source_line='1',source_patch='fixture') for k,v in [('projectile','test_p'),('explosion','test_e')]]
+  nodes,edges,missing=graph(db,'synthetic',dict(activated_projectile='test_p',miscast_explosion='test_e'),[])
+  self.assertEqual(len(nodes),3);self.assertEqual(len(edges),5);self.assertFalse(missing)
+  self.assertEqual(sum(e['target_kind']=='explosion' for e in edges),2)
+ def test_dropped_branch_cannot_claim_closure(self):
+  import query_magic
+  original=query_magic.graph
+  def broken(*args):
+   nodes,edges,missing=original(*args)
+   return nodes,edges[:-1],missing
+  with patch('query_magic.graph',broken), self.assertRaises((ValueError,AssertionError)):
+   from validate_magic import validate_payloads
+   validate_payloads(Magic(self.base))
 
 if __name__=='__main__': unittest.main()

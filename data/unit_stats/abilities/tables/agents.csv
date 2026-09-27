@@ -1,0 +1,10 @@
+key,move_points,line_of_sight,playable,portrait_override,primary_attribute,faction_total_cap,in_encyclopedia,encyclopedia_url,source_path,source_line,source_patch
+champion,3500,14,true,,zeal,100,true,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,3,9.0.1
+colonel,3500,14,true,,zeal,-1,false,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,4,9.0.1
+dignitary,3500,14,true,,authority,100,true,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,5,9.0.1
+engineer,3500,14,true,,zeal,100,true,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,6,9.0.1
+general,3150,14,true,,authority,100,true,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,7,9.0.1
+minister,0,0,false,,authority,-1,false,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,8,9.0.1
+runesmith,3500,14,true,,subterfuge,100,true,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,9,9.0.1
+spy,3500,14,true,,subterfuge,100,true,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,10,9.0.1
+wizard,3500,14,true,,authority,100,true,,data/unit_stats/abilities/source_exports/db/agents_tables/data__.tsv,11,9.0.1
