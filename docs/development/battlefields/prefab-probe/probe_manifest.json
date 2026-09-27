@@ -1376,11 +1376,17 @@
   "decoder_schema_sha256": "15d4006d4e968add518e1d2ba543f38850f467ca4ef6bca52fbbc94b3c3d822e",
   "request": {
     "paths": [
-      "prefabs/deployment_land_battle_1024x1024.bmd"
+      "prefabs/deployment_land_battle_1024x1024.bmd",
+      "prefabs/deployment_ambush_battle_1024x1024.bmd"
     ]
   },
   "probes": [],
   "files": [
+    {
+      "path": "prefabs/deployment_ambush_battle_1024x1024.bmd",
+      "bytes": 1068,
+      "sha256": "674e9b8236be437ec193e12db5b0c749f47003bd352a419af438441e82124602"
+    },
     {
       "path": "prefabs/deployment_land_battle_1024x1024.bmd",
       "bytes": 1304,
