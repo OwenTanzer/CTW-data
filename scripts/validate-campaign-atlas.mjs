@@ -1,3 +1,4 @@
+import { battleMapCoverageErrors } from './battle-map-coverage.mjs';
 import { validateVictoryConfig } from "./validate-victory-config.mjs";
 import { snapshotProfile } from "./snapshot-source.mjs";
 import { DatabaseSync } from "node:sqlite";
@@ -35,6 +36,9 @@ check("Foreign-key violations", foreignKeyErrors, 0);
 const metadata = Object.fromEntries(db.prepare("SELECT key, value FROM metadata").all().map((row) => [row.key, row.value]));
 const profile = snapshotProfile(metadata.patch);
 const current = profile.patch === "9.0";
+if (current) {
+  check("Battle-map source variants", battleMapCoverageErrors(db), value => value.length === 0);
+}
 const factionCount = current ? 109 : 104;
 check("Campaign key", metadata.campaign_key, "wh3_main_combi");
 check("Campaign map revision", metadata.campaign_map_key, current ? "wh3_main_combi_map_7" : "wh3_main_combi_map_5");

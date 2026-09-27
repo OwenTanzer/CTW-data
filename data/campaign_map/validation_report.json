@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "atlas": "/workspace/scratch/d0884145f0e9/ctw-fix-17/data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
-  "bytes": 16941056,
+  "atlas": "/workspace/scratch/d0884145f0e9/ctw-reconcile-9/data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
+  "bytes": 17199104,
   "metadata": {
     "title": "Total War: Warhammer III Immortal Empires Campaign Atlas",
     "game": "warhammer_3",
@@ -9,7 +9,7 @@
     "steam_build_id": "25507028",
     "campaign_key": "wh3_main_combi",
     "campaign_map_key": "wh3_main_combi_map_7",
-    "schema_version": "1.2.0",
+    "schema_version": "1.3.0",
     "source_extracted_at_utc": "2026-09-26T09:06:38.168Z",
     "geometry_model": "Exact colour-coded region raster plus derived centroids and raster-border adjacency; sea-region vectors unavailable",
     "starting_positions_audit_date": "2026-09-26"
@@ -62,6 +62,14 @@
       "passed": true,
       "actual": 0,
       "expected": 0,
+      "severity": "error",
+      "note": ""
+    },
+    {
+      "name": "Battle-map source variants",
+      "passed": true,
+      "actual": [],
+      "expected": "predicate",
       "severity": "error",
       "note": ""
     },
@@ -334,5 +342,5 @@
   "warnings": [
     "Battle rules without an exposed group map: got 3; Some engine-resolved catchment groups do not expose a direct group-map row"
   ],
-  "validated_at_utc": "2026-09-26T14:00:56.481Z"
+  "validated_at_utc": "2026-09-27T02:39:30.985Z"
 }

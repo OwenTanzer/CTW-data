@@ -66,7 +66,7 @@
       "preferred_access": "Use the faction index to locate one faction file; consult faction guides for deliberately omitted bespoke mechanics."
     },
     "campaign_map": {
-      "description": "Queryable Immortal Empires geography, starts, objectives, topology, and battle-map relationships.",
+      "description": "Queryable Immortal Empires geography, starts, objectives, topology, and battle-map relationships; atlas schema 1.3 preserves all 1,136 map/group/catchment/tile variants.",
       "readme": "data/campaign_map/README.md",
       "validation": "data/campaign_map/validation_report.json",
       "primary_records": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",

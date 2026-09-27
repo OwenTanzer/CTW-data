@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "patch": "9.0",
   "steam_build_id": "25507028",
   "source_manifest": "objective_source_exports/source_manifest.json",

@@ -1,6 +1,6 @@
 # 9.0 database compatibility refresh
 
-PRs #17–#19 have merged the bounded 9.0/build 25507028 database refresh. Main has 2,366 roster rows; PR #20 proposes the remaining Kroxigor Ancient repair (2,367). Magic #14 remains paused. The table below records the original PR #17 checkpoint, not current unit totals.
+PRs #17–#22 have merged the bounded 9.0/build 25507028 database refresh and subsequent audits/repairs. Main has 2,367 roster rows, including PR #20’s Kroxigor Ancient repair. Magic #14 remains paused. The table below records the original PR #17 checkpoint, not current unit totals.
 
 | Owner | Validated coverage |
 |---|---|
