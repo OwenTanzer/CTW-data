@@ -1,3 +1,4 @@
 field-probe/** -text
 xml-probe/** -text
 composition-probe/** -text
+prefab-probe/** -text
