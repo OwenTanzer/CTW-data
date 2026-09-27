@@ -19,6 +19,10 @@ Each race document covers race-wide systems and any additional faction-specific
 systems, rules, exceptions, permissions, resources, or state transitions. The
 amount and organization of prose may differ substantially between races.
 
+## Current compatibility supplement
+
+[UPDATE_9.0_CLAIMS.md](UPDATE_9.0_CLAIMS.md) maps affected historical claims to current owners and provides bounded new-faction orientation. The linked claim register covers all 24 archived documents; their structural completion remains historical.
+
 ## Completion status
 
 All 24 playable-race documents are present for patch 8.1.1 / Steam build

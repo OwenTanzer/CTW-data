@@ -1,5 +1,8 @@
 # Tzeentch campaign systems
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Scope:** *Total War: WARHAMMER III* | patch **8.1.1** | Steam build **24237342**  
@@ -128,6 +131,8 @@ At new-game start, a human Deceivers campaign receives one randomly selected for
 When the Changeling wins a battle, every valid enemy character subtype in that battle is passed to the transformation system; available, not-yet-known subtypes become permanent unlocked forms. The same grant function is used when specified unique heroes are recruited and when valid characters become available through alliances or confederation. Vlad and Isabella are paired: acquiring either subtype submits both. Form selection changes the Changeling's battle form; the skill-tree and unit catalogs remain authoritative for his own underlying abilities and for cataloged target units.
 
 ### Theatres, Schemes, permanent rifts, and victory state
+
+> **9.0 disposition:** The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applicability:** `wh3_dlc24_tze_the_deceivers` only.
 

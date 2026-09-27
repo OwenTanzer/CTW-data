@@ -1,5 +1,8 @@
 # Warriors of Chaos campaign systems
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Scope:** *Total War: WARHAMMER III* | patch **8.1.1** | Steam build **24237342**
@@ -15,6 +18,8 @@ The eight economy exports already contain the ordinary Dark Fortress and minor-s
 ## Mechanically relevant material not captured elsewhere
 
 ### Branch matrix
+
+> **9.0 disposition:** The eight-faction census and Sigvald all-gods exception below are historical. Glottkin is not covered by that matrix. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 All eight factions use Dark Fortresses, Warbands, Souls, Gifts of Chaos, Authority, and Path to Glory. Seven also use the Eye of the Gods; **Shadow Legion is excluded from the Eye ritual group**. Their available branches are deliberately asymmetric:
 
@@ -32,6 +37,8 @@ All eight factions use Dark Fortresses, Warbands, Souls, Gifts of Chaos, Authori
 The marked Champions therefore do not have cross-god Marks, Authorities, Daemon Princes, or Gift branches merely because those records exist elsewhere in the race data. Sigvald is the exception among patron-themed factions: his campaign remains mechanically Undivided and retains access to all gods.
 
 ### Dark Fortresses, minor settlements, and vassals
+
+> **9.0 disposition:** Use current atlas region-group membership for fortress locations; the homeland/revival claims below remain historical. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applicability:** all eight factions; both campaigns where that faction is playable.
 
@@ -58,6 +65,8 @@ Warband Upgrades transform an experienced unit in an army into one of the displa
 The WoC campaign feature group disables **additional-army upkeep**. All eight factions therefore avoid the standard Supply Lines multiplier from fielding extra armies, although every army still pays its ordinary unit and character upkeep.
 
 ### Souls, Gifts of Chaos, and Gifted Units
+
+> **9.0 disposition:** Historical costs and patron permissions below do not establish current Sigvald or Glottkin access. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applicability:** all eight factions, with faction-specific sources and branch restrictions below.
 
@@ -86,6 +95,8 @@ Authority is a per-army calculation, not a faction-wide alignment meter. The ins
 Positive Authority reduces upkeep, recruitment cost, and Warband upgrade cost and raises casualty replenishment for matching units; installed effect bundles cover positive states 0–10 and negative records -1 through -5, whose localization describes the inverse penalties. The character/faction permissions in the branch matrix determine which tracks are operative. A marked unit in a mixed army does not benefit from the lord's unrelated Undivided or rival-god Authority.
 
 ### Path to Glory, Marks, boons, and Daemon Princes
+
+> **9.0 disposition:** Do not derive current cross-god permissions from the historical Sigvald branch matrix. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applicability:** eligible non-legendary mortal lords and heroes. Legendary characters are not replacement candidates.
 
@@ -151,6 +162,8 @@ Four Unholy Manifestations unlock separately by defeating an army aligned to Kho
 
 ### Defeat, confederation, and legendary-character acquisition
 
+> **9.0 disposition:** The old acquisition list is not exhaustive for Archaon's current subjugation system. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 Only **Warhost of the Apocalypse and Shadow Legion** have the installed forced-confederation route. When either captures another WoC faction's final settlement, the settlement decision can confederate that faction; its legendary leader then enters the victor's lord recruitment pool. Defeating the lord in an ordinary field battle is not sufficient. The other six WoC factions can vassalize or destroy rivals but cannot collect their legendary lords through this rule. If the target faction has already been destroyed by someone else, no general retroactive recruitment is supplied.
 
 The current generic legendary-character script adds these WoC routes beyond the character skill catalog:
@@ -169,6 +182,8 @@ The current generic legendary-character script adds these WoC routes beyond the 
 Eligibility does not bypass the named entitlement. Mission completion recruits the unique character once; losing or declining a branch does not create duplicate copies.
 
 ### Campaign and victory applicability
+
+> **9.0 disposition:** The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 All eight factions have Immortal Empires short, long, Domination, and optional ultimate-crisis routes encoded as faction missions; control through vassals/allies counts only where that objective says so. Archaon, Be'lakor, Kholek, and Sigvald are Immortal-Empires-only playable factions in this snapshot.
 

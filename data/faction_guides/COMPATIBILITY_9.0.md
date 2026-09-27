@@ -53,3 +53,7 @@ These are narrow announcement-backed corrections to the historical guides, not a
 | Vampire Coast | Queen's Cannon | 20 |
 
 The same official notes invalidate the old permanent, nontransferable Books interpretation: ownership can change. Krell's former summon-only description and fixed Vlad/Isabella role assumptions are also historical. Consult current character/skill records; this erratum does not certify every campaign transition or reward.
+
+## Claim-level review and new faction orientation
+
+See [UPDATE_9.0_CLAIMS.md](UPDATE_9.0_CLAIMS.md) for point-of-use historical qualifications, current retrieval routing and concise announcement-backed coverage of Neferata, Nagash, Glottkin, Thanquol and Boris. This supplements the historical guides without changing their audit version or asserting a new mechanics model.

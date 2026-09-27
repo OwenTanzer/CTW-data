@@ -1,5 +1,8 @@
 # Bretonnia campaign mechanics — patch 8.1.1
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Scope:** Total War: WARHAMMER III, patch **8.1.1**, Steam build **24237342**. Race: Bretonnia (`bretonnia`). Playable factions: 4. Campaign: Immortal Empires (`wh3_main_combi`); no Bretonnian faction is playable in the Realms of Chaos campaign in this snapshot.

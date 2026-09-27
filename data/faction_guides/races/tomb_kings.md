@@ -1,5 +1,8 @@
 # Tomb Kings campaign mechanics guide
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Specific 9.0 corrections:** See [targeted historical-guide errata](../COMPATIBILITY_9.0.md#targeted-historical-guide-errata) before using rite cooldowns, Books ownership, Krell or Vlad/Isabella role descriptions below. Other claims retain their stated historical scope.
@@ -105,6 +108,8 @@ Ptra's spawn helper has an exact edge case: if the faction has no suitable leade
 
 ### Books of Nagash and Dune Restoration
 
+> **9.0 disposition:** The old ownership and reward lifecycle below is historical; do not present it as current Books behavior. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applicability:** scripted for eligible human participants in Immortal Empires. For this guide, the participants are all four playable Tomb Kings factions. AI Tomb Kings receive no Book missions or Book rewards from the setup script.
 
 At new-game setup, each Tomb Kings human receives eight permanent-reward missions. In single-player, the faction has a bespoke set of four region targets and four rogue-army targets. The script randomly permutes those eight targets over mission IDs 1-8, while reward bundle 1 always belongs to mission 1, reward 2 to mission 2, and so forth. A reward is therefore not tied to one fixed location across campaigns.
@@ -162,6 +167,8 @@ Three diplomacy states are faction-specific. Court of Lybaras begins permanently
 **Entombed Beneath the Sands** consumes 50% campaign movement. While active, the army can replenish in foreign territory, is immune to all campaign attrition, has +75% ambush defence, gains Vanguard Deployment and Sand Veil, and may recruit while encamped. Tomb Kings global and allied recruitment are available only to a garrisoned army or an army in this stance. This is a recruitment gate as well as a movement/combat posture.
 
 ### Faction and Immortal Empires exceptions
+
+> **9.0 disposition:** Historical Arkhan access descriptions are not exhaustive; consult current roster permissions and their notes. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 The following starting effects alter the common systems and are not ordinary roster rows:
 
