@@ -1,0 +1,51 @@
+{
+  "decoder_sha256": "51dc2a25c9c6ee6271e11d8cd259d723e6b51ff83ccb235246227f1e12d3df6b",
+  "full_resolution_artifact": "rebuild_from_verified_source",
+  "metadata": {
+    "block_height": 16,
+    "block_tags": {
+      "117": 1,
+      "119": 2,
+      "120": 1,
+      "135": 3,
+      "136": 86,
+      "137": 407,
+      "138": 930,
+      "139": 1035,
+      "140": 577,
+      "143": 94
+    },
+    "block_width": 16,
+    "blocks": 3136,
+    "codec": "TABLE_INDEXED",
+    "coordinate_units": "unresolved",
+    "height": 896,
+    "opaque_header_hex": "00000000656d00c20000000000000000dd48f14300000000",
+    "raw_u16_sha256": "90aad4b1311d9da4363f8377eb5e19f277a9cd7c6a6a8727ce8c1fddf09d06ec",
+    "roundtrip_byte_equal": true,
+    "sample_max": 65535,
+    "sample_min": 0,
+    "source_bytes": 1207821,
+    "source_sha256": "6c5775b5c4528961ad9e5f997e826e8035768e47969029c98c42bed7db8927c7",
+    "status": "decoded_native_samples_world_alignment_unverified",
+    "width": 896
+  },
+  "overview": {
+    "artifact": "6c5775b5c4528961ad9e5f997e826e8035768e47969029c98c42bed7db8927c7.npz",
+    "method": "regular_native_sample_subset_no_averaging",
+    "sample_stride": 4,
+    "sha256": "bbe685325f8df796f3de2ddd0d696debe9673719aac3a0ee239429b6149f4fc2",
+    "shape": [
+      224,
+      224
+    ],
+    "source_column_origin": 0,
+    "source_row_origin": 0
+  },
+  "source_bytes": 1207821,
+  "source_path": "terrain/tiles/battle/domination/the_eye_in_the_north/tile_height_map.compressed_map",
+  "source_sha256": "6c5775b5c4528961ad9e5f997e826e8035768e47969029c98c42bed7db8927c7",
+  "status": "decoded_full_native_raster",
+  "world_alignment_verified": false,
+  "world_units": null
+}
