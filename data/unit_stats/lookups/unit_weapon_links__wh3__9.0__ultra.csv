@@ -1411,6 +1411,7 @@ warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_salamander_pack_0,melee,unit,primary,wh2
 warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_salamander_pack_0,missile,unit,primary,,wh2_dlc12_lzd_salamander_flame,wh2_dlc12_lzd_salamander_flame,true,primary,18,land_units.primary_missile_weapon
 warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_salamander_pack_0_blessed,melee,unit,primary,wh2_dlc12_lzd_salamander_flame,,,,,,land_units.primary_melee_weapon
 warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_salamander_pack_0_blessed,missile,unit,primary,,wh2_dlc12_lzd_salamander_flame_blessed,wh2_dlc12_lzd_salamander_flame_blessed,true,primary,18,land_units.primary_missile_weapon
+warhammer_3,9.0,ultra,wh2_dlc13_lzd_cha_kroxigor_ancient_0,melee,unit,primary,wh_dlc13_lzd_ancient_kroxigor_axe,,,,,,land_units.primary_melee_weapon
 warhammer_3,9.0,ultra,wh2_dlc13_lzd_cha_nakai_0,melee,unit,primary,wh_dlc13_lzd_nakai_club,,,,,,land_units.primary_melee_weapon
 warhammer_3,9.0,ultra,wh2_dlc13_lzd_mon_dread_saurian_0,melee,unit,primary,wh2_dlc13_lzd_dread_saurian,,,,,,land_units.primary_melee_weapon
 warhammer_3,9.0,ultra,wh2_dlc13_lzd_mon_dread_saurian_1,melee,unit,primary,wh2_dlc13_lzd_dread_saurian,,,,,,land_units.primary_melee_weapon

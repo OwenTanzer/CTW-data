@@ -2777,6 +2777,7 @@ military_group,warhammer_3,9.0,ultra,lizardmen,wh2_dlc12_lzd_mon_salamander_pack
 faction_permission,warhammer_3,9.0,ultra,lizardmen,wh2_dlc12_lzd_mon_salamander_pack_0,,wh2_main_lzd_lizardmen,false,true,true,false,false
 military_group,warhammer_3,9.0,ultra,lizardmen,wh2_dlc12_lzd_mon_salamander_pack_0_blessed,wh2_main_lzd,,,,,,
 faction_permission,warhammer_3,9.0,ultra,lizardmen,wh2_dlc12_lzd_mon_salamander_pack_0_blessed,,wh2_main_lzd_lizardmen,false,true,true,true,false
+faction_permission,warhammer_3,9.0,ultra,lizardmen,wh2_dlc13_lzd_cha_kroxigor_ancient_0,,wh2_main_lzd_lizardmen,true,true,true,false,false
 military_group,warhammer_3,9.0,ultra,lizardmen,wh2_dlc13_lzd_cha_nakai_0,wh2_main_lzd,,,,,,
 faction_permission,warhammer_3,9.0,ultra,lizardmen,wh2_dlc13_lzd_cha_nakai_0,,wh2_main_lzd_lizardmen,true,true,true,false,false
 military_group,warhammer_3,9.0,ultra,lizardmen,wh2_dlc13_lzd_mon_dread_saurian_0,wh2_main_lzd,,,,,,
