@@ -95,6 +95,8 @@ unbound generic deployment template as effective geometry. Preserve native
 64-bit masks with an integer-safe reader. The 9.0.1 extracted map/join tables
 match the atlas's 9.0 sources byte-for-byte; patch labels alone do not create a
 compatibility blocker. The experimental tile reader reports source grid membership only; opaque fields
-must not become world transforms. The composition report includes an unresolved
-deployment prefab and one unsupported BMD subrecord version. Effective spatial
+must not become world transforms. The deployment report resolves bounded land/ambush prefab dependencies, but
+its projected polygons explicitly assume an unverified coordinate convention.
+Do not infer side assignments or clip exclusion polygons. Unsupported BMD
+subrecord versions remain explicit failures. Effective spatial
 composition and runtime behavior remain unverified.

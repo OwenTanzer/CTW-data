@@ -1,0 +1,2996 @@
+{
+  "status": "deployment_source_evidence_not_runtime_verified",
+  "assets": [
+    {
+      "source_asset": "prefabs/deployment_ambush_battle_1024x1024.bmd",
+      "source_sha256": "674e9b8236be437ec193e12db5b0c749f47003bd352a419af438441e82124602",
+      "source_probe": "prefab-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "5b74233b763010d48f141c86de8cc89635e3f9b81fb1c4b13c37d2a3cd54a1d4",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_AMBUSH",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": -512.0,
+              "y": -511.99993896484375
+            },
+            {
+              "x": 512.0,
+              "y": -512.0
+            },
+            {
+              "x": 512.0,
+              "y": 512.0000610351562
+            },
+            {
+              "x": -512.0,
+              "y": 512.0000610351562
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_AMBUSH",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard subtractive",
+          "points": [
+            {
+              "x": -128.0,
+              "y": 448.0
+            },
+            {
+              "x": 128.0,
+              "y": 448.0
+            },
+            {
+              "x": 128.0,
+              "y": -448.0
+            },
+            {
+              "x": -128.0,
+              "y": -448.0
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_AMBUSH",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 95.99999237060547,
+              "y": 415.9999694824219
+            },
+            {
+              "x": -96.0000228881836,
+              "y": 416.0000915527344
+            },
+            {
+              "x": -96.00019073486328,
+              "y": -415.9999084472656
+            },
+            {
+              "x": 95.99980163574219,
+              "y": -415.9999694824219
+            }
+          ]
+        }
+      ],
+      "prefab_instances": []
+    },
+    {
+      "source_asset": "prefabs/deployment_land_battle_1024x1024.bmd",
+      "source_sha256": "aaf08068c6fa5bd817b8c15a53cbf6e3bec638d12d76859d28b71386d6c9d66d",
+      "source_probe": "prefab-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "433f73a0261322204c80b8efa8dee0bc80f7ff86e14f502dfb7d8c4822f3039b",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": -352.0,
+              "y": 128.0
+            },
+            {
+              "x": 352.0,
+              "y": 128.0
+            },
+            {
+              "x": 372.66522216796875,
+              "y": 131.25006103515625
+            },
+            {
+              "x": 389.55621337890625,
+              "y": 140.16481018066406
+            },
+            {
+              "x": 404.10137939453125,
+              "y": 154.47532653808594
+            },
+            {
+              "x": 412.781494140625,
+              "y": 172.0701904296875
+            },
+            {
+              "x": 416.0,
+              "y": 192.0
+            },
+            {
+              "x": 416.0,
+              "y": 352.0
+            },
+            {
+              "x": 412.98736572265625,
+              "y": 371.9989929199219
+            },
+            {
+              "x": 403.79693603515625,
+              "y": 389.7663269042969
+            },
+            {
+              "x": 389.60302734375,
+              "y": 403.9603271484375
+            },
+            {
+              "x": 372.24371337890625,
+              "y": 412.74163818359375
+            },
+            {
+              "x": 352.0,
+              "y": 416.0
+            },
+            {
+              "x": -352.0,
+              "y": 416.0
+            },
+            {
+              "x": -371.71258544921875,
+              "y": 412.9669189453125
+            },
+            {
+              "x": -389.6333923339844,
+              "y": 403.8463134765625
+            },
+            {
+              "x": -403.77081298828125,
+              "y": 389.7246398925781
+            },
+            {
+              "x": -412.97515869140625,
+              "y": 371.733642578125
+            },
+            {
+              "x": -416.0,
+              "y": 352.0
+            },
+            {
+              "x": -416.0,
+              "y": 192.0
+            },
+            {
+              "x": -412.8644714355469,
+              "y": 172.07852172851562
+            },
+            {
+              "x": -403.5628662109375,
+              "y": 153.97528076171875
+            },
+            {
+              "x": -389.8595886230469,
+              "y": 140.27198791503906
+            },
+            {
+              "x": -371.8818664550781,
+              "y": 131.22027587890625
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 352.0,
+              "y": 480.0
+            },
+            {
+              "x": 391.3181457519531,
+              "y": 473.83331298828125
+            },
+            {
+              "x": 427.13238525390625,
+              "y": 455.34857177734375
+            },
+            {
+              "x": 455.7259826660156,
+              "y": 427.6214294433594
+            },
+            {
+              "x": 473.63275146484375,
+              "y": 391.8023376464844
+            },
+            {
+              "x": 480.0,
+              "y": 352.0
+            },
+            {
+              "x": 480.0,
+              "y": 192.0
+            },
+            {
+              "x": 473.8435363769531,
+              "y": 152.88946533203125
+            },
+            {
+              "x": 455.8092346191406,
+              "y": 116.82443237304688
+            },
+            {
+              "x": 427.3067321777344,
+              "y": 88.31585693359375
+            },
+            {
+              "x": 391.75738525390625,
+              "y": 70.2835693359375
+            },
+            {
+              "x": 352.0,
+              "y": 64.0
+            },
+            {
+              "x": -352.0,
+              "y": 64.0
+            },
+            {
+              "x": -391.356689453125,
+              "y": 70.28338623046875
+            },
+            {
+              "x": -427.3712158203125,
+              "y": 88.57647705078125
+            },
+            {
+              "x": -455.57305908203125,
+              "y": 116.20669555664062
+            },
+            {
+              "x": -473.86614990234375,
+              "y": 151.84011840820312
+            },
+            {
+              "x": -480.0,
+              "y": 192.0
+            },
+            {
+              "x": -480.0,
+              "y": 352.0
+            },
+            {
+              "x": -474.111328125,
+              "y": 391.3939208984375
+            },
+            {
+              "x": -455.84454345703125,
+              "y": 426.32513427734375
+            },
+            {
+              "x": -427.0023193359375,
+              "y": 455.808349609375
+            },
+            {
+              "x": -391.7506103515625,
+              "y": 473.4341735839844
+            },
+            {
+              "x": -352.0,
+              "y": 480.0
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 352.0000305175781,
+              "y": -128.0
+            },
+            {
+              "x": -352.0000305175781,
+              "y": -127.99980926513672
+            },
+            {
+              "x": -372.0155944824219,
+              "y": -131.33798217773438
+            },
+            {
+              "x": -389.5053405761719,
+              "y": -140.00547790527344
+            },
+            {
+              "x": -403.8995056152344,
+              "y": -154.39971923828125
+            },
+            {
+              "x": -413.0314025878906,
+              "y": -172.6634521484375
+            },
+            {
+              "x": -415.9999084472656,
+              "y": -191.99981689453125
+            },
+            {
+              "x": -415.9999694824219,
+              "y": -351.99981689453125
+            },
+            {
+              "x": -413.0338439941406,
+              "y": -371.54949951171875
+            },
+            {
+              "x": -403.7472229003906,
+              "y": -389.9679260253906
+            },
+            {
+              "x": -389.5077819824219,
+              "y": -404.0525817871094
+            },
+            {
+              "x": -372.1728210449219,
+              "y": -412.5653991699219
+            },
+            {
+              "x": -352.0000305175781,
+              "y": -415.9997863769531
+            },
+            {
+              "x": 352.0,
+              "y": -416.0
+            },
+            {
+              "x": 371.6808776855469,
+              "y": -412.91180419921875
+            },
+            {
+              "x": 389.9544677734375,
+              "y": -403.70526123046875
+            },
+            {
+              "x": 404.0432434082031,
+              "y": -389.61651611328125
+            },
+            {
+              "x": 412.9707946777344,
+              "y": -371.90087890625
+            },
+            {
+              "x": 415.9999694824219,
+              "y": -352.0
+            },
+            {
+              "x": 416.0,
+              "y": -192.0
+            },
+            {
+              "x": 412.83941650390625,
+              "y": -171.81106567382812
+            },
+            {
+              "x": 404.0391540527344,
+              "y": -154.5877227783203
+            },
+            {
+              "x": 389.8330078125,
+              "y": -140.38156127929688
+            },
+            {
+              "x": 371.8553466796875,
+              "y": -131.0784454345703
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 352.0,
+              "y": -64.0
+            },
+            {
+              "x": 391.26275634765625,
+              "y": -70.6025390625
+            },
+            {
+              "x": 428.3500061035156,
+              "y": -89.14616394042969
+            },
+            {
+              "x": 455.9681701660156,
+              "y": -117.15886688232422
+            },
+            {
+              "x": 473.32818603515625,
+              "y": -151.4842987060547
+            },
+            {
+              "x": 480.0,
+              "y": -192.0
+            },
+            {
+              "x": 480.0,
+              "y": -352.0
+            },
+            {
+              "x": 473.7408447265625,
+              "y": -392.0224304199219
+            },
+            {
+              "x": 454.9234313964844,
+              "y": -427.75439453125
+            },
+            {
+              "x": 427.22589111328125,
+              "y": -455.874755859375
+            },
+            {
+              "x": 391.07110595703125,
+              "y": -474.0578918457031
+            },
+            {
+              "x": 352.0,
+              "y": -480.0
+            },
+            {
+              "x": -352.0,
+              "y": -480.0
+            },
+            {
+              "x": -391.9197998046875,
+              "y": -473.7369384765625
+            },
+            {
+              "x": -427.36376953125,
+              "y": -455.6280212402344
+            },
+            {
+              "x": -456.00048828125,
+              "y": -426.9925231933594
+            },
+            {
+              "x": -473.64501953125,
+              "y": -391.858154296875
+            },
+            {
+              "x": -480.0,
+              "y": -352.0
+            },
+            {
+              "x": -480.0,
+              "y": -192.0
+            },
+            {
+              "x": -473.5994873046875,
+              "y": -152.82138061523438
+            },
+            {
+              "x": -455.692626953125,
+              "y": -116.71965789794922
+            },
+            {
+              "x": -426.810302734375,
+              "y": -88.12610626220703
+            },
+            {
+              "x": -392.15142822265625,
+              "y": -70.50785827636719
+            },
+            {
+              "x": -352.0,
+              "y": -64.0
+            }
+          ]
+        }
+      ],
+      "prefab_instances": []
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_01_layer_bmd_data.bin",
+      "source_sha256": "ace89208f92fffa59ca051b96028985d3a536d357452c33fc60b2d46f28ad7f0",
+      "source_probe": "composition-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "6d7130d652684729e1ad1e5cb6334ceafaab896882044dde8e5a7c06fbb4a2ea",
+      "playable_area": {
+        "area": {
+          "max_x": 2048.0,
+          "max_y": 2560.0,
+          "min_x": 1088.0,
+          "min_y": 1536.0
+        },
+        "has_been_set": true,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [],
+      "prefab_instances": [
+        {
+          "campaign_region_key": "",
+          "campaign_type_mask": 0,
+          "clamp_to_surface": false,
+          "height_mode": "BHM_ABSOLUTE",
+          "key": "prefabs/deployment_land_battle_1024x1024.bmd",
+          "property_overrides": [],
+          "serialise_version": 9,
+          "transform": {
+            "m00": 1.0,
+            "m01": 0.0,
+            "m02": 0.0,
+            "m03": 0.0,
+            "m10": 0.0,
+            "m11": 1.0,
+            "m12": 0.0,
+            "m13": 0.0,
+            "m20": 0.0,
+            "m21": 0.0,
+            "m22": 1.0,
+            "m23": 0.0,
+            "m30": 1536.0,
+            "m31": 64.0,
+            "m32": 2048.0,
+            "m33": 1.0
+          },
+          "uid": 110966528067332153
+        }
+      ]
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_02_layer_bmd_data.bin",
+      "source_sha256": "3dd8d26142f1325c36b5eb3c4fa78d9b6c21586bae76f317c3dca3839334c438",
+      "source_probe": "catchments-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "1f5cac5f048d1371365bfe25392c5d7d59dbb47ffae08245c2c78e4b463ff9b4",
+      "playable_area": {
+        "area": {
+          "max_x": 3840.0,
+          "max_y": 3840.0,
+          "min_x": 2816.0,
+          "min_y": 2848.0
+        },
+        "has_been_set": true,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [],
+      "prefab_instances": [
+        {
+          "campaign_region_key": "",
+          "campaign_type_mask": 0,
+          "clamp_to_surface": false,
+          "height_mode": "BHM_ABSOLUTE",
+          "key": "prefabs/deployment_land_battle_1024x1024.bmd",
+          "property_overrides": [],
+          "serialise_version": 9,
+          "transform": {
+            "m00": 1.0,
+            "m01": 0.0,
+            "m02": 0.0,
+            "m03": 0.0,
+            "m10": 0.0,
+            "m11": 1.0,
+            "m12": 0.0,
+            "m13": 0.0,
+            "m20": 0.0,
+            "m21": 0.0,
+            "m22": 1.0,
+            "m23": 0.0,
+            "m30": 3328.0,
+            "m31": 384.0,
+            "m32": 3328.0,
+            "m33": 1.0
+          },
+          "uid": 110966530558486611
+        }
+      ]
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_08_layer_bmd_data.bin",
+      "source_sha256": "e9c3259206e19a84253278156cefc670de5731c1b69ceafaed5a93aefd74d87a",
+      "source_probe": "catchments-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "f2eec36fb63d82d091384392ed3e688184091679d81b131b41b292bcd9c4b93b",
+      "playable_area": {
+        "area": {
+          "max_x": 3584.0,
+          "max_y": 2304.0,
+          "min_x": 2560.0,
+          "min_y": 1280.0
+        },
+        "has_been_set": true,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_RIVER",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 3584.0,
+              "y": 2304.0
+            },
+            {
+              "x": 3584.0,
+              "y": 1280.0
+            },
+            {
+              "x": 3377.38916015625,
+              "y": 1279.3629150390625
+            },
+            {
+              "x": 3408.0,
+              "y": 2304.0
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_RIVER",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 3216.0,
+              "y": 2304.0
+            },
+            {
+              "x": 3216.0,
+              "y": 2144.0
+            },
+            {
+              "x": 3296.0,
+              "y": 2032.0
+            },
+            {
+              "x": 3296.0,
+              "y": 1968.0
+            },
+            {
+              "x": 3184.0,
+              "y": 1680.0
+            },
+            {
+              "x": 3136.0,
+              "y": 1568.0
+            },
+            {
+              "x": 3088.0,
+              "y": 1408.0
+            },
+            {
+              "x": 3083.287353515625,
+              "y": 1280.7303466796875
+            },
+            {
+              "x": 3584.0,
+              "y": 1280.0
+            },
+            {
+              "x": 3584.0,
+              "y": 2304.0
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_RIVER",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 2560.0,
+              "y": 1280.0
+            },
+            {
+              "x": 2560.0,
+              "y": 2304.0
+            },
+            {
+              "x": 3216.0,
+              "y": 2304.0
+            },
+            {
+              "x": 3200.0,
+              "y": 2048.0
+            },
+            {
+              "x": 3200.0,
+              "y": 1928.0
+            },
+            {
+              "x": 3184.0,
+              "y": 1864.0
+            },
+            {
+              "x": 3136.0,
+              "y": 1776.0
+            },
+            {
+              "x": 3072.0,
+              "y": 1672.0
+            },
+            {
+              "x": 3064.0,
+              "y": 1592.0
+            },
+            {
+              "x": 2944.0,
+              "y": 1280.0
+            }
+          ]
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_RIVER",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 2560.0,
+              "y": 1280.0
+            },
+            {
+              "x": 3008.0,
+              "y": 1280.0
+            },
+            {
+              "x": 3088.0,
+              "y": 1600.0
+            },
+            {
+              "x": 3088.0,
+              "y": 1648.0
+            },
+            {
+              "x": 3152.0,
+              "y": 1744.0
+            },
+            {
+              "x": 3232.0,
+              "y": 1968.0
+            },
+            {
+              "x": 3232.0,
+              "y": 2304.0
+            },
+            {
+              "x": 2560.0,
+              "y": 2304.0
+            }
+          ]
+        }
+      ],
+      "prefab_instances": []
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_12_layer_bmd_data.bin",
+      "source_sha256": "4bd1c0cd1550eec9d9989da0fac9fa2f349e9a7c6ace586f0a5951c8dba2dd82",
+      "source_probe": "catchments-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "f866a9f919ffffdeceae4b46f5eefc1cc33e8de1f32733a9957584bdfa80d504",
+      "playable_area": {
+        "area": {
+          "max_x": 2048.0,
+          "max_y": 2560.0,
+          "min_x": 1088.0,
+          "min_y": 1536.0
+        },
+        "has_been_set": true,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [],
+      "prefab_instances": [
+        {
+          "campaign_region_key": "",
+          "campaign_type_mask": 0,
+          "clamp_to_surface": false,
+          "height_mode": "BHM_ABSOLUTE",
+          "key": "prefabs/deployment_ambush_battle_1024x1024.bmd",
+          "property_overrides": [],
+          "serialise_version": 9,
+          "transform": {
+            "m00": -1.1920927533992653e-07,
+            "m01": 0.0,
+            "m02": -0.9999998211860657,
+            "m03": 0.0,
+            "m10": 0.0,
+            "m11": 1.0,
+            "m12": 0.0,
+            "m13": 0.0,
+            "m20": 0.9999998211860657,
+            "m21": 0.0,
+            "m22": -1.1920927533992653e-07,
+            "m23": 0.0,
+            "m30": 1568.0,
+            "m31": 384.0,
+            "m32": 1952.0,
+            "m33": 1.0
+          },
+          "uid": 110966554124577250
+        }
+      ]
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_13_layer_bmd_data.bin",
+      "source_sha256": "627f0ae129edff7c5d5d72e5b4272f2dceb1052b04f4f26223195931ceb5bcde",
+      "source_probe": "catchments-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "6fbf13c2f05dd51c255c3cf30ae4bcbae8a6725f125886105beb2db19111256a",
+      "playable_area": {
+        "area": {
+          "max_x": 2048.0,
+          "max_y": 2560.0,
+          "min_x": 1088.0,
+          "min_y": 1536.0
+        },
+        "has_been_set": true,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [],
+      "prefab_instances": [
+        {
+          "campaign_region_key": "",
+          "campaign_type_mask": 0,
+          "clamp_to_surface": false,
+          "height_mode": "BHM_ABSOLUTE",
+          "key": "prefabs/deployment_land_battle_1024x1024.bmd",
+          "property_overrides": [],
+          "serialise_version": 9,
+          "transform": {
+            "m00": -1.1920928955078125e-07,
+            "m01": 0.0,
+            "m02": -0.9999999403953552,
+            "m03": 0.0,
+            "m10": 0.0,
+            "m11": 1.0,
+            "m12": 0.0,
+            "m13": 0.0,
+            "m20": 0.9999999403953552,
+            "m21": 0.0,
+            "m22": -1.1920928955078125e-07,
+            "m23": 0.0,
+            "m30": 1536.0,
+            "m31": 64.0,
+            "m32": 2048.0,
+            "m33": 1.0
+          },
+          "uid": 110966537266030772
+        }
+      ]
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_14_layer_bmd_data.bin",
+      "source_sha256": "896962c31b4e4a8941636c31fbfd381fab7c629b88173542d0d2e08dd8abb499",
+      "source_probe": "catchments-probe",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "8e02544e6eea5da7b1e6d08d3a3ff57449906745a3c64afac48867042a397297",
+      "playable_area": {
+        "area": {
+          "max_x": 3840.0,
+          "max_y": 3840.0,
+          "min_x": 2816.0,
+          "min_y": 2848.0
+        },
+        "has_been_set": true,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "native_boundaries": [],
+      "prefab_instances": [
+        {
+          "campaign_region_key": "",
+          "campaign_type_mask": 0,
+          "clamp_to_surface": false,
+          "height_mode": "BHM_ABSOLUTE",
+          "key": "prefabs/deployment_land_battle_1024x1024.bmd",
+          "property_overrides": [],
+          "serialise_version": 9,
+          "transform": {
+            "m00": -1.1920928955078125e-07,
+            "m01": 0.0,
+            "m02": -0.9999999403953552,
+            "m03": 0.0,
+            "m10": 0.0,
+            "m11": 1.0,
+            "m12": 0.0,
+            "m13": 0.0,
+            "m20": 0.9999999403953552,
+            "m21": 0.0,
+            "m22": -1.1920928955078125e-07,
+            "m23": 0.0,
+            "m30": 3328.0,
+            "m31": 384.0,
+            "m32": 3328.0,
+            "m33": 1.0
+          },
+          "uid": 110966581964663358
+        }
+      ]
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_20_layer_bmd_data.bin",
+      "source_sha256": "387fc9546cfe2192435d4bda3c5c187d9ed00bd5612e0af6dc3ee5496955023d",
+      "source_probe": "catchments-probe",
+      "status": "decoder_failed",
+      "error": "Unsupported version 12 for type CompositeSceneReference."
+    }
+  ],
+  "instances": [
+    {
+      "parent_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_01_layer_bmd_data.bin",
+      "prefab_asset": "prefabs/deployment_land_battle_1024x1024.bmd",
+      "instance_uid": 110966528067332153,
+      "runtime_binding_verified": false,
+      "status": "conditional_projection_not_effective_geometry",
+      "projection": "row_vector_xz_assumption",
+      "projected_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 1184.0,
+              "y": 2176.0
+            },
+            {
+              "x": 1888.0,
+              "y": 2176.0
+            },
+            {
+              "x": 1908.6652221679688,
+              "y": 2179.2500610351562
+            },
+            {
+              "x": 1925.5562133789062,
+              "y": 2188.164810180664
+            },
+            {
+              "x": 1940.1013793945312,
+              "y": 2202.475326538086
+            },
+            {
+              "x": 1948.781494140625,
+              "y": 2220.0701904296875
+            },
+            {
+              "x": 1952.0,
+              "y": 2240.0
+            },
+            {
+              "x": 1952.0,
+              "y": 2400.0
+            },
+            {
+              "x": 1948.9873657226562,
+              "y": 2419.998992919922
+            },
+            {
+              "x": 1939.7969360351562,
+              "y": 2437.766326904297
+            },
+            {
+              "x": 1925.60302734375,
+              "y": 2451.9603271484375
+            },
+            {
+              "x": 1908.2437133789062,
+              "y": 2460.7416381835938
+            },
+            {
+              "x": 1888.0,
+              "y": 2464.0
+            },
+            {
+              "x": 1184.0,
+              "y": 2464.0
+            },
+            {
+              "x": 1164.2874145507812,
+              "y": 2460.9669189453125
+            },
+            {
+              "x": 1146.3666076660156,
+              "y": 2451.8463134765625
+            },
+            {
+              "x": 1132.2291870117188,
+              "y": 2437.724639892578
+            },
+            {
+              "x": 1123.0248413085938,
+              "y": 2419.733642578125
+            },
+            {
+              "x": 1120.0,
+              "y": 2400.0
+            },
+            {
+              "x": 1120.0,
+              "y": 2240.0
+            },
+            {
+              "x": 1123.1355285644531,
+              "y": 2220.0785217285156
+            },
+            {
+              "x": 1132.4371337890625,
+              "y": 2201.9752807617188
+            },
+            {
+              "x": 1146.1404113769531,
+              "y": 2188.271987915039
+            },
+            {
+              "x": 1164.1181335449219,
+              "y": 2179.2202758789062
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 1888.0,
+              "y": 2528.0
+            },
+            {
+              "x": 1927.3181457519531,
+              "y": 2521.8333129882812
+            },
+            {
+              "x": 1963.1323852539062,
+              "y": 2503.3485717773438
+            },
+            {
+              "x": 1991.7259826660156,
+              "y": 2475.6214294433594
+            },
+            {
+              "x": 2009.6327514648438,
+              "y": 2439.8023376464844
+            },
+            {
+              "x": 2016.0,
+              "y": 2400.0
+            },
+            {
+              "x": 2016.0,
+              "y": 2240.0
+            },
+            {
+              "x": 2009.8435363769531,
+              "y": 2200.8894653320312
+            },
+            {
+              "x": 1991.8092346191406,
+              "y": 2164.824432373047
+            },
+            {
+              "x": 1963.3067321777344,
+              "y": 2136.3158569335938
+            },
+            {
+              "x": 1927.7573852539062,
+              "y": 2118.2835693359375
+            },
+            {
+              "x": 1888.0,
+              "y": 2112.0
+            },
+            {
+              "x": 1184.0,
+              "y": 2112.0
+            },
+            {
+              "x": 1144.643310546875,
+              "y": 2118.2833862304688
+            },
+            {
+              "x": 1108.6287841796875,
+              "y": 2136.5764770507812
+            },
+            {
+              "x": 1080.4269409179688,
+              "y": 2164.2066955566406
+            },
+            {
+              "x": 1062.1338500976562,
+              "y": 2199.840118408203
+            },
+            {
+              "x": 1056.0,
+              "y": 2240.0
+            },
+            {
+              "x": 1056.0,
+              "y": 2400.0
+            },
+            {
+              "x": 1061.888671875,
+              "y": 2439.3939208984375
+            },
+            {
+              "x": 1080.1554565429688,
+              "y": 2474.3251342773438
+            },
+            {
+              "x": 1108.9976806640625,
+              "y": 2503.808349609375
+            },
+            {
+              "x": 1144.2493896484375,
+              "y": 2521.4341735839844
+            },
+            {
+              "x": 1184.0,
+              "y": 2528.0
+            }
+          ],
+          "vertices_outside_parent_rectangle": 6
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 1888.0000305175781,
+              "y": 1920.0
+            },
+            {
+              "x": 1183.9999694824219,
+              "y": 1920.0001907348633
+            },
+            {
+              "x": 1163.9844055175781,
+              "y": 1916.6620178222656
+            },
+            {
+              "x": 1146.4946594238281,
+              "y": 1907.9945220947266
+            },
+            {
+              "x": 1132.1004943847656,
+              "y": 1893.6002807617188
+            },
+            {
+              "x": 1122.9685974121094,
+              "y": 1875.3365478515625
+            },
+            {
+              "x": 1120.0000915527344,
+              "y": 1856.0001831054688
+            },
+            {
+              "x": 1120.0000305175781,
+              "y": 1696.0001831054688
+            },
+            {
+              "x": 1122.9661560058594,
+              "y": 1676.4505004882812
+            },
+            {
+              "x": 1132.2527770996094,
+              "y": 1658.0320739746094
+            },
+            {
+              "x": 1146.4922180175781,
+              "y": 1643.9474182128906
+            },
+            {
+              "x": 1163.8271789550781,
+              "y": 1635.4346008300781
+            },
+            {
+              "x": 1183.9999694824219,
+              "y": 1632.0002136230469
+            },
+            {
+              "x": 1888.0,
+              "y": 1632.0
+            },
+            {
+              "x": 1907.6808776855469,
+              "y": 1635.0881958007812
+            },
+            {
+              "x": 1925.9544677734375,
+              "y": 1644.2947387695312
+            },
+            {
+              "x": 1940.0432434082031,
+              "y": 1658.3834838867188
+            },
+            {
+              "x": 1948.9707946777344,
+              "y": 1676.09912109375
+            },
+            {
+              "x": 1951.9999694824219,
+              "y": 1696.0
+            },
+            {
+              "x": 1952.0,
+              "y": 1856.0
+            },
+            {
+              "x": 1948.8394165039062,
+              "y": 1876.1889343261719
+            },
+            {
+              "x": 1940.0391540527344,
+              "y": 1893.4122772216797
+            },
+            {
+              "x": 1925.8330078125,
+              "y": 1907.6184387207031
+            },
+            {
+              "x": 1907.8553466796875,
+              "y": 1916.9215545654297
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 1888.0,
+              "y": 1984.0
+            },
+            {
+              "x": 1927.2627563476562,
+              "y": 1977.3974609375
+            },
+            {
+              "x": 1964.3500061035156,
+              "y": 1958.8538360595703
+            },
+            {
+              "x": 1991.9681701660156,
+              "y": 1930.8411331176758
+            },
+            {
+              "x": 2009.3281860351562,
+              "y": 1896.5157012939453
+            },
+            {
+              "x": 2016.0,
+              "y": 1856.0
+            },
+            {
+              "x": 2016.0,
+              "y": 1696.0
+            },
+            {
+              "x": 2009.7408447265625,
+              "y": 1655.9775695800781
+            },
+            {
+              "x": 1990.9234313964844,
+              "y": 1620.24560546875
+            },
+            {
+              "x": 1963.2258911132812,
+              "y": 1592.125244140625
+            },
+            {
+              "x": 1927.0711059570312,
+              "y": 1573.9421081542969
+            },
+            {
+              "x": 1888.0,
+              "y": 1568.0
+            },
+            {
+              "x": 1184.0,
+              "y": 1568.0
+            },
+            {
+              "x": 1144.0802001953125,
+              "y": 1574.2630615234375
+            },
+            {
+              "x": 1108.63623046875,
+              "y": 1592.3719787597656
+            },
+            {
+              "x": 1079.99951171875,
+              "y": 1621.0074768066406
+            },
+            {
+              "x": 1062.35498046875,
+              "y": 1656.141845703125
+            },
+            {
+              "x": 1056.0,
+              "y": 1696.0
+            },
+            {
+              "x": 1056.0,
+              "y": 1856.0
+            },
+            {
+              "x": 1062.4005126953125,
+              "y": 1895.1786193847656
+            },
+            {
+              "x": 1080.307373046875,
+              "y": 1931.2803421020508
+            },
+            {
+              "x": 1109.189697265625,
+              "y": 1959.873893737793
+            },
+            {
+              "x": 1143.8485717773438,
+              "y": 1977.4921417236328
+            },
+            {
+              "x": 1184.0,
+              "y": 1984.0
+            }
+          ],
+          "vertices_outside_parent_rectangle": 6
+        }
+      ]
+    },
+    {
+      "parent_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_02_layer_bmd_data.bin",
+      "prefab_asset": "prefabs/deployment_land_battle_1024x1024.bmd",
+      "instance_uid": 110966530558486611,
+      "runtime_binding_verified": false,
+      "status": "conditional_projection_not_effective_geometry",
+      "projection": "row_vector_xz_assumption",
+      "projected_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 2976.0,
+              "y": 3456.0
+            },
+            {
+              "x": 3680.0,
+              "y": 3456.0
+            },
+            {
+              "x": 3700.6652221679688,
+              "y": 3459.2500610351562
+            },
+            {
+              "x": 3717.5562133789062,
+              "y": 3468.164810180664
+            },
+            {
+              "x": 3732.1013793945312,
+              "y": 3482.475326538086
+            },
+            {
+              "x": 3740.781494140625,
+              "y": 3500.0701904296875
+            },
+            {
+              "x": 3744.0,
+              "y": 3520.0
+            },
+            {
+              "x": 3744.0,
+              "y": 3680.0
+            },
+            {
+              "x": 3740.9873657226562,
+              "y": 3699.998992919922
+            },
+            {
+              "x": 3731.7969360351562,
+              "y": 3717.766326904297
+            },
+            {
+              "x": 3717.60302734375,
+              "y": 3731.9603271484375
+            },
+            {
+              "x": 3700.2437133789062,
+              "y": 3740.7416381835938
+            },
+            {
+              "x": 3680.0,
+              "y": 3744.0
+            },
+            {
+              "x": 2976.0,
+              "y": 3744.0
+            },
+            {
+              "x": 2956.2874145507812,
+              "y": 3740.9669189453125
+            },
+            {
+              "x": 2938.3666076660156,
+              "y": 3731.8463134765625
+            },
+            {
+              "x": 2924.2291870117188,
+              "y": 3717.724639892578
+            },
+            {
+              "x": 2915.0248413085938,
+              "y": 3699.733642578125
+            },
+            {
+              "x": 2912.0,
+              "y": 3680.0
+            },
+            {
+              "x": 2912.0,
+              "y": 3520.0
+            },
+            {
+              "x": 2915.135528564453,
+              "y": 3500.0785217285156
+            },
+            {
+              "x": 2924.4371337890625,
+              "y": 3481.9752807617188
+            },
+            {
+              "x": 2938.140411376953,
+              "y": 3468.271987915039
+            },
+            {
+              "x": 2956.118133544922,
+              "y": 3459.2202758789062
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 3680.0,
+              "y": 3808.0
+            },
+            {
+              "x": 3719.318145751953,
+              "y": 3801.8333129882812
+            },
+            {
+              "x": 3755.1323852539062,
+              "y": 3783.3485717773438
+            },
+            {
+              "x": 3783.7259826660156,
+              "y": 3755.6214294433594
+            },
+            {
+              "x": 3801.6327514648438,
+              "y": 3719.8023376464844
+            },
+            {
+              "x": 3808.0,
+              "y": 3680.0
+            },
+            {
+              "x": 3808.0,
+              "y": 3520.0
+            },
+            {
+              "x": 3801.843536376953,
+              "y": 3480.8894653320312
+            },
+            {
+              "x": 3783.8092346191406,
+              "y": 3444.824432373047
+            },
+            {
+              "x": 3755.3067321777344,
+              "y": 3416.3158569335938
+            },
+            {
+              "x": 3719.7573852539062,
+              "y": 3398.2835693359375
+            },
+            {
+              "x": 3680.0,
+              "y": 3392.0
+            },
+            {
+              "x": 2976.0,
+              "y": 3392.0
+            },
+            {
+              "x": 2936.643310546875,
+              "y": 3398.2833862304688
+            },
+            {
+              "x": 2900.6287841796875,
+              "y": 3416.5764770507812
+            },
+            {
+              "x": 2872.4269409179688,
+              "y": 3444.2066955566406
+            },
+            {
+              "x": 2854.1338500976562,
+              "y": 3479.840118408203
+            },
+            {
+              "x": 2848.0,
+              "y": 3520.0
+            },
+            {
+              "x": 2848.0,
+              "y": 3680.0
+            },
+            {
+              "x": 2853.888671875,
+              "y": 3719.3939208984375
+            },
+            {
+              "x": 2872.1554565429688,
+              "y": 3754.3251342773438
+            },
+            {
+              "x": 2900.9976806640625,
+              "y": 3783.808349609375
+            },
+            {
+              "x": 2936.2493896484375,
+              "y": 3801.4341735839844
+            },
+            {
+              "x": 2976.0,
+              "y": 3808.0
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 3680.000030517578,
+              "y": 3200.0
+            },
+            {
+              "x": 2975.999969482422,
+              "y": 3200.0001907348633
+            },
+            {
+              "x": 2955.984405517578,
+              "y": 3196.6620178222656
+            },
+            {
+              "x": 2938.494659423828,
+              "y": 3187.9945220947266
+            },
+            {
+              "x": 2924.1004943847656,
+              "y": 3173.6002807617188
+            },
+            {
+              "x": 2914.9685974121094,
+              "y": 3155.3365478515625
+            },
+            {
+              "x": 2912.0000915527344,
+              "y": 3136.0001831054688
+            },
+            {
+              "x": 2912.000030517578,
+              "y": 2976.0001831054688
+            },
+            {
+              "x": 2914.9661560058594,
+              "y": 2956.4505004882812
+            },
+            {
+              "x": 2924.2527770996094,
+              "y": 2938.0320739746094
+            },
+            {
+              "x": 2938.492218017578,
+              "y": 2923.9474182128906
+            },
+            {
+              "x": 2955.827178955078,
+              "y": 2915.434600830078
+            },
+            {
+              "x": 2975.999969482422,
+              "y": 2912.000213623047
+            },
+            {
+              "x": 3680.0,
+              "y": 2912.0
+            },
+            {
+              "x": 3699.680877685547,
+              "y": 2915.0881958007812
+            },
+            {
+              "x": 3717.9544677734375,
+              "y": 2924.2947387695312
+            },
+            {
+              "x": 3732.043243408203,
+              "y": 2938.3834838867188
+            },
+            {
+              "x": 3740.9707946777344,
+              "y": 2956.09912109375
+            },
+            {
+              "x": 3743.999969482422,
+              "y": 2976.0
+            },
+            {
+              "x": 3744.0,
+              "y": 3136.0
+            },
+            {
+              "x": 3740.8394165039062,
+              "y": 3156.188934326172
+            },
+            {
+              "x": 3732.0391540527344,
+              "y": 3173.4122772216797
+            },
+            {
+              "x": 3717.8330078125,
+              "y": 3187.618438720703
+            },
+            {
+              "x": 3699.8553466796875,
+              "y": 3196.9215545654297
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 3680.0,
+              "y": 3264.0
+            },
+            {
+              "x": 3719.2627563476562,
+              "y": 3257.3974609375
+            },
+            {
+              "x": 3756.3500061035156,
+              "y": 3238.8538360595703
+            },
+            {
+              "x": 3783.9681701660156,
+              "y": 3210.841133117676
+            },
+            {
+              "x": 3801.3281860351562,
+              "y": 3176.5157012939453
+            },
+            {
+              "x": 3808.0,
+              "y": 3136.0
+            },
+            {
+              "x": 3808.0,
+              "y": 2976.0
+            },
+            {
+              "x": 3801.7408447265625,
+              "y": 2935.977569580078
+            },
+            {
+              "x": 3782.9234313964844,
+              "y": 2900.24560546875
+            },
+            {
+              "x": 3755.2258911132812,
+              "y": 2872.125244140625
+            },
+            {
+              "x": 3719.0711059570312,
+              "y": 2853.942108154297
+            },
+            {
+              "x": 3680.0,
+              "y": 2848.0
+            },
+            {
+              "x": 2976.0,
+              "y": 2848.0
+            },
+            {
+              "x": 2936.0802001953125,
+              "y": 2854.2630615234375
+            },
+            {
+              "x": 2900.63623046875,
+              "y": 2872.3719787597656
+            },
+            {
+              "x": 2871.99951171875,
+              "y": 2901.0074768066406
+            },
+            {
+              "x": 2854.35498046875,
+              "y": 2936.141845703125
+            },
+            {
+              "x": 2848.0,
+              "y": 2976.0
+            },
+            {
+              "x": 2848.0,
+              "y": 3136.0
+            },
+            {
+              "x": 2854.4005126953125,
+              "y": 3175.1786193847656
+            },
+            {
+              "x": 2872.307373046875,
+              "y": 3211.280342102051
+            },
+            {
+              "x": 2901.189697265625,
+              "y": 3239.873893737793
+            },
+            {
+              "x": 2935.8485717773438,
+              "y": 3257.492141723633
+            },
+            {
+              "x": 2976.0,
+              "y": 3264.0
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        }
+      ]
+    },
+    {
+      "parent_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_12_layer_bmd_data.bin",
+      "prefab_asset": "prefabs/deployment_ambush_battle_1024x1024.bmd",
+      "instance_uid": 110966554124577250,
+      "runtime_binding_verified": false,
+      "status": "conditional_projection_not_effective_geometry",
+      "projection": "row_vector_xz_assumption",
+      "projected_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_AMBUSH",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 1056.0002136230287,
+              "y": 2463.9999694824073
+            },
+            {
+              "x": 1056.0000305175854,
+              "y": 1440.0001525878833
+            },
+            {
+              "x": 2079.999908447262,
+              "y": 1440.0000305175781
+            },
+            {
+              "x": 2080.00003051756,
+              "y": 2463.9998474121094
+            }
+          ],
+          "vertices_outside_parent_rectangle": 4
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_AMBUSH",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard subtractive",
+          "points": [
+            {
+              "x": 2015.9999351501447,
+              "y": 2079.999923706061
+            },
+            {
+              "x": 2015.9999046325702,
+              "y": 1823.9999694824282
+            },
+            {
+              "x": 1120.0000648498553,
+              "y": 1824.000076293939
+            },
+            {
+              "x": 1120.0000953674298,
+              "y": 2080.0000305175718
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_AMBUSH",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 1983.9998836517411,
+              "y": 1855.999975204476
+            },
+            {
+              "x": 1984.0000286102145,
+              "y": 2047.9999561309724
+            },
+            {
+              "x": 1152.0001773834279,
+              "y": 2048.000223159739
+            },
+            {
+              "x": 1152.0000934601026,
+              "y": 1856.000265121415
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        }
+      ]
+    },
+    {
+      "parent_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_13_layer_bmd_data.bin",
+      "prefab_asset": "prefabs/deployment_land_battle_1024x1024.bmd",
+      "instance_uid": 110966537266030772,
+      "runtime_binding_verified": false,
+      "status": "conditional_projection_not_effective_geometry",
+      "projection": "row_vector_xz_assumption",
+      "projected_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 1664.0000343322754,
+              "y": 2399.999963760376
+            },
+            {
+              "x": 1663.9999504089355,
+              "y": 1696.000005722046
+            },
+            {
+              "x": 1667.2500087868866,
+              "y": 1675.334784398383
+            },
+            {
+              "x": 1676.164755387471,
+              "y": 1658.443793131506
+            },
+            {
+              "x": 1690.4752691580006,
+              "y": 1643.898626276894
+            },
+            {
+              "x": 1708.0701309661163,
+              "y": 1635.2185099507042
+            },
+            {
+              "x": 1727.9999389648438,
+              "y": 1632.0000019073486
+            },
+            {
+              "x": 1887.9999294281006,
+              "y": 1631.9999828338623
+            },
+            {
+              "x": 1907.9989215151236,
+              "y": 1635.0126145475733
+            },
+            {
+              "x": 1925.7662555360675,
+              "y": 1644.2030415692498
+            },
+            {
+              "x": 1939.9602566262256,
+              "y": 1658.3969477225764
+            },
+            {
+              "x": 1948.7415692073664,
+              "y": 1675.7562596059106
+            },
+            {
+              "x": 1951.9999332427979,
+              "y": 1695.9999713897705
+            },
+            {
+              "x": 1952.0000171661377,
+              "y": 2399.9999294281006
+            },
+            {
+              "x": 1948.9669386421592,
+              "y": 2419.712514063929
+            },
+            {
+              "x": 1939.8463358533663,
+              "y": 2437.6333209677923
+            },
+            {
+              "x": 1925.7246647964112,
+              "y": 2451.770742462868
+            },
+            {
+              "x": 1907.7336696515486,
+              "y": 2460.975089762065
+            },
+            {
+              "x": 1888.0000286102295,
+              "y": 2463.999933242798
+            },
+            {
+              "x": 1728.0000381469727,
+              "y": 2463.999952316284
+            },
+            {
+              "x": 1708.0785606891168,
+              "y": 2460.8644263135484
+            },
+            {
+              "x": 1689.9753196925194,
+              "y": 2451.5628238014324
+            },
+            {
+              "x": 1676.2720260290616,
+              "y": 2437.8595486638806
+            },
+            {
+              "x": 1667.2203123893414,
+              "y": 2419.8818286465157
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 2015.9999294281006,
+              "y": 1695.999963760376
+            },
+            {
+              "x": 2009.8332380968568,
+              "y": 1656.6818210870933
+            },
+            {
+              "x": 1991.3484937183057,
+              "y": 1620.867585923388
+            },
+            {
+              "x": 1963.6213496283654,
+              "y": 1592.2739935209229
+            },
+            {
+              "x": 1927.8022578318214,
+              "y": 1574.3672300593898
+            },
+            {
+              "x": 1887.999921798706,
+              "y": 1567.9999866485596
+            },
+            {
+              "x": 1727.9999313354492,
+              "y": 1568.000005722046
+            },
+            {
+              "x": 1688.8893997325576,
+              "y": 1574.156473640478
+            },
+            {
+              "x": 1652.824371073073,
+              "y": 1592.1907786226493
+            },
+            {
+              "x": 1624.3158007306265,
+              "y": 1620.693282763661
+            },
+            {
+              "x": 1606.2835184455907,
+              "y": 1656.2426297181992
+            },
+            {
+              "x": 1599.9999542236328,
+              "y": 1696.0000133514404
+            },
+            {
+              "x": 1600.0000381469727,
+              "y": 2399.9999713897705
+            },
+            {
+              "x": 1606.2834286946054,
+              "y": 2439.356657748016
+            },
+            {
+              "x": 1624.5765227178308,
+              "y": 2475.371179787864
+            },
+            {
+              "x": 1652.2067429387225,
+              "y": 2503.5730180748433
+            },
+            {
+              "x": 1687.8401658470739,
+              "y": 2521.8661035569676
+            },
+            {
+              "x": 1728.0000457763672,
+              "y": 2527.999948501587
+            },
+            {
+              "x": 1888.000036239624,
+              "y": 2527.9999294281006
+            },
+            {
+              "x": 1927.3939540880165,
+              "y": 2522.1112532079715
+            },
+            {
+              "x": 1962.3251632072897,
+              "y": 2503.844465464663
+            },
+            {
+              "x": 1991.8083733437234,
+              "y": 2475.0022395480264
+            },
+            {
+              "x": 2009.4341920654206,
+              "y": 2439.750530563655
+            },
+            {
+              "x": 2016.0000133514404,
+              "y": 2399.999921798706
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 1407.999965667721,
+              "y": 1696.0000057220477
+            },
+            {
+              "x": 1408.00024032592,
+              "y": 2400.0000247955077
+            },
+            {
+              "x": 1404.6620699983341,
+              "y": 2420.015587965272
+            },
+            {
+              "x": 1395.9945768723583,
+              "y": 2437.505334049798
+            },
+            {
+              "x": 1381.6003381132323,
+              "y": 2451.8994999468287
+            },
+            {
+              "x": 1363.3366073802863,
+              "y": 2461.031398552388
+            },
+            {
+              "x": 1344.0002441406032,
+              "y": 2463.9999065399006
+            },
+            {
+              "x": 1184.0002536773536,
+              "y": 2463.9999866485396
+            },
+            {
+              "x": 1164.4505718718283,
+              "y": 2461.033863667557
+            },
+            {
+              "x": 1146.0321453489287,
+              "y": 2451.7472453229802
+            },
+            {
+              "x": 1131.9474887292472,
+              "y": 2437.50780693277
+            },
+            {
+              "x": 1123.4346697873498,
+              "y": 2420.172848043321
+            },
+            {
+              "x": 1120.00028038024,
+              "y": 2400.0000591277803
+            },
+            {
+              "x": 1119.9999828338623,
+              "y": 1696.0000705718994
+            },
+            {
+              "x": 1123.0881761044293,
+              "y": 1676.3191936912826
+            },
+            {
+              "x": 1132.2947163460449,
+              "y": 1658.0456035950774
+            },
+            {
+              "x": 1146.3834589439648,
+              "y": 1643.956827120559
+            },
+            {
+              "x": 1164.0990940308147,
+              "y": 1635.0292742712827
+            },
+            {
+              "x": 1183.9999713897741,
+              "y": 1632.0000972747785
+            },
+            {
+              "x": 1343.9999618530273,
+              "y": 1632.0000476837158
+            },
+            {
+              "x": 1364.1888953526159,
+              "y": 1635.1606285847156
+            },
+            {
+              "x": 1381.4122382706055,
+              "y": 1643.9608884581685
+            },
+            {
+              "x": 1395.6184006163803,
+              "y": 1658.1670321581441
+            },
+            {
+              "x": 1404.9215180497022,
+              "y": 1676.1446911103867
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 1471.9999618530273,
+              "y": 1696.0000286102295
+            },
+            {
+              "x": 1465.397418503584,
+              "y": 1656.7372753898999
+            },
+            {
+              "x": 1446.8537903097958,
+              "y": 1619.6500300551852
+            },
+            {
+              "x": 1418.8410857452468,
+              "y": 1592.0318709782305
+            },
+            {
+              "x": 1384.5156538979963,
+              "y": 1574.6718602357378
+            },
+            {
+              "x": 1343.9999542236328,
+              "y": 1568.000051498413
+            },
+            {
+              "x": 1183.999963760376,
+              "y": 1568.0000705718994
+            },
+            {
+              "x": 1143.9775364721263,
+              "y": 1574.2592302433077
+            },
+            {
+              "x": 1108.2455767337997,
+              "y": 1593.0766467113626
+            },
+            {
+              "x": 1080.125220383583,
+              "y": 1620.774188695872
+            },
+            {
+              "x": 1061.9420897910404,
+              "y": 1656.9289738647276
+            },
+            {
+              "x": 1055.9999866485596,
+              "y": 1696.000078201294
+            },
+            {
+              "x": 1056.0000705718994,
+              "y": 2400.000036239624
+            },
+            {
+              "x": 1062.2631364808403,
+              "y": 2439.919832918291
+            },
+            {
+              "x": 1080.3720568630433,
+              "y": 2475.363798373477
+            },
+            {
+              "x": 1109.0075566168725,
+              "y": 2504.000512002978
+            },
+            {
+              "x": 1144.1419255225774,
+              "y": 2521.645038012939
+            },
+            {
+              "x": 1184.000078201294,
+              "y": 2528.0000133514404
+            },
+            {
+              "x": 1344.0000686645508,
+              "y": 2527.999994277954
+            },
+            {
+              "x": 1383.1786849510881,
+              "y": 2521.5994772936865
+            },
+            {
+              "x": 1419.2804033818788,
+              "y": 2503.6926137057953
+            },
+            {
+              "x": 1447.8739498702712,
+              "y": 2474.810287799949
+            },
+            {
+              "x": 1465.4921926743218,
+              "y": 2440.1514132538014
+            },
+            {
+              "x": 1472.0000457763672,
+              "y": 2399.9999866485596
+            }
+          ],
+          "vertices_outside_parent_rectangle": 6
+        }
+      ]
+    },
+    {
+      "parent_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_14_layer_bmd_data.bin",
+      "prefab_asset": "prefabs/deployment_land_battle_1024x1024.bmd",
+      "instance_uid": 110966581964663358,
+      "runtime_binding_verified": false,
+      "status": "conditional_projection_not_effective_geometry",
+      "projection": "row_vector_xz_assumption",
+      "projected_boundaries": [
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 3456.0000343322754,
+              "y": 3679.999963760376
+            },
+            {
+              "x": 3455.9999504089355,
+              "y": 2976.000005722046
+            },
+            {
+              "x": 3459.2500087868866,
+              "y": 2955.334784398383
+            },
+            {
+              "x": 3468.164755387471,
+              "y": 2938.443793131506
+            },
+            {
+              "x": 3482.4752691580006,
+              "y": 2923.898626276894
+            },
+            {
+              "x": 3500.0701309661163,
+              "y": 2915.218509950704
+            },
+            {
+              "x": 3519.9999389648438,
+              "y": 2912.0000019073486
+            },
+            {
+              "x": 3679.9999294281006,
+              "y": 2911.9999828338623
+            },
+            {
+              "x": 3699.9989215151236,
+              "y": 2915.0126145475733
+            },
+            {
+              "x": 3717.7662555360675,
+              "y": 2924.2030415692498
+            },
+            {
+              "x": 3731.9602566262256,
+              "y": 2938.3969477225764
+            },
+            {
+              "x": 3740.7415692073664,
+              "y": 2955.7562596059106
+            },
+            {
+              "x": 3743.999933242798,
+              "y": 2975.9999713897705
+            },
+            {
+              "x": 3744.0000171661377,
+              "y": 3679.9999294281006
+            },
+            {
+              "x": 3740.966938642159,
+              "y": 3699.712514063929
+            },
+            {
+              "x": 3731.8463358533663,
+              "y": 3717.6333209677923
+            },
+            {
+              "x": 3717.724664796411,
+              "y": 3731.770742462868
+            },
+            {
+              "x": 3699.7336696515486,
+              "y": 3740.975089762065
+            },
+            {
+              "x": 3680.0000286102295,
+              "y": 3743.999933242798
+            },
+            {
+              "x": 3520.0000381469727,
+              "y": 3743.999952316284
+            },
+            {
+              "x": 3500.078560689117,
+              "y": 3740.8644263135484
+            },
+            {
+              "x": 3481.9753196925194,
+              "y": 3731.5628238014324
+            },
+            {
+              "x": 3468.2720260290616,
+              "y": 3717.8595486638806
+            },
+            {
+              "x": 3459.2203123893414,
+              "y": 3699.8818286465157
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 0,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 3807.9999294281006,
+              "y": 2975.999963760376
+            },
+            {
+              "x": 3801.833238096857,
+              "y": 2936.6818210870933
+            },
+            {
+              "x": 3783.3484937183057,
+              "y": 2900.867585923388
+            },
+            {
+              "x": 3755.6213496283654,
+              "y": 2872.273993520923
+            },
+            {
+              "x": 3719.8022578318214,
+              "y": 2854.36723005939
+            },
+            {
+              "x": 3679.999921798706,
+              "y": 2847.9999866485596
+            },
+            {
+              "x": 3519.999931335449,
+              "y": 2848.000005722046
+            },
+            {
+              "x": 3480.8893997325576,
+              "y": 2854.156473640478
+            },
+            {
+              "x": 3444.824371073073,
+              "y": 2872.1907786226493
+            },
+            {
+              "x": 3416.3158007306265,
+              "y": 2900.693282763661
+            },
+            {
+              "x": 3398.2835184455907,
+              "y": 2936.242629718199
+            },
+            {
+              "x": 3391.999954223633,
+              "y": 2976.0000133514404
+            },
+            {
+              "x": 3392.0000381469727,
+              "y": 3679.9999713897705
+            },
+            {
+              "x": 3398.2834286946054,
+              "y": 3719.356657748016
+            },
+            {
+              "x": 3416.576522717831,
+              "y": 3755.371179787864
+            },
+            {
+              "x": 3444.2067429387225,
+              "y": 3783.5730180748433
+            },
+            {
+              "x": 3479.840165847074,
+              "y": 3801.8661035569676
+            },
+            {
+              "x": 3520.000045776367,
+              "y": 3807.999948501587
+            },
+            {
+              "x": 3680.000036239624,
+              "y": 3807.9999294281006
+            },
+            {
+              "x": 3719.3939540880165,
+              "y": 3802.1112532079715
+            },
+            {
+              "x": 3754.3251632072897,
+              "y": 3783.844465464663
+            },
+            {
+              "x": 3783.8083733437234,
+              "y": 3755.0022395480264
+            },
+            {
+              "x": 3801.4341920654206,
+              "y": 3719.750530563655
+            },
+            {
+              "x": 3808.0000133514404,
+              "y": 3679.999921798706
+            }
+          ],
+          "vertices_outside_parent_rectangle": 1
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 0,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "standard additive",
+          "points": [
+            {
+              "x": 3199.999965667721,
+              "y": 2976.0000057220477
+            },
+            {
+              "x": 3200.00024032592,
+              "y": 3680.0000247955077
+            },
+            {
+              "x": 3196.662069998334,
+              "y": 3700.015587965272
+            },
+            {
+              "x": 3187.9945768723583,
+              "y": 3717.505334049798
+            },
+            {
+              "x": 3173.6003381132323,
+              "y": 3731.8994999468287
+            },
+            {
+              "x": 3155.3366073802863,
+              "y": 3741.031398552388
+            },
+            {
+              "x": 3136.000244140603,
+              "y": 3743.9999065399006
+            },
+            {
+              "x": 2976.0002536773536,
+              "y": 3743.9999866485396
+            },
+            {
+              "x": 2956.4505718718283,
+              "y": 3741.033863667557
+            },
+            {
+              "x": 2938.0321453489287,
+              "y": 3731.7472453229802
+            },
+            {
+              "x": 2923.947488729247,
+              "y": 3717.50780693277
+            },
+            {
+              "x": 2915.43466978735,
+              "y": 3700.172848043321
+            },
+            {
+              "x": 2912.00028038024,
+              "y": 3680.0000591277803
+            },
+            {
+              "x": 2911.9999828338623,
+              "y": 2976.0000705718994
+            },
+            {
+              "x": 2915.0881761044293,
+              "y": 2956.3191936912826
+            },
+            {
+              "x": 2924.294716346045,
+              "y": 2938.0456035950774
+            },
+            {
+              "x": 2938.383458943965,
+              "y": 2923.956827120559
+            },
+            {
+              "x": 2956.0990940308147,
+              "y": 2915.0292742712827
+            },
+            {
+              "x": 2975.999971389774,
+              "y": 2912.0000972747785
+            },
+            {
+              "x": 3135.9999618530273,
+              "y": 2912.000047683716
+            },
+            {
+              "x": 3156.188895352616,
+              "y": 2915.1606285847156
+            },
+            {
+              "x": 3173.4122382706055,
+              "y": 2923.9608884581685
+            },
+            {
+              "x": 3187.6184006163803,
+              "y": 2938.167032158144
+            },
+            {
+              "x": 3196.921518049702,
+              "y": 2956.1446911103867
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        },
+        {
+          "area_index": 0,
+          "zone_index": 1,
+          "region_index": 0,
+          "boundary_index": 1,
+          "category": "DAC_DEFAULT",
+          "region_id": 0,
+          "orientation_raw": 90.0,
+          "snap_facing": false,
+          "boundary_type": "guerrilla exclusion additive",
+          "points": [
+            {
+              "x": 3263.9999618530273,
+              "y": 2976.0000286102295
+            },
+            {
+              "x": 3257.397418503584,
+              "y": 2936.7372753899
+            },
+            {
+              "x": 3238.853790309796,
+              "y": 2899.650030055185
+            },
+            {
+              "x": 3210.841085745247,
+              "y": 2872.0318709782305
+            },
+            {
+              "x": 3176.5156538979963,
+              "y": 2854.6718602357378
+            },
+            {
+              "x": 3135.999954223633,
+              "y": 2848.000051498413
+            },
+            {
+              "x": 2975.999963760376,
+              "y": 2848.0000705718994
+            },
+            {
+              "x": 2935.9775364721263,
+              "y": 2854.2592302433077
+            },
+            {
+              "x": 2900.2455767337997,
+              "y": 2873.0766467113626
+            },
+            {
+              "x": 2872.125220383583,
+              "y": 2900.774188695872
+            },
+            {
+              "x": 2853.9420897910404,
+              "y": 2936.9289738647276
+            },
+            {
+              "x": 2847.9999866485596,
+              "y": 2976.000078201294
+            },
+            {
+              "x": 2848.0000705718994,
+              "y": 3680.000036239624
+            },
+            {
+              "x": 2854.2631364808403,
+              "y": 3719.919832918291
+            },
+            {
+              "x": 2872.3720568630433,
+              "y": 3755.363798373477
+            },
+            {
+              "x": 2901.0075566168725,
+              "y": 3784.000512002978
+            },
+            {
+              "x": 2936.1419255225774,
+              "y": 3801.645038012939
+            },
+            {
+              "x": 2976.000078201294,
+              "y": 3808.0000133514404
+            },
+            {
+              "x": 3136.000068664551,
+              "y": 3807.999994277954
+            },
+            {
+              "x": 3175.178684951088,
+              "y": 3801.5994772936865
+            },
+            {
+              "x": 3211.280403381879,
+              "y": 3783.6926137057953
+            },
+            {
+              "x": 3239.873949870271,
+              "y": 3754.810287799949
+            },
+            {
+              "x": 3257.492192674322,
+              "y": 3720.1514132538014
+            },
+            {
+              "x": 3264.000045776367,
+              "y": 3679.9999866485596
+            }
+          ],
+          "vertices_outside_parent_rectangle": 0
+        }
+      ]
+    }
+  ],
+  "boundaries": [
+    "Native polygon points, categories and zone indices are source evidence.",
+    "Zone indices are not assigned to attacker, defender or alliance.",
+    "Projected coordinates assume row-vector X/Z convention; world alignment is unverified.",
+    "Out-of-bounds vertices are retained, not clipped or interpreted as runtime errors.",
+    "Tile transforms, catchment selection and runtime clipping remain unresolved."
+  ]
+}

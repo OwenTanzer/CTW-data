@@ -3,7 +3,7 @@ export function validateProbeRequest(request) {
     throw Error('Probe requires 1–100 exact paths');
   if (new Set(request.paths).size !== request.paths.length) throw Error('Duplicate source path');
   for (const p of request.paths) {
-    if (typeof p !== 'string' || !/^(terrain|db|text)\//.test(p) ||
+    if (typeof p !== 'string' || !/^(terrain|db|text|prefabs)\//.test(p) ||
         p.split('/').some(part => !part || part === '.' || part === '..') || /[\\\x00-\x1f:]/.test(p))
       throw Error('Unsafe source path');
   }

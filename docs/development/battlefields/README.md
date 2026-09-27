@@ -183,3 +183,72 @@ decoder coverage, native boundary/prefab preservation and output guards. Existin
 discovery, decoder and atlas-variant checks still pass. The default validation
 chain includes the Python tile tests; composition tests require the separately
 built Rust adapter. No generated production files change in this checkpoint.
+
+## Deployment dependency checkpoint
+
+PR #32 merged at `5f49a881aa689b95120d446f884d6da5e56a1cf4`. PR #33 was
+independently reviewed at `a7ed3666ddf2d92570951671aadc52412c72c75d`; its 25 bounded
+checks passed and the reviewer found no blockers within the experimental scope.
+
+`prefab-probe/` now resolves both referenced land and ambush deployment prefabs
+from verified vanilla source. `catchments-probe/` retains the other six discovered
+catchment layers for coastal `tile_11`. The bounded extractor permits the
+`prefabs/` root with the same path validation and source verification as terrain.
+These targeted extractions do not expand the original discovery inventory.
+
+`deployment-summary.json` joins each decoded layer to its exact prefab key and
+retains native category, zone/region indices, boundary type, points, orientation,
+instance transform and uint64 identifier. Native deployment has two forms here:
+
+| Layer | Source of deployment | Decoder status |
+| --- | --- | --- |
+| catchment 01 | land prefab, identity rotation/scale block | exact roundtrip |
+| catchment 02 | land prefab, identity rotation/scale block | exact roundtrip |
+| catchment 08 | direct `DAC_RIVER` polygons | exact roundtrip |
+| catchment 12 | ambush prefab, rotated matrix | exact roundtrip |
+| catchment 13 | land prefab, rotated matrix | exact roundtrip |
+| catchment 14 | land prefab, rotated matrix | exact roundtrip |
+| catchment 20 | unavailable to the pinned decoder | unsupported `CompositeSceneReference` version 12 |
+
+All prefab instances have nonzero translation. Eight of nine inputs
+(two prefabs plus seven layers) round-trip exactly. All five decoded prefab
+references resolve within this bounded source set. This does not establish all
+scene dependencies, including the unsupported catchment 20 asset.
+
+The builder also emits **conditional projections**, explicitly separate from
+runtime-verified geometry. It assumes source 2D polygon `(x,y)` lies in prefab
+3D `(x,z)`, and applies the horizontal row-vector matrix:
+
+```
+projected_x = x*m00 + y*m20 + m30
+projected_y = x*m02 + y*m22 + m32
+```
+
+The pinned library's `prefab_instance_list/mod.rs` exporter uses `m30,m31,m32`
+as placement position. That supports the translation-field interpretation; it
+does not prove the complete game coordinate convention or tile-to-world mapping.
+The projections are diagnostic hypotheses. Tilt, perspective, singular or
+nonfinite transforms fail; unresolved instance conditions are not projected.
+Zone indices are not assigned attacker/defender/alliance identities, and the
+source region orientation is retained without interpreting it as another polygon
+rotation.
+
+For catchment 01, both standard boundaries remain inside its set rectangle
+under this projection. Each guerrilla-exclusion boundary has six vertices outside,
+reaching x=1056 while the rectangle starts at x=1088. These points are preserved.
+They are neither silently clipped nor asserted to be game-data errors; engine
+clipping, coordinate conventions and runtime selection still require verification.
+Raw floating-point values are retained, including small rotation residuals.
+
+```bash
+python scripts/build_battlefield_deployment.py --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder --output work/new-deployment
+python scripts/test_battlefield_deployment.py work/battlefield-decoder-target/debug/ctw-battlefield-decoder
+```
+
+Seven new checks cover exact report reproduction, dependency resolution and
+uint64 identity, direct river deployment, preservation of out-of-bounds points,
+translation/rotation convention, unsupported matrices and output guards. The
+five discovery and four composition checks also pass after this increment.
+Full-repository validation retains the previously documented memory limitation.
+Next: bind these layers to an exact selectable custom-battle variant, verify
+world-coordinate placement and runtime deployment, and decode terrain/height.
