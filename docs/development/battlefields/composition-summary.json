@@ -1,0 +1,1216 @@
+{
+  "status": "development_composition_evidence_not_effective_geometry",
+  "checked_composition_files": 15,
+  "layouts": [
+    {
+      "map_asset": "chs_wastes_coast_a",
+      "status": "experimental_tile_references_not_effective_geometry",
+      "index_version": 11,
+      "grid_width": 64,
+      "grid_height": 64,
+      "coordinate_space": "source_grid_cells_world_units_unresolved",
+      "index_sha256": "d7ab9d8aabda1ddb27bea2a6d4f9f046e1dab674ba8e916fb42dc0ae830e07b6",
+      "tiles_sha256": "c6625fd79b7d4cb86c7e41c80399829ffd8b6b25198192d22c2888406e1ad597",
+      "consumed_bytes": 246145,
+      "tile_paths_raw": [
+        "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_11\\",
+        "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_21\\",
+        "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_31\\",
+        "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_12\\",
+        "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_22\\",
+        "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_32\\"
+      ],
+      "trailing_labels_raw": [
+        "def_bleak"
+      ],
+      "occupied_cells_by_plane": [
+        1536,
+        0,
+        0
+      ],
+      "placements": [
+        {
+          "plane": 0,
+          "anchor_cell_index": 1480,
+          "anchor_grid_xy": [
+            8,
+            23
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_11\\",
+          "grid_bounds_exclusive": [
+            8,
+            8,
+            24,
+            24
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "15b3f5c300000000",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 1496,
+          "anchor_grid_xy": [
+            24,
+            23
+          ],
+          "path_reference_1based": 2,
+          "tile_path_raw": "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_21\\",
+          "grid_bounds_exclusive": [
+            24,
+            8,
+            40,
+            24
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "3a078ac300000000",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 1512,
+          "anchor_grid_xy": [
+            40,
+            23
+          ],
+          "path_reference_1based": 3,
+          "tile_path_raw": "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_31\\",
+          "grid_bounds_exclusive": [
+            40,
+            8,
+            56,
+            24
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "0000000000000000",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2504,
+          "anchor_grid_xy": [
+            8,
+            39
+          ],
+          "path_reference_1based": 4,
+          "tile_path_raw": "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_12\\",
+          "grid_bounds_exclusive": [
+            8,
+            24,
+            24,
+            40
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "068d2fc49785413e",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2520,
+          "anchor_grid_xy": [
+            24,
+            39
+          ],
+          "path_reference_1based": 5,
+          "tile_path_raw": "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_22\\",
+          "grid_bounds_exclusive": [
+            24,
+            24,
+            40,
+            40
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "9558a6c300000000",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2536,
+          "anchor_grid_xy": [
+            40,
+            39
+          ],
+          "path_reference_1based": 6,
+          "tile_path_raw": "terrain\\tiles\\battle\\chs_wastes\\chs_wastes_coast_a\\tile_32\\",
+          "grid_bounds_exclusive": [
+            40,
+            24,
+            56,
+            40
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "0000000000000000",
+          "nonzero_member_tail_count": 0
+        }
+      ]
+    },
+    {
+      "map_asset": "def_plains_infield_a",
+      "status": "experimental_tile_references_not_effective_geometry",
+      "index_version": 11,
+      "grid_width": 80,
+      "grid_height": 80,
+      "coordinate_space": "source_grid_cells_world_units_unresolved",
+      "index_sha256": "92cc8dfd955cf68d1fca9c5abf3b829e7cf4fb13794bbb364ed3fb7d8c7e4b28",
+      "tiles_sha256": "84a5cb7aab0f6febaea52245d0319475078924ae6eac3c642ecca4f54e281f50",
+      "consumed_bytes": 384291,
+      "tile_paths_raw": [
+        "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+        "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_rivers_16x16\\",
+        "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_hills_and_plateaus\\",
+        "terrain\\tiles\\battle\\def_plains_infield\\def_plains_infield_a\\"
+      ],
+      "trailing_labels_raw": [
+        "def"
+      ],
+      "occupied_cells_by_plane": [
+        6400,
+        0,
+        0
+      ],
+      "placements": [
+        {
+          "plane": 0,
+          "anchor_cell_index": 15,
+          "anchor_grid_xy": [
+            15,
+            0
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 64,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "cc2f2745b79f3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 16,
+          "anchor_grid_xy": [
+            16,
+            0
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            16,
+            0,
+            32,
+            16
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 128,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "3e2f0245ed963145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 47,
+          "anchor_grid_xy": [
+            47,
+            0
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            32,
+            0,
+            48,
+            16
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 64,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "bc1a0245de5a3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 64,
+          "anchor_grid_xy": [
+            64,
+            0
+          ],
+          "path_reference_1based": 3,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_hills_and_plateaus\\",
+          "grid_bounds_exclusive": [
+            64,
+            0,
+            80,
+            16
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 128,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "65ad2845b79f3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 1248,
+          "anchor_grid_xy": [
+            48,
+            15
+          ],
+          "path_reference_1based": 2,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_rivers_16x16\\",
+          "grid_bounds_exclusive": [
+            48,
+            0,
+            64,
+            16
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "aa1d024500313945",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 1359,
+          "anchor_grid_xy": [
+            79,
+            16
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            64,
+            16,
+            80,
+            32
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 64,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "c55c1345969a3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2495,
+          "anchor_grid_xy": [
+            15,
+            31
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 32,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "d8601045ed963145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2496,
+          "anchor_grid_xy": [
+            16,
+            31
+          ],
+          "path_reference_1based": 3,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_hills_and_plateaus\\",
+          "grid_bounds_exclusive": [
+            16,
+            16,
+            32,
+            32
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e00024508ed2e45",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2527,
+          "anchor_grid_xy": [
+            47,
+            31
+          ],
+          "path_reference_1based": 2,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_rivers_16x16\\",
+          "grid_bounds_exclusive": [
+            32,
+            16,
+            48,
+            32
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 32,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e000245c1f62045",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2543,
+          "anchor_grid_xy": [
+            63,
+            31
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            48,
+            16,
+            64,
+            32
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 32,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e000245527d2f45",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2560,
+          "anchor_grid_xy": [
+            0,
+            32
+          ],
+          "path_reference_1based": 3,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_hills_and_plateaus\\",
+          "grid_bounds_exclusive": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 128,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "d6b407455f3b3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 2623,
+          "anchor_grid_xy": [
+            63,
+            32
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            48,
+            32,
+            64,
+            48
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 64,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e000245031f2345",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 3791,
+          "anchor_grid_xy": [
+            31,
+            47
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            16,
+            32,
+            32,
+            48
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 32,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e00024565352045",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 3792,
+          "anchor_grid_xy": [
+            32,
+            47
+          ],
+          "path_reference_1based": 4,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_plains_infield\\def_plains_infield_a\\",
+          "grid_bounds_exclusive": [
+            32,
+            32,
+            48,
+            48
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e000245999f0745",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 3824,
+          "anchor_grid_xy": [
+            64,
+            47
+          ],
+          "path_reference_1based": 2,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_rivers_16x16\\",
+          "grid_bounds_exclusive": [
+            64,
+            32,
+            80,
+            48
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "6e0e1145b66b3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 3919,
+          "anchor_grid_xy": [
+            79,
+            48
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            64,
+            48,
+            80,
+            64
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 64,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "491c1545969a3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 5055,
+          "anchor_grid_xy": [
+            15,
+            63
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 32,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "2f3e0745ed963145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 5056,
+          "anchor_grid_xy": [
+            16,
+            63
+          ],
+          "path_reference_1based": 2,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_rivers_16x16\\",
+          "grid_bounds_exclusive": [
+            16,
+            48,
+            32,
+            64
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e000245bc381d45",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 5072,
+          "anchor_grid_xy": [
+            32,
+            63
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            32,
+            48,
+            48,
+            64
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e000245ca572245",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 5088,
+          "anchor_grid_xy": [
+            48,
+            63
+          ],
+          "path_reference_1based": 3,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_hills_and_plateaus\\",
+          "grid_bounds_exclusive": [
+            48,
+            48,
+            64,
+            64
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 16,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "5e000245a8792f45",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 5152,
+          "anchor_grid_xy": [
+            32,
+            64
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            32,
+            64,
+            48,
+            80
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 128,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "7d960445de5a3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 5168,
+          "anchor_grid_xy": [
+            48,
+            64
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            48,
+            64,
+            64,
+            80
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 128,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "ab321245969a3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 5184,
+          "anchor_grid_xy": [
+            64,
+            64
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            64,
+            64,
+            80,
+            80
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 128,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "489d2845b79f3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 6335,
+          "anchor_grid_xy": [
+            15,
+            79
+          ],
+          "path_reference_1based": 1,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_outfield_primordial_plains_16x16\\",
+          "grid_bounds_exclusive": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 32,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "ee150545b79f3145",
+          "nonzero_member_tail_count": 0
+        },
+        {
+          "plane": 0,
+          "anchor_cell_index": 6351,
+          "anchor_grid_xy": [
+            31,
+            79
+          ],
+          "path_reference_1based": 2,
+          "tile_path_raw": "terrain\\tiles\\battle\\def_outfield\\def_bleak_outfield_rivers_16x16\\",
+          "grid_bounds_exclusive": [
+            16,
+            64,
+            32,
+            80
+          ],
+          "member_cells": 256,
+          "opaque_u8_4": 32,
+          "opaque_u8_5": 7,
+          "opaque_u16_10": 0,
+          "opaque_member_u8_4_counts": {
+            "16": 255
+          },
+          "opaque_anchor_tail_hex": "cf7f0245ceda2845",
+          "nonzero_member_tail_count": 0
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "source_asset": "terrain/battles/def_plains_infield_a/tile_map.bmd",
+      "source_sha256": "c42793c83657a22b460d723168f1d88ddb608bcbb795763491d384a1f62e659e",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "868afd95aa36f52192cbc7d96b6dd1e6059c681dc43cec77f32966c786e33cef",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_data.bin",
+      "source_sha256": "d98d5e31cf8d12e764822a9aee5cbf57e580ebb488d83cdb9f9316fcb441d259",
+      "status": "decoder_failed",
+      "error": "Unsupported version 12 for type CompositeSceneReference."
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_nogo_data.bin",
+      "source_sha256": "1dcacd8ce5e06a561a845975e3785358846886a2f964843bc609291de34f0a89",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "a50fbbb31a74d6d6008a83b1978b8cf5a0e5707496423aa5e8875ec252a5adac",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_01_layer_bmd_data.bin",
+      "source_sha256": "ace89208f92fffa59ca051b96028985d3a536d357452c33fc60b2d46f28ad7f0",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "6d7130d652684729e1ad1e5cb6334ceafaab896882044dde8e5a7c06fbb4a2ea",
+      "playable_area": {
+        "area": {
+          "max_x": 2048.0,
+          "max_y": 2560.0,
+          "min_x": 1088.0,
+          "min_y": 1536.0
+        },
+        "has_been_set": true,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 1,
+      "set_playable_area_prefab_instances": [
+        {
+          "campaign_region_key": "",
+          "campaign_type_mask": 0,
+          "clamp_to_surface": false,
+          "height_mode": "BHM_ABSOLUTE",
+          "key": "prefabs/deployment_land_battle_1024x1024.bmd",
+          "property_overrides": [],
+          "serialise_version": 9,
+          "transform": {
+            "m00": 1.0,
+            "m01": 0.0,
+            "m02": 0.0,
+            "m03": 0.0,
+            "m10": 0.0,
+            "m11": 1.0,
+            "m12": 0.0,
+            "m13": 0.0,
+            "m20": 0.0,
+            "m21": 0.0,
+            "m22": 1.0,
+            "m23": 0.0,
+            "m30": 1536.0,
+            "m31": 64.0,
+            "m32": 2048.0,
+            "m33": 1.0
+          },
+          "uid": 110966528067332153
+        }
+      ]
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/catchment_catchment_01_bmd.bin",
+      "source_sha256": "c42793c83657a22b460d723168f1d88ddb608bcbb795763491d384a1f62e659e",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "868afd95aa36f52192cbc7d96b6dd1e6059c681dc43cec77f32966c786e33cef",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_12/bmd_data.bin",
+      "source_sha256": "50d36288fa247ebc04c359c14806049c592337ec63a0a34e0a1e6ab60aea36e2",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "1bf2bcd4f7f3ff423714836a286f50e16d60e05e8e093fb24b3c194643abd7a7",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 8,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_12/bmd_nogo_data.bin",
+      "source_sha256": "add99d0a3894189cd9b551d0d6a8e91d707343ffef7a7e71139c20399074a1fc",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "fb5defc2102073f6ddf0edbb82e5749d83fe9a98d78e151f416457b47b0611b5",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_21/bmd_data.bin",
+      "source_sha256": "112e00dfff11d75226e3f758509bd77098e04a7fb70bb92063ce061122001638",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "b7b44c9aeb8ff23afeed3ad54d4c4a8f884dda0143605cd30777c84662283b05",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 366,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_21/bmd_nogo_data.bin",
+      "source_sha256": "c1062409860b26fb535521a072f7a374e4746d0ef65ae826cf242a39915199a2",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "d32390e535f9b5d8f253d105ccdc36469606f716cd095cb5d30c7b755a763a63",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_22/bmd_data.bin",
+      "source_sha256": "2b3d916a91b68df2f411102339356a2408e4c0123dd3eed3d2e69c5616c71816",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "7fd971202fdff2193ea516a6577eac4b7fdfbc675d888eb3d918e5f50c52b609",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_22/bmd_nogo_data.bin",
+      "source_sha256": "8e0c55ead456f4d8bee2bbaf4d75195f3c8601472c71e0302e6406a96bc37f80",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "f76a524898b58ee93c691bd4a55a755c86681e66a47286914e6fe95ad3826601",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_31/bmd_nogo_data.bin",
+      "source_sha256": "f9fb0c39521c69a4b5b66e080feffd049ee722a0cf4eddcfb26db05fd150f7a3",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "ea7a9c156bd731a60fa2a0953eac30ec184d3285ec69f5d3f0f7430d47ba8b10",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    },
+    {
+      "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_32/bmd_nogo_data.bin",
+      "source_sha256": "58147a676e474ac52889b86a9a0a3fff1b8271211e8f4c42ba80f0d23cb39aea",
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoded_sha256": "cdd6963d9e6cb5a51ef08ed22391f3626150666033a970be1872a3a0c63a3d39",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 0,
+      "set_playable_area_prefab_instances": null
+    }
+  ],
+  "unresolved": [
+    "Prefab dependency closure and effective deployment",
+    "Tile orientation, world transforms and catchment binding",
+    "Unsupported BMD subrecord versions",
+    "Height decoding, terrain semantics and runtime validation"
+  ]
+}

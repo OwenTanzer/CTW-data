@@ -114,3 +114,72 @@ spatial validation and production integration remain as specified in #9.
 
 Campaign encounter selection remains #29. Live outcome reports and tactical
 interpretations remain in the Analysis repository.
+
+## Tile-reference checkpoint following PR #32
+
+PR #32 was independently reviewed at `71e2f7406de7133fc768fc860a1c81f15f0645ab`.
+The reviewer found no blocking findings within its discovery/decoder scope;
+they reproduced the five discovery, five decoder and four atlas-variant checks.
+This does not establish full-repository validation or battlefield completeness.
+The full validation gate still needs an environment with sufficient memory.
+
+`composition-probe/` adds 15 hashed source files from the verified installation.
+`composition-summary.json` is reproduced by `build_battlefield_composition.py`.
+It contains experimental tile membership and scoped BMD results, not a production
+layout. The reader's format assumptions are inferred from two independent raw
+map fixtures, rather than an authoritative file-format specification.
+
+| Source asset | Grid | Placements | Distinct tile paths | Occupied cells |
+| --- | --- | --- | --- | --- |
+| `chs_wastes_coast_a` | 64 × 64 | 6 | 6 | 1,536 |
+| `def_plains_infield_a` | 80 × 80 | 25 | 4 | 6,400 |
+
+Both index files contain three little-endian uint32 values: version 11, grid
+width and grid height. Their `.tiles` files contain three grid-sized planes of
+20-byte records, followed by two counted string tables. Only the first plane is
+occupied in these fixtures; meanings of the three planes remain unresolved.
+Positive signed references select a one-based path-table entry. Negative
+references select a one-based anchor-cell address within the plane. Zero marks
+an unoccupied cell. Grouping members yields rectangular footprints, independently
+checked against the stored origin. Bounds in the summary use an exclusive upper
+edge in **grid cells**, with no claimed conversion to world distance.
+
+Each record is read as `i32, u8, u8, u16, u16, u16, u32, u32`.
+The two middle u16 fields agree with the footprint origin. Other fields remain
+opaque, including the anchor's last eight bytes. Byte 4 varies between 16, 32,
+64 and 128 on the second map's anchors, while all its member values are 16;
+therefore it must not be interpreted as tile size. Rotation, world transforms,
+height offsets and plane semantics need independent verification. Raw files
+remain the complete source; the generated report is a summary, not a lossless
+replacement for every cell record.
+
+Of 13 new BMD inputs, 12 decode and re-encode byte-for-byte. Coastal
+`tile_11/bmd_data.bin` fails with unsupported `CompositeSceneReference` version 12.
+The builder records this failure and does not emit a decoded asset for it.
+It does not bypass the unsupported record or claim dependency closure.
+
+`tile_11/catchment_01_layer_bmd_data.bin` explicitly sets a native playable
+rectangle `(1088, 1536)`–`(2048, 2560)` and references
+`prefabs/deployment_land_battle_1024x1024.bmd`, with its original transform and
+uint64 identifier retained. This is **asset-local evidence**, not an effective
+custom-battle boundary or deployment area. The deployment list in the layer is
+empty; the prefab reference is a concrete next dependency to resolve. The current
+discovery inventory covers terrain/db/text, so it does not establish whether this
+prefab exists elsewhere in the merged packs. Missing `bmd_data.bin` paths for
+other selected tiles likewise do not establish missing runtime content.
+
+Reproduce the checkpoint into a fresh candidate directory:
+
+```bash
+npm run test:battlefield-tiles
+python scripts/build_battlefield_composition.py --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder --output work/new-composition
+python scripts/test_battlefield_composition.py work/battlefield-decoder-target/debug/ctw-battlefield-decoder
+```
+
+Seven tile tests cover both grids, repeated tile paths, malformed references,
+origin disagreement, truncated/trailing data, unsafe paths and unsupported index
+headers. Four composition checks cover exact summary reproduction, explicit partial
+decoder coverage, native boundary/prefab preservation and output guards. Existing
+discovery, decoder and atlas-variant checks still pass. The default validation
+chain includes the Python tile tests; composition tests require the separately
+built Rust adapter. No generated production files change in this checkpoint.
