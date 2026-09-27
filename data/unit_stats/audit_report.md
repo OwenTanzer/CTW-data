@@ -2,11 +2,11 @@
 
 Status: **PASSED**
 
-Checked 3155 normalized units across 25 faction files.
+Checked 3181 normalized units across 25 faction files.
 
 ## Passed checks
 
-- All 3155 roster rows are present.
+- All 3181 roster rows are present.
 - Unit keys are unique within each of the 25 race rosters; intentional cross-race sharing is preserved.
 - All populated numeric and boolean fields have valid CSV representations.
 - Every production CSV is valid UTF-8 with LF or CRLF endings and consistent row widths.
@@ -19,6 +19,7 @@ Checked 3155 normalized units across 25 faction files.
 - All five new playable lords and reviewed update mount chains have independent coverage checks.
 - Reviewed availability inclusions, qualifications and duplicate exclusions reconcile.
 - All 804 historical permission cases retain reviewed identities, availability qualifications and exact source permission flags.
+- Archaon scripted leader and conditional transfer roster cases retain source identities, mounts and qualified access without invented DB permissions.
 - Unit ability relations exactly preserve source culture conditions and wildcard values.
 - Golden checks pass for Bestigors, Cygors, Ghorgons, Preytons, Sea Guard, Skaven weapon teams/artillery, Doomwheel, Black Orcs, Doom Divers, Rogue Idols, Arachnaroks, Necrofex, and Skycutters.
 - All 290 raw source-export hashes match the manifest.

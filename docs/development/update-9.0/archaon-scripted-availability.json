@@ -1,0 +1,485 @@
+{
+  "snapshot": "9.0 / Steam build 25507028",
+  "source_script_path": "script/campaign/wh3_dlc29_archaon_subjugation.lua",
+  "source_script_sha256": "db259f7f1f2a1d17e031ea2949ae81d3ccd0c95bd5333bee4aaf27490b7369e8",
+  "source_script_lines": {
+    "leaders": "26-45",
+    "transfers": "234-295"
+  },
+  "source_db_sha256": {
+    "agent_subtypes": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2",
+    "main_units": "06cade538d5736f73521df6c96aa3633cb65a8db66512b4c617445fa71803cb7",
+    "land_units": "deca81795dd1af2a894406423779e4730e322d365ffd41150e34271d82410a38",
+    "units_custom_battle_mounts": "8a0605046d806c0cab5ec8f0c778928a226c09ada6968e145c0cf176f052fd5d",
+    "units_custom_battle_permissions": "ce08520acb50710ae8780126138d501c9b80c14840b29a334b295652cffed194"
+  },
+  "source_faction_subtype_pairs": 39,
+  "selected_units": 26,
+  "leader_subtypes": 11,
+  "extra_transfer_subtypes": 6,
+  "source_mounts": 9,
+  "cases": [
+    {
+      "unit": "wh3_dlc24_tze_cha_changeling",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc24_tze_cha_changeling",
+      "subtypes": [
+        "wh3_dlc24_tze_the_changeling"
+      ],
+      "source_factions": [
+        "wh3_dlc24_tze_the_deceivers"
+      ],
+      "source_land_unit": "wh3_dlc24_tze_cha_changeling",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_tze_tzeentch"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_bray_shaman_wild_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain_razorgor_chariot",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_bray_shaman_wild_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain_razorgor_chariot",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain_tuskgor_chariot",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_bray_shaman_wild_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_bray_shaman_wild_chieftain_tuskgor_chariot",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_epidemius",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc25_nur_cha_epidemius",
+      "subtypes": [
+        "wh3_dlc25_nur_epidemius"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_epidemius",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_exalted_hero_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain_chaos_chariot",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_exalted_hero_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain_chaos_chariot",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain_chaos_dragon",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_exalted_hero_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain_chaos_dragon",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain_chaos_steed",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_exalted_hero_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_exalted_hero_chieftain_chaos_steed",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_fimir_balefiend_shadow_chieftain",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_fimir_balefiend_shadow_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_fimir_balefiend_shadow_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_fimir_balefiend_shadow_chieftain",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_infernal_castellan_chieftain",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_infernal_castellan_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_castellan_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_infernal_castellan_chieftain",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_kayzk_the_befouled",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_kayzk_the_befouled",
+      "subtypes": [
+        "wh3_dlc25_nur_kayzk_the_befouled"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_kayzk_the_befouled",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_skin_wolf_werekin_chieftain",
+      "kind": "extra_character_transfer",
+      "base_unit": "wh3_dlc25_nur_cha_skin_wolf_werekin_chieftain",
+      "subtypes": [
+        "wh3_dlc25_nur_skin_wolf_werekin_chieftain"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_epidemius",
+        "wh3_dlc25_nur_tamurkhan",
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_skin_wolf_werekin_chieftain",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: character transfer when vassalizing a listed Nurgle faction. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_tamurkhan",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc25_nur_cha_tamurkhan",
+      "subtypes": [
+        "wh3_dlc25_nur_tamurkhan"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_tamurkhan"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_tamurkhan",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc25_nur_cha_tamurkhan_bubebolos",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc25_nur_cha_tamurkhan",
+      "subtypes": [
+        "wh3_dlc25_nur_tamurkhan"
+      ],
+      "source_factions": [
+        "wh3_dlc25_nur_tamurkhan"
+      ],
+      "source_land_unit": "wh3_dlc25_nur_cha_tamurkhan_bubebolos",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc26_kho_cha_arbaal",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc26_kho_cha_arbaal",
+      "subtypes": [
+        "wh3_dlc26_kho_arbaal_the_undefeated"
+      ],
+      "source_factions": [
+        "wh3_dlc26_kho_arbaal"
+      ],
+      "source_land_unit": "wh3_dlc26_kho_cha_arbaal",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_kho_khorne"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc26_kho_cha_arbaal_flesh_hound",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc26_kho_cha_arbaal",
+      "subtypes": [
+        "wh3_dlc26_kho_arbaal_the_undefeated"
+      ],
+      "source_factions": [
+        "wh3_dlc26_kho_arbaal"
+      ],
+      "source_land_unit": "wh3_dlc26_kho_cha_arbaal_flesh_hound",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_kho_khorne"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc26_kho_cha_skulltaker",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc26_kho_cha_skulltaker",
+      "subtypes": [
+        "wh3_dlc26_kho_skulltaker"
+      ],
+      "source_factions": [
+        "wh3_dlc26_kho_skulltaker"
+      ],
+      "source_land_unit": "wh3_dlc26_kho_cha_skulltaker",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_kho_khorne"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc26_kho_cha_skulltaker_bloodthrone",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc26_kho_cha_skulltaker",
+      "subtypes": [
+        "wh3_dlc26_kho_skulltaker"
+      ],
+      "source_factions": [
+        "wh3_dlc26_kho_skulltaker"
+      ],
+      "source_land_unit": "wh3_dlc26_kho_cha_skulltaker_bloodthrone",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_kho_khorne"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc26_kho_cha_skulltaker_juggernaut",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc26_kho_cha_skulltaker",
+      "subtypes": [
+        "wh3_dlc26_kho_skulltaker"
+      ],
+      "source_factions": [
+        "wh3_dlc26_kho_skulltaker"
+      ],
+      "source_land_unit": "wh3_dlc26_kho_cha_skulltaker_juggernaut",
+      "mount": true,
+      "source_permissions": [
+        "wh3_main_kho_khorne"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. This source mount configuration requires that transferred character and its actual mount unlock. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc27_sla_cha_dechala",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc27_sla_cha_dechala",
+      "subtypes": [
+        "wh3_dlc27_sla_dechala"
+      ],
+      "source_factions": [
+        "wh3_dlc27_sla_the_tormentors"
+      ],
+      "source_land_unit": "wh3_dlc27_sla_cha_dechala",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_sla_slaanesh"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_dlc27_sla_cha_masque_of_slaanesh",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_dlc27_sla_cha_masque_of_slaanesh",
+      "subtypes": [
+        "wh3_dlc27_sla_masque_of_slaanesh"
+      ],
+      "source_factions": [
+        "wh3_dlc27_sla_masque_of_slaanesh"
+      ],
+      "source_land_unit": "wh3_dlc27_sla_cha_masque_of_slaanesh",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_sla_slaanesh"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_main_kho_cha_skarbrand_0",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_main_kho_cha_skarbrand_0",
+      "subtypes": [
+        "wh3_main_kho_skarbrand"
+      ],
+      "source_factions": [
+        "wh3_main_kho_exiles_of_khorne"
+      ],
+      "source_land_unit": "wh3_main_kho_cha_skarbrand_0",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_kho_khorne"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_main_nur_cha_ku_gath_plaguefather_0",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_main_nur_cha_ku_gath_plaguefather_0",
+      "subtypes": [
+        "wh3_main_nur_kugath"
+      ],
+      "source_factions": [
+        "wh3_main_nur_poxmakers_of_nurgle"
+      ],
+      "source_land_unit": "wh3_main_nur_cha_ku_gath_plaguefather_0",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_nur_nurgle"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_main_sla_cha_nkari_0",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_main_sla_cha_nkari_0",
+      "subtypes": [
+        "wh3_main_sla_nkari"
+      ],
+      "source_factions": [
+        "wh3_main_sla_seducers_of_slaanesh"
+      ],
+      "source_land_unit": "wh3_main_sla_cha_nkari_0",
+      "mount": false,
+      "source_permissions": [
+        "wh3_main_sla_slaanesh"
+      ],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    },
+    {
+      "unit": "wh3_main_tze_cha_kairos_fateweaver_0",
+      "kind": "subjugated_leader",
+      "base_unit": "wh3_main_tze_cha_kairos_fateweaver_0",
+      "subtypes": [
+        "wh3_main_tze_kairos"
+      ],
+      "source_factions": [
+        "wh3_main_tze_oracles_of_tzeentch"
+      ],
+      "source_land_unit": "wh3_main_tze_cha_kairos_fateweaver_0",
+      "mount": false,
+      "source_permissions": [],
+      "availability_note": "Archaon only: eligible leader subjugation or defeated-faction encounter. No ordinary recruitment or general Warriors of Chaos access. Exact custom-battle faction permissions in unit_rosters are unchanged and do not themselves grant Archaon access."
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { archaonAvailabilityErrors } from "./archaon-availability-coverage.mjs";
 import { historicalRosterErrors } from "./historical-roster-coverage.mjs";
 import { availabilityCoverageErrors } from "./availability-coverage.mjs";
 import { lordUnitCoverageErrors } from "./lord-unit-coverage.mjs";
@@ -257,6 +258,10 @@ for (const file of normalized) {
       fail(`${slug}/${key}: reviewed inclusion lacks source faction permission.`);
     expectedUnitKeys.add(key);
   }
+  for (const key of rosterConfig?.script_units ?? []) {
+    if (!rosterConfig.script_unit_notes?.[key]) fail(`${slug}/${key}: scripted inclusion lacks an access qualification.`);
+    expectedUnitKeys.add(key);
+  }
   const actualUnitKeys = new Set(file.rows.map((row) => row.unit_key));
   if (JSON.stringify([...actualUnitKeys].sort()) !== JSON.stringify([...expectedUnitKeys].sort())) fail(`${file.name}: roster membership differs from its configured source military-group union and reviewed permission inclusions.`);
   for (const row of file.rows) {
@@ -331,6 +336,10 @@ if (PATCH === "9.0") {
     new Map(normalized.map(file => [file.name.split("__")[0], new Map(file.rows.map(r => [r.unit_key, r]))])), mountVariants.rows, rosters.rows);
   historicalErrors.forEach(fail);
   if (!historicalErrors.length) pass("All 804 historical permission cases retain reviewed identities, availability qualifications and exact source permission flags.");
+  const archaonErrors = archaonAvailabilityErrors(
+    new Map(normalized.map(file => [file.name.split("__")[0], new Map(file.rows.map(r => [r.unit_key, r]))])), mountVariants.rows, rosters.rows);
+  archaonErrors.forEach(fail);
+  if (!archaonErrors.length) pass("Archaon scripted leader and conditional transfer roster cases retain source identities, mounts and qualified access without invented DB permissions.");
   const sourceAbilities = groupBy(await tsv("land_units_to_unit_abilites_junctions_tables"), "land_unit");
   const expected = new Set([...byUnit].flatMap(([key, row]) =>
     (sourceAbilities.get(row.source_land_unit_key) ?? []).map(a => JSON.stringify([key, a.ability, a.culture]))));

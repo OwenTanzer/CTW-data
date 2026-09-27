@@ -4,7 +4,7 @@
   "steam_build_id": "25507028",
   "unit_scale": "ultra",
   "schema_version": 4,
-  "built_at_utc": "2026-09-27T03:51:53.648Z",
+  "built_at_utc": "2026-09-27T12:04:13.020Z",
   "source_manifest": "data/unit_stats/source_exports/source_manifest.json",
   "roster_counts": {
     "beastmen": 86,
@@ -29,11 +29,11 @@
     "tzeentch": 89,
     "vampire_coast": 75,
     "vampire_counts": 141,
-    "warriors_of_chaos": 375,
+    "warriors_of_chaos": 401,
     "wood_elves": 109,
     "undead_legions": 235
   },
-  "total_units": 3155,
+  "total_units": 3181,
   "lookup_counts": {
     "unit_components": 2706,
     "unit_weapon_links": 3181,
@@ -42,7 +42,7 @@
     "unit_abilities": 8065,
     "unit_attributes": 8252,
     "unit_contact_effects": 814,
-    "unit_rosters": 8517,
+    "unit_rosters": 8542,
     "unit_mount_variants": 721,
     "data_quality_flags": 0
   },

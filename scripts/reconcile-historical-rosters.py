@@ -115,5 +115,15 @@ out=ROOT/'docs/development/update-9.0/historical-roster-decisions.json';out.writ
 parser=argparse.ArgumentParser()
 parser.add_argument('--apply-scope',action='store_true')
 if parser.parse_args().apply_scope:
+    # Preserve the separately reviewed scripted acquisition route when
+    # reproducing the older custom-battle permission reconciliation.
+    scripted_path=ROOT/'docs/development/update-9.0/archaon-scripted-availability.json'
+    if scripted_path.exists():
+        scripted=json.loads(scripted_path.read_text())
+        r=rosters['warriors_of_chaos']
+        scripted_cases={c['unit']:c for c in scripted['cases']}
+        r['script_units']=sorted(scripted_cases)
+        r['script_unit_notes']={k:c['availability_note'] for k,c in sorted(scripted_cases.items())}
+        r['expected_units']+=len(set(scripted_cases)-present['warriors_of_chaos']-{c['unit'] for c in cases if c['race']=='warriors_of_chaos' and c['decision']=='include'})
     (ROOT/'scripts/scope-9.0.json').write_text(json.dumps(scope,indent=2)+'\n')
 print(json.dumps({'summary':report['summary'],'new_total':sum(r['expected_units'] for r in rosters.values()),'additional_faction_permission_rows':len(extra)},indent=2))
