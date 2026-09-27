@@ -1,6 +1,6 @@
 # 9.0 database compatibility refresh
 
-PRs #17–#22 have merged the bounded 9.0/build 25507028 database refresh and subsequent audits/repairs. Main includes 3,155 roster rows after the reviewed historical-roster repair. The Archaon scripted-availability candidate raises that to 3,181 by adding 26 supported Warriors of Chaos configurations. See [the historical-roster report](historical-roster-reconciliation.md) and [the Archaon report](archaon-scripted-roster-reconciliation.md). Magic #14 remains paused. The table below records the original PR #17 checkpoint, not current unit totals.
+PRs #17–#27 have merged the bounded 9.0/build 25507028 database refresh and subsequent audits/repairs. Main includes 3,181 roster rows after the historical-roster and Archaon repairs (26 qualified Warriors of Chaos configurations). See [the historical-roster report](historical-roster-reconciliation.md), [the Archaon report](archaon-scripted-roster-reconciliation.md), and [the final closure reconciliation](final-closure-reconciliation.md). Issue #23 is closed for its identified roster cases; #16 can close after this final reconciliation is reviewed and merged, while the documented discovery limits remain. Magic #14 remains paused. The table below records the original PR #17 checkpoint, not current unit totals.
 
 | Owner | Validated coverage |
 |---|---|
