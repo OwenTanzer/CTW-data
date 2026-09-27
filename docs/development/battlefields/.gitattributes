@@ -3,3 +3,4 @@ xml-probe/** -text
 composition-probe/** -text
 prefab-probe/** -text
 catchments-probe/** -text
+height-probe/** -text
