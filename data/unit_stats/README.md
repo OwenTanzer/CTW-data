@@ -103,3 +103,7 @@ Legacy Boris custom-battle permissions and land-unit records remain in source ev
 The availability follow-up includes 43 previously omitted race/unit configurations plus three canonical Arkhan records recovered while resolving duplicates. Limited or special access is described in `availability_notes`; it is not an exclusion criterion. Notes distinguish source character permissions, Host of Nagash Mortarch access and unverified campaign unlock details. Exact custom-battle permissions remain in `unit_rosters`; race-level inclusion does not promise access by every faction.
 
 Twelve `_mp` identities are excluded as duplicate main/land records with matching culture-qualified ability links. Their key mappings and original permissions are retained in `docs/development/update-9.0/availability-decisions.json`. Arkhan's three canonical counterparts are selected in Undead Legions, where they have explicit source permission; their excluded aliases have Tomb Kings custom-battle permission. Canonicalization does not transfer one identity's permissions to another. External script equivalence is not claimed.
+
+## Minor 9.0 coverage follow-up
+
+Kroxigor Ancient (`wh2_dlc13_lzd_cha_kroxigor_ancient_0`) is restored through its explicit Lizardmen permission, bringing the dataset to 2,367 roster rows. Its culture-qualified Spawn-Kin link has independent regression coverage. The reviewed canonical Arkhan steed/chariot edges are now in the availability decision register and its removal tests. Source exports and the schema are unchanged.

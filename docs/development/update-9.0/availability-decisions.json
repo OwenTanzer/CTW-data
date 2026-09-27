@@ -6,7 +6,8 @@
     "data/unit_stats/source_exports/db/units_custom_battle_permissions_tables/data__.tsv": "ce08520acb50710ae8780126138d501c9b80c14840b29a334b295652cffed194",
     "data/unit_stats/source_exports/db/units_custom_battle_mounts_tables/data__.tsv": "8a0605046d806c0cab5ec8f0c778928a226c09ada6968e145c0cf176f052fd5d",
     "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2",
-    "data/skill_trees/source_exports/db/faction_agent_permitted_subtypes_tables/data__.tsv": "00748f428dab88b585d98466007fedc4a34f571b783b1f401808aa8c11bb2f25"
+    "data/skill_trees/source_exports/db/faction_agent_permitted_subtypes_tables/data__.tsv": "00748f428dab88b585d98466007fedc4a34f571b783b1f401808aa8c11bb2f25",
+    "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv": "2949c8f1a6aecf81ee5791b289dbdf64f42036bfcc2f19bd877187835c7541c2"
   },
   "cases": [
     {
@@ -1825,7 +1826,13 @@
       "faction": "wh3_dlc29_nag_host_of_nagash",
       "unit": "wh2_dlc09_tmb_cha_arkhan_1",
       "decision": "include",
-      "mount_edges": [],
+      "mount_edges": [
+        {
+          "base_unit": "wh2_dlc09_tmb_cha_arkhan_0",
+          "mounted_unit": "wh2_dlc09_tmb_cha_arkhan_1",
+          "icon_name": "ui/campaign ui/mounts/mount_skeletal_steed_tmb.png"
+        }
+      ],
       "availability_note": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access."
     },
     {
@@ -1833,8 +1840,44 @@
       "faction": "wh3_dlc29_nag_host_of_nagash",
       "unit": "wh2_dlc09_tmb_cha_arkhan_2",
       "decision": "include",
-      "mount_edges": [],
+      "mount_edges": [
+        {
+          "base_unit": "wh2_dlc09_tmb_cha_arkhan_0",
+          "mounted_unit": "wh2_dlc09_tmb_cha_arkhan_2",
+          "icon_name": "ui/campaign ui/mounts/mount_skeleton_chariot.png"
+        }
+      ],
       "availability_note": "Host of Nagash: Arkhan Mortarch configuration; retained canonical combat identity for the corresponding excluded Tomb Kings custom-battle duplicate. This row does not establish ordinary recruitment or general Tomb Kings faction access."
+    },
+    {
+      "race": "lizardmen",
+      "faction": "wh2_main_lzd_lizardmen",
+      "unit": "wh2_dlc13_lzd_cha_kroxigor_ancient_0",
+      "land_unit": "wh2_dlc13_lzd_cha_kroxigor_ancient_0",
+      "decision": "include",
+      "mount_edges": [],
+      "availability_note": "Recruitable Kroxigor Ancient character configuration with explicit Lizardmen custom-battle permission; faction and campaign unlock conditions are not modeled.",
+      "permissions": [
+        {
+          "faction": "wh2_main_lzd_lizardmen",
+          "general_unit": "true",
+          "unit": "wh2_dlc13_lzd_cha_kroxigor_ancient_0",
+          "siege_unit_attacker": "true",
+          "siege_unit_defender": "true",
+          "general_portrait": "UI/Portraits/portholes/no_culture/lzd_kroxigor_ancient_campaign_01_0.png",
+          "general_uniform": "",
+          "set_piece_character": "wh2_dlc13_lzd_cha_kroxigor_ancient_0",
+          "campaign_exclusive": "false",
+          "armory_item_set": "",
+          "supports_upgrades": "false"
+        }
+      ],
+      "required_abilities": [
+        {
+          "ability_key": "wh3_dlc24_unit_passive_spawn_kin_kroxigors",
+          "culture_key": "*"
+        }
+      ]
     }
   ]
 }

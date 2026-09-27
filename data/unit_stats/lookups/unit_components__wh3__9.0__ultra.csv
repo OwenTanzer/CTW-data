@@ -1096,6 +1096,7 @@ warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_bastiladon_3_nakai,mount,wh2_dlc12_lzd_m
 warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_bastiladon_3_nakai,crew_or_rider,,wh2_main_lzd_mon_bastiladon_platform_arc,3,8,0,24,very_large,true,false,,main_units.num_men minus primary body count,Targetability is not encoded by these database joins.
 warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_salamander_pack_0,man,,wh2_dlc12_lzd_inf_salamander_blood,32,8,122,4160,medium,false,true,true,land_units.man_entity,
 warhammer_3,9.0,ultra,wh2_dlc12_lzd_mon_salamander_pack_0_blessed,man,,wh2_dlc12_lzd_inf_salamander_blood,32,8,140,4736,medium,false,true,true,land_units.man_entity,
+warhammer_3,9.0,ultra,wh2_dlc13_lzd_cha_kroxigor_ancient_0,man,,wh2_dlc13_lzd_mon_kroxigor_hero,1,8,6360,6368,large,true,true,true,land_units.man_entity,
 warhammer_3,9.0,ultra,wh2_dlc13_lzd_cha_nakai_0,man,,wh2_dlc13_lzd_mon_nakai,1,8,7360,7368,large,true,true,true,land_units.man_entity,
 warhammer_3,9.0,ultra,wh2_dlc13_lzd_mon_dread_saurian_0,man,,wh2_dlc13_lzd_mon_feral_dread_saurian_blood,1,8,14984,14992,very_large,true,true,true,land_units.man_entity,
 warhammer_3,9.0,ultra,wh2_dlc13_lzd_mon_dread_saurian_1,mount,wh2_dlc13_lzd_mnt_dread_saurian,wh2_dlc13_lzd_mon_dread_saurian_blood,1,8,14984,14992,very_large,true,true,true,land_units.mount,

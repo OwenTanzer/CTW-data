@@ -154,7 +154,13 @@
       "military_groups": [
         "wh2_main_lzd"
       ],
-      "expected_units": 76
+      "expected_units": 77,
+      "permission_units": [
+        "wh2_dlc13_lzd_cha_kroxigor_ancient_0"
+      ],
+      "permission_unit_notes": {
+        "wh2_dlc13_lzd_cha_kroxigor_ancient_0": "Recruitable Kroxigor Ancient character configuration with explicit Lizardmen custom-battle permission; faction and campaign unlock conditions are not modeled."
+      }
     },
     {
       "slug": "norsca",

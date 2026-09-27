@@ -11,3 +11,5 @@ Duplicate equivalence covers all main/land fields except identity and all cultur
 Rebuild: `node scripts/build-unit-dataset.mjs data/unit_stats/source_exports work/availability-units`. Validate that candidate with `node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports work/availability-units`. Run `node --test scripts/test-availability-coverage.mjs scripts/test-lord-unit-coverage.mjs`.
 
 Independent decision checks reject missing configurations, dropped notes, duplicate insertion, missing canonical counterparts and missing recorded mount links. Issue #16 remains open for broader reconciliation. Magic #14 stays paused.
+
+Follow-up: one additional inclusion restores the previously omitted Kroxigor Ancient (47 included decisions total; 2,367 production roster rows). Its Spawn-Kin ability and wildcard culture are checked independently. The canonical Arkhan steed/chariot decisions now carry both exact source mount edges.

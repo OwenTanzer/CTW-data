@@ -12,7 +12,7 @@ This is an unofficial research project and is not affiliated with Creative Assem
 - Patch: 9.0
 - Steam build: 25507028
 - Races: all 25 playable race rosters in the patch 9.0 source snapshot
-- Unit data: 25 race CSVs containing 2,366 race-roster rows
+- Unit data: 25 race CSVs containing 2,367 race-roster rows
 - Skill trees: 550 character files containing 575 conditional node sets
 - Technology trees: 109 faction files; counts and interpreted selector boundaries are recorded in the technology manifest
 - Economy: 109 playable-faction CSVs containing the standardized building catalog
