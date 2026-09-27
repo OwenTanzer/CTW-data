@@ -100,3 +100,9 @@ its projected polygons explicitly assume an unverified coordinate convention.
 Do not infer side assignments or clip exclusion polygons. Unsupported BMD
 subrecord versions remain explicit failures. Effective spatial
 composition and runtime behavior remain unverified.
+
+The development battlefield connection query resolves configured battle identities
+and assembles source evidence only. Read its packet status: successful identity
+resolution does not establish menu visibility or effective world geometry.
+Shared asset selectors return candidates; tile upgrades never inherit unqualified
+deployment. Use scripts/query_battlefield.py with a built work/ candidate.

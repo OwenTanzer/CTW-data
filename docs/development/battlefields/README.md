@@ -252,3 +252,86 @@ five discovery and four composition checks also pass after this increment.
 Full-repository validation retains the previously documented memory limitation.
 Next: bind these layers to an exact selectable custom-battle variant, verify
 world-coordinate placement and runtime deployment, and decode terrain/height.
+
+## Connection and evidence assembly interface
+
+PR #34 merged at `f49e505f7318bf10cda4cfc9fd03127de92b6230`, after an independent
+review of `800ce1d918efaef233cf74d1f7a86885f7f04e47` found no blockers and passed
+16 relevant checks. Its source polygons feed the connection builder below.
+
+`build_battlefield_assembly.py` produces an indexed SQLite **development** database
+under `work/`. This is evidence-packet assembly: world-coordinate spatial assembly
+remains unresolved. It projects the 1,319 existing `battles_tables` records through
+their atlas identities and does not establish 1,319 playable maps or menu entries.
+It does not create an alternative canonical map catalog.
+
+```bash
+python scripts/build_battlefield_assembly.py --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder --output work/battlefield-connections
+python scripts/query_battlefield.py --database work/battlefield-connections/battlefield_connections.sqlite --select chs_wastes_coast_a_01 --mode singleplayer
+python scripts/query_battlefield.py --database work/battlefield-connections/battlefield_connections.sqlite --select 'Cold Mires – Chaos Coast'
+python scripts/query_battlefield.py --database work/battlefield-connections/battlefield_connections.sqlite --select terrain/battles/chs_wastes_coast_a
+python scripts/test_battlefield_assembly.py work/battlefield-decoder-target/debug/ctw-battlefield-decoder
+```
+
+The first two selectors return the same exact configured variant. The third
+returns 12 candidates, never a silently selected catchment. A selector can be a
+versioned variant key, atlas `battle:` key, original battle key, exact localized
+label or shared specification path. Mode filters apply the source's release and
+singleplayer/multiplayer flags; these are configuration, not observed menu
+availability. Unknown selections return `not_found`.
+
+### Version 1 connection contract
+
+- Variant identity is `battlefield-v1:` plus SHA-256 of canonical JSON
+  `[atlas_map_key, catchment_name, tile_upgrade]`, with missing selectors as null.
+  These are source-configured identities; unrelated source changes do not rename
+  them. Schema/method changes require a new version. Each packet retains the
+  pinned atlas hash, source build and original source keys through its provenance.
+- Each battle row must join exactly to `battle:<source key>` with matching raw
+  specification, catchment, tile upgrade and battle type. A mismatch fails the
+  build. Labels never establish identity.
+- Atlas group relations join through exact source map location **and** exact
+  catchment/tile-upgrade qualifiers. Returned relations retain all four fields
+  `(battle_group_key, battle_map_key, catchment_name, tile_upgrades)`, including
+  nulls. A `location:` relation is not rewritten as a `battle:` relation. These
+  are source selector matches, not proof of campaign selection or runtime mode.
+- Decoded tile membership supplies exact tile paths. A candidate layer must
+  exist in the verified inventory with the exact requested catchment filename.
+  This binding rule is named in every candidate and explicitly lacks engine
+  selection verification. Nonempty tile upgrades remain unresolved; they never
+  inherit the unqualified geometry.
+- Connected assets retain source hashes, decode status, native polygons and
+  prefab references. Conditional projections remain inside the source evidence;
+  `effective_geometry.status` stays `unresolved` with a null coordinate frame.
+  A missing decoder result never becomes an empty playable battlefield.
+
+The SQLite `variants` table has unique variant, atlas and source battle keys,
+indexed labels/specifications, configured availability, and a JSON packet.
+`metadata` contains the versioned manifest. Packets include selectors, original
+atlas relations, tile membership, candidate catchment bindings, decoded/failing
+source layers, resolved prefab evidence, and explicit missing/unresolved layers.
+The query returns `resolved_configured_variant`, `ambiguous` or `not_found`;
+resolution of identity does not mean resolution of geometry. This nested evidence
+interface is provisional; normalized spatial features and qualitative relations
+remain required for production promotion.
+
+`assembly-summary.json` records reproducible coverage. Four battle records connect
+to decoded source layers: `chs_wastes_coast_a_01`, `_02`, `_08` and `_12`. Sayl's
+`wh3_dlc27_qb_nor_sayl_final_battle` connects to catchment 20's explicit decoder
+failure. The remaining coastal variants expose inventory candidates without
+invented geometry. Catchments 13/14 are not custom-battle rows in this source
+snapshot and are not manufactured as selectable variants. There are currently
+**zero verified effective world layouts** in this interface.
+
+The builder re-audits atlas/source hashes, rebuilds deployment evidence and checks
+SQLite integrity. Nine tests cover key/label agreement, ambiguity, missing and
+unsupported layers, wrong-variant isolation, complete atlas relation identity,
+source selector drift, tile-upgrade isolation, mode rejection and deterministic
+rebuilds. Database hashes reproduce within the tested SQLite environment; a
+cross-version SQLite byte-stability guarantee is not claimed. Seven deployment
+regressions also pass. Full validation retains the documented memory limitation.
+
+Next spatial work: establish tile-to-world transforms and terrain raster alignment
+for an exact resolved record, then validate the assembled layout visually. Source
+binding alone cannot establish those transforms. Production promotion, settlement
+coverage and structured qualitative feature relations remain outstanding.

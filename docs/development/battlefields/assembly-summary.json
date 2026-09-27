@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "development_source_connections_not_effective_battlefields",
+  "atlas_sha256": "10a46ace9ce0677c54642fea450ca3a3905b766487464ce3c41f2d7ba48e7dcf",
+  "source_snapshot": {
+    "game": "warhammer_3",
+    "patch": "9.0.1",
+    "steam_build_id": "25546563",
+    "executable_version": "9.0.1.0"
+  },
+  "variant_records": 1319,
+  "variants_with_connected_source_layers": 5,
+  "variants_with_decoded_source_layers": 4,
+  "decoded_tile_layouts": 2,
+  "effective_world_layouts": 0,
+  "identity_method": "sha256 of canonical [atlas_map_key,catchment_name,tile_upgrade], version 1",
+  "source_evidence": "docs/development/battlefields/*-probe/probe_manifest.json",
+  "database_sha256": "db288f8e3487c199d1248b92a68e10a4a3bdb7bc2ae65f833636b8243a77ab09"
+}
