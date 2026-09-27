@@ -9,7 +9,7 @@
 - Actual binary primary-general positions for all 109 factions, 118 generals including secondary forces, and separately evaluated human startup relocations. See [starting positions](starting_positions/README.md).
 - Exact color-coded raster masks, derived centroids, and raster-border adjacency for 574 regions.
 - 1,175 configured initial single-player short/long/domination victory objectives and 4,074 typed conditions across 109 factions / 110 variants. Vlad and Isabella retain distinct lord selectors.
-- 1,645 battle-map records and 2,750 Immortal Empires catchment-selection rules.
+- 1,645 battle-map records, 1,136 group/map/catchment/tile variants and 2,750 Immortal Empires catchment-selection rules.
 - Route, area-of-interest, and teleportation nodes and links.
 - Embedded region lookup, overview, height, and native-border assets.
 - SHA-256 provenance for every source file used by the build.
@@ -74,4 +74,10 @@ node scripts/validate-campaign-atlas.mjs work/generated_campaign_atlas__wh3__9.0
 
 Only install the generated candidate under `data/campaign_map/` after validation reports `passed` with no errors.
 
-The command above generates schema 1.2 geography and active objective definitions, plus `objective_manifest.json` and `objective_schema.json`. Apply the [starting-position enrichment](starting_positions/README.md) before promotion; it preserves schema 1.2. Install the matching objective evidence and metadata with the validated atlas. Run `npm run test:victory` against the installed snapshot.
+The command above generates schema 1.3 geography and active objective definitions, plus `objective_manifest.json` and `objective_schema.json`. Apply the [starting-position enrichment](starting_positions/README.md) before promotion; it preserves schema 1.3. Install the matching objective evidence and metadata with the validated atlas. Run `npm run test:victory` against the installed snapshot.
+
+## Battle-map variant repair
+
+Schema 1.3 retains each `(battle_group_key, battle_map_key, catchment_name, tile_upgrades)` relation. A map/group pair can have several catchments; do not deduplicate on that pair. `battle_context_reference.catchment_name` comes from the group relation, and `map_tile_upgrades` preserves its qualifier separately from the rule requirement. The map catalog's catchment field is not a substitute for the relation-specific value.
+
+The previous pair-only key collapsed 610 source variants (526 rows instead of 1,136). Compact unmodified evidence in `battle_source_exports/` is checked against the atlas source hash and every relation by validation. `npm run test:battle-maps` rejects pair-only collapse and loss of tile qualifiers. Geographic rows, starting armies and objectives are unchanged by this repair.

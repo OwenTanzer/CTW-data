@@ -2,7 +2,7 @@
 
 - Status: **passed**
 - Atlas: `campaign_atlas__wh3__9.0.gpkg`
-- Size: 16,941,056 bytes
+- Size: 17,199,104 bytes
 - Regions / provinces / playable factions: 644 / 215 / 109
 - Objectives / conditions: 1175 / 4074
 - Battle maps / IE selection rules: 1645 / 2750
@@ -13,6 +13,7 @@
 - PASS: GeoPackage user version — 10300
 - PASS: SQLite integrity — "ok"
 - PASS: Foreign-key violations — 0
+- PASS: Battle-map source variants — []
 - PASS: Campaign key — "wh3_main_combi"
 - PASS: Campaign map revision — "wh3_main_combi_map_7"
 - PASS: Patch — "9.0"

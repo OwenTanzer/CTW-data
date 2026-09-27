@@ -30,4 +30,4 @@ The original migration README incorrectly said main was unchanged and called 2,2
 
 ## Remaining accounting
 
-Issue #16 remains open. PR #20 has an exact-head no-blocker review and successful full validation, but awaits merge authorization. Finish the broader retained-source change register, remaining relevant permission omissions, and explicit disposition of smaller building/map changes. Physical battle-map pathing, quest-battle scripting and cosmetic behavior are not certified by static geography or unit CSV validation. Existing historical-guide boundaries must remain visible while their factual review continues.
+Issue #16 remains open. PR #20 merged after an exact-head no-blocker review and successful full validation. Finish the broader retained-source change register, remaining relevant permission omissions, and explicit disposition of smaller building/map changes. Physical battle-map pathing, quest-battle scripting and cosmetic behavior are not certified by static geography or unit CSV validation. Existing historical-guide boundaries must remain visible while their factual review continues.

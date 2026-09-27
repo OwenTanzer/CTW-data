@@ -8,7 +8,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "validate": "npm run validate:units && npm run validate:skills && npm run validate:economy && npm run validate:campaign && npm run validate:technologies && npm run validate:guides && npm run test:victory && npm run test:readme",
+    "validate": "npm run validate:units && npm run validate:skills && npm run validate:economy && npm run validate:campaign && npm run validate:technologies && npm run validate:guides && npm run test:victory && npm run test:readme && npm run test:battle-maps",
     "validate:units": "node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports data/unit_stats && node --test scripts/test-lord-unit-coverage.mjs scripts/test-availability-coverage.mjs",
     "validate:skills": "node scripts/validate-skill-trees.mjs data/skill_trees/source_exports data/skill_trees",
     "validate:economy": "node scripts/validate-economy-dataset.mjs data/economy/source_exports data/economy",
@@ -27,7 +27,8 @@
     "test:campaign-starts": "python3 scripts/test_campaign_starts.py",
     "test:snapshot": "node --test scripts/test-snapshot.mjs",
     "test:victory": "node --test scripts/test-victory-config.mjs",
-    "test:readme": "node --test scripts/test-generated-readmes.mjs"
+    "test:readme": "node --test scripts/test-generated-readmes.mjs",
+    "test:battle-maps": "node --test scripts/test-battle-map-coverage.mjs"
   },
   "license": "MIT"
 }

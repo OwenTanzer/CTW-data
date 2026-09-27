@@ -378,10 +378,12 @@ db.exec(`
   );
   CREATE TABLE battle_group_maps (
     battle_group_key TEXT NOT NULL, battle_map_key TEXT NOT NULL, catchment_name TEXT, tile_upgrades TEXT,
-    PRIMARY KEY (battle_group_key, battle_map_key),
+    PRIMARY KEY (battle_group_key, battle_map_key, catchment_name, tile_upgrades),
     FOREIGN KEY (battle_group_key) REFERENCES battle_groups(battle_group_key),
     FOREIGN KEY (battle_map_key) REFERENCES battle_maps(battle_map_key)
   );
+  CREATE UNIQUE INDEX battle_group_map_variant ON battle_group_maps
+    (battle_group_key, battle_map_key, COALESCE(catchment_name, ''), COALESCE(tile_upgrades, ''));
   CREATE TABLE battle_selection_rules (
     rule_id INTEGER PRIMARY KEY AUTOINCREMENT, area_key TEXT NOT NULL, attacker_filter TEXT,
     defender_filter TEXT, battle_type TEXT, campaign_battle_path TEXT, required_tile_upgrades TEXT,
@@ -430,7 +432,7 @@ const metadataInsert = db.prepare("INSERT INTO metadata VALUES (?, ?)");
 for (const [key, value] of Object.entries({
   title: "Total War: Warhammer III Immortal Empires Campaign Atlas",
   game: GAME, patch: PATCH, steam_build_id: BUILD, campaign_key: CAMPAIGN, campaign_map_key: MAP_KEY,
-  schema_version: PATCH === "9.0" ? "1.2.0" : "1.0.0", source_extracted_at_utc: SNAPSHOT.manifest.extracted_at_utc,
+  schema_version: PATCH === "9.0" ? "1.3.0" : "1.0.0", source_extracted_at_utc: SNAPSHOT.manifest.extracted_at_utc,
   geometry_model: "Exact colour-coded region raster plus derived centroids and raster-border adjacency; sea-region vectors unavailable",
 })) metadataInsert.run(key, value);
 
@@ -674,7 +676,7 @@ db.exec(`
   CREATE VIEW battle_context_reference AS
   SELECT r.area_key, r.attacker_filter, r.defender_filter, r.battle_type,
          r.required_tile_upgrades, r.battle_group_key, gm.battle_map_key,
-         bm.map_location, bm.catchment_name, r.relation_status
+         bm.map_location, gm.catchment_name, gm.tile_upgrades AS map_tile_upgrades, r.relation_status
   FROM battle_selection_rules r
   LEFT JOIN battle_group_maps gm USING (battle_group_key)
   LEFT JOIN battle_maps bm USING (battle_map_key);
@@ -698,7 +700,7 @@ if (PATCH === "9.0") {
   const tables = ["objectives", "objective_conditions", "objective_boundaries", "objective_reference"];
   const schema = Object.fromEntries(tables.map(name => [name, db.prepare(`PRAGMA table_info(${name})`).all()]));
   const manifest = {
-    schema_version: "1.2.0", patch: PATCH, steam_build_id: BUILD,
+    schema_version: "1.3.0", patch: PATCH, steam_build_id: BUILD,
     source_manifest: "objective_source_exports/source_manifest.json",
     schema: "objective_schema.json", primary_view: "objective_reference",
     objectives: summary.objectives, conditions: summary.objective_conditions,

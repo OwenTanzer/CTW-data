@@ -14,7 +14,7 @@ The source exports retain 326 binary characters, including heroes. This is expli
 
 ## Reproduction
 
-Python standard library only, plus Node 24 for the existing atlas validator. Regenerate the original atlas with the parent README's extraction/build command, using the verified 9.0 map-7 source snapshot (do not reuse the old map-5 base). If only objective definitions changed, first rebind the compact committed evidence after exact comparisons of all geographic dependencies with the prior installed atlas. This writes a new work manifest without altering original evidence. If geographic dependencies differ, fresh extraction is required. Enrich the candidate as follows:
+Python standard library only, plus Node 24 for the existing atlas validator. Regenerate the original atlas with the parent README's extraction/build command, using the verified 9.0 map-7 source snapshot (do not reuse the old map-5 base). If only nongeographic atlas relations changed, first rebind the compact committed evidence after exact comparisons of all geographic dependencies with the prior installed atlas. This writes a new work manifest without altering original evidence. If geographic dependencies differ, fresh extraction is required. Enrich the candidate as follows:
 
 ```powershell
 python scripts/rebind-start-evidence.py --source data/campaign_map/starting_positions/source_exports --prior data/campaign_map/campaign_atlas__wh3__9.0.gpkg --atlas work/base.gpkg --output work/rebound-start-evidence

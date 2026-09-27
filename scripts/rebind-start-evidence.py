@@ -31,7 +31,7 @@ def rebind(source, prior, atlas, output):
         verified[table] = dict(rows=len(a),sha256=sha(repr(sorted(a,key=repr)).encode()))
     old.close(); new.close()
     shutil.copytree(source,output)
-    manifest['atlas_rebind'] = dict(reason='9.0 active victory-objective repair; geographic/startpos evidence unchanged',
+    manifest['atlas_rebind'] = dict(reason='Atlas relation repair; geographic/startpos evidence unchanged',
         original_extraction_atlas_sha256=manifest['atlas_sha256'], compared_prior_atlas_sha256=sha(prior.read_bytes()),
         dependency_checks=verified, unchanged_source_files=manifest['files'])
     manifest['atlas_sha256'] = sha(atlas.read_bytes())
