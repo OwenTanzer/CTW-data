@@ -8,17 +8,17 @@ Run `python3 scripts/audit-9.0-minor-reconciliation.py` to reproduce `minor-reco
 
 All seven active Skaven faction technology files have zero source building prerequisites among their selected technology keys. This verifies the ordinary DB requirement relation; scripted locks remain subject to the technology audit's separate boundaries.
 
-## Effect-target limitations
+## Completed targeted source audit
 
-| Case | Retained production evidence | Remaining verification |
+The user accepted the current installation for this audit and treats the hotfix as non-blocking. Read-only extraction on September 27, 2026 UTC verified executable 9.0.1.0 / build 25546563 before and after extraction. Production remains 9.0; no production rows or snapshot guard were changed. [Evidence](effect-target-evidence.json) preserves source identities, decoder and file hashes, and selected exact junction rows. These are static source chains, not runtime observations.
+
+| Case | Verified chain | Disposition |
 |---|---|---|
-| Grom | Skill effects match the source | Whether Goblin-target unit sets include Doom Divers; labels alone cannot establish membership |
-| Bloodshriek Chimera | `wh3_dlc20_chs_und_shared_beasts` has current effects in the Warriors of Chaos technology owner | Unit-set membership for this exact Regiment of Renown and the Freakish Mutations skill |
-| Rakarth | Harpyclaw skill preserves `wh2_twa03_effect_suppressed_scourgerunners_bolt_throwers`; current projectile data is present | Effect-to-additional-ammunition route, retaining the ordinary firing modes |
+| Grom | Doom Diver `wh_main_grn_art_doom_diver_catapult` is explicitly included in both `grn_goblins` and `wh2_dlc15_grn_regular_goblins`. These resolve His Great Immensity leadership +9 and innate leadership +8 / physical resistance +10. | Relevant Goblin targets verified; retained skill rows already match. No base-stat adjustment needed. |
+| Bloodshriek Chimera | `wh3_dlc27_woc_mon_chimera_ror` belongs to the Unchained Beasts melee-attack +8 set and the Gorefeast ability sets, including the unrestricted RoR route. All three Freakish Mutations effects resolve to its rank-7 and RoR sets. | Target coverage verified; rank filters retained. The resistance effect key says physical but its source bonus ID is `unit_damage_resistance_all_mod`; do not infer semantics from the key name. |
+| Rakarth | Harpyclaw enables missile junctions `1787225455`, `1971218159`, `872549507` (Rakarth mount, Scourgerunner, Reaper). The Reaper weapon retains the normal bolt as default. Retained 9.0 projectile junctions also contain ordinary spread fire and the suppressing projectile. | Additional ammunition route verified with both ordinary modes retained. The retained 9.0 missile-weapon and unit-junction rows agree with the fresh selected rows. No normalized-stat repair identified. |
 
-The relevant effect-target junction exports are not present in these production owners. This is an uncompleted source audit, not evidence of incorrect current unit statistics, and does not authorize a new normalized effect model.
-
-A fresh read-only extraction was attempted on September 26, 2026 (Pacific). The existing snapshot guard rejected the installation: executable **9.0.1.0**, Steam build **25546563**, versus expected **9.0.0.0 / 25507028**. It stopped before loading/exporting tables. No guard was relaxed and no 9.0.1 data was installed. Complete the exact 9.0 checks only with retained version-matched evidence; otherwise explicitly scope a separate hotfix comparison. Magic #14 remains paused.
+The evidence records target semantics without adding a normalized effects model. No new schema or magic work is required for these checks.
 
 ## Historical documentation review
 
@@ -30,4 +30,4 @@ The original migration README incorrectly said main was unchanged and called 2,2
 
 ## Remaining accounting
 
-Issue #16 remains open. PR #20 has an exact-head no-blocker review and successful full validation, but awaits merge authorization. Finish effect-target source evidence, the broader retained-source change register, remaining relevant permission omissions, and explicit disposition of smaller building/map changes. Physical battle-map pathing, quest-battle scripting and cosmetic behavior are not certified by static geography or unit CSV validation. Existing historical-guide boundaries must remain visible while their factual review continues.
+Issue #16 remains open. PR #20 has an exact-head no-blocker review and successful full validation, but awaits merge authorization. Finish the broader retained-source change register, remaining relevant permission omissions, and explicit disposition of smaller building/map changes. Physical battle-map pathing, quest-battle scripting and cosmetic behavior are not certified by static geography or unit CSV validation. Existing historical-guide boundaries must remain visible while their factual review continues.
