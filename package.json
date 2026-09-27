@@ -31,6 +31,7 @@
     "test:battle-maps": "node --test scripts/test-battle-map-coverage.mjs",
     "test:battlefield-discovery": "node --test scripts/test-battlefield-discovery.mjs",
     "test:battlefield-tiles": "python3 scripts/test_battlefield_tiles.py",
+    "test:battlefield-assembly": "python3 scripts/test_battlefield_assembly.py",
     "validate:magic": "python3 scripts/validate_magic.py",
     "test:magic": "python3 scripts/test_magic.py"
   },
