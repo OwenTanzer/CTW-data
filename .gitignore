@@ -1,5 +1,6 @@
 # Disposable build outputs, downloaded tooling, and local dependency caches.
 /work/
+/scripts/battlefield-decoder/target/
 __pycache__/
 *.pyc
 
@@ -34,4 +35,3 @@ Desktop.ini
 *.run.xml
 *.synctex.gz
 *.toc
-

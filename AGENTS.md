@@ -84,3 +84,14 @@ per-variant structural, definition and runtime coverage separately. Conditional
 army/unit-set/context bindings are not personal spell grants; unit/form links
 retain enabling and culture conditions. Source-only summons and unresolved
 acquisition/runtime routes must remain labelled; do not claim #14 is complete.
+
+## Battlefield development boundary
+
+Issue #9 discovery evidence is under `docs/development/battlefields/`; read its
+README before source probes. This is not a production spatial dataset. Asset
+prefix matches are not exact playable variants; empty lists in one asset are
+not absence in an assembled map. Never use an unset playable-area rectangle or
+unbound generic deployment template as effective geometry. Preserve native
+64-bit masks with an integer-safe reader. The 9.0.1 extracted map/join tables
+match the atlas's 9.0 sources byte-for-byte; patch labels alone do not create a
+compatibility blocker. Spatial composition and runtime behavior remain unverified.

@@ -1,0 +1,12 @@
+[package]
+name = "ctw-battlefield-decoder"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+rpfm_lib = { git = "https://github.com/Frodo45127/rpfm", rev = "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f" }
+serde_json = "1"
+
+[profile.dev]
+debug = 0

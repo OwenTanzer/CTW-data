@@ -1,0 +1,25 @@
+{
+  "status": "decoded_asset_only_not_resolved_battlefield",
+  "source_asset": "terrain/battles/chs_wastes_coast_a/tile_map.bmd",
+  "source_sha256": "740f71f3923c794e75d06f3bfc680ebc7856b37d3e495f98f7bc9e7101addec3",
+  "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+  "roundtrip_byte_equal": true,
+  "source_bytes": 213255,
+  "decoded_sha256": "9706e6f00c65d365d9e4cbb6f470e16bbfb3916b1544ecffe55ac67078bbd268",
+  "prop_records": 1860,
+  "prop_model_keys": 30,
+  "playable_area_has_been_set": false,
+  "deployment_records_in_this_asset": 0,
+  "unresolved": [
+    "Exact playable variant and tile/catchment composition",
+    "Effective deployment and playable boundary",
+    "Height raster decoding and coordinate alignment",
+    "Collision, navigation and concealment semantics",
+    "Visual and live verification"
+  ],
+  "boundaries": [
+    "Prop transforms are native placement evidence, not collision geometry.",
+    "Empty lists describe this asset only, not absence in the assembled battlefield.",
+    "Unset playable-area defaults must not become effective geometry."
+  ]
+}
