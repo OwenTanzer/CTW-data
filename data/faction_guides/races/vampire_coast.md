@@ -2,6 +2,8 @@
 
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
+> **Specific 9.0 corrections:** See [targeted historical-guide errata](../COMPATIBILITY_9.0.md#targeted-historical-guide-errata) before using rite cooldowns, Books ownership, Krell or Vlad/Isabella role descriptions below. Other claims retain their stated historical scope.
+
 > **Scope:** Total War: WARHAMMER III, patch **8.1.1**, Steam build **24237342**. Race: Vampire Coast (`vampire_coast`). Playable factions: 4. Campaign: Immortal Empires (`wh3_main_combi`); no Vampire Coast faction is playable in the Realms of Chaos campaign in this snapshot.
 
 ## Catalog boundary

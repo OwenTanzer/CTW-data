@@ -19,9 +19,14 @@
 This file records observed combat relationships for \emph{Total War:
 WARHAMMER III} and the abstractions we intend to use in computational
 analysis.  Unless stated otherwise, these notes concern land combat under the
-baseline described in \texttt{data/unit\_stats/README.md}: patch 8.1.1, ultra
+historical baseline at repository commit
+\texttt{8ad5a33a4d08eab6cf1273815501846f91d4647a}: patch 8.1.1, ultra
 unit scale, rank zero, and no campaign, terrain, fatigue, or temporary-effect
-modifiers.
+modifiers. The corresponding historical unit README is available at
+\href{https://github.com/OwenTanzer/computational-total-war/blob/8ad5a33a4d08eab6cf1273815501846f91d4647a/data/unit_stats/README.md}{the pinned 8.1.1 snapshot}.
+The current unit README describes 9.0 and does not revalidate these observations.
+Native addresses, executable evidence and inferred engine behavior below remain
+limited to their recorded build; this document is not a 9.0 binary audit.
 
 The equations below distinguish three things that are easy to conflate:
 the probability that one attack lands, the number of entities able to attempt

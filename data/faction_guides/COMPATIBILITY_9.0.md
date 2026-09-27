@@ -28,3 +28,28 @@ Official source register (read September 26, 2026):
 - [Boris Todbringer](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/107)
 
 Exact shipped keys and values come from the verified installation manifests and source exports, not announcement prose. The historical guide validator uses its preserved 8.1.1 faction index; current database coverage is validated separately against 109 factions.
+
+## Targeted historical guide errata
+
+These are narrow announcement-backed corrections to the historical guides, not a new installed-script audit. Source: [9.0 release notes, “Rites Cooldown Rebalancing”](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/110), read September 26, 2026. Other rite costs, rewards and conditions retain their historical scope. The shared global cooldown remains five turns.
+
+| Race | Rite | 9.0 cooldown (turns) |
+|---|---|---:|
+| Skaven | Dominating Scheme | 13 |
+| Skaven | Thirteenth Scheme | 13 |
+| Skaven, excluding Clan Pestilens | Pestilent Scheme | 20 |
+| Skaven | Scheme of DOOOOM! | 20 |
+| Dark Elves | Hekarti | 15 |
+| Dark Elves | Atharti | 15 |
+| Dark Elves | Mathlann | 20 |
+| Dark Elves | Khaine | 25 |
+| Dark Elves | Drakira | 25 |
+| Dark Elves | Anath Raema | 20 |
+| Dark Elves | Warmaster | 25 |
+| Lizardmen | Primeval Glory | 25 |
+| Lizardmen | Tzunki | 15 |
+| Vampire Coast | Sea Mist | 20 |
+| Vampire Coast | Eternal Service | 15 |
+| Vampire Coast | Queen's Cannon | 20 |
+
+The same official notes invalidate the old permanent, nontransferable Books interpretation: ownership can change. Krell's former summon-only description and fixed Vlad/Isabella role assumptions are also historical. Consult current character/skill records; this erratum does not certify every campaign transition or reward.
