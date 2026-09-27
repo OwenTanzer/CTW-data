@@ -94,4 +94,7 @@ not absence in an assembled map. Never use an unset playable-area rectangle or
 unbound generic deployment template as effective geometry. Preserve native
 64-bit masks with an integer-safe reader. The 9.0.1 extracted map/join tables
 match the atlas's 9.0 sources byte-for-byte; patch labels alone do not create a
-compatibility blocker. Spatial composition and runtime behavior remain unverified.
+compatibility blocker. The experimental tile reader reports source grid membership only; opaque fields
+must not become world transforms. The composition report includes an unresolved
+deployment prefab and one unsupported BMD subrecord version. Effective spatial
+composition and runtime behavior remain unverified.
