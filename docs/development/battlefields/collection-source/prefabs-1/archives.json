@@ -1,0 +1,92 @@
+[
+  {
+    "archive": "00000.zip",
+    "bytes": 81450,
+    "sha256": "f01694b681796fd62785297cafa54b780b3e5369bb43aecf146a48a35ad07f00",
+    "source_files": 50
+  },
+  {
+    "archive": "00001.zip",
+    "bytes": 113372,
+    "sha256": "44e6622c075e1d6b18bcb3ef159d554dc7f1c9e7d54b6d0a47b64e6eb2dcb8b9",
+    "source_files": 50
+  },
+  {
+    "archive": "00002.zip",
+    "bytes": 79421,
+    "sha256": "5b02a6270f37c14d763f4316f8dcb9627ab007ecfb7a77e5dbb2c0cc0c8fb2bd",
+    "source_files": 50
+  },
+  {
+    "archive": "00003.zip",
+    "bytes": 116594,
+    "sha256": "9e16e65e1df646e275bb0762fe7903052265af0b96f75e0b4d66253fdd192bc2",
+    "source_files": 50
+  },
+  {
+    "archive": "00004.zip",
+    "bytes": 90274,
+    "sha256": "f48d841632a5616b420eb36a71bc038826e506d14377625cbb78ddfe73c9d551",
+    "source_files": 50
+  },
+  {
+    "archive": "00005.zip",
+    "bytes": 109988,
+    "sha256": "e88b342838693ae5eb6ef22dce94f10bf02bd7b353ede02c26aaa71cecd2f0f0",
+    "source_files": 50
+  },
+  {
+    "archive": "00006.zip",
+    "bytes": 72473,
+    "sha256": "d9e27333707786eec8cd465bba3fea64ae792ccc652fb4f2593bf009cc946fbe",
+    "source_files": 50
+  },
+  {
+    "archive": "00007.zip",
+    "bytes": 67450,
+    "sha256": "df216bb8483da6cff6acae55f2f572a00efd7a5beb8b12f21dd0bb72b78d4a6a",
+    "source_files": 50
+  },
+  {
+    "archive": "00008.zip",
+    "bytes": 68125,
+    "sha256": "12d60537cc98655903959d9992be8d86ef4fa76d7b7ef95d45789326b504db84",
+    "source_files": 50
+  },
+  {
+    "archive": "00009.zip",
+    "bytes": 100196,
+    "sha256": "728aaa73e34a1ebb6f7d67ca4b3c29161951e45ef2384bd0828bc071802f2851",
+    "source_files": 50
+  },
+  {
+    "archive": "00010.zip",
+    "bytes": 69880,
+    "sha256": "3df46061194292937ae84a92d2a19fbbd91498fd35ccc58acb8adf113bea8975",
+    "source_files": 50
+  },
+  {
+    "archive": "00011.zip",
+    "bytes": 113873,
+    "sha256": "da0f7641125eb934ad737d875589a65b781f12347f1c29ae1458f544662f8464",
+    "source_files": 50
+  },
+  {
+    "archive": "00012.zip",
+    "bytes": 75106,
+    "sha256": "2fd6e10e1ca164467702600979086c154a40de2e7229ebcaa340281f4039db8b",
+    "source_files": 50
+  },
+  {
+    "archive": "00013.zip",
+    "bytes": 70835,
+    "sha256": "e0c6b91afd16b18fd7d93f28f603fcb3b04c755f46ddc3957059890a97ee6ba5",
+    "source_files": 50
+  },
+  {
+    "archive": "00014.zip",
+    "bytes": 12289,
+    "sha256": "2eeb3d986eeaa790855fb30d4924a696d44d32a4f24478ef714f822986f5ce06",
+    "source_files": 9
+  }
+]
