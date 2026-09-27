@@ -1,0 +1,56 @@
+{
+  "decoder_sha256": "51dc2a25c9c6ee6271e11d8cd259d723e6b51ff83ccb235246227f1e12d3df6b",
+  "full_resolution_artifact": "rebuild_from_verified_source",
+  "metadata": {
+    "block_height": 16,
+    "block_tags": {
+      "0": 896,
+      "16": 2,
+      "19": 1,
+      "20": 1,
+      "105": 1,
+      "106": 1,
+      "111": 2,
+      "112": 2,
+      "114": 1,
+      "121": 2,
+      "122": 1,
+      "138": 7,
+      "139": 6,
+      "140": 52,
+      "143": 177
+    },
+    "block_width": 16,
+    "blocks": 1152,
+    "codec": "TABLE_INDEXED",
+    "coordinate_units": "unresolved",
+    "height": 768,
+    "opaque_header_hex": "0000000000000000000000000000000089bfbb4000000000",
+    "raw_u16_sha256": "82db2893b7d319a5c6cd012c49c57f02d28173d37d5efa4e590bbd7b59aa3ec3",
+    "roundtrip_byte_equal": true,
+    "sample_max": 65535,
+    "sample_min": 0,
+    "source_bytes": 132644,
+    "source_sha256": "a87ab00567700f792df2aa05a6c3f222d1c8b05510be98e33c11b01754ec380b",
+    "status": "decoded_native_samples_world_alignment_unverified",
+    "width": 384
+  },
+  "overview": {
+    "artifact": "a87ab00567700f792df2aa05a6c3f222d1c8b05510be98e33c11b01754ec380b.npz",
+    "method": "regular_native_sample_subset_no_averaging",
+    "sample_stride": 3,
+    "sha256": "27e0ab0e256aad87a2d580e46e9b746c7b640994600234756aec73726e197bdb",
+    "shape": [
+      256,
+      128
+    ],
+    "source_column_origin": 0,
+    "source_row_origin": 0
+  },
+  "source_bytes": 132644,
+  "source_path": "terrain/tiles/battle/gen_snowy_forest_inner/1x4_a/tile_height_map.compressed_map",
+  "source_sha256": "a87ab00567700f792df2aa05a6c3f222d1c8b05510be98e33c11b01754ec380b",
+  "status": "decoded_full_native_raster",
+  "world_alignment_verified": false,
+  "world_units": null
+}

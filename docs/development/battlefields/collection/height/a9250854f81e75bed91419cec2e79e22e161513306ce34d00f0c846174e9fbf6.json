@@ -1,0 +1,46 @@
+{
+  "decoder_sha256": "51dc2a25c9c6ee6271e11d8cd259d723e6b51ff83ccb235246227f1e12d3df6b",
+  "full_resolution_artifact": "rebuild_from_verified_source",
+  "metadata": {
+    "block_height": 16,
+    "block_tags": {
+      "0": 25596,
+      "13": 1,
+      "15": 1,
+      "23": 1,
+      "25": 1
+    },
+    "block_width": 16,
+    "blocks": 25600,
+    "codec": "TABLE_INDEXED",
+    "coordinate_units": "unresolved",
+    "height": 2560,
+    "opaque_header_hex": "00000000605c58c00000000000000000a8fd794300000000",
+    "raw_u16_sha256": "3f3706aad14589bbc3ca913956a2d182792ca640b69b314a7866844f0442ad14",
+    "roundtrip_byte_equal": true,
+    "sample_max": 65535,
+    "sample_min": 0,
+    "source_bytes": 231217,
+    "source_sha256": "a9250854f81e75bed91419cec2e79e22e161513306ce34d00f0c846174e9fbf6",
+    "status": "decoded_native_samples_world_alignment_unverified",
+    "width": 2560
+  },
+  "overview": {
+    "artifact": "a9250854f81e75bed91419cec2e79e22e161513306ce34d00f0c846174e9fbf6.npz",
+    "method": "regular_native_sample_subset_no_averaging",
+    "sample_stride": 10,
+    "sha256": "58f5021ca9c380a9f58eaa55e328b8d1de8f444cfdc0eed284dc37208e8f5e7d",
+    "shape": [
+      256,
+      256
+    ],
+    "source_column_origin": 0,
+    "source_row_origin": 0
+  },
+  "source_bytes": 231217,
+  "source_path": "terrain/tiles/battle/settlements_warhammer/major_b_brt/tile_13/tile_height_map.compressed_map",
+  "source_sha256": "a9250854f81e75bed91419cec2e79e22e161513306ce34d00f0c846174e9fbf6",
+  "status": "decoded_full_native_raster",
+  "world_alignment_verified": false,
+  "world_units": null
+}
