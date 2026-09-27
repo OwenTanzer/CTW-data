@@ -26,6 +26,33 @@ class MagicRegressions(unittest.TestCase):
    outputs[rel]=digest(p);writej(base/'data/magic/output_manifest.json',outputs)
    with self.assertRaises((ValueError,AssertionError)): validate(base)
  def test_source_backed_golden_queries(self): golden_checks(Magic(self.base))
+ def test_direct_grant_to_general_is_not_personal_access(self):
+  result=Magic(self.base).query('Hag Witch (Beasts)','wh_main_item_abilities_potion_of_toughness')
+  grants=[m for m in result['skill_grants_and_modifiers'] if m['relation']['bonus_value_id']=='enable']
+  self.assertTrue(grants)
+  self.assertTrue(all(m['scope_definition']['target']=='character_when_commanding' for m in grants))
+  self.assertNotEqual(result['character_access_status'],'potential_skill_grant_found')
+ def test_represented_ranks_without_level_descriptions(self):
+  pair=('wh2_main_skill_all_magic_heavens_10_chain_lightning_lord','1')
+  result=Magic(self.base).query('Teclis','wh_main_spell_heavens_chain_lightning',[pair])
+  self.assertTrue(result['skill_grants_and_modifiers'])
+  self.assertEqual(result['supplied_build']['unresolved_components'],[])
+  self.assertEqual(result['supplied_build']['legality_status'],'not_evaluated')
+  self.assertEqual(result['character_access_status'],'potential_skill_grant_found')
+  unknown=[(pair[0],'99'),('missing_skill','1')]
+  result=Magic(self.base).query('Teclis',selected_skills=unknown)
+  self.assertEqual({(r['skill_key'],r['skill_level']) for r in result['supplied_build']['unresolved_components']},set(unknown))
+  self.assertEqual(result['skill_relations'],[])
+ def test_node_rank_recognized_without_effect_or_description(self):
+  db=Magic(self.base)
+  import query_magic
+  original=query_magic.csvrows
+  key='wh2_main_skill_all_magic_heavens_10_chain_lightning_lord'
+  def without_optional_rows(path):
+   return [r for r in original(path) if not (r.get('skill_key')==key and r.get('record_type') in {'effect','skill_level'})]
+  with patch('query_magic.csvrows',without_optional_rows):
+   result=db.query('Teclis',selected_skills=[(key,'1')])
+  self.assertEqual(result['supplied_build']['unresolved_components'],[])
  def test_recipient_flags_are_part_of_phase_identity(self):
   self.mutate('data/unit_stats/abilities/tables/ability_phase_links.csv',lambda rows:rows[0].update(target_enemies='true' if rows[0]['target_enemies']=='false' else 'false'))
  def test_variant_cost_cannot_be_relabelled_with_refreshed_hash(self):

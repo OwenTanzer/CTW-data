@@ -106,9 +106,11 @@ changed previous payload field or weapon link. Golden fixtures cover Apotheosis,
 Chain Lightning, normal/bound Fireball, Searing Doom bombardment, Doomrocket
 shrapnel, summons, multiple phases, Lokhir, unit sets and supplied skill/rank pairs.
 
-Ten regression tests include refreshed-hash mutations for phase recipients,
+Thirteen regression tests include refreshed-hash mutations for phase recipients,
 variant cost, crossed phases, skill ranks, sentinels, secondary references and
 omitted conditional bindings, plus dropped-branch and cycle/multiple-parent tests.
+Recipient-scope and supplied-rank regressions cover grants to another character,
+optional level descriptions, node-only rank evidence and unknown components.
 These are source/structural checks, not observed battle execution or independent
 review. `validation.json` records the latest candidate result.
 

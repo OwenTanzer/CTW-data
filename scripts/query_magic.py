@@ -107,7 +107,12 @@ class Magic:
    relations=csvrows(self.file('data/magic/'+matched['path'])) if matched['path'] else []
    if selected_skills is not None:
     requested=set(selected_skills)
-    represented={(r['skill_key'],r['skill_level']) for r in skills if r['record_type']=='skill_level'}
+    # Level-description rows are optional; nodes and effects also establish
+    # represented ranks. Recognition does not establish build legality.
+    represented={(r['skill_key'],r['skill_level']) for r in skills if r['record_type'] in {'skill_level','effect'} and r['skill_key'] and r['skill_level']}
+    for r in skills:
+     if r['record_type']=='node' and r['skill_key'] and r['skill_max_level']:
+      represented.update((r['skill_key'],str(level)) for level in range(1,int(r['skill_max_level'])+1))
     result['supplied_build']=dict(selected_skills=[dict(skill_key=k,skill_level=v) for k,v in sorted(requested)],unresolved_components=[dict(skill_key=k,skill_level=v) for k,v in sorted(requested-represented)],legality_status='not_evaluated')
     relations=[r for r in relations if (r['skill_key'],r['skill_level']) in requested]
    result['non_skill_access']=readj(self.file('data/magic/access/'+matched['agent_subtype_key']+'.json'))
@@ -139,7 +144,13 @@ class Magic:
   nodes={r['node_key'] for r in relevant}; sk={r['skill_key'] for r in relevant}; sets={r['node_set_key'] for r in relevant}
   result['skill_conditions']=[r for r in skills if (r['record_type']=='node_set' and r['node_set_key'] in sets) or (r['record_type'] in {'node','skill_level','prerequisite','skill_lock','ancillary_lock'} and (r['node_key'] in nodes or r['parent_node_key'] in nodes or r['child_node_key'] in nodes or r['locked_skill_key'] in sk))]
   result['spell_variants']=[self.payload(a) for a in sorted(variants)]
-  grants=[r for r in relevant if r['bonus_value_id']=='enable' and r['target_kind']=='ability']
+  # A direct ability binding can enable another character's ability.
+  # Only source-backed character-local scopes support personal access.
+  grants=[]
+  for mod in mods:
+   r=mod['relation']; scope=mod['scope_definition'] or {}
+   if r['bonus_value_id']=='enable' and r['target_kind']=='ability' and all(scope.get(k)==v for k,v in {'source':'character','target':'character','location':'character','ownership':'yours'}.items()):
+    grants.append(r)
   result['character_access_status']='potential_skill_grant_found' if grants else 'modifiers_only_access_not_established' if relevant else 'not_established_by_this_query' if character else 'character_not_selected'
   return result
 
