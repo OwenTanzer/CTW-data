@@ -4,16 +4,12 @@ import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {beginSource, verifyDecoder, finishSource} from './snapshot-source.mjs';
+import {validateProbeRequest, decoderProbeStatus} from './battlefield-probe-lib.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const [requestPath, outputPath, snapshot = '9.0.1'] = process.argv.slice(2);
 if (!requestPath || !outputPath) throw Error('Usage: request.json work/output [snapshot]');
-const request = JSON.parse(await readFile(path.resolve(root, requestPath), 'utf8'));
+const request = validateProbeRequest(JSON.parse(await readFile(path.resolve(root, requestPath), 'utf8')));
 const output = path.resolve(root, outputPath);
-if (!Array.isArray(request.paths) || !request.paths.length || request.paths.length > 100)
-  throw Error('Probe requires 1–100 exact paths');
-for (const p of request.paths)
-  if (typeof p !== 'string' || p.includes('..') || p.includes('\\') || p.startsWith('/'))
-    throw Error('Unsafe source path');
 const context = await beginSource(output, root, snapshot);
 const {call} = await import('./technology-rpfm.mjs');
 await call('set_game_selected', {game_name: context.profile.game, rebuild_dependencies: false});
@@ -41,7 +37,7 @@ for (const p of request.decode ?? []) {
   try {
     const decoded = await call('decode_packed_file', {pack_key: pack, path: p, source: 'PackFile'});
     await writeFile(path.join(output, artifact), JSON.stringify(decoded, null, 2) + '\n');
-    probes.push({path: p, status: 'decoder_returned_unvalidated', artifact});
+    probes.push({path: p, status: decoderProbeStatus(decoded), artifact});
   } catch (error) {
     probes.push({path: p, status: 'decoder_failed', error: String(error)});
   }
