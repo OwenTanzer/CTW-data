@@ -1,0 +1,2 @@
+behaviour,ability,description,source_path,source_line,source_patch
+changeling_transformation,wh3_dlc24_lord_abilities_formless_horror_changeling,The default ability to transform back to the Changeling.,data/unit_stats/abilities/source_exports/db/special_ability_behaviour_to_ability_junctions_tables/data__.tsv,3,9.0.1

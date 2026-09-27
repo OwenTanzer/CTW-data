@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "base_patch": "9.0",
+  "extraction_patch": "9.0.1",
+  "extraction_build": "25546563",
+  "source_manifest_sha256": "20b563a22b237fb23ea07c8a5d271d1a7903086efb4f1e292d4b2b66c55f3126",
+  "source_archive_ref": "checkpoint/magic-source-9.0.1-20260927",
+  "source_archive_commit": "4d16368f1d5ab822197dade576c4e27ce24d5596",
+  "coverage": "partial",
+  "issue": 14
+}

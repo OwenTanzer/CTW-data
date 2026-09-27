@@ -67,3 +67,17 @@ The race guides retain their 8.1.1 audit scope. Read `data/faction_guides/COMPAT
 ## Victory objectives
 
 Use `objective_reference` with `variant_key`; Vlad and Isabella have separate requirements. Read `data/campaign_map/objective_manifest.json` and `objective_boundaries` before interpreting victory conditions. These are initial configured 9.0 objectives; scripted completion, runtime unit-size scaling and Archaon later path additions are explicit boundaries. Rewards, crisis and multiplayer objectives remain out of scope.
+
+## Magic and shared ability effects
+
+For character-to-spell queries, read `data/magic/README.md` and `coverage.json`,
+then use its character/ability indices and `scripts/query_magic.py`. Magic is a
+partial retrieval layer: base payloads, skill modifiers and access conditions
+must remain separate. A group modifier does not grant the group's spells, and
+successive skill ranks must not be summed. Shared ability/casting/phase truth is
+owned by `data/unit_stats/abilities/`; binding/scope truth by
+`data/effect_semantics/`; progression stays in `data/skill_trees/`.
+The magic extraction is explicitly 9.0.1/build 25546563, with identical shared
+9.0 inputs checked and pinned. This is a scoped exception to the base snapshot,
+not a global database migration. Source-only payloads and unresolved runtime or
+acquisition routes must remain labelled; do not claim #14 is complete.

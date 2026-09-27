@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "normalized_tables": 59,
+  "normalized_rows": 35220,
+  "character_relations_checked": 44275,
+  "golden_checks": {
+    "apotheosis": true,
+    "teclis_chain_lightning": true,
+    "bound_source_type_counterexample": true,
+    "no_false_single_lore_grant": true,
+    "summon": "wh2_dlc09_army_abilities_realm_of_souls_ushabti",
+    "multiple_phases": "wh2_dlc09_character_abilities_stay_here_ill_get_help",
+    "raw_sentinels": true
+  },
+  "issue_complete": false
+}

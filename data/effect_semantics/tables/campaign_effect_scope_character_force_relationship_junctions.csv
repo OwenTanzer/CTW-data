@@ -1,0 +1,2 @@
+campaign_effect_scope_key,force_relationship_key,source_path,source_line,source_patch
+force_to_general_own,force_commander,data/effect_semantics/source_exports/db/campaign_effect_scope_character_force_relationship_junctions_tables/data__.tsv,3,9.0.1

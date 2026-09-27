@@ -49,3 +49,11 @@ node .\scripts\validate-skill-trees.mjs work\source_skills_9.0 work\generated_sk
 Install generated files only after the validator exits successfully. The validator checks source hashes, canonical ownership, file/index hashes, row types, foreign keys, node-set reconciliation, prerequisite endpoints, complete-tree uniqueness, race totals, and representative characters from all 25 races.
 
 Shared subtypes have one canonical retrieval owner, with cross-race faction permissions preserved. Nagash access does not create duplicate character identities. The 9.0 source introduces 50 included subtypes and changes 483 of the 500 existing structural fingerprints.
+
+## Spell effects
+
+Use [the magic entry point](../magic/README.md) for indexed skill-effect → binding
+→ ability → casting/phase retrieval. It references exact rows here and preserves
+node-set conditions and ranks. The magic index is not a selected skill allocation;
+base payloads and modifiers remain separate, and lore-group modifiers do not
+establish access to every spell in that group.

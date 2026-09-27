@@ -27,3 +27,7 @@
 
 # Preserve verified objective script evidence byte-for-byte.
 /data/campaign_map/objective_source_exports/** -text -whitespace
+
+# Preserve new raw magic/shared source evidence byte-for-byte.
+/data/unit_stats/abilities/source_exports/** -text -whitespace
+/data/effect_semantics/source_exports/** -text -whitespace

@@ -125,3 +125,13 @@ coverage, snapshot failures, tampered or stale files, manifest path handling,
 schema mismatches, missing packed files and conflicting source keys.
 They validate this infrastructure, not live game mechanics. Existing production
 dataset validation commands remain unchanged.
+
+## Magic integration checkpoint — September 27, 2026
+
+Magic #14 now has a separately validated 9.0.1 extraction and first normalized
+retrieval increment. See [the handoff](development/magic/README.md). New shared
+binding/scope relations are under `data/effect_semantics/`; generic ability,
+casting, phase and lifecycle records are under `data/unit_stats/abilities/`.
+Their source registry identifies reused 9.0 inputs and newly promoted evidence.
+The prior 220-table 8.1.1 candidate remains historical development evidence;
+it has not been relabelled or merged wholesale. Neither #7 nor #14 is complete.

@@ -146,3 +146,11 @@ actual source custom-battle faction permissions; it has no invented Warriors of
 Chaos permission or military-group membership for these additions. A race row
 is therefore possible campaign access for Archaon, not ordinary recruitment
 for the race. Individual mount unlocks are not certified.
+
+## Shared ability relations and magic
+
+Generic definitions, casting, phases, lifecycle, vortices and bombardments now
+have a [shared ability owner](abilities/README.md). The [magic entry point](../magic/README.md)
+connects character skill effects to those records. It preserves the existing
+unit roster and projectile lookup contracts. Source-only spell projectiles remain
+explicitly qualified; the first increment does not complete payload normalization.

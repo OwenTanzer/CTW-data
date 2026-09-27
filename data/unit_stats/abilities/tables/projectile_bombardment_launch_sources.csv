@@ -1,0 +1,7 @@
+suggested_launch_source,description,source_path,source_line,source_patch
+above_activater,This will attempt to spawn projectiels above whoever is activating the bombardment (if somebody is),data/unit_stats/abilities/source_exports/db/projectile_bombardment_launch_sources_tables/data__.tsv,3,9.0.1
+above_target,this will attempt to spawn projectiles above the target,data/unit_stats/abilities/source_exports/db/projectile_bombardment_launch_sources_tables/data__.tsv,4,9.0.1
+activaters_entities,This will attempt to spawn projectiels at whoever is activationg the bombardment (if somebody is). It will ignore num shells,data/unit_stats/abilities/source_exports/db/projectile_bombardment_launch_sources_tables/data__.tsv,5,9.0.1
+at_target,"This will attempt to spawn the projectiles near the target, just above it",data/unit_stats/abilities/source_exports/db/projectile_bombardment_launch_sources_tables/data__.tsv,6,9.0.1
+launch_and_explode,This will create an immediate explosion,data/unit_stats/abilities/source_exports/db/projectile_bombardment_launch_sources_tables/data__.tsv,7,9.0.1
+off_map,Offset the launch position towards deployment zone by projectile range,data/unit_stats/abilities/source_exports/db/projectile_bombardment_launch_sources_tables/data__.tsv,8,9.0.1
