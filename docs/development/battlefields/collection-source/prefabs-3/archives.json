@@ -1,0 +1,26 @@
+[
+  {
+    "archive": "00000.zip",
+    "bytes": 127911,
+    "sha256": "90492c0cecab3d92dad7d52da5fce7f6e27f008b5ec78e861a7b720ca7fa2e43",
+    "source_files": 50
+  },
+  {
+    "archive": "00001.zip",
+    "bytes": 66890,
+    "sha256": "8703905745734af778b91219c29935ccf5b67ca982e8cf3d716a2b31fb3fd47c",
+    "source_files": 50
+  },
+  {
+    "archive": "00002.zip",
+    "bytes": 153643,
+    "sha256": "e8b639e0e580b9c09bdca26ea7219959a4e9de53cdb6410f37d7daeb2bb9acd6",
+    "source_files": 50
+  },
+  {
+    "archive": "00003.zip",
+    "bytes": 47044,
+    "sha256": "a4030367dfac8ebea78067baf25e00710e0ca991d358d8b043b0595d97a96a1b",
+    "source_files": 40
+  }
+]
