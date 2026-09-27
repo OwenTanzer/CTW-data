@@ -1,0 +1,1433 @@
+{
+  "schema_version": 1,
+  "snapshot": {
+    "game": "warhammer_3",
+    "patch": "9.0.1",
+    "steam_build_id": "25546563",
+    "executable_version": "9.0.1.0"
+  },
+  "source_verification": {
+    "game": "warhammer_3",
+    "patch": "9.0.1",
+    "steam_build_id": "25546563",
+    "executable_version": "9.0.1.0",
+    "installation": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Total War WARHAMMER III",
+    "appmanifest_sha256": "377d4cac72f5656c9f1b5d347cb908668000cd49caf81e54a02948a02195056a",
+    "executable_sha256": "6c104a63aacc4d865f78e6d198185f830a43255ae18367ad6be906f5f3433297",
+    "pack_inventory": [
+      {
+        "name": "anim.pack",
+        "bytes": 1169337412,
+        "modified_ms": 1790258330406.7722
+      },
+      {
+        "name": "anim2.pack",
+        "bytes": 752099577,
+        "modified_ms": 1790258330409.1829
+      },
+      {
+        "name": "anim_3.pack",
+        "bytes": 78528327,
+        "modified_ms": 1790258330410.195
+      },
+      {
+        "name": "audio_base.pack",
+        "bytes": 5721032969,
+        "modified_ms": 1790258330418.192
+      },
+      {
+        "name": "audio_base_bnk.pack",
+        "bytes": 50614533,
+        "modified_ms": 1790425626267.5889
+      },
+      {
+        "name": "audio_base_m.pack",
+        "bytes": 3299404114,
+        "modified_ms": 1790258330422.2012
+      },
+      {
+        "name": "audio_cn.pack",
+        "bytes": 203226096,
+        "modified_ms": 1784912663777.8394
+      },
+      {
+        "name": "audio_cn_bnk.pack",
+        "bytes": 31110721,
+        "modified_ms": 1790425626269.59
+      },
+      {
+        "name": "audio_en.pack",
+        "bytes": 4913267327,
+        "modified_ms": 1790258330424.5813
+      },
+      {
+        "name": "audio_en_bnk.pack",
+        "bytes": 31113289,
+        "modified_ms": 1790425626271.5757
+      },
+      {
+        "name": "audio_fr.pack",
+        "bytes": 236441146,
+        "modified_ms": 1784912663783.8306
+      },
+      {
+        "name": "audio_fr_bnk.pack",
+        "bytes": 31115233,
+        "modified_ms": 1790425626272.6008
+      },
+      {
+        "name": "audio_ge.pack",
+        "bytes": 249493143,
+        "modified_ms": 1784912663786.2424
+      },
+      {
+        "name": "audio_ge_bnk.pack",
+        "bytes": 31110049,
+        "modified_ms": 1790425626274.5747
+      },
+      {
+        "name": "audio_it.pack",
+        "bytes": 269926213,
+        "modified_ms": 1784912663789.3914
+      },
+      {
+        "name": "audio_it_bnk.pack",
+        "bytes": 31110697,
+        "modified_ms": 1790425626275.59
+      },
+      {
+        "name": "audio_pl.pack",
+        "bytes": 248363017,
+        "modified_ms": 1784912663792.385
+      },
+      {
+        "name": "audio_pl_bnk.pack",
+        "bytes": 31110049,
+        "modified_ms": 1790425626277.5898
+      },
+      {
+        "name": "audio_ru.pack",
+        "bytes": 260482050,
+        "modified_ms": 1784912663797.384
+      },
+      {
+        "name": "audio_ru_bnk.pack",
+        "bytes": 31110697,
+        "modified_ms": 1790425626278.5762
+      },
+      {
+        "name": "audio_sp.pack",
+        "bytes": 274520201,
+        "modified_ms": 1784912663800.898
+      },
+      {
+        "name": "audio_sp_bnk.pack",
+        "bytes": 31115283,
+        "modified_ms": 1790425626279.5925
+      },
+      {
+        "name": "boot.pack",
+        "bytes": 42859,
+        "modified_ms": 1790425632202.6123
+      },
+      {
+        "name": "commontextures.pack",
+        "bytes": 112712764,
+        "modified_ms": 1790258330444.146
+      },
+      {
+        "name": "data.pack",
+        "bytes": 429548936,
+        "modified_ms": 1790258330445.12
+      },
+      {
+        "name": "data_3.pack",
+        "bytes": 3751,
+        "modified_ms": 1790258429146.0225
+      },
+      {
+        "name": "data_bl.pack",
+        "bytes": 939113,
+        "modified_ms": 1790258330584.0288
+      },
+      {
+        "name": "data_maps.pack",
+        "bytes": 458048611,
+        "modified_ms": 1790258330446.118
+      },
+      {
+        "name": "data_script.pack",
+        "bytes": 13890758,
+        "modified_ms": 1790425626281.7905
+      },
+      {
+        "name": "db.pack",
+        "bytes": 8658395,
+        "modified_ms": 1790425626282.791
+      },
+      {
+        "name": "local_br.pack",
+        "bytes": 34559221,
+        "modified_ms": 1790425626284.7898
+      },
+      {
+        "name": "local_cn.pack",
+        "bytes": 30940912,
+        "modified_ms": 1790425626285.7766
+      },
+      {
+        "name": "local_cz.pack",
+        "bytes": 32264378,
+        "modified_ms": 1790425626288.298
+      },
+      {
+        "name": "local_en.pack",
+        "bytes": 33434011,
+        "modified_ms": 1790425626289.2983
+      },
+      {
+        "name": "local_fr.pack",
+        "bytes": 34520661,
+        "modified_ms": 1790425626291.5205
+      },
+      {
+        "name": "local_ge.pack",
+        "bytes": 33832868,
+        "modified_ms": 1790425626293.525
+      },
+      {
+        "name": "local_it.pack",
+        "bytes": 34412338,
+        "modified_ms": 1790425626295.5198
+      },
+      {
+        "name": "local_kr.pack",
+        "bytes": 27576661,
+        "modified_ms": 1790425626297.5232
+      },
+      {
+        "name": "local_pl.pack",
+        "bytes": 34070794,
+        "modified_ms": 1790425626298.5183
+      },
+      {
+        "name": "local_ru.pack",
+        "bytes": 36328245,
+        "modified_ms": 1790425626299.9287
+      },
+      {
+        "name": "local_sp.pack",
+        "bytes": 35399729,
+        "modified_ms": 1790425626300.9502
+      },
+      {
+        "name": "local_tr.pack",
+        "bytes": 27522826,
+        "modified_ms": 1790425626302.95
+      },
+      {
+        "name": "local_zh.pack",
+        "bytes": 31418572,
+        "modified_ms": 1790425626303.9512
+      },
+      {
+        "name": "models.pack",
+        "bytes": 2009031,
+        "modified_ms": 1790258330471.1611
+      },
+      {
+        "name": "models2.pack",
+        "bytes": 1077545203,
+        "modified_ms": 1790258330472.149
+      },
+      {
+        "name": "models2_dds.pack",
+        "bytes": 722198108,
+        "modified_ms": 1790258330479.671
+      },
+      {
+        "name": "models2a_dds.pack",
+        "bytes": 903381548,
+        "modified_ms": 1790258330473.149
+      },
+      {
+        "name": "models2b_dds.pack",
+        "bytes": 896098564,
+        "modified_ms": 1790258330475.1448
+      },
+      {
+        "name": "models2c_dds.pack",
+        "bytes": 800170326,
+        "modified_ms": 1790258330477.1445
+      },
+      {
+        "name": "models2d_dds.pack",
+        "bytes": 839684551,
+        "modified_ms": 1790258330478.16
+      },
+      {
+        "name": "models2e_dds.pack",
+        "bytes": 580892593,
+        "modified_ms": 1790258330478.16
+      },
+      {
+        "name": "models3.pack",
+        "bytes": 1390654572,
+        "modified_ms": 1790258330481.309
+      },
+      {
+        "name": "models3_dds.pack",
+        "bytes": 756868281,
+        "modified_ms": 1790258330489.2058
+      },
+      {
+        "name": "models3a_dds.pack",
+        "bytes": 819696029,
+        "modified_ms": 1784912663888.5166
+      },
+      {
+        "name": "models3b_dds.pack",
+        "bytes": 802501332,
+        "modified_ms": 1790258330483.6887
+      },
+      {
+        "name": "models3c_dds.pack",
+        "bytes": 554814123,
+        "modified_ms": 1784912663893.5247
+      },
+      {
+        "name": "models3d_dds.pack",
+        "bytes": 727208451,
+        "modified_ms": 1790258330485.181
+      },
+      {
+        "name": "models3e_dds.pack",
+        "bytes": 665113429,
+        "modified_ms": 1784912663897.9595
+      },
+      {
+        "name": "models3f_dds.pack",
+        "bytes": 652112509,
+        "modified_ms": 1790258330487.2107
+      },
+      {
+        "name": "models4.pack",
+        "bytes": 212951157,
+        "modified_ms": 1790258330490.2107
+      },
+      {
+        "name": "models4_dds.pack",
+        "bytes": 760772785,
+        "modified_ms": 1790258330492.2087
+      },
+      {
+        "name": "models5.pack",
+        "bytes": 54099,
+        "modified_ms": 1790258439015.591
+      },
+      {
+        "name": "models5_dds.pack",
+        "bytes": 372999021,
+        "modified_ms": 1790258330493.1987
+      },
+      {
+        "name": "models_dds.pack",
+        "bytes": 70377951,
+        "modified_ms": 1790258330495.2095
+      },
+      {
+        "name": "models_other.pack",
+        "bytes": 459804038,
+        "modified_ms": 1790258330497.2043
+      },
+      {
+        "name": "movies.pack",
+        "bytes": 955795086,
+        "modified_ms": 1784912663910.2878
+      },
+      {
+        "name": "movies_champions.pack",
+        "bytes": 374821068,
+        "modified_ms": 1784912663912.3665
+      },
+      {
+        "name": "movies_chd.pack",
+        "bytes": 650854512,
+        "modified_ms": 1784912663913.3833
+      },
+      {
+        "name": "movies_cth.pack",
+        "bytes": 345207447,
+        "modified_ms": 1784912663914.368
+      },
+      {
+        "name": "movies_dae.pack",
+        "bytes": 181894883,
+        "modified_ms": 1784912663915.4092
+      },
+      {
+        "name": "movies_dwf.pack",
+        "bytes": 68119062,
+        "modified_ms": 1784912663916.4272
+      },
+      {
+        "name": "movies_emp.pack",
+        "bytes": 82091668,
+        "modified_ms": 1784912663917.4202
+      },
+      {
+        "name": "movies_end.pack",
+        "bytes": 540036284,
+        "modified_ms": 1790258330499.2046
+      },
+      {
+        "name": "movies_ev.pack",
+        "bytes": 740601151,
+        "modified_ms": 1790258330500.1992
+      },
+      {
+        "name": "movies_front.pack",
+        "bytes": 652356268,
+        "modified_ms": 1790258330500.1992
+      },
+      {
+        "name": "movies_grn.pack",
+        "bytes": 37465733,
+        "modified_ms": 1784912663923.4263
+      },
+      {
+        "name": "movies_kho.pack",
+        "bytes": 210271490,
+        "modified_ms": 1784912663925.4158
+      },
+      {
+        "name": "movies_ksl.pack",
+        "bytes": 684384623,
+        "modified_ms": 1784912663927.4165
+      },
+      {
+        "name": "movies_nur.pack",
+        "bytes": 261354701,
+        "modified_ms": 1784912663929.4329
+      },
+      {
+        "name": "movies_ogr.pack",
+        "bytes": 295146962,
+        "modified_ms": 1784912663931.4177
+      },
+      {
+        "name": "movies_prologue.pack",
+        "bytes": 425837543,
+        "modified_ms": 1784912663933.431
+      },
+      {
+        "name": "movies_sla.pack",
+        "bytes": 221528932,
+        "modified_ms": 1784912663934.4172
+      },
+      {
+        "name": "movies_spell.pack",
+        "bytes": 347466139,
+        "modified_ms": 1790258330502.2056
+      },
+      {
+        "name": "movies_tze.pack",
+        "bytes": 243248217,
+        "modified_ms": 1784912663936.4465
+      },
+      {
+        "name": "movies_wh3.pack",
+        "bytes": 948652095,
+        "modified_ms": 1784912663937.4197
+      },
+      {
+        "name": "shaders.pack",
+        "bytes": 127886058,
+        "modified_ms": 1790425626305.9502
+      },
+      {
+        "name": "shaders_bl.pack",
+        "bytes": 54795000,
+        "modified_ms": 1790425626309.5068
+      },
+      {
+        "name": "skyboxes.pack",
+        "bytes": 1730317492,
+        "modified_ms": 1790258330505.209
+      },
+      {
+        "name": "tcamp.pack",
+        "bytes": 725816556,
+        "modified_ms": 1790258330506.2056
+      },
+      {
+        "name": "terrain.pack",
+        "bytes": 840183723,
+        "modified_ms": 1790258330507.1982
+      },
+      {
+        "name": "terrain11.pack",
+        "bytes": 370770997,
+        "modified_ms": 1784912663944.436
+      },
+      {
+        "name": "terrain13.pack",
+        "bytes": 44658330,
+        "modified_ms": 1790258330508.2078
+      },
+      {
+        "name": "terrain2.pack",
+        "bytes": 3824236,
+        "modified_ms": 1790258330510.2043
+      },
+      {
+        "name": "terrain3.pack",
+        "bytes": 460734879,
+        "modified_ms": 1784912663946.4175
+      },
+      {
+        "name": "terrain4.pack",
+        "bytes": 347146537,
+        "modified_ms": 1784912663948.417
+      },
+      {
+        "name": "terrain5.pack",
+        "bytes": 264728011,
+        "modified_ms": 1790258330512.2031
+      },
+      {
+        "name": "terrain6.pack",
+        "bytes": 483795484,
+        "modified_ms": 1790258330514.1975
+      },
+      {
+        "name": "terrain7.pack",
+        "bytes": 343645114,
+        "modified_ms": 1784912663950.4326
+      },
+      {
+        "name": "terrain8.pack",
+        "bytes": 442134929,
+        "modified_ms": 1784912663951.431
+      },
+      {
+        "name": "terrain9.pack",
+        "bytes": 368710973,
+        "modified_ms": 1790258330514.1975
+      },
+      {
+        "name": "terrain_camp.pack",
+        "bytes": 964428975,
+        "modified_ms": 1790258330517.2095
+      },
+      {
+        "name": "terrain_camp_models.pack",
+        "bytes": 14012139,
+        "modified_ms": 1790258330519.2087
+      },
+      {
+        "name": "terrain_textures1.pack",
+        "bytes": 445088093,
+        "modified_ms": 1784912663956.4182
+      },
+      {
+        "name": "terrain_textures2.pack",
+        "bytes": 488505504,
+        "modified_ms": 1784912663957.4397
+      },
+      {
+        "name": "terrain_textures3.pack",
+        "bytes": 714220480,
+        "modified_ms": 1784912663958.4316
+      },
+      {
+        "name": "terrain_textures4.pack",
+        "bytes": 614530031,
+        "modified_ms": 1784912663959.4321
+      },
+      {
+        "name": "terrain_textures5.pack",
+        "bytes": 817246041,
+        "modified_ms": 1784912663961.418
+      },
+      {
+        "name": "terrain_textures6.pack",
+        "bytes": 135866406,
+        "modified_ms": 1790258330520.2087
+      },
+      {
+        "name": "terrainb.pack",
+        "bytes": 133683969,
+        "modified_ms": 1790258330516.208
+      },
+      {
+        "name": "tile001.pack",
+        "bytes": 499029270,
+        "modified_ms": 1784912663963.4204
+      },
+      {
+        "name": "tile002.pack",
+        "bytes": 170275062,
+        "modified_ms": 1784912663964.4187
+      },
+      {
+        "name": "tile003.pack",
+        "bytes": 167950391,
+        "modified_ms": 1784912663965.4194
+      },
+      {
+        "name": "tile004.pack",
+        "bytes": 171961883,
+        "modified_ms": 1784912663966.4326
+      },
+      {
+        "name": "tile005.pack",
+        "bytes": 151396657,
+        "modified_ms": 1784912663967.4326
+      },
+      {
+        "name": "tile006.pack",
+        "bytes": 25505038,
+        "modified_ms": 1784912663968.4321
+      },
+      {
+        "name": "tile007.pack",
+        "bytes": 157411264,
+        "modified_ms": 1784912663970.4165
+      },
+      {
+        "name": "tile008.pack",
+        "bytes": 180533685,
+        "modified_ms": 1784912663971.418
+      },
+      {
+        "name": "tile009.pack",
+        "bytes": 474156035,
+        "modified_ms": 1784912663973.418
+      },
+      {
+        "name": "tile010.pack",
+        "bytes": 203119958,
+        "modified_ms": 1784912663974.4163
+      },
+      {
+        "name": "tile011.pack",
+        "bytes": 26046602,
+        "modified_ms": 1784912663976.4165
+      },
+      {
+        "name": "tile012.pack",
+        "bytes": 156697742,
+        "modified_ms": 1784912663977.4175
+      },
+      {
+        "name": "tile013.pack",
+        "bytes": 149504419,
+        "modified_ms": 1784912663979.416
+      },
+      {
+        "name": "tile014.pack",
+        "bytes": 28662893,
+        "modified_ms": 1784912663981.4207
+      },
+      {
+        "name": "tile015.pack",
+        "bytes": 114528295,
+        "modified_ms": 1784912663982.4312
+      },
+      {
+        "name": "tile016.pack",
+        "bytes": 163231242,
+        "modified_ms": 1784912663984.5823
+      },
+      {
+        "name": "tile017.pack",
+        "bytes": 24373479,
+        "modified_ms": 1784912663986.6172
+      },
+      {
+        "name": "tile018.pack",
+        "bytes": 98784881,
+        "modified_ms": 1784912663988.5862
+      },
+      {
+        "name": "tile019.pack",
+        "bytes": 173491848,
+        "modified_ms": 1784912663989.6123
+      },
+      {
+        "name": "tile020.pack",
+        "bytes": 169410582,
+        "modified_ms": 1784912663990.6035
+      },
+      {
+        "name": "tile021.pack",
+        "bytes": 195405255,
+        "modified_ms": 1784912663992.5867
+      },
+      {
+        "name": "tile022.pack",
+        "bytes": 43409813,
+        "modified_ms": 1784912663993.5874
+      },
+      {
+        "name": "tile023.pack",
+        "bytes": 188074000,
+        "modified_ms": 1784912663995.6023
+      },
+      {
+        "name": "tile024.pack",
+        "bytes": 137841151,
+        "modified_ms": 1784912663996.587
+      },
+      {
+        "name": "tile025.pack",
+        "bytes": 168636814,
+        "modified_ms": 1784912663997.6133
+      },
+      {
+        "name": "tile026.pack",
+        "bytes": 158053821,
+        "modified_ms": 1784912663998.5903
+      },
+      {
+        "name": "tile027.pack",
+        "bytes": 149281736,
+        "modified_ms": 1784912663999.5874
+      },
+      {
+        "name": "tile028.pack",
+        "bytes": 171148764,
+        "modified_ms": 1784912664000.6174
+      },
+      {
+        "name": "tile029.pack",
+        "bytes": 150985984,
+        "modified_ms": 1784912664002.798
+      },
+      {
+        "name": "tile030.pack",
+        "bytes": 199066647,
+        "modified_ms": 1784912664002.798
+      },
+      {
+        "name": "tile031.pack",
+        "bytes": 162973048,
+        "modified_ms": 1784912664003.798
+      },
+      {
+        "name": "tile032.pack",
+        "bytes": 144519175,
+        "modified_ms": 1784912664004.7988
+      },
+      {
+        "name": "tile033.pack",
+        "bytes": 132620218,
+        "modified_ms": 1784912664006.8142
+      },
+      {
+        "name": "tile034.pack",
+        "bytes": 151312907,
+        "modified_ms": 1784912664007.8137
+      },
+      {
+        "name": "tile035.pack",
+        "bytes": 159112581,
+        "modified_ms": 1784912664008.7993
+      },
+      {
+        "name": "tile036.pack",
+        "bytes": 200850941,
+        "modified_ms": 1790258330521.1975
+      },
+      {
+        "name": "tile037.pack",
+        "bytes": 154962905,
+        "modified_ms": 1784912664010.7998
+      },
+      {
+        "name": "tile038.pack",
+        "bytes": 194694331,
+        "modified_ms": 1784912664012.2024
+      },
+      {
+        "name": "tile039.pack",
+        "bytes": 167629723,
+        "modified_ms": 1784912664013.2156
+      },
+      {
+        "name": "tile040.pack",
+        "bytes": 168689264,
+        "modified_ms": 1784912664015.4392
+      },
+      {
+        "name": "tile041.pack",
+        "bytes": 137965549,
+        "modified_ms": 1784912664016.4285
+      },
+      {
+        "name": "tile042.pack",
+        "bytes": 180245594,
+        "modified_ms": 1784912664017.4246
+      },
+      {
+        "name": "tile043.pack",
+        "bytes": 30964092,
+        "modified_ms": 1784912664018.4243
+      },
+      {
+        "name": "tile044.pack",
+        "bytes": 199104846,
+        "modified_ms": 1784912664019.4246
+      },
+      {
+        "name": "tile045.pack",
+        "bytes": 529350207,
+        "modified_ms": 1784912664021.427
+      },
+      {
+        "name": "tile046.pack",
+        "bytes": 50319334,
+        "modified_ms": 1784912664022.4297
+      },
+      {
+        "name": "tile047.pack",
+        "bytes": 220362363,
+        "modified_ms": 1784912664023.4373
+      },
+      {
+        "name": "tile048.pack",
+        "bytes": 95801355,
+        "modified_ms": 1784912664024.4404
+      },
+      {
+        "name": "tile049.pack",
+        "bytes": 45696598,
+        "modified_ms": 1784912664025.4243
+      },
+      {
+        "name": "tile050.pack",
+        "bytes": 83267281,
+        "modified_ms": 1784912664026.4243
+      },
+      {
+        "name": "tile051.pack",
+        "bytes": 93394386,
+        "modified_ms": 1784912664027.424
+      },
+      {
+        "name": "tile052.pack",
+        "bytes": 152786122,
+        "modified_ms": 1784912664029.423
+      },
+      {
+        "name": "tile053.pack",
+        "bytes": 138439826,
+        "modified_ms": 1784912664031.425
+      },
+      {
+        "name": "tile054.pack",
+        "bytes": 517056167,
+        "modified_ms": 1784912664032.4253
+      },
+      {
+        "name": "tile055.pack",
+        "bytes": 551290038,
+        "modified_ms": 1784912664034.9453
+      },
+      {
+        "name": "tile056.pack",
+        "bytes": 635311755,
+        "modified_ms": 1784912664036.9292
+      },
+      {
+        "name": "tile057.pack",
+        "bytes": 208997238,
+        "modified_ms": 1784912664038.9265
+      },
+      {
+        "name": "tile058.pack",
+        "bytes": 265697338,
+        "modified_ms": 1784912664039.5552
+      },
+      {
+        "name": "tile060.pack",
+        "bytes": 257276960,
+        "modified_ms": 1784912664040.6294
+      },
+      {
+        "name": "tile061.pack",
+        "bytes": 77510622,
+        "modified_ms": 1784912664042.63
+      },
+      {
+        "name": "tile062.pack",
+        "bytes": 207264754,
+        "modified_ms": 1784912664043.6294
+      },
+      {
+        "name": "tile063.pack",
+        "bytes": 161553006,
+        "modified_ms": 1784912664044.631
+      },
+      {
+        "name": "tile064.pack",
+        "bytes": 188265182,
+        "modified_ms": 1784912664045.6301
+      },
+      {
+        "name": "tile065.pack",
+        "bytes": 43611292,
+        "modified_ms": 1784912664046.67
+      },
+      {
+        "name": "tile066.pack",
+        "bytes": 221947791,
+        "modified_ms": 1790258330522.207
+      },
+      {
+        "name": "tile067.pack",
+        "bytes": 279173422,
+        "modified_ms": 1784912664049.6501
+      },
+      {
+        "name": "tile068.pack",
+        "bytes": 91512149,
+        "modified_ms": 1790258330524.2039
+      },
+      {
+        "name": "tile069.pack",
+        "bytes": 78519127,
+        "modified_ms": 1784912664052.6292
+      },
+      {
+        "name": "tile070.pack",
+        "bytes": 38260992,
+        "modified_ms": 1784912664053.6318
+      },
+      {
+        "name": "tile071.pack",
+        "bytes": 758170787,
+        "modified_ms": 1784912664054.653
+      },
+      {
+        "name": "tile072.pack",
+        "bytes": 205689887,
+        "modified_ms": 1784912664056.822
+      },
+      {
+        "name": "tile073.pack",
+        "bytes": 23725234,
+        "modified_ms": 1784912664057.8154
+      },
+      {
+        "name": "tile074.pack",
+        "bytes": 339653263,
+        "modified_ms": 1784912664059.843
+      },
+      {
+        "name": "tile075.pack",
+        "bytes": 175380230,
+        "modified_ms": 1784912664060.8157
+      },
+      {
+        "name": "tile076.pack",
+        "bytes": 541813442,
+        "modified_ms": 1784912664063.0435
+      },
+      {
+        "name": "tile077.pack",
+        "bytes": 46961807,
+        "modified_ms": 1790258330525.2078
+      },
+      {
+        "name": "tile078.pack",
+        "bytes": 104401053,
+        "modified_ms": 1784912664066.0376
+      },
+      {
+        "name": "tile079.pack",
+        "bytes": 192757313,
+        "modified_ms": 1784912664067.2585
+      },
+      {
+        "name": "tile080.pack",
+        "bytes": 313572536,
+        "modified_ms": 1784912664069.0386
+      },
+      {
+        "name": "tile081.pack",
+        "bytes": 157964760,
+        "modified_ms": 1790258330526.2107
+      },
+      {
+        "name": "tile082.pack",
+        "bytes": 232330397,
+        "modified_ms": 1784912664072.2349
+      },
+      {
+        "name": "tile083.pack",
+        "bytes": 223652831,
+        "modified_ms": 1784912664074.2383
+      },
+      {
+        "name": "tile084.pack",
+        "bytes": 153254176,
+        "modified_ms": 1790258330528.1968
+      },
+      {
+        "name": "tile085.pack",
+        "bytes": 421319223,
+        "modified_ms": 1790258330528.1968
+      },
+      {
+        "name": "tile086.pack",
+        "bytes": 362263908,
+        "modified_ms": 1790258330529.206
+      },
+      {
+        "name": "tile087.pack",
+        "bytes": 252608376,
+        "modified_ms": 1790258330531.209
+      },
+      {
+        "name": "tile088.pack",
+        "bytes": 205725350,
+        "modified_ms": 1784912664083.4192
+      },
+      {
+        "name": "tile089.pack",
+        "bytes": 317277025,
+        "modified_ms": 1784912664085.442
+      },
+      {
+        "name": "tile090.pack",
+        "bytes": 209116261,
+        "modified_ms": 1784912664087.6978
+      },
+      {
+        "name": "tile091.pack",
+        "bytes": 480085702,
+        "modified_ms": 1784912664089.694
+      },
+      {
+        "name": "tile092.pack",
+        "bytes": 197052318,
+        "modified_ms": 1784912664091.7107
+      },
+      {
+        "name": "tile093.pack",
+        "bytes": 197717266,
+        "modified_ms": 1784912664094.0867
+      },
+      {
+        "name": "tile094.pack",
+        "bytes": 538389923,
+        "modified_ms": 1784912664095.0889
+      },
+      {
+        "name": "tile095.pack",
+        "bytes": 132551981,
+        "modified_ms": 1784912664097.0886
+      },
+      {
+        "name": "tile096.pack",
+        "bytes": 404183074,
+        "modified_ms": 1784912664098.0896
+      },
+      {
+        "name": "tile097.pack",
+        "bytes": 149006324,
+        "modified_ms": 1784912664099.0881
+      },
+      {
+        "name": "tile098.pack",
+        "bytes": 127219934,
+        "modified_ms": 1784912664099.0881
+      },
+      {
+        "name": "tile099.pack",
+        "bytes": 342007267,
+        "modified_ms": 1784912664100.5947
+      },
+      {
+        "name": "tile100.pack",
+        "bytes": 439803951,
+        "modified_ms": 1790258330533.8755
+      },
+      {
+        "name": "tile101.pack",
+        "bytes": 397208935,
+        "modified_ms": 1784912664105.7136
+      },
+      {
+        "name": "tile102.pack",
+        "bytes": 272867224,
+        "modified_ms": 1784912664107.714
+      },
+      {
+        "name": "tile103.pack",
+        "bytes": 133495901,
+        "modified_ms": 1784912664110.9695
+      },
+      {
+        "name": "tile104.pack",
+        "bytes": 336525149,
+        "modified_ms": 1784912664113.9675
+      },
+      {
+        "name": "tile105.pack",
+        "bytes": 287831641,
+        "modified_ms": 1784912664115.9917
+      },
+      {
+        "name": "tile106.pack",
+        "bytes": 96307819,
+        "modified_ms": 1784912664117.6853
+      },
+      {
+        "name": "tile107.pack",
+        "bytes": 51297043,
+        "modified_ms": 1784912664120.023
+      },
+      {
+        "name": "tile108.pack",
+        "bytes": 621010240,
+        "modified_ms": 1784912664122.0254
+      },
+      {
+        "name": "tile109.pack",
+        "bytes": 44596266,
+        "modified_ms": 1784912664124.0237
+      },
+      {
+        "name": "tile110.pack",
+        "bytes": 315556324,
+        "modified_ms": 1784912664126.0217
+      },
+      {
+        "name": "tile111.pack",
+        "bytes": 342572080,
+        "modified_ms": 1790258330533.8755
+      },
+      {
+        "name": "tile112.pack",
+        "bytes": 237320735,
+        "modified_ms": 1790258330535.2234
+      },
+      {
+        "name": "tile113.pack",
+        "bytes": 159344592,
+        "modified_ms": 1784912664132.1687
+      },
+      {
+        "name": "tile114.pack",
+        "bytes": 208252213,
+        "modified_ms": 1784912664133.172
+      },
+      {
+        "name": "tile115.pack",
+        "bytes": 211464658,
+        "modified_ms": 1784912664135.4258
+      },
+      {
+        "name": "tile116.pack",
+        "bytes": 200867607,
+        "modified_ms": 1784912664137.4297
+      },
+      {
+        "name": "tile117.pack",
+        "bytes": 289265602,
+        "modified_ms": 1784912664138.417
+      },
+      {
+        "name": "tile118.pack",
+        "bytes": 63305831,
+        "modified_ms": 1784912664141.4348
+      },
+      {
+        "name": "tile119.pack",
+        "bytes": 41190159,
+        "modified_ms": 1784912664142.644
+      },
+      {
+        "name": "tile120.pack",
+        "bytes": 784924994,
+        "modified_ms": 1790258330537.33
+      },
+      {
+        "name": "tile121.pack",
+        "bytes": 302950688,
+        "modified_ms": 1790258330539.2896
+      },
+      {
+        "name": "tile122.pack",
+        "bytes": 169073519,
+        "modified_ms": 1790258330541.2837
+      },
+      {
+        "name": "tile123.pack",
+        "bytes": 226500819,
+        "modified_ms": 1790258330542.2324
+      },
+      {
+        "name": "tiles_campaign.pack",
+        "bytes": 40085614,
+        "modified_ms": 1784912664143.6433
+      },
+      {
+        "name": "ui.pack",
+        "bytes": 983738466,
+        "modified_ms": 1790258330543.2495
+      },
+      {
+        "name": "ui2.pack",
+        "bytes": 858960609,
+        "modified_ms": 1790258330545.2373
+      },
+      {
+        "name": "ui2_bl.pack",
+        "bytes": 299785,
+        "modified_ms": 1784912664210.81
+      },
+      {
+        "name": "ui3.pack",
+        "bytes": 107732978,
+        "modified_ms": 1790425626307.4785
+      },
+      {
+        "name": "ui_3.pack",
+        "bytes": 72442,
+        "modified_ms": 1790258595652.0806
+      },
+      {
+        "name": "variants.pack",
+        "bytes": 1037733354,
+        "modified_ms": 1790258330548.246
+      },
+      {
+        "name": "variants2.pack",
+        "bytes": 673262732,
+        "modified_ms": 1790258330549.2344
+      },
+      {
+        "name": "variants2_bl.pack",
+        "bytes": 2018345,
+        "modified_ms": 1784912664211.8115
+      },
+      {
+        "name": "variants3.pack",
+        "bytes": 1113973515,
+        "modified_ms": 1790258330549.2344
+      },
+      {
+        "name": "variants3_bl.pack",
+        "bytes": 939404,
+        "modified_ms": 1784912664212.7893
+      },
+      {
+        "name": "variants4.pack",
+        "bytes": 893901417,
+        "modified_ms": 1790258330550.247
+      },
+      {
+        "name": "variants4_bl.pack",
+        "bytes": 942493,
+        "modified_ms": 1784912664213.7932
+      },
+      {
+        "name": "variants5.pack",
+        "bytes": 52568722,
+        "modified_ms": 1790258330552.2437
+      },
+      {
+        "name": "variants_bl.pack",
+        "bytes": 1723,
+        "modified_ms": 1790258636688.067
+      },
+      {
+        "name": "variants_dds.pack",
+        "bytes": 773503465,
+        "modified_ms": 1790258330553.5579
+      },
+      {
+        "name": "variants_dds10.pack",
+        "bytes": 627425227,
+        "modified_ms": 1790258330554.5771
+      },
+      {
+        "name": "variants_dds11.pack",
+        "bytes": 586863088,
+        "modified_ms": 1784912664179.3345
+      },
+      {
+        "name": "variants_dds12.pack",
+        "bytes": 770403519,
+        "modified_ms": 1784912664181.3306
+      },
+      {
+        "name": "variants_dds12_bl.pack",
+        "bytes": 343390,
+        "modified_ms": 1784912664216.0708
+      },
+      {
+        "name": "variants_dds13.pack",
+        "bytes": 406046578,
+        "modified_ms": 1790258330555.5723
+      },
+      {
+        "name": "variants_dds14.pack",
+        "bytes": 117353964,
+        "modified_ms": 1790258330556.567
+      },
+      {
+        "name": "variants_dds15.pack",
+        "bytes": 785464979,
+        "modified_ms": 1790258330558.5813
+      },
+      {
+        "name": "variants_dds2.pack",
+        "bytes": 466741974,
+        "modified_ms": 1784912664185.723
+      },
+      {
+        "name": "variants_dds3.pack",
+        "bytes": 1071725650,
+        "modified_ms": 1790258330560.5742
+      },
+      {
+        "name": "variants_dds4.pack",
+        "bytes": 1146896474,
+        "modified_ms": 1790258330561.5789
+      },
+      {
+        "name": "variants_dds5.pack",
+        "bytes": 840756695,
+        "modified_ms": 1790258330562.57
+      },
+      {
+        "name": "variants_dds6.pack",
+        "bytes": 760783188,
+        "modified_ms": 1790258330563.5818
+      },
+      {
+        "name": "variants_dds7.pack",
+        "bytes": 797060790,
+        "modified_ms": 1790258330565.584
+      },
+      {
+        "name": "variants_dds8.pack",
+        "bytes": 605984651,
+        "modified_ms": 1790258330566.5747
+      },
+      {
+        "name": "variants_dds9.pack",
+        "bytes": 360409616,
+        "modified_ms": 1790258330568.576
+      },
+      {
+        "name": "vegetation.pack",
+        "bytes": 641239854,
+        "modified_ms": 1790258330569.5642
+      },
+      {
+        "name": "vfx.pack",
+        "bytes": 559018914,
+        "modified_ms": 1790258330570.7336
+      },
+      {
+        "name": "vfx_desc.pack",
+        "bytes": 692562951,
+        "modified_ms": 1790258330572.7278
+      },
+      {
+        "name": "vfx_desc_bl.pack",
+        "bytes": 454249,
+        "modified_ms": 1784912664217.0637
+      },
+      {
+        "name": "vfx_models.pack",
+        "bytes": 45018376,
+        "modified_ms": 1790258330574.7256
+      },
+      {
+        "name": "vfx_models_dds.pack",
+        "bytes": 72015385,
+        "modified_ms": 1790258330576.7183
+      },
+      {
+        "name": "warmachines.pack",
+        "bytes": 643386123,
+        "modified_ms": 1790258330577.7224
+      },
+      {
+        "name": "warmachines_dds.pack",
+        "bytes": 880100836,
+        "modified_ms": 1790258330579.7273
+      },
+      {
+        "name": "warmachines_dds2.pack",
+        "bytes": 527647483,
+        "modified_ms": 1790258330581.7268
+      }
+    ],
+    "pack_identity_method": "filename, byte count and modification time; not a full pack-content digest"
+  },
+  "decoder_schema_sha256": "15d4006d4e968add518e1d2ba543f38850f467ca4ef6bca52fbbc94b3c3d822e",
+  "request": {
+    "paths": [
+      "terrain/tiles/battle/chs_infield/1x1_plain_a/tile_height_map.compressed_map",
+      "terrain/tiles/battle/chs_infield/1x1_plain_b/tile_height_map.compressed_map",
+      "terrain/tiles/battle/chs_infield/1x1_plain_c/tile_height_map.compressed_map",
+      "terrain/tiles/battle/chs_infield/2x2_plain_a/tile_height_map.compressed_map",
+      "terrain/tiles/battle/chs_infield/2x2_plain_b/tile_height_map.compressed_map",
+      "terrain/tiles/battle/chs_infield/2x2_plain_c/tile_height_map.compressed_map",
+      "terrain/tiles/battle/chs_infield/2x4_plain_a/tile_height_map.compressed_map",
+      "terrain/tiles/battle/chs_infield/2x4_plain_b/tile_height_map.compressed_map"
+    ]
+  },
+  "files": [
+    {
+      "path": "terrain/tiles/battle/chs_infield/1x1_plain_a/tile_height_map.compressed_map",
+      "bytes": 32579,
+      "sha256": "5e2c4c200fbb91ecabae6ff2a506dc9f8e1a586722b0df7e3f681404d4e3687e"
+    },
+    {
+      "path": "terrain/tiles/battle/chs_infield/1x1_plain_b/tile_height_map.compressed_map",
+      "bytes": 33292,
+      "sha256": "01bb100abe7c1edaab64fc9c138a22a5eab945d93d85a318f23d4c9e3be106a9"
+    },
+    {
+      "path": "terrain/tiles/battle/chs_infield/1x1_plain_c/tile_height_map.compressed_map",
+      "bytes": 32575,
+      "sha256": "daf301448a93b19f9b82a495ee4d1c24d43400ade97681f01dbb2e2268d1d7c2"
+    },
+    {
+      "path": "terrain/tiles/battle/chs_infield/2x2_plain_a/tile_height_map.compressed_map",
+      "bytes": 117435,
+      "sha256": "e81839702c5d58671959cc59579bb872c1477a8210a237f9b407cfe6546c61cf"
+    },
+    {
+      "path": "terrain/tiles/battle/chs_infield/2x2_plain_b/tile_height_map.compressed_map",
+      "bytes": 117346,
+      "sha256": "d3d678a9a72a50ff8cac4098082724f71200b4791770daf5494fdbf7465752e5"
+    },
+    {
+      "path": "terrain/tiles/battle/chs_infield/2x2_plain_c/tile_height_map.compressed_map",
+      "bytes": 122621,
+      "sha256": "a84bb0aec4fc190cc45a5fa63b59527409f5d7e7709cb56896f583c56ddc0083"
+    },
+    {
+      "path": "terrain/tiles/battle/chs_infield/2x4_plain_a/tile_height_map.compressed_map",
+      "bytes": 234609,
+      "sha256": "56faede2f9600963064de3a0c5328e711c7d9cbfe5e700c12b799408c39953fd"
+    },
+    {
+      "path": "terrain/tiles/battle/chs_infield/2x4_plain_b/tile_height_map.compressed_map",
+      "bytes": 236444,
+      "sha256": "da8a29c8489969a4b91a2cdbca5c4ccb0906d0cad111b4d22e9fd0b93386de4d"
+    }
+  ],
+  "probes": [],
+  "status": "source_probe_not_validated_geometry"
+}
