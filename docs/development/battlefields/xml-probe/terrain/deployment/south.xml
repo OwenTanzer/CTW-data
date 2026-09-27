@@ -1,0 +1,64 @@
+<BATTLE_DEPLOYMENT_AREA_HASH_TABLE>
+	<BATTLE_DEPLOYMENT_AREAS>
+		<ALLIANCE id='0'>
+			<deployment_area id='0' category='DAC_DEFAULT'>
+				<boundary type='standard additive'>
+					<position x='312.000000' y='400.000000'/>
+					<position x='308.000000' y='392.000000'/>
+					<position x='304.000000' y='376.000000'/>
+					<position x='304.000000' y='280.000000'/>
+					<position x='308.000000' y='264.000000'/>
+					<position x='312.000000' y='256.000000'/>
+					<position x='320.000000' y='248.000000'/>
+					<position x='328.000000' y='244.000000'/>
+					<position x='344.000000' y='240.000000'/>
+					<position x='680.000000' y='240.000000'/>
+					<position x='696.000000' y='244.000000'/>
+					<position x='704.000000' y='248.000000'/>
+					<position x='712.000000' y='256.000000'/>
+					<position x='716.000000' y='264.000000'/>
+					<position x='720.000000' y='280.000000'/>
+					<position x='720.000000' y='376.000000'/>
+					<position x='716.000000' y='392.000000'/>
+					<position x='712.000000' y='400.000000'/>
+					<position x='704.000000' y='408.000000'/>
+					<position x='696.000000' y='412.000000'/>
+					<position x='680.000000' y='416.000000'/>
+					<position x='344.384521' y='416.000000'/>
+					<position x='328.000000' y='412.000000'/>
+					<position x='320.000000' y='408.000000'/>
+				</boundary>
+			</deployment_area>
+		</ALLIANCE>
+		<ALLIANCE id='1'>
+			<deployment_area id='0' category='DAC_DEFAULT'>
+				<boundary type='standard additive'>
+					<position x='344.000000' y='608.000000'/>
+					<position x='680.000000' y='608.000000'/>
+					<position x='696.000000' y='612.000000'/>
+					<position x='704.000000' y='616.000000'/>
+					<position x='712.000000' y='624.000000'/>
+					<position x='716.000000' y='632.000000'/>
+					<position x='720.000000' y='648.000000'/>
+					<position x='720.000000' y='744.000000'/>
+					<position x='716.000000' y='760.000000'/>
+					<position x='712.000000' y='768.000000'/>
+					<position x='704.000000' y='776.000000'/>
+					<position x='696.000000' y='780.000000'/>
+					<position x='680.000000' y='784.000000'/>
+					<position x='344.000000' y='784.000000'/>
+					<position x='330.000000' y='780.000000'/>
+					<position x='320.000000' y='776.000000'/>
+					<position x='312.000000' y='768.000000'/>
+					<position x='308.000000' y='760.000000'/>
+					<position x='304.000000' y='744.000000'/>
+					<position x='304.000000' y='648.000000'/>
+					<position x='308.000000' y='632.000000'/>
+					<position x='312.000000' y='624.000000'/>
+					<position x='320.000000' y='616.000000'/>
+					<position x='328.000000' y='612.000000'/>
+				</boundary>
+			</deployment_area>
+		</ALLIANCE>
+	</BATTLE_DEPLOYMENT_AREAS>
+</BATTLE_DEPLOYMENT_AREA_HASH_TABLE>

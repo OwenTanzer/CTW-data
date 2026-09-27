@@ -1,0 +1,90 @@
+<BATTLE_MAP_DEFINITION_DATA serialise_version='23'>
+	<BATTLEFIELD_BUILDING_LIST serialise_version='1'>
+		<BUILDINGS/>
+	</BATTLEFIELD_BUILDING_LIST>
+	<BATTLEFIELD_BUILDING_LIST_FAR serialise_version='1'>
+		<BUILDINGS/>
+	</BATTLEFIELD_BUILDING_LIST_FAR>
+	<CAPTURE_LOCATION_SET serialise_version='2'>
+		<CAPTURE_LOCATION_SET/>
+	</CAPTURE_LOCATION_SET>
+	<EF_LINE_LIST>
+		<LINES/>
+	</EF_LINE_LIST>
+	<GO_OUTLINES/>
+	<NON_TERRAIN_OUTLINES/>
+	<ZONES_TEMPLATE_LIST serialise_version='1'>
+		<ZONES/>
+	</ZONES_TEMPLATE_LIST>
+	<PREFAB_INSTANCE_LIST serialise_version='1'>
+		<PREFAB_INSTANCE/>
+	</PREFAB_INSTANCE_LIST>
+	<BMD_OUTLINE_LIST serialise_version='1'>
+		<BMD_OUTLINES/>
+	</BMD_OUTLINE_LIST>
+	<TERRAIN_OUTLINES/>
+	<LITE_BUILDING_OUTLINES/>
+	<CAMERA_ZONES serialise_version='1'>
+		<BMD_OUTLINES/>
+	</CAMERA_ZONES>
+	<CIVILIAN_DEPLOYMENT_LIST/>
+	<CIVILIAN_SHELTER_LIST/>
+	<PROP_LIST serialise_version='2'>
+		<KEYS/>
+		<PROPS/>
+	</PROP_LIST>
+	<PARTICLE_EMITTER_LIST serialise_version='1'>
+		<PARTICLE_EMITTERS/>
+	</PARTICLE_EMITTER_LIST>
+	<AI_HINTS serialise_version='1'>
+		<separators serialise_version='1'>
+			<SEPARATORS/>
+		</separators>
+		<directed_points serialise_version='1'>
+			<DIRECTED_POINTS/>
+		</directed_points>
+		<polylines serialise_version='1'>
+			<HINT_POLYLINES/>
+		</polylines>
+		<polylines_list serialise_version='1'>
+			<HINT_POLYLINES/>
+		</polylines_list>
+	</AI_HINTS>
+	<LIGHT_PROBE_LIST serialise_version='1'>
+		<LIGHT_PROBES/>
+	</LIGHT_PROBE_LIST>
+	<TERRAIN_STENCIL_TRIANGLE_LIST serialise_version='1'>
+		<TERRAIN_STENCIL_TRIANGLES/>
+	</TERRAIN_STENCIL_TRIANGLE_LIST>
+	<POINT_LIGHT_LIST serialise_version='1'>
+		<POINT_LIGHTS/>
+	</POINT_LIGHT_LIST>
+	<BUILDING_PROJECTILE_EMITTER_LIST serialise_version='1'>
+		<BUILDING_PROJECTILE_EMITTERS/>
+	</BUILDING_PROJECTILE_EMITTER_LIST>
+	<PLAYABLE_AREA serialise_version='3' has_been_set='false'>
+		<area min_x='64.000000' min_y='64.000000' max_x='1920.000000' max_y='1920.000000'/>
+		<valid_location_flags serialise_version='1' valid_north='true' valid_south='true' valid_east='true' valid_west='true'/>
+	</PLAYABLE_AREA>
+	<CUSTOM_MATERIAL_MESH_LIST serialise_version='1'>
+		<CUSTOM_MATERIAL_MESH_LIST/>
+	</CUSTOM_MATERIAL_MESH_LIST>
+	<TERRAIN_STENCIL_BLEND_TRIANGLE_LIST serialise_version='1'>
+		<TERRAIN_BLEND_TRIANGLES/>
+	</TERRAIN_STENCIL_BLEND_TRIANGLE_LIST>
+	<SPOT_LIGHT_LIST serialise_version='1'>
+		<SPOT_LIGHTS/>
+	</SPOT_LIGHT_LIST>
+	<SOUND_SHAPE_LIST serialise_version='1'>
+		<SOUND_SHAPES/>
+	</SOUND_SHAPE_LIST>
+	<COMPOSITE_SCENE_LIST serialise_version='1'>
+		<COMPOSITE_SCENE_LIST/>
+	</COMPOSITE_SCENE_LIST>
+	<DEPLOYMENT_LIST serialise_version='1'>
+		<DEPLOYMENT_AREAS/>
+	</DEPLOYMENT_LIST>
+	<BMD_CATCHMENT_AREA_LIST serialise_version='1'>
+		<BMD_CATCHMENT_AREAS/>
+	</BMD_CATCHMENT_AREA_LIST>
+</BATTLE_MAP_DEFINITION_DATA>
