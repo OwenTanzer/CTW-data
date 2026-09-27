@@ -106,3 +106,8 @@ and assembles source evidence only. Read its packet status: successful identity
 resolution does not establish menu visibility or effective world geometry.
 Shared asset selectors return candidates; tile upgrades never inherit unqualified
 deployment. Use scripts/query_battlefield.py with a built work/ candidate.
+
+Battlefield native height samples now have an experimental exact-roundtrip
+decoder. Its mosaic and prop-correlation alignment are conditional evidence,
+not verified world coordinates. Preserve NaN/coverage-mask unknowns; do not
+apply opaque tile anchor fields or infer terrain mechanics from sample heights.
