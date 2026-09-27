@@ -1,0 +1,67 @@
+{
+  "baseline_commit": "6282fd8b6181c6ba4dd6390753a86527b3812c23",
+  "status": "passed",
+  "old_rows_preserved": 2367,
+  "new_rows": 788,
+  "total_rows": 3155,
+  "old_combat_field_changes": 0,
+  "old_availability_note_changes": [
+    {
+      "race": "greenskins",
+      "unit": "wh2_dlc15_grn_mon_wyvern_waaagh_0",
+      "fields": [
+        "availability_notes"
+      ]
+    },
+    {
+      "race": "tzeentch",
+      "unit": "wh3_main_tze_cha_kairos_fateweaver_0",
+      "fields": [
+        "availability_notes"
+      ]
+    },
+    {
+      "race": "warriors_of_chaos",
+      "unit": "wh3_main_nur_inf_forsaken_0_warriors",
+      "fields": [
+        "availability_notes"
+      ]
+    },
+    {
+      "race": "warriors_of_chaos",
+      "unit": "wh3_main_nur_mon_spawn_of_nurgle_0_warriors",
+      "fields": [
+        "availability_notes"
+      ]
+    }
+  ],
+  "generated_timestamp_changes": "Ignored for semantic comparison; source exports unchanged.",
+  "roster_counts": {
+    "beastmen": 86,
+    "bretonnia": 84,
+    "chaos_dwarfs": 88,
+    "daemons_of_chaos": 211,
+    "dark_elves": 147,
+    "dwarfs": 80,
+    "empire": 167,
+    "grand_cathay": 74,
+    "greenskins": 104,
+    "high_elves": 191,
+    "khorne": 75,
+    "kislev": 81,
+    "lizardmen": 128,
+    "norsca": 124,
+    "nurgle": 130,
+    "ogre_kingdoms": 54,
+    "skaven": 107,
+    "slaanesh": 111,
+    "tomb_kings": 89,
+    "tzeentch": 89,
+    "undead_legions": 235,
+    "vampire_coast": 75,
+    "vampire_counts": 141,
+    "warriors_of_chaos": 375,
+    "wood_elves": 109
+  },
+  "included_mount_bases_missing": []
+}

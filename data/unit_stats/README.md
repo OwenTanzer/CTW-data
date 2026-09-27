@@ -106,4 +106,30 @@ Twelve `_mp` identities are excluded as duplicate main/land records with matchin
 
 ## Minor 9.0 coverage follow-up
 
-Kroxigor Ancient (`wh2_dlc13_lzd_cha_kroxigor_ancient_0`) is restored through its explicit Lizardmen permission, bringing the dataset to 2,367 roster rows. Its culture-qualified Spawn-Kin link has independent regression coverage. The reviewed canonical Arkhan steed/chariot edges are now in the availability decision register and its removal tests. Source exports and the schema are unchanged.
+Kroxigor Ancient (`wh2_dlc13_lzd_cha_kroxigor_ancient_0`) is restored through its explicit Lizardmen permission, bringing that historical checkpoint to 2,367 roster rows. Its culture-qualified Spawn-Kin link has independent regression coverage. The reviewed canonical Arkhan steed/chariot edges are now in the availability decision register and its removal tests. Source exports and the schema are unchanged.
+
+## Historical roster reconciliation (#23)
+
+The current snapshot contains 3,155 race/unit rows. The 800 original permission
+candidates resolve to 784 inclusions and 16 combat-alias exclusions (including
+the 12 previously approved). An all-source-faction permission scan adds four
+more configurations: two Chaos Dwarf records and Ulrika foot/warhorse for
+Neferata. These 788 additions preserve the existing unit and companion schemas.
+
+The generated [case register](../../docs/development/update-9.0/historical-roster-decisions.json)
+records every decision, source permission flag, mount relation and evidence
+boundary. Reproduce it with `python3 scripts/reconcile-historical-rosters.py`;
+`--apply-scope` also regenerates the reviewed selector configuration. Per-unit
+`permission_unit_factions` overrides identify the exact evidence faction when
+it differs from the race roster's representative faction. They do not grant
+permissions to that representative faction.
+
+Four newly excluded aliases have identical represented combat relations to an
+existing same-race canonical row. Their source permissions remain in the audit
+register and untouched exports; those permissions are never transferred to the
+canonical key. Conversely, Spirit of Grungni's `_mp` record has different weapon
+and ability relations and is retained. Suffixes and equal headline stats are not
+duplicate tests. Availability notes separate source-supported configurations
+from unverified campaign acquisition. This pass exhausts the recorded candidates
+and same-subculture custom-battle permission scan; it does not certify arbitrary
+script-only recruitment, alliance borrowing or every campaign unlock.
