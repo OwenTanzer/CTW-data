@@ -19,13 +19,15 @@ for p in sorted((ROOT/'data/unit_stats/normalized').glob('*.csv')):
             assert fields==['availability_notes'], (race,key,fields)
             assert any(c['race']==race and c.get('canonical_unit')==key and c.get('canonical_availability_note')==new[key]['availability_notes'] for c in decisions['cases'])
             changed.append({'race':race,'unit':key,'fields':fields})
-assert added==expected,(len(added),len(expected))
+scripted_path=ROOT/'docs/development/update-9.0/archaon-scripted-availability.json'
+scripted={('warriors_of_chaos',c['unit']) for c in json.loads(scripted_path.read_text())['cases']} if scripted_path.exists() else set()
+assert added==expected|scripted,(len(added),len(expected),len(scripted))
 # Referenced source mount bases must actually be represented somewhere.
 all_keys=set()
 for p in (ROOT/'data/unit_stats/normalized').glob('*.csv'):
     all_keys.update(r['unit_key'] for r in csv.DictReader(p.open()))
 missing_bases=sorted({e['base_unit'] for c in decisions['cases'] if c['decision']=='include' for e in c['mount_edges'] if e['base_unit'] not in all_keys})
 assert not missing_bases,missing_bases
-report={'baseline_commit':BASE,'status':'passed','old_rows_preserved':2367,'new_rows':len(added),'total_rows':sum(counts.values()),'old_combat_field_changes':0,'old_availability_note_changes':changed,'generated_timestamp_changes':'Ignored for semantic comparison; source exports unchanged.','roster_counts':counts,'included_mount_bases_missing':missing_bases}
+report={'baseline_commit':BASE,'status':'passed','old_rows_preserved':2367,'historical_permission_additions':len(expected),'scripted_availability_additions':len(scripted),'new_rows':len(added),'total_rows':sum(counts.values()),'old_combat_field_changes':0,'old_availability_note_changes':changed,'generated_timestamp_changes':'Ignored for semantic comparison; source exports unchanged.','roster_counts':counts,'included_mount_bases_missing':missing_bases}
 (ROOT/'docs/development/update-9.0/historical-roster-output-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k not in ('old_availability_note_changes','roster_counts')},indent=2))

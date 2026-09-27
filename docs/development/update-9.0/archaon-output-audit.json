@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "baseline_commit": "4747d01b37c161571b75fc3203206cae8b3b0e55",
+  "old_rows": 3155,
+  "added_warriors_of_chaos": 26,
+  "new_rows": 3181,
+  "old_semantic_row_changes": 0,
+  "source_script_sha256": "db259f7f1f2a1d17e031ea2949ae81d3ccd0c95bd5333bee4aaf27490b7369e8",
+  "coverage": {
+    "leaders": 11,
+    "conditional_chieftains": 6,
+    "mounts": 9
+  }
+}

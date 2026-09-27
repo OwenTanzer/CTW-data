@@ -2,8 +2,10 @@
   "baseline_commit": "6282fd8b6181c6ba4dd6390753a86527b3812c23",
   "status": "passed",
   "old_rows_preserved": 2367,
-  "new_rows": 788,
-  "total_rows": 3155,
+  "historical_permission_additions": 788,
+  "scripted_availability_additions": 26,
+  "new_rows": 814,
+  "total_rows": 3181,
   "old_combat_field_changes": 0,
   "old_availability_note_changes": [
     {
@@ -60,7 +62,7 @@
     "undead_legions": 235,
     "vampire_coast": 75,
     "vampire_counts": 141,
-    "warriors_of_chaos": 375,
+    "warriors_of_chaos": 401,
     "wood_elves": 109
   },
   "included_mount_bases_missing": []

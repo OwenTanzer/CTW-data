@@ -110,7 +110,7 @@ Kroxigor Ancient (`wh2_dlc13_lzd_cha_kroxigor_ancient_0`) is restored through it
 
 ## Historical roster reconciliation (#23)
 
-The current snapshot contains 3,155 race/unit rows. The 800 original permission
+The completed custom-battle-permission checkpoint contained 3,155 race/unit rows. The 800 original permission
 candidates resolve to 784 inclusions and 16 combat-alias exclusions (including
 the 12 previously approved). An all-source-faction permission scan adds four
 more configurations: two Chaos Dwarf records and Ulrika foot/warhorse for
@@ -133,3 +133,16 @@ duplicate tests. Availability notes separate source-supported configurations
 from unverified campaign acquisition. This pass exhausts the recorded candidates
 and same-subculture custom-battle permission scan; it does not certify arbitrary
 script-only recruitment, alliance borrowing or every campaign unlock.
+
+## Archaon scripted acquisitions
+
+The current snapshot has 3,181 race/unit rows. The [Archaon scripted roster
+report](../../docs/development/update-9.0/archaon-scripted-roster-reconciliation.md)
+adds 26 source-backed Warriors of Chaos configurations: eleven subjugatable
+leaders, six characters conditionally transferred with specified Nurgle
+vassalizations, and nine source-linked mounts. `availability_notes` states
+Archaon-only access and qualification for each entry. `unit_rosters` retains
+actual source custom-battle faction permissions; it has no invented Warriors of
+Chaos permission or military-group membership for these additions. A race row
+is therefore possible campaign access for Archaon, not ordinary recruitment
+for the race. Individual mount unlocks are not certified.
