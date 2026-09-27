@@ -1,0 +1,110 @@
+{
+  "agent_subtype_key": "wh2_dlc16_wef_drycha",
+  "skill_relation_count": 80,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh2_dlc16_wef_cha_drycha_0",
+      "land_unit_key": "wh2_dlc16_wef_cha_drycha_0",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh2_dlc16_wef_drycha",
+          "auto_generate": "false",
+          "is_caster": "true",
+          "small_icon": "",
+          "associated_unit_override": "wh2_dlc16_wef_cha_drycha_0",
+          "audio_voiceover_actor_group": "wh2_dlc16_vo_actor_Wood_Elves_Drycha",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "true",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "legendary_lords",
+          "magic_lore": "",
+          "names_group": "",
+          "can_be_loaned": "false",
+          "recruitable": "true",
+          "saving_settings": "cannot_be_loaded_in_campaign",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1500",
+          "recruitment_button_active_icon_path": "",
+          "recruitment_button_background_icon_path": "",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "148",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_dlc16_lord_abilities_roused_to_wrath",
+            "land_unit": "wh2_dlc16_wef_cha_drycha_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "2094",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh2_dlc16_lord_passive_fanatical_resolve_1",
+            "land_unit": "wh2_dlc16_wef_cha_drycha_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "2095",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh2_dlc16_wef_cha_drycha_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "2096",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc05_hero_passive_blessing_of_the_ancients",
+            "land_unit": "wh2_dlc16_wef_cha_drycha_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "2097",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_unit_passive_frenzy",
+            "land_unit": "wh2_dlc16_wef_cha_drycha_0",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "2098",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

@@ -1,0 +1,10 @@
+key,localised_name,source_path,source_line,source_patch
+artillery,Siege Engine,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,3,9.0.1
+cavalry,Cavalry,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,4,9.0.1
+heavy_ship,Heavy Ship,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,5,9.0.1
+inf_melee,Melee Infantry,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,6,9.0.1
+inf_ranged,Missile Infantry,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,7,9.0.1
+light_ship,Light Ship,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,8,9.0.1
+medium_ship,Medium Ship,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,9,9.0.1
+war_beast,War Beast,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,10,9.0.1
+war_machine,War Machine,data/unit_stats/abilities/source_exports/db/unit_category_tables/data__.tsv,11,9.0.1

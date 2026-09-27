@@ -1,0 +1,16 @@
+key,lookahead_time,max_target_angle_delta,start_time,steering_coefficient,source_path,source_line,source_patch
+homing_medium_artillery_fast,0.1000,180.0000,3.0000,0.0750,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,3,9.0.1
+homing_medium_artillery_glider,0.3000,120.0000,4.0000,0.1000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,4,9.0.1
+homing_medium_artillery_slow,0.1000,180.0000,3.0000,0.1500,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,5,9.0.1
+homing_medium_artillery_slow_short_range,0.1000,180.0000,1.5000,0.1500,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,6,9.0.1
+homing_medium_magical_fast_scattered,3.0000,270.0000,1.0000,0.5000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,7,9.0.1
+homing_medium_magical_mid_scattered,3.0000,270.0000,0.7500,0.5000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,8,9.0.1
+homing_strong_magical,0.1000,270.0000,0.2000,1.0000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,9,9.0.1
+homing_strong_magical_bombardment,0.0100,270.0000,2.7500,1.0000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,10,9.0.1
+homing_strong_magical_fast,0.1000,270.0000,0.2000,0.5000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,11,9.0.1
+homing_strong_magical_fast_scattered,3.0000,270.0000,1.0000,1.0000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,12,9.0.1
+homing_strong_magical_veryfast_bombardment,0.0100,270.0000,0.0100,0.5000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,13,9.0.1
+homing_strong_magical_veryfast_bombardment_offmap,3.0000,270.0000,3.0000,0.1000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,14,9.0.1
+homing_strong_magical_veryfast_scattered,3.0000,270.0000,0.0500,1.0000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,15,9.0.1
+homing_strong_smallarms,0.2000,180.0000,0.2000,0.5000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,16,9.0.1
+wh3_dlc25_gyrocopter_brimstone_trollhammer,0.3000,180.0000,1.0000,2.0000,data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv,17,9.0.1

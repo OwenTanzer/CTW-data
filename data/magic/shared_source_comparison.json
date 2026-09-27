@@ -1,0 +1,103 @@
+{
+  "source_patch": "9.0.1",
+  "base_patch": "9.0",
+  "comparisons": [
+    {
+      "path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2",
+      "retained_sha256": "185b2a2d2c20a9d244f99650d70ee2b450390cbc9bd51370a321bafcf55cf3c2"
+    },
+    {
+      "path": "data/technology_trees/source_exports/db/campaign_effect_scopes_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "e40717b517f0fe9b4cc5954484e46c9020d3cead0a7dd2fd178313eba4abd5e8",
+      "retained_sha256": "e40717b517f0fe9b4cc5954484e46c9020d3cead0a7dd2fd178313eba4abd5e8"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "2949c8f1a6aecf81ee5791b289dbdf64f42036bfcc2f19bd877187835c7541c2",
+      "retained_sha256": "2949c8f1a6aecf81ee5791b289dbdf64f42036bfcc2f19bd877187835c7541c2"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/melee_weapons_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "7f6921dda8cc528f9ae7e21f103d63344f9159e7362b84612792b7f1c34cd4b6",
+      "retained_sha256": "7f6921dda8cc528f9ae7e21f103d63344f9159e7362b84612792b7f1c34cd4b6"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/missile_weapons_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "b7c04684367be642ae0e770921352841c006fe9ee6df682866129b9558e456ee",
+      "retained_sha256": "b7c04684367be642ae0e770921352841c006fe9ee6df682866129b9558e456ee"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/missile_weapons_to_projectiles_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "94bbeaf4ff550da276ce3667c47bf5c96f7ce54786f79a24103251128fc36d4b",
+      "retained_sha256": "94bbeaf4ff550da276ce3667c47bf5c96f7ce54786f79a24103251128fc36d4b"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectile_homing_params_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "2e19a5e4496f63351ea42eb9e39b032c52fbebcb8850eae1f6479632dbefb776",
+      "retained_sha256": "2e19a5e4496f63351ea42eb9e39b032c52fbebcb8850eae1f6479632dbefb776"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectile_penetration_junctions_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "a8bc272cfdef03ffeeab34c8b8633f7ef6a3f0b8e63598a6a615ecc82ff134e6",
+      "retained_sha256": "a8bc272cfdef03ffeeab34c8b8633f7ef6a3f0b8e63598a6a615ecc82ff134e6"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectile_shrapnels_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "0fae2e0fddf4f760d2a34635292f0bf99672ba53757d9c2ed2387a5504fd38bf",
+      "retained_sha256": "0fae2e0fddf4f760d2a34635292f0bf99672ba53757d9c2ed2387a5504fd38bf"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectiles_explosions_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "f27a6e68d096253e56f3556a8a48c6b465a2bb143cefe278933f0ae4013d8203",
+      "retained_sha256": "f27a6e68d096253e56f3556a8a48c6b465a2bb143cefe278933f0ae4013d8203"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectiles_scaling_damages_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "3089bc0fe5aaa73eae1813a72df52e4a3b8a1ffa8f5e73eeee16f60b4b7a9230",
+      "retained_sha256": "3089bc0fe5aaa73eae1813a72df52e4a3b8a1ffa8f5e73eeee16f60b4b7a9230"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/projectiles_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "dd52fc46256e4e2954507242e095788644dddfe89fcbc434e69e41f1a8b26b95",
+      "retained_sha256": "dd52fc46256e4e2954507242e095788644dddfe89fcbc434e69e41f1a8b26b95"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/special_ability_phase_stat_effects_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "eae41beaaec55d3fe6c82d11caa235c940fa871ee735c229a44ca05d44829f44",
+      "retained_sha256": "eae41beaaec55d3fe6c82d11caa235c940fa871ee735c229a44ca05d44829f44"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/special_ability_phases_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "89c68532314c0071a0d4fd0b63479c36af1b98cf359c18e2f274eabe8b1acc2a",
+      "retained_sha256": "89c68532314c0071a0d4fd0b63479c36af1b98cf359c18e2f274eabe8b1acc2a"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/unit_abilities_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "735c652f4a479c6ae63be4ecaa5ffddc27c77ba81c518d4205674c66da93b158",
+      "retained_sha256": "735c652f4a479c6ae63be4ecaa5ffddc27c77ba81c518d4205674c66da93b158"
+    },
+    {
+      "path": "data/unit_stats/source_exports/db/unit_attributes_tables/data__.tsv",
+      "status": "identical_text",
+      "extracted_sha256": "3b280f6ed7cb1a043cf1f61c5fcad7bc3c77fe4814731c1109936be998ecc8ca",
+      "retained_sha256": "3b280f6ed7cb1a043cf1f61c5fcad7bc3c77fe4814731c1109936be998ecc8ca"
+    }
+  ],
+  "scope": "Every DB export overlapping this extraction; not a global hotfix audit."
+}

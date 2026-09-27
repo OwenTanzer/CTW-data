@@ -1,0 +1,158 @@
+{
+  "agent_subtype_key": "wh3_dlc29_skv_skreech_verminking",
+  "skill_relation_count": 258,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh3_dlc29_skv_cha_skreech_verminking",
+      "land_unit_key": "wh3_dlc29_skv_cha_skreech_verminking",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh3_dlc29_skv_skreech_verminking",
+          "auto_generate": "false",
+          "is_caster": "true",
+          "small_icon": "ui/campaign ui/agents/wh3_dlc29_skv_skreech.png",
+          "associated_unit_override": "wh3_dlc29_skv_cha_skreech_verminking",
+          "audio_voiceover_actor_group": "wh3_dlc29_vo_actor_Skaven_Skreech_Verminking",
+          "show_in_ui": "false",
+          "cap": "1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "false",
+          "recruitment_category": "",
+          "magic_lore": "wh3_dlc29_lore_skreech_verminking",
+          "names_group": "",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "cannot_be_loaded_in_campaign",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "1000",
+          "recruitment_button_active_icon_path": "",
+          "recruitment_button_background_icon_path": "",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "400",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh2_main_unit_passive_scurry_away",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "wh2_main_skv_skaven",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5313",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_lord_abilities_warp_step",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5314",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_lord_abilities_will_of_the_verminking",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5315",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_lord_passive_protection_of_the_great_horned_rat",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5316",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc29_spell_bound_the_dreaded_thirteenth",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5317",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_daemon",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5318",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_daemonic_instability_daemon_ii",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5319",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5320",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_main_character_abilities_arcane_conduit",
+            "land_unit": "wh3_dlc29_skv_cha_skreech_verminking",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "5321",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

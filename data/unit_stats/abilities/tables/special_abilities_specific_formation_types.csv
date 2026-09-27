@@ -1,0 +1,14 @@
+key,source_path,source_line,source_patch
+cantabrian_circle,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,3,9.0.1
+cavalry_testudo_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,4,9.0.1
+diamond_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,5,9.0.1
+flying_wedge_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,6,9.0.1
+pike_phalanx_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,7,9.0.1
+pike_square_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,8,9.0.1
+shield_screen_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,9,9.0.1
+shield_wall_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,10,9.0.1
+square_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,11,9.0.1
+stand_and_fight_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,12,9.0.1
+testudo_defensive_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,13,9.0.1
+testudo_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,14,9.0.1
+wedge_formation,data/unit_stats/abilities/source_exports/db/special_abilities_specific_formation_types_tables/data__.tsv,15,9.0.1

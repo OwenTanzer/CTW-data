@@ -122,6 +122,27 @@
       "node_set_precedence": "data/technology_trees/source_exports/node_set_precedence.json",
       "script_mechanics": "data/technology_trees/source_exports/script_mechanics.csv",
       "script_evidence": "data/technology_trees/source_exports/script_evidence.json"
+    },
+    "magic": {
+      "description": "Partial character-to-spell retrieval with normalized shared payload graphs, conditional skill bindings, unit/form access evidence and separate structural/runtime coverage; 9.0.1 extraction joins unchanged 9.0 owners.",
+      "readme": "data/magic/README.md",
+      "manifest": "data/magic/dataset_manifest.json",
+      "schema": "data/magic/schema_inventory.json",
+      "validation": "docs/development/magic/validation.json",
+      "coverage": "data/magic/coverage.json",
+      "index": "data/magic/character_index.csv",
+      "spell_index": "data/magic/ability_index.csv",
+      "preferred_access": "Resolve an exact character name/subtype or ability label/key through the compact indices; use scripts/query_magic.py. Keep base payloads and conditional skill modifiers separate; read coverage boundaries.",
+      "shared_owners": {
+        "abilities": "data/unit_stats/abilities/",
+        "effect_bindings": "data/effect_semantics/",
+        "progression": "data/skill_trees/"
+      },
+      "snapshot": {
+        "base_patch": "9.0",
+        "extraction_patch": "9.0.1",
+        "steam_build_id": 25546563
+      }
     }
   },
   "out_of_scope": [

@@ -1,0 +1,332 @@
+{
+  "agent_subtype_key": "wh3_dlc27_chs_sorcerer_lord_slaanesh_msla",
+  "skill_relation_count": 70,
+  "unit_forms": [
+    {
+      "main_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+      "land_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+      "via": {
+        "kind": "associated_unit_override",
+        "record": {
+          "key": "wh3_dlc27_chs_sorcerer_lord_slaanesh_msla",
+          "auto_generate": "true",
+          "is_caster": "true",
+          "small_icon": "ui/campaign ui/agents/wh3_main_lore_slaanesh.png",
+          "associated_unit_override": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+          "audio_voiceover_actor_group": "wh3_dlc27_vo_actor_Slaanesh_Sorcerer_Lord_of_Slaanesh",
+          "show_in_ui": "true",
+          "cap": "-1",
+          "has_female_name": "false",
+          "can_gain_xp": "true",
+          "loyalty_is_applicable": "false",
+          "contributes_to_agent_cap": "true",
+          "recruitment_category": "chs_sorcerer_lord",
+          "magic_lore": "wh3_main_lore_slaanesh",
+          "names_group": "names_chs_chaos",
+          "can_be_loaned": "true",
+          "recruitable": "true",
+          "saving_settings": "can_be_saved_loaded",
+          "audio_vo_culture_override": "",
+          "spam_click_vo_enabled": "false",
+          "can_equip_ancillaries": "true",
+          "cost": "900",
+          "recruitment_button_active_icon_path": "ui/skins/default/icon_wh_main_lore_slaanesh.png",
+          "recruitment_button_background_icon_path": "ui/skins/default/button_lore_slaanesh_active.png",
+          "audio_force_contextual_vo": "false",
+          "source_path": "data/skill_trees/source_exports/db/agent_subtypes_tables/data__.tsv",
+          "source_line": "340",
+          "source_patch": "9.0.1"
+        }
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc20_lord_passive_paragon_of_excess",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4643",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_abilities_the_black_tongue",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4644",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_passive_infernal_puppet",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4645",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4646",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_chaos_steed",
+      "land_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_chaos_steed",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+          "mounted_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_chaos_steed",
+          "icon_name": "placeholder"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc20_lord_passive_paragon_of_excess",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_chaos_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4628",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_abilities_the_black_tongue",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_chaos_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4629",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_passive_infernal_puppet",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_chaos_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4630",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_chaos_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4631",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_daemonic_steed",
+      "land_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_daemonic_steed",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+          "mounted_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_daemonic_steed",
+          "icon_name": "ui/campaign ui/mounts/mount_daemonic_steed.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc20_lord_passive_paragon_of_excess",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4632",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_abilities_the_black_tongue",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4633",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_passive_infernal_puppet",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4634",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_daemonic_steed",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4635",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    },
+    {
+      "main_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+      "land_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+      "via": {
+        "kind": "mount_variant",
+        "record": {
+          "game": "warhammer_3",
+          "patch": "9.0",
+          "unit_scale": "ultra",
+          "base_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla",
+          "mounted_unit_key": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+          "icon_name": "ui/campaign ui/mounts/mount_warshrine.png"
+        },
+        "unlock_status": "mount_selection_and_unlock_not_evaluated"
+      },
+      "ability_links": [
+        {
+          "record": {
+            "ability": "wh3_dlc20_character_passive_soul_feeder",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4636",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc20_lord_passive_paragon_of_excess",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4637",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "true",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc20_unit_passive_giver_of_torturous_glory",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4638",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_abilities_the_black_tongue",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4639",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_dlc27_character_passive_infernal_puppet",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4640",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh3_main_unit_passive_single_entity",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4641",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        },
+        {
+          "record": {
+            "ability": "wh_dlc08_unit_passive_favour_of_the_ruinous_powers",
+            "land_unit": "wh3_dlc27_chs_cha_sorcerer_lord_slaanesh_msla_warshrine",
+            "culture": "*",
+            "source_path": "data/unit_stats/source_exports/db/land_units_to_unit_abilites_junctions_tables/data__.tsv",
+            "source_line": "4642",
+            "source_patch": "9.0.1"
+          },
+          "requires_effect_enabling": "false",
+          "availability": "conditional_unit_definition_not_proof_of_active_access"
+        }
+      ]
+    }
+  ],
+  "unresolved_routes": [
+    "item_trait_and_script_acquisition_not_fully_indexed",
+    "scripted_transformations_and_dynamic_forms_not_fully_indexed"
+  ],
+  "interpretation": "No indexed skill grant does not mean cannot cast; source caster flags do not establish access."
+}

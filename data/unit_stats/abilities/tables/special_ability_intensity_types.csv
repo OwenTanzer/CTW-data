@@ -1,0 +1,4 @@
+type,source_path,source_line,source_patch
+inverse_linear_multiplier,data/unit_stats/abilities/source_exports/db/special_ability_intensity_types_tables/data__.tsv,3,9.0.1
+linear_multiplier,data/unit_stats/abilities/source_exports/db/special_ability_intensity_types_tables/data__.tsv,4,9.0.1
+set,data/unit_stats/abilities/source_exports/db/special_ability_intensity_types_tables/data__.tsv,5,9.0.1

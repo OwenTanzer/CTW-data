@@ -1,0 +1,7 @@
+key,how,stat,source_path,source_line,source_patch
+mod_armour,add,stat_armour,data/effect_semantics/source_exports/db/unit_stat_modifiers_tables/data__.tsv,3,9.0.1
+mod_charge_bonus,add,stat_charge_bonus,data/effect_semantics/source_exports/db/unit_stat_modifiers_tables/data__.tsv,4,9.0.1
+mod_damage_reflection,add,stat_damage_reflection,data/effect_semantics/source_exports/db/unit_stat_modifiers_tables/data__.tsv,5,9.0.1
+mod_entity_acceleration,mult,scalar_entity_acceleration_modifier,data/effect_semantics/source_exports/db/unit_stat_modifiers_tables/data__.tsv,6,9.0.1
+mod_melee_attack,add,stat_melee_attack,data/effect_semantics/source_exports/db/unit_stat_modifiers_tables/data__.tsv,7,9.0.1
+mod_speed_scalar,mult,scalar_speed,data/effect_semantics/source_exports/db/unit_stat_modifiers_tables/data__.tsv,8,9.0.1

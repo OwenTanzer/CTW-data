@@ -1,0 +1,8 @@
+key,source_path,source_line,source_patch
+wardancer_dances,data/unit_stats/abilities/source_exports/db/special_ability_exclusive_toggle_groups_tables/data__.tsv,3,9.0.1
+wh3_dlc20_festus_exclusive_toggle,data/unit_stats/abilities/source_exports/db/special_ability_exclusive_toggle_groups_tables/data__.tsv,4,9.0.1
+wh3_dlc24_zhangu_war_drum_exclusive_toggle,data/unit_stats/abilities/source_exports/db/special_ability_exclusive_toggle_groups_tables/data__.tsv,5,9.0.1
+wh3_dlc26_da_plan_black_orcs,data/unit_stats/abilities/source_exports/db/special_ability_exclusive_toggle_groups_tables/data__.tsv,6,9.0.1
+wh3_dlc26_guru_of_war_exclusive_toggle,data/unit_stats/abilities/source_exports/db/special_ability_exclusive_toggle_groups_tables/data__.tsv,7,9.0.1
+wh3_dlc27_dechala_dances,data/unit_stats/abilities/source_exports/db/special_ability_exclusive_toggle_groups_tables/data__.tsv,8,9.0.1
+wh3_dlc27_masque_dances,data/unit_stats/abilities/source_exports/db/special_ability_exclusive_toggle_groups_tables/data__.tsv,9,9.0.1

@@ -1,0 +1,2 @@
+key,allowed_as_reinforcing_faction,allowed_as_reinforcing_force,applied_effects,type,allowed_as_agent,cost_resource_factor,gain_resource_factor,source_path,source_line,source_patch
+wh3_dlc27_corrupt_units,false,false,wh3_dlc27_sla_dechala_corrupt_units,corrupt_units,false,,,data/unit_stats/abilities/source_exports/db/pre_battle_unit_targeted_abilities_tables/data__.tsv,3,9.0.1

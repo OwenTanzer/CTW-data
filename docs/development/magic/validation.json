@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "normalized_tables": 98,
+  "normalized_rows": 70759,
+  "character_relations_checked": 50934,
+  "golden_checks": {
+    "apotheosis": true,
+    "teclis_chain_lightning": true,
+    "bound_source_type_counterexample": true,
+    "no_false_single_lore_grant": true,
+    "summon": "wh2_dlc09_army_abilities_realm_of_souls_ushabti",
+    "multiple_phases": "wh2_dlc09_character_abilities_stay_here_ill_get_help",
+    "raw_sentinels": true,
+    "magic_missile": true,
+    "bombardment": true,
+    "secondary_shrapnel": true,
+    "conditional_army": true,
+    "unit_set_membership": true,
+    "innate_forms": true,
+    "supplied_skill_rank": true
+  },
+  "payload_checks": {
+    "baseline": {
+      "baseline_commit": "13b4ff93736d82a06d7be56f55046425c4cc0259",
+      "status": "passed",
+      "files": {
+        "data/unit_stats/lookups/projectiles__wh3__9.0.csv": {
+          "retained_rows": 522,
+          "added_rows": 238,
+          "added_columns": [
+            "spin_type",
+            "trajectory_sight",
+            "max_elevation",
+            "high_air_resistance",
+            "projectile_display",
+            "overhead_stat_effect",
+            "projectile_audio",
+            "shockwave_radius",
+            "first_person_params",
+            "fixed_elevation",
+            "is_beam_launch_burst",
+            "trail_always_on",
+            "fired_by_mount",
+            "lock_on_multiple_fire_pos",
+            "prefer_central_targets",
+            "can_damage_vehicles",
+            "vegetation_ignore_time",
+            "missile_mirror_start_time",
+            "spawned_vortex",
+            "projectile_shot_type_display"
+          ],
+          "changed_existing_rows": 0
+        },
+        "data/unit_stats/lookups/explosions__wh3__9.0.csv": {
+          "retained_rows": 121,
+          "added_rows": 214,
+          "added_columns": [
+            "explosion_particle_effect",
+            "fuse_distance_from_target",
+            "explosion_particle_effect_on_ground",
+            "explosion_audio",
+            "camera_shake",
+            "fuse_fixed_time"
+          ],
+          "changed_existing_rows": 0
+        },
+        "data/unit_stats/lookups/unit_weapon_links__wh3__9.0__ultra.csv": {
+          "retained_rows": 3181,
+          "added_rows": 0,
+          "added_columns": [],
+          "changed_existing_rows": 0
+        }
+      }
+    },
+    "variants": 696
+  },
+  "issue_complete": false
+}

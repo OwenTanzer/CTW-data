@@ -34,11 +34,17 @@
     "undead_legions": 235
   },
   "total_units": 3181,
+  "payload_extension": {
+    "schema_version": 1,
+    "extraction_patch": "9.0.1",
+    "source_registry": "data/magic/source_registry.json",
+    "scope": "weapon and ability payload closure; existing values preserved"
+  },
   "lookup_counts": {
     "unit_components": 2706,
     "unit_weapon_links": 3181,
-    "projectiles": 522,
-    "explosions": 121,
+    "projectiles": 760,
+    "explosions": 335,
     "unit_abilities": 8065,
     "unit_attributes": 8252,
     "unit_contact_effects": 814,
@@ -46,5 +52,5 @@
     "unit_mount_variants": 721,
     "data_quality_flags": 0
   },
-  "schema_inventory_columns": 238
+  "schema_inventory_columns": 264
 }

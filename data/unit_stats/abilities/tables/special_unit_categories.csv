@@ -1,0 +1,9 @@
+category,source_path,source_line,source_patch
+blessed_spawning,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,3,9.0.1
+chieftain,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,4,9.0.1
+crafted,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,5,9.0.1
+elector_counts,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,6,9.0.1
+mistwalker,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,7,9.0.1
+rakarth_beasts,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,8,9.0.1
+renown,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,9,9.0.1
+tech_lab,data/unit_stats/abilities/source_exports/db/special_unit_categories_tables/data__.tsv,10,9.0.1
