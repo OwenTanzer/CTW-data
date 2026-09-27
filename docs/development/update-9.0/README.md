@@ -1,6 +1,6 @@
 # 9.0 database compatibility refresh
 
-Implements the bounded database refresh in #16. The review branch contains 9.0/build 25507028; main is unchanged until review and merge. Magic #14 remains deferred on its preserved checkpoint.
+PRs #17–#19 have merged the bounded 9.0/build 25507028 database refresh. Main has 2,366 roster rows; PR #20 proposes the remaining Kroxigor Ancient repair (2,367). Magic #14 remains paused. The table below records the original PR #17 checkpoint, not current unit totals.
 
 | Owner | Validated coverage |
 |---|---|
@@ -40,4 +40,6 @@ The full map-7 atlas source is preserved separately on `checkpoint/campaign-map-
 
 ## Post-merge existing-table review
 
-See [lord-coverage-reconciliation.md](lord-coverage-reconciliation.md) for the Boris/Nagash repair (current total 2,295 roster rows), independent lord fixtures and the remaining bounded reconciliation. Historical checkpoint counts above describe PR #17. No new mechanics model is included.
+See [lord-coverage-reconciliation.md](lord-coverage-reconciliation.md) for the Boris/Nagash repair (historical first-repair total 2,295 roster rows), independent lord fixtures and the remaining bounded reconciliation. Historical checkpoint counts above describe PR #17. No new mechanics model is included.
+
+See [minor-reconciliation.md](minor-reconciliation.md) for subsequent bounded effect/technology checks, historical documentation corrections and the 9.0.1 installation boundary.

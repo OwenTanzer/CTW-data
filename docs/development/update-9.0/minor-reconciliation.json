@@ -1,0 +1,90 @@
+{
+  "snapshot": "9.0 / 25507028",
+  "base_commit": "3ce90d80bcead2b7f5604c1b3ebfb307d3ff670f",
+  "scope": "Selected skill effect rows and active Skaven technology building prerequisites; no effect-target semantics certified.",
+  "skills": [
+    {
+      "character": "dark_elves/Rakarth",
+      "nodes": 53,
+      "effect_occurrences": 266,
+      "mismatches": []
+    },
+    {
+      "character": "greenskins/Grom_the_Paunch",
+      "nodes": 55,
+      "effect_occurrences": 260,
+      "mismatches": []
+    },
+    {
+      "character": "high_elves/Prince",
+      "nodes": 239,
+      "effect_occurrences": 871,
+      "mismatches": [],
+      "yvresse_skills": [
+        {
+          "node_set_key": "wh3_dlc27_skill_node_set_hef_yvresse_prince_affinity",
+          "node_key": "wh3_dlc24_skill_generic_immortality_lord",
+          "skill_key": "wh2_main_skill_all_immortality_lord",
+          "skill_name": "Immortality"
+        },
+        {
+          "node_set_key": "wh3_dlc27_skill_node_set_hef_yvresse_prince_affinity",
+          "node_key": "wh3_dlc24_skill_node_all_mentor_lord",
+          "skill_key": "wh3_main_skill_all_mentor_lord",
+          "skill_name": "Mentor"
+        }
+      ]
+    }
+  ],
+  "skaven": [
+    {
+      "file": "data/technology_trees/factions/skaven/wh2_dlc09_skv_clan_rictus.csv",
+      "technology_keys": 56,
+      "source_building_requirements": []
+    },
+    {
+      "file": "data/technology_trees/factions/skaven/wh2_main_skv_clan_eshin.csv",
+      "technology_keys": 59,
+      "source_building_requirements": []
+    },
+    {
+      "file": "data/technology_trees/factions/skaven/wh2_main_skv_clan_mors.csv",
+      "technology_keys": 56,
+      "source_building_requirements": []
+    },
+    {
+      "file": "data/technology_trees/factions/skaven/wh2_main_skv_clan_moulder.csv",
+      "technology_keys": 57,
+      "source_building_requirements": []
+    },
+    {
+      "file": "data/technology_trees/factions/skaven/wh2_main_skv_clan_pestilens.csv",
+      "technology_keys": 56,
+      "source_building_requirements": []
+    },
+    {
+      "file": "data/technology_trees/factions/skaven/wh2_main_skv_clan_skryre.csv",
+      "technology_keys": 56,
+      "source_building_requirements": []
+    },
+    {
+      "file": "data/technology_trees/factions/skaven/wh3_dlc29_skv_clan_scruten.csv",
+      "technology_keys": 56,
+      "source_building_requirements": []
+    }
+  ],
+  "source_and_output_sha256": {
+    "data/skill_trees/source_exports/db/character_skill_level_to_effects_junctions_tables/data__.tsv": "741b8595d22b0f02e0ed5d83837ac4df581365df6844f336c9a0dde32b891441",
+    "data/skill_trees/characters/dark_elves/Rakarth.csv": "8326fafe434398e9916dc69e5474b3d5bb946d06b4f228284df8b95b26b88570",
+    "data/skill_trees/characters/greenskins/Grom_the_Paunch.csv": "bff7d828dd8a8cf38a21caf82718dcf1e6cb9d28e8df383f2743c1ff217560ef",
+    "data/skill_trees/characters/high_elves/Prince.csv": "d89be3fdfe02ab64c7e1c77bb45a839e4eb884d54d8feb9d986ac5cc619added",
+    "data/technology_trees/source_exports/db/technology_required_building_levels_junctions_tables/data__.tsv": "10405deaa515ea1fc6a346ad065fdcd4e4a495ae3a764e8879750aba65300506",
+    "data/technology_trees/factions/skaven/wh2_dlc09_skv_clan_rictus.csv": "37ef6e879e063d871f5e16b9ed6f142f55e3912fa6b6a6814e38a521c5b8ede7",
+    "data/technology_trees/factions/skaven/wh2_main_skv_clan_eshin.csv": "2ba338838292a53f6989b4604253a011a3f9087c737e005b3e98c492cb4b649f",
+    "data/technology_trees/factions/skaven/wh2_main_skv_clan_mors.csv": "56b27c90b4be48f34aece7505f299c3dfd7d41bb2df9164862b09307d695eb20",
+    "data/technology_trees/factions/skaven/wh2_main_skv_clan_moulder.csv": "9dda19c5c08d122e7b2221a17bd8218d7f9fceefc0b5d77f2e8da7d91448fa2a",
+    "data/technology_trees/factions/skaven/wh2_main_skv_clan_pestilens.csv": "e63d608ce1e89acf843399ac58e3496e61917b989b5c673c80cb688e9b893f17",
+    "data/technology_trees/factions/skaven/wh2_main_skv_clan_skryre.csv": "f044e7bf7d2f22fb374c3fec29f02a38a56fcddd79cddf9cb8e52b60218970b5",
+    "data/technology_trees/factions/skaven/wh3_dlc29_skv_clan_scruten.csv": "0d64e802914d6e47aeaef386ea883fbaf2056e46dc4589fc49859f0e2ca71609"
+  }
+}
