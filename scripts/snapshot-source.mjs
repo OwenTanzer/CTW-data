@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 
 const profiles = {
+  '9.0.1': { patch: '9.0.1', steam_build_id: '25546563', executable_version: '9.0.1.0' },
   '8.1.1': { patch: '8.1.1', steam_build_id: '24237342', executable_version: '8.1.1.0' },
   '9.0': { patch: '9.0', steam_build_id: '25507028', executable_version: '9.0.0.0' },
 };
