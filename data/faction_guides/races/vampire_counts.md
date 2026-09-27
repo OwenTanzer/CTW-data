@@ -1,5 +1,8 @@
 # Vampire Counts campaign mechanics — patch 8.1.1
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Specific 9.0 corrections:** See [targeted historical-guide errata](../COMPATIBILITY_9.0.md#targeted-historical-guide-errata) before using rite cooldowns, Books ownership, Krell or Vlad/Isabella role descriptions below. Other claims retain their stated historical scope.
@@ -15,6 +18,8 @@ The economy exports already record constructible building variants, tiers, costs
 ## Mechanically relevant material not captured elsewhere
 
 ### Blood Kisses and Bloodline awakenings
+
+> **9.0 disposition:** The awakening costs, fixed unlock count and Kiss-driven lifecycle below are archived; see the current recruitment summary. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applies to:** all four playable factions.
 
@@ -43,6 +48,8 @@ AI factions use the same Kiss, ritual, and pool systems. Their scripted priority
 
 ### Raise Dead and famous battle sites
 
+> **9.0 disposition:** The probabilistic pools and battle-site thresholds below are archived, not the current recruitment model. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applies to:** all four playable factions.
 
 Generic factionwide/global recruitment is disabled for the Vampire Counts campaign feature. Raise Dead instead recruits immediately from the selected army's current regional mercenary pool for the displayed treasury cost. It consumes the pool entry and has no training time. Patch 8.1 makes the treasury check include costs already pending in the Raise Dead queue, so several unaffordable units cannot be over-queued.
@@ -57,6 +64,8 @@ The campaign feature also makes the enslave-captives post-battle outcome repleni
 
 ### Dead Rise Again
 
+> **9.0 disposition:** These historical numeric inputs have not been revalidated; the recruitment overhaul does not establish their current values. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applies to:** all four playable factions.
 
 Dead Rise Again is separate from Raise Dead. After battle, a unit destroyed in that battle can be restored directly to its army, including after a defeat; it does not enter the region's Raise Dead pool. The installed base saving chance is **10%**. Lords and Heroes add 10 percentage points, unit experience adds one point per level, unit cost contributes `0.5 × (cost / 100)`, and each famous battle site in the province adds two points. The state-religion/corruption inputs in this definition are explicitly marked defunct.
@@ -64,6 +73,8 @@ Dead Rise Again is separate from Raise Dead. After battle, a unit destroyed in t
 Returned strength is calculated separately: base 1%, +5 points for a Lord or Hero, +1 per unit level, `1 × (cost / 200)`, and +5 per battle site, with variance 2. The installed variables do not expose the final rounding and clamping order, so those inputs should not be read as a promise of an exact displayed percentage in every case.
 
 ### Vampiric territory, attrition, occupation, and climate
+
+> **9.0 disposition:** These attrition and climate assertions retain only their 8.1.1 evidence; do not extrapolate them to Neferata. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applies to:** all four playable factions except where a faction override is named.
 
@@ -83,6 +94,8 @@ Climate suitability changes consequences rather than forbidding occupation:
 
 ### Playable-faction start traits
 
+> **9.0 disposition:** Use current character effects; this four-faction list and its values are historical. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applies to:** only the faction or selected Sylvania start named below.
 
 - **The Drakenhof Conclave / Mannfred:** +20% research and +20 diplomacy with Vampire Counts and Followers of Nagash; enables the Mannfred Books/Malevolent Museum branch and supplies the scripted starting Kiss condition.
@@ -94,6 +107,8 @@ Climate suitability changes consequences rather than forbidding occupation:
 These are start-role/faction effects. They do not grant the other factions the named Legendary Lord, alternate partner form, or faction-specific script.
 
 ### Mannfred's Books of Nagash
+
+> **9.0 disposition:** The permanent-ownership lifecycle, rewards and Museum behavior below are historical; use the current Books qualification. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applies only to:** human-controlled The Drakenhof Conclave (`wh_main_vmp_vampire_counts`). AI Mannfred has no independent Book setup or fallback collection path.
 
@@ -116,6 +131,8 @@ If the faction owns Castle Drakenhof and has the Malevolent Museum building, acq
 
 ### Sylvania's Vlad/Isabella role choice
 
+> **9.0 disposition:** The no-conversion claim below is obsolete; use current character/skill variants rather than treating the initial role as permanent. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applies only to:** Sylvania (`wh_main_vmp_schwartzhafen`).
 
 The frontend offers Vlad or Isabella as faction leader. Selecting Vlad instantiates Vlad as the Legendary Lord and Isabella as a unique Hero; selecting Isabella reverses those roles. The Hero form is hidden from ordinary recruitment, is not auto-generated through the recruitment UI, has unique cap 1, and is permitted only to Sylvania. There is no later conversion listener and no second Legendary-Lord recruitment unlock: the chosen roles remain fixed for that campaign.
@@ -123,6 +140,8 @@ The frontend offers Vlad or Isabella as faction leader. Selecting Vlad instantia
 When the pair fight in the same battle as army/reinforcing partners, Undying Love gives the general +15 melee attack and +15 melee defence. A wound uses ordinary convalescence and preserves the forms. Confederating a surviving Sylvania can transfer the instantiated characters in their current roles, but does not convert the Hero to a Lord. Destroying Sylvania or defeating either partner provides no bespoke defeated-Lord recruitment route. AI Sylvania follows its campaign start-position leader rather than receiving the human frontend choice.
 
 ### Kemmler and Krell
+
+> **9.0 disposition:** The summon-only Krell lifecycle below is obsolete; consult current character and skill owners. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applies only to:** Heinrich Kemmler in The Barrow Legion (`wh2_dlc11_vmp_the_barrow_legion`).
 
@@ -132,6 +151,8 @@ Because Krell is a summoned battle unit, unbinding or defeat gives him no campai
 
 ### Character acquisition, diplomacy, and loss boundaries
 
+> **9.0 disposition:** The old Red Duke exclusion and confederation narrative are archived; they do not establish current unavailability. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applies to:** all four playable factions unless narrowed below.
 
 Ordinary same-subculture confederation can absorb a surviving Vampire Counts faction and its currently instantiated characters. No Vampire Counts-specific system recruits a Legendary Lord merely by defeating that Lord or destroying the faction, and the shared installed legendary-character controller has no Vampire Counts eligibility branch.
@@ -139,6 +160,8 @@ Ordinary same-subculture confederation can absorb a surviving Vampire Counts fac
 The Red Duke is campaign-mapped but permitted for recruitment only to non-playable Mousillon, not to these four factions. No shared mission, defeat unlock, or direct playable-faction recruitment route assigns him. Ordinary confederation transfers characters that actually exist in the target faction, but the retained installed relations did not establish a current Red Duke start instance; this guide therefore does not advertise him as a guaranteed Mousillon-confederation reward. Kevon Lloydstein has low-level permission records but is hidden, not auto-generated, absent from campaign-agent and unique-agent mappings, and has no installed acquisition mission or script; he is not a playable-faction recruit route.
 
 ### Immortal Empires victory routing
+
+> **9.0 disposition:** The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applies to:** human-controlled factions. These are victory-mission conditions, not AI progression mechanics.
 

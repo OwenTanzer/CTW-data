@@ -1,5 +1,8 @@
 # Skaven campaign systems
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Specific 9.0 corrections:** See [targeted historical-guide errata](../COMPATIBILITY_9.0.md#targeted-historical-guide-errata) before using rite cooldowns, Books ownership, Krell or Vlad/Isabella role descriptions below. Other claims retain their stated historical scope.
@@ -94,6 +97,8 @@ Thus Pestilens profits from its own infection while allied or rival non-Pestilen
 
 ### Clan Skryre: Forbidden Workshop
 
+> **9.0 disposition:** The historical target lists below are not exhaustive for current unit support. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applicability:** `wh2_main_skv_clan_skryre` only.
 
 The Workshop spends **Warp Fuel** and Food on permanent upgrade branches for weapon teams, Doom-Flayers, Doomwheels, and Doomrockets. Skryre starts with **5 Warp Fuel** and **1 Doomrocket**. The default rocket stock cap is **5**; a Workshop upgrade raises it to **8**. A rocket can be used once in a battle and one stock is consumed after the battle. The ability is unavailable at zero stock, and manufacturing locks at the cap.
@@ -130,6 +135,8 @@ The **Revitalising Scheme** costs 2,500 treasury and has a 30-turn cooldown. It 
 
 ### Clan Moulder: Flesh Laboratory
 
+> **9.0 disposition:** The historical target lists below are not exhaustive for current unit support. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applicability:** `wh2_main_skv_clan_moulder` only.
 
 The Flesh Laboratory starts with **0 Growth Juice** and **100 Mutagen**. It adds **60 Growth Juice per turn**. The operative Mutagen cap is 100, raised to 200 by an upgrade; excess Mutagen degenerates by up to 20 per turn until the operative cap is reached. The much larger generic pooled-resource ceiling is not the Laboratory's usable cap.
@@ -151,6 +158,8 @@ Three repeatable Laboratory actions unlock on turn 2; each has 10-turn action, g
 A human Clan Moulder campaign receives Ghoritch after completing Throt's **Whip of Domination** quest battle (`wh3_main_ie_qb_skv_throt_main_whip_of_domination`), through the `wh2_dlc16_incident_skv_ghoritch_arrives` incident. AI Clan Moulder receives him when Throt reaches rank 5. His unit and skill details remain in the unit and character catalogs.
 
 ### Clan Pestilens and Iyann Rocksburrow
+
+> **9.0 disposition:** Use current Skrolk character effects for target coverage; the old list is not exhaustive. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applicability:** `wh2_main_skv_clan_pestilens` only.
 

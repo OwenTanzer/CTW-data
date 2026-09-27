@@ -1,0 +1,260 @@
+{
+  "reviewed_date_utc": "2026-09-27",
+  "scope": "All 24 historical race guides retain 8.1.1 scope; named affected sections receive point-of-use qualifications. Current overview is announcement-backed, not a full installed-script or numerical guide re-audit. No unchanged-mechanic claims inferred from silence in release notes.",
+  "guides": [
+    {
+      "file": "data/faction_guides/races/beastmen.md",
+      "sha256": "c5414c9699299ec710d76a7c92bb2953dd05c97b9e41bca57258e6f239d3b836"
+    },
+    {
+      "file": "data/faction_guides/races/bretonnia.md",
+      "sha256": "5fdd42aacacdfe9d7e99f468c9673964d574c9134eaf8acc863f956eacee2b9d"
+    },
+    {
+      "file": "data/faction_guides/races/chaos_dwarfs.md",
+      "sha256": "3a9695886a008acfdb9687a4f00c94863858a2855a03ec49c09dcc9ca24aa56e"
+    },
+    {
+      "file": "data/faction_guides/races/daemons_of_chaos.md",
+      "sha256": "132c94d3af879d6662506c98faebb98943e61bb438068b9903f567644f7a7de2"
+    },
+    {
+      "file": "data/faction_guides/races/dark_elves.md",
+      "sha256": "bb9f1cc7d83f8b4adafab00eab3737c058b61a2555ffbb44173fbdb8489cb68b"
+    },
+    {
+      "file": "data/faction_guides/races/dwarfs.md",
+      "sha256": "a58bc34b560a0210e145047c827249acb7bf59ddf4fc72345cf0b9f12a50c6f0"
+    },
+    {
+      "file": "data/faction_guides/races/empire.md",
+      "sha256": "5f41e413551335f762a620269714ff119bbf812acc0493eaa72f26bb9139b807"
+    },
+    {
+      "file": "data/faction_guides/races/grand_cathay.md",
+      "sha256": "740322b45050e6ac6c90057334b41312d990d97647ebfa543281f35475e64164"
+    },
+    {
+      "file": "data/faction_guides/races/greenskins.md",
+      "sha256": "c8fddf494aa065e74ba452a6000ce434638afc257cf80bca47240e3d0c482317"
+    },
+    {
+      "file": "data/faction_guides/races/high_elves.md",
+      "sha256": "1a9d1df9c32ba4835a4ff3aee2f20c09f18f944d95938186ba0d29a8552d0a86"
+    },
+    {
+      "file": "data/faction_guides/races/khorne.md",
+      "sha256": "d5762860353de69bf557d6c412480cc9e4da2fdb8c16af9260eb91e53457cf0a"
+    },
+    {
+      "file": "data/faction_guides/races/kislev.md",
+      "sha256": "86ae3e74be81aca6128c40b25c3862118c4fb9e4e71987c4419211db95a974a2"
+    },
+    {
+      "file": "data/faction_guides/races/lizardmen.md",
+      "sha256": "99ce6aebc5ff611975aff904fc5bf21480aa02a86336003cafddc17bc84fba3f"
+    },
+    {
+      "file": "data/faction_guides/races/norsca.md",
+      "sha256": "de0260e27de2346f15b0a4f97eb66ad76a6ee5a4ac568af78576a0473a0a3560"
+    },
+    {
+      "file": "data/faction_guides/races/nurgle.md",
+      "sha256": "2e0feb20a91bba3ab157ef6c7fcf4c765fc016f19b33b8046ed0853e316eed6d"
+    },
+    {
+      "file": "data/faction_guides/races/ogre_kingdoms.md",
+      "sha256": "52d6b68696c2b441ba48c131c5ef17ee3ca8a34232d2f59dd9a9fe11d4b82a82"
+    },
+    {
+      "file": "data/faction_guides/races/skaven.md",
+      "sha256": "ea3815e7d03577eeaa5385817291c89e2148e10e6af024326517eaae2d1e05e4"
+    },
+    {
+      "file": "data/faction_guides/races/slaanesh.md",
+      "sha256": "5e62d539f5326d7d63968f061a1476cc251ddd1f223b46666d44bc101b80c5e8"
+    },
+    {
+      "file": "data/faction_guides/races/tomb_kings.md",
+      "sha256": "18c7dc04b6863445f6e689826708ec5b5d9236fc038cb16922d1bc0e93c3797e"
+    },
+    {
+      "file": "data/faction_guides/races/tzeentch.md",
+      "sha256": "a06eb4625c49cf39ecb6ff97fa38fc86b3f343036b75fe92193510599125ffbf"
+    },
+    {
+      "file": "data/faction_guides/races/vampire_coast.md",
+      "sha256": "d5bc7200b3247cf5716f2f4076875b124359903b6732b80dc68010b373dc13a1"
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "sha256": "0fd19fb950812317ef3913750bd979a42e63ffc41ab4ed7d1414b2ed95bd263c"
+    },
+    {
+      "file": "data/faction_guides/races/warriors_of_chaos.md",
+      "sha256": "2d24172f55b65deda77d5fff731ea36f4ce1729543e4b82da4d3a95a1f25a61b"
+    },
+    {
+      "file": "data/faction_guides/races/wood_elves.md",
+      "sha256": "8eb7bd11be4d193b160e5ad95535ef2f51cb838ba22c832ef608db979caa24ea"
+    }
+  ],
+  "qualified_sections": [
+    {
+      "file": "data/faction_guides/races/daemons_of_chaos.md",
+      "section": "Campaign progression branch",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries."
+    },
+    {
+      "file": "data/faction_guides/races/empire.md",
+      "section": "Cult of Sigmar: Books of Nagash and State Troop unlocks",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The permanent rewards and mission-failure lifecycle below are historical, not a verified current Books progression."
+    },
+    {
+      "file": "data/faction_guides/races/empire.md",
+      "section": "Empire legendary-hero acquisition",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The historical list does not cover the new Ulric characters. Use current indexes and qualified permissions."
+    },
+    {
+      "file": "data/faction_guides/races/skaven.md",
+      "section": "Clan Skryre: Forbidden Workshop",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The historical target lists below are not exhaustive for current unit support."
+    },
+    {
+      "file": "data/faction_guides/races/skaven.md",
+      "section": "Clan Moulder: Flesh Laboratory",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The historical target lists below are not exhaustive for current unit support."
+    },
+    {
+      "file": "data/faction_guides/races/skaven.md",
+      "section": "Clan Pestilens and Iyann Rocksburrow",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "Use current Skrolk character effects for target coverage; the old list is not exhaustive."
+    },
+    {
+      "file": "data/faction_guides/races/tomb_kings.md",
+      "section": "Books of Nagash and Dune Restoration",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The old ownership and reward lifecycle below is historical; do not present it as current Books behavior."
+    },
+    {
+      "file": "data/faction_guides/races/tomb_kings.md",
+      "section": "Faction and Immortal Empires exceptions",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "Historical Arkhan access descriptions are not exhaustive; consult current roster permissions and their notes."
+    },
+    {
+      "file": "data/faction_guides/races/tzeentch.md",
+      "section": "Theatres, Schemes, permanent rifts, and victory state",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Blood Kisses and Bloodline awakenings",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The awakening costs, fixed unlock count and Kiss-driven lifecycle below are archived; see the current recruitment summary."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Raise Dead and famous battle sites",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The probabilistic pools and battle-site thresholds below are archived, not the current recruitment model."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Dead Rise Again",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "These historical numeric inputs have not been revalidated; the recruitment overhaul does not establish their current values."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Vampiric territory, attrition, occupation, and climate",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "These attrition and climate assertions retain only their 8.1.1 evidence; do not extrapolate them to Neferata."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Playable-faction start traits",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "Use current character effects; this four-faction list and its values are historical."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Mannfred's Books of Nagash",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The permanent-ownership lifecycle, rewards and Museum behavior below are historical; use the current Books qualification."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Sylvania's Vlad/Isabella role choice",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The no-conversion claim below is obsolete; use current character/skill variants rather than treating the initial role as permanent."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Kemmler and Krell",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The summon-only Krell lifecycle below is obsolete; consult current character and skill owners."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Character acquisition, diplomacy, and loss boundaries",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The old Red Duke exclusion and confederation narrative are archived; they do not establish current unavailability."
+    },
+    {
+      "file": "data/faction_guides/races/vampire_counts.md",
+      "section": "Immortal Empires victory routing",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries."
+    },
+    {
+      "file": "data/faction_guides/races/warriors_of_chaos.md",
+      "section": "Branch matrix",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The eight-faction census and Sigvald all-gods exception below are historical. Glottkin is not covered by that matrix."
+    },
+    {
+      "file": "data/faction_guides/races/warriors_of_chaos.md",
+      "section": "Dark Fortresses, minor settlements, and vassals",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "Use current atlas region-group membership for fortress locations; the homeland/revival claims below remain historical."
+    },
+    {
+      "file": "data/faction_guides/races/warriors_of_chaos.md",
+      "section": "Souls, Gifts of Chaos, and Gifted Units",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "Historical costs and patron permissions below do not establish current Sigvald or Glottkin access."
+    },
+    {
+      "file": "data/faction_guides/races/warriors_of_chaos.md",
+      "section": "Path to Glory, Marks, boons, and Daemon Princes",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "Do not derive current cross-god permissions from the historical Sigvald branch matrix."
+    },
+    {
+      "file": "data/faction_guides/races/warriors_of_chaos.md",
+      "section": "Defeat, confederation, and legendary-character acquisition",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The old acquisition list is not exhaustive for Archaon's current subjugation system."
+    },
+    {
+      "file": "data/faction_guides/races/warriors_of_chaos.md",
+      "section": "Campaign and victory applicability",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries."
+    },
+    {
+      "file": "data/faction_guides/races/wood_elves.md",
+      "section": "Campaign setup, human/AI state, and victory routes",
+      "disposition": "historical_claim_explicitly_qualified",
+      "notice": "The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries."
+    }
+  ]
+}

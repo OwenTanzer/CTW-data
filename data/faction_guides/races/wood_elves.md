@@ -1,5 +1,8 @@
 # Wood Elves campaign systems
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Scope:** *Total War: WARHAMMER III* | patch **8.1.1** | Steam build **24237342**  
@@ -160,6 +163,8 @@ For current Immortal Empires, Drycha's Fang of Taalroth quest entry is `wh3_main
 Drycha has a special Gryphon Wood invasion configuration during its Rebirth lifecycle, and begins with one Amber. Her confederation and council exclusions are described above. She cannot claim Ariel.
 
 ### Campaign setup, human/AI state, and victory routes
+
+> **9.0 disposition:** The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 The active Wood Elf scripts are loaded only into `main_warhammer`. The installed `_narrative/races/wh3_narrative_wood_elves.lua` has no equivalent Realm-of-Chaos player progression, and legacy Vortex objectives are not carried into this guide.
 

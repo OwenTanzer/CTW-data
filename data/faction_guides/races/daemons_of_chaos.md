@@ -1,5 +1,8 @@
 # Daemons of Chaos campaign systems
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 > **Scope:** *Total War: WARHAMMER III* | patch **8.1.1** | Steam build **24237342**  
@@ -51,6 +54,8 @@ Final ascension is not the gate for the four borrowed god mechanics. At 770 curr
 These are independent threshold rewards, so more than one can be enabled before the final 3,080-Glory choice. Final ascension determines which track receives its otherwise inaccessible late operation sets.
 
 ### Campaign progression branch
+
+> **9.0 disposition:** The requirements below are historical. Use the current atlas objective_reference with variant_key and its recorded runtime boundaries. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applicability:** `wh3_main_dae_daemon_prince` in Immortal Empires (`main_warhammer`); human-controlled faction only for the scripted listener.
 

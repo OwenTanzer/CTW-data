@@ -1,5 +1,8 @@
 # Empire campaign systems
 
+> **9.0 retrieval rule:** These paragraphs remain an 8.1.1 archive. Use the [claim dispositions and new-content supplement](../UPDATE_9.0_CLAIMS.md) for affected systems, and current normalized owners for table values. Historical lists do not prove current exclusion.
+
+
 > **9.0 compatibility:** This is historical 8.1.1 prose. Read [the compatibility notes](../COMPATIBILITY_9.0.md) before applying it to the current database.
 
 | Field | Value |
@@ -73,6 +76,8 @@ The four Hunters—Hertwig van Hal, Jorek Grimm, Kalara of Wydrioth, and Rodrik 
 
 ### Cult of Sigmar: Books of Nagash and State Troop unlocks
 
+> **9.0 disposition:** The permanent rewards and mission-failure lifecycle below are historical, not a verified current Books progression. See [current routing](../UPDATE_9.0_CLAIMS.md).
+
 **Applicability:** Cult of Sigmar (`wh3_main_emp_cult_of_sigmar`) only.
 
 Volkmar participates in the shared Books of Nagash system. Eight normal book missions require either capturing a designated region or engaging and defeating a book-carrying rogue force; the ninth book is Arkhan-only and automatically fails for the other participants. Book rogue armies cannot use ordinary diplomacy with participants beyond the scripted war setup. Single-player selects from faction-specific book locations, while multiplayer uses a fixed indexed order.
@@ -105,6 +110,8 @@ The Gardens network unlocks through an incident on turn 5 and is built through `
 `wh3_dlc25_emp_ritual_elspeth_teleport` moves Elspeth through the network, has a five-turn cooldown, and sets her remaining action points to zero. The faction feature `can_recruit_lords_in_foreign_slots` permits Wissenland & Nuln to recruit lords from these foreign slots. The active Garden regions are persisted in saved campaign state. For State Troop availability, Wissenland & Nuln's script unlocks most event-locked troops through linked technologies; it can also unlock the Emperor's Wrath from the Nuln building and Knights of Morr from a specific Garden foreign-slot building. Patch 8.1 fixed both the panel's loss of regions after reaching the cap and construction beyond the five-Garden limit.
 
 ### Empire legendary-hero acquisition
+
+> **9.0 disposition:** The historical list does not cover the new Ulric characters. Use current indexes and qualified permissions. See [current routing](../UPDATE_9.0_CLAIMS.md).
 
 **Applicability:** Empire-culture factions as specified below; the characters' battle records and skill trees remain cataloged.
 

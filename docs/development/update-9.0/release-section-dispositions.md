@@ -1,0 +1,27 @@
+# Release-section disposition register
+
+Reviewed September 27, 2026 UTC. This is an accounting register for the limited compatibility refresh, not certification of every runtime behavior. Source identities, generated rows and limitations remain in the linked owner reports. Source article dates precede shipment; installed 9.0 evidence controls exact keys and values. The later corrected release notes take precedence over earlier preview wording.
+
+## Official article groups
+
+| Source / sections | Existing owner and disposition | Evidence / limitation |
+|---|---|---|
+| [S1: release notes](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/110): building, landmark, fortress and map sections | Economy and atlas: reconciled; map relation repair proposed. | [Building/map report](building-map-reconciliation.md), PR #24. Geometry, slots and scripted placement are explicitly outside represented fields. |
+| S1: legacy character, unit, skill, technology and availability sections | Current unit/skill/technology owners refreshed; targeted regressions and source comparisons retained. | PRs #18–#21; [lord coverage](lord-coverage-reconciliation.md), [availability decisions](availability-decisions.md), [minor checks](minor-reconciliation.md). Historical omissions are #23; selected checks are not all-effect runtime certification. |
+| S1: rites and shared campaign systems | Historical-guide qualifications and current-source routing. | [Compatibility errata](../../../data/faction_guides/COMPATIBILITY_9.0.md) and [claim supplement](../../../data/faction_guides/UPDATE_9.0_CLAIMS.md). Historical lifecycle prose must not override current evidence. |
+| S1: AI, stance/payment/reward behavior, battle/quest scripting, presentation and language fixes | Runtime behavior beyond existing scalar/catalog fields or presentation-only changes. | No new simulation or battle-geometry fields are required. Existing records remain source-refreshed; runtime fixes are not certified by catalog validation. |
+| [S2: free update](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/103): recruitment/Lairs/Bloodlines/confederation and Neferata | Affected old claims explicitly qualified; concise current qualitative supplement. | Current unit and character owners hold represented identities. New campaign resource/state models remain deferred. |
+| S2: battle content | Unit/skill owners refreshed; canonical identity and mode distinctions documented. | PRs #18–#19; availability policy and #23 limitations apply. |
+| S2: victory, endgame, magic and flyby sections | Initial objectives rebuilt; later campaign simulation and magic integration remain deferred; presentation changes do not add numerical tables. | PR #17 active-config repair and objective boundaries. Historical native evidence stays pinned. |
+| [S3: Nagash](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/104): campaign and battle content | Undead Legions added to current owners; specialized campaign progression summarized separately. | Ordinary research is explicitly empty; this is not a claim of no progression. Mortarch/shared configurations have qualified permissions, not invented universal unlocks. |
+| [S4: Glottkin](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/105): campaign, characters and units | Warriors of Chaos faction and current character/unit records; qualitative campaign supplement. | Technology selector interpretation remains documented; source membership does not certify every recruitment condition. |
+| [S5: Thanquol](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/106): campaign and battle content | Skaven faction, character/skill and unit owners; qualitative campaign supplement. | Masterplans and campaign-only roles do not imply new economy or unit schemas. |
+| [S6: Boris](https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/107): campaign and battle content | Middenland, Boris and Ulric content in current owners; qualitative campaign supplement. | Missing Boris configurations repaired by PR #18. Temple lifecycle remains beyond standardized construction facts. |
+
+## Evidence hierarchy and remaining qualifications
+
+The source-file inventory in PR #22 accounts for 448 retained export paths, not 448 completed semantic reviews. PR #24 adds independent construction-field and map-relation comparisons, including a repaired loss rather than a count-only approval. Existing validators establish emitted-data consistency; they cannot prove complete recruitment reachability or every script callback.
+
+The historical guide pass examines all 24 documents, preserves their evidence dates, and adds section-local dispositions where identified claims conflict with or could mislead current retrieval. It does not silently relabel untouched historical numbers as current. Native findings remain explicitly 8.1.1. This satisfies qualification of those identified claims while retaining an honest boundary around full factual re-research.
+
+Known unfinished production work remains explicit: PR #24 has a posted no-blocker review and passing automated validation, and awaits merge at this checkpoint; historical roster identity repair is #23. This register does not erase those dependencies or itself authorize closing #16. New mechanics capabilities and the accepted non-blocking hotfix are not additional completion gates. Magic #14 stays paused.
