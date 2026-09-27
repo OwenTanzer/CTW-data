@@ -1,0 +1,57 @@
+{
+  "decoder_sha256": "51dc2a25c9c6ee6271e11d8cd259d723e6b51ff83ccb235246227f1e12d3df6b",
+  "full_resolution_artifact": "rebuild_from_verified_source",
+  "metadata": {
+    "block_height": 16,
+    "block_tags": {
+      "0": 768,
+      "12": 2,
+      "22": 1,
+      "30": 1,
+      "85": 1,
+      "91": 1,
+      "93": 1,
+      "98": 1,
+      "115": 1,
+      "121": 1,
+      "122": 1,
+      "137": 2,
+      "138": 9,
+      "139": 22,
+      "140": 56,
+      "143": 156
+    },
+    "block_width": 16,
+    "blocks": 1024,
+    "codec": "TABLE_INDEXED",
+    "coordinate_units": "unresolved",
+    "height": 512,
+    "opaque_header_hex": "000000000000000000000000000000001a1d9a4000000000",
+    "raw_u16_sha256": "72243a4f8c94a4e7a489c636238b24e5aa68ff90b1e131545929b0fc0e0f6ba4",
+    "roundtrip_byte_equal": true,
+    "sample_max": 65535,
+    "sample_min": 0,
+    "source_bytes": 128451,
+    "source_sha256": "1613299280d356ef9b0e7b45bfbfe862e26c4be0d024a6712e5b9893f1e3153c",
+    "status": "decoded_native_samples_world_alignment_unverified",
+    "width": 512
+  },
+  "overview": {
+    "artifact": "1613299280d356ef9b0e7b45bfbfe862e26c4be0d024a6712e5b9893f1e3153c.npz",
+    "method": "regular_native_sample_subset_no_averaging",
+    "sample_stride": 2,
+    "sha256": "5d8277ac17f9c952c07edecc096f6083dac84816ea33316349c9b4f85ec5651e",
+    "shape": [
+      256,
+      256
+    ],
+    "source_column_origin": 0,
+    "source_row_origin": 0
+  },
+  "source_bytes": 128451,
+  "source_path": "terrain/tiles/battle/brt_infield/2x2_plain_a/tile_height_map.compressed_map",
+  "source_sha256": "1613299280d356ef9b0e7b45bfbfe862e26c4be0d024a6712e5b9893f1e3153c",
+  "status": "decoded_full_native_raster",
+  "world_alignment_verified": false,
+  "world_units": null
+}

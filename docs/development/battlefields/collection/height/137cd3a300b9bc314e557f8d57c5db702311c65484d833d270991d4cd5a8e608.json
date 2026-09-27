@@ -1,0 +1,58 @@
+{
+  "decoder_sha256": "51dc2a25c9c6ee6271e11d8cd259d723e6b51ff83ccb235246227f1e12d3df6b",
+  "full_resolution_artifact": "rebuild_from_verified_source",
+  "metadata": {
+    "block_height": 16,
+    "block_tags": {
+      "0": 18513,
+      "1": 238,
+      "2": 1,
+      "13": 238,
+      "14": 238,
+      "15": 1346,
+      "16": 82,
+      "22": 1,
+      "26": 2,
+      "28": 4,
+      "29": 1,
+      "31": 10,
+      "32": 2,
+      "137": 8,
+      "139": 6,
+      "140": 6,
+      "143": 40
+    },
+    "block_width": 16,
+    "blocks": 20736,
+    "codec": "TABLE_INDEXED",
+    "coordinate_units": "unresolved",
+    "height": 2304,
+    "opaque_header_hex": "000000000000000000000000000000000100484200000000",
+    "raw_u16_sha256": "5add3b2541fe4f7d3f081d60e215f950ea56ac74e5f6199990590e69361ff942",
+    "roundtrip_byte_equal": true,
+    "sample_max": 65534,
+    "sample_min": 0,
+    "source_bytes": 535804,
+    "source_sha256": "137cd3a300b9bc314e557f8d57c5db702311c65484d833d270991d4cd5a8e608",
+    "status": "decoded_native_samples_world_alignment_unverified",
+    "width": 2304
+  },
+  "overview": {
+    "artifact": "137cd3a300b9bc314e557f8d57c5db702311c65484d833d270991d4cd5a8e608.npz",
+    "method": "regular_native_sample_subset_no_averaging",
+    "sample_stride": 9,
+    "sha256": "31b2c9831d785cffc76c045e5a3612d1b574f2aa1e0a12bf5d235837b4393753",
+    "shape": [
+      256,
+      256
+    ],
+    "source_column_origin": 0,
+    "source_row_origin": 0
+  },
+  "source_bytes": 535804,
+  "source_path": "terrain/tiles/battle/hef_ulthuan/hef_ulthuan_16x16_a/tile_height_map.compressed_map",
+  "source_sha256": "137cd3a300b9bc314e557f8d57c5db702311c65484d833d270991d4cd5a8e608",
+  "status": "decoded_full_native_raster",
+  "world_alignment_verified": false,
+  "world_units": null
+}
