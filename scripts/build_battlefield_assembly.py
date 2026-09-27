@@ -11,6 +11,7 @@ import sqlite3
 import subprocess
 from build_battlefield_deployment import build as build_deployment, ROOT, EVIDENCE
 from battlefield_tiles import decode_tiles
+from build_battlefield_terrain import build as build_terrain
 
 ATLAS = ROOT / 'data/campaign_map/campaign_atlas__wh3__9.0.gpkg'
 
@@ -96,6 +97,7 @@ def build(decoder, output):
     if audit['status'] != 'passed':
         raise ValueError('Source/atlas audit failed')
     deployment = build_deployment(decoder, output / 'deployment')
+    terrain = build_terrain(decoder, output / 'terrain')
     layouts = {}
     for probe, name in [('field-probe', 'chs_wastes_coast_a'), ('composition-probe', 'def_plains_infield_a')]:
         asset_path = 'terrain/battles/' + name
@@ -123,6 +125,15 @@ def build(decoder, output):
         connected = decoded_connections = 0
         for row in sorted(source_rows, key=lambda r: r['key']):
             packet = connect(row, atlas_maps, relations, layouts, terrain_paths, deployment)
+            tile_paths = {normalize(p['tile_path_raw']) for p in (packet['tile_membership'] or {}).get('placements', [])}
+            terrain_rasters = [r for r in terrain['rasters'] if r['source_path'].split('/', 1)[1].rsplit('/', 1)[0] in tile_paths]
+            packet['terrain_evidence'] = {'status': 'native_samples_with_conditional_alignment' if terrain_rasters else 'not_decoded',
+                                         'rasters': terrain_rasters, 'effective_world_alignment_verified': False}
+            if terrain_rasters:
+                packet['terrain_evidence']['assembly_hypothesis'] = terrain['assembly_hypothesis']
+                packet['terrain_evidence']['conditional_mosaic'] = terrain['mosaic']
+                packet['terrain_evidence']['mosaic_artifact'] = 'terrain/conditional-height-mosaic.npy'
+                packet['terrain_evidence']['coverage_mask_artifact'] = 'terrain/coverage-mask.npy'
             packet['selection_label'] = labels.get('battles_localised_name_' + row['key'])
             connected += bool(packet['connected_source_layers'])
             decoded_connections += packet['status'] == 'source_layers_connected_world_assembly_unresolved'
@@ -135,6 +146,7 @@ def build(decoder, output):
                     'source_snapshot': json.loads((EVIDENCE / 'prefab-probe/probe_manifest.json').read_bytes())['snapshot'], 'variant_records': len(source_rows),
                     'variants_with_connected_source_layers': connected,
                     'variants_with_decoded_source_layers': decoded_connections,
+                    'decoded_height_rasters': len(terrain['rasters']),
                     'decoded_tile_layouts': len(layouts), 'effective_world_layouts': 0,
                     'identity_method': 'sha256 of canonical [atlas_map_key,catchment_name,tile_upgrade], version 1',
                     'source_evidence': 'docs/development/battlefields/*-probe/probe_manifest.json'}

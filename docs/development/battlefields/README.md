@@ -335,3 +335,66 @@ Next spatial work: establish tile-to-world transforms and terrain raster alignme
 for an exact resolved record, then validate the assembled layout visually. Source
 binding alone cannot establish those transforms. Production promotion, settlement
 coverage and structured qualitative feature relations remain outstanding.
+
+## Native height decoding and conditional coordinate assembly
+
+PR #35 was independently reviewed at `a734620c14f66d0183a2b530832b7b861cf200bd`:
+25 bounded checks passed with no blocking findings. This follow-up adds terrain
+sources and a coordinate hypothesis to its development connection packets.
+
+`height-probe/` retains adjacent coastal tile 12 and tile 21 height rasters.
+Together with tile 11 in `xml-probe/`, three independent files now decode through
+`battlefield_height.py`. Each is FASTBIN0 version 3, TABLE_INDEXED, 2304 × 2304
+uint16 samples in 20,736 blocks of 16 × 16. The inferred codec supports constant,
+palette-indexed, base-plus-packed-delta and direct uint16 blocks. Each decoded
+block is re-encoded with its original representation; all three complete sources
+round-trip byte-for-byte. Offsets, lengths, palette indices, padding, sample
+range and complete input consumption are checked. This is an experimental reader
+inferred from retained sources, not an authoritative engine format definition.
+
+`build_battlefield_terrain.py` compares 24 horizontal scale/offset/reflection
+hypotheses against 702 absolute prop placements from the independently decoded
+tile 21 scene. The tested mapping `sample = native_position / 2 + 128` without
+reflection yields Pearson r≈0.97675 and median height residual ≈−0.665 native
+units. The height conversion in this comparison interprets opaque header floats
+1/4 as minimum/maximum and interpolates the uint16 sample range. Absolute prop
+placement height need not equal ground height, so this correlation supports a
+coordinate hypothesis rather than proving engine behavior. Comparisons retain
+the number of in-bounds props; different coverage must not be silently treated
+as equal evidence. Terrain-relative props have zero stored height here and are
+not used as ground-height observations.
+
+The conditional mosaic uses 128 samples per tile-grid cell, crops a 128-sample
+border, assumes orientation tag 16 is unrotated, and places tile cores using their
+decoded grid bounds. This produces a 4096 × 4096 sample mosaic with 12,582,912
+covered samples and 4,194,304 unknown samples. Unknowns remain **NaN plus an
+explicit false coverage mask**, never flat terrain. Other orientation tags and
+overlapping placements fail rather than receive invented transforms. Opaque
+anchor-tail fields are deliberately unapplied; their meaning and engine blending
+remain unresolved. The two sampled seam differences have median absolute values
+approximately 0.90 and 1.83 under this hypothesis, with larger local discrepancies;
+these are diagnostics, not certified seamless world assembly.
+
+```bash
+python scripts/build_battlefield_terrain.py --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder --output work/new-terrain
+python scripts/test_battlefield_height.py work/battlefield-decoder-target/debug/ctw-battlefield-decoder
+```
+
+NumPy is required. Outputs include native uint16 `.npy` rasters, a conditional
+float32 mosaic, its coverage mask and `summary.json`. `terrain-summary.json`
+is the committed reproducible summary. The connection builder now invokes this
+stage and attaches exact tile-path-matched raster evidence, candidate alignment
+and bounded artifact references to relevant variant packets. All packets still
+mark effective world alignment unverified. Production datasets remain unchanged.
+
+Eight tests cover the three exact raster roundtrips, report reproduction, codec
+families, corrupt blocks/headers, reflection discrimination, unknown coverage and
+unsupported orientation. Nine connection regressions also pass. The full
+repository validation retains its previously documented memory limitation.
+
+A local diagnostic rendering was inspected for block discontinuities and explicit
+missing regions; it is not a comparison against a game/source preview. Remaining
+work is to resolve world origin, opaque placement adjustments, layer transforms
+and engine blending, and then compare effective deployment/terrain alignment
+against source previews or accessible game views. Do not advertise this candidate
+as a verified playable world layout or derive tactical terrain effects from it.
