@@ -1,3 +1,4 @@
+import { historicalRosterErrors } from "./historical-roster-coverage.mjs";
 import { availabilityCoverageErrors } from "./availability-coverage.mjs";
 import { lordUnitCoverageErrors } from "./lord-unit-coverage.mjs";
 import { parseRpfmTsv } from "./rpfm-tsv.mjs";
@@ -252,7 +253,7 @@ for (const file of normalized) {
   const rosterConfig = rosterConfigBySlug.get(slug);
   const expectedUnitKeys = new Set((rosterConfig?.military_groups ?? []).flatMap((group) => [...(sourceGroupCounts.get(group) ?? [])]));
   for (const key of rosterConfig?.permission_units ?? []) {
-    if (!sourcePermissionRows.some(p => p.unit === key && p.faction === rosterConfig.faction_key))
+    if (!sourcePermissionRows.some(p => p.unit === key && p.faction === (rosterConfig.permission_unit_factions?.[key] ?? rosterConfig.faction_key)))
       fail(`${slug}/${key}: reviewed inclusion lacks source faction permission.`);
     expectedUnitKeys.add(key);
   }
@@ -326,6 +327,10 @@ if (PATCH === "9.0") {
     new Map(normalized.map(file => [file.name.split("__")[0], new Map(file.rows.map(r => [r.unit_key, r]))])), mountVariants.rows, abilities.rows);
   availabilityErrors.forEach(fail);
   if (!availabilityErrors.length) pass("Reviewed availability inclusions, qualifications and duplicate exclusions reconcile.");
+  const historicalErrors = historicalRosterErrors(
+    new Map(normalized.map(file => [file.name.split("__")[0], new Map(file.rows.map(r => [r.unit_key, r]))])), mountVariants.rows, rosters.rows);
+  historicalErrors.forEach(fail);
+  if (!historicalErrors.length) pass("All 804 historical permission cases retain reviewed identities, availability qualifications and exact source permission flags.");
   const sourceAbilities = groupBy(await tsv("land_units_to_unit_abilites_junctions_tables"), "land_unit");
   const expected = new Set([...byUnit].flatMap(([key, row]) =>
     (sourceAbilities.get(row.source_land_unit_key) ?? []).map(a => JSON.stringify([key, a.ability, a.culture]))));

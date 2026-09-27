@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-09-27T00:42:19.954Z",
+  "checked_at_utc": "2026-09-27T03:53:45.910Z",
   "normalized_files": [
     "beastmen__wh3__9.0__ultra.csv",
     "bretonnia__wh3__9.0__ultra.csv",
@@ -28,21 +28,21 @@
     "warriors_of_chaos__wh3__9.0__ultra.csv",
     "wood_elves__wh3__9.0__ultra.csv"
   ],
-  "total_units": 2367,
+  "total_units": 3155,
   "lookup_rows": {
-    "components": 2037,
-    "weapon_links": 2472,
-    "projectiles": 466,
-    "explosions": 108,
-    "abilities": 5638,
-    "attributes": 6231,
-    "contact_effects": 679,
-    "rosters": 7402,
-    "mount_variants": 500,
+    "components": 2706,
+    "weapon_links": 3181,
+    "projectiles": 522,
+    "explosions": 121,
+    "abilities": 8065,
+    "attributes": 8252,
+    "contact_effects": 814,
+    "rosters": 8517,
+    "mount_variants": 721,
     "quality_flags": 0
   },
   "passes": [
-    "All 2367 roster rows are present.",
+    "All 3155 roster rows are present.",
     "Unit keys are unique within each of the 25 race rosters; intentional cross-race sharing is preserved.",
     "All populated numeric and boolean fields have valid CSV representations.",
     "Every production CSV is valid UTF-8 with LF or CRLF endings and consistent row widths.",
@@ -54,6 +54,7 @@
     "Structured roster availability and exact military-group/faction-permission lookup rows reconcile to source.",
     "All five new playable lords and reviewed update mount chains have independent coverage checks.",
     "Reviewed availability inclusions, qualifications and duplicate exclusions reconcile.",
+    "All 804 historical permission cases retain reviewed identities, availability qualifications and exact source permission flags.",
     "Unit ability relations exactly preserve source culture conditions and wildcard values.",
     "Golden checks pass for Bestigors, Cygors, Ghorgons, Preytons, Sea Guard, Skaven weapon teams/artillery, Doomwheel, Black Orcs, Doom Divers, Rogue Idols, Arachnaroks, Necrofex, and Skycutters.",
     "All 290 raw source-export hashes match the manifest.",

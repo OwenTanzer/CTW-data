@@ -315,7 +315,7 @@ for (const roster of ROSTERS) {
   // Reviewed current units can have custom-battle permissions without military-group membership.
   // Retain the real permission relation; never synthesize a military-group link.
   for (const key of roster.permission_units ?? []) {
-    if (!(permissionsByUnit.get(key) ?? []).some(p => p.faction === roster.faction_key))
+    if (!(permissionsByUnit.get(key) ?? []).some(p => p.faction === (roster.permission_unit_factions?.[key] ?? roster.faction_key)))
       throw Error(`Missing source faction permission for ${roster.slug}/${key}`);
   }
   const unitKeys = [...new Set([...membershipsByUnit.keys(), ...(roster.permission_units ?? [])])].sort();
