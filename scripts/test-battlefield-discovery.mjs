@@ -4,7 +4,7 @@ import {execFileSync} from 'node:child_process';
 import {validateProbeRequest, decoderProbeStatus} from './battlefield-probe-lib.mjs';
 
 test('exact bounded source request', () => {
-  const request = {paths: ['terrain/battles/test/tile_map.bmd'], decode: ['terrain/battles/test/tile_map.bmd']};
+  const request = {paths: ['terrain/battles/test/tile_map.bmd', 'prefabs/deployment_land_battle_1024x1024.bmd'], decode: ['terrain/battles/test/tile_map.bmd']};
   assert.equal(validateProbeRequest(request), request);
 });
 test('unsafe paths rejected', () => {
