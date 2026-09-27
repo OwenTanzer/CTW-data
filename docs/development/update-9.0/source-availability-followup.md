@@ -1,6 +1,6 @@
 # Source, availability and documentation follow-up
 
-Audit date: September 27, 2026 UTC. Baseline: `8ad5a33a4d08eab6cf1273815501846f91d4647a` (8.1.1); production: `66c0dbe38fbf1a574c7d4d7a22b8d9ad8f5ea530` (9.0, after PR #20). PR #21 remains a separate reviewed documentation/target-chain change. Magic #14 remains paused.
+Audit date: September 27, 2026 UTC. Baseline: `8ad5a33a4d08eab6cf1273815501846f91d4647a` (8.1.1); production: `66c0dbe38fbf1a574c7d4d7a22b8d9ad8f5ea530` (9.0, after PR #20). PR #21 merged separately as `99654dd56ad388b6b9a2095faa89e8d27e14481e`; the audit production commit above remains pinned. Magic #14 remains paused.
 
 ## Reproducible retained-source inventory
 
@@ -19,6 +19,8 @@ These are retained-export deltas, not a declaration that every source change has
 Useful next targets: economy building-level headers changed; technology building prerequisites lose 12 source relation rows; technology effects gain 456 and lose 112 row occurrences; skill and character sources change independently of announcement headlines. Counts of added/removed row occurrences include modifications and must not be presented as counts of newly added/removed technologies.
 
 ## Availability findings that remain closure work
+
+Dedicated repair tracking: [issue #23](https://github.com/OwenTanzer/computational-total-war/issues/23), linked to compatibility issue #16. This report records discoveries; merging the audit does not repair the missing configurations.
 
 Run `python3 scripts/audit-9.0-historical-availability.py`. The [case register](historical-availability.json) subtracts current race rosters from exact configured representative-faction custom-battle permissions and traces main/land records, mount links and recruitable subtype permissions. All source/output hashes are recorded.
 
@@ -41,7 +43,7 @@ Concrete current omissions include Repanse (`wh2_dlc14_brt_cha_repanse_de_lyones
 |---|---|---|
 | DLC29 units, mounts and special configurations; PRs #18–19 and `availability-decisions.json` | Implemented; 43 original remaining configurations included and 12 explicit duplicates excluded, plus canonical Arkhan records | Historical roster audit above remains separate |
 | Kroxigor Ancient / Spawn-Kin and Arkhan mount regressions; PR #20 | Merged, reviewed, validated; production 2,367 rows | None for this bounded repair |
-| Grom, Bloodshriek Chimera, Rakarth target relations; PR #21 | Source chains verified; no normalized-stat repair identified | PR #21 awaits merge; static evidence is not runtime certification |
+| Grom, Bloodshriek Chimera, Rakarth target relations; PR #21 | Source chains verified; no normalized-stat repair identified | PR #21 merged; static evidence is not runtime certification |
 | Grom/Rakarth/Prince effects and Skaven building prerequisites; PR #21 | 347 emitted nodes / 1,397 matching effects; seven faction technology files checked | Does not independently certify every tree lock or script |
 | Slaanesh recruitment building changes; issue #16 existing reconciliation evidence | Nine existing economy level/tier/cost/duration checks match | Recruitment lifecycle remains outside narrow economy columns |
 | Tomb Scorpion | Economy settlement tier and unit-record tier are distinct fields | Do not overwrite unit tier merely because the building tier changed |
