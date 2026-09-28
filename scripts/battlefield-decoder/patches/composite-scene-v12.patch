@@ -1,0 +1,36 @@
+diff --git a/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs b/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs
+index b7ea47b..56e5fd2 100644
+--- a/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs
++++ b/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs
+@@ -30,6 +30,9 @@ mod v11;
+ #[getset(get = "pub", get_mut = "pub", set = "pub")]
+ pub struct CompositeSceneReference {
+     serialise_version: u16,
++    /// Uninterpreted two-byte v12 suffix; no semantic claim.
++    #[serde(skip_serializing_if = "Option::is_none")]
++    v12_tail: Option<[u8; 2]>,
+     transform: Transform3x4,
+     scene_file: String,
+     height_mode: String,
+@@ -59,6 +62,10 @@ impl Decodeable for CompositeSceneReference {
+             9 => decoded.read_v9(data, extra_data)?,
+             10 => decoded.read_v10(data, extra_data)?,
+             11 => decoded.read_v11(data, extra_data)?,
++            12 => {
++                decoded.read_v11(data, extra_data)?;
++                decoded.v12_tail = Some([data.read_u8()?, data.read_u8()?]);
++            },
+             _ => return Err(RLibError::DecodingFastBinUnsupportedVersion(String::from("CompositeSceneReference"), decoded.serialise_version)),
+         }
+ 
+@@ -76,6 +83,10 @@ impl Encodeable for CompositeSceneReference {
+             9 => self.write_v9(buffer, extra_data)?,
+             10 => self.write_v10(buffer, extra_data)?,
+             11 => self.write_v11(buffer, extra_data)?,
++            12 => {
++                self.write_v11(buffer, extra_data)?;
++                for byte in self.v12_tail.unwrap() { buffer.write_u8(byte)?; }
++            },
+             _ => return Err(RLibError::EncodingFastBinUnsupportedVersion(String::from("CompositeSceneReference"), self.serialise_version)),
+         }
+ 

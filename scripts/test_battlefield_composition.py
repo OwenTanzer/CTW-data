@@ -23,10 +23,8 @@ class CompositionTests(unittest.TestCase):
 
     def test_partial_decoder_coverage(self):
         failed = [x for x in self.report['layers'] if x['status'] == 'decoder_failed']
-        self.assertEqual(len(failed), 1)
-        self.assertTrue(failed[0]['source_asset'].endswith('/tile_11/bmd_data.bin'))
-        self.assertIn('Unsupported version 12 for type CompositeSceneReference', failed[0]['error'])
-        self.assertEqual(sum(x.get('roundtrip_byte_equal', False) for x in self.report['layers']), 12)
+        self.assertEqual(failed, [])
+        self.assertEqual(sum(x.get('roundtrip_byte_equal', False) for x in self.report['layers']), 13)
 
     def test_set_boundary_and_prefab_preserve_source_scope(self):
         layer, = [x for x in self.report['layers'] if x.get('playable_area', {}).get('has_been_set')]

@@ -46,7 +46,7 @@ def build(decoder, output):
             native.write_bytes(result.stdout)
             bmd = decoded['bmd']
             layer.update(status='decoded_asset_only', roundtrip_byte_equal=True,
-                         decoder_revision=decoded['revision'],
+                         decoder_revision=decoded['revision'], decoder_patch_set=decoded.get('patch_set'),
                          decoded_sha256=hashlib.sha256(result.stdout).hexdigest(),
                          playable_area=bmd['playable_area'],
                          deployment_records=len(bmd['deployment_list']['deployment_areas']),

@@ -143,6 +143,21 @@
         "extraction_patch": "9.0.1",
         "steam_build_id": 25546563
       }
+    },
+    "battlefield_development": {
+      "description": "Configured battlefield variants with collection-wide native source evidence; provisional, not a production spatial dataset.",
+      "readme": "docs/development/battlefields/README.md",
+      "manifest": "docs/development/battlefields/collection/manifest.json",
+      "schema": "docs/development/battlefields/collection/schema.json",
+      "validation": "docs/development/battlefields/collection/validation.json",
+      "query": "scripts/query_battlefield.py",
+      "database": "docs/development/battlefields/collection/assets.sqlite.gz",
+      "boundaries": [
+        "World alignment and live/menu behavior unverified",
+        "Height artifacts are sampled native overviews",
+        "Tile upgrades do not inherit unqualified layers",
+        "Campaign encounter selection remains outside this interface"
+      ]
     }
   },
   "out_of_scope": [

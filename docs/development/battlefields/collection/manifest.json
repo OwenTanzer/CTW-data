@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "status": "native_collection_world_alignment_unverified",
+  "atlas_sha256": "10a46ace9ce0677c54642fea450ca3a3905b766487464ce3c41f2d7ba48e7dcf",
+  "variant_records": 1319,
+  "variants_with_native_geometry": 1180,
+  "variants_with_decoded_height": 1179,
+  "decoded_layouts": 553,
+  "tile_asset_family_count": 152,
+  "source_family_coverage": "source-family-coverage.json",
+  "asset_status_counts": {
+    "decoded_native_geometry": 18501,
+    "decoded_tile_membership": 553,
+    "unsupported_or_failed": 232
+  },
+  "height_status_counts": {
+    "decoded_full_native_raster": 2190
+  },
+  "effective_world_layouts": 0,
+  "source_snapshot": {
+    "executable_version": "9.0.1.0",
+    "game": "warhammer_3",
+    "patch": "9.0.1",
+    "steam_build_id": "25546563"
+  },
+  "native_artifact_normalization": "omit_generated_capture_editor_ids_v1",
+  "height_artifacts": "height/",
+  "native_artifacts": "native/",
+  "native_artifact_storage": "Generated on demand from retained collection-source archives; see query_battlefield_native.py",
+  "observed_playable_maps": null,
+  "visual_verification": "not_performed",
+  "live_verification": "not_performed",
+  "height_overviews": "Native sample subsets; full-resolution decoding is verified but arrays are rebuilt on demand.",
+  "indexed_prefabs": "Dependency counts; complete native instance records remain available through query_battlefield_native.py",
+  "database_sha256": "54b3fc058a61b5f075b23f47bd461d2278213f20c04cacb97a8ff888b0d0f394",
+  "database_bytes": 310439936,
+  "compressed_database_sha256": "d8f94dc3df050431be46cd77694ae701ea7579398b35424bf2e0b9632b24d407",
+  "compressed_database_bytes": 25705129
+}

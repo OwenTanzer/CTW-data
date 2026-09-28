@@ -1,0 +1,475 @@
+{
+  "battle_orientation": {
+    "decoded_native_geometry": 61
+  },
+  "beast_paths": {
+    "decoded_native_geometry": 24
+  },
+  "brt_hills": {
+    "decoded_native_geometry": 70
+  },
+  "brt_in_valley": {
+    "decoded_native_geometry": 5
+  },
+  "brt_infield": {
+    "decoded_native_geometry": 199,
+    "unsupported_or_failed": 1
+  },
+  "brt_infield_forest": {
+    "decoded_native_geometry": 15
+  },
+  "brt_infield_large": {
+    "decoded_native_geometry": 24
+  },
+  "brt_infield_water": {
+    "decoded_native_geometry": 25
+  },
+  "brt_outfield": {
+    "decoded_native_geometry": 119
+  },
+  "bst_ambush": {
+    "decoded_native_geometry": 3
+  },
+  "bst_outfield": {
+    "decoded_native_geometry": 33
+  },
+  "bst_path_outfield": {
+    "decoded_native_geometry": 16
+  },
+  "chokepoint": {
+    "decoded_native_geometry": 85
+  },
+  "chs_infield": {
+    "decoded_native_geometry": 92
+  },
+  "chs_outfield": {
+    "decoded_native_geometry": 48
+  },
+  "chs_wastes": {
+    "decoded_native_geometry": 115,
+    "unsupported_or_failed": 1
+  },
+  "cinematics": {
+    "decoded_native_geometry": 4,
+    "unsupported_or_failed": 2
+  },
+  "cities_outfield": {
+    "decoded_native_geometry": 176
+  },
+  "cities_warhammer": {
+    "unsupported_or_failed": 104,
+    "decoded_native_geometry": 12
+  },
+  "cst_island": {
+    "decoded_native_geometry": 178
+  },
+  "cth_infield": {
+    "decoded_native_geometry": 159,
+    "unsupported_or_failed": 1
+  },
+  "dar_crater": {
+    "decoded_native_geometry": 30
+  },
+  "dar_infield": {
+    "decoded_native_geometry": 55,
+    "unsupported_or_failed": 1
+  },
+  "dar_mountain": {
+    "decoded_native_geometry": 36
+  },
+  "dar_plains": {
+    "decoded_native_geometry": 41
+  },
+  "dar_river": {
+    "decoded_native_geometry": 27
+  },
+  "def_bleak_forest_infield": {
+    "decoded_native_geometry": 5
+  },
+  "def_bleak_mtn_pass_infield": {
+    "decoded_native_geometry": 5
+  },
+  "def_bleak_plains_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_bleak_river_infield": {
+    "decoded_native_geometry": 3
+  },
+  "def_coast_infield": {
+    "decoded_native_geometry": 3
+  },
+  "def_desert_coast_infield": {
+    "decoded_native_geometry": 4,
+    "unsupported_or_failed": 2
+  },
+  "def_desert_dunes_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_desert_hills_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_desert_lakes_infield": {
+    "decoded_native_geometry": 3
+  },
+  "def_desert_outfield": {
+    "decoded_native_geometry": 4
+  },
+  "def_desert_plains_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_desert_ravine_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_desert_river_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_forest_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_hills_infield": {
+    "decoded_native_geometry": 5
+  },
+  "def_lakes_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_mtn_pass_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_norsca_coast_infield": {
+    "decoded_native_geometry": 9
+  },
+  "def_norsca_forest_infield": {
+    "decoded_native_geometry": 5
+  },
+  "def_norsca_hills_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_norsca_ravine_infield": {
+    "decoded_native_geometry": 7
+  },
+  "def_norsca_river_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_outfield": {
+    "decoded_native_geometry": 113
+  },
+  "def_pet_bleak_outfield": {
+    "decoded_native_geometry": 40
+  },
+  "def_petrified_coast_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_petrified_forest_infield": {
+    "decoded_native_geometry": 8
+  },
+  "def_petrified_hills_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_petrified_ravine_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_plains_infield": {
+    "decoded_native_geometry": 4
+  },
+  "def_ravines_infield": {
+    "decoded_native_geometry": 6
+  },
+  "def_river_infield": {
+    "decoded_native_geometry": 3
+  },
+  "def_swamps_infield": {
+    "decoded_native_geometry": 3
+  },
+  "domination": {
+    "decoded_native_geometry": 58
+  },
+  "dummy_set_bca_gen": {
+    "decoded_native_geometry": 2
+  },
+  "emp_forest": {
+    "decoded_native_geometry": 126
+  },
+  "emp_infield": {
+    "decoded_native_geometry": 286
+  },
+  "emp_infield_forest": {
+    "decoded_native_geometry": 45
+  },
+  "emp_infield_large": {
+    "decoded_native_geometry": 54,
+    "unsupported_or_failed": 5
+  },
+  "emp_out_hills": {
+    "decoded_native_geometry": 25
+  },
+  "emp_outfield": {
+    "decoded_native_geometry": 284
+  },
+  "endtimes": {
+    "decoded_native_geometry": 294
+  },
+  "gen_beach": {
+    "decoded_native_geometry": 481
+  },
+  "gen_desert_plains": {
+    "decoded_native_geometry": 188
+  },
+  "gen_forest": {
+    "decoded_native_geometry": 646
+  },
+  "gen_forest_inner": {
+    "decoded_native_geometry": 1056
+  },
+  "gen_mid_hills": {
+    "decoded_native_geometry": 3
+  },
+  "gen_outfield_mountains": {
+    "decoded_native_geometry": 120
+  },
+  "gen_outfield_mountains_desert": {
+    "decoded_native_geometry": 20
+  },
+  "gen_outfield_mountains_snow": {
+    "decoded_native_geometry": 151
+  },
+  "gen_plains": {
+    "decoded_native_geometry": 1046
+  },
+  "gen_sea": {
+    "decoded_native_geometry": 126
+  },
+  "gen_snowy_forest_inner": {
+    "decoded_native_geometry": 896
+  },
+  "gen_snowy_plains": {
+    "decoded_native_geometry": 968
+  },
+  "glb_ocean": {
+    "decoded_native_geometry": 26
+  },
+  "grn_infield": {
+    "decoded_native_geometry": 155
+  },
+  "grn_infield_large": {
+    "decoded_native_geometry": 12
+  },
+  "grn_infield_water": {
+    "decoded_native_geometry": 12
+  },
+  "grn_outfield": {
+    "decoded_native_geometry": 76
+  },
+  "hef_ulthuan": {
+    "decoded_native_geometry": 5
+  },
+  "kho_realm_of_chaos": {
+    "decoded_native_geometry": 48,
+    "unsupported_or_failed": 1
+  },
+  "kho_wastes": {
+    "decoded_native_geometry": 58
+  },
+  "ksl_mountains": {
+    "decoded_native_geometry": 34
+  },
+  "ksl_plains": {
+    "decoded_native_geometry": 77
+  },
+  "ksl_river": {
+    "decoded_native_geometry": 44
+  },
+  "ksl_troll_country": {
+    "decoded_native_geometry": 41
+  },
+  "lzd_coast_infield": {
+    "decoded_native_geometry": 14
+  },
+  "lzd_hills_infield": {
+    "decoded_native_geometry": 4
+  },
+  "lzd_lakes_infield": {
+    "decoded_native_geometry": 6
+  },
+  "lzd_mtnpass_infield": {
+    "decoded_native_geometry": 4
+  },
+  "lzd_outfield": {
+    "decoded_native_geometry": 41
+  },
+  "lzd_plains_infield": {
+    "decoded_native_geometry": 13
+  },
+  "lzd_ravine_infield": {
+    "decoded_native_geometry": 4
+  },
+  "lzd_river_infield": {
+    "decoded_native_geometry": 6
+  },
+  "lzd_swamp_infield": {
+    "decoded_native_geometry": 6
+  },
+  "mesh_mtn": {
+    "decoded_native_geometry": 9,
+    "unsupported_or_failed": 13
+  },
+  "mtn_pass_in": {
+    "unsupported_or_failed": 14,
+    "decoded_native_geometry": 52
+  },
+  "mtn_pass_out": {
+    "decoded_native_geometry": 246
+  },
+  "multiplayer": {
+    "decoded_native_geometry": 103
+  },
+  "nor_in_forest": {
+    "unsupported_or_failed": 10
+  },
+  "nor_infield": {
+    "decoded_native_geometry": 130
+  },
+  "nor_land_infield": {
+    "decoded_native_geometry": 127
+  },
+  "nor_out_hills": {
+    "decoded_native_geometry": 10
+  },
+  "nor_out_rocks": {
+    "decoded_native_geometry": 10
+  },
+  "nor_outfield": {
+    "decoded_native_geometry": 146
+  },
+  "nur_realm_of_chaos": {
+    "decoded_native_geometry": 54,
+    "unsupported_or_failed": 1
+  },
+  "nur_wastes": {
+    "decoded_native_geometry": 62
+  },
+  "ogr_forest_haunted": {
+    "decoded_native_geometry": 38
+  },
+  "ogr_mountains": {
+    "decoded_native_geometry": 78
+  },
+  "ogre_valley": {
+    "decoded_native_geometry": 79
+  },
+  "old_mountains": {
+    "decoded_native_geometry": 76
+  },
+  "quest_battles": {
+    "decoded_native_geometry": 918,
+    "unsupported_or_failed": 29
+  },
+  "scenario_battles": {
+    "decoded_native_geometry": 7
+  },
+  "settlements_warhammer": {
+    "decoded_native_geometry": 1405,
+    "unsupported_or_failed": 28
+  },
+  "sla_realm_of_chaos": {
+    "decoded_native_geometry": 49,
+    "unsupported_or_failed": 2
+  },
+  "sla_wastes": {
+    "decoded_native_geometry": 62
+  },
+  "stl_coast_infield": {
+    "decoded_native_geometry": 3
+  },
+  "stl_dunes_infield": {
+    "decoded_native_geometry": 5
+  },
+  "stl_hills_infield": {
+    "decoded_native_geometry": 4
+  },
+  "stl_lakes_infield": {
+    "decoded_native_geometry": 3
+  },
+  "stl_outfileds": {
+    "decoded_native_geometry": 40
+  },
+  "stl_plains_infield": {
+    "decoded_native_geometry": 4
+  },
+  "stl_ravine_infield": {
+    "decoded_native_geometry": 4
+  },
+  "stl_river_infield": {
+    "decoded_native_geometry": 4
+  },
+  "subterranean": {
+    "decoded_native_geometry": 43
+  },
+  "subterranean_outfield": {
+    "decoded_native_geometry": 12
+  },
+  "tmb_desert_infield": {
+    "decoded_native_geometry": 20
+  },
+  "tmb_macro_tiles": {
+    "decoded_native_geometry": 4
+  },
+  "tze_realm_of_chaos": {
+    "decoded_native_geometry": 50,
+    "unsupported_or_failed": 1
+  },
+  "tze_wastes": {
+    "decoded_native_geometry": 64
+  },
+  "ult_coast_infield": {
+    "decoded_native_geometry": 21
+  },
+  "ult_forest_hills_infield": {
+    "decoded_native_geometry": 13
+  },
+  "ult_forest_infield": {
+    "decoded_native_geometry": 5
+  },
+  "ult_lakes_infield": {
+    "decoded_native_geometry": 5
+  },
+  "ult_mountain_pass_infield": {
+    "decoded_native_geometry": 6
+  },
+  "ult_outfield": {
+    "decoded_native_geometry": 59
+  },
+  "ult_plains_infield": {
+    "decoded_native_geometry": 5
+  },
+  "ult_river_infield": {
+    "decoded_native_geometry": 3
+  },
+  "vmp_forest": {
+    "decoded_native_geometry": 66
+  },
+  "vmp_infield": {
+    "decoded_native_geometry": 216,
+    "unsupported_or_failed": 7
+  },
+  "vmp_infield_water": {
+    "decoded_native_geometry": 35
+  },
+  "wef_forest_infield": {
+    "decoded_native_geometry": 40
+  },
+  "wef_forest_path": {
+    "decoded_native_geometry": 20
+  },
+  "wef_hills_infield": {
+    "decoded_native_geometry": 35
+  },
+  "wef_infield": {
+    "decoded_native_geometry": 3
+  },
+  "wef_outfield": {
+    "decoded_native_geometry": 91
+  },
+  "wh2_generic_beaches": {
+    "decoded_native_geometry": 99
+  }
+}

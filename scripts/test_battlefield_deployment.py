@@ -20,15 +20,15 @@ class DeploymentTests(unittest.TestCase):
 
     def test_reproduce_source_report(self):
         self.assertEqual(self.report, json.loads((EVIDENCE / 'deployment-summary.json').read_bytes()))
-        self.assertEqual(sum(a.get('roundtrip_byte_equal', False) for a in self.report['assets']), 8)
+        self.assertEqual(sum(a.get('roundtrip_byte_equal', False) for a in self.report['assets']), 9)
         failures = [a for a in self.report['assets'] if a['status'] == 'decoder_failed']
-        self.assertEqual(len(failures), 1)
-        self.assertTrue(failures[0]['source_asset'].endswith('catchment_20_layer_bmd_data.bin'))
+        self.assertEqual(failures, [])
 
     def test_resolved_dependencies_preserve_conditions(self):
-        self.assertEqual(len(self.report['instances']), 5)
-        self.assertTrue(all(i['status'] == 'conditional_projection_not_effective_geometry'
-                            and not i['runtime_binding_verified'] for i in self.report['instances']))
+        self.assertEqual(len(self.report['instances']), 56)
+        self.assertTrue(all(not i['runtime_binding_verified'] for i in self.report['instances']))
+        self.assertEqual(sum(i['status'] == 'conditional_projection_not_effective_geometry' for i in self.report['instances']), 5)
+        self.assertTrue(all(i.get('projected_boundaries') is None for i in self.report['instances'][5:]))
         first = self.report['instances'][0]
         self.assertEqual(first['instance_uid'], 110966528067332153)
         self.assertEqual({p['zone_index'] for p in first['projected_boundaries']}, {0, 1})

@@ -126,7 +126,7 @@ def build(decoder, output):
         for row in sorted(source_rows, key=lambda r: r['key']):
             packet = connect(row, atlas_maps, relations, layouts, terrain_paths, deployment)
             tile_paths = {normalize(p['tile_path_raw']) for p in (packet['tile_membership'] or {}).get('placements', [])}
-            terrain_rasters = [r for r in terrain['rasters'] if r['source_path'].split('/', 1)[1].rsplit('/', 1)[0] in tile_paths]
+            terrain_rasters = [] if packet['tile_upgrade'] else [r for r in terrain['rasters'] if r['source_path'].split('/', 1)[1].rsplit('/', 1)[0] in tile_paths]
             packet['terrain_evidence'] = {'status': 'native_samples_with_conditional_alignment' if terrain_rasters else 'not_decoded',
                                          'rasters': terrain_rasters, 'effective_world_alignment_verified': False}
             if terrain_rasters:

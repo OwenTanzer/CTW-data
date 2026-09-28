@@ -1,0 +1,35 @@
+{
+  "source_files": 20358,
+  "processed_assets": 19286,
+  "statuses": {
+    "decoded_native_geometry": 18501,
+    "decoded_tile_membership": 553,
+    "unsupported_or_failed": 232
+  },
+  "failures": {
+    "Error trying to decode \"2\" as boolean: invalid value.": 5,
+    "Error trying to decode \"4\" as boolean: invalid value.": 6,
+    "Unsupported version 9 for type CaptureLocationSet.": 2,
+    "Unsupported version 21 for type Bmd.": 145,
+    "failed to fill whole buffer": 14,
+    "Error trying to decode \"11\" as boolean: invalid value.": 1,
+    "Unsupported version 17609 for type PropList.": 1,
+    "Error trying to decode \"10\" as boolean: invalid value.": 25,
+    "Error trying to decode \"5\" as boolean: invalid value.": 2,
+    "Error trying to decode \"6\" as boolean: invalid value.": 3,
+    "invalid utf-8 sequence of 1 bytes from index 66": 1,
+    "Error trying to decode \"15\" as boolean: invalid value.": 1,
+    "Error trying to decode \"12\" as boolean: invalid value.": 1,
+    "invalid utf-8 sequence of 1 bytes from index 74": 1,
+    "invalid utf-8 sequence of 1 bytes from index 1": 2,
+    "invalid utf-8 sequence of 1 bytes from index 2": 1,
+    "invalid utf-8 sequence of 1 bytes from index 97": 1,
+    "invalid utf-8 sequence of 1 bytes from index 49": 1,
+    "Unsafe tile-list path": 6,
+    "Unsupported version 5 for type CaptureLocationSet.": 10,
+    "Unsupported index version or grid dimensions": 3
+  },
+  "decoder_sha256": "691d16f98a85058e74a2252dda0efc907a08f2324e8ff6cb43cbb4c0cfe381f3",
+  "world_alignment_verified": false,
+  "artifact_normalization": "omit_generated_capture_editor_ids_v1"
+}

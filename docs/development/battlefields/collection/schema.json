@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "variant_identity_version": 1,
+  "tables": {
+    "assets": {
+      "primary_key": "path",
+      "payload": "record_json",
+      "purpose": "All attempted native sources, hashes, boundaries, dependency counts, errors"
+    },
+    "variants": {
+      "primary_key": "variant_key",
+      "payload": "packet_json",
+      "selectors": [
+        "atlas_map_key",
+        "battle_key",
+        "label",
+        "specification"
+      ]
+    },
+    "metadata": {
+      "primary_key": "key",
+      "payload": "value_json"
+    }
+  },
+  "coordinates": "Native source values; world axes/origin/units not certified",
+  "missingness": "Absent source, decoder failure, unselected layer and unverified geometry are separate statuses",
+  "native_artifacts": "Generated under work/native from retained archives; hashes recorded in asset rows",
+  "height_artifacts": "height/*.npz native sample subsets; stride and full-resolution hash in height/index.json",
+  "integer_safety": "Preserve native uint64 values with an integer-safe JSON reader",
+  "unknown_fields": "Raw bytes retained without semantic interpretation"
+}

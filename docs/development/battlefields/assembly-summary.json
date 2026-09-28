@@ -10,11 +10,11 @@
   },
   "variant_records": 1319,
   "variants_with_connected_source_layers": 5,
-  "variants_with_decoded_source_layers": 4,
+  "variants_with_decoded_source_layers": 5,
   "decoded_height_rasters": 3,
   "decoded_tile_layouts": 2,
   "effective_world_layouts": 0,
   "identity_method": "sha256 of canonical [atlas_map_key,catchment_name,tile_upgrade], version 1",
   "source_evidence": "docs/development/battlefields/*-probe/probe_manifest.json",
-  "database_sha256": "d4872c0b9852b0f965dbda8cc7a446250e2b24753f762cc7431a8c7e6a2f03d6"
+  "database_sha256": "ffcb0d976c997b4b2f895b37ee3b34939fe5e7a8e7d229aae8d1aa7729e53248"
 }

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "assets_checked": 19286,
+  "native_artifacts_checked": 12170,
+  "asset_statuses": {
+    "decoded_native_geometry": 18501,
+    "decoded_tile_membership": 553,
+    "unsupported_or_failed": 232
+  },
+  "height_paths_checked": 2190,
+  "height_overviews_checked": 1956,
+  "configured_variants_checked": 1319,
+  "known_absent_dependencies": 49,
+  "unattempted_dependencies": 0,
+  "world_alignment_verified": false,
+  "visual_verification": "not_performed",
+  "live_verification": "not_performed"
+}

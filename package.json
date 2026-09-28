@@ -34,7 +34,8 @@
     "test:battlefield-assembly": "python3 scripts/test_battlefield_assembly.py",
     "test:battlefield-height": "python3 scripts/test_battlefield_height.py",
     "validate:magic": "python3 scripts/validate_magic.py",
-    "test:magic": "python3 scripts/test_magic.py"
+    "test:magic": "python3 scripts/test_magic.py",
+    "test:battlefield-collection": "python3 scripts/test_battlefield_collection.py"
   },
   "license": "MIT"
 }

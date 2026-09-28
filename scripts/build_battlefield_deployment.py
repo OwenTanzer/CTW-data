@@ -89,7 +89,7 @@ def build(decoder, output):
             dest.write_bytes(result.stdout)
             bmd = native[item['path']] = decoded['bmd']
             record.update(status='decoded_asset_only', roundtrip_byte_equal=True,
-                          decoder_revision=decoded['revision'],
+                          decoder_revision=decoded['revision'], decoder_patch_set=decoded.get('patch_set'),
                           decoded_sha256=hashlib.sha256(result.stdout).hexdigest(),
                           playable_area=bmd['playable_area'], native_boundaries=boundaries(bmd),
                           prefab_instances=bmd['prefab_instance_list']['prefab_instances'])

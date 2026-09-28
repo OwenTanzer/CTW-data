@@ -841,7 +841,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "868afd95aa36f52192cbc7d96b6dd1e6059c681dc43cec77f32966c786e33cef",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "0a8baa8d68cc5b2935e5a6133263e1df0016a74d682309ba85fa9929dedfc22b",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -866,8 +867,31 @@
     {
       "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_data.bin",
       "source_sha256": "d98d5e31cf8d12e764822a9aee5cbf57e580ebb488d83cdb9f9316fcb441d259",
-      "status": "decoder_failed",
-      "error": "Unsupported version 12 for type CompositeSceneReference."
+      "status": "decoded_asset_only",
+      "roundtrip_byte_equal": true,
+      "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "eec508f499e4826794ca1743b274b3d0c8e53d8c711fabe6ed92a476b6e23336",
+      "playable_area": {
+        "area": {
+          "max_x": 1920.0,
+          "max_y": 1920.0,
+          "min_x": 64.0,
+          "min_y": 64.0
+        },
+        "has_been_set": false,
+        "serialise_version": 3,
+        "valid_location_flags": {
+          "serialise_version": 1,
+          "valid_east": true,
+          "valid_north": true,
+          "valid_south": true,
+          "valid_west": true
+        }
+      },
+      "deployment_records": 0,
+      "prefab_instance_count": 163,
+      "set_playable_area_prefab_instances": null
     },
     {
       "source_asset": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_nogo_data.bin",
@@ -875,7 +899,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "a50fbbb31a74d6d6008a83b1978b8cf5a0e5707496423aa5e8875ec252a5adac",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "ab780729366b7810651fdf8c11b0830fcab64481782d328f6b4f12244a203968",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -903,7 +928,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "6d7130d652684729e1ad1e5cb6334ceafaab896882044dde8e5a7c06fbb4a2ea",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "30c21298f1ea62c27cfaf0b93928b592b0bef5e1b81a4dd600e49667f2601d75",
       "playable_area": {
         "area": {
           "max_x": 2048.0,
@@ -960,7 +986,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "868afd95aa36f52192cbc7d96b6dd1e6059c681dc43cec77f32966c786e33cef",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "0a8baa8d68cc5b2935e5a6133263e1df0016a74d682309ba85fa9929dedfc22b",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -988,7 +1015,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "1bf2bcd4f7f3ff423714836a286f50e16d60e05e8e093fb24b3c194643abd7a7",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "983d0fee9356eb7440c884f988e8d6939427b887006662c66215cd0b526ac04c",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -1016,7 +1044,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "fb5defc2102073f6ddf0edbb82e5749d83fe9a98d78e151f416457b47b0611b5",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "fe6d1ec115381b05c6d11d0395742be417d1fb4fafa65bbeacc96802bf05ccc9",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -1044,7 +1073,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "b7b44c9aeb8ff23afeed3ad54d4c4a8f884dda0143605cd30777c84662283b05",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "30c4bd7bc772d849b69a5cdc41e32e0a6072302f176477460ace1af75f6f36e4",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -1072,7 +1102,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "d32390e535f9b5d8f253d105ccdc36469606f716cd095cb5d30c7b755a763a63",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "36fdbb3bb41c56e6ed937078126bfc07cca8833a68f41922f9c9596ab6c8365b",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -1100,7 +1131,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "7fd971202fdff2193ea516a6577eac4b7fdfbc675d888eb3d918e5f50c52b609",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "cc06c678206315410d157fc4c3a1a4ce9c814a5e6c8780dae7ffdeef7fa45f68",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -1128,7 +1160,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "f76a524898b58ee93c691bd4a55a755c86681e66a47286914e6fe95ad3826601",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "95faa533cd140d8b01afff31afd6482e94bbcdc73186aff1e4e3465f41d975cc",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -1156,7 +1189,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "ea7a9c156bd731a60fa2a0953eac30ec184d3285ec69f5d3f0f7430d47ba8b10",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "59e8023f99411a28aecee943f42fdcfe63cbfab976c9762ccdb1caef5c1316cf",
       "playable_area": {
         "area": {
           "max_x": 1920.0,
@@ -1184,7 +1218,8 @@
       "status": "decoded_asset_only",
       "roundtrip_byte_equal": true,
       "decoder_revision": "a4e0a69e0c1a7d948e9b34ef3769a3bb4bbdb66f",
-      "decoded_sha256": "cdd6963d9e6cb5a51ef08ed22391f3626150666033a970be1872a3a0c63a3d39",
+      "decoder_patch_set": "collection-formats-v1",
+      "decoded_sha256": "19fb75959ef3e188e43231ffe55e8eb68e72fad7c24e1026a02100e114253c25",
       "playable_area": {
         "area": {
           "max_x": 1920.0,

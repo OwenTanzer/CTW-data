@@ -105,9 +105,19 @@ The development battlefield connection query resolves configured battle identiti
 and assembles source evidence only. Read its packet status: successful identity
 resolution does not establish menu visibility or effective world geometry.
 Shared asset selectors return candidates; tile upgrades never inherit unqualified
-deployment. Use scripts/query_battlefield.py with a built work/ candidate.
+deployment. Use scripts/query_battlefield.py with the committed collection index or a built work/ candidate.
 
 Battlefield native height samples now have an experimental exact-roundtrip
 decoder. Its mosaic and prop-correlation alignment are conditional evidence,
 not verified world coordinates. Preserve NaN/coverage-mask unknowns; do not
 apply opaque tile anchor fields or infer terrain mechanics from sample heights.
+
+For collection-wide battlefield evidence, read `docs/development/battlefields/collection/manifest.json`
+and `validation.json`, then query the committed `assets.sqlite.gz` with
+`scripts/query_battlefield.py`. `--asset` returns native boundaries, dependency counts,
+section counts and explicit errors. Full native sections are rebuilt from retained
+source archives with `scripts/query_battlefield_native.py`. Height overviews are
+regular native sample subsets, not full-resolution or world-aligned rasters.
+Unselected procedural layers are not active map state. Nonempty tile upgrades
+inherit neither unqualified geometry nor heights. Visual/live verification remains
+unperformed; do not confuse collection-wide extraction with world certification.

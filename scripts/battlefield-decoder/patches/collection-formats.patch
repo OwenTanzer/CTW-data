@@ -1,0 +1,227 @@
+diff --git a/rpfm_lib/src/files/bmd/common/properties/mod.rs b/rpfm_lib/src/files/bmd/common/properties/mod.rs
+index 74524d8..fd6d3f5 100644
+--- a/rpfm_lib/src/files/bmd/common/properties/mod.rs
++++ b/rpfm_lib/src/files/bmd/common/properties/mod.rs
+@@ -114,6 +114,8 @@ mod v11;
+ pub struct Properties {
+     /// Format version number (4, 6, 7, or 11).
+     serialise_version: u16,
++    #[serde(skip_serializing_if = "Vec::is_empty")]
++    uninterpreted_property_flags: Vec<u8>,
+ 
+     /// Unique identifier for this building.
+     building_id: String,
+@@ -191,6 +193,12 @@ impl Decodeable for Properties {
+             6 => flags.read_v6(data, extra_data)?,
+             7 => flags.read_v7(data, extra_data)?,
+             11 => flags.read_v11(data, extra_data)?,
++            8 | 9 | 10 | 12 | 13 => {
++                flags.building_id = data.read_sized_string_u8()?;
++                flags.starting_damage_unary = data.read_f32()?;
++                let count = match flags.serialise_version {8 => 12, 9 => 13, 10 => 14, 12 => 19, _ => 20};
++                for _ in 0..count { flags.uninterpreted_property_flags.push(data.read_u8()?); }
++            },
+             _ => return Err(RLibError::DecodingFastBinUnsupportedVersion(String::from("Properties"), flags.serialise_version)),
+         }
+ 
+@@ -208,6 +216,11 @@ impl Encodeable for Properties {
+             6 => self.write_v6(buffer, extra_data)?,
+             7 => self.write_v7(buffer, extra_data)?,
+             11 => self.write_v11(buffer, extra_data)?,
++            8 | 9 | 10 | 12 | 13 => {
++                buffer.write_sized_string_u8(&self.building_id)?;
++                buffer.write_f32(self.starting_damage_unary)?;
++                for byte in &self.uninterpreted_property_flags { buffer.write_u8(*byte)?; }
++            },
+             _ => return Err(RLibError::EncodingFastBinUnsupportedVersion(String::from("Properties"), self.serialise_version)),
+         }
+ 
+diff --git a/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs b/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs
+index b7ea47b..56e5fd2 100644
+--- a/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs
++++ b/rpfm_lib/src/files/bmd/composite_scene_list/composite_scene_reference/mod.rs
+@@ -30,6 +30,9 @@ mod v11;
+ #[getset(get = "pub", get_mut = "pub", set = "pub")]
+ pub struct CompositeSceneReference {
+     serialise_version: u16,
++    /// Uninterpreted two-byte v12 suffix; no semantic claim.
++    #[serde(skip_serializing_if = "Option::is_none")]
++    v12_tail: Option<[u8; 2]>,
+     transform: Transform3x4,
+     scene_file: String,
+     height_mode: String,
+@@ -59,6 +62,10 @@ impl Decodeable for CompositeSceneReference {
+             9 => decoded.read_v9(data, extra_data)?,
+             10 => decoded.read_v10(data, extra_data)?,
+             11 => decoded.read_v11(data, extra_data)?,
++            12 => {
++                decoded.read_v11(data, extra_data)?;
++                decoded.v12_tail = Some([data.read_u8()?, data.read_u8()?]);
++            },
+             _ => return Err(RLibError::DecodingFastBinUnsupportedVersion(String::from("CompositeSceneReference"), decoded.serialise_version)),
+         }
+ 
+@@ -76,6 +83,10 @@ impl Encodeable for CompositeSceneReference {
+             9 => self.write_v9(buffer, extra_data)?,
+             10 => self.write_v10(buffer, extra_data)?,
+             11 => self.write_v11(buffer, extra_data)?,
++            12 => {
++                self.write_v11(buffer, extra_data)?;
++                for byte in self.v12_tail.unwrap() { buffer.write_u8(byte)?; }
++            },
+             _ => return Err(RLibError::EncodingFastBinUnsupportedVersion(String::from("CompositeSceneReference"), self.serialise_version)),
+         }
+ 
+diff --git a/rpfm_lib/src/files/bmd/light_probe_list/light_probe/mod.rs b/rpfm_lib/src/files/bmd/light_probe_list/light_probe/mod.rs
+index 6f61b03..76e6c1b 100644
+--- a/rpfm_lib/src/files/bmd/light_probe_list/light_probe/mod.rs
++++ b/rpfm_lib/src/files/bmd/light_probe_list/light_probe/mod.rs
+@@ -27,6 +27,8 @@ mod v3;
+ #[getset(get = "pub", get_mut = "pub", set = "pub")]
+ pub struct LightProbe {
+     serialise_version: u16,
++    #[serde(skip_serializing_if = "Vec::is_empty")]
++    v2_light_probe_raw: Vec<u8>,
+     position: Point3d,
+     outer_radius: f32,
+     inner_radius: f32,
+@@ -46,6 +48,10 @@ impl Decodeable for LightProbe {
+         decoded.serialise_version = data.read_u16()?;
+ 
+         match decoded.serialise_version {
++            2 => {
++                for _ in 0..17 { decoded.v2_light_probe_raw.push(data.read_u8()?); }
++                decoded.height_mode = data.read_sized_string_u8()?;
++            },
+             3 => decoded.read_v3(data, extra_data)?,
+             _ => return Err(RLibError::DecodingFastBinUnsupportedVersion(String::from("LightProbe"), decoded.serialise_version)),
+         }
+@@ -60,6 +66,10 @@ impl Encodeable for LightProbe {
+         buffer.write_u16(self.serialise_version)?;
+ 
+         match self.serialise_version {
++            2 => {
++                for byte in &self.v2_light_probe_raw { buffer.write_u8(*byte)?; }
++                buffer.write_sized_string_u8(&self.height_mode)?;
++            },
+             3 => self.write_v3(buffer, extra_data)?,
+             _ => return Err(RLibError::EncodingFastBinUnsupportedVersion(String::from("LightProbe"), self.serialise_version)),
+         }
+diff --git a/rpfm_lib/src/files/bmd/mod.rs b/rpfm_lib/src/files/bmd/mod.rs
+index dd26b5a..3348766 100644
+--- a/rpfm_lib/src/files/bmd/mod.rs
++++ b/rpfm_lib/src/files/bmd/mod.rs
+@@ -107,6 +107,8 @@
+ //! terrain/tiles/*.bmd
+ //! ```
+ 
++pub const CTW_COLLECTION_FORMATS: &str = "collection-formats-v1";
++
+ use getset::*;
+ use nalgebra::{Matrix3, Rotation3};
+ use serde_derive::{Serialize, Deserialize};
+diff --git a/rpfm_lib/src/files/bmd/particle_emitter_list/particle_emitter/mod.rs b/rpfm_lib/src/files/bmd/particle_emitter_list/particle_emitter/mod.rs
+index 9b4f6c6..4f59b6f 100644
+--- a/rpfm_lib/src/files/bmd/particle_emitter_list/particle_emitter/mod.rs
++++ b/rpfm_lib/src/files/bmd/particle_emitter_list/particle_emitter/mod.rs
+@@ -32,6 +32,8 @@ mod v10;
+ #[getset(get = "pub", get_mut = "pub", set = "pub")]
+ pub struct ParticleEmitter {
+     serialise_version: u16,
++    #[serde(skip_serializing_if = "Option::is_none")]
++    v11_tail: Option<u8>,
+     key: String,
+     transform: Transform3x4,
+     emission_rate: f32,
+@@ -63,6 +65,7 @@ impl Decodeable for ParticleEmitter {
+             8 => decoded.read_v8(data, extra_data)?,
+             9 => decoded.read_v9(data, extra_data)?,
+             10 => decoded.read_v10(data, extra_data)?,
++            11 => { decoded.read_v10(data, extra_data)?; decoded.v11_tail = Some(data.read_u8()?); },
+             _ => return Err(RLibError::DecodingFastBinUnsupportedVersion(String::from("ParticleEmitter"), decoded.serialise_version)),
+         }
+ 
+@@ -82,6 +85,7 @@ impl Encodeable for ParticleEmitter {
+             8 => self.write_v8(buffer, extra_data)?,
+             9 => self.write_v9(buffer, extra_data)?,
+             10 => self.write_v10(buffer, extra_data)?,
++            11 => { self.write_v10(buffer, extra_data)?; buffer.write_u8(self.v11_tail.unwrap())?; },
+             _ => return Err(RLibError::EncodingFastBinUnsupportedVersion(String::from("ParticleEmitter"), self.serialise_version)),
+         }
+ 
+diff --git a/rpfm_lib/src/files/bmd/prefab_instance_list/prefab_instance/property_override/mod.rs b/rpfm_lib/src/files/bmd/prefab_instance_list/prefab_instance/property_override/mod.rs
+index 2707215..3ba2f9e 100644
+--- a/rpfm_lib/src/files/bmd/prefab_instance_list/prefab_instance/property_override/mod.rs
++++ b/rpfm_lib/src/files/bmd/prefab_instance_list/prefab_instance/property_override/mod.rs
+@@ -27,6 +27,8 @@ mod v11;
+ #[getset(get = "pub", get_mut = "pub", set = "pub")]
+ pub struct PropertyOverride {
+     serialise_version: u16,
++    #[serde(skip_serializing_if = "Vec::is_empty")]
++    uninterpreted_property_flags: Vec<u8>,
+     building_id: String,
+     starting_damage_unary: f32,
+     on_fire: bool,
+@@ -57,6 +59,12 @@ impl Decodeable for PropertyOverride {
+         decoded.serialise_version = data.read_u16()?;
+ 
+         match decoded.serialise_version {
++            8 | 9 | 10 | 12 | 13 => {
++                decoded.building_id = data.read_sized_string_u8()?;
++                decoded.starting_damage_unary = data.read_f32()?;
++                let length = match decoded.serialise_version { 8 => 12, 9 => 13, 10 => 14, 12 => 19, _ => 20 };
++                for _ in 0..length { decoded.uninterpreted_property_flags.push(data.read_u8()?); }
++            },
+             11 => decoded.read_v11(data, extra_data)?,
+             _ => return Err(RLibError::DecodingFastBinUnsupportedVersion(String::from("PropertyOverride"), decoded.serialise_version)),
+         }
+@@ -71,6 +79,11 @@ impl Encodeable for PropertyOverride {
+         buffer.write_u16(self.serialise_version)?;
+ 
+         match self.serialise_version {
++            8 | 9 | 10 | 12 | 13 => {
++                buffer.write_sized_string_u8(&self.building_id)?;
++                buffer.write_f32(self.starting_damage_unary)?;
++                for byte in &self.uninterpreted_property_flags { buffer.write_u8(*byte)?; }
++            },
+             11 => self.write_v11(buffer, extra_data)?,
+             _ => return Err(RLibError::EncodingFastBinUnsupportedVersion(String::from("PropertyOverride"), self.serialise_version)),
+         }
+diff --git a/rpfm_lib/src/files/bmd/prop_list/prop/mod.rs b/rpfm_lib/src/files/bmd/prop_list/prop/mod.rs
+index a7f42df..1408046 100644
+--- a/rpfm_lib/src/files/bmd/prop_list/prop/mod.rs
++++ b/rpfm_lib/src/files/bmd/prop_list/prop/mod.rs
+@@ -37,6 +37,9 @@ mod v25;
+ #[getset(get = "pub", get_mut = "pub", set = "pub")]
+ pub struct Prop {
+     serialise_version: u16,
++    /// Uninterpreted extension bytes, bounded by the source version.
++    #[serde(skip_serializing_if = "Vec::is_empty")]
++    extension_raw: Vec<u8>,
+     key_index: u32,
+ 
+     transform: Transform3x4,
+@@ -92,6 +95,12 @@ impl Decodeable for Prop {
+             23 => prop.read_v23(data, extra_data)?,
+             24 => prop.read_v24(data, extra_data)?,
+             25 => prop.read_v25(data, extra_data)?,
++            29 | 30 => {
++                prop.read_v25(data, extra_data)?;
++                for _ in 0..if prop.serialise_version == 29 {18} else {19} {
++                    prop.extension_raw.push(data.read_u8()?);
++                }
++            },
+             _ => return Err(RLibError::DecodingFastBinUnsupportedVersion(String::from("Prop"), prop.serialise_version)),
+         }
+ 
+@@ -116,6 +125,10 @@ impl Encodeable for Prop {
+             23 => self.write_v23(buffer, extra_data)?,
+             24 => self.write_v24(buffer, extra_data)?,
+             25 => self.write_v25(buffer, extra_data)?,
++            29 | 30 => {
++                self.write_v25(buffer, extra_data)?;
++                for byte in &self.extension_raw { buffer.write_u8(*byte)?; }
++            },
+             _ => return Err(RLibError::EncodingFastBinUnsupportedVersion(String::from("Prop"), self.serialise_version)),
+         }
+ 

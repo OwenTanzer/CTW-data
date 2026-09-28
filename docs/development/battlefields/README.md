@@ -1,8 +1,122 @@
-# Battlefield implementation checkpoint — issue #9
+# Battlefield evidence collection — issue #9
 
-This is development evidence, **not a production battlefield dataset**. Start here
-instead of reading the full path inventories. Nothing here closes #9 or certifies
-a map ready for controlled testing. No production data has been changed.
+This development interface connects configured battle identities to native source
+geometry and height evidence across the discovered collection. It does not certify
+world alignment, runtime layer selection, menu availability, or tactical effects.
+Visual inspection belongs to the first exploratory sandbox test; no separate
+handoff document is required. Geometry certification and richer semantics remain
+[#37](https://github.com/OwenTanzer/computational-total-war/issues/37), while campaign
+encounter selection remains [#29](https://github.com/OwenTanzer/computational-total-war/issues/29).
+
+The validated collection attempts **19,286 scene/layout assets**: 18,501 native
+geometry decodes, 553 tile-membership decodes, and 232 explicit failures. It covers
+152 source tile families and all 2,190 discovered height paths. Native geometry
+connects to 1,180 of 1,319 configured variants; heights connect to 1,179. Eighty
+tile-upgrade variants are isolated, and 59 other variants have no matching native
+geometry. These are configured-record counts, not observed playable-map counts.
+Forty-nine referenced prefab paths are absent from the merged source; none remain
+unattempted. Read per-asset errors and per-variant coverage before using a packet.
+
+## Retrieve an exact battlefield
+
+```bash
+python scripts/query_battlefield.py --database docs/development/battlefields/collection/assets.sqlite.gz --select chs_wastes_coast_a_01
+python scripts/query_battlefield.py --database docs/development/battlefields/collection/assets.sqlite.gz --asset terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_data.bin
+```
+
+Use an exact configured key, atlas key, versioned variant key, label, or asset
+specification. Shared selectors return candidates. `--mode singleplayer` or
+`--mode multiplayer` filters configured release/mode flags; it does not establish
+observed menu availability. Read `collection/manifest.json`, `validation.json` and
+`schema.json` first. The compressed database is expanded into a temporary directory
+for each query, then queried through indexed selectors.
+
+Variant packets retain the exact catchment and tile-upgrade selectors, full atlas
+relations, tile membership, source asset references, native height evidence, and
+separate structural/visual/live status. Asset queries return native deployment
+boundaries, prefab dependency counts, section counts, exact source/artifact hashes, or the
+specific decoder error. Native matrices and 64-bit masks must be read with an
+integer-safe reader. An unset playable rectangle remains unset.
+
+`variant-coverage.json.gz` enumerates per-variant layer coverage. The `assets`
+table enumerates every attempted source, including failures outside configured
+variants. An absent source, an unsupported decoder, unresolved runtime selection,
+and unverified geometry are distinct states. Nonempty tile upgrades inherit no
+unqualified geometry or heights. Procedural layers are available source evidence;
+they are never all applied as active map state.
+
+Expanded native scene JSON is generated under `work/`, rather than duplicated in
+git alongside the lossless source archives. Retrieve one native section on demand:
+
+```bash
+python scripts/build_battlefield_decoder.py
+python scripts/query_battlefield_native.py --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder --asset terrain/battles/chs_wastes_coast_a/tile_map.bmd --section deployment_list
+```
+
+The builder defaults to the shown executable location. Rust and NumPy are required
+for rebuilding; indexed
+packet/asset retrieval uses Python's standard library. The adapter requires the
+pinned upstream revision plus `collection-formats.patch`; direct unpatched Cargo
+builds fail instead of claiming the extensions are present. New property/light
+probe fields whose meanings are unknown remain opaque bytes. Every accepted BMD
+must consume the whole source and round-trip byte-for-byte. Upstream-generated
+editor IDs on capture locations are omitted: they are random export helpers,
+not source data. The normalization stage also repairs older cached JSON while
+retaining its original exact-roundtrip decoder fingerprint.
+
+## Reproduce the collection
+
+```bash
+python scripts/build_battlefield_collection.py --source docs/development/battlefields/collection-source --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder --output work/battlefield-collection
+python scripts/retry_battlefield_resources.py --collection work/battlefield-collection --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder
+python scripts/normalize_battlefield_artifacts.py --collection work/battlefield-collection
+python scripts/assemble_battlefield_collection.py --collection work/battlefield-collection --heights docs/development/battlefields/collection/height
+python scripts/validate_battlefield_collection.py --collection work/battlefield-collection --heights docs/development/battlefields/collection/height
+python scripts/test_battlefield_collection.py
+```
+
+The scene pass is resumable per asset, uses two workers, and verifies source
+archive/file hashes before decoding. Run the stages sequentially. Resource-interrupted
+assets are retried individually before assembly; large procedural scenes can require
+several gigabytes of RAM. Failed assets retain explicit errors. `collection-source/*/archives.json` pins each zip;
+each zip contains exact game paths and its verified extraction manifest. Missing
+prefab dependencies are recorded against the merged vanilla source inventory.
+
+For fresh extraction on the verified MSI installation, the existing research
+mutex protects the RPFM session. Operations are segmented into 50-file batches
+(eight for heights), and incomplete attempts are preserved for diagnosis:
+
+```powershell
+scripts/extract-battlefield-batches.ps1 -Kind layouts -Output work/new-layouts
+scripts/extract-battlefield-batches.ps1 -Kind bmd -Output work/new-bmd
+scripts/extract-battlefield-batches.ps1 -Kind height -Output work/new-height
+scripts/extract-battlefield-batches.ps1 -Kind paths -Output work/new-additional -RequestFile exact-paths.json
+scripts/extract-battlefield-batches.ps1 -Kind prefabs -Output work/new-prefabs -RequestFile dependency-paths.json
+python scripts/decode_battlefield_heights.py --source work/new-height --output work/new-height-evidence --jobs 4
+```
+
+Reconstruct exact source requests from retained manifests. The additional-path
+pass includes procedural layers and nested battle layouts. Use `plan_battlefield_prefabs.py --collection work/battlefield-collection --output work/dependency-paths.json` to follow decoded prefab
+references until each dependency is retained or explicitly absent; the validator
+rejects unattempted dependencies. Resuming extraction requires the same plan.
+`scripts/archive_battlefield_batches.py` verifies completed batches before packing.
+
+All 2,190 discovered native height sources have been fully decoded and exactly
+round-tripped. Committed `.npz` artifacts are **sample subsets**, at most 256 samples
+per axis, with explicit stride/origin and no averaging. They are not full-resolution
+rasters or world coordinates. Full raster dimensions, extrema and uint16 hashes
+remain in `height/index.json`; verified source manifests remain under
+`height/source-manifests/`. Raw height files are retained in the extraction workspace
+and can be re-extracted from the pinned game installation. Use `--full-resolution`
+with the height builder to emit complete arrays. No sampled overview is promoted
+to a seamless mosaic or evidence of navigation/concealment mechanics.
+
+## Earlier bounded experiments
+
+The following sections preserve the prototype's methods and findings. Their
+small fixture counts and historical decoder failures are superseded by the
+collection manifest and coverage above. The conditional coastal mosaic remains a
+separate hypothesis; it has not been extended indiscriminately to other maps.
 
 ## Verified findings
 
@@ -68,7 +182,7 @@ Offline checks from the repository root:
 ```bash
 node scripts/audit-battlefield-discovery.mjs
 node --test scripts/test-battlefield-discovery.mjs
-cargo build --locked --manifest-path scripts/battlefield-decoder/Cargo.toml --target-dir work/battlefield-decoder-target
+python scripts/build_battlefield_decoder.py
 python scripts/test_battlefield_decoder.py work/battlefield-decoder-target/debug/ctw-battlefield-decoder
 python scripts/build_battlefield_probe.py --decoder work/battlefield-decoder-target/debug/ctw-battlefield-decoder --output work/decoded-field-probe
 ```

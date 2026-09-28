@@ -41,6 +41,26 @@ class HeightTests(unittest.TestCase):
             self.assertEqual(values,expected)
             self.assertEqual(encoded,block)
 
+    def test_padded_and_unpadded_vector_codec_agree(self):
+        blocks = [b'\0' + struct.pack('<H', 123), b'\x8f' + struct.pack('<256H', *range(256))]
+        for padding in (b'', b'\0'*3):
+            blocks += [b'\x80'+struct.pack('<H',10)+b'\xaa'*32+padding,
+                       b'\x01'+struct.pack('<2H',20,10)+b'\xaa'*32+padding]
+        for block in blocks:
+            header = b'FASTBIN0' + struct.pack('<H4I',3,16,16,16,16) + bytes(24)
+            header += struct.pack('<H',13) + b'TABLE_INDEXED'
+            header += struct.pack('<IIIHI',1,0,1,len(block),len(block))
+            raster, metadata = decode_height(header + block)
+            scalar, rebuilt = decode_block(block)
+            self.assertEqual(raster.ravel().tolist(), scalar)
+            self.assertEqual(rebuilt, block)
+            self.assertTrue(metadata['roundtrip_byte_equal'])
+        for block in [b'\x01'+struct.pack('<2H',1,1)+bytes(32),
+                      b'\x80'+struct.pack('<H',65535)+b'\xff'*32]:
+            header = b'FASTBIN0' + struct.pack('<H4I',3,16,16,16,16) + bytes(24)
+            header += struct.pack('<H',13)+b'TABLE_INDEXED'+struct.pack('<IIIHI',1,0,1,len(block),len(block))
+            with self.assertRaises(ValueError): decode_height(header+block)
+
     def test_bad_blocks_rejected(self):
         blocks=[b'',b'\x90',b'\0\0',b'\x8f'+b'\0'*511,
                 b'\x80'+struct.pack('<H',65535)+b'\xff'*32+b'\0'*3,

@@ -40,6 +40,21 @@ class DecoderTests(unittest.TestCase):
         again = json.loads(subprocess.check_output([str(DECODER), str(SOURCE)]))
         self.assertEqual(again, self.result)
 
+    def test_capture_editor_ids_are_not_native_evidence(self):
+        from build_battlefield_collection import source_index, source_bytes
+        key='terrain/tiles/battle/multiplayer/dok_karaz_mp/catchment_01_layer_bmd_data.bin'
+        records=source_index(ROOT/'docs/development/battlefields/collection-source')
+        raw=source_bytes(records[key])
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),'0ed3c0d5e04f7baee9e9a4fb3bdebb53b59d632142a5a5e17295fcfe9de8c15f')
+        with tempfile.TemporaryDirectory() as directory:
+            source=Path(directory)/'capture.bmd';source.write_bytes(raw)
+            results=[json.loads(subprocess.check_output([str(DECODER),str(source)])) for _ in range(2)]
+        self.assertEqual(results[0],results[1])
+        self.assertTrue(results[0]['roundtrip_byte_equal'])
+        locations=results[0]['bmd']['capture_location_set']['capture_location_sets'][0]['capture_locations']
+        self.assertTrue(locations)
+        self.assertTrue(all('id' not in location for location in locations))
+
     def test_invalid_binary_rejected(self):
         mutations = {'signature': b'BADBYTES' + self.source[8:],
                      'truncated': self.source[:-1], 'trailing': self.source + b'\x00',

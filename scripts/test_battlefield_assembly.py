@@ -41,8 +41,8 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(p['status'], 'catchment_layers_not_decoded')
         self.assertEqual(p['connected_source_layers'], [])
         p = query(self.database, 'wh3_dlc27_qb_nor_sayl_final_battle')['packet']
-        self.assertEqual(p['status'], 'connected_layers_decoder_failed')
-        self.assertEqual(p['connected_source_layers'][0]['asset']['status'], 'decoder_failed')
+        self.assertEqual(p['status'], 'source_layers_connected_world_assembly_unresolved')
+        self.assertEqual(p['connected_source_layers'][0]['asset']['status'], 'decoded_asset_only')
 
     def test_wrong_variant_geometry_not_joined(self):
         p = query(self.database, 'chs_wastes_coast_a_02')['packet']
@@ -86,7 +86,7 @@ class AssemblyTests(unittest.TestCase):
         second = build(DECODER, Path(self.tmp.name) / 'second')
         self.assertEqual(second, self.manifest)
         self.assertEqual(self.manifest['variant_records'], 1319)
-        self.assertEqual(self.manifest['variants_with_decoded_source_layers'], 4)
+        self.assertEqual(self.manifest['variants_with_decoded_source_layers'], 5)
         self.assertEqual(self.manifest['effective_world_layouts'], 0)
 
 

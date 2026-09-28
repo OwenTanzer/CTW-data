@@ -10,7 +10,7 @@ import struct
 RECORD = struct.Struct('<iBBHHHII')
 
 
-def decode_tiles(index_bytes, tiles_bytes):
+def decode_tiles(index_bytes, tiles_bytes, allow_irregular=False):
     if len(index_bytes) != 12:
         raise ValueError('Index must contain exactly three uint32 fields')
     version, width, height = struct.unpack('<III', index_bytes)
@@ -75,11 +75,13 @@ def decode_tiles(index_bytes, tiles_bytes):
                 raise ValueError('Anchor references a missing tile path')
             xs, ys = [i % width for i in members], [i // width for i in members]
             bounds = [min(xs), min(ys), max(xs) + 1, max(ys) + 1]
-            if len(members) != (bounds[2] - bounds[0]) * (bounds[3] - bounds[1]):
+            rectangular = len(members) == (bounds[2] - bounds[0]) * (bounds[3] - bounds[1])
+            if not rectangular and not allow_irregular:
                 raise ValueError('Nonrectangular tile membership is unsupported')
             if [record[3], record[4]] != bounds[:2]:
                 raise ValueError('Stored origin disagrees with tile membership')
             placements.append({
+                **({'membership_rectangular': rectangular, **({'member_cell_indices': members} if not rectangular else {})} if allow_irregular else {}),
                 'plane': plane, 'anchor_cell_index': anchor,
                 'anchor_grid_xy': [anchor % width, anchor // width],
                 'path_reference_1based': record[0], 'tile_path_raw': paths[path_index],
