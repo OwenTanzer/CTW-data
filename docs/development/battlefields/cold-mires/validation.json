@@ -22,7 +22,7 @@
     "numpy": "2.3.5",
     "matplotlib": "3.10.8"
   },
-  "render": "Generated from committed dataset using scripts/cold_mires/render.py; inspected visually",
+  "render": "Generated from committed dataset using scripts/cold_mires/render.py; inspected visually; all six image layers checked against retained source sample centers with explicit X/Z contour coordinates",
   "runtime_verified": false,
   "scope": "Cold Mires only; no full-repository validation claimed"
 }

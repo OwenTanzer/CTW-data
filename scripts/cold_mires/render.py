@@ -21,11 +21,16 @@ a={k:m.r[k][::3,::3] for k in m.r.files}
 b={'non_terrain_outlines':[v['points_xz'] for v in m.f['blockage_candidates']]}
 trees=m.f['vegetation']
 lab,depth=classify(a['ground'],a['water'],a['raw_water'],**m.manifest['water_classifier']['parameters'])
-extent=(1088,2048,2560,1536)
+# imshow bounds are pixel edges; preserve the retained source sample centers.
+coords=m.manifest['coordinates']
+dx,dz=np.asarray(coords['sample_spacing_xz'])*3
+xs=coords['sample_origin_xz'][0]+np.arange(a['ground'].shape[1])*dx
+zs=coords['sample_origin_xz'][1]+np.arange(a['ground'].shape[0])*dz
+extent=(xs[0]-dx/2,xs[-1]+dx/2,zs[-1]+dz/2,zs[0]-dz/2)
 fig,ax=plt.subplots(figsize=(11,12.5),facecolor='#f7f4ec')
 earth=LinearSegmentedColormap.from_list('earth',['#eee9d8','#d8c9aa','#b29876','#82674f'])
 im=ax.imshow(a['ground'],cmap=earth,origin='upper',extent=extent,vmin=60,vmax=150,interpolation='bilinear')
-cont=ax.contour(a['ground'],levels=[70,90,110,130,150],colors='#857565',linewidths=.5,alpha=.5,origin='upper',extent=extent)
+cont=ax.contour(xs,zs,a['ground'],levels=[70,90,110,130,150],colors='#857565',linewidths=.5,alpha=.5)
 ax.clabel(cont,inline=True,fontsize=7,fmt='%d')
 for value,color in [(0,'#ddd9d1'),(2,'#b5dbdf'),(3,'#68bbd0'),(4,'#eab448'),(5,'#253f86')]:
     ax.imshow(np.ma.masked_where(lab!=value,np.ones(lab.shape)),cmap=ListedColormap([color]),origin='upper',extent=extent,interpolation='nearest')
