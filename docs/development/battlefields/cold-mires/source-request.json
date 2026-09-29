@@ -1,0 +1,9 @@
+{
+  "paths": [
+    "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/tile_height_map.compressed_map",
+    "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/tile_water_height_map.compressed_map",
+    "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/def_bleak.tree_list.bin",
+    "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_data.bin",
+    "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_nogo_data.bin"
+  ]
+}

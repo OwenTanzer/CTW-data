@@ -1,0 +1,265 @@
+{
+  "deep_water_target": {
+    "dataset": "cold-mires-hypothesis-v1",
+    "coordinate_frame": "native_scene_xz_provisional",
+    "world_alignment_verified": false,
+    "passability": "unknown",
+    "concealment": "unknown",
+    "projectile_obstruction": "unknown",
+    "provenance": "manifest.json#sources",
+    "query": {
+      "x": 1820.0,
+      "z": 1892.0,
+      "vegetation_radius_native_units": 20.0
+    },
+    "sample": {
+      "row": 178,
+      "column": 366,
+      "x": 1820,
+      "z": 1892,
+      "method": "lower_grid_sample_no_interpolation"
+    },
+    "elevation": {
+      "value": 61.31570130058108,
+      "units": "native_unverified_metres",
+      "source": "ground"
+    },
+    "water": {
+      "classification": "deep_candidate",
+      "surface_native": 62.41474151611328,
+      "depth_native": 1.0990402155321988,
+      "source": "water"
+    },
+    "candidate_blockage_ids": [],
+    "vegetation_within_radius": [],
+    "vegetation_search_truncated_by_crop": false,
+    "interpretation": "Nearby placements do not define forest coverage; missing blockage matches do not establish passability."
+  },
+  "outcrop_target": {
+    "dataset": "cold-mires-hypothesis-v1",
+    "coordinate_frame": "native_scene_xz_provisional",
+    "world_alignment_verified": false,
+    "passability": "unknown",
+    "concealment": "unknown",
+    "projectile_obstruction": "unknown",
+    "provenance": "manifest.json#sources",
+    "query": {
+      "x": 1770.0,
+      "z": 1850.0,
+      "vegetation_radius_native_units": 20.0
+    },
+    "sample": {
+      "row": 157,
+      "column": 341,
+      "x": 1770,
+      "z": 1850,
+      "method": "lower_grid_sample_no_interpolation"
+    },
+    "elevation": {
+      "value": 62.83267607662344,
+      "units": "native_unverified_metres",
+      "source": "ground"
+    },
+    "water": {
+      "classification": "no_exposed_water_candidate",
+      "surface_native": 62.41474151611328,
+      "depth_native": -0.41793456051016165,
+      "source": "water"
+    },
+    "candidate_blockage_ids": [
+      "nonterrain-18"
+    ],
+    "vegetation_within_radius": [
+      {
+        "id": "vegetation-983",
+        "kind": "reed",
+        "distance_native_units": 15.382995951649855,
+        "source": "vegetation_def_bleak"
+      },
+      {
+        "id": "vegetation-986",
+        "kind": "reed",
+        "distance_native_units": 13.584588801020226,
+        "source": "vegetation_def_bleak"
+      },
+      {
+        "id": "vegetation-987",
+        "kind": "reed",
+        "distance_native_units": 12.940253849805417,
+        "source": "vegetation_def_bleak"
+      },
+      {
+        "id": "vegetation-990",
+        "kind": "reed",
+        "distance_native_units": 18.753759724450422,
+        "source": "vegetation_def_bleak"
+      },
+      {
+        "id": "vegetation-992",
+        "kind": "reed",
+        "distance_native_units": 18.554260436915545,
+        "source": "vegetation_def_bleak"
+      },
+      {
+        "id": "vegetation-1252",
+        "kind": "reed",
+        "distance_native_units": 11.66934662681993,
+        "source": "vegetation_def_bleak"
+      },
+      {
+        "id": "vegetation-1255",
+        "kind": "reed",
+        "distance_native_units": 13.448456530171374,
+        "source": "vegetation_def_bleak"
+      }
+    ],
+    "vegetation_search_truncated_by_crop": false,
+    "interpretation": "Nearby placements do not define forest coverage; missing blockage matches do not establish passability."
+  },
+  "central_region": {
+    "dataset": "cold-mires-hypothesis-v1",
+    "coordinate_frame": "native_scene_xz_provisional",
+    "world_alignment_verified": false,
+    "passability": "unknown",
+    "concealment": "unknown",
+    "projectile_obstruction": "unknown",
+    "provenance": "manifest.json#sources",
+    "bounds_xz_half_open": [
+      1400.0,
+      1700.0,
+      1900.0,
+      2200.0
+    ],
+    "sample_count": 62500,
+    "ground_native_range": [
+      61.31570130058108,
+      75.96997219535936
+    ],
+    "water_sample_counts": {
+      "coverage_unknown": 0,
+      "no_exposed_water_candidate": 43718,
+      "shoreline_uncertain": 656,
+      "shallow_candidate": 16418,
+      "shallow_deep_boundary_uncertain": 319,
+      "deep_candidate": 1389
+    },
+    "candidate_blockage_ids_intersecting_closed_box": [
+      "nonterrain-1",
+      "nonterrain-2",
+      "nonterrain-5",
+      "nonterrain-18",
+      "nonterrain-21",
+      "nonterrain-26",
+      "nonterrain-27",
+      "nonterrain-29"
+    ],
+    "samples_in_candidate_blockages": 2474,
+    "water_by_blockage_sample_counts": {
+      "coverage_unknown": 0,
+      "no_exposed_water_candidate": 2175,
+      "shoreline_uncertain": 22,
+      "shallow_candidate": 277,
+      "shallow_deep_boundary_uncertain": 0,
+      "deep_candidate": 0
+    },
+    "vegetation_counts": {
+      "spruce": 379,
+      "reed": 125,
+      "other": 8
+    },
+    "vegetation_by_water_sample_counts": {
+      "spruce / no_exposed_water_candidate": 379,
+      "other / no_exposed_water_candidate": 8,
+      "reed / no_exposed_water_candidate": 38,
+      "reed / shallow_candidate": 74,
+      "reed / deep_candidate": 6,
+      "reed / shoreline_uncertain": 7
+    },
+    "vegetation_points_in_candidate_blockages": {
+      "spruce": 1,
+      "reed": 10,
+      "other": 0
+    },
+    "interpretation": "Counts refer to grid sample locations and placement points, not measured forest area or navigable area."
+  },
+  "whole_crop": {
+    "dataset": "cold-mires-hypothesis-v1",
+    "coordinate_frame": "native_scene_xz_provisional",
+    "world_alignment_verified": false,
+    "passability": "unknown",
+    "concealment": "unknown",
+    "projectile_obstruction": "unknown",
+    "provenance": "manifest.json#sources",
+    "bounds_xz_half_open": [
+      1088.0,
+      1536.0,
+      2048.0,
+      2560.0
+    ],
+    "sample_count": 245760,
+    "ground_native_range": [
+      58.134472644026204,
+      152.1869087586534
+    ],
+    "water_sample_counts": {
+      "coverage_unknown": 41596,
+      "no_exposed_water_candidate": 142004,
+      "shoreline_uncertain": 2391,
+      "shallow_candidate": 57389,
+      "shallow_deep_boundary_uncertain": 550,
+      "deep_candidate": 1830
+    },
+    "candidate_blockage_ids_intersecting_closed_box": [
+      "nonterrain-1",
+      "nonterrain-2",
+      "nonterrain-3",
+      "nonterrain-4",
+      "nonterrain-5",
+      "nonterrain-6",
+      "nonterrain-7",
+      "nonterrain-8",
+      "nonterrain-9",
+      "nonterrain-17",
+      "nonterrain-18",
+      "nonterrain-21",
+      "nonterrain-22",
+      "nonterrain-24",
+      "nonterrain-25",
+      "nonterrain-26",
+      "nonterrain-27",
+      "nonterrain-28",
+      "nonterrain-29"
+    ],
+    "samples_in_candidate_blockages": 30346,
+    "water_by_blockage_sample_counts": {
+      "coverage_unknown": 10993,
+      "no_exposed_water_candidate": 18799,
+      "shoreline_uncertain": 68,
+      "shallow_candidate": 486,
+      "shallow_deep_boundary_uncertain": 0,
+      "deep_candidate": 0
+    },
+    "vegetation_counts": {
+      "spruce": 627,
+      "reed": 602,
+      "other": 76
+    },
+    "vegetation_by_water_sample_counts": {
+      "other / no_exposed_water_candidate": 76,
+      "spruce / no_exposed_water_candidate": 626,
+      "spruce / shallow_candidate": 1,
+      "reed / no_exposed_water_candidate": 117,
+      "reed / coverage_unknown": 62,
+      "reed / shallow_candidate": 396,
+      "reed / shoreline_uncertain": 19,
+      "reed / deep_candidate": 7,
+      "reed / shallow_deep_boundary_uncertain": 1
+    },
+    "vegetation_points_in_candidate_blockages": {
+      "spruce": 7,
+      "reed": 23,
+      "other": 1
+    },
+    "interpretation": "Counts refer to grid sample locations and placement points, not measured forest area or navigable area."
+  }
+}

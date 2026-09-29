@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "dataset_id": "cold-mires-hypothesis-v1",
+  "map_key": "chs_wastes_coast_a_01",
+  "map_label": "Cold Mires – Chaos Coast",
+  "catchment": "catchment_01",
+  "tile": "tile_11",
+  "status": "exploratory_hypothesis_not_runtime_verified",
+  "game_build": {
+    "patch": "9.0.1",
+    "steam_build": "25546563"
+  },
+  "coordinates": {
+    "frame": "native_scene_xz_provisional",
+    "bounds_xz_half_open": [
+      1088,
+      1536,
+      2048,
+      2560
+    ],
+    "row_axis": "positive Z",
+    "column_axis": "positive X",
+    "array_shape": [
+      512,
+      480
+    ],
+    "sample_origin_xz": [
+      1088,
+      1536
+    ],
+    "sample_spacing_xz": [
+      2,
+      2
+    ],
+    "source_raster_crop_rows_half_open": [
+      896,
+      1408
+    ],
+    "source_raster_crop_columns_half_open": [
+      672,
+      1152
+    ],
+    "source_index_rule": "column=X/2+128; row=Z/2+128",
+    "point_sampling": "floor to lower grid sample; no interpolation; maxima excluded",
+    "units": "native scene units; metres unverified",
+    "world_alignment_verified": false
+  },
+  "rasters": {
+    "file": "rasters.npz",
+    "arrays": [
+      "ground",
+      "water",
+      "raw_ground",
+      "raw_water"
+    ],
+    "resolution": "full source crop, no decimation",
+    "ground_conversion": {
+      "formula": "min + raw_u16/65535 * (max-min)",
+      "min": -68.49610137939453,
+      "max": 896.697509765625
+    },
+    "water_conversion": {
+      "formula": "min + raw_u16/65535 * (max-min)",
+      "min": -1000.0,
+      "max": 62.41474151611328
+    }
+  },
+  "water_classifier": {
+    "parameters": {
+      "threshold": 0.5,
+      "uncertainty": 0.015469660125590394
+    },
+    "status": "conditional_depth_classes",
+    "raw_zero": "coverage_unknown",
+    "source_guidance": "https://wiki.totalwar.com/w/TWWAKT_Making_a_Lake",
+    "assumptions": [
+      "height conversion correct",
+      "native height unit equals metre",
+      "historical cutoff applies to current build"
+    ],
+    "uncertainty_scope": "quantization band only; does not bound coordinate/calibration/model error"
+  },
+  "vegetation": {
+    "selection": "def_bleak leading candidate, engine selection unverified",
+    "scope": "1305 placements with origins inside crop; neighbors outside crop not included",
+    "kind_rule": "model path name; no canopy radius or forest coverage inferred",
+    "alternative_emp_highlands": "not combined"
+  },
+  "blockages": {
+    "scope": "32 full base-layer non-terrain polygons; 19 intersect crop; 43 terrain-no-go outlines outside crop",
+    "reader": "699004-byte base BMD prefix roundtrips exactly; 337927-byte suffix not decoded by prefix reader",
+    "semantics": "candidate blockages; field-to-engine mapping and overrides unverified",
+    "building_origins": "937 direct placement origins inside crop; no collision footprints"
+  },
+  "sources": {
+    "ground": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/tile_height_map.compressed_map",
+      "sha256": "5a4b4b0a7266b829b3d064b9c328bb2561ce0aac5d8592302b63f596a999be91"
+    },
+    "water": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/tile_water_height_map.compressed_map",
+      "sha256": "41042ab7e5f299ce04ce8d9d7bf9d3fbcecf43eaf4094e01e59a5f1f96a2bc33"
+    },
+    "vegetation_def_bleak": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/def_bleak.tree_list.bin",
+      "sha256": "7e91529d982c3e4e98f37a61a83034a4f233d50f14cf75189c7be890aebb1fa6"
+    },
+    "base_bmd": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_data.bin",
+      "sha256": "d98d5e31cf8d12e764822a9aee5cbf57e580ebb488d83cdb9f9316fcb441d259"
+    },
+    "nogo_bmd": {
+      "path": "terrain/tiles/battle/chs_wastes/chs_wastes_coast_a/tile_11/bmd_nogo_data.bin",
+      "sha256": "1dcacd8ce5e06a561a845975e3785358846886a2f964843bc609291de34f0a89"
+    }
+  },
+  "verification": {
+    "binary_evidence": "prior source decodes roundtrip exactly; bounded BMD prefix separately roundtrips",
+    "runtime_passability": "unknown",
+    "runtime_concealment": "unknown",
+    "runtime_projectile_collision": "unknown"
+  },
+  "limitations": [
+    "Not a navigation mesh or route planner",
+    "No inferred impassability from water or slope",
+    "No forest mask; tree/reed positions are placements only",
+    "No unseen prefab or alternative procedural composition",
+    "Queries outside crop rejected; nearby vegetation search is truncated at crop boundary",
+    "map.png is a decimated illustration; rasters.npz is authoritative for queries"
+  ],
+  "issue": "https://github.com/OwenTanzer/computational-total-war/issues/39",
+  "data_sha256": {
+    "rasters.npz": "9c41035e4502ab2df204fa237546dc5aa5144c8ab8c0e4e79e783b1544c7a27f",
+    "features.json": "465b3aedd81d718f2ceb4ecdb364701a5bbd82410b0269e1e298d6267253a5d6"
+  },
+  "build_machinery": "scripts/cold_mires/build.py"
+}

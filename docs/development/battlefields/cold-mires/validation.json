@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "test_count": 11,
+  "tests": [
+    "scripts/cold_mires/test_map.py",
+    "scripts/cold_mires/test_rebuild.py"
+  ],
+  "source_rebuild": "All four full-resolution arrays and all vector feature objects match the previously delivered v1 hypothesis exactly",
+  "checks": [
+    "Pinned-source offline rebuild",
+    "Layer query count reconciliation",
+    "Calibration of raw samples",
+    "Boundary and concavity behavior",
+    "Unknown coverage preserved",
+    "Empty sample regions",
+    "Source and dataset corruption rejected",
+    "Tree binary roundtrip and malformed input rejection",
+    "Both observed packed-raster padding forms"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "render": "Generated from committed dataset using scripts/cold_mires/render.py; inspected visually",
+  "runtime_verified": false,
+  "scope": "Cold Mires only; no full-repository validation claimed"
+}

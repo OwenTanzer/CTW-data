@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "coordinate_frame": "local native scene XZ, provisional; not WGS84/GeoJSON",
+  "raster_file": "dataset/rasters.npz",
+  "raster_shape": [
+    512,
+    480
+  ],
+  "raster_arrays": {
+    "ground": "float64 calibrated native ground",
+    "water": "float64 calibrated native water surface; consult raw sentinel",
+    "raw_ground": "uint16 original ground samples",
+    "raw_water": "uint16 original water samples; zero stays unknown"
+  },
+  "features_file": "dataset/features.json",
+  "feature_collections": {
+    "vegetation": "id, kind, model, xyz[3], opaque_tail_hex; origins inside crop",
+    "blockage_candidates": "id, points_xz[N][2], source, status; full source polygons",
+    "terrain_nogo_outlines": "id, points_xz[N][2], source; outside this crop",
+    "go_outlines": "list of polygons; no override inference",
+    "building_origins": "key, xyz[3]; no collision footprint"
+  },
+  "query_contract": {
+    "point": "query coordinate, chosen sample, elevation, water class/depth, candidate IDs, nearby vegetation, edge-truncation flag",
+    "region": "half-open query bounds, sample counts, ground range, closed-box candidate intersections, vegetation/water/blockage overlaps",
+    "summary": "region query over complete packaged crop",
+    "runtime_fields": "passability, concealment, projectile_obstruction always unknown"
+  },
+  "missingness": "Unknown is not zero, dry or passable; bounds violations fail; empty region samples return null elevation range",
+  "integer_safety": "Python integer-safe source reader; IDs are strings",
+  "source_provenance": "dataset/manifest.json sources keyed by layer, with original game paths and SHA-256"
+}
