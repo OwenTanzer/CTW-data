@@ -32,6 +32,19 @@
     "Use faction guides for mechanics that the normalized datasets deliberately omit."
   ],
   "datasets": {
+    "cold_mires_hypothesis": {
+      "description": "Experimental one-map terrain hypothesis: elevation, conditional water, vegetation points and candidate blockage polygons. Not verified navigation.",
+      "readme": "docs/development/battlefields/cold-mires/README.md",
+      "manifest": "docs/development/battlefields/cold-mires/dataset/manifest.json",
+      "schema": "docs/development/battlefields/cold-mires/schema.json",
+      "validation": "docs/development/battlefields/cold-mires/validation.json",
+      "query": "scripts/cold_mires/query_map.py",
+      "build": "scripts/cold_mires/build.py",
+      "inspection_map": "docs/development/battlefields/cold-mires/dataset/map.png",
+      "preferred_access": "Use point/region/summary queries; carry coordinate, selection and runtime uncertainty. Read EXTRACTION.md to rebuild from pinned assets.",
+      "snapshot": {"patch": "9.0.1", "steam_build_id": 25546563},
+      "status": "development_hypothesis_runtime_unverified"
+    },
     "units": {
       "description": "Unit statistics and relational combat lookups for 25 race rosters (3,181 roster rows). Culture-qualified ability links are conditional.",
       "readme": "data/unit_stats/README.md",

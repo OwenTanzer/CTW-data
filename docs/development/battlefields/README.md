@@ -1,5 +1,9 @@
 # Battlefield implementation checkpoint — issue #9
 
+For the readable Cold Mires hypothesis and its source-to-map pipeline, start at
+[cold-mires/README.md](cold-mires/README.md). This is the scoped follow-up to the
+closed, superseded PR #38; it does not require that PR's collection to be merged.
+
 This is development evidence, **not a production battlefield dataset**. Start here
 instead of reading the full path inventories. Nothing here closes #9 or certifies
 a map ready for controlled testing. No production data has been changed.

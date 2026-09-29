@@ -111,3 +111,11 @@ Battlefield native height samples now have an experimental exact-roundtrip
 decoder. Its mosaic and prop-correlation alignment are conditional evidence,
 not verified world coordinates. Preserve NaN/coverage-mask unknowns; do not
 apply opaque tile anchor fields or infer terrain mechanics from sample heights.
+
+For the Cold Mires one-map hypothesis (#39), read
+`docs/development/battlefields/cold-mires/README.md`, its schema and validation,
+then query `scripts/cold_mires/query_map.py`. Its committed dataset and inspection
+map are reproducible from five hash-pinned sources with `scripts/cold_mires/build.py`.
+This scoped 9.0.1 development snapshot is not production navigation: coordinate
+alignment, forest semantics, collision footprints and runtime passability remain
+unverified. Do not turn absent candidate hits or unknown water into passable ground.
