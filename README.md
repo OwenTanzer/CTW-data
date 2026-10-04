@@ -1,98 +1,91 @@
-# Computational Total War
+# CTW-data
 
-This repository is a machine-readable context source for AI agents assisting with Total War: Warhammer III. It contains source-backed datasets, qualitative mechanic guides, and the scripts used to rebuild and validate them. Production data is under `data/`; `work/` is scratch space and is not authoritative.
+Source-backed, machine-readable reference for **Total War: WARHAMMER III**.
+This repository owns game records, identities, provenance, constraints and coverage.
+[CTW-analysis](https://github.com/OwenTanzer/CTW-analysis) owns research and experimental
+interpretation. [CTW-adviser](https://github.com/OwenTanzer/CTW-adviser) owns derived
+serving artifacts, client tools and the planned operational matchup model.
+Read the [division of labor](docs/architecture/repository-boundaries.md).
 
-Agents and retrieval pipelines should begin with [`context_catalog.json`](context_catalog.json). It identifies the authoritative entry point, schema, index, validation report, and efficient loading strategy for each dataset. [`AGENTS.md`](AGENTS.md) defines evidence and retrieval rules for agentic use.
+## Choose a route
 
-This is an unofficial research project and is not affiliated with Creative Assembly or SEGA. See [NOTICE.md](NOTICE.md) for third-party content and trademark information.
+| Task | Start here |
+| --- | --- |
+| Answer a game-data question | [Catalog](context_catalog.json), then the selected owner's README, manifest/schema and audit |
+| Implement a source/schema/retrieval change | [Documentation map](docs/README.md), [connections](docs/dataset-connections.md), [development inventory](docs/development-state.md), then current issue/PR scope |
+| Rebuild or validate | [Pipeline guide](scripts/README.md) and [contribution process](CONTRIBUTING.md) |
+| Evaluate the proposed organization | [Diagnosis and redesign](docs/architecture/restructuring-proposal.md), [catalog v2 migration](docs/architecture/catalog-v2.md), [verification](docs/architecture/verification.md) |
 
-## Current scope
+[AGENTS.md](AGENTS.md) supplies retrieval and evidence rules. Ordinary fact lookup
+must not treat development hypotheses, source-only branches or unmerged consumer
+PRs as production truth.
 
-- Game: Total War: Warhammer III
-- Patch: 9.0
-- Steam build: 25507028
-- Races: all 25 playable race rosters in the patch 9.0 source snapshot
-- Unit data: 25 race CSVs containing 3,181 race-roster rows
-- Skill trees: 550 character files containing 575 conditional node sets
-- Technology trees: 109 faction files; counts and interpreted selector boundaries are recorded in the technology manifest
-- Economy: 109 playable-faction CSVs containing the standardized building catalog
-- Campaign atlas: one Immortal Empires GeoPackage containing 644 regions, 215 provinces, 109 playable starts, initial configured victory objectives with explicit lord variants and runtime boundaries, topology, and battle-map relations
-- Faction mechanics: 24 historical 8.1.1 race guides, with explicit 9.0 compatibility notes; bespoke mechanics are not all reaudited
+## Snapshot and coverage
 
-Faction-specific military groups remain inside their parent race dataset. Normalized unit rows carry structured scope, exclusivity, and availability counts; the typed roster lookup preserves exact military-group memberships and faction permissions without storing lists in cells or creating separate faction CSVs.
+Base: **9.0 / Steam build 25507028**, ultra unit scale. Magic/shared ability/effect
+additions retain **9.0.1 / 25546563** extraction evidence with checks against reused
+9.0 inputs. Historical faction guides retain **8.1.1** scope. These are per-owner
+qualifications, not a global patch upgrade. Owner manifests and coverage reports
+are authoritative for the counts and limitations below.
 
-## Directory layout
+| Owner / retrieval layer | Purpose |
+| --- | --- |
+| [Units](data/unit_stats/README.md) | 25 race rosters, 3,181 roster rows; components, weapons, projectile/explosion and qualified availability relations |
+| [Shared abilities](data/unit_stats/abilities/README.md) | Native casting, phase, lifecycle and payload companions used across units and magic |
+| [Effect semantics](data/effect_semantics/README.md) | Bounded native bindings, stat definitions and scopes; no complete campaign modifier resolver |
+| [Skills](data/skill_trees/README.md) | 550 character files, 575 conditional node sets |
+| [Technologies](data/technology_trees/README.md) | 109 faction files with variant selectors and bounded scripted evidence |
+| [Economy](data/economy/README.md) | 109 faction building catalogs; recruitment topology remains incomplete |
+| [Campaign atlas](data/campaign_map/README.md) | 644 regions, 215 provinces, 109 primary faction army starts, objectives and battle-map relations |
+| [Magic](data/magic/README.md) | Partial indexed character-to-ability discovery with separate structural, definition and runtime coverage |
+| [Faction guides](data/faction_guides/README.md) | 24 historical qualitative guides; read [compatibility notes](data/faction_guides/COMPATIBILITY_9.0.md) |
 
-- `data/unit_stats/` — normalized unit statistics, weapon and projectile lookups, raw source exports, manifests, schema documentation, and audit reports.
-- `data/skill_trees/` — one self-contained CSV per character subtype, plus the character index, schema inventory, raw source exports, manifests, and audit reports.
-- `data/technology_trees/` — authoritative technology sources and self-contained faction trees, including explicit faction overrides, structured scripted requirements/rewards and bounded evidence.
-- `data/economy/` — one narrow building-economy CSV per playable faction, plus the faction index, schema inventory, raw source exports, manifest, and audit reports.
-- `data/campaign_map/` — the compact Immortal Empires GeoPackage, documentation, and validation reports.
-- `scripts/` — repeatable extraction, build, and validation programs for all production datasets.
-- `work/` — downloaded tooling, dependency caches, and disposable intermediate builds. Nothing here should be treated as production data.
-- `relations.tex` — project notes on combat-stat relationships and interpretation.
-- `context_catalog.json` — compact machine-readable routing metadata for agents and retrieval systems.
-- `AGENTS.md` — retrieval order, evidence rules, and dataset maintenance instructions for agents.
+[Cold Mires](docs/development/battlefields/cold-mires/README.md) is an opt-in
+terrain hypothesis. Reproducibility does not certify alignment, water behavior,
+forest cover or passability. Battlefield extraction is separate from production
+spatial truth.
 
-Each production dataset has its own `README.md`. Start with:
+## Physical layout
 
-- `data/unit_stats/README.md`
-- `data/skill_trees/README.md`
-- `data/technology_trees/README.md`
-- `data/economy/README.md`
-- `data/campaign_map/README.md`
+- `data/`: existing owners, generated records, schemas/manifests, retained source
+  exports and qualified historical material. Paths stay stable.
+- `docs/architecture/`: boundaries, redesign, migration and verification.
+- `docs/dataset_connections.json` and `docs/development_inventory.json`: checked
+  contracts and dated evidence pointers, with generated readable views.
+- `docs/development/`: retained extraction, migration and hypothesis evidence;
+  some production validators link their scoped reports here.
+- `scripts/`: existing entry points, grouped in the [pipeline guide](scripts/README.md).
+- `work/`: ignored candidates, caches, tooling and disposable outputs.
+- `relations.tex`: historical combat research retained for compatibility; future
+  research/model work follows the three-repository boundary.
 
-## Validation
+## Validate and rebuild
 
-The scripts require Node.js 24 or newer. They use only Node.js built-in modules; no package installation is required for validation.
+Use **Node.js 24+ and Python 3.11+**. Standard validation uses built-in modules;
+optional Cold Mires rendering/rebuild tests need its NumPy/Matplotlib dependencies.
+Fresh extraction requires the verified game installation and RPFM (Rusted PackFile
+Manager); offline checks do not.
 
-Text fingerprints accept an exact LF or CRLF representation with the recorded
-SHA-256 and byte count, so Git's checkout conversion works on Windows and Linux.
-Content changes still fail validation. Technology artifacts retain exact source
-and builder bytes through `.gitattributes`. Run `npm run test:validation-text`
-for the newline/content mutation checks and `npm run verify:technology-extraction`
-on the verified game installation to compare a fresh authoritative extraction.
-
-Run the complete validation suite from the repository root:
-
-```powershell
+```bash
+npm run validate:architecture
+npm run test:architecture
 npm run validate
 ```
 
-Or run individual validators from the repository root:
+`validate` is the aggregate dataset gate plus architecture validation, not every
+regression test. See [all validation groups](scripts/README.md). Some legacy
+validators write audit reports to the validated dataset directory. Use an isolated
+checkout and exclude incidental timestamp/environment changes from unrelated PRs.
+Architecture validation is read-only.
 
-```powershell
-node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports data/unit_stats
-node scripts/validate-skill-trees.mjs data/skill_trees/source_exports data/skill_trees
-node scripts/validate-technology-trees.mjs data/technology_trees/source_exports data/technology_trees
-node scripts/validate-economy-dataset.mjs data/economy/source_exports data/economy
-node scripts/validate-campaign-atlas.mjs data/campaign_map/campaign_atlas__wh3__9.0.gpkg data/campaign_map
-```
-
-Each validator writes machine-readable and Markdown audit reports into its production dataset directory. A production dataset is ready only when its audit status is `passed` and its error list is empty.
-
-## Rebuilding
-
-The pipelines follow the same three stages:
-
-1. Extract authoritative game tables with the corresponding `extract-*.mjs` script.
-2. Build into a versioned directory under `work/`.
-3. Validate the candidate before replacing anything under `data/`.
-
-Candidate directories under `work/` are disposable after the installed production dataset passes validation. Source exports and production audit reports remain under `data/` and must not be removed as part of candidate cleanup.
-
-Relevant scripts:
-
-- Unit data: `extract-source.mjs`, `build-unit-dataset.mjs`, `validate-unit-dataset.mjs`
-- Skill trees: `extract-skill-source.mjs`, `build-skill-trees.mjs`, `validate-skill-trees.mjs`
-- Technology trees: `extract-technology-source.mjs`, `build-technology-trees.mjs`, `validate-technology-trees.mjs` (plus `npm run test:technologies` for corruption tests)
-- Economy: `extract-economy-source.mjs`, `build-economy-dataset.mjs`, `validate-economy-dataset.mjs`
-- Campaign atlas: `extract-campaign-atlas-source.mjs`, `build-campaign-atlas.mjs`, `validate-campaign-atlas.mjs`
-
-Do not edit generated CSVs by hand. Stable database keys are the canonical identifiers; localized English labels are descriptive metadata and may be absent for hidden or scripted game records.
+Extract a verified source snapshot, build a fresh `work/` candidate, then run the
+owner's validators before installation. Never hand-edit generated data. Update
+generated README templates/builders when appropriate. Text fingerprints accept
+only recorded LF/CRLF forms; technology artifacts retain exact bytes through
+`.gitattributes`.
 
 ## License
 
-Project source code and project-authored documentation are available under the [MIT License](LICENSE). Third-party game content and derived datasets are not relicensed; see [NOTICE.md](NOTICE.md).
-
-The 9.0 migration evidence and changes are in `docs/development/update-9.0/`. The limited refresh covers existing database schemas. New magic-effect integration and expanded campaign systems remain separate work. Read guide compatibility notes before using historical prose.
+Unofficial research project, unaffiliated with Creative Assembly or SEGA. Project
+code and authored documentation use the [MIT License](LICENSE). Third-party
+content and derived game datasets are not relicensed; see [NOTICE.md](NOTICE.md).

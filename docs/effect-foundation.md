@@ -1,5 +1,13 @@
 # Effect semantics foundation: extraction increment
 
+**Reading scope:** the extraction narrative below is historical 8.1.1 evidence,
+not a statement that current main lacks all normalized effect data. Bounded
+9.0.1 bindings/scopes now live in `data/effect_semantics/`; shared ability records
+live in `data/unit_stats/abilities/`. The preserved 220-table source-only branch
+is distinct and remains unmerged. Core magic #14 completed via #30; broader gaps
+remain #31 and #7. Start with the [current evidence inventory](development-state.md)
+and [ownership contract](architecture/repository-boundaries.md).
+
 Tracks [issue #7](https://github.com/OwenTanzer/computational-total-war/issues/7).
 This increment supplies executable source discovery, a read-only extractor and
 source-integrity validation. **It does not install a new production dataset or
@@ -100,7 +108,7 @@ foreign-key semantics, native experience formulas, arithmetic order or legal
 campaign builds. The live server handshake/extraction was exercised successfully
 on 2026-09-19; unexpected server response shapes still fail closed.
 
-## Next normalization gate
+## Historical normalization gate (8.1.1 extraction)
 
 After live extraction passes, inspect the actual binding and progression schemas
 and their values. Implement typed effect/bonus/target joins and native rank
@@ -134,7 +142,8 @@ binding/scope relations are under `data/effect_semantics/`; generic ability,
 casting, phase and lifecycle records are under `data/unit_stats/abilities/`.
 Their source registry identifies reused 9.0 inputs and newly promoted evidence.
 The prior 220-table 8.1.1 candidate remains historical development evidence;
-it has not been relabelled or merged wholesale. Neither #7 nor #14 is complete.
+it has not been relabelled or merged wholesale. The completed bounded #14 scope
+does not complete #7 or the broader #31 gaps.
 
 ### Magic PR #30 review pass
 

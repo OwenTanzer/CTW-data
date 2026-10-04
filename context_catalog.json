@@ -1,7 +1,7 @@
 {
-  "catalog_schema_version": 1,
-  "project": "Computational Total War",
-  "purpose": "Machine-readable context for AI agents answering questions and performing analysis about Total War: WARHAMMER III.",
+  "catalog_schema_version": 2,
+  "project": "CTW-data",
+  "purpose": "Source-backed game reference. Production lookup and development evidence use separate routes; analysis and serving belong to downstream repositories.",
   "snapshot": {
     "game": "warhammer_3",
     "patch": "9.0",
@@ -32,19 +32,6 @@
     "Use faction guides for mechanics that the normalized datasets deliberately omit."
   ],
   "datasets": {
-    "cold_mires_hypothesis": {
-      "description": "Experimental one-map terrain hypothesis: elevation, conditional water, vegetation points and candidate blockage polygons. Not verified navigation.",
-      "readme": "docs/development/battlefields/cold-mires/README.md",
-      "manifest": "docs/development/battlefields/cold-mires/dataset/manifest.json",
-      "schema": "docs/development/battlefields/cold-mires/schema.json",
-      "validation": "docs/development/battlefields/cold-mires/validation.json",
-      "query": "scripts/cold_mires/query_map.py",
-      "build": "scripts/cold_mires/build.py",
-      "inspection_map": "docs/development/battlefields/cold-mires/dataset/map.png",
-      "preferred_access": "Use point/region/summary queries; carry coordinate, selection and runtime uncertainty. Read EXTRACTION.md to rebuild from pinned assets.",
-      "snapshot": {"patch": "9.0.1", "steam_build_id": 25546563},
-      "status": "development_hypothesis_runtime_unverified"
-    },
     "units": {
       "description": "Unit statistics and relational combat lookups for 25 race rosters (3,181 roster rows). Culture-qualified ability links are conditional.",
       "readme": "data/unit_stats/README.md",
@@ -54,7 +41,9 @@
       "primary_records": "data/unit_stats/normalized/*.csv",
       "lookups": "data/unit_stats/lookups/*.csv",
       "source_manifest": "data/unit_stats/source_exports/source_manifest.json",
-      "preferred_access": "Select the race CSV, then join typed lookup rows by stable keys."
+      "preferred_access": "Select the race CSV, then join typed lookup rows by stable keys.",
+      "lifecycle": "production",
+      "role": "retrieval_dataset"
     },
     "skill_trees": {
       "description": "Skill trees for 550 distinct character subtypes, including conditional node sets, prerequisites, locks and effects; two reviewed pairs share source tree structures.",
@@ -65,7 +54,9 @@
       "index": "data/skill_trees/character_index__wh3__9.0.csv",
       "primary_records": "data/skill_trees/characters/<race_slug>/<character>.csv",
       "source_manifest": "data/skill_trees/source_exports/source_manifest.json",
-      "preferred_access": "Use the character index to locate one character file, then filter by record_type and node_set_key."
+      "preferred_access": "Use the character index to locate one character file, then filter by record_type and node_set_key.",
+      "lifecycle": "production",
+      "role": "retrieval_dataset"
     },
     "economy": {
       "description": "Standardized building and ordinary economy facts for 109 playable faction keys.",
@@ -76,7 +67,9 @@
       "index": "data/economy/faction_index__wh3__9.0.csv",
       "primary_records": "data/economy/factions/<race_slug>/<faction_key>.csv",
       "source_manifest": "data/economy/source_exports/source_manifest.json",
-      "preferred_access": "Use the faction index to locate one faction file; consult faction guides for deliberately omitted bespoke mechanics."
+      "preferred_access": "Use the faction index to locate one faction file; consult faction guides for deliberately omitted bespoke mechanics.",
+      "lifecycle": "production",
+      "role": "retrieval_dataset"
     },
     "campaign_map": {
       "description": "Queryable Immortal Empires geography, starts, objectives, topology, and battle-map relationships; atlas schema 1.3 preserves all 1,136 map/group/catchment/tile variants.",
@@ -100,7 +93,9 @@
         "source_manifest": "data/campaign_map/objective_source_exports/source_manifest.json",
         "primary_view": "objective_reference",
         "scope": "Initial single-player configured objectives. Filter variant_key (Vlad/Isabella differ), then read objective_boundaries for runtime dependencies; not complete effective runtime objectives."
-      }
+      },
+      "lifecycle": "production",
+      "role": "retrieval_dataset"
     },
     "faction_guides": {
       "description": "Qualitative, source-backed campaign mechanics not represented safely in the normalized catalogs.",
@@ -119,7 +114,9 @@
         "patch": "8.1.1",
         "steam_build_id": 24237342
       },
-      "compatibility_notes": "data/faction_guides/COMPATIBILITY_9.0.md"
+      "compatibility_notes": "data/faction_guides/COMPATIBILITY_9.0.md",
+      "lifecycle": "production",
+      "role": "historical_guides"
     },
     "technology_trees": {
       "description": "109 faction technology files with current selectors, nodes, effects and bounded scripted evidence. Nagash has an explicitly empty ordinary technology selector; Black Pyramid progression is outside normalization.",
@@ -134,7 +131,9 @@
       "preferred_access": "Filter one faction file by record_type and variant_key. Faction-specific overrides replace generic fallbacks; the Changeling has only ROC and IE variants. Typed script requirements/rewards preserve scope, triggers, targets and thresholds. Read the explicit remaining lock-site limitations in script_audit.json.",
       "node_set_precedence": "data/technology_trees/source_exports/node_set_precedence.json",
       "script_mechanics": "data/technology_trees/source_exports/script_mechanics.csv",
-      "script_evidence": "data/technology_trees/source_exports/script_evidence.json"
+      "script_evidence": "data/technology_trees/source_exports/script_evidence.json",
+      "lifecycle": "production",
+      "role": "retrieval_dataset"
     },
     "magic": {
       "description": "Partial character-to-spell retrieval with normalized shared payload graphs, conditional skill bindings, unit/form access evidence and separate structural/runtime coverage; 9.0.1 extraction joins unchanged 9.0 owners.",
@@ -155,13 +154,83 @@
         "base_patch": "9.0",
         "extraction_patch": "9.0.1",
         "steam_build_id": 25546563
+      },
+      "lifecycle": "production",
+      "role": "retrieval_dataset"
+    },
+    "shared_abilities": {
+      "description": "Native shared ability, casting, phase, lifecycle and payload companion definitions; bounded 9.0.1 evidence.",
+      "lifecycle": "production",
+      "role": "shared_owner",
+      "readme": "data/unit_stats/abilities/README.md",
+      "manifest": "data/unit_stats/abilities/dataset_manifest.json",
+      "schema": "data/unit_stats/abilities/schema_inventory.json",
+      "validation": "docs/development/magic/validation.json",
+      "source_registry": "data/magic/source_registry.json",
+      "preferred_access": "Use the selected unit or magic retrieval route first; inspect this owner for exact native relations and provenance. Preserve partial coverage and unresolved runtime behavior.",
+      "snapshot": {
+        "base_patch": "9.0",
+        "extraction_patch": "9.0.1",
+        "steam_build_id": 25546563
+      }
+    },
+    "effect_semantics": {
+      "description": "Native effect bindings, stat and scope/context definitions; partial semantics, not a campaign modifier resolver.",
+      "lifecycle": "production",
+      "role": "shared_owner",
+      "readme": "data/effect_semantics/README.md",
+      "manifest": "data/effect_semantics/dataset_manifest.json",
+      "schema": "data/effect_semantics/schema_inventory.json",
+      "validation": "docs/development/magic/validation.json",
+      "source_registry": "data/magic/source_registry.json",
+      "preferred_access": "Use the selected unit or magic retrieval route first; inspect this owner for exact native relations and provenance. Preserve partial coverage and unresolved runtime behavior.",
+      "snapshot": {
+        "base_patch": "9.0",
+        "extraction_patch": "9.0.1",
+        "steam_build_id": 25546563
       }
     }
   },
   "out_of_scope": [
     "Live game state and save files",
-    "Changes after patch 9.0 / Steam build 25507028",
+    "Changes outside each owner's declared snapshot; scoped 9.0.1 additions and historical 8.1.1 guides are explicitly identified, not a global migration.",
     "Mods unless explicitly represented in a future dataset",
     "Runtime effects that are not exposed by decoded source relations or documented guides"
+  ],
+  "development_datasets": {
+    "cold_mires_hypothesis": {
+      "description": "Experimental one-map terrain hypothesis: elevation, conditional water, vegetation points and candidate blockage polygons. Not verified navigation.",
+      "readme": "docs/development/battlefields/cold-mires/README.md",
+      "manifest": "docs/development/battlefields/cold-mires/dataset/manifest.json",
+      "schema": "docs/development/battlefields/cold-mires/schema.json",
+      "validation": "docs/development/battlefields/cold-mires/validation.json",
+      "query": "scripts/cold_mires/query_map.py",
+      "build": "scripts/cold_mires/build.py",
+      "inspection_map": "docs/development/battlefields/cold-mires/dataset/map.png",
+      "preferred_access": "Use point/region/summary queries; carry coordinate, selection and runtime uncertainty. Read EXTRACTION.md to rebuild from pinned assets.",
+      "snapshot": {
+        "patch": "9.0.1",
+        "steam_build_id": 25546563
+      },
+      "status": "development_hypothesis_runtime_unverified"
+    }
+  },
+  "maintenance": {
+    "readme": "docs/README.md",
+    "architecture": "docs/architecture/repository-boundaries.md",
+    "connections": "docs/dataset_connections.json",
+    "connection_guide": "docs/dataset-connections.md",
+    "development_inventory": "docs/development_inventory.json",
+    "development_guide": "docs/development-state.md",
+    "change_process": "CONTRIBUTING.md",
+    "pipeline_guide": "scripts/README.md",
+    "proposal": "docs/architecture/restructuring-proposal.md",
+    "catalog_migration": "docs/architecture/catalog-v2.md"
+  },
+  "maintenance_loading_strategy": [
+    "Read repository boundaries and connection contracts before proposing a new owner or extraction.",
+    "Consult the dated development inventory; refresh relevant issue/PR state and immutable refs before implementation.",
+    "Inspect targeted owner manifests, schemas and audits; preserve generated-data paths and downstream pins.",
+    "Update affected contracts, documentation and validation in the same PR."
   ]
 }

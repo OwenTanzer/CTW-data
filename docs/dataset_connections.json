@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "audited_data_commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+  "scope": "Selected connection contracts, not an exhaustive foreign-key catalog. Owner schemas and manifests remain authoritative. Structural checks do not certify runtime semantics.",
+  "endpoints": {
+    "unit_profiles": {
+      "owner": "units",
+      "path": "data/unit_stats/normalized/*.csv",
+      "format": "csv",
+      "fields": [
+        "unit_key",
+        "source_land_unit_key",
+        "subculture_key"
+      ],
+      "namespace": "main_units.unit / land_units.key; roster qualified"
+    },
+    "unit_components": {
+      "owner": "units",
+      "path": "data/unit_stats/lookups/unit_components__wh3__9.0__ultra.csv",
+      "format": "csv",
+      "fields": [
+        "unit_key",
+        "component_role",
+        "relationship_key",
+        "battle_entity_key"
+      ],
+      "namespace": "main unit / component / battle entity"
+    },
+    "weapon_links": {
+      "owner": "units",
+      "path": "data/unit_stats/lookups/unit_weapon_links__wh3__9.0__ultra.csv",
+      "format": "csv",
+      "fields": [
+        "unit_key",
+        "component_role",
+        "slot",
+        "missile_weapon_key",
+        "projectile_key",
+        "ammunition_pool"
+      ],
+      "namespace": "main unit / weapon / projectile"
+    },
+    "projectiles": {
+      "owner": "units",
+      "path": "data/unit_stats/lookups/projectiles__wh3__9.0.csv",
+      "format": "csv",
+      "fields": [
+        "projectile_key",
+        "explosion_key",
+        "shrapnel_key",
+        "spawned_vortex"
+      ],
+      "namespace": "projectiles.key"
+    },
+    "explosions": {
+      "owner": "units",
+      "path": "data/unit_stats/lookups/explosions__wh3__9.0.csv",
+      "format": "csv",
+      "fields": [
+        "explosion_key",
+        "shrapnel_key",
+        "contact_phase_effect"
+      ],
+      "namespace": "projectiles_explosions.key"
+    },
+    "unit_ability_links": {
+      "owner": "units",
+      "path": "data/unit_stats/lookups/unit_abilities__wh3__9.0__ultra.csv",
+      "format": "csv",
+      "fields": [
+        "unit_key",
+        "ability_key",
+        "culture_key"
+      ],
+      "namespace": "main unit / unit ability / culture"
+    },
+    "ability_definitions": {
+      "owner": "shared_abilities",
+      "path": "data/unit_stats/abilities/tables/ability_definitions.csv",
+      "format": "csv",
+      "fields": [
+        "key",
+        "requires_effect_enabling",
+        "overpower_option"
+      ],
+      "namespace": "native unit_abilities_tables",
+      "schema_inventory": "data/unit_stats/abilities/schema_inventory.json",
+      "schema_table": "unit_abilities_tables"
+    },
+    "ability_phases": {
+      "owner": "shared_abilities",
+      "path": "data/unit_stats/abilities/tables/ability_phase_links.csv",
+      "format": "csv",
+      "fields": [
+        "order",
+        "special_ability",
+        "target_self",
+        "target_friends",
+        "target_enemies",
+        "phase"
+      ],
+      "namespace": "native special_ability_to_special_ability_phase_junctions_tables",
+      "schema_inventory": "data/unit_stats/abilities/schema_inventory.json",
+      "schema_table": "special_ability_to_special_ability_phase_junctions_tables"
+    },
+    "ability_bindings": {
+      "owner": "effect_semantics",
+      "path": "data/effect_semantics/tables/ability_bindings.csv",
+      "format": "csv",
+      "fields": [
+        "effect",
+        "bonus_value_id",
+        "unit_ability"
+      ],
+      "namespace": "native effect_bonus_value_unit_ability_junctions_tables",
+      "schema_inventory": "data/effect_semantics/schema_inventory.json",
+      "schema_table": "effect_bonus_value_unit_ability_junctions_tables"
+    },
+    "skill_effects": {
+      "owner": "skill_trees",
+      "path": "data/skill_trees/characters/*/*.csv",
+      "format": "csv",
+      "fields": [
+        "record_type",
+        "agent_subtype_key",
+        "node_set_key",
+        "skill_key",
+        "skill_level",
+        "effect_key",
+        "effect_scope",
+        "effect_value"
+      ],
+      "namespace": "agent_subtypes.key / character skill / effect"
+    },
+    "technology_effects": {
+      "owner": "technology_trees",
+      "path": "data/technology_trees/factions/*/*.csv",
+      "format": "csv",
+      "fields": [
+        "record_type",
+        "faction_key",
+        "variant_key",
+        "technology_key",
+        "effect_key",
+        "effect_scope",
+        "target_type",
+        "target_key"
+      ],
+      "namespace": "faction / variant / technology / effect; target_type selects namespace"
+    },
+    "buildings": {
+      "owner": "economy",
+      "path": "data/economy/factions/*/*.csv",
+      "format": "csv",
+      "fields": [
+        "faction_key",
+        "campaign_key",
+        "building_key",
+        "required_building_key"
+      ],
+      "namespace": "building_levels.level_name / faction / campaign"
+    },
+    "magic_characters": {
+      "owner": "magic",
+      "path": "data/magic/character_index.csv",
+      "format": "csv",
+      "fields": [
+        "agent_subtype_key",
+        "path",
+        "skill_source_path",
+        "relation_count"
+      ],
+      "namespace": "agent_subtypes.key; paths point to derived index and skill owner"
+    },
+    "battle_rules": {
+      "owner": "campaign_map",
+      "path": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
+      "format": "sqlite",
+      "fields": [
+        "rule_id",
+        "area_key",
+        "battle_group_key",
+        "required_tile_upgrades"
+      ],
+      "namespace": "snapshot-local rule_id / area / group",
+      "table": "battle_selection_rules"
+    },
+    "group_maps": {
+      "owner": "campaign_map",
+      "path": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
+      "format": "sqlite",
+      "fields": [
+        "battle_group_key",
+        "battle_map_key",
+        "catchment_name",
+        "tile_upgrades"
+      ],
+      "namespace": "qualified group/map/catchment/tile relation",
+      "table": "battle_group_maps"
+    },
+    "battle_maps": {
+      "owner": "campaign_map",
+      "path": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
+      "format": "sqlite",
+      "fields": [
+        "battle_map_key",
+        "map_location"
+      ],
+      "namespace": "battle map database key / asset selector",
+      "table": "battle_maps"
+    },
+    "army_starts": {
+      "owner": "campaign_map",
+      "path": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
+      "format": "sqlite",
+      "fields": [
+        "faction_key",
+        "is_primary",
+        "character_id",
+        "world_x",
+        "world_y",
+        "start_region_key"
+      ],
+      "namespace": "faction / snapshot-local character; world coordinates",
+      "table": "faction_army_start_reference"
+    },
+    "partner_overrides": {
+      "owner": "campaign_map",
+      "path": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
+      "format": "sqlite",
+      "fields": [
+        "faction_key",
+        "partner_key",
+        "world_x",
+        "world_y",
+        "start_region_key"
+      ],
+      "namespace": "ordered human faction/partner pair",
+      "table": "campaign_start_partner_overrides"
+    },
+    "capitals": {
+      "owner": "campaign_map",
+      "path": "data/campaign_map/campaign_atlas__wh3__9.0.gpkg",
+      "format": "sqlite",
+      "fields": [
+        "faction_key",
+        "capital_region_key",
+        "centroid_x",
+        "centroid_y"
+      ],
+      "namespace": "faction capital; not army position",
+      "table": "faction_start_reference"
+    }
+  },
+  "connections": [
+    {
+      "id": "skill-effects-to-abilities",
+      "owner": "magic",
+      "status": "partial",
+      "endpoints": [
+        "magic_characters",
+        "skill_effects",
+        "ability_bindings",
+        "ability_definitions"
+      ],
+      "joins": [
+        {
+          "from": "magic_characters",
+          "from_fields": [
+            "agent_subtype_key"
+          ],
+          "to": "skill_effects",
+          "to_fields": [
+            "agent_subtype_key"
+          ]
+        },
+        {
+          "from": "skill_effects",
+          "from_fields": [
+            "effect_key"
+          ],
+          "to": "ability_bindings",
+          "to_fields": [
+            "effect"
+          ]
+        },
+        {
+          "from": "ability_bindings",
+          "from_fields": [
+            "unit_ability"
+          ],
+          "to": "ability_definitions",
+          "to_fields": [
+            "key"
+          ]
+        }
+      ],
+      "cardinality": "One character has many conditional skill/rank effects; an effect can have many typed bindings.",
+      "conditions": "Filter record_type=effect; preserve subtype, node set, rank, effect_scope, value and binding bonus_value_id. Other binding families use their own owner schema. Never add successive ranks or treat group cost modifiers as grants.",
+      "missing_boundary": "Item/trait/script acquisition, build legality and runtime stacking remain incomplete. A missing indexed route does not establish inability to cast.",
+      "example": "python3 scripts/query_magic.py --character 'Mage (High)' --ability wh2_main_spell_high_magic_apotheosis",
+      "evidence": [
+        "data/magic/README.md",
+        "data/magic/coverage.json",
+        "data/magic/input_lock.json",
+        "data/magic/shared_source_comparison.json",
+        "docs/development/magic/validation.json"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/7",
+        "https://github.com/OwenTanzer/CTW-data/issues/14",
+        "https://github.com/OwenTanzer/CTW-data/issues/31"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    },
+    {
+      "id": "technology-effects-to-bindings",
+      "owner": "effect_semantics",
+      "status": "partial",
+      "endpoints": [
+        "technology_effects",
+        "ability_bindings",
+        "ability_definitions"
+      ],
+      "joins": [
+        {
+          "from": "technology_effects",
+          "from_fields": [
+            "effect_key"
+          ],
+          "to": "ability_bindings",
+          "to_fields": [
+            "effect"
+          ]
+        },
+        {
+          "from": "ability_bindings",
+          "from_fields": [
+            "unit_ability"
+          ],
+          "to": "ability_definitions",
+          "to_fields": [
+            "key"
+          ]
+        }
+      ],
+      "cardinality": "Many contextual technology effect occurrences to zero or many native bindings.",
+      "conditions": "Choose faction and variant_key, filter record_type=effect, retain effect_scope and value. A native binding is candidate target evidence, not acquired research or active modifier.",
+      "missing_boundary": "No complete technology-to-effective-stat resolver. Non-ability effects require other bindings; absent binding means unresolved coverage, not no effect.",
+      "example": "Filter the selected technology file to effect rows; left-match effect_key to ability_bindings.effect and retain unmatched effects explicitly. Expand every match; keep other native binding families separate.",
+      "evidence": [
+        "data/technology_trees/README.md",
+        "data/technology_trees/script_audit.json",
+        "data/technology_trees/audit_report.json",
+        "data/effect_semantics/README.md"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/7"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    },
+    {
+      "id": "unit-components-weapons-payloads",
+      "owner": "units",
+      "status": "partial",
+      "endpoints": [
+        "unit_profiles",
+        "unit_components",
+        "weapon_links",
+        "projectiles",
+        "explosions"
+      ],
+      "joins": [
+        {
+          "from": "unit_profiles",
+          "from_fields": [
+            "unit_key"
+          ],
+          "to": "unit_components",
+          "to_fields": [
+            "unit_key"
+          ]
+        },
+        {
+          "from": "unit_profiles",
+          "from_fields": [
+            "unit_key"
+          ],
+          "to": "weapon_links",
+          "to_fields": [
+            "unit_key"
+          ]
+        },
+        {
+          "from": "weapon_links",
+          "from_fields": [
+            "projectile_key"
+          ],
+          "to": "projectiles",
+          "to_fields": [
+            "projectile_key"
+          ]
+        },
+        {
+          "from": "projectiles",
+          "from_fields": [
+            "explosion_key"
+          ],
+          "to": "explosions",
+          "to_fields": [
+            "explosion_key"
+          ]
+        }
+      ],
+      "cardinality": "A main-unit key occurs in multiple rosters; one unit has multiple components/weapon slots; one projectile has an optional primary explosion plus secondary graph edges.",
+      "conditions": "Resolve unit_key before joining; avoid multiplying attacks by duplicate roster rows. Preserve component_role, slot and ammunition_pool. Inline default-projectile columns are a projection, not a second weapon. The example covers the primary chain, not exhaustive payload closure.",
+      "missing_boundary": "Firing arcs, animation/cycle nesting, collision and crew targetability are not all established. Shared graph expansion must retain branch edges and cycles.",
+      "example": "Select one exact unit_key; retain every weapon_links row. Left-join nonblank projectile_key, then explosion_key. Distinguish a blank optional reference from a nonblank unresolved reference; never infer damage per second from reload alone.",
+      "evidence": [
+        "data/unit_stats/README.md",
+        "data/unit_stats/audit_report.json",
+        "data/magic/payload_baseline_comparison.json"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/11",
+        "https://github.com/OwenTanzer/CTW-data/issues/31"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    },
+    {
+      "id": "qualified-unit-abilities",
+      "owner": "shared_abilities",
+      "status": "partial",
+      "endpoints": [
+        "unit_ability_links",
+        "ability_definitions",
+        "ability_phases"
+      ],
+      "joins": [
+        {
+          "from": "unit_ability_links",
+          "from_fields": [
+            "ability_key"
+          ],
+          "to": "ability_definitions",
+          "to_fields": [
+            "key"
+          ]
+        },
+        {
+          "from": "ability_definitions",
+          "from_fields": [
+            "key"
+          ],
+          "to": "ability_phases",
+          "to_fields": [
+            "special_ability"
+          ]
+        }
+      ],
+      "cardinality": "One unit has many culture-qualified abilities; an ability has multiple ordered recipient-qualified phase links.",
+      "conditions": "Keep (unit_key, ability_key, culture_key); * is literal wildcard. Phase identity includes order and all recipient flags, not only ability/phase. Retain requires_effect_enabling.",
+      "missing_boundary": "A link is not proof that its condition is active; runtime timing, stacking and activation remain qualified.",
+      "example": "Filter unit_ability_links by exact unit_key and preserve all cultures. Join ability_key=key; expand phases retaining order/target_self/target_friends/target_enemies. Return missing definitions explicitly.",
+      "evidence": [
+        "data/unit_stats/abilities/schema_inventory.json",
+        "data/unit_stats/abilities/README.md",
+        "docs/development/magic/validation.json"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/7",
+        "https://github.com/OwenTanzer/CTW-data/issues/31"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    },
+    {
+      "id": "land-unit-to-main-unit",
+      "owner": "units",
+      "status": "production",
+      "endpoints": [
+        "unit_profiles"
+      ],
+      "joins": [],
+      "cardinality": "Many main-unit/roster identities can reference one land-unit identity.",
+      "conditions": "source_land_unit_key is a land_units key; unit_key is a main_units key. Multiple forms and roster appearances are not aliases by default.",
+      "missing_boundary": "No campaign availability or mount unlock follows from this mapping. Source-only summoned land units may lack a normalized roster match.",
+      "example": "Filter source_land_unit_key in the selected normalized roster(s), return every distinct unit_key and its roster context. Never equate a summon land-unit key with unit_key.",
+      "evidence": [
+        "data/unit_stats/schema_inventory__v4.csv",
+        "data/unit_stats/audit_report.json",
+        "data/magic/README.md"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/1",
+        "https://github.com/OwenTanzer/CTW-data/issues/31"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    },
+    {
+      "id": "campaign-capability-routes",
+      "owner": "capability_routes",
+      "status": "unresolved",
+      "endpoints": [
+        "buildings",
+        "technology_effects",
+        "unit_profiles"
+      ],
+      "joins": [],
+      "cardinality": "Proposed capability routes are many-to-many with AND/OR gates; no complete normalized route layer exists.",
+      "conditions": "Economy owns building_levels identities; technologies own variant-specific unlock/reward conditions; units own roster permissions. target_type determines target namespace.",
+      "missing_boundary": "Ordinary/special recruitment, stock, capacities and propagation are not a complete production graph. Do not substitute multiplayer cost, tier or roster inclusion for recruitment legality.",
+      "example": "Use existing building and technology records as evidence for a requested route, then return status=unresolved for the missing recruitment edge. Do not join building_key directly to unit_key.",
+      "evidence": [
+        "data/economy/README.md",
+        "data/technology_trees/README.md",
+        "data/technology_trees/schema_inventory__v2.csv",
+        "data/unit_stats/README.md"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/1",
+        "https://github.com/OwenTanzer/CTW-data/issues/7"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    },
+    {
+      "id": "campaign-rules-to-battlefield",
+      "owner": "campaign_map",
+      "status": "partial",
+      "endpoints": [
+        "battle_rules",
+        "group_maps",
+        "battle_maps"
+      ],
+      "joins": [
+        {
+          "from": "battle_rules",
+          "from_fields": [
+            "battle_group_key"
+          ],
+          "to": "group_maps",
+          "to_fields": [
+            "battle_group_key"
+          ]
+        },
+        {
+          "from": "group_maps",
+          "from_fields": [
+            "battle_map_key"
+          ],
+          "to": "battle_maps",
+          "to_fields": [
+            "battle_map_key"
+          ]
+        }
+      ],
+      "cardinality": "Rule to zero/many qualified group-map rows; map identity is not a unique playable layout.",
+      "conditions": "Use full (battle_group_key,battle_map_key,catchment_name,tile_upgrades) relation identity with null-safe uniqueness. rule_id is snapshot-local. Asset prefixes return candidates only.",
+      "missing_boundary": "Campaign-coordinate catchment resolution (#29) and effective world geometry (#9/#37) are separate gaps. Cold Mires is a development hypothesis, not a production spatial owner.",
+      "example": "SELECT r.rule_id, r.battle_group_key, g.battle_map_key, g.catchment_name, g.tile_upgrades FROM battle_selection_rules r LEFT JOIN battle_group_maps g ON g.battle_group_key=r.battle_group_key WHERE r.rule_id=1;",
+      "evidence": [
+        "data/campaign_map/README.md",
+        "data/campaign_map/validation_report.json",
+        "docs/development/battlefields/README.md",
+        "docs/development/battlefields/cold-mires/README.md"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/9",
+        "https://github.com/OwenTanzer/CTW-data/issues/29",
+        "https://github.com/OwenTanzer/CTW-data/issues/37"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    },
+    {
+      "id": "army-starts-with-partner-overrides",
+      "owner": "campaign_map",
+      "status": "production",
+      "endpoints": [
+        "army_starts",
+        "partner_overrides",
+        "capitals"
+      ],
+      "joins": [
+        {
+          "from": "army_starts",
+          "from_fields": [
+            "faction_key"
+          ],
+          "to": "partner_overrides",
+          "to_fields": [
+            "faction_key"
+          ]
+        },
+        {
+          "from": "army_starts",
+          "from_fields": [
+            "faction_key"
+          ],
+          "to": "capitals",
+          "to_fields": [
+            "faction_key"
+          ]
+        }
+      ],
+      "cardinality": "One primary army per faction; zero/one override for the exact ordered faction/partner pair. Other generals remain separate.",
+      "conditions": "Filter is_primary=1 and partner_key to the actual second human faction. Apply the entire override location as a tuple, even when start_region_key is null. Capitals remain separately labeled.",
+      "missing_boundary": "Static startup source evaluation, not measured movement, runtime multiplayer verification or ownership of nearest land. Snapshot-local character IDs do not persist across rebuilds.",
+      "example": "SELECT a.faction_key, CASE WHEN o.faction_key IS NOT NULL THEN o.world_x ELSE a.world_x END AS world_x, CASE WHEN o.faction_key IS NOT NULL THEN o.world_y ELSE a.world_y END AS world_y, CASE WHEN o.faction_key IS NOT NULL THEN o.start_region_key ELSE a.start_region_key END AS start_region_key FROM faction_army_start_reference a LEFT JOIN campaign_start_partner_overrides o ON o.faction_key=a.faction_key AND o.partner_key=:partner_key WHERE a.is_primary=1 AND a.faction_key=:faction_key;",
+      "evidence": [
+        "data/campaign_map/starting_positions/README.md",
+        "data/campaign_map/starting_positions/schema_inventory.csv",
+        "data/campaign_map/starting_positions/starting_positions_validation.json"
+      ],
+      "issues": [
+        "https://github.com/OwenTanzer/CTW-data/issues/15"
+      ],
+      "snapshot_requirements": "Pin CTW-data commit and the referenced owner manifests. Base 9.0; shared 9.0.1 joins require data/magic/input_lock.json and shared_source_comparison.json. Do not join by patch label alone."
+    }
+  ],
+  "proposed_owners": {
+    "capability_routes": {
+      "repository": "CTW-data",
+      "status": "proposed",
+      "issue": "https://github.com/OwenTanzer/CTW-data/issues/1",
+      "boundary": "A separate capability/recruitment relation owner is proposed; no production path or complete graph is assigned. Reuse economy, technology, skill and unit identities without overloading economy CSVs."
+    }
+  }
+}
