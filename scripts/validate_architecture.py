@@ -77,7 +77,7 @@ def validate(root, catalog, connections, inventory, check_docs=True):
     require(isinstance(discovery.get('routes'), list) and discovery['routes'], 'missing development discovery routes')
     for route in discovery['routes']:
         require(route.get('dataset') in development, 'discovery must target a development dataset')
-        text_fields(route, ['task'], 'discovery route')
+        require(route.get('task') == 'battlefield_preparation', 'unsupported discovery task; define its identity contract before routing')
         strings(route.get('identities'), 'discovery identities')
         require(route.get('default_action') == 'surface_qualified_candidate', 'discovery cannot promote authority')
         require(route.get('automatic_prediction_input') is False, 'discovery cannot silently feed predictions')
@@ -86,7 +86,16 @@ def validate(root, catalog, connections, inventory, check_docs=True):
             require(isinstance(key, str) and key in route['identities'], 'atlas identity missing from discovery aliases')
             atlas = root / datasets['campaign_map']['primary_records']
             with sqlite3.connect(atlas.resolve().as_uri() + '?mode=ro', uri=True) as db:
-                require(db.execute('SELECT 1 FROM battle_maps WHERE battle_map_key=?', (key,)).fetchone(), 'discovery atlas identity does not exist')
+                row = db.execute('SELECT source_kind, catchment_name FROM battle_maps WHERE battle_map_key=?', (key,)).fetchone()
+                require(row, 'discovery atlas identity does not exist')
+            manifest = read(root, development[route['dataset']]['manifest'])
+            require(isinstance(manifest, dict) and manifest.get('schema_version') == 1, 'unsupported battlefield manifest contract')
+            text_fields(manifest, ['map_key', 'catchment', 'tile'], 'battlefield manifest')
+            # Explicit battles_tables namespace mapping from build-campaign-atlas.mjs.
+            # This does not normalize arbitrary asset selectors or certify world geometry.
+            require(row[0] == 'battles_tables' and key == 'battle:' + manifest['map_key'], 'discovery atlas identity disagrees with candidate manifest')
+            require(row[1] == manifest['catchment'], 'discovery catchment disagrees with candidate manifest')
+            require(manifest['map_key'] in route['identities'], 'configured map identity missing from discovery aliases')
     require(set(catalog.get('maintenance', {})) == {'readme', 'architecture', 'connections', 'connection_guide', 'development_inventory', 'development_guide', 'change_process', 'pipeline_guide', 'proposal', 'catalog_migration'}, 'maintenance routing fields changed')
     for value in catalog['maintenance'].values():
         exists(root, value)

@@ -1,6 +1,7 @@
 """Contract mutation tests: reject authority, identity and provenance regressions."""
 import copy
 import unittest
+from unittest.mock import patch
 from validate_architecture import ROOT, read, validate
 
 
@@ -63,6 +64,33 @@ class ArchitectureTests(unittest.TestCase):
             route['atlas_map_key'] = 'battle:invented_map'
             route['identities'].append(route['atlas_map_key'])
         self.check_mutation(mutate, 'atlas identity does not exist')
+
+    def test_existing_wrong_map_cannot_route_to_cold_mires(self):
+        def mutate(c, r, i):
+            route = c['development_discovery']['routes'][0]
+            route['atlas_map_key'] = 'battle:chs_wastes_coast_a_02'
+            route['identities'].append(route['atlas_map_key'])
+        self.check_mutation(mutate, 'identity disagrees with candidate manifest')
+
+    def test_unrelated_existing_manifest_rejected(self):
+        self.check_mutation(lambda c, r, i: c['development_datasets']['cold_mires_hypothesis'].update(manifest='data/magic/dataset_manifest.json'), 'battlefield manifest: missing map_key')
+
+    def test_missing_configured_alias_rejected(self):
+        self.check_mutation(lambda c, r, i: c['development_discovery']['routes'][0]['identities'].remove('chs_wastes_coast_a_01'), 'configured map identity missing')
+
+    def test_discovery_task_typo_cannot_skip_identity_checks(self):
+        self.check_mutation(lambda c, r, i: c['development_discovery']['routes'][0].update(task='battlefield_preparatio'), 'unsupported discovery task')
+
+    def test_same_map_wrong_catchment_rejected(self):
+        manifest_path = self.inputs[0]['development_datasets']['cold_mires_hypothesis']['manifest']
+        def altered_read(root, path):
+            value = read(root, path)
+            if path == manifest_path:
+                value['catchment'] = 'catchment_02'
+            return value
+        with patch('validate_architecture.read', side_effect=altered_read):
+            with self.assertRaisesRegex(ValueError, 'catchment disagrees'):
+                validate(ROOT, *self.inputs, check_docs=False)
 
     def test_malformed_claim_object_has_structured_failure(self):
         self.check_mutation(lambda c, r, i: i['records'][0].update(evidence_claims=[None]), 'claim must be an object')

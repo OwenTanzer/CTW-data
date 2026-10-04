@@ -104,3 +104,17 @@ ensure malformed claim/artifact objects yield structured validation failures.
 The architecture suite now contains 21 tests. Remote artifact existence remains
 a documented manual verification responsibility; structural metadata validation
 cannot authenticate an empirical claim.
+
+## Third independent review and bounded hardening
+
+The third reviewer accepted `4152b13422516b99d227c262a07cd504496f6fb0` with no
+new blocking findings, independently passing 21 architecture tests and verifying
+[that head's full GitHub suite](https://github.com/OwenTanzer/CTW-data/actions/runs/37228554899).
+It identified a nonblocking regression guard opportunity: a real but different
+atlas map or an unrelated existing manifest could pass reference-existence checks.
+The follow-up binds the supported battlefield manifest's map/catchment to the
+atlas identity and requires both key aliases. Five new tests cover a different
+existing map, unrelated manifest, missing configured alias, task typo and wrong
+catchment (26 architecture tests total). These checks do not certify tile/world
+semantics. The downstream hash-only migration limitation is now stated explicitly
+in the migration guide; no consumer source lock or implementation was changed.

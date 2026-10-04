@@ -13,7 +13,13 @@ shared asset prefix is not an exact identity.
 
 For Cold Mires, the atlas identity is `battle:chs_wastes_coast_a_01`; the
 configured battle key is `chs_wastes_coast_a_01`. The discovery route lists both
-explicitly and validates its `atlas_map_key` against the production atlas. Do not
+explicitly. Validation binds the route to the candidate manifest
+(`map_key`, `catchment`, `tile`, schema version 1), checks the atlas
+`battles_tables` identity `battle:<map_key>` and matching catchment, and requires
+both canonical and configured aliases. Other task/manifest contracts require an
+explicit validator extension; a task-name typo cannot bypass these checks.
+Tile identity is retained from the scoped manifest, not independently certified
+by the atlas. Source pins and the map validator retain that responsibility. Do not
 apply an implicit prefix-stripping rule to other maps or inherit evidence across
 catchment/tile variants. For this exact candidate, explain that a reproducible terrain
 hypothesis is available and that alignment, water behavior, cover and passability

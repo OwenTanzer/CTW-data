@@ -27,3 +27,12 @@ consumer's supported catalog version/routing and selected file inventory, review
 all changed hashes and owner scopes, run source verification/import/reconstruction
 and lookup tests, and commit lock, contract and fresh evidence together. Rollback
 is selecting the previous source pin; no data backfill is necessary for this PR.
+
+During adoption, do not treat a successful existing verifier as proof of a complete
+catalog migration. At the inspected Adviser baseline, refreshing only the two
+metadata hashes in memory makes its byte/structure verifier pass while it still
+reports the old source commit. It does not interpret catalog routing. A proper
+adoption must reconcile the reported source commit, contract and selected hashes
+as well as any new routing behavior; old-pin success remains the supported path
+until then. Analysis checks snapshot identity and its Git pin, not catalog v2
+routing. This PR neither modifies those consumers nor adds a migration feature.
