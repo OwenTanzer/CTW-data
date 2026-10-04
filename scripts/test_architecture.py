@@ -51,6 +51,28 @@ class ArchitectureTests(unittest.TestCase):
     def test_missing_evidence_rejected(self):
         self.check_mutation(lambda c, r, i: r['connections'][0]['evidence'].append('docs/missing.json'), 'missing local reference')
 
+    def test_discovery_cannot_target_production(self):
+        self.check_mutation(lambda c, r, i: c['development_discovery']['routes'][0].update(dataset='units'), 'target a development dataset')
+
+    def test_discovery_cannot_silently_feed_predictions(self):
+        self.check_mutation(lambda c, r, i: c['development_discovery']['routes'][0].update(automatic_prediction_input=True), 'silently feed predictions')
+
+    def test_runtime_evidence_is_independent_of_lifecycle(self):
+        for lifecycle in ['production_main', 'source_branch', 'open_pr', 'closed_unmerged']:
+            with self.subTest(lifecycle=lifecycle):
+                args = copy.deepcopy(self.inputs)
+                item = args[2]['records'][0]
+                item['lifecycle'] = lifecycle
+                item['evidence_levels'].append('runtime_verified')
+                item['evidence_claims'] = [{'level':'runtime_verified',
+                    'scope':'Synthetic validator fixture only', 'method':'Synthetic fixture',
+                    'limitations':'No real empirical claim', 'artifact':{
+                        'repository':item['repository'], 'commit':item['commit'], 'path':item['path']}}]
+                self.assertEqual(validate(ROOT, *args, check_docs=False)['status'], 'passed')
+
+    def test_high_evidence_claim_requires_support_even_on_main(self):
+        self.check_mutation(lambda c, r, i: i['records'][0]['evidence_levels'].append('runtime_verified'), 'scoped evidence claim required')
+
     def test_guide_drift_rejected(self):
         args=copy.deepcopy(self.inputs)
         args[1]['connections'][0]['conditions'] += ' drift'

@@ -40,10 +40,10 @@ are authoritative for the counts and limitations below.
 | [Magic](data/magic/README.md) | Partial indexed character-to-ability discovery with separate structural, definition and runtime coverage |
 | [Faction guides](data/faction_guides/README.md) | 24 historical qualitative guides; read [compatibility notes](data/faction_guides/COMPATIBILITY_9.0.md) |
 
-[Cold Mires](docs/development/battlefields/cold-mires/README.md) is an opt-in
+[Cold Mires](docs/development/battlefields/cold-mires/README.md) is a discoverable, explicitly qualified
 terrain hypothesis. Reproducibility does not certify alignment, water behavior,
 forest cover or passability. Battlefield extraction is separate from production
-spatial truth.
+spatial truth. See the [discovery/use policy](docs/architecture/provisional-evidence.md).
 
 ## Physical layout
 

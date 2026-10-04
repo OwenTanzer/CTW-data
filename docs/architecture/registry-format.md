@@ -60,11 +60,12 @@ pointer. Generated views use immutable repository URLs for those pointers.
 | `historical_note` | Retained scoped working observations, not current canonical mechanics |
 
 Evidence levels are `extracted`, `normalized`, `source_integrity_validated`,
-`hypothesis`, `semantically_validated` and `runtime_verified`. The latter two
-require a stated scope and supporting evidence before any maintainer adds them;
-this inventory currently makes neither claim. The checker rejects runtime
-verification on unreviewed branch/PR records but cannot authenticate empirical
-results. Production location alone grants no scientific validity.
+`hypothesis`, `semantically_validated` and `runtime_verified`. The latter two require an `evidence_claims` record for each claimed level,
+regardless of lifecycle. Each claim has `level`, `scope`, `method`, `limitations`
+and an `artifact` with repository, immutable commit and relative path. A claim
+must match a declared evidence level. The checker validates this structure, not
+the empirical result. An unmerged experiment may have runtime evidence; a merged
+file may have none. This inventory currently makes neither higher-level claim.
 
 ## Generated views and review
 

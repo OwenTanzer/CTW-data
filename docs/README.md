@@ -30,6 +30,9 @@ explains the rationale, implemented scope and staged follow-ups.
 | [Effect foundation](effect-foundation.md) | Historical extraction infrastructure and bounded later integration |
 | [Combat relations](../relations.tex) | Historical working equations; not a current source schema |
 
+For relevant provisional maps, use the [discovery/use policy](architecture/provisional-evidence.md).
+For experiments shared across repositories, use the [evidence handoff](architecture/experiment-evidence.md).
+
 The [registry format](architecture/registry-format.md) documents fields, statuses
 and validation limits. The machine-readable registries point to existing manifests and inventories.
 They do not replace those owners or copy every source table definition.

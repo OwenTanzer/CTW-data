@@ -5,7 +5,7 @@ manifest, owner schema, gameplay value or existing script entry point moves.
 
 | v1 | v2 | Consumer action |
 | --- | --- | --- |
-| `datasets.cold_mires_hypothesis` | `development_datasets.cold_mires_hypothesis` | Opt in to development evidence; do not fold it into ordinary fact lookup |
+| `datasets.cold_mires_hypothesis` | `development_datasets.cold_mires_hypothesis` | Discover matching candidates through `development_discovery`; apply qualified-use rules instead of treating them as facts |
 | Shared abilities/effects only nested under magic references | Direct `datasets.shared_abilities` and `datasets.effect_semantics`, `role=shared_owner` | Route exact relations to their existing owners; do not expect race CSVs |
 | Implicit entry purpose | `lifecycle` and `role` on production entries | Distinguish retrieval datasets, shared owners and historical guides |
 | No implementation route | `maintenance` and `maintenance_loading_strategy` | Maintainers discover joins, evidence and the change process separately |

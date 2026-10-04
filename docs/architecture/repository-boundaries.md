@@ -35,6 +35,10 @@ reads Data and may adopt reviewed Analysis evidence; an Analysis checkout must
 not become an undeclared runtime prerequisite. Research that evaluates Adviser
 must also pin its model version, rather than creating a circular build dependency.
 
+The [experiment evidence handoff](experiment-evidence.md) defines raw-evidence
+custody, frozen predictions, source/model pins and correction handling. Adviser
+can collect its acceptance evidence without waiting for an Analysis migration.
+
 ## Within CTW-data
 
 Keep the physical `data/` owners and their public paths stable. They already have
@@ -54,7 +58,8 @@ faction technology/economy records and narrow atlas views.
 | `data/faction_guides/` | Historical qualitative mechanics with compatibility notes | Freshly verified 9.0 numeric truth |
 
 The catalog's `datasets` contains production retrieval routes and shared owners.
-`development_datasets` is explicit opt-in. The location of a validation report
+`development_datasets` requires qualified use; `development_discovery` surfaces
+matching candidates automatically. See [provisional evidence](provisional-evidence.md). The location of a validation report
 under `docs/development/` does not demote its production dataset: authority comes
 from the owner contract and qualified evidence, not the directory name alone.
 

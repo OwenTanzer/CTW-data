@@ -76,3 +76,18 @@ retains that distinction for Adviser #11 and the superseded battlefield #38.
 
 No fresh game extraction, game launch, live geometry verification, downstream
 service deployment, exhaustive consumer test run or independent review is claimed.
+
+## Independent review follow-up
+
+The first independent reviewer checked head `8ad03b6` and passed both navigation
+exercises and the general repository ownership split. Three findings prompted
+repairs: separate provisional discovery from predictive use; stop equating PR
+lifecycle with empirical maturity; specify experiment custody and evidence handoff.
+The follow-up adds four architecture tests (17 total), including all four tested
+lifecycles accepting structurally supported runtime claims and a main-branch claim
+failing without scoped evidence. These synthetic tests verify metadata rules,
+not empirical claims. Generated production data remains unchanged.
+
+The original head's [GitHub validation run](https://github.com/OwenTanzer/CTW-data/actions/runs/37226929111)
+completed successfully. This is remote verification of `8ad03b6`, not of subsequent
+revisions; the local memory limitation above remains an accurate historical result.

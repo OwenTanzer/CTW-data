@@ -71,6 +71,16 @@ def validate(root, catalog, connections, inventory, check_docs=True):
         require(name not in datasets and entry.get('status', '').startswith('development_'), f'{name}: invalid development separation')
         for key in ('readme', 'manifest', 'schema', 'validation', 'query', 'build', 'inspection_map'):
             exists(root, entry[key])
+    discovery = catalog.get('development_discovery', {})
+    text_fields(discovery, ['policy', 'guide'], 'development discovery')
+    exists(root, discovery['guide'])
+    require(isinstance(discovery.get('routes'), list) and discovery['routes'], 'missing development discovery routes')
+    for route in discovery['routes']:
+        require(route.get('dataset') in development, 'discovery must target a development dataset')
+        text_fields(route, ['task'], 'discovery route')
+        strings(route.get('identities'), 'discovery identities')
+        require(route.get('default_action') == 'surface_qualified_candidate', 'discovery cannot promote authority')
+        require(route.get('automatic_prediction_input') is False, 'discovery cannot silently feed predictions')
     require(set(catalog.get('maintenance', {})) == {'readme', 'architecture', 'connections', 'connection_guide', 'development_inventory', 'development_guide', 'change_process', 'pipeline_guide', 'proposal', 'catalog_migration'}, 'maintenance routing fields changed')
     for value in catalog['maintenance'].values():
         exists(root, value)
@@ -169,8 +179,20 @@ def validate(root, catalog, connections, inventory, check_docs=True):
             exists(root, path)
         if item['repository'] == 'OwenTanzer/CTW-data' and item['lifecycle'] in {'production_main', 'development_main', 'historical_note'}:
             exists(root, item['path'])
-        if item['lifecycle'] in {'source_branch', 'open_pr', 'closed_unmerged'}:
-            require('runtime_verified' not in item['evidence_levels'], f'{name}: unreviewed evidence cannot assert runtime verification here')
+        claims = item.get('evidence_claims', [])
+        require(isinstance(claims, list), f'{name}: evidence_claims must be a list')
+        claimed = set()
+        for claim in claims:
+            level = claim.get('level')
+            require(level in {'semantically_validated', 'runtime_verified'} and level in item['evidence_levels'], f'{name}: invalid evidence claim level')
+            require(level not in claimed, f'{name}: duplicate evidence claim level')
+            claimed.add(level)
+            text_fields(claim, ['scope', 'method', 'limitations'], name + ' evidence claim')
+            artifact = claim.get('artifact', {})
+            require(artifact.get('repository') in REPOSITORIES, f'{name}: invalid evidence repository')
+            require(re.fullmatch('[0-9a-f]{40}', artifact.get('commit', '')), f'{name}: immutable evidence commit required')
+            relative(artifact.get('path'))
+        require(set(item['evidence_levels']) & {'semantically_validated', 'runtime_verified'} <= claimed, f'{name}: scoped evidence claim required')
         strings(item.get('tracking'), name + ' tracking')
         require(all(re.fullmatch(r'https://github.com/OwenTanzer/CTW-(?:data|analysis|adviser)/(?:issues|pull)/\d+', u) for u in item['tracking']), f'{name}: invalid tracking URL')
     if check_docs:
@@ -221,6 +243,12 @@ def render(connections, inventory):
                   item['observation_scope'], '',
                   'Local evidence: ' + ('; '.join(link(p) for p in item['evidence']) or 'Use the immutable external repository snapshot and its owner contracts.') + '.', '',
                   'Tracking: ' + ', '.join(f'[{u.split("/")[-3]} #{u.split("/")[-1]}]({u})' for u in item['tracking']) + '.', '']
+        for claim in item.get('evidence_claims', []):
+            a = claim['artifact']
+            url = f"https://github.com/{a['repository']}/tree/{a['commit']}/{a['path']}"
+            state += [f"Evidence claim **{claim['level']}**: {claim['scope']}", '',
+                      f"Method: {claim['method']}. Limits: {claim['limitations']}", '',
+                      f"[Immutable supporting artifact]({url})", '']
     return {'docs/dataset-connections.md': '\n'.join(lines), 'docs/development-state.md': '\n'.join(state)}
 
 

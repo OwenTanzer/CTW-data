@@ -232,5 +232,22 @@
     "Consult the dated development inventory; refresh relevant issue/PR state and immutable refs before implementation.",
     "Inspect targeted owner manifests, schemas and audits; preserve generated-data paths and downstream pins.",
     "Update affected contracts, documentation and validation in the same PR."
-  ]
+  ],
+  "development_discovery": {
+    "policy": "Discover relevant candidates automatically; use their content only under the qualified-use policy. Discovery does not promote authority.",
+    "guide": "docs/architecture/provisional-evidence.md",
+    "routes": [
+      {
+        "task": "battlefield_preparation",
+        "identities": [
+          "chs_wastes_coast_a_01",
+          "Cold Mires",
+          "Cold Mires \u2013 Chaos Coast"
+        ],
+        "dataset": "cold_mires_hypothesis",
+        "default_action": "surface_qualified_candidate",
+        "automatic_prediction_input": false
+      }
+    ]
+  }
 }

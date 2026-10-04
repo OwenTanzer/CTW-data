@@ -8,7 +8,9 @@ evidence, and faction guides remain historical 8.1.1.
 ## Retrieval order
 
 1. Read `context_catalog.json` (schema v2). Use `datasets` for ordinary facts;
-   `development_datasets` is explicit opt-in and never production truth.
+   `development_datasets` is never production truth. For a matching task/map,
+   follow `development_discovery` to surface qualified candidates automatically;
+   apply `docs/architecture/provisional-evidence.md` before using their content.
 2. Select the relevant dataset and read its `README.md`.
 3. Read its manifest and schema inventory.
 4. Use an index to locate only the relevant race, faction, or character file.
@@ -45,7 +47,8 @@ mechanics.
 ## Repository maintenance
 
 Read `docs/README.md`, `docs/architecture/repository-boundaries.md`,
-`docs/dataset_connections.json` and `docs/development_inventory.json`, then
+the relevant entries in `docs/dataset_connections.json` and
+`docs/development_inventory.json`, then
 refresh the relevant live issue/PR scope before implementing changes. The
 inventory is a dated observation, not another issue tracker. Data owns source
 records and constraints; Analysis owns research/studies; Adviser owns serving,
