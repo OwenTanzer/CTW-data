@@ -81,6 +81,12 @@ def validate(root, catalog, connections, inventory, check_docs=True):
         strings(route.get('identities'), 'discovery identities')
         require(route.get('default_action') == 'surface_qualified_candidate', 'discovery cannot promote authority')
         require(route.get('automatic_prediction_input') is False, 'discovery cannot silently feed predictions')
+        if route['task'] == 'battlefield_preparation':
+            key = route.get('atlas_map_key')
+            require(isinstance(key, str) and key in route['identities'], 'atlas identity missing from discovery aliases')
+            atlas = root / datasets['campaign_map']['primary_records']
+            with sqlite3.connect(atlas.resolve().as_uri() + '?mode=ro', uri=True) as db:
+                require(db.execute('SELECT 1 FROM battle_maps WHERE battle_map_key=?', (key,)).fetchone(), 'discovery atlas identity does not exist')
     require(set(catalog.get('maintenance', {})) == {'readme', 'architecture', 'connections', 'connection_guide', 'development_inventory', 'development_guide', 'change_process', 'pipeline_guide', 'proposal', 'catalog_migration'}, 'maintenance routing fields changed')
     for value in catalog['maintenance'].values():
         exists(root, value)
@@ -183,12 +189,14 @@ def validate(root, catalog, connections, inventory, check_docs=True):
         require(isinstance(claims, list), f'{name}: evidence_claims must be a list')
         claimed = set()
         for claim in claims:
+            require(isinstance(claim, dict), f'{name}: evidence claim must be an object')
             level = claim.get('level')
             require(level in {'semantically_validated', 'runtime_verified'} and level in item['evidence_levels'], f'{name}: invalid evidence claim level')
             require(level not in claimed, f'{name}: duplicate evidence claim level')
             claimed.add(level)
             text_fields(claim, ['scope', 'method', 'limitations'], name + ' evidence claim')
             artifact = claim.get('artifact', {})
+            require(isinstance(artifact, dict), f'{name}: evidence artifact must be an object')
             require(artifact.get('repository') in REPOSITORIES, f'{name}: invalid evidence repository')
             require(re.fullmatch('[0-9a-f]{40}', artifact.get('commit', '')), f'{name}: immutable evidence commit required')
             relative(artifact.get('path'))

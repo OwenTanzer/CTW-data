@@ -91,3 +91,16 @@ not empirical claims. Generated production data remains unchanged.
 The original head's [GitHub validation run](https://github.com/OwenTanzer/CTW-data/actions/runs/37226929111)
 completed successfully. This is remote verification of `8ad03b6`, not of subsequent
 revisions; the local memory limitation above remains an accurate historical result.
+
+## Second independent review follow-up
+
+At `3f1976e`, the second reviewer independently passed the 17 architecture tests
+and reproduced the old Adviser lock's expected behavior. It found one concrete
+discovery defect: the atlas uses `battle:chs_wastes_coast_a_01`, but the route
+listed only the configured key and labels. The correction adds the exact atlas
+identity and checks its existence and inclusion in discovery aliases. Two new
+regressions reject a lost alias and an invented atlas key. Two further tests
+ensure malformed claim/artifact objects yield structured validation failures.
+The architecture suite now contains 21 tests. Remote artifact existence remains
+a documented manual verification responsibility; structural metadata validation
+cannot authenticate an empirical claim.

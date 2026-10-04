@@ -240,13 +240,15 @@
       {
         "task": "battlefield_preparation",
         "identities": [
+          "battle:chs_wastes_coast_a_01",
           "chs_wastes_coast_a_01",
           "Cold Mires",
           "Cold Mires \u2013 Chaos Coast"
         ],
         "dataset": "cold_mires_hypothesis",
         "default_action": "surface_qualified_candidate",
-        "automatic_prediction_input": false
+        "automatic_prediction_input": false,
+        "atlas_map_key": "battle:chs_wastes_coast_a_01"
       }
     ]
   }

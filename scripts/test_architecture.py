@@ -54,6 +54,26 @@ class ArchitectureTests(unittest.TestCase):
     def test_discovery_cannot_target_production(self):
         self.check_mutation(lambda c, r, i: c['development_discovery']['routes'][0].update(dataset='units'), 'target a development dataset')
 
+    def test_production_map_identity_must_be_discoverable(self):
+        self.check_mutation(lambda c, r, i: c['development_discovery']['routes'][0]['identities'].remove('battle:chs_wastes_coast_a_01'), 'atlas identity missing')
+
+    def test_discovery_rejects_unknown_atlas_identity(self):
+        def mutate(c, r, i):
+            route = c['development_discovery']['routes'][0]
+            route['atlas_map_key'] = 'battle:invented_map'
+            route['identities'].append(route['atlas_map_key'])
+        self.check_mutation(mutate, 'atlas identity does not exist')
+
+    def test_malformed_claim_object_has_structured_failure(self):
+        self.check_mutation(lambda c, r, i: i['records'][0].update(evidence_claims=[None]), 'claim must be an object')
+
+    def test_malformed_artifact_has_structured_failure(self):
+        def mutate(c, r, i):
+            item = i['records'][0]
+            item['evidence_levels'].append('runtime_verified')
+            item['evidence_claims'] = [{'level':'runtime_verified', 'scope':'test', 'method':'test', 'limitations':'test', 'artifact':None}]
+        self.check_mutation(mutate, 'artifact must be an object')
+
     def test_discovery_cannot_silently_feed_predictions(self):
         self.check_mutation(lambda c, r, i: c['development_discovery']['routes'][0].update(automatic_prediction_input=True), 'silently feed predictions')
 

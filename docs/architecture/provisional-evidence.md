@@ -11,7 +11,11 @@ candidate with its status, scope and entry link even if the user did not ask for
 unlisted map has no evidence. Ambiguous names require variant resolution; a
 shared asset prefix is not an exact identity.
 
-For Cold Mires (`chs_wastes_coast_a_01`), explain that a reproducible terrain
+For Cold Mires, the atlas identity is `battle:chs_wastes_coast_a_01`; the
+configured battle key is `chs_wastes_coast_a_01`. The discovery route lists both
+explicitly and validates its `atlas_map_key` against the production atlas. Do not
+apply an implicit prefix-stripping rule to other maps or inherit evidence across
+catchment/tile variants. For this exact candidate, explain that a reproducible terrain
 hypothesis is available and that alignment, water behavior, cover and passability
 remain unverified. Its README and point/region/summary query can be inspected
 without additional permission. Summarize unknowns alongside any observation.
