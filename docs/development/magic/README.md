@@ -1,7 +1,9 @@
 # Magic retrieval and shared payload integration (#14, PR #30)
 
-This PR delivers a bounded database increment. It does **not close #14** or
+PR #30 merged and completed the bounded core-retrieval scope of #14. Broader
+acquisition and runtime coverage remain #31. This production increment does not
 implement build legality solving, expected damage or runtime combat simulation.
+See the [dated inventory](../../development-state.md) for observed issue state.
 
 ## Evidence and ownership
 
@@ -114,7 +116,7 @@ optional level descriptions, node-only rank evidence and unknown components.
 These are source/structural checks, not observed battle execution or independent
 review. `validation.json` records the latest candidate result.
 
-Remaining #14 scope:
+Broader scope now tracked in #31:
 
 1. Wider item/trait/script acquisition, dynamic forms and verified mount unlocks.
 2. Active/inactive/legacy classification and exhaustive lore/passive obtainability.
@@ -124,5 +126,7 @@ Remaining #14 scope:
    outside the supported graph (for example `mom_vortex_key`).
 
 Database work retains source facts, dependencies and constraints for arbitrary
-encountered builds. Global legality solving, optimization and effective combat
-outcomes belong in Analysis. Missing acquisition evidence remains a database gap.
+encountered builds. General build-legality research and optimization belong in
+Analysis; operational single-unit matchup calculations belong in Adviser #5. See the
+[three-repository boundary](../../architecture/repository-boundaries.md).
+Missing acquisition evidence remains a database gap.

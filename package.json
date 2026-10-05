@@ -8,7 +8,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "validate": "npm run validate:units && npm run validate:skills && npm run validate:economy && npm run validate:campaign && npm run validate:technologies && npm run validate:guides && npm run test:victory && npm run test:readme && npm run test:battle-maps && npm run validate:magic && npm run test:battlefield-discovery && npm run test:battlefield-tiles",
+    "validate": "npm run validate:architecture && npm run validate:units && npm run validate:skills && npm run validate:economy && npm run validate:campaign && npm run validate:technologies && npm run validate:guides && npm run test:victory && npm run test:readme && npm run test:battle-maps && npm run validate:magic && npm run test:battlefield-discovery && npm run test:battlefield-tiles",
     "validate:units": "node scripts/validate-unit-dataset.mjs data/unit_stats/source_exports data/unit_stats && node --test scripts/test-lord-unit-coverage.mjs scripts/test-availability-coverage.mjs scripts/test-historical-roster-coverage.mjs scripts/test-archaon-availability-coverage.mjs",
     "validate:skills": "node scripts/validate-skill-trees.mjs data/skill_trees/source_exports data/skill_trees",
     "validate:economy": "node scripts/validate-economy-dataset.mjs data/economy/source_exports data/economy",
@@ -34,7 +34,9 @@
     "test:battlefield-assembly": "python3 scripts/test_battlefield_assembly.py",
     "test:battlefield-height": "python3 scripts/test_battlefield_height.py",
     "validate:magic": "python3 scripts/validate_magic.py",
-    "test:magic": "python3 scripts/test_magic.py"
+    "test:magic": "python3 scripts/test_magic.py",
+    "validate:architecture": "python3 scripts/validate_architecture.py",
+    "test:architecture": "python3 scripts/test_architecture.py"
   },
   "license": "MIT"
 }
