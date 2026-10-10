@@ -1,6 +1,7 @@
 {
   "baseline_commit": "13b4ff93736d82a06d7be56f55046425c4cc0259",
   "status": "passed",
+  "reviewed_migration": "scripts/ammunition_compatibility_migration.json",
   "files": {
     "data/unit_stats/lookups/projectiles__wh3__9.0.csv": {
       "retained_rows": 522,
@@ -46,7 +47,7 @@
       "retained_rows": 3181,
       "added_rows": 0,
       "added_columns": [],
-      "changed_existing_rows": 0
+      "changed_existing_rows": 255
     }
   }
 }

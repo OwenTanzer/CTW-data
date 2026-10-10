@@ -1,0 +1,4896 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "13b4ff93736d82a06d7be56f55046425c4cc0259",
+  "before_commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+  "reviewed_source_commit": "2b5965e78c85dc795451dad188756a173b247be5",
+  "path": "data/unit_stats/lookups/unit_weapon_links__wh3__9.0__ultra.csv",
+  "allowed_columns": [
+    "ammunition_pool",
+    "ammunition"
+  ],
+  "transitions": [
+    {
+      "identity": {
+        "unit_key": "wh3_dlc23_chd_cha_infernal_castellan",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc23_chd_infernal_castellan_fireglaive_explosive",
+        "projectile_key": "wh3_dlc23_chd_infernal_castellan_fireglaive_bullet_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "6b1634e259ebb025ff5324acffdb50162cbce5f1f98c57957aa76423cbda4b1e",
+      "after_fingerprint": "ec992c451277a0936e25044ce96a5706faca43a3d041f4f5cc46b2bade416a8a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_chd_blunderbuss_bullet_double_shot",
+        "projectile_key": "wh3_chd_blunderbuss_bullet_double_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "d088ef1da55b48d575fe233d7443d816b6c52d262731ed8bf095dbbf45a9d481",
+      "after_fingerprint": "1cc6aa212b4ec03692a3b01e4a199ce7da741dc9b59b1f97eb8c1a95470222b0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc23_chd_veh_iron_daemon_1dreadquake",
+        "component_role": "engine",
+        "slot": "engine",
+        "missile_weapon_key": "wh3_dlc23_chd_veh_iron_daemon_cannonade_secondary",
+        "projectile_key": "wh3_dlc23_chd_iron_daemon_cannonade"
+      },
+      "before": {
+        "ammunition_pool": "primary",
+        "ammunition": "15"
+      },
+      "after": {
+        "ammunition_pool": "secondary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "1647093fa1067c9652af8f493666129922e142d077b7096b69241a2182a76b54",
+      "after_fingerprint": "f20b76ed3ad67d88271fe1c6a353312d09b5be0196b6585db225dcd0d6c70c49"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc23_chd_veh_iron_daemon_ror_1dreadquake",
+        "component_role": "engine",
+        "slot": "engine",
+        "missile_weapon_key": "wh3_dlc23_chd_veh_iron_daemon_flame_cannon_secondary",
+        "projectile_key": "wh3_dlc23_chd_iron_daemon_flame_cannon"
+      },
+      "before": {
+        "ammunition_pool": "primary",
+        "ammunition": "15"
+      },
+      "after": {
+        "ammunition_pool": "secondary",
+        "ammunition": "560"
+      },
+      "before_fingerprint": "487d7e841c961a0b58554b5e75d612aebebb824f2a3340058b1a228e639c46a4",
+      "after_fingerprint": "5a4ab535ca240ff87c817286fb595fa53b3d7a446eb885123f6096c2ebde8a35"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_chs_marauder_horsemen_msla_javelin_anti_large",
+        "projectile_key": "wh3_dlc27_chs_marauder_horsemen_msla_javelin_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "16"
+      },
+      "before_fingerprint": "3d64b43c168c7e6aadf404ac53cd45b40b6e5d12d661125862e74776ea59d0d1",
+      "after_fingerprint": "377b894f8d2e27347f8a94a9dda13c7c5083801aa7ccb5de99b6be3ef61b995b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc24_tze_cha_blue_scribes",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc24_blue_scribe_projectile_blue_flame",
+        "projectile_key": "wh3_dlc24_blue_scribe_projectile_blue_flame"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "4706c7a006408a92b172c908b1dfc79db1913e9d4cd9d9084b4f1a5553fea14a",
+      "after_fingerprint": "930115ee9040c9f52a5b017b026a106c9b0922ee66e50a08c8f1e946856cbfe1"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc27_nor_cav_marauder_horsemen_ror",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_chs_marauder_horsemen_msla_javelin_anti_large_ror",
+        "projectile_key": "wh3_dlc27_chs_marauder_horsemen_msla_javelin_anti_large_ror"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "16"
+      },
+      "before_fingerprint": "75f95bb25f97ffbebf36d55f5e525d6cb69e026c2a57ca59eb85a5eb4d0d9a9f",
+      "after_fingerprint": "3dfa58cb3214cb9df878175ec6f20ee6b8d0d08a7e2b96f17143dab84108e2a6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_nur_cha_ku_gath_plaguefather_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_nur_kugath_necrotic_nurglings",
+        "projectile_key": "wh3_main_nur_kugath_necrotic_nurglings"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "35"
+      },
+      "before_fingerprint": "8e9fae98a84b7923f027189938ad9d46e7515aff1c2ea6fb6c35dca90f10c61a",
+      "after_fingerprint": "345b542a05ca268515ca3a5e3a57940b14b76a64382d9f1d36323b3d40c63f92"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_tze_cha_herald_of_tzeentch_metal_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tze_herald_fire_bolt_improved",
+        "projectile_key": "wh3_main_tze_herald_fire_bolt_improved"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "426528be586780ab004a3e9dc4ebda207f160ca9f59c37e50b155b220b2e8d68",
+      "after_fingerprint": "099ef772871bd57b46a0249dedc287ea02e1e4aedbfbbe98e56dba54c7106e48"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_tze_cha_herald_of_tzeentch_metal_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tze_herald_fire_bolt_improved",
+        "projectile_key": "wh3_main_tze_herald_fire_bolt_improved"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "071188d6e289aa6c61f9916e3452cd9f3a3b181c6e05bdf510b061a1eb1b775e",
+      "after_fingerprint": "44ffe369d9d2c10fdb175a64f9ca159a79af5c5be1d2b177f8fd9fe721a45c5d"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_tze_cha_herald_of_tzeentch_metal_2",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tze_herald_fire_bolt_improved",
+        "projectile_key": "wh3_main_tze_herald_fire_bolt_improved"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "80"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "e044307cd5f0dd01c1dc9d82dead94da64cd14d8c92d8b2cf490ffe207b3fb95",
+      "after_fingerprint": "4a1406faac9d573f90f7f50ccbad12f61d5e8d5afc05029c7ef428cfb909f571"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tze_herald_fire_bolt_improved",
+        "projectile_key": "wh3_main_tze_herald_fire_bolt_improved"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "ce4bc82de753ea089cf704bd1a75cf06345e3898465f3d330edfee5aee676673",
+      "after_fingerprint": "7d3062deab58c6a96b6c852863d503760a8f78c9c2404bb07ee41a9dc109cd4a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tze_herald_fire_bolt_improved",
+        "projectile_key": "wh3_main_tze_herald_fire_bolt_improved"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "0eff9cd96e35df1c5e1da6439ed1c1b7ff28576b65a3a08b860c70eb7faa129a",
+      "after_fingerprint": "329d7ab7d63e2346ac486807a806ee01211cf7e342aacdb7df619818580883d6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_tze_cha_herald_of_tzeentch_tzeentch_2",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tze_herald_fire_bolt_improved",
+        "projectile_key": "wh3_main_tze_herald_fire_bolt_improved"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "80"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "0db2cc84b7b8dc417a120708d63ec64b60b0600d7f3fe80b14a9be368894a696",
+      "after_fingerprint": "c3c2e74c1a7920eed04688b18f266d81e06b33c1baaf341a9b1dcb786747823c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_twa03_def_harpoon_scourgerunner_chariot_suppressing",
+        "projectile_key": "wh2_twa03_def_harpoon_scourgerunner_chariot_suppressing"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "48"
+      },
+      "before_fingerprint": "bab4e9c34d3e81ec60abcd787f5f0af1b360cc8e4716adf54f7d497e25c9ff0d",
+      "after_fingerprint": "f76444f66e0ea1e11a7d41bfb51c2329f0de80f31cd63ce62ce107b29e46004b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_def_art_reaper_bolt_thrower",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_twa03_def_reaper_bolt_thrower_bolt_suppressing",
+        "projectile_key": "wh2_main_def_reaper_bolt_thrower_bolt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "2888e9c98f0aa9a1b7eb28f84710174123c206bd79e8dcf4d3015174f1fcbda5",
+      "after_fingerprint": "548741afa9f758ecb549bb672d4a6b87f188d88ecf0e5ddf1751c074d588e33d"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_def_art_reaper_bolt_thrower",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_twa03_def_reaper_bolt_thrower_bolt_suppressing",
+        "projectile_key": "wh2_main_def_reaper_bolt_thrower_bolt_spread"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "48e41cb3158b4bfd80e5267927429452205f5363710bae330a1cfbbd8abaf3ec",
+      "after_fingerprint": "157748cf53300fd15a36d71426fb06710690306cc95baa51ab83930eb2b7049b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_def_art_reaper_bolt_thrower",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_twa03_def_reaper_bolt_thrower_bolt_suppressing",
+        "projectile_key": "wh2_twa03_def_reaper_bolt_thrower_bolt_suppressing"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "aa3f8c2e67623059723fa3de4d2a5b333d0311f383b76dd6e775aac9a8926065",
+      "after_fingerprint": "35f7b0cdaaf9c0022bc9b090d8357ab4b479c562ab104ee7cf045103ec43f7cf"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_twa03_def_cha_rakarth_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_twa03_def_harpoon_scourgerunner_chariot_mount_suppressing",
+        "projectile_key": "wh2_twa03_def_harpoon_scourgerunner_chariot_mount_suppressing"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "72"
+      },
+      "before_fingerprint": "c05f0fc313183814e5a0c243ee4fb9a0b7ec92516f3bce1977804b0eaafc58da",
+      "after_fingerprint": "96a0f5d3838934d34043746c25e52faf4f74fd8ff5291d89207b37e768432794"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc23_neu_cha_ulrika",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc23_neu_cha_ulrika_bow_large",
+        "projectile_key": "wh3_dlc23_neu_cha_ulrika_arrow_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "efa8422d0e6524883f54a08691b8f115c47038e25647944d62f1a2332f6fa4fc",
+      "after_fingerprint": "1e1b7476d6106448192576c49b86046701cd763d9ede2701daedf541eec5d9d3"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc23_neu_cha_ulrika_warhorse",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc23_neu_cha_ulrika_bow_large",
+        "projectile_key": "wh3_dlc23_neu_cha_ulrika_arrow_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "deef732e4a54b57cd9fc80f5e433db7c6a0a64a84b30ca5a1cfdb5d314e93894",
+      "after_fingerprint": "660cd176293337a6aecf76dcffd3a198fc5650f8ecf2ab8489b3bc20dbc9ea40"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_dwf_art_goblin_hewer",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_goblin_hewer_axe_seeking",
+        "projectile_key": "wh3_dlc25_dwf_goblin_hewer_axe_seeking"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "152"
+      },
+      "before_fingerprint": "aa1b63a8d5e157476bd6049fe133a4a837dee97af7178e73dc358d7cbfc023c4",
+      "after_fingerprint": "51f46de9163c90d1fe0eaf56d5960d80e29aa1b8e49bd7531b1e6028cb95dab7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_dwf_art_goblin_hewer",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_goblin_hewer_axe_flaming",
+        "projectile_key": "wh3_dlc25_dwf_goblin_hewer_axe_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "152"
+      },
+      "before_fingerprint": "76899cbf721884372d1b3aba17f30df249add4c00fc8f752241aa1f78ed8ba67",
+      "after_fingerprint": "2163b9d3f77982615a51d18956b628c09389e53bd45fdc44639145df554dfc14"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_dwf_art_goblin_hewer",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_goblin_hewer_axe_penetrating",
+        "projectile_key": "wh3_dlc25_dwf_goblin_hewer_axe_penetrating"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "152"
+      },
+      "before_fingerprint": "ca032288f03f9e92f515c62f9d3edf8b5fe115c4aa889a1173e883d879b76c54",
+      "after_fingerprint": "6032cf63d42ca9b0471d82fae4db0b1fcf21b94d823f8d8104e63ee113d6c510"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_dwf_veh_thunderbarge",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_thunderbarge_cannon_flaming",
+        "projectile_key": "wh3_dlc25_dwf_thunderbarge_cannon_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "50"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "84266dd3eb7dc9c4ed3d40113ac89664e817fb6ce860115d93e8b83f5edaa6e0",
+      "after_fingerprint": "92ffb43c5bcd710fc30045de9faf6235947c5f2dcffbb457814b3790139c40e9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_dwf_veh_thunderbarge",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_thunderbarge_fire_bomb",
+        "projectile_key": "wh3_dlc25_unit_abilities_thunderbarge_fire_bomb"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "50"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "3895d78ec4f5cf31af53168d81d796631c61f9af8adbff3c3941765993a0df1b",
+      "after_fingerprint": "b869b5892504c63bd4deabebd05e4b053fae7fc03a2fdb93bc19c58b8adfba77"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_dwf_veh_thunderbarge_grungni",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_thunderbarge_cannon_flaming",
+        "projectile_key": "wh3_dlc25_dwf_thunderbarge_cannon_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "50"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "7eb06aceff0eba643c37068dbad4dea424c0e0db2e39b3e9cf8d669b3dab0dac",
+      "after_fingerprint": "680324b3d857926628fffe879c1833b926ad98acc7b30f35fe837aadc41e8dd8"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_dwf_veh_thunderbarge_grungni",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_thunderbarge_fire_bomb",
+        "projectile_key": "wh3_dlc25_unit_abilities_thunderbarge_fire_bomb"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "50"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "1143e8d210858d17432707b8308c235168afa3b682800f7829b67539f383d23e",
+      "after_fingerprint": "546d200681724c5540beb27848a5b230ae1f6f28e5df038efc081b084f0f16b7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_art_bolt_thrower_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc06_dwf_bolt_thrower_bolt_seeking",
+        "projectile_key": "wh_dwf_bolt_thrower_bolt_seeking"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "730c620d3e7945e947e6ef5d92b656bfeb913d9e75e4d017819e5399e8219013",
+      "after_fingerprint": "b15bfc8acf476b4fe205a889bbc287062de9fd36870e081e4be0aeca7efb22dd"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_art_bolt_thrower_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc06_dwf_bolt_thrower_bolt_flaming",
+        "projectile_key": "wh_dwf_bolt_thrower_bolt_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "66d53ba903cf7a177790d4b5546901627183a5bb3d62efabd80e4e18e166be7e",
+      "after_fingerprint": "e9a60e4bead8e5ef29ea76f5e5ab1f989cf76718cf78292f97c68cf1d7023adb"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_art_bolt_thrower_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc06_dwf_bolt_thrower_bolt_penetrating",
+        "projectile_key": "wh_dwf_bolt_thrower_bolt_penetrating"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "a4b9db109a2582c32467a0f4bcae1df1c0b25ac712b365c1f30001fb44e698c7",
+      "after_fingerprint": "8c4ca5dda7007f880a9e21e9fedd0c1132cb06bbe53535e676d98f6bb3454604"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_art_gob_lobber_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc06_grn_grudge_thrower_goblin_seeking",
+        "projectile_key": "wh_dwf_grudge_stone_goblin_seeking"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "70983d8af19b7e50bcfa02e3b16cd51ae3d372f0f8316687fe4888e24fd37330",
+      "after_fingerprint": "f204c07565e123b193da385f67ac9bbfadedd7b6483c7f3e68744deef05af20d"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_art_gob_lobber_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc06_grn_grudge_thrower_goblin_penetrating",
+        "projectile_key": "wh_dwf_grudge_stone_goblin_penetrating"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "e03f9cb17c007fbbe4f707d3ed9b1bad5e3913fb177331bf4f8596d7b848c027",
+      "after_fingerprint": "d466bcad5487fade47dfac62f1e2d94dbb96d9699b2cd61cf7a7724ea919383e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_art_gob_lobber_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc06_grn_grudge_thrower_goblin_flaming",
+        "projectile_key": "wh_dwf_grudge_stone_goblin_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "24a7cf4d9b3b04ce93379548b3972da97e52e19d11dfadc3b4fbdc6353cb9e7b",
+      "after_fingerprint": "60b23efb9e2eb1a8ebea115c288e922204dec997c26d734ae3856130c413fc95"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_cha_master_engineer_ghost_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_dwf_master_engineer_grudge_raker_bullet_magical",
+        "projectile_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_shotgun_magical"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "f122054bc966401dda41b6daaa91fd696147d600b0fb792a5bc8e7abc797a84f",
+      "after_fingerprint": "e597473c1eb6174548dc46648934f541f13cdcb88c59a797fdd21ac92bf64e6b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_dwf_cha_master_engineer_ghost_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_sniper_magical",
+        "projectile_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_sniper_magical"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "bc33ff552e9a96159cb763abd810e47b8fbebcc4601956a22bd9326108f6bfa1",
+      "after_fingerprint": "cc82577258ef0d982cc0e0b065761183a939a872fe26ba22b4a67dcf9f8e5c7c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_cannon_seeking",
+        "projectile_key": "wh_dwf_cannon_ball_seeking"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "f2cf912bdaba29803d11ebf96ef2d04192fc036e2bae850bfce200ca319023d9",
+      "after_fingerprint": "ddff93b1584cfd2cc9b9acb85a08c42f01b3c4ba76cb972009e0f35071c6e3d7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_cannon_explosive",
+        "projectile_key": "wh3_dlc25_dwf_cannon_ball_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "e4b81fe58eea184e33361b2d0a21aafef8d29fc030da14882e69964f30b1d753",
+      "after_fingerprint": "8c593f2f88a6601cc845f6f3c1089d8fd321c8441132db0b811d21249cecea55"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_cannon_penetrating",
+        "projectile_key": "wh_dwf_cannon_ball_penetrating"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "df7dfbbc868470680457f718e5c8327478007d809bfe061fd12f9caa14f6d669",
+      "after_fingerprint": "d02f0a3361261ae8b711b1ad5bf5be8eff05f6d6f18af95430eb2665bab54e52"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_cannon_flaming",
+        "projectile_key": "wh_dwf_cannon_ball_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "cc3fae8a3ba727b87292aa416c9189f604c0e6f2372d2afc1eacf6e6695149e6",
+      "after_fingerprint": "7d87034606afe21c460accf8343b11c85c85b90a2746946846f550868cf1a079"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_cannon_grapeshot",
+        "projectile_key": "wh_dwf_cannon_ball"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "f99fdd0a35a21b507e1f356c3bb9e622926909a40f2435df6b46793ffdf32e67",
+      "after_fingerprint": "0c0762fa4e2a4cdfd0d2274073c10f820f4930ae271c6f84f01f332b605a31ed"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_dwf_cannon_grapeshot",
+        "projectile_key": "wh3_dlc25_dwf_cannon_ball_grapeshot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "bfb74ebd5dc1ffe24e5372c545818ff89b103651df7c4bc775be66b04d35c72e",
+      "after_fingerprint": "b4a98b63a855cacf09ec52d772d566d03b2e621bc0b8aee3be080d6923bfec11"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_flame_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_flame_cannon_flaming",
+        "projectile_key": "wh_dwf_flame_cannon_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "c9457c8fa0ac01d99ccbe53dcb86dee25be23de327e19731b2dbe3c86a1c55e3",
+      "after_fingerprint": "370c3daf6dd6b3008a9abbd85ab004967da5f95feaca46e15b180612bf688e84"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_flame_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_flame_cannon_penetrating",
+        "projectile_key": "wh_dwf_flame_cannon_flame_penetrating"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "36d0d0379a0b2d1ec1224c2f8ae42fa7253b6c8878acb633da00d0a3b5e5449e",
+      "after_fingerprint": "c4de796d31fe3ce4ebcf482d827b90be14b9d0c80338bbd1a6bb4ecdca9ae6b3"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_flame_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_flame_cannon_shrapnel",
+        "projectile_key": "wh3_dlc25_flame_cannon_flame_shrapnel_stage_1"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "3cdd1a1cb1951e577509bbafa908b814bc33afc64b6b32531d83f9a44b64c3cb",
+      "after_fingerprint": "4a8e63c3ecc1ab46eb50b259fc50c605d444918f20f8c68c6ada5e23887195e0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_flame_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_flame_cannon_seeking",
+        "projectile_key": "wh_dwf_flame_cannon_flame_seeking"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "1e391976e7fa27be8438b6f3c3cb4b2824d180d68c2f77a2f032038f260c64a1",
+      "after_fingerprint": "6db25fe7647595cfa0c93550e10784fed019d05a25cbaf675e06d89b5e27b301"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_grudge_thrower",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_grudge_thrower_flaming",
+        "projectile_key": "wh_dwf_grudge_stone_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "d5e857fe8c209f31d3b835afd1f945b5c29c7c552a3b574f26b29350646a6e34",
+      "after_fingerprint": "c278cad2266f13f1088725c67afc1b67dd3eb66b4b3273fda28596374d50eb08"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_grudge_thrower",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_grudge_thrower_seeking",
+        "projectile_key": "wh_dwf_grudge_stone_seeking"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "fd454afce0ee01409eadb9e338c3f2fdea20cddcfcd18a9b73683310d51b2d24",
+      "after_fingerprint": "ad60c0c195c0c03bf30116639b1afe211cc618abd9a809b24e1c8a4ff84e639a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_grudge_thrower",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_grudge_thrower_penetrating",
+        "projectile_key": "wh_dwf_grudge_stone_penetrating"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "266d00278fe1989f9a9c5b1dd6b5e0c34f235294522964d784466f7b1716114c",
+      "after_fingerprint": "9a4a0299e779d64f03eaa7e366ebeb576b29e18c61f4e1e9b3a13f5482e10c73"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_organ_gun",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_organ_gun_seeking",
+        "projectile_key": "wh_dwf_organ_gun_seeking"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "96"
+      },
+      "before_fingerprint": "c4476c9dd921554dbc8f55a77897deafdea00de2daf4e837b77cd9000793e4c9",
+      "after_fingerprint": "8e155b1fbcf03ede17b2080e884aecbedd30ce7910a84f72a52539703631b4ed"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_organ_gun",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_organ_gun_penetrating",
+        "projectile_key": "wh_dwf_organ_gun_penetrating"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "96"
+      },
+      "before_fingerprint": "27ee206455699085e4f4eca1bdafad5648a5c671cacfff50f99b80dd9155e713",
+      "after_fingerprint": "32dbb03ae645e1c5bbe49e917dd4b7d287d7f3cc93ceb89178cc6ab2e931e0d8"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_art_organ_gun",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_dwf_organ_gun_flaming",
+        "projectile_key": "wh_dwf_organ_gun_flaming"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "96"
+      },
+      "before_fingerprint": "618f92fc5553a1ff8dca725cec22f2c5fc2c1e6e3b1e7c25c54a16c9d8e623ef",
+      "after_fingerprint": "8f20fe5bf2c9b20524b4dec3295215ad2cbdbffcc9e950db10e6a2340280cc7b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_cha_master_engineer_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_sniper",
+        "projectile_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_sniper"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "e5558b451c7a507060d6d6a8ac77e4e1a065740e306d6fadd3d94e551001696c",
+      "after_fingerprint": "87daaf78d3302c503e379f715a65caa2e8687d2ba41c3f49bc7d473b8a8e0369"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_dwf_cha_master_engineer_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_dwf_master_engineer_grudge_raker_bullet",
+        "projectile_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_shotgun"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "ceba1274651a903d57368457ebfb084f403fc441aa16eb4c566a645ede2fef1d",
+      "after_fingerprint": "5e54d2369bde68db1e1fe8c21d110c6ffdf1591974ca497a8ff500b4e0b7f363"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_cha_hunter_jorek_grimm_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_sniper",
+        "projectile_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_sniper"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "50"
+      },
+      "before_fingerprint": "f15208bfd77fbdf403da7a578020bc789a916e837a75abf4ab9d9f6e5dcdeeb9",
+      "after_fingerprint": "e9de3e575ee8abc6eaf836b91dc64d761a2cbb1cd899273107b1eb8b48a9c71e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_cha_hunter_jorek_grimm_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_dwf_master_engineer_grudge_raker_bullet",
+        "projectile_key": "wh2_dlc17_dwf_master_engineer_rifle_bullet_shotgun"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "50"
+      },
+      "before_fingerprint": "4eeb965adf213f722e60271219ef9d7c6ecf0e83dd59cf41f67948c45f1357a5",
+      "after_fingerprint": "bf32f7ee5583d034bbb03f1ac7d68cfe05ff76cf0721cd7bad12f6dbad57a2f4"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_archers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_anti_large",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "b7a4f34255860bca38f635eb497b43c34af36634edd4c25e984d3892287c8a37",
+      "after_fingerprint": "4a8fd1616f1bdf276709d632f4194d909e0bf5ed2ea64750c9326f7bcc437a4a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_archers_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_anti_large",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "1589c25da5f6c132e39c027a5e2bce2fa49187e35bb88c5ec58466d124540df3",
+      "after_fingerprint": "047d04734bfa48ecc4a48dda3408c73104b95a472eadfcb42b4bba807cc70b71"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_handgunners_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_rifle_surefires_upgraded",
+        "projectile_key": "wh2_dlc13_emp_rifle_bullet_surefires_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "25b7aa8b19b56631c1ae007ba45492d66ac3c86e39171f135860969943db1544",
+      "after_fingerprint": "81c424ac3cf49b0eaeee06929450f025ce858bb9af8fce245efcc6ee1b00218a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_huntsmen_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_double_shot",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_double_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "0a5307db2c53f0d25a40ca91b358657ef189b2384d12ea956c3df8e2fc665649",
+      "after_fingerprint": "95bf33f4addb6a70556fb5174767c3f194963789c130768f14a929cec0e42f01"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_huntsmen_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_heavy_headed",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_heavy_headed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "f65f2abbd4d696a30236f04da1d6c22f95bd138e4ce7e13bdbc80ef7585fdbb0",
+      "after_fingerprint": "600f45a3b8da1b8da9008ba7d0bef1a83570d6d91a6b2db0dc6097f7bf98e78c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_huntsmen_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_huntsman_anti_large",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_huntsman_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "9836c9e846b7e0ca54e6cca9d006bd3d273d47af9a49b7ce7d6719203e643211",
+      "after_fingerprint": "f403b94c19bd467def1542b70cfb1645c04acd72d14fe56de95095ccaecd96f7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_huntsmen_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_heavy_headed",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_heavy_headed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "36daf49ca899ce12581ca65ec36de7b084a9b105e30a5014e7f32f5e46b7462e",
+      "after_fingerprint": "5bd38d1690974e306da64f42e8b7e13485455445fa7cc708f574af86d77d2a5a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_huntsmen_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_double_shot",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_double_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "c6c2435b9ce8b9907603dd33ec1d56e21d199d51e00108eba812f377d998ee01",
+      "after_fingerprint": "80926f5ddf8e4690b5a557ff3cd100afe05706cce1492da4e6b2033fd4dfa766"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_inf_huntsmen_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_bow_arrow_huntsman_anti_large",
+        "projectile_key": "wh2_dlc13_emp_bow_arrow_huntsman_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "32a22452959e1b312e48caf158a2eeabafddd3b1a83dd9b11e3cf2e0e8a12710",
+      "after_fingerprint": "e7496776a5a99b83a71921f5c3ddacf9d0bb43f490a52e9c02ba2416069e5435"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_veh_steam_tank_ror_0",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_steam_tank_cannon_ball_exploding",
+        "projectile_key": "wh3_emp_steam_tank_cannon_ball_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "40"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "8b1674cb90a05c3cf196095bfd307dda0f800ed1ca48991db51c0e0f0494ac1d",
+      "after_fingerprint": "c75e00975eaf99acfd2d81795934ebb3c4216575bc0b3125c4c3d146a4bff4f7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc13_emp_veh_war_wagon_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc13_emp_helblaster_volley_gun_bullet_war_wagon_upgraded",
+        "projectile_key": "wh2_dlc13_emp_helblaster_volley_gun_bullet_war_wagon_upgraded"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "8e3cb78e07395b7208f24621b1d171dc29c3e076a135d77d5428bed9ce930dfc",
+      "after_fingerprint": "e8c8a12c055d2fb83af6af893e5b6ef7f0bb7c1ae98f7f8c8af3e01471b489b2"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_art_helstorm_rocket_battery_morr",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_deathstorm_battery_morr",
+        "projectile_key": "wh3_dlc25_emp_deathstorm_morr_rocket"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "66"
+      },
+      "before_fingerprint": "ede0a7e2c45ecb9f3f9ee6914fa8ea41ee4197545c0cf28e77559b084a60113d",
+      "after_fingerprint": "756fcd6d6b4a7e38a356913aa8984b89bf5e70087dcb618fc0b4bbad0708b354"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_art_helstorm_rocket_battery_morr",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_deathstorm_battery_morr_upgraded",
+        "projectile_key": "wh3_dlc25_emp_deathstorm_morr_rocket_upgraded"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "66"
+      },
+      "before_fingerprint": "fe0b4c3455d629e842246ce8f840c0efd373d2780f2bbd9e29924d763e68ef9e",
+      "after_fingerprint": "53cf25b7251da13c83cb24199384e7489a524fe95dd8f1354db4e89920727a61"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cav_outriders_morr",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_grenade_launcher_morr_upgraded",
+        "projectile_key": "wh3_dlc25_emp_grenade_morr_upgraded"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "25"
+      },
+      "before_fingerprint": "1ee5e029be15e4c05548677f870f7d2fa1256bb5e4196e22b5e3a8aa94a17036",
+      "after_fingerprint": "b19f49a0ad26c09390540a083ed74cfec95ca45bee49c3a8df2b7f577d60aa22"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_engineer",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_repeater_upgraded_engineer",
+        "projectile_key": "wh3_dlc25_emp_rifle_repeater_bullet_upgraded_engineer"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "240"
+      },
+      "before_fingerprint": "d4f06889cec328e120bf29a6923a80c0b1f9881a8e64fea51f26813bcdcb8b8a",
+      "after_fingerprint": "eec022c86e527446e7d226c92a2e62c7f4b58933041d8769827a2f1617b408d8"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_engineer",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_repeater_upgraded_engineer",
+        "projectile_key": "wh3_dlc25_emp_rifle_repeater_bullet_upgraded_engineer_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "240"
+      },
+      "before_fingerprint": "276b781d46a6cd1875d2c0dd5d6b66c60da73530b4140c259e67e230ae06d511",
+      "after_fingerprint": "4066017a65d6b2238dddb4f80b7b925de87bfa1726bcd87a93f8c81536c8e9bc"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_engineer_mechanical_steed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_repeater_upgraded_engineer",
+        "projectile_key": "wh3_dlc25_emp_rifle_repeater_bullet_upgraded_engineer"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "240"
+      },
+      "before_fingerprint": "189a3273e049db727a64ad2b7789b4c679de58ac4e7c6fb7d2613bfd98d13f12",
+      "after_fingerprint": "2a23e1152501c77ce1b1876802bc7ca17f2d74b912c98c875ec374c35dbc4292"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_engineer_mechanical_steed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_repeater_upgraded_engineer",
+        "projectile_key": "wh3_dlc25_emp_rifle_repeater_bullet_upgraded_engineer_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "240"
+      },
+      "before_fingerprint": "3bd716c32e1cabf71de3b1a1a80d502073cb16ae55da5339a248b4b45e028abd",
+      "after_fingerprint": "5453ca411b335a5cb65761237086b5855ac604c2e17505dc5d68b32d3eded4a1"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_engineer_warhorse",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_repeater_upgraded_engineer",
+        "projectile_key": "wh3_dlc25_emp_rifle_repeater_bullet_upgraded_engineer"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "240"
+      },
+      "before_fingerprint": "ba941278ed448580bfeec617c5635b08e3313e8b78c7c990b2c8b27a3f9cb031",
+      "after_fingerprint": "a6393798062fa0fda512e4b2fd6b1409fd82e067c8f5e05468451c9e05c7190a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_engineer_warhorse",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_repeater_upgraded_engineer",
+        "projectile_key": "wh3_dlc25_emp_rifle_repeater_bullet_upgraded_engineer_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "240"
+      },
+      "before_fingerprint": "750a81a7df4292f2e323a8bc3f1dc198aeb0889d24928c4aa4f1b14cad242014",
+      "after_fingerprint": "48d0044e529d3ea2a1c86fd1d55f1a14b1c1e93e139f71a4a372e3014cb22ec1"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_master_engineer",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_grenade_launcher_master_engineer_cluster",
+        "projectile_key": "wh3_dlc25_emp_grenade_master_engineer_cluster"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "35"
+      },
+      "before_fingerprint": "c4496f62c4e8c6c0a27fb128edc4ca4755b0bf9ef82d78f225cc86a0d5e8d84f",
+      "after_fingerprint": "913cc402b97b1de0bccb366828875708fc87d219fb1a9f7b9f8ee4f118c7f019"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_master_engineer_mechanical_steed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_grenade_launcher_master_engineer_cluster",
+        "projectile_key": "wh3_dlc25_emp_grenade_master_engineer_cluster"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "35"
+      },
+      "before_fingerprint": "5580190b2eef4faacddc32d7e4f542e09945bd37128173ac5becac72e259a829",
+      "after_fingerprint": "463198d4851163311516671b0bb2392668ec382b1099a9c439c94e443342cfc5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_master_engineer_steam_tank",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_grenade_launcher_master_engineer_cluster",
+        "projectile_key": "wh3_dlc25_emp_grenade_master_engineer_cluster"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "40"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "18773a3d441666f8a645f0d6770daee2c8b764328af76ef58fdfa52e15da5f0d",
+      "after_fingerprint": "23400025b01417e17d1f95247450999f79c6d299b779e00f83b66a3e8ab02d64"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_cha_master_engineer_warhorse",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_grenade_launcher_master_engineer_cluster",
+        "projectile_key": "wh3_dlc25_emp_grenade_master_engineer_cluster"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "35"
+      },
+      "before_fingerprint": "bf68c17c1ad349e7f883e9071db95000eabcc1182f69aa4177e84e14a4c93353",
+      "after_fingerprint": "ea68452cf4cd1d0eda75cc51c132cd97536b61bb29c94e002965296960bc52b2"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_inf_hochland_long_rifles",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_rifle_hochland_upgraded",
+        "projectile_key": "wh3_dlc25_emp_inf_rifle_bullet_hochland_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "8436cd73f56e686aa8df2f9f9b8396b3e499532165629331e139538453b1aec8",
+      "after_fingerprint": "c0a67af68da5f7575a928a8bf5003376556dd134004e0b0a5223e8bc7ea56640"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_inf_hochland_long_rifles_ror",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_rifle_hochland_ror_upgraded",
+        "projectile_key": "wh3_dlc25_emp_inf_rifle_bullet_hochland_ror_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "c551de690ea0aa6f06bcc039d0df5a36ea0df9969d74c67aa033548676fe8577",
+      "after_fingerprint": "fd5436c2ca893f6c09bd16974215d0ca288add3cb07313c45e6ad4fa751be81c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_inf_nuln_ironsides",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_ironsides_upgraded",
+        "projectile_key": "wh3_dlc25_emp_rifle_bullet_ironsides_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "d84b3233e31b3347f268fa80856caf06d9e12fdde1d31b49dc8a414dc10457c0",
+      "after_fingerprint": "810d8c0c5a75767cebbec5f11150740f0e899087e15262a5e95e9b82403842d7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_inf_nuln_ironsides_morr",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_ironsides_morr_upgraded",
+        "projectile_key": "wh3_dlc25_emp_rifle_bullet_ironsides_morr_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "4a8b0f70376658119d97a94aef84be4dccb9aedda7cb6f68982c9002d2bf5feb",
+      "after_fingerprint": "89a001d3f63b3e70c24f48f21a27b0ec2e6ceec7fc4ab5cfe8d098e37f2432aa"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_veh_marienburg_land_ship_morr",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_land_ship_cannon_culverin_amethyst",
+        "projectile_key": "wh3_dlc25_emp_land_ship_cannon_culverin_amethyst"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "100"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "d88463514ce570fb0f63ce1b23521c18a87b70fa926a2252f062c6df6c09ef94",
+      "after_fingerprint": "dd5edcb2951147a3db3870c77bc680e071947057750f305df49a3271ff97f74e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_emp_veh_steam_tank_volley_gun",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_steam_tank_cannon_volley_gun_upgraded",
+        "projectile_key": "wh3_dlc25_emp_steam_tank_cannon_volley_gun_upgraded"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "40"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "120"
+      },
+      "before_fingerprint": "66ed95926c315ec7162e867a03c6325c1c56f33b9604238dc41d82b71ffddc20",
+      "after_fingerprint": "543a73f4a0890b03662864526d1c54ba14b94f7beb4dbf50ff61df2c19f9ff09"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_art_hammer_of_the_witches_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_cannon_hammer_witches_upgraded",
+        "projectile_key": "wh_dlc04_emp_great_cannon_ball_hammer_witches"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "21f681c9a164f2dce82b8dc68e1ecaab6d2cfd2872f8d5a7fdb5b1858ed94222",
+      "after_fingerprint": "7613154c71d5db860a67357c49c9e4a900b333c508eb8331c4cf443c340263e6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_art_hammer_of_the_witches_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_cannon_hammer_witches_upgraded",
+        "projectile_key": "wh3_dlc25_emp_great_cannon_hammer_witches_grape_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "e5d1f841e1b6ef06ba7fc3a834393a40af6dd72cb50af6661afb995f140f10e6",
+      "after_fingerprint": "33b210bb174af9f1ce957cb44e14c3656ef28f36d52cde93a6023018cf7be9b5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_art_sunmaker_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc04_emp_sunmaker_rocket_upgraded",
+        "projectile_key": "wh_dlc04_emp_sunmaker_rocket_fuse"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "72"
+      },
+      "before_fingerprint": "a43eb4e6125be1a9e70bd724ec943bb72850ddf34ff222fdc9ab59b211b19844",
+      "after_fingerprint": "51529c8a56eb6cd20c7c5627b11cb0471ac74992a5f562a14809efc67e1ae84f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_inf_free_company_militia_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_emp_free_company_pistol_blessed",
+        "projectile_key": "wh2_dlc17_emp_free_company_pistol_bullet_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "dad556d346477985bda5995369a51811734d6fc3d917e3eb7ae6d8c11810ad37",
+      "after_fingerprint": "1da01f40b2da5851de804f5810d351bfaf8d97c58e51d8c9ec0558d9821bc2c6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_inf_free_company_militia_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc04_emp_free_company_pistol_upgraded",
+        "projectile_key": "wh_dlc04_emp_free_company_pistol_bullet_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "8346961d845fc559c8340f83c14a46158fac08b4488f07b129d2cb7e2ae3f7e3",
+      "after_fingerprint": "d5efe86864b783a1ff0acb9dfe42f70804a979dffad2058efd6385b03ab7adb6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_inf_silver_bullets_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc04_emp_rifle_silver_bullets_upgraded",
+        "projectile_key": "wh_dlc04_emp_rifle_bullet_silver_bullets_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "16981258cc9237bcd39b3cf5aeae53baa5647482e3b8cb468265c820711338f6",
+      "after_fingerprint": "15b377068a9720cf85b3e329707952a0eceeef2c09bcca217a129deb9ad9e0d7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_inf_stirlands_revenge_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc04_emp_stirlands_pistol_blessed",
+        "projectile_key": "wh_dlc04_emp_stirlands_pistol_bullet_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "98f85fb1651ca6798d90ed8cac74ede8a48fa06a7c889a4bdf439f0959e883c2",
+      "after_fingerprint": "3aa87a669f768a5aae399a59244c6d4569d9a3389d561c6746b30380cc155ec4"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc04_emp_inf_stirlands_revenge_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc04_emp_stirlands_pistol_upgraded",
+        "projectile_key": "wh_dlc04_emp_stirlands_pistol_bullet_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "7b16180ae8512eb5d299d0448f6394b9b166e6682bb30ad20a074ba9c11cb233",
+      "after_fingerprint": "d2fec793b2c3f5954b704a68027009b552eeea8fbf93cfba91bb9a113920e070"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_emp_art_great_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_cannon_upgraded",
+        "projectile_key": "wh_emp_great_cannon_ball"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "68171029d5f5975d14bb90ce38b737f5008db7395e670851462449114f4f84ca",
+      "after_fingerprint": "74828cbe3743dd10ed60869993b307bd6721d7a4cbd9b1fdeebb162e2eac4b9f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_emp_art_great_cannon",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_cannon_upgraded",
+        "projectile_key": "wh3_dlc25_great_cannon_grape_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "7028fd0477bc45d4077bcc9ca20a51df56ed8f7cca6e995ab5b923262b1d125d",
+      "after_fingerprint": "23a6dd56b896b650f26df2fe788d626e4e9119aea88b0c2cab1dbb9d78607fbb"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_emp_art_helblaster_volley_gun",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_helblaster_volley_gun_upgraded",
+        "projectile_key": "wh_emp_helblaster_volley_gun_bullet_upgraded"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "198"
+      },
+      "before_fingerprint": "400405e2cbc287cd0cfdf1813f22a40c69ccaaa77434c9d365ef3528c52c2842",
+      "after_fingerprint": "b5147693191cd5b07181ec885c954ea7e41c806662c7eb0589bf7bd23f5cf580"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_emp_art_helstorm_rocket_battery",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rocket_battery_upgraded",
+        "projectile_key": "wh_main_emp_rocket_battery_fuse"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "66"
+      },
+      "before_fingerprint": "edea422b3ec43817ea488a4256388dc81150d9a4a3d991a185dbd883d0e5f171",
+      "after_fingerprint": "f617f79fab6cf2db061845c312612c13018e419abd9be0cecd41fe93ea1531ef"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_emp_inf_handgunners",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_main_emp_rifle_upgraded",
+        "projectile_key": "wh_emp_rifle_bullet_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "049f4bddf7d5883bea60960c729f74e7756c1731978a3f64bade3e0294a11bb9",
+      "after_fingerprint": "f7d7f882b728341809168a6b37208afb39608a7ff749a0c1559d8fff4a0aa531"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_emp_veh_steam_tank",
+        "component_role": "entity_override",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_emp_steam_tank_cannon_ball_exploding",
+        "projectile_key": "wh3_emp_steam_tank_cannon_ball_exploding"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "40"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "e55ada8ec55c5047c16a31d6c7442ff73f097546cc6d4658a52a68d637739e76",
+      "after_fingerprint": "295fd1465895f4997caee54042a1b8f70f6e26cd063cfbb12f055e528de8aa95"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_cth_art_grand_cannon_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_cp1_cth_grand_cannon_shrapnel",
+        "projectile_key": "wh3_main_cth_grand_cannon_ball"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "3c03f56a5795c7ea51967d75edee041f4f9c7e5eec1bbe5d3b787b477e97fd49",
+      "after_fingerprint": "0f8b78d558807a62d4935d0877e558a35812d06e5afe85b061bfab854d369afe"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_cth_art_grand_cannon_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_cp1_cth_grand_cannon_shrapnel",
+        "projectile_key": "wh3_cp1_cth_grand_cannon_shrapnel_shot_shrapnel"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "fe8c65e7a9b65b09b5eb97288dd392b024303ea44246c77b5c2342aa5cde245e",
+      "after_fingerprint": "208c43111ca6e9c908f91c019f95f8a5661c39af7d0521ba68d116fc622e45cc"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_cth_cha_alchemist_2",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_cp1_cth_sky_lantern_crane_gun_bullet",
+        "projectile_key": "wh3_cp1_cth_sky_lantern_crane_gun_bullet"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "ed4c41261ac4c7d36fe5335a9fa5aeb555b20242a282ef6f679ad6aa62ffe9a9",
+      "after_fingerprint": "462a942469c4c79998aa474fb3831880565918da6f00b5fc47c91991aa617ad2"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_cth_cha_lord_magistrate_2",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc24_cth_sky_lantern_crane_gun_bullet_debuff",
+        "projectile_key": "wh3_dlc24_cth_sky_lantern_crane_gun_bullet_debuff"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "50"
+      },
+      "before_fingerprint": "9a372f9a964949199609ab5c1037f94912aa76e9f182c112a90e30981495ac87",
+      "after_fingerprint": "9f14f048c175444c6905ff1a15012612a5a1641ced5614d93f3395fb7635c283"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc06_grn_inf_da_rusty_arrers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_anti_large_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_anti_large_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "da93388bfb40133898a88fe5860d151a2f015124bc5cf687815a1f9b3ccebce4",
+      "after_fingerprint": "3f1bf9f1a075beaddf025c498ccac60b8e3bd4871b130e2dd56ac2b56fd8b9c4"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_forest_goblin_spider_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_multi_shot",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_multi_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "429f159a151c55acb0d0993bde0c92a54c1c029fea7499b3c4a3149e8b235c3f",
+      "after_fingerprint": "194188ff251ce6dde919323d26bad2eb25fe87c6763aa0d941bda0b87c1dc9e1"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_forest_goblin_spider_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_explosive_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_explosive_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "bf47890238a59704323185f6bc9d70b8a54b48eadf6e9708a0ad86fca947ef89",
+      "after_fingerprint": "54d1a2c0298042b690dc629a6fdcbd79f154628e9f88ab87ff7bd42b0089440f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_forest_goblin_spider_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_fire_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_fire_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "e30cc1772dbff15b43d48468ed58cd3394c4b4b7c4c397e7a25159449083f7ba",
+      "after_fingerprint": "1e626e048092208e452abf9558ad85fd59631d24215d0c8cd42ad9a04b324ba9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_forest_goblin_spider_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_anti_large_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_anti_large_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "33869fe274598329dc71fe408ee014dcda376befb53d8b4b22ff0b8b0af9c024",
+      "after_fingerprint": "4f38092003b09abc5035016d2d4a88e4ccb6a0a372e82e4061ea42830ec7be5a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_forest_goblin_spider_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_ap_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_spider_rider_ap_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "ca2ee3c62b0452fc2f75950bc464b40c0a7d1ead732920324c42561d02426e55",
+      "after_fingerprint": "59f388d37ec7dc716a0fed51173e1032c009f516d564d86d64b9aada1f4e1898"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_goblin_wolf_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_fire_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_fire_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "729f8d7d3d65d37ba71fcc59ea51d375b1f12ed61258293f7a4271ca78ddcfc0",
+      "after_fingerprint": "85b530f3efdf931c02496336e3a9ef4552b3e77f27e3a03f8c37cfd27acf6eb9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_goblin_wolf_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_anti_large_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_anti_large_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "3b3c010279f8b319b80796a0e98e1f74822de8e38c63a686a9bfe1f7d8bad7ef",
+      "after_fingerprint": "5a6fce077a7e1a771b23079e155fb5a101761675fc5d405dcd8e2217ab9dd6bd"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_goblin_wolf_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_ap_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_ap_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "7fcffa07f696350fe81d39b0832eb3d58279f9ebd51b1127b8bba51f7926fdea",
+      "after_fingerprint": "59ee2d42eb2a9389c216e9feae1e77b74918ee4db46532cee2645e4894c1b1b5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_goblin_wolf_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_multi_shot",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_multi_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "cd8d9fcc8bf9ab9d1fa8eda67726c6e4b75b8b6f2efd2e0d76a08f86a63ae4b9",
+      "after_fingerprint": "e8c249078720f3cb39b8b11d4e0daa165f3d310e04857c70069135505145d723"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_cav_goblin_wolf_riders_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_explosive_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_wolf_riders_explosive_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "953ff0df1dd927088f0e61432ce5bbd6c1be35a1d559651b257356a6705a93fa",
+      "after_fingerprint": "ec29259609c01e126518390816b6d452a542aa190ad576b2ba82fdd08ef8b6f7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_multi_shot",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_multi_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "839a90bc874b674c1736897c8ef1c824bf58069fe492cbd2e23ad13b6534e1bd",
+      "after_fingerprint": "300d8f5446f1034ca1c435d1d569c23272c543bb41de1c836d98fff2e5dea726"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_fire_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_fire_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "72ab68f4978771a434179b94beebce0de32d7c841ecd1ad013a7c4c969e71a70",
+      "after_fingerprint": "da3e7a488a6a32ca4d6355c166ab32af47673c7289775c1e257901e7b4fbd8d8"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_anti_large_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_anti_large_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "dccf05ee0408cd670b31b94576537754da53ba9deefca10c85e99160ca67580b",
+      "after_fingerprint": "0e8bef746d63c6aa1b28a93c9d68ec1c6c0048bebdb5beefe60df028fafdb91d"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_explosive_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_explosive_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "14ac6ae96e7cd9a45a446cd3a5ae61e9309dfe8a7d31d153336eaeb924c21d95",
+      "after_fingerprint": "d544a68d3847f281076f0e48ec2b9dc7836cad2868589d7994216261736f08b1"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_ap_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_ap_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "07a4cb0f308b6b93d0a245a173ffcdd46b246be4a4e1781f0ba5d66f0e818339",
+      "after_fingerprint": "dccac289a098104183ff5295fde9fa2b523adbbe3a2baf63bbb6b06c2c09c1c0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_multi_shot",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_multi_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "a72ae45d4a6771234c223eac4a1a33d7d8fb4238a582de35d5ad96ee3955296a",
+      "after_fingerprint": "55d6ac45aeb0c2c1c3b3b08b45fab1fa8b9e9bdc6bb4d7ea8ad21825722d7ba9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_fire_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_fire_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "63d9b7db9cef9db14197fef3cbf58db904995ef128b38ced732554b7fe6bb963",
+      "after_fingerprint": "714899f6f954c5b2711bb8cd9ebcf94155bb454800f2f7caf2e377829e63608f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_anti_large_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_anti_large_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "f4adf309e55707002d8a84ea22cb8e4ea2b4dcaa0b7b4185f90edef54b48e743",
+      "after_fingerprint": "ce9d15859ca2bbc49c2918b1198a7500dc3ef61ff0ea6108044a657be03681d7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_ap_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_ap_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "d2f22897e1eab4a8ab710957781634f11e48d106459d2e004f5ef5f05de69018",
+      "after_fingerprint": "8a2d286e3942ae2123069ee03a516778566e51995f5b9916133f9225e0db7f2b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_archers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_explosive_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_explosive_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "6a6d690adca09fb38fe61d1cade450320bfccc5b931b4f769a1e19a43de7ca6a",
+      "after_fingerprint": "7576152ba4fcb3157c7369506632d8a296e79b1ac8f259bcaa74fd6b44e434df"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_fanatics_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_anti_large_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_anti_large_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "fa5e4dbda923beb0bce7375d47d23efa907adef08043fddcf27c85dd18bd2ea1",
+      "after_fingerprint": "383134502fd8a2ea3571c6cb32e428bcdce4e8c7b3e0ffee905845d020dc474e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_fanatics_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_multi_shot",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_multi_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "5042515b4383b8e97ab78c6e3cd7c377ef595cf21079b6b2c8bb06fe33d15f8e",
+      "after_fingerprint": "9259d48db61f3bfb8fcc7c8166d82281bcb75b147b2c22ae6537d20815b132c8"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_fanatics_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_fire_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_fire_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "e76746d295153fdd7029106292f1fec3e95b7260b267b8e84b35613f546a6b22",
+      "after_fingerprint": "bd8e2dece1d15d1179ad38d45fccb97bb55425633dc98b7dadb1a236f0fdd0a3"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_fanatics_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_explosive_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_explosive_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "15986e4580b5459d2e387f93a471832c1d115c0cd122c2ae1b1dd73a71e4b6d8",
+      "after_fingerprint": "3078a3937041ccf08251716e7b55a960e602a12468743f638c76c26901bb1e5c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_night_goblin_fanatics_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc15_grn_goblin_bow_poison_ap_arrow",
+        "projectile_key": "wh2_dlc15_grn_goblin_bow_poison_ap_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "0ee538ca015d7de8ed3e842702d047056379d3036739291fd6b378fae00a72f5",
+      "after_fingerprint": "c8434eeee1fbb0a12a9dfe1ac3f0410c820512fb1eefa34c74f71bddf985aab5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_grn_inf_orc_arrer_boyz",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc26_grn_orc_bow_stinkee_arrers",
+        "projectile_key": "wh3_dlc26_grn_stinkee_arrers"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "d06af554890a94245ea935a3372dcb1a6d5a66629b18aa15accc28ab15b1f5b8",
+      "after_fingerprint": "9a82357325403a4f14ba22f461f91b197815c56f7b2fb8ce3c3d9ef15a2311dd"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc10_hef_inf_everqueens_court_guards_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_sisters_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_sisters_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "83cf797a706b630fb2a489c779a7fa4dbdc56e3a5987a99b849a06ecd1479236",
+      "after_fingerprint": "f0e6e0078e13f6217d12dd4fdd04755a38b50b2d013726aafc851e554617a24c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc10_hef_inf_shadow_walkers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_shadow_walker_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_shadow_walker_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "77fbabf2081560e03070b2d7ffe79695ece59ebf78d97305791bd9e562072a2a",
+      "after_fingerprint": "ba7e746f6f9106957e87baa2474e03b7c47bf060607519a4bb083f7aa694c9ce"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc10_hef_inf_shadow_warriors_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_shadow_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_shadow_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "4af4c39ef878ba3b1bd7ae54a5b171a7578f942f1960ae543e3bd704a2d70945",
+      "after_fingerprint": "f4774193df3303bf245b9d90f4aeaa0b2c925a043af1ed64874905e249dbd785"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_sisters_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_sisters_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "64eb34dde9fc845103e51bfd09707d76244843fa493910a212cf90aa4980c96c",
+      "after_fingerprint": "e048cb6c95f74b24c00cebc4d3f30b80dd56b1a38fdb9e96917cef7e0f975b7a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc10_hef_inf_the_grey_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_shadow_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_shadow_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "fdb744deb178b2143600bd71e6ab849d22403434de01373c6955a9db77944b25",
+      "after_fingerprint": "1c8bdeab62bb8d2ed35fb893380cce3e2aa265bc89f7bc3599ad18e5cafd8207"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc10_hef_inf_the_storm_riders_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_sea_guard_bow_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_sea_guard_arrow_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "c68b14388ec12e1aa66fef944b1eccf3114cb18889b8194f42ec121d8e87fc47",
+      "after_fingerprint": "739f02affae3768f3553a3afcb6ae8ee75577a7f977e5205448acb09f061f2d9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc15_hef_cha_princess_6",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "ea080884c25c98387b608790e67f8091c4faa5b4f411beb7c962f0f5164f73f7",
+      "after_fingerprint": "84dbc8ad0e1e911b7082bc103bd450608ed012cdbecd9e1ea2117d0ffe7beebd"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc15_hef_inf_archers_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_flaming_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_flaming_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "ddadb9859ad198af1e3355bb242814c0c2c5415f766fa528393b478fc8ab5c47",
+      "after_fingerprint": "fcaed5c63eccf41d2a23311000ff036d8c8a524fc25638cb8392f0b597942ca2"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_sentinel_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_sentinel_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "e42c1689d852033a78f8bb7a651a3d7e3f9427d7d382194ed03e131049796759",
+      "after_fingerprint": "d5df22b51ef1ef6a416ab488a0913853e5e46191c1a2ab006870a3dbedfa60a9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_spireguard_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_spireguard_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "faecb1ec47f7319dc589022df37e40f21f6c23a249ef621d6fee4b5f8852cb2b",
+      "after_fingerprint": "13f78e95702a02e851896e4b81b545a40a2b7c9a089d2312baf5878a669cda6e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_cha_princess_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "6ea85d80577f3ac0357da648fdcc7fb1e69b0d2b62735ce8290ab8b326ec43d3",
+      "after_fingerprint": "30ff2b05c3fa70301a2bf90e098d94422eb92b1bcd13c405359f1daccbd15b6c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_cha_princess_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "d20e729eadca92a0510ca1e5540f3138c50895dbc538d735deae5cb772d1c6e7",
+      "after_fingerprint": "3a9aa5e240470bf83385e024e731c4db9a296e6a7d4edf4268b79790535c9aa5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_cha_princess_3",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "0039272d9d9153c51e2e0fb067d1589d86ad377f98f581ea18d2ebc7050c1912",
+      "after_fingerprint": "175959aaaaa4dc162fc6ecd9f147f0fbcb77114f7198e7dcbd1f25cbd8ea6bb9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_cha_princess_4",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "938b935acde8f128ea718b781994058805ca81db6f9c9851e3fb7a15db09b860",
+      "after_fingerprint": "1ca25f5dfefaf0da4c4ceedf953f0a119f7dff65e27992782dec2ee0a2d0f43b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_cha_princess_5",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_princess_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "1a13e2274632cdb64fad33bfc9458d0764a7a37da327c5ead7f3d6fe6ff46158",
+      "after_fingerprint": "ae4a91429d62cc91cadfbb7edb3f8181df68ac0b6d456e7127696c3b2faa299b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_inf_archers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "8f3d21ed9468f7e5c5d63b3a3ea9efc019c166a2c5f00d99a25daaf63f0c885d",
+      "after_fingerprint": "02dafbd545a18133367ff21ae744177b02fb22b1859faad8f14f3188a02f6dce"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_inf_archers_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_longbow_arrow_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_longbow_arrow_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "159035680028e5ed7ec27c1bb7088169088938ec630b7ca2369fe4ced7e78272",
+      "after_fingerprint": "7ce6640eeddcddf19e238d67b49221aebb0917fecdd0d6297040ced802d852f8"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_inf_lothern_sea_guard_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_sea_guard_bow_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_sea_guard_arrow_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "eb8d8ad9f71fdd61e4cf69344f0a2491f79148b56e6da7d8d92d799d4ade7b49",
+      "after_fingerprint": "83e44b8c8d37fc6908f2aaa11280632ab1b568ccc55ad4d6cda105281fefa211"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_hef_inf_lothern_sea_guard_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc27_hef_sea_guard_bow_anti_infantry",
+        "projectile_key": "wh3_dlc27_hef_sea_guard_arrow_anti_infantry"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "b2d0a03de291fa4f7841a08cbe70730450ff2226bca558bad785e01c0d2b93c0",
+      "after_fingerprint": "861e35ccf0dc561bc24fe57a407ccacad46c18650308bc8f3dc690bfc90412d6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_ksl_cav_horse_archers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc24_ksl_bow_mounted_anti_infantry",
+        "projectile_key": "wh3_dlc24_ksl_mounted_anti_infantry_arrow"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "fb57543ef9a6aede624587075549ac9c66e7ac495437cc1cf1484d372df8d652",
+      "after_fingerprint": "14ea23d5855ee588b30eea47f33abfee97be15e07e7c09b9a03030b6f9deafbf"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_ksl_veh_little_grom_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_ksl_little_grom_cannon_ball_explosive",
+        "projectile_key": "wh3_main_ksl_little_grom_cannon_ball"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "355672d5385bec92ee50a35f6e0eb656a95232e05a056825fcb95b3df20e263d",
+      "after_fingerprint": "6cfd70b921b39bbc2ac67342fd5d177d13449bd5d505df21dc01a79452d94b7f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_ksl_veh_little_grom_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_ksl_little_grom_cannon_ball_explosive",
+        "projectile_key": "wh3_main_ksl_little_grom_cannon_ball_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "8e10c4121a6917a7d8deab4b516fad59cd1d73d8c051abba112789e2bab991ba",
+      "after_fingerprint": "1abefa74e9706ce707177afbbcfaa1866a2dd0b7373a0869a6d0e119fe3932d0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_lzd_cav_terradon_riders_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_fireblood",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "4d5748ad3bac001233b401e8b309d1a60dc34b946f5eca85af551e720a409b24",
+      "after_fingerprint": "3db06ed63948a79bef0b59591ddec68969e6533afc898f15b9f65c1e5054d75e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_lzd_cav_terradon_riders_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_toadskin",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "0cf2520e9b57e1e7aaf1d3b0603a9d4cf0462f52fd98baa546642dd25992ede9",
+      "after_fingerprint": "8bad4177ba120d82f207416c84cd1b9a73c763109d70409bbb0c19e0362b6f53"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_lzd_cav_terradon_riders_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_slow_death",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "19728dc8a625cc85ebe1c26bdb9b84114d8cbd5e577b468fd02e894973031f0d",
+      "after_fingerprint": "7f6ff8401cfcd153d7489344dc9ea63a7a8006955707ef302a8eb3c0d7c1a8aa"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_lzd_cav_terradon_riders_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_daemonbane",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "757b0c552ae10f514d270398879ac0da4b5d188115b780bbf79d77a6cfb04f96",
+      "after_fingerprint": "600087cdcde97c02a8ca2b5be49cabd5238c06ef32d9110f090f5eee18104452"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_cha_oxyotl_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_oxyotl_slow_death",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_oxyotl_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "1f9e8f9a8ca6375069ee0305a3dc43f40ffc766a2e480ff41f6b60dcc10a51fc",
+      "after_fingerprint": "9ee038b55455a168fe189d91d3a45890c842d50903ab2498a6742b4b26555d68"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_cha_oxyotl_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_oxyotl_daemonbane",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_oxyotl_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "efb2bfc3befc2b298497d0b4804bce46ea08c3b0b0e84d43d63dbacd6db09596",
+      "after_fingerprint": "8d3bfbd365c280fa9abe6d960f5c1ad9472255f57aac72e3e77e86cb28174b2a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_cha_oxyotl_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_oxyotl_fireblood",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_oxyotl_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "1645ad293e70e02e3e1e740c8f3ef1ba49337a3a24fcc1cd998401e4e5230d2d",
+      "after_fingerprint": "3d43ec3f44ea6945be5cc817530761d7e5a30d8be532052dccab52ee095855b0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_cha_oxyotl_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_oxyotl_toadskin",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_oxyotl_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "150"
+      },
+      "before_fingerprint": "3005a38ab675b1ed4e143018f5de6d047320f26d83d3db0c3c7bb3f372ea50f7",
+      "after_fingerprint": "ea074967c7cb21c6886708daa9e08d8b418c633cfc2fd1e01f5fe6c70ad04ce3"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_toadskin",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "2"
+      },
+      "before_fingerprint": "2d54a8cbb6e402deb012e6e3419ad9378e4ea324b23b1d75036f4081350f8c5e",
+      "after_fingerprint": "131562f6a25b98875874259d2948643120f4d282b6a0d56ed4ad8eb384a12138"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_daemonbane",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "2"
+      },
+      "before_fingerprint": "f1944e7f8bd2c5f486fcbf3e13518ac67e018352f5abee4c5c133b32773b8456",
+      "after_fingerprint": "d365bd6e0c5419018e3935a9719842cabaa142b4118e3f0aa76f339131240568"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_fireblood",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "2"
+      },
+      "before_fingerprint": "3906f1baf3044807a5d812948e014aba42cf1e3b2668865710347eb2a5bc6a6c",
+      "after_fingerprint": "aafe728df915a1caa039b4a6dad93ac556bd2bc5f7b99680908ccf31ceb2cea9"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_slow_death",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "2"
+      },
+      "before_fingerprint": "c47b2b24724dee2897e92ba8a47f2ae3faee2b54a5a1cb6f297aab5260395bbd",
+      "after_fingerprint": "8fd35889af0d2f79e2f4f6fa672727cd5af85f2f45e6ca29bec8f31baf1f2158"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_fireblood_blessed",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_fireblood_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "4"
+      },
+      "before_fingerprint": "048ff780d1c29c391478f9e17cce2535269e857ab675b69696392018b6ee1cd6",
+      "after_fingerprint": "0da4c52639711a2afa367d21f29a137c4580b130c74fb100823ba35cf30b3645"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_slow_death_blessed",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_slow_death_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "4"
+      },
+      "before_fingerprint": "8c32b26aad23888d4b52838f57e911e1c8df80e6c707bd9d151b8200e33aba14",
+      "after_fingerprint": "9e65fad87621bcd9ed0173a5f68ce9209d6aa6dc0a8471cb1054cc9a0dd3fe17"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_toadskin_blessed",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_toadskin_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "4"
+      },
+      "before_fingerprint": "d518e55be3fed4eae2d0b6fa315cfd16929e7a1ff6ed57e0386051d6d67724ff",
+      "after_fingerprint": "43a32595280ec27cca1cee8c3060e6add4fda420e0261905ace311153072b878"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc17_lzd_inf_chameleon_stalkers_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_daemonbane_blessed",
+        "projectile_key": "wh2_dlc17_lzd_blowpipe_chamelon_stalkers_daemonbane_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "4"
+      },
+      "before_fingerprint": "d2bd2d1734b4af1ad40b7a783925a441ca49a7e497173578dd2826d2b172d4c3",
+      "after_fingerprint": "1934771725b071e049faee8c1a68878c93218431cfb9d99bdd90fa67155290a3"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_slow_death",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "fd01e7f7122801b332b98540143dd86280132e5063d632472cfc9e2fec861c45",
+      "after_fingerprint": "40135d68ed49c88c9f4a093bc06b3e1a3fad8f0f238f019a9386bf7d94d55ffd"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_daemonbane",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "9a36c9c108a41d37f0dffa8409fafc4261cad06e405662683657fb0e43da9999",
+      "after_fingerprint": "0e80e1f6c6ff0418c3a4f3e4e5d6836b5ab2abcc30dbd5f80aae667b6869db2e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_fireblood",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "95725b9593016c6aee8393dd30c445629a7d097d6fa272a2136e8917f410624b",
+      "after_fingerprint": "ce08e517256772275e259bc1353d688cd2883e4abd58d44f66cae851407b8784"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_toadskin",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "8cd9d66aaa3100895766761714d5c453dadbfc55e2c2c7bcee00a9009e87e6f2",
+      "after_fingerprint": "c6b4a3e29ea3bd2f90dab98b5524d66b67d8aea7d8b491ff58cd552667b78f7e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_slow_death",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "c94bd7d6a758d498bb3ce8c1f45476c24ff28005529ac7b7131795160889b627",
+      "after_fingerprint": "767928fb1275028cdf170286331b81df5c960f274fd334643402a0650aca7faa"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_toadskin",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "eb6249ceca61ca7b72086ab0d74cb59ce6b7ff98301c2cdbe7a49ca538f470ab",
+      "after_fingerprint": "2cd5ec5e4b1507f1cf5ec2c74db58057bc18c908d4d992e879132c132dc88ea8"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_daemonbane",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "34f8de29fb8d283c333b21b70ea62e0ba8f723c14e0d82f1785c5e88a1b1023f",
+      "after_fingerprint": "0a0607a2ddf277ff70f0f4db0ca9c127dcc9a4ac677bd25bb0e2a31cf933277a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cav_terradon_riders_0_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_terradon_fireblood",
+        "projectile_key": "wh2_main_lzd_javelin_terradon_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "46e405393da5bd657457d30e86bbce991530a0492d6ba6c40e8291cba0e9360a",
+      "after_fingerprint": "143ee5058a0eeeb3fec7d7967661f66e59d199be91b7eb75bbcefd6871e1ac8b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_slow_death",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "33f4d4e28e5ae85b1d5feb521ce27afa0cd6c002feeb85d06e3d67d9be181a04",
+      "after_fingerprint": "d076c07ca0bfff8edcd3ea4f7588dad92fe8ba418bd734606910ab7b86e807d2"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_daemonbane",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "fb7de578b350e65a283f1728e8a489535246716436b1549f4f946a708e74114f",
+      "after_fingerprint": "f77332abf8fabec439eb92ad7c84751b13cebaaf8d07828f99aa0f0421759929"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_fireblood",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "1dc4dfcab8ac23df65e100a86ef3c4a5c5d657767e159f81f08acbede42733e1",
+      "after_fingerprint": "4dbaed4dca86794f4b5b881bf3bd27c22793450767f96f11640e7d08232f3787"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_toadskin",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "ccee529e568f65a105779ec2dbea9276834477122211672bc80098f543f3c1e7",
+      "after_fingerprint": "69f544ce4ec5a5d8e759dded53d4f25a62ffc08ec110c09c6fcd85614d6a336b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_slow_death",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "03c72b4a55b2dd404c94d6a51a9b30d16e1a3d4c143215147302d4c4cae7d076",
+      "after_fingerprint": "1d90d53bb22e5a8f68b42db32aef8c2759e5ea9d9498c6ad5bf6117a09770c1f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_daemonbane",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "089f48016e9fed0cb3571294f523232a26db981c1b039871d7a45dfd89befb56",
+      "after_fingerprint": "5295c656be5d4e320109673045f38235953f8142d8f4e211c9dc22016493dc14"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_fireblood",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "565ca8fc3d95db618f3eff87401c00a75bbad1cdb3f8e203f64e2768ac93fca4",
+      "after_fingerprint": "ad64559133cf659ca44c686d01f8881850aa14cdb823bd46443db34797f37c58"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_cha_skink_chief_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_skink_chief_toadskin",
+        "projectile_key": "wh2_main_lzd_blowpipe_skink_chief_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "82"
+      },
+      "before_fingerprint": "31424ee6c2570894154ace0643a80ed0ab792c492c2891adc74ab75a279f7115",
+      "after_fingerprint": "d213fa74c5380c81d03ff64873a61d314232eaa2167cff68184c93e19aa3b1b1"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_toadskin",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "f023f4136a3dc5dc9779cabb2a0b3fd6f88848c7eb15f932b91750c6da5ca56e",
+      "after_fingerprint": "936b29ad647b46e66528b207437900884c7adb0bc48229c0a832d00b02ae78fb"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_slow_death",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "28844c3b3950e1b8b61fe31f2502db79edac6b2560d08420e5604e7623bd57f7",
+      "after_fingerprint": "81fbf46a6359b7efa18f87396d2c7c1168c19701cb2da135d1265189058eadb7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_fireblood",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "399b5ece37c372953a83a0d37d5638516dcef60df6dfc8aac661f48e00776bad",
+      "after_fingerprint": "681517fa61ff2f64d88c2dac6229c8708cc82ab0a6682c84551f711ce64e7adf"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_daemonbane",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "e4e3e71243dd7772f93363f44e3e79a8b84dba968f80e23850fe43e80d843a5a",
+      "after_fingerprint": "74e33c1fb4d00ebf6d21b8404616006e405b0c91100ed2f6b81370a08d4f0796"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_fireblood_blessed",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_fireblood_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "e628d5032a1143e3509ae565c2f3a16c05485623dcd9dd35009ff5f9671d2f35",
+      "after_fingerprint": "50dad284da2290492c99f303b852e7fa18f9f6e9ab1fe83486adc301c39f5275"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_toadskin_blessed",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_toadskin_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "64e5db7101d6c1961bb2a3bcc8b39dc9e4c7fd2bc6989a412f3ee8c01d0f5827",
+      "after_fingerprint": "26a2fed3478b7b627919375b346999b72c7df0ae134745262cd62d38ef73047b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_daemonbane_blessed",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_daemonbane_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "e7eea92fa644cde21cc9891f3afe8f42d87513f3f9848424ec8e24d64a459f37",
+      "after_fingerprint": "815cc475b7b7532d7f5acc94e482d27e6911cd1459fd01f0a6d89be209bb31f3"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_chamelon_skinks_slow_death_blessed",
+        "projectile_key": "wh2_main_lzd_blowpipe_chamelon_skinks_slow_death_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "2ac87a30c1104bde9c60346ff14cd345040a9fb8f867a58b4d30fba43e3626b6",
+      "after_fingerprint": "720746341fb2ca3cbb3248132a9aac8e0175fe27bab0ce9baf2732171062c030"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_toadskin",
+        "projectile_key": "wh2_main_lzd_javelin_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "3"
+      },
+      "before_fingerprint": "0b571306d35eddbfb9ec846338ec8365e1eaa27bcc825c645884c3112ac47303",
+      "after_fingerprint": "a85f8977da93e579f422ac89b86cc79eb1372ef486dea63528af95dfd7576199"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_daemonbane",
+        "projectile_key": "wh2_main_lzd_javelin_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "3"
+      },
+      "before_fingerprint": "1b8776113b940e77e11730a7eacfb96a467872a1e9f038ba1d60a9c809561169",
+      "after_fingerprint": "6b4c85dd7a9893f984b7f1e901eb2c876bddb096cf8a6470be9326099c54d4e0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_slow_death",
+        "projectile_key": "wh2_main_lzd_javelin_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "3"
+      },
+      "before_fingerprint": "cb6da4d14f707d462e5fa30797a2e6b1487a1a0e5578b3119cb726c58d44c22d",
+      "after_fingerprint": "50f8059168234d75412b6ede2959144babdfcdd38c5e733c0425616fc66981d0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_fireblood",
+        "projectile_key": "wh2_main_lzd_javelin_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "3"
+      },
+      "before_fingerprint": "50eaada67afcae5ed4f1b889e4094831ab6eb63ebab0eef3307ee7a1507d6a96",
+      "after_fingerprint": "944f6d035a879d2e3ab86cbbdf9b43fde2a5f014979918f53040583343b45c6a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_daemonbane_blessed",
+        "projectile_key": "wh2_main_lzd_javelin_daemonbane_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "6"
+      },
+      "before_fingerprint": "50c9d5839cdb5bcae7f4954f0bc2911104aac4abe9873e1048d16d825d533df3",
+      "after_fingerprint": "b4d479d20aa6956b4ae40e11c9c8f838681b5037a99393afc68d656b311735c3"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_fireblood_blessed",
+        "projectile_key": "wh2_main_lzd_javelin_fireblood_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "6"
+      },
+      "before_fingerprint": "1bdb0c7b1610eb6eb63d53351729eb86531521f1319ae8dbe33428f3dee7e172",
+      "after_fingerprint": "4e27c7035986f2e33b35abbe59d77710638bd6d196afb9cfd7dad506b41dcd49"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_toadskin_blessed",
+        "projectile_key": "wh2_main_lzd_javelin_toadskin_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "6"
+      },
+      "before_fingerprint": "7708a3209e2aef2356060c64acf13109cfe6c08db5b0aadfbe207914aca029a5",
+      "after_fingerprint": "2f7ecb8118476756243ca2ebc6047e7bfb842c4e9cf0234f5d0d82048860457d"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_cohort_1_blessed",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_javelin_slow_death_blessed",
+        "projectile_key": "wh2_main_lzd_javelin_slow_death_blessed"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "6"
+      },
+      "before_fingerprint": "f8881901fb8c8240a0aa3084e099449cd85ad6ffd63cd7c3c9d24aa386b994c9",
+      "after_fingerprint": "ee1cc701dbd9976280f75274ab29aab9543329521b4c542ed57c7db7c6482f7a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_fireblood",
+        "projectile_key": "wh2_main_lzd_blowpipe_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "111d92d3cdcb6a87b680fdc7946a509225a81a2b704341ffb1c263eebc470d70",
+      "after_fingerprint": "faf261e326c8c0186995d72e93a2f8ebc3181a10b106b57a77ffa09b3400956f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_toadskin",
+        "projectile_key": "wh2_main_lzd_blowpipe_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "5297ee5c13b1b6c76a586778db4f56ccbb5b6b11191886ce05e3a827ff5a9bb5",
+      "after_fingerprint": "fcb0bbacc4ed0a1c9c5e9c0fa6ddb6ca7051870063b3a3bb664f33555cafa256"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_slow_death",
+        "projectile_key": "wh2_main_lzd_blowpipe_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "8e2b82246ed9b4e32dbbdd2d6f719faebc15c1a7150107541be83b32655ee750",
+      "after_fingerprint": "7d04776e45a6551704a81939b2c02f90066bd270fcb792037d18e01bef52e273"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_daemonbane",
+        "projectile_key": "wh2_main_lzd_blowpipe_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "b0d6a1fbd41622f58f8975a29454beb2c7edc623c0d3a50a9d0f55c837181283",
+      "after_fingerprint": "ef4ed9c98094bcde281041da11f03bdf2d9560eaa98c7e37156868110ac17c2f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_daemonbane",
+        "projectile_key": "wh2_main_lzd_blowpipe_daemonbane"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "e47a56ae146c675bd752a5240a8a5be49706c0a151c307a6875762b7800d42ec",
+      "after_fingerprint": "8f6585b5c01a71ce553a738aff5a5908a341c550471290d67db0337d9fb14931"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_fireblood",
+        "projectile_key": "wh2_main_lzd_blowpipe_fireblood"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "9e303f6cdf761372e3943c7a02abe12e658c1227e987e21370eea1c7afbe9f58",
+      "after_fingerprint": "e38ac962b0894edb826e9429a449e792c82208b05b3081b151bf9c10b8be3a43"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_toadskin",
+        "projectile_key": "wh2_main_lzd_blowpipe_toadskin"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "83adb3c8d17c35fdb3cbf815aa15e7741f1d601f1291e81fa727a63ef52cf9ca",
+      "after_fingerprint": "5eb78746ab58989c84423c8d456916615a4f4e90a4fc241079cd154d73a577bf"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_lzd_blowpipe_slow_death",
+        "projectile_key": "wh2_main_lzd_blowpipe_slow_death"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "26"
+      },
+      "before_fingerprint": "76cd36671d73e22812c4e86ccfdccddb56a5a002fc2a845dedcd22c1a7249cb6",
+      "after_fingerprint": "478dbdca16a62f709fb576e7f74134a3e172995902bde0d811c40b7c15a99ef0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc08_nor_cav_marauder_horsemasters_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_nor_javelin_heavy_anti_large",
+        "projectile_key": "wh2_dlc17_nor_javelin_heavy_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "653d2d0224c78a31d2caf5da8d4f1f32f33bffeca38e5d9fee517bbf6dbafa75",
+      "after_fingerprint": "dda87a27c0afb3248b6bd3ea7877c3ac40265cb5bf7487907d21542813dce8f5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc08_nor_inf_marauder_hunters_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_nor_javelin_heavy_anti_large",
+        "projectile_key": "wh2_dlc17_nor_javelin_heavy_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "12"
+      },
+      "before_fingerprint": "dafdb22a264538228e9a216c0b0e5294bce29c2069b0c8b87aa5a8ccb150a6c4",
+      "after_fingerprint": "a3cda8e57000aa5444766db8d557ee5dc61b6ea54c84dbb6b5f7b37a23ddcfd0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc08_nor_mon_war_mammoth_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_nor_javelin_heavy_anti_large",
+        "projectile_key": "wh2_dlc17_nor_javelin_heavy_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "200"
+      },
+      "before_fingerprint": "0b2bf94cda4bc24e712f406eb87b8d1f8e37b7d60c27f0118ce4148e3ba4233f",
+      "after_fingerprint": "4614bdb9099464ea01d6d163896dba0be9f5e63e9454fa67fed5b0ed4bb79e2c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_main_nor_cav_marauder_horsemen_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_nor_javelin_anti_large",
+        "projectile_key": "wh2_dlc17_nor_javelin_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "16"
+      },
+      "before_fingerprint": "daa6be35bc2bb63011309baacc5fb622cb770eea8211b2ea740ec61788370837",
+      "after_fingerprint": "06ddf51c530107522c6d5c0b9b15c4654394b0302d24492dcc56df4192b51748"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_nur_cha_infernal_castellan_chieftain",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_nur_esar_doombolt_bullet_explosive",
+        "projectile_key": "wh3_dlc25_nur_esar_doombolt_fireglaive_bullet_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "30b4abf5adcd9f4a22d09ab890fd28156e688734826d875af1b6f6a2bf64ce3d",
+      "after_fingerprint": "2aeb44b8ae8c4e7ed1b929ef8f05adae0aabeb196a1d009aeb2d021244e222d1"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_nur_chieftain_inf_chaos_dwarf_blunderbusses",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_chd_blunderbuss_bullet_anti_large",
+        "projectile_key": "wh3_chd_blunderbuss_bullet_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "104e8f19a585bc7965ddb0450aed13b1d7affefb518d3049a7aace0b4fee7d16",
+      "after_fingerprint": "13bb700672fbe91c2d949f8c24fa427d8c9f2a81556ad59a1abb15a1df9fc6ec"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_nur_chieftain_inf_chaos_dwarf_blunderbusses",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_chd_blunderbuss_bullet_double_shot",
+        "projectile_key": "wh3_chd_blunderbuss_bullet_double_shot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "6b91622e73f00e625edd1e3c73e16442c1c5cffa7e2af16649ce244516c51a42",
+      "after_fingerprint": "138c1697c0a4660782c1e573acc9cd8e8751e509f8c55b2eb133b0b15ec6dc8f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_nur_chieftain_inf_infernal_guard_fireglaives",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_chd_infernal_guard_bullet_anti_large",
+        "projectile_key": "wh3_dlc23_chd_infernal_guard_fireglaive_bullet_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "4e30da8c00f0f77f851ae0491d754e543a2aacde933d2bc37c777c9a550eca41",
+      "after_fingerprint": "69ed44a9fd411026955b26f188557b3bfa4ca00b756d00fa6f29f5bb83efc13b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_nur_chieftain_mon_war_mammoth_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc17_nor_javelin_heavy_anti_large",
+        "projectile_key": "wh2_dlc17_nor_javelin_heavy_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "200"
+      },
+      "before_fingerprint": "9e9fc365ee6ab276dc4c5b09befc4b7a48cd68586f6a6e4806eff639cc2cfe55",
+      "after_fingerprint": "6efe03863bd0fb201033eaa1b2c396a1c09ff72d7a87047ed76d0b0f48cb51d5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_dlc25_nur_chieftain_veh_dreadquake_mortar",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc25_chd_dreadquake_mortar_shell_anti_large",
+        "projectile_key": "wh3_dlc23_chd_dreadquake_mortar_shell_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "15"
+      },
+      "before_fingerprint": "598569490b4a8c234c7e8a364e7291199b813aa8977771810efa1d2aa4bd8fd8",
+      "after_fingerprint": "e8adfc2049e91395ca935a42a669d69a30ab6cb4ccaa92b504717bcfb625414e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh3_main_ogr_veh_gnoblar_scraplauncher_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc26_ogr_veh_gnoblar_scraplauncher_increased_projectile",
+        "projectile_key": "wh3_dlc26_ogr_veh_gnoblar_scraplauncher_shot_increased_projectile"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "7be0912a4641f4d366bcf16599a207390d63cbec8423fa90f512b31ba861e2c7",
+      "after_fingerprint": "36e1769fbf84110564dd4cc0422ce1cdcc3730d7bf69627147226981035f7564"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_skv_cha_ikit_claw_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc12_skv_ikit_warpfire_alt",
+        "projectile_key": "wh2_dlc12_skv_ikit_warpfire_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "20"
+      },
+      "before_fingerprint": "138c15ca65e73b7ea3e150fa6da368f366236ad79919528fbf3373920b59872b",
+      "after_fingerprint": "5f458c1827f7dc4111a6ad11f883f956b2e63f044848a5a5b364b1bdc3db5502"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_skv_cha_ikit_claw_2",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc12_skv_doomwheel_warp_lightning_ikit_alt",
+        "projectile_key": "wh2_dlc12_skv_doomwheel_warp_lightning_ikit_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "52"
+      },
+      "before_fingerprint": "39621f4cfb9134be9e6a57eaa37064f3fa5292c14e94d6e7691f29f0f35b8cca",
+      "after_fingerprint": "2cca263e1ca1a09f06a6e01bc6c6fbf8872a139bf48c106f221a1a72127a97c5"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_skv_cha_warlock_master_2",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc12_skv_doomwheel_warp_lightning_alt",
+        "projectile_key": "wh2_dlc12_skv_doomwheel_warp_lightning_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "52"
+      },
+      "before_fingerprint": "354c19672bcbd7c43358eb2b53b7940c2075cd7a087b0aa4e5fd6eca23c4319a",
+      "after_fingerprint": "f0a51a0e1a8f16c62a6afd754c31de3ef0ce36cb694f9a9c1e0078a6b90563ab"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_skv_inf_warpfire_thrower_ror_tech_lab_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc12_skv_warpfire_alt",
+        "projectile_key": "wh2_dlc12_skv_warpfire_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "72"
+      },
+      "before_fingerprint": "a2f529f059301c723e3aac87a1343e3a497f28f1061ef9b99a6f84748f8a0bc8",
+      "after_fingerprint": "da866bf9fedb20c5c37740b7207432883435ae1cdaf32484869f75268e35c204"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc12_skv_veh_doomwheel_ror_tech_lab_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc12_skv_doomwheel_warp_lightning_alt",
+        "projectile_key": "wh2_dlc12_skv_doomwheel_warp_lightning_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "52"
+      },
+      "before_fingerprint": "44e4410897b6ce845d9b5673cc2531126bea799c73150c519854ad038454250a",
+      "after_fingerprint": "d07f05eb29b1b65cbf5e8ec2eb03236e1a35cc7bdb31ff2f03398d257f67ddb6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc14_skv_poison_wind_mortar_alt",
+        "projectile_key": "wh2_dlc14_skv_poison_wind_mortar_globe_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "14"
+      },
+      "before_fingerprint": "af709c87b666bb7280a9bc47473fe6f20f32f56960683882b85610a638c61366",
+      "after_fingerprint": "cd3fcfd431d7b4b60d322be9d7046d4b9ae9cfe5b6e8fd96fdd6dac25fa92b5f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc14_skv_inf_poison_wind_mortar_ror_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc14_skv_poison_wind_mortar_ror_alt",
+        "projectile_key": "wh2_dlc14_skv_poison_wind_mortar_globe_ror_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "14"
+      },
+      "before_fingerprint": "60da05e246690b6a1ce2589cc59fa3daf04169683a56af9f289499e91bf49898",
+      "after_fingerprint": "9ba73a6da97b12ebb7f6975dc02537868891babdde0ed6fa5573f3382db4a333"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_death_globe_bombardiers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc14_skv_death_globe_alt",
+        "projectile_key": "wh2_dlc14_skv_death_globe_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "959564778f841b9c81a492b07611a98304ca0873bc596f91b56b5fe0dc2ab320",
+      "after_fingerprint": "8bccc99627996a0b83cc1e87b72b161352ff08709f8d32c4a2612119a1cd5715"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_gutter_runner_slingers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_skv_sling_gutter_runners_alt",
+        "projectile_key": "wh2_main_skv_sling_gutter_runners_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "40530ac177eda4a2c8e64af0dfa21481ca9f1a402e43ea012033201785cfe0c9",
+      "after_fingerprint": "2c4c2057534526a4ce9b500a02621d751cf94b59b93fabe8b37e88da8ce03d1b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_gutter_runner_slingers_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_skv_sling_gutter_runners_poison_alt",
+        "projectile_key": "wh2_main_skv_sling_gutter_runners_poison_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "24"
+      },
+      "before_fingerprint": "15044bffa44ce08448c8bf6fb20cee04450beffc7e311df810e44bb4429f9b5c",
+      "after_fingerprint": "9633b7894a99e1213a0ba91bdd21287d19b9f5c6bef021ba7599952ad5326c3a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_gutter_runners_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_skv_throwing_star_gutter_runners_alt",
+        "projectile_key": "wh2_main_skv_throwing_star_gutter_runners_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "12"
+      },
+      "before_fingerprint": "982eda6f8904db30e7b08006b3dc134702b59d504403bba67d319f58772e4c08",
+      "after_fingerprint": "13a0e297d67fcae49cb0635c21d1159bc21de55e9dcb013c114e3f8260bd8242"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_gutter_runners_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_skv_throwing_star_gutter_runners_poison_alt",
+        "projectile_key": "wh2_main_skv_throwing_star_gutter_runners_poison_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "12"
+      },
+      "before_fingerprint": "085c8d5ab2a8adfcee6c497ae8ab9ee268edfa7bebd2e6881b990fb3b7ffde93",
+      "after_fingerprint": "713a7ce801c44ab694e8926faed224acd31e58ca2479786c8e4c47b3e934bab0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_night_runners_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_skv_throwing_stars_alt",
+        "projectile_key": "wh2_main_skv_throwing_stars_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "10"
+      },
+      "before_fingerprint": "b8a206e3f73c011163d49dcf6424bf7a232c193e98af06d8f5a91171914bbbfe",
+      "after_fingerprint": "fc2e24a48c559df5e152264b00e24cb1046779789b8045f314ecb15036d751ea"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_night_runners_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_main_skv_sling_night_runners_alt",
+        "projectile_key": "wh2_main_skv_sling_night_runners_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "7059bda23d36ae5ea52ce95383c74170cc9e52bf575071978510758e2d6e8be9",
+      "after_fingerprint": "fb919b0fdcd81bb3a0cc6d33a05de8727276da68c9aaee24401abbf06f6297b6"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_poison_wind_globadiers",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc14_skv_poison_wind_globe_alt",
+        "projectile_key": "wh2_dlc14_skv_poison_wind_globe_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "7df83e7032af143a587c873170f2f7cf377f210f314a36e44679b455a0f1b283",
+      "after_fingerprint": "d98632442d8fe869f0cf257989a69188c55abfa80f43ee6e191ba2b38761f583"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_inf_warpfire_thrower",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc12_skv_warpfire_alt",
+        "projectile_key": "wh2_dlc12_skv_warpfire_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "72"
+      },
+      "before_fingerprint": "2b6197ca1c46319428b21daf07ea9cad4ef143bbf3fd345d12b43cfdde1238e3",
+      "after_fingerprint": "e1f95bcfe8d7f14276bf9efc00677617acf85d46db89238e40aa499a8816591d"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_main_skv_veh_doomwheel",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc12_skv_doomwheel_warp_lightning_alt",
+        "projectile_key": "wh2_dlc12_skv_doomwheel_warp_lightning_alt"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "52"
+      },
+      "before_fingerprint": "4b00a637cc4f1851acfc8b5633ccb15356cca679150795d618afa4711acfb8f9",
+      "after_fingerprint": "169f7404df28fe33fd4c2d0fabdbe14d1b794b48ab923b59895d78aeac65f5e7"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc09_tmb_art_screaming_skull_catapult_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc09_tmb_screaming_skull_homing",
+        "projectile_key": "wh2_dlc09_tmb_screaming_skull_homing"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "025f399d5a8bd889a0be9a73815bd1da143fc5ec78d7750ca58c71db562b20bc",
+      "after_fingerprint": "5d3829a7f6a99872b555bdb5a87b3f00c2a14265e2cecbf4cb4d1b82c5c6776e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc09_tmb_cav_skeleton_horsemen_archers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tmb_bow_horse_khalida",
+        "projectile_key": "wh3_main_tmb_bow_horse_khalida"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "18"
+      },
+      "before_fingerprint": "47e48f190b8510ad583d3ab8993c4fa9d0ffdb3a72b3618718a95264fcde370e",
+      "after_fingerprint": "3baa897da27da4704c5369cac82d9804494ab7a23259a16741771b1ddd31c682"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc09_tmb_inf_skeleton_archers_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tmb_bow_skeleton_khalida",
+        "projectile_key": "wh3_main_tmb_bow_skeleton_khalida"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "d799d884e14657d2d73fd552df2ca5005459d4b049be7f3961c1ede777fd51e8",
+      "after_fingerprint": "43a1434d49d29b210da3d3ae282c7268b509d941f23f0313a10e4c982d6c3d9e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc09_tmb_inf_skeleton_archers_ror",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tmb_bow_skeleton_ror_khalida",
+        "projectile_key": "wh3_main_tmb_bow_skeleton_ror_khalida"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "419b13bc94e7e6925361f9c67c0fbb99e1065fe789333cccbfa75d1e647e087d",
+      "after_fingerprint": "be7180d6b43340489d4921b3a3c537febda9ac4b12d4f99075a391a1c5d9958e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc09_tmb_veh_skeleton_archer_chariot_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_main_tmb_bow_chariot_khalida",
+        "projectile_key": "wh3_main_tmb_bow_chariot_horse_khalida"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "88c641eb2f4b4e27da835f44640cacf7ef0fed9661f5dd0b3c8626d48b22d9d3",
+      "after_fingerprint": "b39c7afe91ee178ac07b26fdbf2410f8c6c10a3266ceb2d6be24772a334eb76f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_art_carronade",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc29_nag_carronade_grapeshot",
+        "projectile_key": "wh2_dlc11_cst_carronade_cannon_ball"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "fadf5ac66e48e8fcb92dac05e21eea0d44138824b99d75cc422d5c0400ebae24",
+      "after_fingerprint": "f0d862102aaef4fc9af029cd372c2e8830b552a32ed6757b94d8a77b34cd6d8f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_art_carronade",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh3_dlc29_nag_carronade_grapeshot",
+        "projectile_key": "wh3_dlc29_nag_carronade_grapeshot"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "22"
+      },
+      "before_fingerprint": "fd42ecf7b43cdf36c4a69ca6c2f1b1a8e94ae7a127db237e9799ab092a9f78ce",
+      "after_fingerprint": "03a58c7f1f070a03f918c430b280558ce8ab50edcf3100049a53907fac4a5e1c"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_gunnery_wight_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_gunnery_wight_rifle_bullet_blunderbuss",
+        "projectile_key": "wh2_dlc11_gunnery_wight_rifle_bullet_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "e358e8ffb75a0ed32d39488ade184d45d50cf2df1691ad854c9ed680339a9122",
+      "after_fingerprint": "e6527ce8cf2174d1ba16880d1f34392cc83ead68ae515c78baff7804159be769"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_gunnery_wight_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_gunnery_wight_rifle_bullet_blunderbuss",
+        "projectile_key": "wh2_dlc11_gunnery_wight_rifle_bullet_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "45"
+      },
+      "before_fingerprint": "db6f1c225b9be9c1f616b7144496e7af14c2a076aed4e432e499984a470e927a",
+      "after_fingerprint": "f09058e98bf80accf8f8c35cd532fa0f91aa0a0363f4a8e8f3b98e14a4aef10b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_luthor_harkon_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_luthor_harkon_pistol_explosive",
+        "projectile_key": "wh2_dlc11_cst_luthor_harkon_pistol_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "dcf20a59b7ead9a46b7e345ff060c09cb4222fab5780ad75512c4a9c8fb82b79",
+      "after_fingerprint": "fe528a8851c83d95fd2866717aa7602b5f9300f5df6a9cf2b89b066e29c00a99"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_luthor_harkon_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_luthor_harkon_pistol_explosive",
+        "projectile_key": "wh2_dlc11_cst_luthor_harkon_pistol_explosive"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "30"
+      },
+      "before_fingerprint": "22764cb6faf50ffbd4c2c187427a78a4fc201c20d51cc49eeb6e2d90bee6ca87",
+      "after_fingerprint": "d9d481ac84dfb052bbf4acbc4a47e439ad105772b99852a73d8bfc7e5325157f"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_vampire_fleet_admiral_female_pistol_blunderbuss",
+        "projectile_key": "wh2_dlc11_cst_vampire_fleet_captain_pistol_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "1e9767a916493e480ed9ed46dc7bb40c975a581de0493531b4928097efa58734",
+      "after_fingerprint": "a69caa2f3fb5649fdfae75fb0d583d4876d1a053c3a6ec829632cbc8b15a096b"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_vampire_fleet_admiral_female_pistol_blunderbuss",
+        "projectile_key": "wh2_dlc11_cst_vampire_fleet_captain_pistol_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "b4bc7828e519503a8b5d245e40a786d895b1d9be81a155eab4fb6cfcaab6b870",
+      "after_fingerprint": "9b40102f3c7ca87abcda070d05b958ece1a31fc58b81c4f14df0f58a15a6eb03"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_vampire_fleet_admiral_female_pistol_blunderbuss",
+        "projectile_key": "wh2_dlc11_cst_vampire_fleet_captain_pistol_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "e76b8f6c086f2b7f7e87c9c4c6abe42967ee23afd3b7ecc22e2c6a460b1d92b6",
+      "after_fingerprint": "3e3e1441723423d9c1ddbeaa669ba96f8efabee9f38dde05f800b495f869aac0"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_death_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_vampire_fleet_admiral_female_pistol_blunderbuss",
+        "projectile_key": "wh2_dlc11_cst_vampire_fleet_captain_pistol_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "568e6cbda5de7b3f2e57acd3612a9c217ff701aefbc46ef8b35b839b8bff569e",
+      "after_fingerprint": "119e68b01a2128fb2fcde01fb924fb09e1424f217f68ce0bbead646a2bb66f4e"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_vampire_fleet_admiral_female_pistol_blunderbuss",
+        "projectile_key": "wh2_dlc11_cst_vampire_fleet_captain_pistol_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "b774385e607f61a4465b012b534d6c8fcc2e2ff7c32a0e1786af8651576d171f",
+      "after_fingerprint": "7f7c121861036429fa0b51d9aec948cc483af8470d169565a2af3267a5a3a799"
+    },
+    {
+      "identity": {
+        "unit_key": "wh2_dlc11_cst_cha_vampire_fleet_admiral_female_deeps_1",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh2_dlc11_cst_vampire_fleet_admiral_female_pistol_blunderbuss",
+        "projectile_key": "wh2_dlc11_cst_vampire_fleet_captain_pistol_blunderbuss"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "40"
+      },
+      "before_fingerprint": "dc084a8654c2ecb770477d5128a3d4fb6576f879881d48e3f64fec30fa910048",
+      "after_fingerprint": "37ec4543c8e544576318600efa2d7fb8f3e03de9a0bd5521abe07d3857aeb67a"
+    },
+    {
+      "identity": {
+        "unit_key": "wh_dlc05_wef_cha_orion_0",
+        "component_role": "unit",
+        "slot": "additional",
+        "missile_weapon_key": "wh_dlc16_wef_orion_spear_anti_large",
+        "projectile_key": "wh_dlc16_wef_orion_spear_anti_large"
+      },
+      "before": {
+        "ammunition_pool": "secondary",
+        "ammunition": "0"
+      },
+      "after": {
+        "ammunition_pool": "primary",
+        "ammunition": "12"
+      },
+      "before_fingerprint": "20098f239462c98d50062c95e55175eab3166335aaeb3505a73cabb74c2e05df",
+      "after_fingerprint": "ab9bd46af999bf0bbc84c58d21fc2cc24ef75d9ac7965e108af9ea669c5e063f"
+    }
+  ],
+  "roster_changes": [
+    {
+      "path": "data/unit_stats/normalized/norsca__wh3__9.0__ultra.csv",
+      "unit_key": "wh_dlc08_nor_mon_war_mammoth_1",
+      "before": "0",
+      "after": "200"
+    },
+    {
+      "path": "data/unit_stats/normalized/nurgle__wh3__9.0__ultra.csv",
+      "unit_key": "wh3_dlc25_nur_chieftain_mon_war_mammoth_1",
+      "before": "0",
+      "after": "200"
+    },
+    {
+      "path": "data/unit_stats/normalized/skaven__wh3__9.0__ultra.csv",
+      "unit_key": "wh2_dlc12_skv_cha_ikit_claw_2",
+      "before": "0",
+      "after": "52"
+    },
+    {
+      "path": "data/unit_stats/normalized/skaven__wh3__9.0__ultra.csv",
+      "unit_key": "wh2_dlc12_skv_cha_warlock_master_2",
+      "before": "0",
+      "after": "52"
+    },
+    {
+      "path": "data/unit_stats/normalized/skaven__wh3__9.0__ultra.csv",
+      "unit_key": "wh2_dlc12_skv_veh_doomwheel_ror_tech_lab_0",
+      "before": "0",
+      "after": "52"
+    },
+    {
+      "path": "data/unit_stats/normalized/skaven__wh3__9.0__ultra.csv",
+      "unit_key": "wh2_main_skv_veh_doomwheel",
+      "before": "0",
+      "after": "52"
+    }
+  ]
+}

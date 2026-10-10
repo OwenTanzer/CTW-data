@@ -30,8 +30,7 @@ infinite secondary pool. No ammunition is added across alternate weapons.
 - Lothern Sea Guard anti-infantry bow: native flag false; native primary 22,
   secondary 0. Corrected from secondary/0 to primary/22.
 - Iron Daemon–Dreadquake: mortar flag false → primary/15; engine cannonade
-  flag true → secondary/40. The regiment-of-renown engine changes 15 → 23
-  in its secondary pool. Engine attachment does not override the selector.
+  flag true → secondary/40. The regiment-of-renown engine changes from primary/15 to secondary/560; its mortar stays primary/15. Engine attachment does not override the selector.
 - Thunderbarge and ordinary Spirit of Grungni: primary bomb remains primary;
   secondary cannon/flame-bomb profiles remain secondary/50. Their owning
   native land rows have infinite_secondary_ammo=true. The multiplayer Spirit
@@ -72,3 +71,22 @@ This establishes the database-defined supply mapping. Runtime consumption,
 per-emitter volley arithmetic, enabling conditions and ammunition modifiers
 remain distinct downstream questions; no such claims are needed to correct
 this normalization.
+
+## Historical payload compatibility
+
+The third Chej review found five stale magic output fingerprints and a second
+historical-baseline gate. `reconcile_ammunition_compatibility.py` now generates
+an exact migration from 3b5d13d to 2b5965e and refreshes the owner manifest plus
+its baseline comparison in a candidate directory. The original 13b4ff9 baseline
+is unchanged. Each of the 255 changed weapon rows must match its reviewed full
+fingerprint; only its ammunition fields are restored in memory for comparison
+against the original baseline. Missing, duplicated or altered migrated rows fail.
+Unrelated weapon, projectile and explosion changes still fail. Six normalized
+roster ammunition deltas are separately recorded by the generator; all other
+roster columns and row counts are required to match the reviewed migration.
+
+Reproduce with `python scripts/reconcile_ammunition_compatibility.py --output
+work/ammo-compat`, then `python scripts/validate_magic.py --data-root
+work/ammo-compat`. The generator requires the two recorded Git commits locally;
+validation uses committed evidence and does not require repository history.
+Run `npm run validate` and `npm run test:magic` before acceptance.
