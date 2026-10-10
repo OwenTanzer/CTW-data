@@ -43,7 +43,8 @@
       "source_manifest": "data/unit_stats/source_exports/source_manifest.json",
       "preferred_access": "Select the race CSV, then join typed lookup rows by stable keys.",
       "lifecycle": "production",
-      "role": "retrieval_dataset"
+      "role": "retrieval_dataset",
+      "ammunition_mapping": "Native missile weapon use_secondary_ammo_pool selects land-unit capacity; attachment roles do not select supply. See docs/ammunition-pools.md."
     },
     "skill_trees": {
       "description": "Skill trees for 550 distinct character subtypes, including conditional node sets, prerequisites, locks and effects; two reviewed pairs share source tree structures.",
@@ -243,7 +244,7 @@
           "battle:chs_wastes_coast_a_01",
           "chs_wastes_coast_a_01",
           "Cold Mires",
-          "Cold Mires \u2013 Chaos Coast"
+          "Cold Mires – Chaos Coast"
         ],
         "dataset": "cold_mires_hypothesis",
         "default_action": "surface_qualified_candidate",

@@ -238,6 +238,18 @@ if (!errors.some((message) => message.includes("missile") || message.includes("p
 
 const main = new Map((await tsv("main_units_tables")).map((row) => [row.unit, row]));
 const land = new Map((await tsv("land_units_tables")).map((row) => [row.key, row]));
+// Independent source-to-output check: do not share the builder's mapping helper.
+const nativeMissiles = new Map((await tsv("missile_weapons_tables")).map((row) => [row.key, row]));
+for (const link of weaponLinks.rows.filter((r) => r.attack_type === "missile")) {
+  const weapon = nativeMissiles.get(link.missile_weapon_key);
+  const owner = land.get(main.get(link.unit_key)?.land_unit);
+  const flag = weapon?.use_secondary_ammo_pool;
+  const pool = flag === "true" ? "secondary" : flag === "false" ? "primary" : "";
+  const count = pool ? owner?.[`${pool}_ammo`] ?? "" : "";
+  if (link.ammunition_pool !== pool || link.ammunition !== count) {
+    fail(`${link.unit_key}/${link.missile_weapon_key}: ammunition must follow native weapon pool and land-unit capacity.`);
+  }
+}
 const groupLinks = await tsv("units_to_groupings_military_permissions_tables");
 const sourceGroupCounts = new Map();
 const sourceGroupsByUnit = new Map();

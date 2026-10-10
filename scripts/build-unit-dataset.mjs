@@ -1,3 +1,4 @@
+import { missileSupply } from "./unit-ammunition.mjs";
 import { parseRpfmTsv } from "./rpfm-tsv.mjs";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -227,12 +228,13 @@ function projectileKeysForWeapon(weaponKey) {
 
 function missileLinksForUnit(unitKey, land) {
   const candidates = [];
-  const add = (weaponKey, componentRole, slot, linkSource, ammoPool, ammo) => {
+  const add = (weaponKey, componentRole, slot, linkSource) => {
     if (!weaponKey) return;
+    const { ammoPool, ammo } = missileSupply(missileByKey.get(weaponKey), land);
     candidates.push({ weaponKey, componentRole, slot, linkSource, ammoPool, ammo });
   };
 
-  add(land.primary_missile_weapon, "unit", "primary", "land_units.primary_missile_weapon", "primary", number(land.primary_ammo));
+  add(land.primary_missile_weapon, "unit", "primary", "land_units.primary_missile_weapon");
   for (const junction of unitMissilesByUnit.get(unitKey) ?? []) {
     const existingPrimary = junction.missile_weapon === land.primary_missile_weapon;
     add(
@@ -240,15 +242,13 @@ function missileLinksForUnit(unitKey, land) {
       junction.battle_entity_stats_override ? "entity_override" : "unit",
       existingPrimary ? "primary" : "additional",
       "unit_missile_weapon_junctions",
-      existingPrimary ? "primary" : "secondary",
-      number(existingPrimary ? land.primary_ammo : land.secondary_ammo),
     );
   }
   if (land.engine) {
-    add(engineByKey.get(land.engine)?.missile_weapon, "engine", "engine", "battlefield_engines.missile_weapon", "primary", number(land.primary_ammo));
+    add(engineByKey.get(land.engine)?.missile_weapon, "engine", "engine", "battlefield_engines.missile_weapon");
   }
   for (const extra of extraEnginesByUnit.get(unitKey) ?? []) {
-    add(engineByKey.get(extra.battle_engine)?.missile_weapon, "extra_engine", `extra_engine_${extra.attach_articulation}`, "battlefield_engines.missile_weapon", "secondary", number(land.secondary_ammo));
+    add(engineByKey.get(extra.battle_engine)?.missile_weapon, "extra_engine", `extra_engine_${extra.attach_articulation}`, "battlefield_engines.missile_weapon");
   }
 
   const unique = [];
@@ -707,6 +707,7 @@ const counts = Object.fromEntries([...normalizedByRoster].map(([roster, rows]) =
 const manifest = {
   ...CONTEXT,
   schema_version: SNAPSHOT.unitSchema,
+  ammunition_mapping: "missile_weapons.use_secondary_ammo_pool selects land_units primary_ammo or secondary_ammo; attachment role does not select supply",
   built_at_utc: extractedAt,
   source_manifest: path.relative(ROOT, path.join(SOURCE, "source_manifest.json")).replaceAll(path.sep, "/"),
   roster_counts: counts,

@@ -10,16 +10,36 @@ from magic_pipeline import ROOT, csvrows, digest, readj, writecsv, writej, tsv
 
 def fingerprint(row): return hashlib.sha256(json.dumps(row,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
-def baseline_check(base):
+def baseline_check(base, migration=None):
  baseline=readj(ROOT/'scripts/magic_payload_baseline.json');result={}
+ migration_path=Path(base)/'scripts/ammunition_compatibility_migration.json'
+ migration=migration or readj(migration_path if migration_path.exists() else ROOT/'scripts/ammunition_compatibility_migration.json')
+ if migration['baseline_commit']!=baseline['commit'] or migration['allowed_columns']!=['ammunition_pool','ammunition']:
+  raise ValueError('Invalid ammunition migration scope')
  for rel,spec in baseline['files'].items():
   rows=csvrows(Path(base)/rel)
-  current=collections.Counter(fingerprint({c:r[c] for c in spec['columns']}) for r in rows)
+  projected=[{c:r[c] for c in spec['columns']} for r in rows]
+  reviewed=0
+  if rel==migration['path']:
+   by_after={t['after_fingerprint']:t for t in migration['transitions']}
+   if len(by_after)!=255:raise ValueError('Invalid reviewed transition inventory')
+   seen=set()
+   for row in projected:
+    hashed=fingerprint(row);transition=by_after.get(hashed)
+    if transition is None:continue
+    if hashed in seen:raise ValueError('Duplicate migrated weapon row')
+    seen.add(hashed)
+    if any(row[k]!=v for k,v in transition['after'].items()):raise ValueError('Migration after mismatch')
+    row.update(transition['before'])
+    if fingerprint(row)!=transition['before_fingerprint']:raise ValueError('Migration changes unrelated fields')
+   if seen!=set(by_after):raise ValueError('Reviewed ammunition transition missing or altered')
+   reviewed=len(seen)
+  current=collections.Counter(fingerprint(row) for row in projected)
   missing=collections.Counter(spec['row_fingerprints'])-current
   if missing: raise ValueError('Pre-pass payload/weapon values changed: '+rel)
   if 'unit_weapon_links' in rel and len(rows)!=spec['row_count']: raise ValueError('Weapon links changed')
-  result[rel]=dict(retained_rows=spec['row_count'],added_rows=len(rows)-spec['row_count'],added_columns=[c for c in rows[0] if c not in spec['columns']],changed_existing_rows=0)
- return dict(baseline_commit=baseline['commit'],status='passed',files=result)
+  result[rel]=dict(retained_rows=spec['row_count'],added_rows=len(rows)-spec['row_count'],added_columns=[c for c in rows[0] if c not in spec['columns']],changed_existing_rows=reviewed)
+ return dict(baseline_commit=baseline['commit'],status='passed',reviewed_migration='scripts/ammunition_compatibility_migration.json',files=result)
 
 def access_packet(c,subtype,main,grants,mounts,defs):
  base=subtype['associated_unit_override'];missing=[];forms=[]

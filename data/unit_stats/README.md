@@ -169,3 +169,13 @@ The ordinary 9.0 unit builder loads ability roots from the shared ability source
 owner. For a fresh magic extraction, `magic_pipeline.py build` supplies its verified
 candidate source as the fourth unit-builder argument. Validate the combined
 candidate with both unit and magic validators before installing it.
+
+## Native ammunition mapping correction
+
+Weapon supply selection follows `missile_weapons.use_secondary_ammo_pool`: true
+selects the owning land unit's `secondary_ammo`; false selects `primary_ammo`.
+The attachment's component role and slot do not select the supply. Blank flags
+remain unresolved. All projectile alternatives of a weapon retain its selection.
+The count is a native capacity, not guaranteed volleys or a finite exhaustion
+limit when `land_units.infinite_secondary_ammo` is true. Variant eligibility and
+physical firing multiplicity remain separate. See `docs/ammunition-pools.md`.

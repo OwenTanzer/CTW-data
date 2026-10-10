@@ -11,6 +11,23 @@ from validate_magic import validate, golden_checks
 from query_magic import Magic
 
 class MagicRegressions(unittest.TestCase):
+ def test_ammunition_migration_preserves_historical_payload_guards(self):
+  from magic_audit import baseline_check
+  baseline_check(ROOT)
+  cases=[('unit_weapon_links','ammunition'),('unit_weapon_links','projectile_key'),
+         ('projectiles__','base_damage'),('explosions__','ap_damage')]
+  for fragment,field in cases:
+   def changed(path):
+    records=csvrows(path)
+    if fragment in str(path):
+     if fragment=='unit_weapon_links':
+      index=next(i for i,r in enumerate(records) if r['unit_key']=='wh2_main_hef_inf_lothern_sea_guard_0' and r['slot']=='additional')
+     else:index=0
+     records[index][field]='unreviewed'
+    return records
+   with self.subTest(field=field,table=fragment), patch('magic_audit.csvrows',side_effect=changed):
+    with self.assertRaises(ValueError):baseline_check(ROOT)
+
  @classmethod
  def setUpClass(cls):
   cls.base=Path(__import__('os').environ.get('CTW_MAGIC_TEST_ROOT',str(ROOT)))
