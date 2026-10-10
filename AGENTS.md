@@ -1,12 +1,16 @@
 # Agent usage guide
 
 This repository is a machine-readable context source for agents assisting with
-*Total War: WARHAMMER III*. Answers must remain scoped to patch 9.0, Steam
-build 25507028, unless the user supplies newer evidence.
+*Total War: WARHAMMER III*. Use the selected owner's snapshot and coverage.
+The base is patch 9.0 / build 25507028; shared magic/ability/effect additions explicitly use compatible 9.0.1
+evidence, and faction guides remain historical 8.1.1.
 
 ## Retrieval order
 
-1. Read `context_catalog.json`.
+1. Read `context_catalog.json` (schema v2). Use `datasets` for ordinary facts;
+   `development_datasets` is never production truth. For a matching task/map,
+   follow `development_discovery` to surface qualified candidates automatically;
+   apply `docs/architecture/provisional-evidence.md` before using their content.
 2. Select the relevant dataset and read its `README.md`.
 3. Read its manifest and schema inventory.
 4. Use an index to locate only the relevant race, faction, or character file.
@@ -41,6 +45,16 @@ mechanics.
 - Read `script_audit.json` and `audit_report.json` before asserting research availability. Typed scripted requirements and rewards retain their scopes, triggers and targets; bounded script references are evidence pointers, not unconditional effects; the Daemon Prince explicitly has no ordinary research tree.
 
 ## Repository maintenance
+
+Read `docs/README.md`, `docs/architecture/repository-boundaries.md`,
+the relevant entries in `docs/dataset_connections.json` and
+`docs/development_inventory.json`, then
+refresh the relevant live issue/PR scope before implementing changes. The
+inventory is a dated observation, not another issue tracker. Data owns source
+records and constraints; Analysis owns research/studies; Adviser owns serving,
+client tools and its operational matchup model. See `CONTRIBUTING.md` and
+`scripts/README.md` for candidate builds, checks and documentation regeneration.
+Do not change downstream pins or move public paths as incidental cleanup.
 
 Production data under `data/` is generated and must not be edited manually.
 Build candidates belong under ignored `work/` paths and may replace production
@@ -83,7 +97,9 @@ not a global database migration. Supported projectile/explosion graphs use the e
 per-variant structural, definition and runtime coverage separately. Conditional
 army/unit-set/context bindings are not personal spell grants; unit/form links
 retain enabling and culture conditions. Source-only summons and unresolved
-acquisition/runtime routes must remain labelled; do not claim #14 is complete.
+acquisition/runtime routes must remain labelled. Core #14 was completed under
+its bounded scope; broader acquisition and runtime gaps remain #31. Completion of an issue does not make
+partial data exhaustive.
 
 ## Battlefield development boundary
 

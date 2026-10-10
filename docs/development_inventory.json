@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-04",
+  "refresh_policy": "Dated evidence inventory, not a live tracker. Refresh relevant repository main, issue state, PR head/merge state and durable paths before relying on progress. A different head or 30 elapsed days makes the observation due for refresh; no automatic network calls in validation.",
+  "records": [
+    {
+      "id": "production-source-owners",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+      "path": "context_catalog.json",
+      "lifecycle": "production_main",
+      "evidence_levels": [
+        "normalized",
+        "source_integrity_validated"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-analysis",
+        "CTW-adviser"
+      ],
+      "evidence": [
+        "data/unit_stats/audit_report.json",
+        "data/skill_trees/audit_report.json",
+        "data/economy/audit_report.json",
+        "data/technology_trees/audit_report.json",
+        "data/campaign_map/validation_report.json"
+      ],
+      "remaining_boundary": "Owner-specific patches and coverage; not a global 9.0.1 snapshot.",
+      "next_step": "Use selected dataset and owner manifest before joining.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-data/issues/15"
+      ],
+      "observed_status": "main inspected",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "shared-magic-foundation",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+      "path": "data/magic/README.md",
+      "lifecycle": "production_main",
+      "evidence_levels": [
+        "normalized",
+        "source_integrity_validated"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-adviser",
+        "CTW-analysis"
+      ],
+      "evidence": [
+        "data/magic/dataset_manifest.json",
+        "data/magic/coverage.json",
+        "docs/development/magic/validation.json"
+      ],
+      "remaining_boundary": "Core #14 completed; broader acquisition and runtime semantics remain #31. Partial data is still production data.",
+      "next_step": "Extend source-backed gaps under #31; never reactivate obsolete #14 closure requirements.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-data/issues/14",
+        "https://github.com/OwenTanzer/CTW-data/issues/31",
+        "https://github.com/OwenTanzer/CTW-data/pull/30"
+      ],
+      "observed_status": "#14 closed; #31 open; #30 merged",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "army-starts-current",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+      "path": "data/campaign_map/starting_positions/README.md",
+      "lifecycle": "production_main",
+      "evidence_levels": [
+        "normalized",
+        "source_integrity_validated"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-analysis"
+      ],
+      "evidence": [
+        "data/campaign_map/starting_positions/dataset_manifest.json",
+        "data/campaign_map/starting_positions/starting_positions_validation.json"
+      ],
+      "remaining_boundary": "Current 9.0 has 109 primary faction starts. Merged #6's 104-start 8.1.1 result is historical; neither establishes runtime travel.",
+      "next_step": "Consume current view only with the intended source pin; preserve partner overrides and maritime nulls.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-data/pull/6"
+      ],
+      "observed_status": "#6 merged; current owner subsequently refreshed",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "effect-source-811",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "f61fd8ab2a65931abb494340a6918faaeedfdd7d",
+      "path": "data/effect_semantics/source_exports",
+      "lifecycle": "source_branch",
+      "evidence_levels": [
+        "extracted",
+        "source_integrity_validated"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-analysis"
+      ],
+      "evidence": [
+        "docs/effect-foundation.md",
+        "docs/effect-foundation-live-validation.json"
+      ],
+      "remaining_boundary": "Historical 220-table source branch is not the bounded 9.0.1 effect owner now on main.",
+      "next_step": "Preserve immutable source; focus any promotion on a demonstrated lookup need.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-data/pull/13",
+        "https://github.com/OwenTanzer/CTW-data/issues/7"
+      ],
+      "observed_status": "#13 closed unmerged; refactor/effect-source-only branch verified",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "magic-extraction-archive",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "9d5c8bee9888fe1092528472f4faa3e0260a8c83",
+      "path": "work/magic-source-review.tar.gz",
+      "lifecycle": "source_branch",
+      "evidence_levels": [
+        "extracted",
+        "source_integrity_validated"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-data"
+      ],
+      "evidence": [
+        "data/magic/extraction_manifest.json",
+        "data/magic/input_lock.json",
+        "docs/development/magic/README.md"
+      ],
+      "remaining_boundary": "Durable archive lives on a pinned checkpoint branch despite work/ normally being ignored; not a local-only dependency.",
+      "next_step": "Reproduce through the documented archive workflow; validate candidates before install.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-data/pull/30"
+      ],
+      "observed_status": "checkpoint branch verified",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "cold-mires-hypothesis",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+      "path": "docs/development/battlefields/cold-mires/README.md",
+      "lifecycle": "development_main",
+      "evidence_levels": [
+        "extracted",
+        "source_integrity_validated",
+        "hypothesis"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-analysis",
+        "CTW-adviser"
+      ],
+      "evidence": [
+        "docs/development/battlefields/cold-mires/schema.json",
+        "docs/development/battlefields/cold-mires/dataset/manifest.json",
+        "docs/development/battlefields/cold-mires/validation.json"
+      ],
+      "remaining_boundary": "Merged on main does not establish world alignment, water behavior, cover or passability.",
+      "next_step": "Use exact-map comparisons to collect evidence; promote only supported spatial facts. Tactical experiments belong downstream.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-data/pull/40",
+        "https://github.com/OwenTanzer/CTW-data/issues/9",
+        "https://github.com/OwenTanzer/CTW-data/issues/37"
+      ],
+      "observed_status": "#40 merged; #9/#37 open; #39 closed",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "superseded-battlefield-collection",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "fc3fdb603b77af0a406eb87ce8acbf55b38c670a",
+      "path": "docs/development/battlefields/README.md",
+      "lifecycle": "closed_unmerged",
+      "evidence_levels": [
+        "extracted",
+        "hypothesis"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-analysis"
+      ],
+      "evidence": [
+        "docs/development/battlefields/README.md"
+      ],
+      "remaining_boundary": "Published extraction did not meet geographic readability. Later MSI repairs are not all in the published PR; no local-only artifact is a reusable dependency here.",
+      "next_step": "Retain branch for provenance; do not merge or infer that its reported repaired local index is published.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-data/pull/38"
+      ],
+      "observed_status": "#38 closed unmerged and superseded",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "historical-combat-relations",
+      "repository": "OwenTanzer/CTW-data",
+      "commit": "3b5d13d94c5ed3eb4b9c6ce61cc75854b4426196",
+      "path": "relations.tex",
+      "lifecycle": "historical_note",
+      "evidence_levels": [
+        "hypothesis"
+      ],
+      "owner": "CTW-data",
+      "consumers": [
+        "CTW-analysis",
+        "CTW-adviser"
+      ],
+      "evidence": [
+        "relations.tex"
+      ],
+      "remaining_boundary": "Working equations and historical 8.1.1 binary/behavior evidence, not certified 9.0 mechanics. Physical custody is Data; research stewardship belongs in Analysis.",
+      "next_step": "Retain path during pin-compatible reorganization; move future research through the staged Analysis handoff, then let Adviser version supported operational equations.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-adviser/issues/5"
+      ],
+      "observed_status": "historical note retained",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "analysis-main-study",
+      "repository": "OwenTanzer/CTW-analysis",
+      "commit": "fb17eb88c3a5f9f5707245ecfea9fa36d65518f1",
+      "path": "studies/race_strategy_space/methodology.md",
+      "lifecycle": "production_main",
+      "evidence_levels": [
+        "hypothesis"
+      ],
+      "owner": "CTW-analysis",
+      "consumers": [
+        "CTW-adviser"
+      ],
+      "evidence": [],
+      "remaining_boundary": "Published analysis is not a production game fact. Main source_lock pins 8.1.1 at 8c2169b837288d03ba0188b468f06a2f3bcb4b28.",
+      "next_step": "Retain study-specific provenance; do not relabel historical results after a Data upgrade.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-analysis/issues/5"
+      ],
+      "observed_status": "main inspected; status means published analysis only",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "analysis-pairings",
+      "repository": "OwenTanzer/CTW-analysis",
+      "commit": "8d2e5dd8e3297c02add0630da3e16e21c7a9f5b9",
+      "path": "studies/coop_pairings",
+      "lifecycle": "open_pr",
+      "evidence_levels": [
+        "hypothesis"
+      ],
+      "owner": "CTW-analysis",
+      "consumers": [
+        "CTW-adviser"
+      ],
+      "evidence": [],
+      "remaining_boundary": "Draft describes all 104 historical starts, not the current 109-faction 9.0 universe.",
+      "next_step": "Reconcile study source lock and acceptance against current scope before review; do not silently refresh data.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-analysis/pull/7"
+      ],
+      "observed_status": "#7 open; draft=true",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "analysis-modifier-comparison",
+      "repository": "OwenTanzer/CTW-analysis",
+      "commit": "dc4f2e78e8859046aaad478cf0e32fabc59e49d1",
+      "path": "studies/infantry_campaign_comparison",
+      "lifecycle": "open_pr",
+      "evidence_levels": [
+        "hypothesis"
+      ],
+      "owner": "CTW-analysis",
+      "consumers": [
+        "CTW-adviser"
+      ],
+      "evidence": [],
+      "remaining_boundary": "Partial campaign ledgers remain experimental; not a complete attainable-build solver.",
+      "next_step": "Inspect exact head and declared modifier gaps before consuming results.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-analysis/pull/8"
+      ],
+      "observed_status": "#8 open; draft=true",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "analysis-janus",
+      "repository": "OwenTanzer/CTW-analysis",
+      "commit": "24f7f9792897155909dc11f33288d7f555807fdf",
+      "path": "studies/race_strategy_space",
+      "lifecycle": "open_pr",
+      "evidence_levels": [
+        "hypothesis"
+      ],
+      "owner": "CTW-analysis",
+      "consumers": [
+        "CTW-adviser"
+      ],
+      "evidence": [],
+      "remaining_boundary": "Provisional roster package/access proxies do not certify recruitment legality or army power.",
+      "next_step": "Review the full branch with its pinned source and preserved uncertainty.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-analysis/pull/9"
+      ],
+      "observed_status": "#9 open; draft=true",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "analysis-modifier-reference",
+      "repository": "OwenTanzer/CTW-analysis",
+      "commit": "eec0925cbbccf37a7bb0069e0df5350c00e49dcb",
+      "path": "studies/modifier_reference",
+      "lifecycle": "open_pr",
+      "evidence_levels": [
+        "hypothesis"
+      ],
+      "owner": "CTW-analysis",
+      "consumers": [
+        "CTW-adviser"
+      ],
+      "evidence": [],
+      "remaining_boundary": "Experimental index depends on preserved 8.1.1 source branch, not on Data #13 merging.",
+      "next_step": "Retain recorded portability/SQLite review findings; do not make this Data's authoritative query service.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-analysis/pull/10"
+      ],
+      "observed_status": "#10 open; draft=true",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "adviser-main-serving",
+      "repository": "OwenTanzer/CTW-adviser",
+      "commit": "2c849b821e71ce36f39987053fd667fcff102f02",
+      "path": "docs/source-contract.md",
+      "lifecycle": "production_main",
+      "evidence_levels": [
+        "source_integrity_validated"
+      ],
+      "owner": "CTW-adviser",
+      "consumers": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "evidence": [],
+      "remaining_boundary": "Main has phases 1\u20132 contracts/importer; planned operational model and MCP (Model Context Protocol) remain separate issues. Its source lock hashes Data AGENTS.md and catalog as well as data.",
+      "next_step": "Keep the existing source pin; update metadata hashes only in a deliberate reviewed source migration.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-adviser/issues/2",
+        "https://github.com/OwenTanzer/CTW-adviser/issues/5",
+        "https://github.com/OwenTanzer/CTW-adviser/issues/3"
+      ],
+      "observed_status": "main inspected",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    },
+    {
+      "id": "adviser-evidence-packets",
+      "repository": "OwenTanzer/CTW-adviser",
+      "commit": "804206d7fbf4edd3581de1f6446dbf0c2d028211",
+      "path": "README.md",
+      "lifecycle": "open_pr",
+      "evidence_levels": [
+        "source_integrity_validated"
+      ],
+      "owner": "CTW-adviser",
+      "consumers": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "evidence": [],
+      "remaining_boundary": "Unmerged packet interface is not main. PR description reports tests at 68df993; observed head is newer and this inventory does not certify it.",
+      "next_step": "Review actual head and current checks; preserve native facts, explanation attribution and unknown runtime conditions.",
+      "tracking": [
+        "https://github.com/OwenTanzer/CTW-adviser/pull/11"
+      ],
+      "observed_status": "#11 open; non-draft at observation",
+      "observed_at": "2026-10-04",
+      "observation_scope": "Repository content and GitHub metadata; test reports are prior evidence unless this PR's verification says rerun."
+    }
+  ]
+}

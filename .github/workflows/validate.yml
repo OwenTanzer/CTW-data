@@ -1,7 +1,7 @@
 name: Validate datasets
 on:
   push:
-    branches: [feat/faction-technology-trees]
+    branches: [main, feat/faction-technology-trees]
   pull_request:
 jobs:
   validate-linux:
@@ -11,6 +11,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm run test:architecture
       - run: npm run test:snapshot
       - run: npm run test:validation-text
       - run: npm run validate
