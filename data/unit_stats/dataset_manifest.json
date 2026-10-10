@@ -4,6 +4,7 @@
   "steam_build_id": "25507028",
   "unit_scale": "ultra",
   "schema_version": 4,
+  "ammunition_mapping": "missile_weapons.use_secondary_ammo_pool selects land_units primary_ammo or secondary_ammo; attachment role does not select supply",
   "built_at_utc": "2026-09-27T12:04:13.020Z",
   "source_manifest": "data/unit_stats/source_exports/source_manifest.json",
   "roster_counts": {

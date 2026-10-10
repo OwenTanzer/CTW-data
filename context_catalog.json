@@ -54,7 +54,8 @@
       "primary_records": "data/unit_stats/normalized/*.csv",
       "lookups": "data/unit_stats/lookups/*.csv",
       "source_manifest": "data/unit_stats/source_exports/source_manifest.json",
-      "preferred_access": "Select the race CSV, then join typed lookup rows by stable keys."
+      "preferred_access": "Select the race CSV, then join typed lookup rows by stable keys.",
+      "ammunition_mapping": "Native missile weapon use_secondary_ammo_pool selects land-unit capacity; attachment roles do not select supply. See docs/ammunition-pools.md."
     },
     "skill_trees": {
       "description": "Skill trees for 550 distinct character subtypes, including conditional node sets, prerequisites, locks and effects; two reviewed pairs share source tree structures.",
